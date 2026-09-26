@@ -13,3 +13,174 @@
  *= require_tree .
  *= require_self
  */
+:root {
+  --black: #080808;
+  --pink: #ff1493;
+  --yellow: #eaff00;
+  --purple: #8a00ff;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--black);
+  color: var(--white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+  min-height: 100vh;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 100svh;
+  padding: 24px 18px 40px;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
+    url("bipolar-sober-mobile.png");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--yellow);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(4rem, 21vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.72;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 span {
+  display: block;
+}
+
+.hero h1 span:first-child {
+  color: var(--yellow);
+}
+
+.hero h1 span:last-child {
+  color: var(--pink);
+}
+
+.tagline {
+  max-width: 500px;
+  margin: 36px 0 24px;
+
+  color: var(--yellow);
+  font-size: clamp(1.6rem, 7vw, 3rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.enter-button {
+  width: fit-content;
+  padding: 14px 18px;
+
+  background: var(--yellow);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* CONTENT */
+
+.explore {
+  padding: 60px 18px;
+  background: var(--pink);
+  color: var(--black);
+}
+
+.section-number {
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.explore h2 {
+  margin: 40px 0;
+
+  font-size: clamp(4rem, 19vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+}
+
+.topic-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.topic-grid a {
+  padding: 20px 14px;
+
+  background: var(--black);
+  border: 2px solid var(--yellow);
+
+  color: var(--yellow);
+
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 50px;
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)),
+      url("bipolar-sober-desktop.png");
+  }
+
+  .hero h1 {
+    font-size: clamp(7rem, 14vw, 13rem);
+  }
+
+  .tagline {
+    font-size: 3rem;
+  }
+
+  .explore {
+    padding: 100px 50px;
+  }
+
+  .topic-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+  }
+}
