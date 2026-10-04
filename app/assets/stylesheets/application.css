@@ -1,18 +1,8 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
  *= require_tree .
  *= require_self
  */
+
 :root {
   --black: #080808;
   --pink: #ff1493;
@@ -48,7 +38,7 @@ body {
 
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
-    url("bipolar-sober-mobile.png");
+    url("mobile_background.png");
 
   background-size: cover;
   background-position: center;
@@ -66,6 +56,14 @@ body {
   font-size: 0.75rem;
   font-weight: 900;
   letter-spacing: 0.12em;
+}
+
+/* TITLE + EXPLORE MENU */
+
+.hero-title-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 
 .hero h1 {
@@ -91,6 +89,63 @@ body {
   color: var(--pink);
 }
 
+/* EXPLORE */
+
+.explore-menu {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.explore-menu summary {
+  padding: 14px 18px;
+
+  background: var(--yellow);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+  font-weight: 900;
+  cursor: pointer;
+  list-style: none;
+}
+
+.explore-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.explore-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+
+  width: 260px;
+  z-index: 20;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+}
+
+.explore-dropdown a {
+  display: block;
+  padding: 15px 18px;
+
+  color: var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.explore-dropdown a:last-child {
+  border-bottom: 0;
+}
+
+.explore-dropdown a:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+/* TAGLINE */
+
 .tagline {
   max-width: 500px;
   margin: 36px 0 24px;
@@ -103,57 +158,19 @@ body {
   text-transform: uppercase;
 }
 
-.enter-button {
-  width: fit-content;
-  padding: 14px 18px;
+/* MOBILE */
 
-  background: var(--yellow);
-  border: 3px solid var(--black);
+@media (max-width: 767px) {
+  .hero-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
 
-  color: var(--black);
-  font-weight: 900;
-  text-decoration: none;
-}
-
-/* CONTENT */
-
-.explore {
-  padding: 60px 18px;
-  background: var(--pink);
-  color: var(--black);
-}
-
-.section-number {
-  font-weight: 900;
-  letter-spacing: 0.1em;
-}
-
-.explore h2 {
-  margin: 40px 0;
-
-  font-size: clamp(4rem, 19vw, 8rem);
-  font-weight: 900;
-  font-style: italic;
-  line-height: 0.75;
-  letter-spacing: -0.07em;
-}
-
-.topic-grid {
-  display: grid;
-  gap: 8px;
-}
-
-.topic-grid a {
-  padding: 20px 14px;
-
-  background: var(--black);
-  border: 2px solid var(--yellow);
-
-  color: var(--yellow);
-
-  font-size: 1.3rem;
-  font-weight: 900;
-  text-decoration: none;
+  .explore-dropdown {
+    left: 0;
+    right: auto;
+  }
 }
 
 /* DESKTOP */
@@ -164,7 +181,7 @@ body {
 
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)),
-      url("bipolar-sober-desktop.png");
+      url("desktop_background.png");
   }
 
   .hero h1 {
@@ -174,13 +191,387 @@ body {
   .tagline {
     font-size: 3rem;
   }
+}       
 
-  .explore {
-    padding: 100px 50px;
+/* =========================================
+   SO YOU WANT TO DRINK
+   ========================================= */
+
+.drink-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--black);
+}
+
+
+/* HERO */
+
+.drink-hero {
+  min-height: 100svh;
+  padding: 30px 18px 50px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.92) 0%,
+      rgba(0, 0, 0, 0.72) 55%,
+      rgba(255, 20, 147, 0.18) 100%
+    ),
+    url("mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.drink-hero-content {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.drink-eyebrow {
+  margin: 0 0 20px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.drink-title {
+  margin: 0;
+
+  font-size: clamp(4rem, 20vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.72;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.drink-title span {
+  display: block;
+}
+
+.drink-title span:nth-child(1) {
+  color: var(--yellow);
+}
+
+.drink-title span:nth-child(2) {
+  color: var(--white);
+}
+
+.drink-title span:nth-child(3) {
+  color: var(--pink);
+}
+
+.drink-subtitle {
+  margin: 35px 0 22px;
+
+  color: var(--yellow);
+
+  font-size: clamp(1.4rem, 6vw, 2.6rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+}
+
+.drink-button,
+.ending-button {
+  display: inline-block;
+
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.drink-button:hover,
+.ending-button:hover {
+  background: var(--yellow);
+  transform: translate(-3px, -3px);
+}
+
+
+/* MEMORY SECTIONS */
+
+.memory-section {
+  padding: 55px 18px 65px;
+
+  display: grid;
+  gap: 35px;
+}
+
+.memory-number {
+  margin: 0 0 20px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+
+  letter-spacing: 0.1em;
+}
+
+.memory-section h2 {
+  margin: 0;
+
+  font-size: clamp(3.2rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+
+  text-transform: uppercase;
+}
+
+.memory-list {
+  max-width: 700px;
+
+  font-size: 1.05rem;
+  font-weight: 700;
+
+  line-height: 1.25;
+}
+
+.memory-list p {
+  margin: 0;
+  padding: 11px 0;
+
+  border-bottom: 1px solid currentColor;
+}
+
+.memory-list p:last-child {
+  border-bottom: 0;
+}
+
+
+/* PINK SECTION */
+
+.memory-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* YELLOW SECTION */
+
+.memory-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+
+/* BLACK SECTION */
+
+.memory-black {
+  position: relative;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 20, 147, 0.06),
+      transparent 45%
+    ),
+    var(--black);
+
+  color: var(--white);
+}
+
+.memory-black .memory-number {
+  color: var(--pink);
+}
+
+.memory-black h2 {
+  color: var(--yellow);
+}
+
+.memory-black .memory-list p {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* ENDING */
+
+.drink-ending {
+  min-height: 80svh;
+
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ending-small {
+  margin: 0 0 5px;
+
+  font-size: 2rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.drink-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.74;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.drink-ending h2 span {
+  color: var(--pink);
+}
+
+.ending-message {
+  margin-top: 50px;
+
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.ending-message p {
+  margin: 3px 0;
+}
+
+.ending-button {
+  margin-top: 25px;
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .drink-hero {
+    min-height: 100vh;
+
+    padding: 60px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.78) 43%,
+        rgba(0, 0, 0, 0.22) 100%
+      ),
+      url("desktop_background.png");
+
+    background-position: center;
   }
 
-  .topic-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 1000px;
+  .drink-title {
+    font-size: clamp(7rem, 12vw, 12rem);
+  }
+
+  .drink-subtitle {
+    font-size: 2.5rem;
+  }
+
+
+  /* TWO-COLUMN MEMORY SECTIONS */
+
+  .memory-section {
+    min-height: 65vh;
+
+    padding: 75px 6vw;
+
+    grid-template-columns: minmax(0, 0.9fr) minmax(400px, 1.1fr);
+    align-items: center;
+
+    gap: 70px;
+  }
+
+  .memory-section h2 {
+    font-size: clamp(4.5rem, 7vw, 8rem);
+  }
+
+  .memory-list {
+    font-size: 1.1rem;
+  }
+
+  .memory-list p {
+    padding: 9px 0;
+  }
+
+
+  /* ENDING */
+
+  .drink-ending {
+    min-height: 75vh;
+
+    padding: 80px 6vw;
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+
+    gap: 80px;
+  }
+
+  .ending-small {
+    grid-column: 1;
+  }
+
+  .drink-ending h2 {
+    grid-column: 1;
+
+    font-size: clamp(6rem, 9vw, 10rem);
+  }
+
+  .ending-message {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+
+    margin: 0;
+
+    font-size: 1.3rem;
+  }
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 400px) {
+
+  .drink-title {
+    font-size: 18vw;
+  }
+
+  .memory-section h2 {
+    font-size: 14vw;
+  }
+
+  .memory-list {
+    font-size: 0.95rem;
+  }
+
+  .drink-ending h2 {
+    font-size: 17vw;
   }
 }
