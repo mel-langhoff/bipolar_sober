@@ -1,0 +1,2 @@
+module SobrietyHelper
+end

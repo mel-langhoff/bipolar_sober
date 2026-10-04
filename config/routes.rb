@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'perspectives/index'
+  get 'toolbox/index'
+  get 'sobriety/index'
+  get 'addiction/index'
+  get 'bipolar/index'
   root "home#index"
 
   get "bipolar", to: "bipolar#index", as: :bipolar

@@ -903,3 +903,347 @@ body {
     font-size: 1.15rem;
   }
 }
+
+/* =========================================
+   BIPOLAR LANDING PAGE
+   ========================================= */
+
+.bipolar-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--black);
+}
+
+
+/* HERO */
+
+.bipolar-hero {
+  min-height: 100svh;
+  padding: 30px 18px 50px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.88) 0%,
+      rgba(0, 0, 0, 0.55) 55%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url("bipolar_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.bipolar-hero-content {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.bipolar-eyebrow {
+  margin: 0 0 20px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.bipolar-hero h1 {
+  margin: 0;
+
+  font-size: clamp(5rem, 23vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.72;
+  letter-spacing: -0.075em;
+
+  text-transform: uppercase;
+}
+
+.bipolar-hero h1 span {
+  display: block;
+}
+
+.bipolar-hero h1 span:first-child {
+  color: var(--yellow);
+}
+
+.bipolar-hero h1 span:last-child {
+  color: var(--pink);
+}
+
+.bipolar-intro {
+  max-width: 650px;
+
+  margin: 40px 0 25px;
+
+  color: var(--white);
+
+  font-size: clamp(1.35rem, 6vw, 2.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.bipolar-button {
+  display: inline-block;
+
+  padding: 14px 20px;
+
+  background: var(--yellow);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.bipolar-button:hover {
+  background: var(--pink);
+  transform: translate(-3px, -3px);
+}
+
+
+/* TOPICS */
+
+.bipolar-topics {
+  padding: 65px 18px 80px;
+
+  background: var(--pink);
+  color: var(--black);
+}
+
+.bipolar-topics-heading > p:first-child {
+  margin: 0 0 30px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.bipolar-topics-heading h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 17vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.74;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.bipolar-topics-subtitle {
+  max-width: 650px;
+
+  margin: 35px 0 50px;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+
+/* GRID */
+
+.bipolar-grid {
+  display: grid;
+  gap: 12px;
+}
+
+
+/* CARDS */
+
+.bipolar-card {
+  min-height: 380px;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 3px solid var(--black);
+
+  color: var(--black);
+  text-decoration: none;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.bipolar-card:hover {
+  transform: translate(-5px, -5px);
+
+  box-shadow:
+    7px 7px 0 var(--black);
+}
+
+.bipolar-card-number {
+  margin: 0 0 50px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.bipolar-card h3 {
+  margin: 0;
+
+  font-size: clamp(2.8rem, 12vw, 5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.78;
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.bipolar-card-description {
+  max-width: 500px;
+
+  margin: 30px 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.bipolar-card span {
+  margin-top: auto;
+
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+
+/* CARD COLORS */
+
+.card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.card-black {
+  background: var(--black);
+  border-color: var(--yellow);
+  color: var(--white);
+}
+
+.card-black h3 {
+  color: var(--yellow);
+}
+
+.card-black span {
+  color: var(--pink);
+}
+
+
+/* MIXED EPISODE CARD */
+
+.card-split {
+  position: relative;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--pink) 0%,
+      var(--pink) 48%,
+      var(--yellow) 48%,
+      var(--yellow) 100%
+    );
+
+  color: var(--black);
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .bipolar-hero {
+    min-height: 100vh;
+
+    padding: 60px 6vw;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.92) 0%,
+        rgba(0, 0, 0, 0.68) 38%,
+        rgba(0, 0, 0, 0.15) 72%,
+        rgba(0, 0, 0, 0.05) 100%
+      ),
+      url("bipolar_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bipolar-hero h1 {
+    font-size: clamp(7rem, 12vw, 12rem);
+  }
+
+  .bipolar-intro {
+    font-size: 2.2rem;
+  }
+
+
+  /* TOPICS */
+
+  .bipolar-topics {
+    padding: 100px 6vw;
+  }
+
+  .bipolar-topics-heading h2 {
+    font-size: clamp(5rem, 8vw, 9rem);
+  }
+
+  .bipolar-topics-subtitle {
+    font-size: 1.25rem;
+  }
+
+
+  /* 3 x 2 GRID */
+
+  .bipolar-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .bipolar-card {
+    min-height: 500px;
+    padding: 30px;
+  }
+
+  .bipolar-card h3 {
+    font-size: clamp(3rem, 4vw, 5rem);
+  }
+
+  .bipolar-card-description {
+    font-size: 1.05rem;
+  }
+}
