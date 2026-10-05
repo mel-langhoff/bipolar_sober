@@ -2274,3 +2274,339 @@ body {
   }
 }
 
+/* =========================================
+   PERSPECTIVES LANDING PAGE
+   ========================================= */
+
+.perspectives-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--black);
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.perspectives-hero {
+  min-height: 100svh;
+  padding: 30px 18px 50px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.92) 0%,
+      rgba(0, 0, 0, 0.65) 52%,
+      rgba(0, 0, 0, 0.12) 100%
+    ),
+    url("perspectives_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.perspectives-hero-content {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.perspectives-eyebrow {
+  margin: 0 0 20px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.perspectives-hero h1 {
+  margin: 0;
+
+  font-size: clamp(4.4rem, 20vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.72;
+  letter-spacing: -0.075em;
+
+  text-transform: uppercase;
+}
+
+.perspectives-hero h1 span {
+  display: block;
+}
+
+.perspectives-hero h1 span:first-child {
+  color: var(--yellow);
+}
+
+.perspectives-hero h1 span:last-child {
+  color: var(--pink);
+}
+
+.perspectives-intro {
+  max-width: 650px;
+  margin: 40px 0 25px;
+
+  color: var(--white);
+
+  font-size: clamp(1.4rem, 6vw, 2.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.perspectives-button {
+  display: inline-block;
+
+  padding: 14px 20px;
+
+  background: var(--yellow);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.perspectives-button:hover {
+  background: var(--pink);
+  transform: translate(-3px, -3px);
+}
+
+
+/* =========================================
+   TOPICS
+   ========================================= */
+
+.perspectives-topics {
+  padding: 65px 18px 80px;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.perspectives-heading > p:first-child {
+  margin: 0 0 30px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.perspectives-heading h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 17vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.74;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.perspectives-subtitle {
+  max-width: 700px;
+  margin: 35px 0 50px;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+
+/* =========================================
+   GRID
+   ========================================= */
+
+.perspectives-grid {
+  display: grid;
+  gap: 12px;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.perspectives-card {
+  min-height: 380px;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 3px solid var(--black);
+
+  color: var(--black);
+  text-decoration: none;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.perspectives-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 7px 7px 0 var(--black);
+}
+
+.perspectives-card-number {
+  margin: 0 0 50px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.perspectives-card h3 {
+  margin: 0;
+
+  font-size: clamp(3rem, 13vw, 5.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.78;
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.perspectives-card-description {
+  max-width: 500px;
+  margin: 30px 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.perspectives-card span {
+  margin-top: auto;
+
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+
+/* =========================================
+   CARD COLORS
+   ========================================= */
+
+.perspectives-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.perspectives-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.perspectives-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.perspectives-card-purple h3 {
+  color: var(--yellow);
+}
+
+.perspectives-card-purple span {
+  color: var(--yellow);
+}
+
+.perspectives-card-black {
+  background: var(--black);
+  border-color: var(--pink);
+  color: var(--white);
+}
+
+.perspectives-card-black h3 {
+  color: var(--pink);
+}
+
+.perspectives-card-black span {
+  color: var(--yellow);
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .perspectives-hero {
+    min-height: 100vh;
+    padding: 60px 6vw;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.93) 0%,
+        rgba(0, 0, 0, 0.68) 38%,
+        rgba(0, 0, 0, 0.16) 72%,
+        rgba(0, 0, 0, 0.04) 100%
+      ),
+      url("perspectives_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .perspectives-hero h1 {
+    font-size: clamp(6.5rem, 10vw, 11rem);
+  }
+
+  .perspectives-intro {
+    font-size: 2.3rem;
+  }
+
+
+  /* TOPICS */
+
+  .perspectives-topics {
+    padding: 100px 6vw;
+  }
+
+  .perspectives-heading h2 {
+    font-size: clamp(5rem, 8vw, 9rem);
+  }
+
+  .perspectives-subtitle {
+    font-size: 1.25rem;
+  }
+
+
+  /* 2 x 2 GRID */
+
+  .perspectives-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .perspectives-card {
+    min-height: 470px;
+    padding: 35px;
+  }
+
+  .perspectives-card h3 {
+    font-size: clamp(3.5rem, 5vw, 6rem);
+  }
+
+  .perspectives-card-description {
+    font-size: 1.1rem;
+  }
+}
