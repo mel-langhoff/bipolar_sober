@@ -1578,3 +1578,699 @@ body {
     font-size: 1.1rem;
   }
 }
+
+/* =========================================
+   SPIRITUALITY LANDING PAGE
+   ========================================= */
+
+.spirituality-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--black);
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.spirituality-hero {
+  min-height: 100svh;
+  padding: 30px 18px 50px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.90) 0%,
+      rgba(0, 0, 0, 0.62) 55%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url("spirituality_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.spirituality-hero-content {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.spirituality-eyebrow {
+  margin: 0 0 20px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.spirituality-hero h1 {
+  margin: 0;
+
+  font-size: clamp(4.2rem, 19vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.72;
+  letter-spacing: -0.075em;
+
+  text-transform: uppercase;
+}
+
+.spirituality-hero h1 span {
+  display: block;
+}
+
+.spirituality-hero h1 span:first-child {
+  color: var(--yellow);
+}
+
+.spirituality-hero h1 span:last-child {
+  color: var(--pink);
+}
+
+.spirituality-intro {
+  max-width: 650px;
+
+  margin: 40px 0 25px;
+
+  color: var(--white);
+
+  font-size: clamp(1.35rem, 6vw, 2.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.spirituality-button {
+  display: inline-block;
+
+  padding: 14px 20px;
+
+  background: var(--yellow);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.spirituality-button:hover {
+  background: var(--pink);
+  transform: translate(-3px, -3px);
+}
+
+
+/* =========================================
+   TOPICS
+   ========================================= */
+
+.spirituality-topics {
+  padding: 65px 18px 80px;
+
+  background: var(--purple);
+  color: var(--white);
+}
+
+.spirituality-topics-heading > p:first-child {
+  margin: 0 0 30px;
+
+  color: var(--yellow);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.spirituality-topics-heading h2 {
+  margin: 0;
+
+  color: var(--yellow);
+
+  font-size: clamp(4rem, 17vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.74;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.spirituality-topics-subtitle {
+  max-width: 650px;
+
+  margin: 35px 0 50px;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+
+/* =========================================
+   GRID
+   ========================================= */
+
+.spirituality-grid {
+  display: grid;
+  gap: 12px;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.spirituality-card {
+  min-height: 380px;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 3px solid var(--black);
+
+  color: var(--black);
+  text-decoration: none;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.spirituality-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 7px 7px 0 var(--black);
+}
+
+.spirituality-card-number {
+  margin: 0 0 50px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.spirituality-card h3 {
+  margin: 0;
+
+  font-size: clamp(2.8rem, 12vw, 5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.78;
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.spirituality-card-description {
+  max-width: 500px;
+
+  margin: 30px 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.spirituality-card span {
+  margin-top: auto;
+
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+
+/* =========================================
+   CARD COLORS
+   ========================================= */
+
+.spirituality-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.spirituality-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.spirituality-card-purple {
+  background: var(--purple);
+  border-color: var(--yellow);
+  color: var(--white);
+}
+
+.spirituality-card-purple h3 {
+  color: var(--yellow);
+}
+
+.spirituality-card-purple span {
+  color: var(--yellow);
+}
+
+.spirituality-card-black {
+  background: var(--black);
+  border-color: var(--pink);
+  color: var(--white);
+}
+
+.spirituality-card-black h3 {
+  color: var(--pink);
+}
+
+.spirituality-card-black span {
+  color: var(--yellow);
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .spirituality-hero {
+    min-height: 100vh;
+
+    padding: 60px 6vw;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.93) 0%,
+        rgba(0, 0, 0, 0.70) 38%,
+        rgba(0, 0, 0, 0.18) 72%,
+        rgba(0, 0, 0, 0.05) 100%
+      ),
+      url("spirituality_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .spirituality-hero h1 {
+    font-size: clamp(6.5rem, 10vw, 11rem);
+  }
+
+  .spirituality-intro {
+    font-size: 2.3rem;
+  }
+
+
+  /* TOPICS */
+
+  .spirituality-topics {
+    padding: 100px 6vw;
+  }
+
+  .spirituality-topics-heading h2 {
+    font-size: clamp(5rem, 8vw, 9rem);
+  }
+
+  .spirituality-topics-subtitle {
+    font-size: 1.25rem;
+  }
+
+
+  /* 2 x 2 GRID */
+
+  .spirituality-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .spirituality-card {
+    min-height: 470px;
+    padding: 35px;
+  }
+
+  .spirituality-card h3 {
+    font-size: clamp(3.5rem, 5vw, 6rem);
+  }
+
+  .spirituality-card-description {
+    font-size: 1.1rem;
+  }
+}
+
+/* =========================================
+   TOOLBOX LANDING PAGE
+   ========================================= */
+
+.toolbox-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--black);
+}
+
+
+/* HERO */
+
+.toolbox-hero {
+  min-height: 100svh;
+  padding: 30px 18px 50px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.90) 0%,
+      rgba(0, 0, 0, 0.62) 55%,
+      rgba(0, 0, 0, 0.12) 100%
+    ),
+    url("toolbox_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.toolbox-hero-content {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.toolbox-eyebrow {
+  margin: 0 0 20px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.toolbox-hero h1 {
+  margin: 0;
+
+  font-size: clamp(4.5rem, 21vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.72;
+  letter-spacing: -0.075em;
+
+  text-transform: uppercase;
+}
+
+.toolbox-hero h1 span {
+  display: block;
+}
+
+.toolbox-hero h1 span:first-child {
+  color: var(--yellow);
+}
+
+.toolbox-hero h1 span:last-child {
+  color: var(--pink);
+}
+
+.toolbox-intro {
+  max-width: 650px;
+
+  margin: 40px 0 25px;
+
+  color: var(--white);
+
+  font-size: clamp(1.35rem, 6vw, 2.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.toolbox-button {
+  display: inline-block;
+
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.toolbox-button:hover {
+  background: var(--yellow);
+  transform: translate(-3px, -3px);
+}
+
+
+/* =========================================
+   TOOLS SECTION
+   ========================================= */
+
+.toolbox-tools {
+  padding: 65px 18px 80px;
+
+  background: var(--pink);
+  color: var(--black);
+}
+
+.toolbox-heading > p:first-child {
+  margin: 0 0 30px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.toolbox-heading h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 17vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.74;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.toolbox-subtitle {
+  max-width: 650px;
+
+  margin: 35px 0 50px;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+
+/* =========================================
+   GRID
+   ========================================= */
+
+.toolbox-grid {
+  display: grid;
+  gap: 12px;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.toolbox-card {
+  min-height: 380px;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 3px solid var(--black);
+
+  color: var(--black);
+  text-decoration: none;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.toolbox-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 7px 7px 0 var(--black);
+}
+
+.toolbox-card-number {
+  margin: 0 0 50px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.toolbox-card h3 {
+  margin: 0;
+
+  font-size: clamp(2.8rem, 12vw, 5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.78;
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.toolbox-card-description {
+  max-width: 500px;
+
+  margin: 30px 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.toolbox-card span {
+  margin-top: auto;
+
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+
+/* CARD COLORS */
+
+.toolbox-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.toolbox-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.toolbox-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.toolbox-card-purple h3 {
+  color: var(--yellow);
+}
+
+.toolbox-card-black {
+  background: var(--black);
+  border-color: var(--yellow);
+  color: var(--white);
+}
+
+.toolbox-card-black h3 {
+  color: var(--yellow);
+}
+
+.toolbox-card-black span {
+  color: var(--pink);
+}
+
+
+/* EMERGENCY PLAN SPLIT CARD */
+
+.toolbox-card-split {
+  background:
+    linear-gradient(
+      135deg,
+      var(--yellow) 0%,
+      var(--yellow) 48%,
+      var(--pink) 48%,
+      var(--pink) 100%
+    );
+
+  color: var(--black);
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .toolbox-hero {
+    min-height: 100vh;
+
+    padding: 60px 6vw;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.93) 0%,
+        rgba(0, 0, 0, 0.68) 38%,
+        rgba(0, 0, 0, 0.15) 72%,
+        rgba(0, 0, 0, 0.04) 100%
+      ),
+      url("toolbox_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .toolbox-hero h1 {
+    font-size: clamp(7rem, 12vw, 12rem);
+  }
+
+  .toolbox-intro {
+    font-size: 2.3rem;
+  }
+
+
+  /* TOOLS */
+
+  .toolbox-tools {
+    padding: 100px 6vw;
+  }
+
+  .toolbox-heading h2 {
+    font-size: clamp(5rem, 8vw, 9rem);
+  }
+
+  .toolbox-subtitle {
+    font-size: 1.25rem;
+  }
+
+
+  /* 3 x 2 GRID */
+
+  .toolbox-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .toolbox-card {
+    min-height: 500px;
+    padding: 30px;
+  }
+
+  .toolbox-card h3 {
+    font-size: clamp(3rem, 4vw, 5rem);
+  }
+
+  .toolbox-card-description {
+    font-size: 1.05rem;
+  }
+}
+

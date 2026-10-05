@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'spirituality/index'
   get 'perspectives/index'
   get 'toolbox/index'
   get 'sobriety/index'
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
   get "sobriety", to: "sobriety#index", as: :sobriety
   get "toolbox", to: "toolbox#index", as: :toolbox
   get "perspectives", to: "perspectives#index", as: :perspectives
+  get "spirituality", to: "spirituality#index", as: :spirituality
 
   get "resources", to: "resources#index", as: :resources
 
