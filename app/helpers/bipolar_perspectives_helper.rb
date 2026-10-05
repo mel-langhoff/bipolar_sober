@@ -1,0 +1,2 @@
+module BipolarPerspectivesHelper
+end

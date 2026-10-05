@@ -2610,3 +2610,4682 @@ body {
     font-size: 1.1rem;
   }
 }
+
+/* =========================================
+   BIPOLAR > PERSPECTIVES
+   ========================================= */
+
+.bipolar-perspectives-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--black);
+}
+
+
+/* HERO */
+
+.bipolar-perspectives-hero {
+  min-height: 100svh;
+  padding: 30px 18px 50px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.72) 50%,
+      rgba(0, 0, 0, 0.20) 100%
+    ),
+    url("bipolar_perspectives_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.bipolar-perspectives-hero-content {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.bipolar-perspectives-eyebrow {
+  margin: 0 0 20px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.bipolar-perspectives-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.7rem, 17vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.075em;
+
+  text-transform: uppercase;
+}
+
+.bipolar-perspectives-hero h1 span {
+  display: block;
+}
+
+.bipolar-perspectives-hero h1 span:nth-child(1) {
+  color: var(--pink);
+}
+
+.bipolar-perspectives-hero h1 span:nth-child(2) {
+  color: var(--yellow);
+}
+
+.bipolar-perspectives-hero h1 span:nth-child(3) {
+  color: var(--white);
+}
+
+.bipolar-perspectives-intro {
+  margin: 40px 0 25px;
+
+  color: var(--white);
+
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.bipolar-perspectives-button {
+  display: inline-block;
+
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.bipolar-perspectives-button:hover {
+  background: var(--yellow);
+  transform: translate(-3px, -3px);
+}
+
+
+/* =========================================
+   TOPICS
+   ========================================= */
+
+.bipolar-perspectives-topics {
+  padding: 65px 18px 80px;
+
+  background: var(--purple);
+  color: var(--white);
+}
+
+.bipolar-perspectives-heading > p:first-child {
+  margin: 0 0 30px;
+
+  color: var(--yellow);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.bipolar-perspectives-heading h2 {
+  margin: 0;
+
+  color: var(--white);
+
+  font-size: clamp(4rem, 17vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.74;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.bipolar-perspectives-subtitle {
+  max-width: 720px;
+  margin: 35px 0 50px;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+
+/* =========================================
+   GRID
+   ========================================= */
+
+.bipolar-perspectives-grid {
+  display: grid;
+  gap: 12px;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.bipolar-perspective-card {
+  min-height: 390px;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 3px solid var(--black);
+
+  color: var(--black);
+  text-decoration: none;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.bipolar-perspective-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 7px 7px 0 var(--black);
+}
+
+.bipolar-perspective-number {
+  margin: 0 0 50px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.bipolar-perspective-card h3 {
+  margin: 0;
+
+  font-size: clamp(3rem, 13vw, 5.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.78;
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.bipolar-perspective-description {
+  max-width: 500px;
+  margin: 30px 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.bipolar-perspective-card span {
+  margin-top: auto;
+
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+
+/* CARD COLORS */
+
+.bp-card-pink {
+  background: var(--pink);
+}
+
+.bp-card-yellow {
+  background: var(--yellow);
+}
+
+.bp-card-purple {
+  background: var(--purple);
+  border-color: var(--yellow);
+  color: var(--white);
+}
+
+.bp-card-purple h3,
+.bp-card-purple span {
+  color: var(--yellow);
+}
+
+.bp-card-black {
+  background: var(--black);
+  border-color: var(--pink);
+  color: var(--white);
+}
+
+.bp-card-black h3 {
+  color: var(--pink);
+}
+
+.bp-card-black span {
+  color: var(--yellow);
+}
+
+.bp-card-split {
+  background:
+    linear-gradient(
+      135deg,
+      var(--yellow) 0%,
+      var(--yellow) 50%,
+      var(--pink) 50%,
+      var(--pink) 100%
+    );
+
+  color: var(--black);
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .bipolar-perspectives-hero {
+    min-height: 100vh;
+    padding: 60px 6vw;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.67) 38%,
+        rgba(0, 0, 0, 0.15) 72%,
+        rgba(0, 0, 0, 0.03) 100%
+      ),
+      url("bipolar_perspectives_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bipolar-perspectives-hero h1 {
+    font-size: clamp(5.5rem, 8.5vw, 10rem);
+  }
+
+  .bipolar-perspectives-intro {
+    font-size: 2.3rem;
+  }
+
+  .bipolar-perspectives-topics {
+    padding: 100px 6vw;
+  }
+
+  .bipolar-perspectives-heading h2 {
+    font-size: clamp(5rem, 8vw, 9rem);
+  }
+
+  .bipolar-perspectives-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .bipolar-perspectives-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .bipolar-perspective-card {
+    min-height: 480px;
+    padding: 32px;
+  }
+
+  .bipolar-perspective-card h3 {
+    font-size: clamp(3rem, 4vw, 5rem);
+  }
+
+  .bipolar-perspective-description {
+    font-size: 1.05rem;
+  }
+
+  @media (min-width: 768px) {
+  .bp-card-big-picture {
+    grid-column: 1 / -1;
+    min-height: 400px;
+  }
+
+  .bp-card-big-picture h3 {
+    font-size: clamp(4rem, 7vw, 8rem);
+  }
+
+  .bp-card-big-picture .bipolar-perspective-description {
+    max-width: 750px;
+  }
+}
+}
+
+.bp-card-big-picture {
+  background:
+    linear-gradient(
+      135deg,
+      var(--pink) 0%,
+      var(--pink) 25%,
+      var(--yellow) 25%,
+      var(--yellow) 50%,
+      var(--purple) 50%,
+      var(--purple) 75%,
+      var(--black) 75%,
+      var(--black) 100%
+    );
+
+  color: var(--white);
+
+  border: 3px solid var(--white);
+}
+
+.bp-card-big-picture h3 {
+  color: var(--white);
+
+  text-shadow:
+    4px 4px 0 var(--black);
+}
+
+.bp-card-big-picture .bipolar-perspective-description {
+  background: var(--black);
+  padding: 16px;
+}
+
+.bp-card-big-picture span {
+  color: var(--yellow);
+}
+
+/* =========================================
+   BIPOLAR > PERSPECTIVES > BUDDHISM
+   ========================================= */
+
+.buddhism-bipolar-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.buddhism-bipolar-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(138, 0, 255, 0.35),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.75)
+    ),
+    var(--black);
+}
+
+.buddhism-bipolar-hero-content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.buddhism-bipolar-eyebrow {
+  margin: 0 0 25px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.buddhism-bipolar-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.6rem, 16vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.buddhism-bipolar-hero h1 span {
+  display: block;
+}
+
+.buddhism-bipolar-hero h1 span:nth-child(1) {
+  color: var(--pink);
+}
+
+.buddhism-bipolar-hero h1 span:nth-child(2) {
+  color: var(--white);
+}
+
+.buddhism-bipolar-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.buddhism-bipolar-intro {
+  margin: 40px 0 0;
+
+  color: var(--white);
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   CONTENT SECTIONS
+   ========================================= */
+
+.buddhism-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.buddhism-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.buddhism-section h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+
+  text-transform: uppercase;
+}
+
+.buddhism-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.buddhism-copy > p {
+  margin: 0 0 22px;
+}
+
+.buddhism-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.buddhism-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.6rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   SECTION COLORS
+   ========================================= */
+
+.buddhism-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.buddhism-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.buddhism-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.buddhism-purple .buddhism-number {
+  color: var(--yellow);
+}
+
+.buddhism-purple blockquote {
+  color: var(--yellow);
+}
+
+.buddhism-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.buddhism-black .buddhism-number {
+  color: var(--pink);
+}
+
+.buddhism-black h2 {
+  color: var(--yellow);
+}
+
+.buddhism-black blockquote {
+  color: var(--pink);
+}
+
+
+/* =========================================
+   MINDFULNESS EXAMPLE
+   ========================================= */
+
+.buddhism-example {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--yellow);
+  border: 4px solid var(--pink);
+
+  color: var(--black);
+}
+
+.buddhism-example p {
+  margin: 12px 0;
+  font-weight: 900;
+}
+
+.buddhism-example h3 {
+  margin: 10px 0 25px;
+
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.9;
+}
+
+
+/* =========================================
+   MIDDLE WAY
+   ========================================= */
+
+.buddhism-contrast {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--pink);
+
+  color: var(--white);
+  text-align: center;
+}
+
+.buddhism-contrast p {
+  margin: 15px 0;
+
+  font-size: clamp(1.5rem, 6vw, 2.8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.buddhism-contrast span {
+  display: block;
+
+  color: var(--yellow);
+
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+
+/* =========================================
+   PRACTICE LIST
+   ========================================= */
+
+.buddhism-practice-list {
+  margin-top: 35px;
+
+  border-top: 3px solid var(--pink);
+}
+
+.buddhism-practice-list > div {
+  padding: 20px 0;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+
+  border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+.buddhism-practice-list span {
+  color: var(--pink);
+
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.buddhism-practice-list p {
+  margin: 0;
+}
+
+
+/* =========================================
+   ENDING
+   ========================================= */
+
+.buddhism-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.buddhism-ending-small {
+  margin: 0 0 8px;
+
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.buddhism-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 17vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.buddhism-ending h2 span {
+  color: var(--pink);
+}
+
+.buddhism-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.buddhism-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK TO PERSPECTIVES */
+
+.buddhism-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.buddhism-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .buddhism-bipolar-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+  }
+
+  .buddhism-bipolar-hero h1 {
+    font-size: clamp(6rem, 9vw, 11rem);
+  }
+
+  .buddhism-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .buddhism-section h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .buddhism-copy {
+    font-size: 1.1rem;
+  }
+
+  .buddhism-lead {
+    font-size: 1.5rem;
+  }
+
+  .buddhism-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .buddhism-ending {
+    min-height: 75vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .buddhism-ending h2 {
+    font-size: clamp(6rem, 8vw, 10rem);
+  }
+
+  .buddhism-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 400px) {
+
+  .buddhism-bipolar-hero h1 {
+    font-size: 15vw;
+  }
+
+  .buddhism-section h2 {
+    font-size: 14vw;
+  }
+
+  .buddhism-copy {
+    font-size: 0.98rem;
+  }
+
+  .buddhism-ending h2 {
+    font-size: 16vw;
+  }
+}
+
+/* =========================================
+   BIPOLAR > PERSPECTIVES > BUDDHISM
+   ========================================= */
+
+.buddhism-bipolar-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.buddhism-bipolar-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.78) 48%,
+      rgba(0, 0, 0, 0.20) 100%
+    ),
+    url("bipolar_buddhism_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.buddhism-bipolar-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.buddhism-bipolar-eyebrow {
+  margin: 0 0 25px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.buddhism-bipolar-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.6rem, 16vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.buddhism-bipolar-hero h1 span {
+  display: block;
+}
+
+.buddhism-bipolar-hero h1 span:nth-child(1) {
+  color: var(--pink);
+}
+
+.buddhism-bipolar-hero h1 span:nth-child(2) {
+  color: var(--white);
+}
+
+.buddhism-bipolar-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.buddhism-bipolar-intro {
+  margin: 40px 0 0;
+
+  color: var(--white);
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   CONTENT SECTIONS
+   ========================================= */
+
+.buddhism-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.buddhism-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.buddhism-section h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+
+  text-transform: uppercase;
+}
+
+.buddhism-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.buddhism-copy > p {
+  margin: 0 0 22px;
+}
+
+.buddhism-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.buddhism-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.6rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   SECTION COLORS
+   ========================================= */
+
+.buddhism-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.buddhism-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.buddhism-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.buddhism-purple .buddhism-number {
+  color: var(--yellow);
+}
+
+.buddhism-purple blockquote {
+  color: var(--yellow);
+}
+
+.buddhism-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.buddhism-black .buddhism-number {
+  color: var(--pink);
+}
+
+.buddhism-black h2 {
+  color: var(--yellow);
+}
+
+.buddhism-black blockquote {
+  color: var(--pink);
+}
+
+
+/* =========================================
+   MINDFULNESS EXAMPLE
+   ========================================= */
+
+.buddhism-example {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--yellow);
+  border: 4px solid var(--pink);
+
+  color: var(--black);
+}
+
+.buddhism-example p {
+  margin: 12px 0;
+  font-weight: 900;
+}
+
+.buddhism-example h3 {
+  margin: 10px 0 25px;
+
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.9;
+}
+
+
+/* =========================================
+   MIDDLE WAY
+   ========================================= */
+
+.buddhism-contrast {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--pink);
+
+  color: var(--white);
+  text-align: center;
+}
+
+.buddhism-contrast p {
+  margin: 15px 0;
+
+  font-size: clamp(1.5rem, 6vw, 2.8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.buddhism-contrast span {
+  display: block;
+
+  color: var(--yellow);
+
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+
+/* =========================================
+   PRACTICE LIST
+   ========================================= */
+
+.buddhism-practice-list {
+  margin-top: 35px;
+  border-top: 3px solid var(--pink);
+}
+
+.buddhism-practice-list > div {
+  padding: 20px 0;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+
+  border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+.buddhism-practice-list span {
+  color: var(--pink);
+
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.buddhism-practice-list p {
+  margin: 0;
+}
+
+
+/* =========================================
+   ENDING
+   ========================================= */
+
+.buddhism-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.buddhism-ending-small {
+  margin: 0 0 8px;
+
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.buddhism-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 17vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.buddhism-ending h2 span {
+  color: var(--pink);
+}
+
+.buddhism-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.buddhism-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* =========================================
+   BACK TO PERSPECTIVES
+   ========================================= */
+
+.buddhism-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.buddhism-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .buddhism-bipolar-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.22) 62%,
+        rgba(0, 0, 0, 0.05) 100%
+      ),
+      url("bipolar_buddhism_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .buddhism-bipolar-hero h1 {
+    font-size: clamp(6rem, 9vw, 11rem);
+  }
+
+  .buddhism-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .buddhism-section h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .buddhism-copy {
+    font-size: 1.1rem;
+  }
+
+  .buddhism-lead {
+    font-size: 1.5rem;
+  }
+
+  .buddhism-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .buddhism-ending {
+    min-height: 75vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .buddhism-ending h2 {
+    font-size: clamp(6rem, 8vw, 10rem);
+  }
+
+  .buddhism-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 400px) {
+
+  .buddhism-bipolar-hero h1 {
+    font-size: 15vw;
+  }
+
+  .buddhism-section h2 {
+    font-size: 14vw;
+  }
+
+  .buddhism-copy {
+    font-size: 0.98rem;
+  }
+
+  .buddhism-ending h2 {
+    font-size: 16vw;
+  }
+}
+
+/* =========================================
+   BIPOLAR > PERSPECTIVES > HINDUISM
+   ========================================= */
+
+.hinduism-bipolar-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hinduism-bipolar-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.78) 48%,
+      rgba(0, 0, 0, 0.20) 100%
+    ),
+    url("bipolar_hinduism_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hinduism-bipolar-hero-content {
+  width: 100%;
+  max-width: 1200px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.hinduism-bipolar-eyebrow {
+  margin: 0 0 25px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.hinduism-bipolar-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.6rem, 16vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.hinduism-bipolar-hero h1 span {
+  display: block;
+}
+
+.hinduism-bipolar-hero h1 span:nth-child(1) {
+  color: var(--pink);
+}
+
+.hinduism-bipolar-hero h1 span:nth-child(2) {
+  color: var(--white);
+}
+
+.hinduism-bipolar-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.hinduism-bipolar-intro {
+  margin: 40px 0 0;
+
+  color: var(--white);
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   CONTENT
+   ========================================= */
+
+.hinduism-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.hinduism-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.hinduism-section h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+
+  text-transform: uppercase;
+}
+
+.hinduism-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.hinduism-copy > p {
+  margin: 0 0 22px;
+}
+
+.hinduism-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.hinduism-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.6rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   COLORS
+   ========================================= */
+
+.hinduism-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.hinduism-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.hinduism-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.hinduism-purple .hinduism-number {
+  color: var(--yellow);
+}
+
+.hinduism-purple blockquote {
+  color: var(--yellow);
+}
+
+.hinduism-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.hinduism-black .hinduism-number {
+  color: var(--pink);
+}
+
+.hinduism-black h2 {
+  color: var(--yellow);
+}
+
+.hinduism-black blockquote {
+  color: var(--pink);
+}
+
+
+/* =========================================
+   GUNAS
+   ========================================= */
+
+.hinduism-gunas {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.hinduism-gunas > div {
+  padding: 20px;
+
+  background: var(--black);
+  color: var(--white);
+
+  border: 3px solid var(--pink);
+}
+
+.hinduism-gunas span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.hinduism-gunas p {
+  margin: 0;
+  font-weight: 800;
+}
+
+
+/* =========================================
+   WITNESS EXAMPLE
+   ========================================= */
+
+.hinduism-example {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--yellow);
+  border: 4px solid var(--pink);
+
+  color: var(--black);
+}
+
+.hinduism-example p {
+  margin: 12px 0;
+  font-weight: 900;
+}
+
+.hinduism-example h3 {
+  margin: 10px 0 25px;
+
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.9;
+}
+
+
+/* =========================================
+   BALANCE
+   ========================================= */
+
+.hinduism-contrast {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--pink);
+
+  color: var(--white);
+  text-align: center;
+}
+
+.hinduism-contrast p {
+  margin: 15px 0;
+
+  font-size: clamp(1.5rem, 6vw, 2.8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.hinduism-contrast span {
+  display: block;
+
+  color: var(--yellow);
+
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+
+/* =========================================
+   PRACTICE
+   ========================================= */
+
+.hinduism-practice-list {
+  margin-top: 35px;
+  border-top: 3px solid var(--pink);
+}
+
+.hinduism-practice-list > div {
+  padding: 20px 0;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+
+  border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+.hinduism-practice-list span {
+  color: var(--pink);
+
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.hinduism-practice-list p {
+  margin: 0;
+}
+
+
+/* =========================================
+   ENDING
+   ========================================= */
+
+.hinduism-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.hinduism-ending-small {
+  margin: 0 0 8px;
+
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.hinduism-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 17vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.hinduism-ending h2 span {
+  color: var(--pink);
+}
+
+.hinduism-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.hinduism-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* =========================================
+   BACK BUTTON
+   ========================================= */
+
+.hinduism-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.hinduism-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .hinduism-bipolar-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.22) 62%,
+        rgba(0, 0, 0, 0.05) 100%
+      ),
+      url("bipolar_hinduism_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hinduism-bipolar-hero h1 {
+    font-size: clamp(6rem, 9vw, 11rem);
+  }
+
+  .hinduism-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .hinduism-section h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .hinduism-copy {
+    font-size: 1.1rem;
+  }
+
+  .hinduism-lead {
+    font-size: 1.5rem;
+  }
+
+  .hinduism-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .hinduism-gunas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hinduism-ending {
+    min-height: 75vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .hinduism-ending h2 {
+    font-size: clamp(6rem, 8vw, 10rem);
+  }
+
+  .hinduism-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 400px) {
+
+  .hinduism-bipolar-hero h1 {
+    font-size: 15vw;
+  }
+
+  .hinduism-section h2 {
+    font-size: 14vw;
+  }
+
+  .hinduism-copy {
+    font-size: 0.98rem;
+  }
+
+  .hinduism-ending h2 {
+    font-size: 16vw;
+  }
+}
+
+/* =========================================
+   BIPOLAR > PERSPECTIVES > STOICISM
+   ========================================= */
+
+.stoicism-bipolar-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.stoicism-bipolar-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.78) 48%,
+      rgba(0, 0, 0, 0.20) 100%
+    ),
+    url("bipolar_stoicism_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.stoicism-bipolar-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.stoicism-bipolar-eyebrow {
+  margin: 0 0 25px;
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.stoicism-bipolar-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.6rem, 16vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.stoicism-bipolar-hero h1 span {
+  display: block;
+}
+
+.stoicism-bipolar-hero h1 span:nth-child(1) {
+  color: var(--pink);
+}
+
+.stoicism-bipolar-hero h1 span:nth-child(2) {
+  color: var(--white);
+}
+
+.stoicism-bipolar-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.stoicism-bipolar-intro {
+  margin: 40px 0 0;
+
+  color: var(--white);
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+
+/* CONTENT */
+
+.stoicism-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.stoicism-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.stoicism-section h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.stoicism-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.stoicism-copy > p {
+  margin: 0 0 22px;
+}
+
+.stoicism-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.stoicism-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.6rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/* COLORS */
+
+.stoicism-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.stoicism-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.stoicism-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.stoicism-purple .stoicism-number,
+.stoicism-purple blockquote {
+  color: var(--yellow);
+}
+
+.stoicism-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.stoicism-black .stoicism-number {
+  color: var(--pink);
+}
+
+.stoicism-black h2 {
+  color: var(--yellow);
+}
+
+.stoicism-black blockquote {
+  color: var(--pink);
+}
+
+
+/* FIRST IMPRESSION */
+
+.stoicism-example {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--pink);
+
+  color: var(--white);
+}
+
+.stoicism-example p {
+  margin: 12px 0;
+  color: var(--pink);
+  font-weight: 900;
+}
+
+.stoicism-example h3 {
+  margin: 10px 0 28px;
+
+  color: var(--yellow);
+
+  font-size: clamp(1.8rem, 7vw, 3.6rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.95;
+}
+
+
+/* PAUSE */
+
+.stoicism-pause {
+  margin: 35px 0;
+  padding: 25px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  background: var(--yellow);
+  border: 4px solid var(--pink);
+
+  color: var(--black);
+}
+
+.stoicism-pause span {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.stoicism-pause b {
+  color: var(--pink);
+  font-size: 1.8rem;
+}
+
+
+/* VALUES */
+
+.stoicism-values {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.stoicism-values > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.stoicism-values span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.stoicism-values p {
+  margin: 0;
+  font-weight: 800;
+}
+
+
+/* LESSONS */
+
+.stoicism-lessons {
+  margin: 35px 0;
+
+  border-top: 4px solid var(--black);
+  border-bottom: 4px solid var(--black);
+}
+
+.stoicism-lessons p {
+  margin: 0;
+  padding: 18px 0;
+
+  border-bottom: 2px solid rgba(0, 0, 0, 0.35);
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.stoicism-lessons p:last-child {
+  border-bottom: 0;
+}
+
+
+/* PRACTICE */
+
+.stoicism-practice-list {
+  margin-top: 35px;
+  border-top: 3px solid var(--pink);
+}
+
+.stoicism-practice-list > div {
+  padding: 20px 0;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+
+  border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+.stoicism-practice-list span {
+  color: var(--pink);
+
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.stoicism-practice-list p {
+  margin: 0;
+}
+
+
+/* ENDING */
+
+.stoicism-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.stoicism-ending-small {
+  margin: 0 0 8px;
+
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.stoicism-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 17vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.stoicism-ending h2 span {
+  color: var(--pink);
+}
+
+.stoicism-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.stoicism-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK BUTTON */
+
+.stoicism-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.stoicism-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .stoicism-bipolar-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.22) 62%,
+        rgba(0, 0, 0, 0.05) 100%
+      ),
+      url("bipolar_stoicism_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .stoicism-bipolar-hero h1 {
+    font-size: clamp(6rem, 9vw, 11rem);
+  }
+
+  .stoicism-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .stoicism-section h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .stoicism-copy {
+    font-size: 1.1rem;
+  }
+
+  .stoicism-lead {
+    font-size: 1.5rem;
+  }
+
+  .stoicism-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .stoicism-values {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stoicism-ending {
+    min-height: 75vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .stoicism-ending h2 {
+    font-size: clamp(6rem, 8vw, 10rem);
+  }
+
+  .stoicism-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .stoicism-bipolar-hero h1 {
+    font-size: 15vw;
+  }
+
+  .stoicism-section h2 {
+    font-size: 14vw;
+  }
+
+  .stoicism-copy {
+    font-size: 0.98rem;
+  }
+
+  .stoicism-ending h2 {
+    font-size: 16vw;
+  }
+}
+
+/* =========================================
+   BIPOLAR > PERSPECTIVES > CBT
+   ========================================= */
+
+.cbt-bipolar-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.cbt-bipolar-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.78) 48%,
+      rgba(0, 0, 0, 0.20) 100%
+    ),
+    url("bipolar_cbt_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cbt-bipolar-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.cbt-bipolar-eyebrow {
+  margin: 0 0 25px;
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.cbt-bipolar-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.6rem, 16vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.cbt-bipolar-hero h1 span {
+  display: block;
+}
+
+.cbt-bipolar-hero h1 span:nth-child(1) {
+  color: var(--pink);
+}
+
+.cbt-bipolar-hero h1 span:nth-child(2) {
+  color: var(--white);
+}
+
+.cbt-bipolar-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.cbt-bipolar-intro {
+  margin: 40px 0 0;
+
+  color: var(--white);
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+
+/* CONTENT */
+
+.cbt-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.cbt-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.cbt-section h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.cbt-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.cbt-copy > p {
+  margin: 0 0 22px;
+}
+
+.cbt-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.cbt-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.6rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/* COLORS */
+
+.cbt-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.cbt-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.cbt-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.cbt-purple .cbt-number,
+.cbt-purple blockquote {
+  color: var(--yellow);
+}
+
+.cbt-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.cbt-black .cbt-number {
+  color: var(--pink);
+}
+
+.cbt-black h2 {
+  color: var(--yellow);
+}
+
+.cbt-black blockquote {
+  color: var(--pink);
+}
+
+
+/* CBT CHAIN */
+
+.cbt-chain {
+  margin: 35px 0;
+  padding: 25px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.cbt-chain span {
+  font-size: 1.15rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.cbt-chain b {
+  color: var(--pink);
+  font-size: 1.8rem;
+}
+
+
+/* AUTOMATIC THOUGHT EXAMPLE */
+
+.cbt-example {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--pink);
+
+  color: var(--white);
+}
+
+.cbt-example p {
+  margin: 12px 0;
+  color: var(--pink);
+  font-weight: 900;
+}
+
+.cbt-example h3 {
+  margin: 8px 0 28px;
+
+  color: var(--yellow);
+
+  font-size: clamp(1.8rem, 7vw, 3.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+
+/* DISTORTIONS */
+
+.cbt-distortions {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.cbt-distortions > div {
+  padding: 20px;
+
+  border: 3px solid var(--pink);
+  background: #111;
+
+  color: var(--white);
+}
+
+.cbt-distortions span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--yellow);
+
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.cbt-distortions p {
+  margin: 0;
+}
+
+
+/* EVIDENCE */
+
+.cbt-evidence {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.cbt-evidence-thought {
+  margin: 0 !important;
+  padding: 25px;
+
+  background: var(--black);
+  color: var(--yellow);
+
+  border: 4px solid var(--black);
+
+  font-size: clamp(1.7rem, 6vw, 3rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.cbt-evidence > div {
+  padding: 20px;
+
+  background: var(--yellow);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+}
+
+.cbt-evidence span {
+  display: block;
+  margin-bottom: 7px;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.cbt-evidence p {
+  margin: 0;
+}
+
+
+/* REFRAME */
+
+.cbt-reframe {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 12px;
+
+  text-align: center;
+}
+
+.cbt-reframe > div {
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--pink);
+
+  color: var(--white);
+}
+
+.cbt-reframe span {
+  display: block;
+  margin-bottom: 10px;
+
+  color: var(--yellow);
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.cbt-reframe p {
+  margin: 0;
+
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.cbt-reframe > b {
+  color: var(--pink);
+  font-size: 2.5rem;
+}
+
+
+/* PRACTICE */
+
+.cbt-practice-list {
+  margin-top: 35px;
+  border-top: 3px solid var(--pink);
+}
+
+.cbt-practice-list > div {
+  padding: 20px 0;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+
+  border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+.cbt-practice-list span {
+  color: var(--pink);
+
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.cbt-practice-list p {
+  margin: 0;
+}
+
+
+/* ENDING */
+
+.cbt-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.cbt-ending-small {
+  margin: 0 0 8px;
+
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.cbt-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 17vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.cbt-ending h2 span {
+  color: var(--pink);
+}
+
+.cbt-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.cbt-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK BUTTON */
+
+.cbt-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.cbt-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .cbt-bipolar-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.22) 62%,
+        rgba(0, 0, 0, 0.05) 100%
+      ),
+      url("bipolar_cbt_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .cbt-bipolar-hero h1 {
+    font-size: clamp(6rem, 9vw, 11rem);
+  }
+
+  .cbt-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .cbt-section h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .cbt-copy {
+    font-size: 1.1rem;
+  }
+
+  .cbt-lead {
+    font-size: 1.5rem;
+  }
+
+  .cbt-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .cbt-distortions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cbt-evidence {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cbt-evidence-thought {
+    grid-column: 1 / -1;
+  }
+
+  .cbt-ending {
+    min-height: 75vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .cbt-ending h2 {
+    font-size: clamp(6rem, 8vw, 10rem);
+  }
+
+  .cbt-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .cbt-bipolar-hero h1 {
+    font-size: 15vw;
+  }
+
+  .cbt-section h2 {
+    font-size: 14vw;
+  }
+
+  .cbt-copy {
+    font-size: 0.98rem;
+  }
+
+  .cbt-ending h2 {
+    font-size: 16vw;
+  }
+}
+
+/* =========================================
+   BIPOLAR > PERSPECTIVES > DBT
+   ========================================= */
+
+.dbt-bipolar-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.dbt-bipolar-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.78) 48%,
+      rgba(0, 0, 0, 0.20) 100%
+    ),
+    url("bipolar_dbt_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.dbt-bipolar-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.dbt-bipolar-eyebrow {
+  margin: 0 0 25px;
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.dbt-bipolar-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.6rem, 16vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.dbt-bipolar-hero h1 span {
+  display: block;
+}
+
+.dbt-bipolar-hero h1 span:nth-child(1) {
+  color: var(--pink);
+}
+
+.dbt-bipolar-hero h1 span:nth-child(2) {
+  color: var(--white);
+}
+
+.dbt-bipolar-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.dbt-bipolar-intro {
+  margin: 40px 0 0;
+
+  color: var(--white);
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+
+/* CONTENT */
+
+.dbt-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.dbt-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.dbt-section h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.dbt-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.dbt-copy > p {
+  margin: 0 0 22px;
+}
+
+.dbt-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.dbt-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.6rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/* COLORS */
+
+.dbt-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.dbt-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.dbt-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.dbt-purple .dbt-number,
+.dbt-purple blockquote {
+  color: var(--yellow);
+}
+
+.dbt-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.dbt-black .dbt-number {
+  color: var(--pink);
+}
+
+.dbt-black h2 {
+  color: var(--yellow);
+}
+
+.dbt-black blockquote {
+  color: var(--pink);
+}
+
+
+/* DIALECTIC */
+
+.dbt-dialectic {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 10px;
+
+  text-align: center;
+}
+
+.dbt-dialectic > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.dbt-dialectic span {
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.dbt-dialectic b {
+  font-size: 2rem;
+}
+
+
+/* WISE MIND */
+
+.dbt-minds {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.dbt-minds > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--pink);
+
+  color: var(--white);
+}
+
+.dbt-minds span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.dbt-minds p {
+  margin: 0;
+}
+
+
+/* MINDFULNESS EXAMPLE */
+
+.dbt-example {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--yellow);
+  border: 4px solid var(--pink);
+
+  color: var(--black);
+}
+
+.dbt-example p {
+  margin: 12px 0;
+  font-weight: 900;
+}
+
+.dbt-example h3 {
+  margin: 8px 0 28px;
+
+  font-size: clamp(1.8rem, 7vw, 3.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+
+/* EMOTION REGULATION */
+
+.dbt-regulation {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.dbt-regulation > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.dbt-regulation span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.dbt-regulation p {
+  margin: 0;
+}
+
+
+/* OPPOSITE ACTION */
+
+.dbt-opposite {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 10px;
+
+  text-align: center;
+}
+
+.dbt-opposite > div {
+  padding: 22px;
+
+  background: var(--black);
+  border: 4px solid var(--pink);
+
+  color: var(--white);
+}
+
+.dbt-opposite span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.dbt-opposite p {
+  margin: 0;
+  font-weight: 800;
+}
+
+.dbt-opposite b {
+  color: var(--pink);
+  font-size: 2.5rem;
+}
+
+
+/* RELATIONSHIPS */
+
+.dbt-relationship {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.dbt-relationship span {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* PRACTICE */
+
+.dbt-practice-list {
+  margin-top: 35px;
+  border-top: 3px solid var(--pink);
+}
+
+.dbt-practice-list > div {
+  padding: 20px 0;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+
+  border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+.dbt-practice-list span {
+  color: var(--pink);
+
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.dbt-practice-list p {
+  margin: 0;
+}
+
+
+/* ENDING */
+
+.dbt-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.dbt-ending-small {
+  margin: 0 0 8px;
+
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.dbt-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 17vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.dbt-ending h2 span {
+  color: var(--pink);
+}
+
+.dbt-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.dbt-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK BUTTON */
+
+.dbt-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.dbt-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .dbt-bipolar-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.22) 62%,
+        rgba(0, 0, 0, 0.05) 100%
+      ),
+      url("bipolar_dbt_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .dbt-bipolar-hero h1 {
+    font-size: clamp(6rem, 9vw, 11rem);
+  }
+
+  .dbt-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .dbt-section h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .dbt-copy {
+    font-size: 1.1rem;
+  }
+
+  .dbt-lead {
+    font-size: 1.5rem;
+  }
+
+  .dbt-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .dbt-minds {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dbt-regulation {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dbt-ending {
+    min-height: 75vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .dbt-ending h2 {
+    font-size: clamp(6rem, 8vw, 10rem);
+  }
+
+  .dbt-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .dbt-bipolar-hero h1 {
+    font-size: 15vw;
+  }
+
+  .dbt-section h2 {
+    font-size: 14vw;
+  }
+
+  .dbt-copy {
+    font-size: 0.98rem;
+  }
+
+  .dbt-ending h2 {
+    font-size: 16vw;
+  }
+}
+
+/* =========================================
+   BIPOLAR > PERSPECTIVES > IFS
+   ========================================= */
+
+.ifs-bipolar-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.ifs-bipolar-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.78) 48%,
+      rgba(0, 0, 0, 0.20) 100%
+    ),
+    url("bipolar_ifs_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ifs-bipolar-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.ifs-bipolar-eyebrow {
+  margin: 0 0 25px;
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.ifs-bipolar-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.6rem, 16vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.ifs-bipolar-hero h1 span {
+  display: block;
+}
+
+.ifs-bipolar-hero h1 span:nth-child(1) {
+  color: var(--pink);
+}
+
+.ifs-bipolar-hero h1 span:nth-child(2) {
+  color: var(--white);
+}
+
+.ifs-bipolar-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.ifs-bipolar-intro {
+  margin: 40px 0 0;
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+
+/* SECTIONS */
+
+.ifs-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.ifs-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.ifs-section h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.ifs-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.ifs-copy > p {
+  margin: 0 0 22px;
+}
+
+.ifs-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.ifs-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.6rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/* COLORS */
+
+.ifs-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.ifs-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ifs-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.ifs-purple .ifs-number,
+.ifs-purple blockquote {
+  color: var(--yellow);
+}
+
+.ifs-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.ifs-black .ifs-number {
+  color: var(--pink);
+}
+
+.ifs-black h2 {
+  color: var(--yellow);
+}
+
+.ifs-black blockquote {
+  color: var(--pink);
+}
+
+
+/* SELF QUALITIES */
+
+.ifs-self-grid {
+  margin: 35px 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.ifs-self-grid span {
+  padding: 18px 10px;
+
+  background: var(--black);
+  border: 3px solid var(--pink);
+
+  color: var(--white);
+
+  text-align: center;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* PARTS */
+
+.ifs-parts {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ifs-parts > div {
+  padding: 20px;
+
+  background: #111;
+  border: 3px solid var(--pink);
+}
+
+.ifs-parts span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ifs-parts p {
+  margin: 0;
+}
+
+
+/* QUESTIONS */
+
+.ifs-questions {
+  margin: 35px 0;
+
+  border-top: 4px solid var(--black);
+  border-bottom: 4px solid var(--black);
+}
+
+.ifs-questions p {
+  margin: 0;
+  padding: 18px 0;
+
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ifs-questions p:last-child {
+  border-bottom: 0;
+}
+
+
+/* UNBLENDING */
+
+.ifs-unblend {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 12px;
+
+  text-align: center;
+}
+
+.ifs-unblend > div {
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--pink);
+
+  color: var(--white);
+}
+
+.ifs-unblend span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ifs-unblend p {
+  margin: 0;
+
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.ifs-unblend > b {
+  color: var(--pink);
+  font-size: 2.5rem;
+}
+
+
+/* POLARIZED PARTS */
+
+.ifs-polarized {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 12px;
+
+  text-align: center;
+}
+
+.ifs-polarized > div {
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+}
+
+.ifs-polarized span {
+  display: block;
+  margin-bottom: 10px;
+
+  color: var(--pink);
+
+  font-weight: 900;
+}
+
+.ifs-polarized h3 {
+  margin: 0;
+
+  color: var(--white);
+
+  font-size: clamp(1.5rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.ifs-polarized > b {
+  color: var(--yellow);
+  font-size: 2rem;
+}
+
+
+/* ACCOUNTABILITY */
+
+.ifs-accountability {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 10px;
+
+  text-align: center;
+}
+
+.ifs-accountability > div {
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.ifs-accountability span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ifs-accountability p {
+  margin: 0;
+}
+
+.ifs-accountability > b {
+  font-size: 2.5rem;
+}
+
+
+/* PRACTICE */
+
+.ifs-practice-list {
+  margin-top: 35px;
+  border-top: 3px solid var(--pink);
+}
+
+.ifs-practice-list > div {
+  padding: 20px 0;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+
+  border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+.ifs-practice-list span {
+  color: var(--pink);
+
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.ifs-practice-list p {
+  margin: 0;
+}
+
+
+/* ENDING */
+
+.ifs-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ifs-ending-small {
+  margin: 0 0 8px;
+
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ifs-ending h2 {
+  margin: 0;
+
+  font-size: clamp(3.7rem, 16vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.ifs-ending h2 span {
+  color: var(--pink);
+}
+
+.ifs-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.ifs-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK BUTTON */
+
+.ifs-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.ifs-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .ifs-bipolar-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.22) 62%,
+        rgba(0, 0, 0, 0.05) 100%
+      ),
+      url("bipolar_ifs_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .ifs-bipolar-hero h1 {
+    font-size: clamp(6rem, 9vw, 11rem);
+  }
+
+  .ifs-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .ifs-section h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .ifs-copy {
+    font-size: 1.1rem;
+  }
+
+  .ifs-lead {
+    font-size: 1.5rem;
+  }
+
+  .ifs-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .ifs-self-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ifs-parts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ifs-unblend,
+  .ifs-accountability {
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+
+  .ifs-polarized {
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+
+  .ifs-ending {
+    min-height: 75vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .ifs-ending h2 {
+    font-size: clamp(5rem, 7.5vw, 9rem);
+  }
+
+  .ifs-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .ifs-bipolar-hero h1 {
+    font-size: 15vw;
+  }
+
+  .ifs-section h2 {
+    font-size:
+     14vw;
+  }
+
+  .ifs-copy {
+    font-size: 0.98rem;
+  }
+
+  .ifs-ending h2 {
+    font-size: 15vw;
+  }
+}
+
+/* =========================================
+   BIPOLAR > PERSPECTIVES > BIG PICTURE
+   ========================================= */
+
+.big-picture-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.big-picture-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.78) 48%,
+      rgba(0, 0, 0, 0.20) 100%
+    ),
+    url("bipolar_big_picture_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.big-picture-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.big-picture-eyebrow {
+  margin: 0 0 25px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.big-picture-hero h1 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.big-picture-hero h1 span {
+  display: block;
+}
+
+.big-picture-hero h1 span:nth-child(1) {
+  color: var(--white);
+}
+
+.big-picture-hero h1 span:nth-child(2) {
+  color: var(--pink);
+}
+
+.big-picture-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.big-picture-intro {
+  margin: 40px 0 0;
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+
+/* SECTIONS */
+
+.big-picture-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.big-picture-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.big-picture-section h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.big-picture-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.big-picture-copy > p {
+  margin: 0 0 22px;
+}
+
+.big-picture-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.big-picture-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.6rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/* COLORS */
+
+.big-picture-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.big-picture-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.big-picture-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.big-picture-purple .big-picture-number,
+.big-picture-purple blockquote {
+  color: var(--yellow);
+}
+
+.big-picture-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.big-picture-black .big-picture-number {
+  color: var(--pink);
+}
+
+.big-picture-black h2 {
+  color: var(--yellow);
+}
+
+.big-picture-black blockquote {
+  color: var(--pink);
+}
+
+
+/* LENS QUESTION */
+
+.big-picture-lens {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.big-picture-lens span {
+  display: block;
+  margin-bottom: 10px;
+
+  color: var(--pink);
+
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.big-picture-lens h3 {
+  margin: 0;
+
+  color: var(--yellow);
+
+  font-size: clamp(1.7rem, 6vw, 3rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+
+/* ALL TOGETHER */
+
+.big-picture-stack {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.big-picture-stack > div {
+  padding: 20px;
+
+  background: #111;
+  border: 3px solid var(--pink);
+}
+
+.big-picture-stack span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--yellow);
+
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.big-picture-stack p {
+  margin: 0;
+}
+
+
+/* COMMON GROUND */
+
+.big-picture-common {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.big-picture-common > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.big-picture-common span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--yellow);
+
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.big-picture-common p {
+  margin: 0;
+}
+
+
+/* ENDING */
+
+.big-picture-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.big-picture-ending-small {
+  margin: 0 0 10px;
+
+  font-size: 1.35rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.big-picture-ending h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.big-picture-ending h2 span {
+  color: var(--pink);
+}
+
+.big-picture-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.big-picture-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK BUTTON */
+
+.big-picture-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.big-picture-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .big-picture-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.22) 62%,
+        rgba(0, 0, 0, 0.05) 100%
+      ),
+      url("bipolar_big_picture_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .big-picture-hero h1 {
+    font-size: clamp(7rem, 10vw, 12rem);
+  }
+
+  .big-picture-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .big-picture-section h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .big-picture-copy {
+    font-size: 1.1rem;
+  }
+
+  .big-picture-lead {
+    font-size: 1.5rem;
+  }
+
+  .big-picture-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .big-picture-stack,
+  .big-picture-common {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .big-picture-ending {
+    min-height: 80vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .big-picture-ending h2 {
+    font-size: clamp(5rem, 7.5vw, 9rem);
+  }
+
+  .big-picture-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .big-picture-hero h1 {
+    font-size: 17vw;
+  }
+
+  .big-picture-section h2 {
+    font-size: 14vw;
+  }
+
+  .big-picture-copy {
+    font-size: 0.98rem;
+  }
+
+  .big-picture-ending h2 {
+    font-size: 14vw;
+  }
+}
+
