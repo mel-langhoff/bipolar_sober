@@ -220,7 +220,7 @@ body {
       rgba(0, 0, 0, 0.72) 55%,
       rgba(255, 20, 147, 0.18) 100%
     ),
-    url("mobile_background.png");
+    url("so_you_want_to_drink_mobile_background.png");
 
   background-size: cover;
   background-position: center;
@@ -477,7 +477,7 @@ body {
         rgba(0, 0, 0, 0.78) 43%,
         rgba(0, 0, 0, 0.22) 100%
       ),
-      url("desktop_background.png");
+      url("so_you_want_to_drink_desktop_background.png");
 
     background-position: center;
   }
@@ -573,5 +573,2040 @@ body {
 
   .drink-ending h2 {
     font-size: 17vw;
+  }
+}
+
+/* =========================================
+   RESOURCES LANDING PAGE
+   ========================================= */
+
+.resources-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.resources-hero {
+  min-height: 100svh;
+
+  padding: 30px 18px 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("resources_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+
+.resources-eyebrow {
+  margin: 0 0 20px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+}
+
+
+.resources-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.8rem, 18vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+
+.resources-hero h1 span {
+  display: block;
+}
+
+
+.resources-hero h1 span:nth-child(1) {
+  color: var(--yellow);
+}
+
+
+.resources-hero h1 span:nth-child(2) {
+  color: var(--white);
+}
+
+
+.resources-hero h1 span:nth-child(3) {
+  color: var(--pink);
+}
+
+
+.resources-intro {
+  max-width: 600px;
+
+  margin: 40px 0 25px;
+
+  color: var(--yellow);
+
+  font-size: clamp(1.4rem, 6vw, 2.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+
+  text-transform: uppercase;
+}
+
+
+.resources-button {
+  width: fit-content;
+
+  padding: 14px 18px;
+
+  background: var(--yellow);
+
+  color: var(--black);
+
+  border: 3px solid var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+}
+
+
+.resources-button:hover {
+  background: var(--pink);
+}
+
+
+/* RESOURCE LIST */
+
+.resources-list {
+  padding: 60px 18px 80px;
+
+  background: var(--pink);
+
+  color: var(--black);
+}
+
+
+.resources-heading > p {
+  margin: 0 0 35px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+}
+
+
+.resources-heading h2 {
+  margin: 0 0 50px;
+
+  font-size: clamp(4rem, 17vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+
+/* CARDS */
+
+.resource-grid {
+  display: grid;
+  gap: 12px;
+}
+
+
+.resource-card {
+  min-height: 360px;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--black);
+
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+
+  text-decoration: none;
+}
+
+
+.resource-number {
+  margin: 0 0 50px;
+
+  color: var(--pink);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+
+  letter-spacing: 0.1em;
+}
+
+
+.resource-card h3 {
+  margin: 0;
+
+  color: var(--yellow);
+
+  font-size: clamp(2.8rem, 12vw, 5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.78;
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+
+.resource-description {
+  max-width: 500px;
+
+  margin: 30px 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+
+.resource-link {
+  margin-top: auto;
+
+  color: var(--pink);
+
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+
+.featured-resource {
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease;
+}
+
+
+.featured-resource:hover {
+  background: var(--yellow);
+  color: var(--black);
+
+  transform: translate(-5px, -5px);
+}
+
+
+.featured-resource:hover h3 {
+  color: var(--black);
+}
+
+
+.featured-resource:hover .resource-link {
+  color: var(--pink);
+}
+
+
+.coming-soon {
+  opacity: 0.65;
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .resources-hero {
+    padding: 60px 6vw;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.6) 50%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url("resources_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .resources-hero h1 {
+    max-width: 1100px;
+
+    font-size: clamp(6rem, 10vw, 11rem);
+  }
+
+
+  .resources-intro {
+    font-size: 2.3rem;
+  }
+
+
+  .resources-list {
+    padding: 100px 6vw;
+  }
+
+
+  .resources-heading h2 {
+    font-size: clamp(5rem, 8vw, 9rem);
+  }
+
+
+  .resource-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+  }
+
+
+  .resource-card {
+    min-height: 500px;
+
+    padding: 35px;
+  }
+
+
+  .resource-card h3 {
+    font-size: clamp(3.5rem, 5vw, 6rem);
+  }
+
+
+  .resource-description {
+    font-size: 1.15rem;
+  }
+}
+
+/* =========================================
+   BIPOLAR LANDING PAGE
+   ========================================= */
+
+.bipolar-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--black);
+}
+
+
+/* HERO */
+
+.bipolar-hero {
+  min-height: 100svh;
+  padding: 30px 18px 50px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.88) 0%,
+      rgba(0, 0, 0, 0.55) 55%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url("bipolar_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.bipolar-hero-content {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.bipolar-eyebrow {
+  margin: 0 0 20px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.bipolar-hero h1 {
+  margin: 0;
+
+  font-size: clamp(5rem, 23vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.72;
+  letter-spacing: -0.075em;
+
+  text-transform: uppercase;
+}
+
+.bipolar-hero h1 span {
+  display: block;
+}
+
+.bipolar-hero h1 span:first-child {
+  color: var(--yellow);
+}
+
+.bipolar-hero h1 span:last-child {
+  color: var(--pink);
+}
+
+.bipolar-intro {
+  max-width: 650px;
+
+  margin: 40px 0 25px;
+
+  color: var(--white);
+
+  font-size: clamp(1.35rem, 6vw, 2.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.bipolar-button {
+  display: inline-block;
+
+  padding: 14px 20px;
+
+  background: var(--yellow);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.bipolar-button:hover {
+  background: var(--pink);
+  transform: translate(-3px, -3px);
+}
+
+
+/* TOPICS */
+
+.bipolar-topics {
+  padding: 65px 18px 80px;
+
+  background: var(--pink);
+  color: var(--black);
+}
+
+.bipolar-topics-heading > p:first-child {
+  margin: 0 0 30px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.bipolar-topics-heading h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 17vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.74;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.bipolar-topics-subtitle {
+  max-width: 650px;
+
+  margin: 35px 0 50px;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+
+/* GRID */
+
+.bipolar-grid {
+  display: grid;
+  gap: 12px;
+}
+
+
+/* CARDS */
+
+.bipolar-card {
+  min-height: 380px;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 3px solid var(--black);
+
+  color: var(--black);
+  text-decoration: none;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.bipolar-card:hover {
+  transform: translate(-5px, -5px);
+
+  box-shadow:
+    7px 7px 0 var(--black);
+}
+
+.bipolar-card-number {
+  margin: 0 0 50px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.bipolar-card h3 {
+  margin: 0;
+
+  font-size: clamp(2.8rem, 12vw, 5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.78;
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.bipolar-card-description {
+  max-width: 500px;
+
+  margin: 30px 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.bipolar-card span {
+  margin-top: auto;
+
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+
+/* CARD COLORS */
+
+.card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.card-black {
+  background: var(--black);
+  border-color: var(--yellow);
+  color: var(--white);
+}
+
+.card-black h3 {
+  color: var(--yellow);
+}
+
+.card-black span {
+  color: var(--pink);
+}
+
+
+/* MIXED EPISODE CARD */
+
+.card-split {
+  position: relative;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--pink) 0%,
+      var(--pink) 48%,
+      var(--yellow) 48%,
+      var(--yellow) 100%
+    );
+
+  color: var(--black);
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .bipolar-hero {
+    min-height: 100vh;
+
+    padding: 60px 6vw;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.92) 0%,
+        rgba(0, 0, 0, 0.68) 38%,
+        rgba(0, 0, 0, 0.15) 72%,
+        rgba(0, 0, 0, 0.05) 100%
+      ),
+      url("bipolar_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bipolar-hero h1 {
+    font-size: clamp(7rem, 12vw, 12rem);
+  }
+
+  .bipolar-intro {
+    font-size: 2.2rem;
+  }
+
+
+  /* TOPICS */
+
+  .bipolar-topics {
+    padding: 100px 6vw;
+  }
+
+  .bipolar-topics-heading h2 {
+    font-size: clamp(5rem, 8vw, 9rem);
+  }
+
+  .bipolar-topics-subtitle {
+    font-size: 1.25rem;
+  }
+
+
+  /* 3 x 2 GRID */
+
+  .bipolar-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .bipolar-card {
+    min-height: 500px;
+    padding: 30px;
+  }
+
+  .bipolar-card h3 {
+    font-size: clamp(3rem, 4vw, 5rem);
+  }
+
+  .bipolar-card-description {
+    font-size: 1.05rem;
+  }
+}
+
+/* =========================================
+   ADDICTION LANDING PAGE
+   ========================================= */
+
+.addiction-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--black);
+}
+
+
+/* HERO */
+
+.addiction-hero {
+  min-height: 100svh;
+  padding: 30px 18px 50px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.90) 0%,
+      rgba(0, 0, 0, 0.62) 55%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url("addiction_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.addiction-hero-content {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.addiction-eyebrow {
+  margin: 0 0 20px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.addiction-hero h1 {
+  margin: 0;
+
+  font-size: clamp(4.7rem, 21vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.72;
+  letter-spacing: -0.075em;
+
+  text-transform: uppercase;
+}
+
+.addiction-hero h1 span {
+  display: block;
+}
+
+.addiction-hero h1 span:first-child {
+  color: var(--yellow);
+}
+
+.addiction-hero h1 span:last-child {
+  color: var(--pink);
+}
+
+.addiction-intro {
+  max-width: 650px;
+
+  margin: 40px 0 25px;
+
+  color: var(--white);
+
+  font-size: clamp(1.4rem, 6vw, 2.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.addiction-button {
+  display: inline-block;
+
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.addiction-button:hover {
+  background: var(--yellow);
+  transform: translate(-3px, -3px);
+}
+
+
+/* TOPICS */
+
+.addiction-topics {
+  padding: 65px 18px 80px;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.addiction-topics-heading > p:first-child {
+  margin: 0 0 30px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.addiction-topics-heading h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 17vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.74;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.addiction-topics-subtitle {
+  max-width: 650px;
+
+  margin: 35px 0 50px;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+
+/* GRID */
+
+.addiction-grid {
+  display: grid;
+  gap: 12px;
+}
+
+
+/* CARDS */
+
+.addiction-card {
+  min-height: 380px;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 3px solid var(--black);
+
+  color: var(--black);
+  text-decoration: none;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.addiction-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 7px 7px 0 var(--black);
+}
+
+.addiction-card-number {
+  margin: 0 0 50px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.addiction-card h3 {
+  margin: 0;
+
+  font-size: clamp(2.8rem, 12vw, 5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.78;
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.addiction-card-description {
+  max-width: 500px;
+
+  margin: 30px 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.addiction-card span {
+  margin-top: auto;
+
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+
+/* CARD COLORS */
+
+.addiction-card-black {
+  background: var(--black);
+  border-color: var(--pink);
+  color: var(--white);
+}
+
+.addiction-card-black h3 {
+  color: var(--yellow);
+}
+
+.addiction-card-black span {
+  color: var(--pink);
+}
+
+
+.addiction-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+
+.addiction-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+.addiction-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.addiction-card-purple h3 {
+  color: var(--yellow);
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .addiction-hero {
+    min-height: 100vh;
+
+    padding: 60px 6vw;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.93) 0%,
+        rgba(0, 0, 0, 0.70) 38%,
+        rgba(0, 0, 0, 0.18) 72%,
+        rgba(0, 0, 0, 0.05) 100%
+      ),
+      url("addiction_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .addiction-hero h1 {
+    font-size: clamp(7rem, 11vw, 12rem);
+  }
+
+  .addiction-intro {
+    font-size: 2.3rem;
+  }
+
+
+  /* TOPICS */
+
+  .addiction-topics {
+    padding: 100px 6vw;
+  }
+
+  .addiction-topics-heading h2 {
+    font-size: clamp(5rem, 8vw, 9rem);
+  }
+
+  .addiction-topics-subtitle {
+    font-size: 1.25rem;
+  }
+
+
+  /* 2 x 2 GRID */
+
+  .addiction-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .addiction-card {
+    min-height: 470px;
+    padding: 35px;
+  }
+
+  .addiction-card h3 {
+    font-size: clamp(3.5rem, 5vw, 6rem);
+  }
+
+  .addiction-card-description {
+    font-size: 1.1rem;
+  }
+}
+
+/* =========================================
+   SPIRITUALITY LANDING PAGE
+   ========================================= */
+
+.spirituality-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--black);
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.spirituality-hero {
+  min-height: 100svh;
+  padding: 30px 18px 50px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.90) 0%,
+      rgba(0, 0, 0, 0.62) 55%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    url("spirituality_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.spirituality-hero-content {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.spirituality-eyebrow {
+  margin: 0 0 20px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.spirituality-hero h1 {
+  margin: 0;
+
+  font-size: clamp(4.2rem, 19vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.72;
+  letter-spacing: -0.075em;
+
+  text-transform: uppercase;
+}
+
+.spirituality-hero h1 span {
+  display: block;
+}
+
+.spirituality-hero h1 span:first-child {
+  color: var(--yellow);
+}
+
+.spirituality-hero h1 span:last-child {
+  color: var(--pink);
+}
+
+.spirituality-intro {
+  max-width: 650px;
+
+  margin: 40px 0 25px;
+
+  color: var(--white);
+
+  font-size: clamp(1.35rem, 6vw, 2.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.spirituality-button {
+  display: inline-block;
+
+  padding: 14px 20px;
+
+  background: var(--yellow);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.spirituality-button:hover {
+  background: var(--pink);
+  transform: translate(-3px, -3px);
+}
+
+
+/* =========================================
+   TOPICS
+   ========================================= */
+
+.spirituality-topics {
+  padding: 65px 18px 80px;
+
+  background: var(--purple);
+  color: var(--white);
+}
+
+.spirituality-topics-heading > p:first-child {
+  margin: 0 0 30px;
+
+  color: var(--yellow);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.spirituality-topics-heading h2 {
+  margin: 0;
+
+  color: var(--yellow);
+
+  font-size: clamp(4rem, 17vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.74;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.spirituality-topics-subtitle {
+  max-width: 650px;
+
+  margin: 35px 0 50px;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+
+/* =========================================
+   GRID
+   ========================================= */
+
+.spirituality-grid {
+  display: grid;
+  gap: 12px;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.spirituality-card {
+  min-height: 380px;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 3px solid var(--black);
+
+  color: var(--black);
+  text-decoration: none;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.spirituality-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 7px 7px 0 var(--black);
+}
+
+.spirituality-card-number {
+  margin: 0 0 50px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.spirituality-card h3 {
+  margin: 0;
+
+  font-size: clamp(2.8rem, 12vw, 5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.78;
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.spirituality-card-description {
+  max-width: 500px;
+
+  margin: 30px 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.spirituality-card span {
+  margin-top: auto;
+
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+
+/* =========================================
+   CARD COLORS
+   ========================================= */
+
+.spirituality-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.spirituality-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.spirituality-card-purple {
+  background: var(--purple);
+  border-color: var(--yellow);
+  color: var(--white);
+}
+
+.spirituality-card-purple h3 {
+  color: var(--yellow);
+}
+
+.spirituality-card-purple span {
+  color: var(--yellow);
+}
+
+.spirituality-card-black {
+  background: var(--black);
+  border-color: var(--pink);
+  color: var(--white);
+}
+
+.spirituality-card-black h3 {
+  color: var(--pink);
+}
+
+.spirituality-card-black span {
+  color: var(--yellow);
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .spirituality-hero {
+    min-height: 100vh;
+
+    padding: 60px 6vw;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.93) 0%,
+        rgba(0, 0, 0, 0.70) 38%,
+        rgba(0, 0, 0, 0.18) 72%,
+        rgba(0, 0, 0, 0.05) 100%
+      ),
+      url("spirituality_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .spirituality-hero h1 {
+    font-size: clamp(6.5rem, 10vw, 11rem);
+  }
+
+  .spirituality-intro {
+    font-size: 2.3rem;
+  }
+
+
+  /* TOPICS */
+
+  .spirituality-topics {
+    padding: 100px 6vw;
+  }
+
+  .spirituality-topics-heading h2 {
+    font-size: clamp(5rem, 8vw, 9rem);
+  }
+
+  .spirituality-topics-subtitle {
+    font-size: 1.25rem;
+  }
+
+
+  /* 2 x 2 GRID */
+
+  .spirituality-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .spirituality-card {
+    min-height: 470px;
+    padding: 35px;
+  }
+
+  .spirituality-card h3 {
+    font-size: clamp(3.5rem, 5vw, 6rem);
+  }
+
+  .spirituality-card-description {
+    font-size: 1.1rem;
+  }
+}
+
+/* =========================================
+   TOOLBOX LANDING PAGE
+   ========================================= */
+
+.toolbox-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--black);
+}
+
+
+/* HERO */
+
+.toolbox-hero {
+  min-height: 100svh;
+  padding: 30px 18px 50px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.90) 0%,
+      rgba(0, 0, 0, 0.62) 55%,
+      rgba(0, 0, 0, 0.12) 100%
+    ),
+    url("toolbox_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.toolbox-hero-content {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.toolbox-eyebrow {
+  margin: 0 0 20px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.toolbox-hero h1 {
+  margin: 0;
+
+  font-size: clamp(4.5rem, 21vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.72;
+  letter-spacing: -0.075em;
+
+  text-transform: uppercase;
+}
+
+.toolbox-hero h1 span {
+  display: block;
+}
+
+.toolbox-hero h1 span:first-child {
+  color: var(--yellow);
+}
+
+.toolbox-hero h1 span:last-child {
+  color: var(--pink);
+}
+
+.toolbox-intro {
+  max-width: 650px;
+
+  margin: 40px 0 25px;
+
+  color: var(--white);
+
+  font-size: clamp(1.35rem, 6vw, 2.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.toolbox-button {
+  display: inline-block;
+
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.toolbox-button:hover {
+  background: var(--yellow);
+  transform: translate(-3px, -3px);
+}
+
+
+/* =========================================
+   TOOLS SECTION
+   ========================================= */
+
+.toolbox-tools {
+  padding: 65px 18px 80px;
+
+  background: var(--pink);
+  color: var(--black);
+}
+
+.toolbox-heading > p:first-child {
+  margin: 0 0 30px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.toolbox-heading h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 17vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.74;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.toolbox-subtitle {
+  max-width: 650px;
+
+  margin: 35px 0 50px;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+
+/* =========================================
+   GRID
+   ========================================= */
+
+.toolbox-grid {
+  display: grid;
+  gap: 12px;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.toolbox-card {
+  min-height: 380px;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 3px solid var(--black);
+
+  color: var(--black);
+  text-decoration: none;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.toolbox-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 7px 7px 0 var(--black);
+}
+
+.toolbox-card-number {
+  margin: 0 0 50px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.toolbox-card h3 {
+  margin: 0;
+
+  font-size: clamp(2.8rem, 12vw, 5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.78;
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.toolbox-card-description {
+  max-width: 500px;
+
+  margin: 30px 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.toolbox-card span {
+  margin-top: auto;
+
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+
+/* CARD COLORS */
+
+.toolbox-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.toolbox-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.toolbox-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.toolbox-card-purple h3 {
+  color: var(--yellow);
+}
+
+.toolbox-card-black {
+  background: var(--black);
+  border-color: var(--yellow);
+  color: var(--white);
+}
+
+.toolbox-card-black h3 {
+  color: var(--yellow);
+}
+
+.toolbox-card-black span {
+  color: var(--pink);
+}
+
+
+/* EMERGENCY PLAN SPLIT CARD */
+
+.toolbox-card-split {
+  background:
+    linear-gradient(
+      135deg,
+      var(--yellow) 0%,
+      var(--yellow) 48%,
+      var(--pink) 48%,
+      var(--pink) 100%
+    );
+
+  color: var(--black);
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .toolbox-hero {
+    min-height: 100vh;
+
+    padding: 60px 6vw;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.93) 0%,
+        rgba(0, 0, 0, 0.68) 38%,
+        rgba(0, 0, 0, 0.15) 72%,
+        rgba(0, 0, 0, 0.04) 100%
+      ),
+      url("toolbox_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .toolbox-hero h1 {
+    font-size: clamp(7rem, 12vw, 12rem);
+  }
+
+  .toolbox-intro {
+    font-size: 2.3rem;
+  }
+
+
+  /* TOOLS */
+
+  .toolbox-tools {
+    padding: 100px 6vw;
+  }
+
+  .toolbox-heading h2 {
+    font-size: clamp(5rem, 8vw, 9rem);
+  }
+
+  .toolbox-subtitle {
+    font-size: 1.25rem;
+  }
+
+
+  /* 3 x 2 GRID */
+
+  .toolbox-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .toolbox-card {
+    min-height: 500px;
+    padding: 30px;
+  }
+
+  .toolbox-card h3 {
+    font-size: clamp(3rem, 4vw, 5rem);
+  }
+
+  .toolbox-card-description {
+    font-size: 1.05rem;
+  }
+}
+
+/* =========================================
+   PERSPECTIVES LANDING PAGE
+   ========================================= */
+
+.perspectives-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--black);
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.perspectives-hero {
+  min-height: 100svh;
+  padding: 30px 18px 50px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.92) 0%,
+      rgba(0, 0, 0, 0.65) 52%,
+      rgba(0, 0, 0, 0.12) 100%
+    ),
+    url("perspectives_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.perspectives-hero-content {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.perspectives-eyebrow {
+  margin: 0 0 20px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.perspectives-hero h1 {
+  margin: 0;
+
+  font-size: clamp(4.4rem, 20vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.72;
+  letter-spacing: -0.075em;
+
+  text-transform: uppercase;
+}
+
+.perspectives-hero h1 span {
+  display: block;
+}
+
+.perspectives-hero h1 span:first-child {
+  color: var(--yellow);
+}
+
+.perspectives-hero h1 span:last-child {
+  color: var(--pink);
+}
+
+.perspectives-intro {
+  max-width: 650px;
+  margin: 40px 0 25px;
+
+  color: var(--white);
+
+  font-size: clamp(1.4rem, 6vw, 2.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+.perspectives-button {
+  display: inline-block;
+
+  padding: 14px 20px;
+
+  background: var(--yellow);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.perspectives-button:hover {
+  background: var(--pink);
+  transform: translate(-3px, -3px);
+}
+
+
+/* =========================================
+   TOPICS
+   ========================================= */
+
+.perspectives-topics {
+  padding: 65px 18px 80px;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.perspectives-heading > p:first-child {
+  margin: 0 0 30px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.perspectives-heading h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 17vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.74;
+  letter-spacing: -0.07em;
+
+  text-transform: uppercase;
+}
+
+.perspectives-subtitle {
+  max-width: 700px;
+  margin: 35px 0 50px;
+
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+
+/* =========================================
+   GRID
+   ========================================= */
+
+.perspectives-grid {
+  display: grid;
+  gap: 12px;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.perspectives-card {
+  min-height: 380px;
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 3px solid var(--black);
+
+  color: var(--black);
+  text-decoration: none;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.perspectives-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 7px 7px 0 var(--black);
+}
+
+.perspectives-card-number {
+  margin: 0 0 50px;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.perspectives-card h3 {
+  margin: 0;
+
+  font-size: clamp(3rem, 13vw, 5.5rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.78;
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.perspectives-card-description {
+  max-width: 500px;
+  margin: 30px 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.perspectives-card span {
+  margin-top: auto;
+
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+
+/* =========================================
+   CARD COLORS
+   ========================================= */
+
+.perspectives-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.perspectives-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.perspectives-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.perspectives-card-purple h3 {
+  color: var(--yellow);
+}
+
+.perspectives-card-purple span {
+  color: var(--yellow);
+}
+
+.perspectives-card-black {
+  background: var(--black);
+  border-color: var(--pink);
+  color: var(--white);
+}
+
+.perspectives-card-black h3 {
+  color: var(--pink);
+}
+
+.perspectives-card-black span {
+  color: var(--yellow);
+}
+
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 768px) {
+
+  .perspectives-hero {
+    min-height: 100vh;
+    padding: 60px 6vw;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.93) 0%,
+        rgba(0, 0, 0, 0.68) 38%,
+        rgba(0, 0, 0, 0.16) 72%,
+        rgba(0, 0, 0, 0.04) 100%
+      ),
+      url("perspectives_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .perspectives-hero h1 {
+    font-size: clamp(6.5rem, 10vw, 11rem);
+  }
+
+  .perspectives-intro {
+    font-size: 2.3rem;
+  }
+
+
+  /* TOPICS */
+
+  .perspectives-topics {
+    padding: 100px 6vw;
+  }
+
+  .perspectives-heading h2 {
+    font-size: clamp(5rem, 8vw, 9rem);
+  }
+
+  .perspectives-subtitle {
+    font-size: 1.25rem;
+  }
+
+
+  /* 2 x 2 GRID */
+
+  .perspectives-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .perspectives-card {
+    min-height: 470px;
+    padding: 35px;
+  }
+
+  .perspectives-card h3 {
+    font-size: clamp(3.5rem, 5vw, 6rem);
+  }
+
+  .perspectives-card-description {
+    font-size: 1.1rem;
   }
 }
