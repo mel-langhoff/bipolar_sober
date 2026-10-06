@@ -7289,3 +7289,2225 @@ body {
   }
 }
 
+/* =========================================
+   ADDICTION > IMPULSIVITY
+   ========================================= */
+
+.addiction-impulsivity-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.addiction-impulsivity-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.76) 48%,
+      rgba(0, 0, 0, 0.16) 100%
+    ),
+    url("addiction_impulsivity_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.addiction-impulsivity-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.addiction-impulsivity-eyebrow {
+  margin: 0 0 25px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.addiction-impulsivity-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 16vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-impulsivity-hero h1 span {
+  display: block;
+}
+
+.addiction-impulsivity-hero h1 span:nth-child(1) {
+  color: var(--pink);
+}
+
+.addiction-impulsivity-hero h1 span:nth-child(2) {
+  color: var(--white);
+}
+
+.addiction-impulsivity-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.addiction-impulsivity-intro {
+  margin: 40px 0 0;
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+
+/* SECTIONS */
+
+.addiction-impulsivity-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.ai-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.addiction-impulsivity-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3.4rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.ai-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.ai-copy > p {
+  margin: 0 0 22px;
+}
+
+.ai-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.ai-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.55rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/* COLORS */
+
+.ai-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.ai-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ai-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.ai-purple .ai-number,
+.ai-purple blockquote {
+  color: var(--yellow);
+}
+
+.ai-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.ai-black .ai-number {
+  color: var(--pink);
+}
+
+.ai-black .addiction-impulsivity-heading h2 {
+  color: var(--yellow);
+}
+
+.ai-black blockquote {
+  color: var(--pink);
+}
+
+
+/* URGE CYCLE */
+
+.ai-cycle {
+  margin: 35px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.ai-cycle span {
+  padding: 12px 14px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ai-cycle b {
+  font-size: 1.6rem;
+}
+
+
+/* BEHAVIORS */
+
+.ai-behaviors {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ai-behaviors > div {
+  padding: 20px;
+
+  background: #111;
+  border: 3px solid var(--pink);
+}
+
+.ai-behaviors span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ai-behaviors p {
+  margin: 0;
+}
+
+
+/* NOW VS LATER */
+
+.ai-now-later {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 12px;
+
+  text-align: center;
+}
+
+.ai-now-later > div {
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.ai-now-later span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--pink);
+
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ai-now-later p {
+  margin: 0;
+}
+
+.ai-now-later > b {
+  font-size: 2rem;
+}
+
+
+/* IMPULSIVE THOUGHTS */
+
+.ai-thoughts {
+  margin: 35px 0;
+
+  border-top: 4px solid var(--black);
+  border-bottom: 4px solid var(--black);
+}
+
+.ai-thoughts p {
+  margin: 0;
+  padding: 17px 0;
+
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+  font-size: 1.1rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ai-thoughts p:last-child {
+  border-bottom: 0;
+}
+
+
+/* FRICTION */
+
+.ai-friction-grid {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ai-friction-grid > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--pink);
+
+  color: var(--white);
+}
+
+.ai-friction-grid span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ai-friction-grid p {
+  margin: 0;
+}
+
+
+/* PAUSE STEPS */
+
+.ai-pause {
+  margin-top: 35px;
+
+  border-top: 3px solid var(--pink);
+}
+
+.ai-pause > div {
+  padding: 20px 0;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+
+  border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+.ai-pause span {
+  color: var(--pink);
+
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.ai-pause p {
+  margin: 0;
+}
+
+
+/* ENDING */
+
+.addiction-impulsivity-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ai-ending-small {
+  margin: 0 0 10px;
+
+  font-size: 1.35rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.addiction-impulsivity-ending h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-impulsivity-ending h2 span {
+  color: var(--pink);
+}
+
+.ai-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.ai-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK BUTTON */
+
+.ai-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.ai-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .addiction-impulsivity-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.20) 62%,
+        rgba(0, 0, 0, 0.04) 100%
+      ),
+      url("addiction_impulsivity_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .addiction-impulsivity-hero h1 {
+    font-size: clamp(6rem, 8.5vw, 10.5rem);
+  }
+
+  .addiction-impulsivity-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .addiction-impulsivity-heading h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .ai-copy {
+    font-size: 1.1rem;
+  }
+
+  .ai-lead {
+    font-size: 1.5rem;
+  }
+
+  .ai-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .ai-behaviors,
+  .ai-friction-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ai-now-later {
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+
+  .addiction-impulsivity-ending {
+    min-height: 80vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .addiction-impulsivity-ending h2 {
+    font-size: clamp(5rem, 7.5vw, 9rem);
+  }
+
+  .ai-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .addiction-impulsivity-hero h1 {
+    font-size: 15vw;
+  }
+
+  .addiction-impulsivity-heading h2 {
+    font-size: 14vw;
+  }
+
+  .ai-copy {
+    font-size: 0.98rem;
+  }
+
+  .addiction-impulsivity-ending h2 {
+    font-size: 14vw;
+  }
+}
+
+/* =========================================
+   ADDICTION > PERSPECTIVES
+   ========================================= */
+
+.addiction-perspectives-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.addiction-perspectives-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.76) 48%,
+      rgba(0, 0, 0, 0.16) 100%
+    ),
+    url("addiction_perspectives_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.addiction-perspectives-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.addiction-perspectives-eyebrow {
+  margin: 0 0 25px;
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.addiction-perspectives-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.3rem, 15vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-perspectives-hero h1 span {
+  display: block;
+}
+
+.addiction-perspectives-hero h1 span:nth-child(1) {
+  color: var(--pink);
+}
+
+.addiction-perspectives-hero h1 span:nth-child(2) {
+  color: var(--white);
+}
+
+.addiction-perspectives-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.addiction-perspectives-intro {
+  margin: 40px 0 0;
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+
+/* SECTIONS */
+
+.addiction-perspectives-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.ap-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.ap-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.ap-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.ap-copy > p {
+  margin: 0 0 22px;
+}
+
+.ap-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.ap-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.55rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/* COLORS */
+
+.ap-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.ap-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ap-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.ap-purple .ap-number,
+.ap-purple blockquote {
+  color: var(--yellow);
+}
+
+.ap-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.ap-black .ap-number {
+  color: var(--pink);
+}
+
+.ap-black .ap-heading h2 {
+  color: var(--yellow);
+}
+
+.ap-black blockquote {
+  color: var(--pink);
+}
+
+
+/* LENS BOX */
+
+.ap-lens {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.ap-lens span {
+  display: block;
+  margin-bottom: 10px;
+
+  color: var(--pink);
+
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.ap-lens h3 {
+  margin: 0;
+
+  color: var(--yellow);
+
+  font-size: clamp(1.6rem, 6vw, 2.8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+
+/* CBT THOUGHTS */
+
+.ap-thoughts {
+  margin: 35px 0;
+
+  border-top: 4px solid var(--black);
+  border-bottom: 4px solid var(--black);
+}
+
+.ap-thoughts p {
+  margin: 0;
+  padding: 17px 0;
+
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+  font-size: 1.05rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ap-thoughts p:last-child {
+  border-bottom: 0;
+}
+
+
+/* MOOD CHECK */
+
+.ap-mood-check {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ap-mood-check > div {
+  padding: 20px;
+
+  background: #111;
+  border: 3px solid var(--pink);
+}
+
+.ap-mood-check span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.15rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ap-mood-check p {
+  margin: 0;
+}
+
+
+/* SIX LENSES */
+
+.ap-stack {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ap-stack > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.ap-stack span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--pink);
+
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ap-stack p {
+  margin: 0;
+}
+
+
+/* ENDING */
+
+.addiction-perspectives-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ap-ending-small {
+  margin: 0 0 10px;
+
+  font-size: 1.35rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.addiction-perspectives-ending h2 {
+  margin: 0;
+
+  font-size: clamp(3.7rem, 16vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-perspectives-ending h2 span {
+  color: var(--pink);
+}
+
+.ap-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.ap-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK BUTTON */
+
+.ap-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.ap-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .addiction-perspectives-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.20) 62%,
+        rgba(0, 0, 0, 0.04) 100%
+      ),
+      url("addiction_perspectives_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .addiction-perspectives-hero h1 {
+    font-size: clamp(5.5rem, 8vw, 10rem);
+  }
+
+  .addiction-perspectives-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .ap-heading h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .ap-copy {
+    font-size: 1.1rem;
+  }
+
+  .ap-lead {
+    font-size: 1.5rem;
+  }
+
+  .ap-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .ap-mood-check,
+  .ap-stack {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .addiction-perspectives-ending {
+    min-height: 80vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .addiction-perspectives-ending h2 {
+    font-size: clamp(5rem, 7.5vw, 9rem);
+  }
+
+  .ap-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .addiction-perspectives-hero h1 {
+    font-size: 14vw;
+  }
+
+  .ap-heading h2 {
+    font-size: 14vw;
+  }
+
+  .ap-copy {
+    font-size: 0.98rem;
+  }
+
+  .addiction-perspectives-ending h2 {
+    font-size: 15vw;
+  }
+}
+
+/* =========================================
+   ADDICTION > TRIGGERS
+   ========================================= */
+
+.addiction-triggers-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.addiction-triggers-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.76) 48%,
+      rgba(0, 0, 0, 0.16) 100%
+    ),
+    url("addiction_triggers_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.addiction-triggers-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.addiction-triggers-eyebrow {
+  margin: 0 0 25px;
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.addiction-triggers-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.4rem, 15vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-triggers-hero h1 span {
+  display: block;
+}
+
+.addiction-triggers-hero h1 span:nth-child(1) {
+  color: var(--white);
+}
+
+.addiction-triggers-hero h1 span:nth-child(2) {
+  color: var(--pink);
+}
+
+.addiction-triggers-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.addiction-triggers-intro {
+  margin: 40px 0 0;
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+
+/* SECTIONS */
+
+.addiction-triggers-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.at-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.at-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3.4rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.at-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.at-copy > p {
+  margin: 0 0 22px;
+}
+
+.at-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.at-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.55rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/* COLORS */
+
+.at-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.at-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.at-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.at-purple .at-number,
+.at-purple blockquote {
+  color: var(--yellow);
+}
+
+.at-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.at-black .at-number {
+  color: var(--pink);
+}
+
+.at-black .at-heading h2 {
+  color: var(--yellow);
+}
+
+.at-black blockquote {
+  color: var(--pink);
+}
+
+
+/* BIG THREE */
+
+.at-big-three {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.at-big-three > div {
+  padding: 22px;
+
+  background: var(--black);
+  border: 4px solid var(--pink);
+
+  color: var(--white);
+}
+
+.at-big-three span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.35rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.at-big-three p {
+  margin: 0;
+}
+
+
+/* TRIGGER THOUGHT */
+
+.at-trigger-thought {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+
+  color: var(--pink);
+
+  font-size: clamp(1.7rem, 7vw, 3.2rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+
+/* MANIA WARNING GRID */
+
+.at-warning-grid {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.at-warning-grid > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.at-warning-grid span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--pink);
+
+  font-size: 1.15rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.at-warning-grid p {
+  margin: 0;
+}
+
+
+/* TRIGGER CHAIN */
+
+.at-chain {
+  margin: 35px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.at-chain span {
+  padding: 12px 14px;
+
+  background: var(--black);
+  border: 3px solid var(--pink);
+
+  color: var(--white);
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.at-chain b {
+  font-size: 1.6rem;
+}
+
+
+/* INTERNAL / EXTERNAL */
+
+.at-two-column {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 10px;
+}
+
+.at-two-column > div {
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.at-two-column span {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--pink);
+
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.at-two-column p {
+  margin: 0;
+  padding: 8px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.at-two-column p:last-child {
+  border-bottom: 0;
+}
+
+
+/* TRIGGER MAP */
+
+.at-map {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.at-map > div {
+  padding: 20px;
+
+  background: #111;
+  border: 3px solid var(--pink);
+}
+
+.at-map span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--yellow);
+
+  font-size: 1.15rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.at-map p {
+  margin: 0;
+}
+
+
+/* STEPS */
+
+.at-steps {
+  margin: 35px 0;
+
+  border-top: 3px solid var(--black);
+}
+
+.at-steps > div {
+  padding: 20px 0;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+
+  border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+}
+
+.at-steps span {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.at-steps p {
+  margin: 0;
+}
+
+
+/* ENDING */
+
+.addiction-triggers-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.at-ending-small {
+  margin: 0 0 10px;
+
+  font-size: 1.35rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.addiction-triggers-ending h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-triggers-ending h2 span {
+  color: var(--pink);
+}
+
+.at-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.at-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK */
+
+.at-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.at-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .addiction-triggers-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.20) 62%,
+        rgba(0, 0, 0, 0.04) 100%
+      ),
+      url("addiction_triggers_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .addiction-triggers-hero h1 {
+    font-size: clamp(6rem, 8.5vw, 10.5rem);
+  }
+
+  .addiction-triggers-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .at-heading h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .at-copy {
+    font-size: 1.1rem;
+  }
+
+  .at-lead {
+    font-size: 1.5rem;
+  }
+
+  .at-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .at-big-three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .at-warning-grid,
+  .at-map {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .at-two-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .addiction-triggers-ending {
+    min-height: 80vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .addiction-triggers-ending h2 {
+    font-size: clamp(5rem, 7.5vw, 9rem);
+  }
+
+  .at-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .addiction-triggers-hero h1 {
+    font-size: 14vw;
+  }
+
+  .at-heading h2 {
+    font-size: 14vw;
+  }
+
+  .at-copy {
+    font-size: 0.98rem;
+  }
+
+  .addiction-triggers-ending h2 {
+    font-size: 14vw;
+  }
+}
+
+/* =========================================
+   ADDICTION > WHAT AM I ESCAPING?
+   ========================================= */
+
+.addiction-escaping-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.addiction-escaping-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.76) 48%,
+      rgba(0, 0, 0, 0.16) 100%
+    ),
+    url("addiction_escaping_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.addiction-escaping-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.addiction-escaping-eyebrow {
+  margin: 0 0 25px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.addiction-escaping-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.6rem, 17vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-escaping-hero h1 span {
+  display: block;
+}
+
+.addiction-escaping-hero h1 span:nth-child(1) {
+  color: var(--white);
+}
+
+.addiction-escaping-hero h1 span:nth-child(2) {
+  color: var(--pink);
+}
+
+.addiction-escaping-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.addiction-escaping-intro {
+  margin: 40px 0 0;
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+}
+
+
+/* SECTIONS */
+
+.addiction-escaping-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.ae-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.ae-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3.4rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.ae-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.ae-copy > p {
+  margin: 0 0 22px;
+}
+
+.ae-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.ae-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.55rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/* COLORS */
+
+.ae-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.ae-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ae-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.ae-purple .ae-number,
+.ae-purple blockquote {
+  color: var(--yellow);
+}
+
+.ae-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.ae-black .ae-number {
+  color: var(--pink);
+}
+
+.ae-black .ae-heading h2 {
+  color: var(--yellow);
+}
+
+.ae-black blockquote {
+  color: var(--pink);
+}
+
+
+/* ESCAPE GRID */
+
+.ae-escape-grid {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ae-escape-grid > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.ae-escape-grid span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--pink);
+
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ae-escape-grid p {
+  margin: 0;
+}
+
+
+/* BIG CALLOUT */
+
+.ae-callout,
+.ae-thought {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+
+  color: var(--pink);
+
+  font-size: clamp(1.65rem, 6vw, 3rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+
+/* RUSH CYCLE */
+
+.ae-cycle {
+  margin: 35px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.ae-cycle span {
+  padding: 12px 14px;
+
+  background: var(--black);
+  border: 3px solid var(--pink);
+
+  color: var(--white);
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ae-cycle b {
+  font-size: 1.6rem;
+}
+
+
+/* ESCAPE LOOP */
+
+.ae-loop {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 10px;
+}
+
+.ae-loop > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.ae-loop > div span {
+  display: block;
+  margin-bottom: 6px;
+
+  color: var(--pink);
+
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ae-loop > div p {
+  margin: 0;
+}
+
+.ae-loop > b {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+
+/* QUESTIONS */
+
+.ae-questions {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ae-questions > div {
+  padding: 20px;
+
+  background: #111;
+  border: 3px solid var(--pink);
+}
+
+.ae-questions span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--yellow);
+
+  font-size: 1.15rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ae-questions p {
+  margin: 0;
+}
+
+
+/* NEEDS */
+
+.ae-needs {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ae-needs > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.ae-needs span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--pink);
+
+  font-size: 1.15rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ae-needs p {
+  margin: 0;
+}
+
+
+/* ENDING */
+
+.addiction-escaping-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ae-ending-small {
+  margin: 0 0 10px;
+
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.addiction-escaping-ending h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-escaping-ending h2 span {
+  color: var(--pink);
+}
+
+.ae-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.ae-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK */
+
+.ae-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.ae-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .addiction-escaping-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.20) 62%,
+        rgba(0, 0, 0, 0.04) 100%
+      ),
+      url("addiction_escaping_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .addiction-escaping-hero h1 {
+    font-size: clamp(6rem, 9vw, 11rem);
+  }
+
+  .addiction-escaping-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .ae-heading h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .ae-copy {
+    font-size: 1.1rem;
+  }
+
+  .ae-lead {
+    font-size: 1.5rem;
+  }
+
+  .ae-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .ae-escape-grid,
+  .ae-questions,
+  .ae-needs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ae-loop {
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+    align-items: center;
+  }
+
+  .addiction-escaping-ending {
+    min-height: 80vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .addiction-escaping-ending h2 {
+    font-size: clamp(5rem, 7.5vw, 9rem);
+  }
+
+  .ae-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .addiction-escaping-hero h1 {
+    font-size: 15vw;
+  }
+
+  .ae-heading h2 {
+    font-size: 14vw;
+  }
+
+  .ae-copy {
+    font-size: 0.98rem;
+  }
+
+  .addiction-escaping-ending h2 {
+    font-size: 14vw;
+  }
+}
+
