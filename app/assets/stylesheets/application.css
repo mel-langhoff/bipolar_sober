@@ -13213,3 +13213,3707 @@ body {
     font-size: clamp(5rem, 9vw, 9rem);
   }
 }
+
+/* =========================================================
+   SPIRITUALITY / BUDDHISM
+   ========================================================= */
+
+.spirituality-buddhism-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.spirituality-buddhism-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.10) 0%,
+      rgba(8, 8, 8, 0.25) 45%,
+      rgba(8, 8, 8, 0.95) 100%
+    ),
+    url("spirituality_buddhism_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.spirituality-buddhism-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spirituality-buddhism-eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.spirituality-buddhism-hero h1 {
+  margin: 0;
+  font-size: clamp(3.2rem, 15vw, 6rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.spirituality-buddhism-hero h1 span {
+  display: block;
+}
+
+.spirituality-buddhism-intro {
+  margin: 2rem 0 0;
+  max-width: 700px;
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+
+/* CONTENT */
+
+.spirituality-buddhism-content {
+  width: 100%;
+}
+
+.sb-section {
+  padding: 5rem 1.25rem;
+}
+
+.sb-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.sb-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.sb-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.sb-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.sb-number {
+  margin: 0 0 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.sb-section > h2 {
+  margin: 0 0 2.5rem;
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.82;
+  letter-spacing: -0.065em;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sb-copy {
+  max-width: 760px;
+}
+
+.sb-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.sb-copy strong {
+  font-weight: 900;
+}
+
+
+/* CALLOUTS */
+
+.sb-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.5rem, 7vw, 2.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* FOUR TRUTHS */
+
+.sb-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.sb-mini-card {
+  border: 4px solid var(--black);
+  padding: 1.5rem;
+}
+
+.sb-mini-card > span {
+  display: block;
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+
+.sb-mini-card h3 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  line-height: 0.95;
+  font-weight: 900;
+}
+
+.sb-mini-card p {
+  margin-bottom: 0;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+
+/* THOUGHT BLOCKS */
+
+.sb-thought {
+  margin: 2rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: 1.25rem;
+  line-height: 1.1;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* STACK */
+
+.sb-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.sb-stack span {
+  display: block;
+  width: fit-content;
+
+  padding: 0.6rem 0.8rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+/* PRACTICE */
+
+.sb-practice-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.sb-practice-grid > div {
+  padding: 1.5rem;
+  border: 3px solid var(--white);
+}
+
+.sb-practice-grid span {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--yellow);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.sb-practice-grid p {
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+
+/* ENDING */
+
+.sb-ending {
+  padding: 6rem 1.25rem;
+  background: var(--white);
+  color: var(--black);
+}
+
+.sb-ending > p:first-child {
+  margin: 0 0 2rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.sb-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.sb-ending-copy {
+  margin: 2rem 0 3rem;
+  max-width: 600px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.sb-back-link {
+  display: inline-block;
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.sb-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .spirituality-buddhism-hero {
+    min-height: 100vh;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.86) 0%,
+        rgba(8, 8, 8, 0.45) 42%,
+        rgba(8, 8, 8, 0.05) 75%
+      ),
+      url("spirituality_buddhism_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 5vw 5rem;
+  }
+
+  .spirituality-buddhism-hero h1 {
+    max-width: 950px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .spirituality-buddhism-intro {
+    font-size: 1.25rem;
+  }
+
+  .sb-section {
+    padding: 8rem 7vw;
+  }
+
+  .sb-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .sb-copy {
+    margin-left: 35%;
+  }
+
+  .sb-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .sb-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sb-practice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sb-ending {
+    padding: 9rem 7vw;
+  }
+
+  .sb-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   SPIRITUALITY / HINDUISM
+   ========================================================= */
+
+.spirituality-hinduism-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.spirituality-hinduism-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.08) 0%,
+      rgba(8, 8, 8, 0.22) 45%,
+      rgba(8, 8, 8, 0.96) 100%
+    ),
+    url("spirituality_hinduism_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.spirituality-hinduism-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spirituality-hinduism-eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.spirituality-hinduism-hero h1 {
+  margin: 0;
+  font-size: clamp(3.2rem, 15vw, 6rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.spirituality-hinduism-hero h1 span {
+  display: block;
+}
+
+.spirituality-hinduism-intro {
+  margin: 2rem 0 0;
+  max-width: 750px;
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* CONTENT */
+
+.spirituality-hinduism-content {
+  width: 100%;
+}
+
+.sh-section {
+  padding: 5rem 1.25rem;
+}
+
+.sh-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.sh-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.sh-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.sh-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.sh-number {
+  margin: 0 0 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.sh-section > h2 {
+  margin: 0 0 2.5rem;
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.82;
+  letter-spacing: -0.065em;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sh-copy {
+  max-width: 760px;
+}
+
+.sh-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.sh-copy strong {
+  font-weight: 900;
+}
+
+
+/* CALLOUT */
+
+.sh-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.5rem, 7vw, 2.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* THOUGHT */
+
+.sh-thought {
+  margin: 2rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: clamp(1.4rem, 6vw, 2.5rem);
+  line-height: 1;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* STACK */
+
+.sh-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.sh-stack span {
+  padding: 0.6rem 0.8rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+/* CARDS */
+
+.sh-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.sh-mini-card {
+  padding: 1.5rem;
+  border: 4px solid currentColor;
+}
+
+.sh-mini-card > span {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.sh-mini-card h3 {
+  margin: 0 0 1rem;
+
+  font-size: 1.6rem;
+  line-height: 0.95;
+  font-weight: 900;
+}
+
+.sh-mini-card p {
+  margin: 0;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+
+/* PRACTICE */
+
+.sh-practice-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.sh-practice-grid > div {
+  padding: 1.5rem;
+  border: 3px solid var(--white);
+}
+
+.sh-practice-grid span {
+  display: block;
+  margin-bottom: 1rem;
+
+  color: var(--yellow);
+
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.sh-practice-grid p {
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+
+/* ENDING */
+
+.sh-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.sh-ending > p:first-child {
+  margin: 0 0 2rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.sh-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.sh-ending-copy {
+  margin: 2rem 0 3rem;
+  max-width: 600px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.sh-back-link {
+  display: inline-block;
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.sh-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .spirituality-hinduism-hero {
+    min-height: 100vh;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.48) 40%,
+        rgba(8, 8, 8, 0.05) 75%
+      ),
+      url("spirituality_hinduism_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 5vw 5rem;
+  }
+
+  .spirituality-hinduism-hero h1 {
+    max-width: 1000px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .spirituality-hinduism-intro {
+    font-size: 1.25rem;
+  }
+
+  .sh-section {
+    padding: 8rem 7vw;
+  }
+
+  .sh-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .sh-copy {
+    margin-left: 35%;
+  }
+
+  .sh-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .sh-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sh-practice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sh-ending {
+    padding: 9rem 7vw;
+  }
+
+  .sh-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   SPIRITUALITY / MIXING TRADITIONS
+   ========================================================= */
+
+.spirituality-mixing-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.spirituality-mixing-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.06) 0%,
+      rgba(8, 8, 8, 0.22) 45%,
+      rgba(8, 8, 8, 0.96) 100%
+    ),
+    url("spirituality_mixing_traditions_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.spirituality-mixing-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spirituality-mixing-eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.spirituality-mixing-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.2rem, 15vw, 6rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.spirituality-mixing-hero h1 span {
+  display: block;
+}
+
+.spirituality-mixing-intro {
+  margin: 2rem 0 0;
+  max-width: 760px;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* SECTIONS */
+
+.spirituality-mixing-content {
+  width: 100%;
+}
+
+.smt-section {
+  padding: 5rem 1.25rem;
+}
+
+.smt-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.smt-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.smt-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.smt-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.smt-number {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.smt-section > h2 {
+  margin: 0 0 2.5rem;
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.82;
+  letter-spacing: -0.065em;
+
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.smt-copy {
+  max-width: 760px;
+}
+
+.smt-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.smt-copy strong {
+  font-weight: 900;
+}
+
+
+/* CALLOUT */
+
+.smt-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.5rem, 7vw, 2.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* THOUGHT */
+
+.smt-thought {
+  margin: 2rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: clamp(1.25rem, 6vw, 2.25rem);
+  line-height: 1;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* STACK */
+
+.smt-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.smt-stack span {
+  padding: 0.6rem 0.8rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+/* CARDS */
+
+.smt-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.smt-mini-card {
+  padding: 1.5rem;
+  border: 4px solid currentColor;
+}
+
+.smt-mini-card > span {
+  display: block;
+  margin-bottom: 2rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.smt-mini-card h3 {
+  margin: 0 0 1rem;
+
+  font-size: 1.6rem;
+  line-height: 0.95;
+  font-weight: 900;
+}
+
+.smt-mini-card p {
+  margin: 0;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+
+/* PRACTICE */
+
+.smt-practice-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.smt-practice-grid > div {
+  padding: 1.5rem;
+  border: 3px solid var(--white);
+}
+
+.smt-practice-grid span {
+  display: block;
+  margin-bottom: 1rem;
+
+  color: var(--yellow);
+
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.smt-practice-grid p {
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+
+/* QUESTIONS */
+
+.smt-question-list {
+  margin: 2.5rem 0;
+}
+
+.smt-question-list p {
+  margin: 0;
+  padding: 1rem 0;
+
+  border-bottom: 3px solid var(--black);
+
+  font-size: 1.1rem;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+
+/* ENDING */
+
+.smt-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.smt-ending > p:first-child {
+  margin: 0 0 2rem;
+
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.smt-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.smt-ending-copy {
+  margin: 2rem 0 3rem;
+  max-width: 650px;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.smt-back-link {
+  display: inline-block;
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.smt-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .spirituality-mixing-hero {
+    min-height: 100vh;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.45) 42%,
+        rgba(8, 8, 8, 0.05) 75%
+      ),
+      url("spirituality_mixing_traditions_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .spirituality-mixing-hero h1 {
+    max-width: 1050px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .spirituality-mixing-intro {
+    font-size: 1.25rem;
+  }
+
+  .smt-section {
+    padding: 8rem 7vw;
+  }
+
+  .smt-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .smt-copy {
+    margin-left: 35%;
+  }
+
+  .smt-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .smt-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .smt-practice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .smt-question-list p {
+    font-size: 1.35rem;
+  }
+
+  .smt-ending {
+    padding: 9rem 7vw;
+  }
+
+  .smt-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   SPIRITUALITY / MY SPIRITUALITY
+   ========================================================= */
+
+.my-spirituality-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.my-spirituality-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.05) 0%,
+      rgba(8, 8, 8, 0.20) 45%,
+      rgba(8, 8, 8, 0.96) 100%
+    ),
+    url("spirituality_my_spirituality_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.my-spirituality-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.my-spirituality-eyebrow {
+  margin: 0 0 1rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.my-spirituality-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3rem, 14vw, 5.75rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.my-spirituality-hero h1 span {
+  display: block;
+}
+
+.my-spirituality-intro {
+  margin: 2rem 0 0;
+  max-width: 760px;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* SECTIONS */
+
+.my-spirituality-content {
+  width: 100%;
+}
+
+.ms-section {
+  padding: 5rem 1.25rem;
+}
+
+.ms-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.ms-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.ms-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ms-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.ms-number {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.ms-section > h2 {
+  margin: 0 0 2.5rem;
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.82;
+  letter-spacing: -0.065em;
+
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.ms-copy {
+  max-width: 760px;
+}
+
+.ms-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.ms-copy strong {
+  font-weight: 900;
+}
+
+
+/* CALLOUTS */
+
+.ms-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.5rem, 7vw, 2.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* THOUGHT */
+
+.ms-thought {
+  margin: 2rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: clamp(1.35rem, 6vw, 2.5rem);
+  line-height: 1;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* STACK */
+
+.ms-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.ms-stack span {
+  padding: 0.6rem 0.8rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+/* CARDS */
+
+.ms-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.ms-mini-card {
+  padding: 1.5rem;
+  border: 4px solid currentColor;
+}
+
+.ms-mini-card > span {
+  display: block;
+  margin-bottom: 2rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.ms-mini-card h3 {
+  margin: 0 0 1rem;
+
+  font-size: 1.6rem;
+  line-height: 0.95;
+  font-weight: 900;
+}
+
+.ms-mini-card p {
+  margin: 0;
+
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+
+/* PRACTICE */
+
+.ms-practice-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.ms-practice-grid > div {
+  padding: 1.5rem;
+  border: 3px solid var(--black);
+}
+
+.ms-practice-grid span {
+  display: block;
+  margin-bottom: 1rem;
+
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.ms-practice-grid p {
+  margin: 0;
+
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+
+/* ENDING */
+
+.ms-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.ms-ending > p:first-child {
+  margin: 0 0 2rem;
+
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.ms-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ms-ending-copy {
+  margin: 2rem 0 3rem;
+  max-width: 650px;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.ms-back-link {
+  display: inline-block;
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.ms-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .my-spirituality-hero {
+    min-height: 100vh;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.44) 42%,
+        rgba(8, 8, 8, 0.04) 75%
+      ),
+      url("spirituality_my_spirituality_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .my-spirituality-hero h1 {
+    max-width: 1050px;
+    font-size: clamp(5rem, 8.5vw, 8.5rem);
+  }
+
+  .my-spirituality-intro {
+    font-size: 1.25rem;
+  }
+
+  .ms-section {
+    padding: 8rem 7vw;
+  }
+
+  .ms-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .ms-copy {
+    margin-left: 35%;
+  }
+
+  .ms-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .ms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ms-practice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ms-ending {
+    padding: 9rem 7vw;
+  }
+
+  .ms-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   PERSPECTIVES
+   ========================================================= */
+
+.perspectives-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.perspectives-hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.05) 0%,
+      rgba(8, 8, 8, 0.25) 50%,
+      rgba(8, 8, 8, 0.97) 100%
+    ),
+    url("perspectives_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.perspectives-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perspectives-eyebrow {
+  margin: 0 0 1rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.perspectives-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.3rem, 16vw, 6.5rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.perspectives-hero h1 span {
+  display: block;
+}
+
+.perspectives-intro {
+  margin: 2rem 0 0;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* TOPICS */
+
+.perspectives-topics {
+  background: var(--white);
+  color: var(--black);
+
+  padding: 5rem 1.25rem;
+}
+
+.perspectives-topics-heading {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+}
+
+.perspectives-topics-heading > p:first-child {
+  margin: 0 0 1.25rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.perspectives-topics-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.perspectives-topics-subtitle {
+  max-width: 650px;
+  margin: 2rem 0 0;
+
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+
+/* GRID */
+
+.perspectives-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  gap: 1rem;
+}
+
+
+/* CARDS */
+
+.perspectives-card {
+  min-height: 330px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+
+  border: 4px solid var(--black);
+
+  color: var(--black);
+  text-decoration: none;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.perspectives-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 8px 8px 0 var(--black);
+}
+
+.perspectives-card-pink {
+  background: var(--pink);
+}
+
+.perspectives-card-yellow {
+  background: var(--yellow);
+}
+
+.perspectives-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.perspectives-card-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.perspectives-card-number {
+  margin: 0 0 3rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.perspectives-card h3 {
+  margin: 0 0 1rem;
+
+  font-size: clamp(2.5rem, 11vw, 4rem);
+  line-height: 0.82;
+  letter-spacing: -0.055em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.perspectives-card-description {
+  max-width: 470px;
+  margin: 0 0 2rem;
+
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.perspectives-card > span {
+  margin-top: auto;
+
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .perspectives-hero {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.42) 42%,
+        rgba(8, 8, 8, 0.04) 75%
+      ),
+      url("perspectives_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .perspectives-hero h1 {
+    max-width: 1050px;
+
+    font-size: clamp(6rem, 10vw, 10rem);
+  }
+
+  .perspectives-intro {
+    font-size: 1.25rem;
+  }
+
+  .perspectives-topics {
+    padding: 8rem 7vw;
+  }
+
+  .perspectives-topics-heading h2 {
+    font-size: clamp(6rem, 9vw, 9rem);
+  }
+
+  .perspectives-topics-subtitle {
+    margin-left: 35%;
+    font-size: 1.15rem;
+  }
+
+  .perspectives-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .perspectives-card {
+    min-height: 390px;
+    padding: 2rem;
+  }
+
+  .perspectives-card h3 {
+    font-size: clamp(3rem, 5vw, 5rem);
+  }
+}
+
+/* =========================================================
+   PERSPECTIVES / BOOKS
+   ========================================================= */
+
+.perspectives-books-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.perspectives-books-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.04) 0%,
+      rgba(8, 8, 8, 0.22) 48%,
+      rgba(8, 8, 8, 0.97) 100%
+    ),
+    url("perspectives_books_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.perspectives-books-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perspectives-books-eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.perspectives-books-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 17vw, 6.5rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.perspectives-books-hero h1 span {
+  display: block;
+}
+
+.perspectives-books-intro {
+  margin: 2rem 0 0;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* INTRO */
+
+.pb-intro-section,
+.pb-reading-section {
+  padding: 5rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.pb-number {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pb-intro-section > h2,
+.pb-reading-section > h2 {
+  margin: 0 0 2.5rem;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.8;
+  letter-spacing: -0.065em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pb-copy {
+  max-width: 760px;
+}
+
+.pb-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.pb-callout {
+  margin: 3rem 0 0;
+  padding: 1.5rem;
+
+  border: 4px solid var(--black);
+
+  font-size: clamp(1.4rem, 7vw, 2.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* LIBRARY */
+
+.pb-library {
+  padding: 5rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+}
+
+.pb-library-heading {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+}
+
+.pb-library-heading p {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pb-library-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* BOOK GRID */
+
+.pb-books-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  gap: 1rem;
+}
+
+.pb-book {
+  min-height: 520px;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 4px solid var(--white);
+}
+
+.pb-book-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pb-book-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pb-book-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pb-book-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pb-book-empty {
+  min-height: 350px;
+
+  background: var(--white);
+  color: var(--black);
+
+  border-color: var(--white);
+}
+
+.pb-book-number {
+  margin: 0 0 1rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.pb-book-type {
+  margin: 0 0 2.5rem;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.pb-book h3 {
+  margin: 0;
+
+  font-size: clamp(2.5rem, 10vw, 4.5rem);
+  line-height: 0.82;
+  letter-spacing: -0.055em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pb-author {
+  margin: 1rem 0 2rem;
+
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.pb-book-copy p {
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.pb-takeaway {
+  margin-top: auto;
+  padding-top: 2rem;
+
+  border-top: 3px solid currentColor;
+}
+
+.pb-takeaway span {
+  display: block;
+  margin-bottom: 0.75rem;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.pb-takeaway p {
+  margin: 0;
+
+  font-size: 1.05rem;
+  line-height: 1.35;
+  font-weight: 900;
+}
+
+
+/* MINI LIST */
+
+.pb-mini-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 0.45rem;
+  margin: 1.5rem 0;
+}
+
+.pb-mini-list span {
+  padding: 0.45rem 0.65rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: 900;
+}
+
+
+/* HOW I READ */
+
+.pb-reading-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.pb-reading-grid > div {
+  padding: 1.5rem;
+
+  border: 3px solid var(--black);
+}
+
+.pb-reading-grid span {
+  display: block;
+  margin-bottom: 1rem;
+
+  color: var(--pink);
+
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.pb-reading-grid p {
+  margin: 0;
+
+  line-height: 1.35;
+  font-weight: 900;
+}
+
+
+/* ENDING */
+
+.pb-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pb-ending > p {
+  margin: 0 0 2rem;
+
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.pb-ending h2 {
+  margin: 0 0 3rem;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pb-back-link {
+  display: inline-block;
+
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.pb-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .perspectives-books-hero {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.42) 42%,
+        rgba(8, 8, 8, 0.03) 75%
+      ),
+      url("perspectives_books_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .perspectives-books-hero h1 {
+    font-size: clamp(6rem, 10vw, 10rem);
+  }
+
+  .perspectives-books-intro {
+    font-size: 1.25rem;
+  }
+
+  .pb-intro-section,
+  .pb-reading-section {
+    padding: 8rem 7vw;
+  }
+
+  .pb-intro-section > h2,
+  .pb-reading-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .pb-copy {
+    margin-left: 35%;
+  }
+
+  .pb-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .pb-library {
+    padding: 8rem 7vw;
+  }
+
+  .pb-library-heading h2 {
+    font-size: clamp(6rem, 9vw, 9rem);
+  }
+
+  .pb-books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pb-book {
+    min-height: 600px;
+    padding: 2rem;
+  }
+
+  .pb-book h3 {
+    font-size: clamp(3rem, 4.5vw, 5rem);
+  }
+
+  .pb-reading-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pb-ending {
+    padding: 9rem 7vw;
+  }
+
+  .pb-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   PERSPECTIVES / ON THE INSIDE
+   ========================================================= */
+
+.perspectives-inside-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.perspectives-inside-hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.05) 0%,
+      rgba(8, 8, 8, 0.22) 45%,
+      rgba(8, 8, 8, 0.97) 100%
+    ),
+    url("perspectives_inside_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.perspectives-inside-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perspectives-inside-eyebrow {
+  margin: 0 0 1rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.perspectives-inside-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.4rem, 16vw, 6.5rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.perspectives-inside-hero h1 span {
+  display: block;
+}
+
+.perspectives-inside-intro {
+  margin: 2rem 0 0;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* CONTENT SECTIONS */
+
+.pi-section {
+  padding: 5rem 1.25rem;
+}
+
+.pi-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pi-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pi-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pi-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pi-number {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pi-section > h2 {
+  margin: 0 0 2.5rem;
+
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.8;
+  letter-spacing: -0.065em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pi-copy {
+  max-width: 760px;
+}
+
+.pi-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+
+/* CALLOUT */
+
+.pi-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.5rem, 7vw, 2.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* THOUGHT */
+
+.pi-thought {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: clamp(1.4rem, 7vw, 2.5rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* THEN + NOW */
+
+.pi-two-column {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
+.pi-perspective-card {
+  padding: 1.5rem;
+
+  border: 4px solid var(--black);
+}
+
+.pi-perspective-card > span {
+  display: block;
+  margin-bottom: 2rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.pi-perspective-card h3 {
+  margin: 0 0 1.25rem;
+
+  font-size: 2.25rem;
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pi-perspective-card p {
+  margin: 0;
+
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+
+/* FRAGMENTS */
+
+.pi-fragments {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+  margin: 2.5rem 0;
+}
+
+.pi-fragments span {
+  padding: 0.65rem 0.8rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+/* JOURNALS */
+
+.pi-journals {
+  padding: 5rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.pi-journals-heading {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+}
+
+.pi-journals-heading > p:first-child {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pi-journals-heading h2 {
+  margin: 0 0 2rem;
+
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pi-journals-heading > p:last-child {
+  max-width: 650px;
+
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+
+/* JOURNAL CARDS */
+
+.pi-journal-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  gap: 1rem;
+}
+
+.pi-journal-card {
+  min-height: 340px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+
+  border: 4px solid var(--black);
+}
+
+.pi-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pi-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pi-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pi-card-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pi-card-number {
+  margin: 0 0 3rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.pi-journal-card h3 {
+  margin: 0 0 1rem;
+
+  font-size: clamp(2.5rem, 11vw, 4rem);
+  line-height: 0.82;
+  letter-spacing: -0.055em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pi-journal-card > p:not(.pi-card-number) {
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.pi-journal-card > span {
+  margin-top: auto;
+
+  padding-top: 2rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+
+/* ENDING */
+
+.pi-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.pi-ending > p:first-child {
+  margin: 0 0 2rem;
+
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.pi-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pi-ending-copy {
+  max-width: 650px;
+  margin: 2rem 0 3rem;
+
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.pi-back-link {
+  display: inline-block;
+
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.pi-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .perspectives-inside-hero {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.42) 42%,
+        rgba(8, 8, 8, 0.03) 75%
+      ),
+      url("perspectives_inside_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .perspectives-inside-hero h1 {
+    font-size: clamp(6rem, 10vw, 10rem);
+  }
+
+  .perspectives-inside-intro {
+    font-size: 1.25rem;
+  }
+
+  .pi-section {
+    padding: 8rem 7vw;
+  }
+
+  .pi-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .pi-copy {
+    margin-left: 35%;
+  }
+
+  .pi-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .pi-two-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pi-journals {
+    padding: 8rem 7vw;
+  }
+
+  .pi-journals-heading h2 {
+    font-size: clamp(6rem, 9vw, 9rem);
+  }
+
+  .pi-journals-heading > p:last-child {
+    margin-left: 35%;
+    font-size: 1.15rem;
+  }
+
+  .pi-journal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pi-journal-card {
+    min-height: 390px;
+    padding: 2rem;
+  }
+
+  .pi-journal-card h3 {
+    font-size: clamp(3rem, 4.5vw, 5rem);
+  }
+
+  .pi-ending {
+    padding: 9rem 7vw;
+  }
+
+  .pi-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   PERSPECTIVES / QUOTES
+   ========================================================= */
+
+.perspectives-quotes-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.perspectives-quotes-hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.05) 0%,
+      rgba(8, 8, 8, 0.22) 45%,
+      rgba(8, 8, 8, 0.97) 100%
+    ),
+    url("perspectives_quotes_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.perspectives-quotes-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perspectives-quotes-eyebrow {
+  margin: 0 0 1rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.perspectives-quotes-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 17vw, 6.5rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.perspectives-quotes-hero h1 span {
+  display: block;
+}
+
+.perspectives-quotes-intro {
+  margin: 2rem 0 0;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* GENERAL SECTIONS */
+
+.pq-section {
+  padding: 5rem 1.25rem;
+}
+
+.pq-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pq-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pq-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pq-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pq-number {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pq-section > h2 {
+  margin: 0 0 2.5rem;
+
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.8;
+  letter-spacing: -0.065em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pq-copy {
+  max-width: 760px;
+}
+
+.pq-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+
+/* CALLOUT */
+
+.pq-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.4rem, 7vw, 2.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* QUOTE LIBRARY */
+
+.pq-library {
+  padding: 5rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.pq-library-heading {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+}
+
+.pq-library-heading > p:first-child {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pq-library-heading h2 {
+  margin: 0 0 2rem;
+
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pq-library-heading > p:last-child {
+  max-width: 650px;
+
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+
+/* QUOTE CARDS */
+
+.pq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  gap: 1rem;
+}
+
+.pq-card {
+  min-height: 480px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+
+  border: 4px solid var(--black);
+}
+
+.pq-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pq-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pq-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pq-card-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pq-card-number {
+  margin: 0 0 3rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.pq-card blockquote {
+  margin: 0;
+
+  font-size: clamp(2.3rem, 10vw, 4rem);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pq-source {
+  margin: 1.5rem 0 3rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.pq-reflection {
+  margin-top: auto;
+  padding-top: 1.5rem;
+
+  border-top: 3px solid currentColor;
+}
+
+.pq-reflection span {
+  display: block;
+  margin-bottom: 0.75rem;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.pq-reflection p {
+  margin: 0;
+
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+
+/* TAGS */
+
+.pq-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+  margin: 2.5rem 0;
+}
+
+.pq-tags span {
+  padding: 0.65rem 0.8rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+/* THOUGHT */
+
+.pq-thought {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: clamp(1.4rem, 7vw, 2.5rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* ENDING */
+
+.pq-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.pq-ending > p:first-child {
+  margin: 0 0 2rem;
+
+  font-weight: 900;
+}
+
+.pq-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pq-ending-copy {
+  max-width: 650px;
+  margin: 2rem 0 3rem;
+
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.pq-back-link {
+  display: inline-block;
+
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.pq-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .perspectives-quotes-hero {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.42) 42%,
+        rgba(8, 8, 8, 0.03) 75%
+      ),
+      url("perspectives_quotes_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .perspectives-quotes-hero h1 {
+    font-size: clamp(6rem, 10vw, 10rem);
+  }
+
+  .perspectives-quotes-intro {
+    font-size: 1.25rem;
+  }
+
+  .pq-section {
+    padding: 8rem 7vw;
+  }
+
+  .pq-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .pq-copy {
+    margin-left: 35%;
+  }
+
+  .pq-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .pq-library {
+    padding: 8rem 7vw;
+  }
+
+  .pq-library-heading h2 {
+    font-size: clamp(6rem, 9vw, 9rem);
+  }
+
+  .pq-library-heading > p:last-child {
+    margin-left: 35%;
+    font-size: 1.15rem;
+  }
+
+  .pq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pq-card {
+    min-height: 550px;
+    padding: 2rem;
+  }
+
+  .pq-card blockquote {
+    font-size: clamp(2.75rem, 4vw, 4.5rem);
+  }
+
+  .pq-ending {
+    padding: 9rem 7vw;
+  }
+
+  .pq-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   PERSPECTIVES / REFLECTIONS
+   ========================================================= */
+
+.perspectives-reflections-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.perspectives-reflections-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.05) 0%,
+      rgba(8, 8, 8, 0.22) 45%,
+      rgba(8, 8, 8, 0.97) 100%
+    ),
+    url("perspectives_reflections_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.perspectives-reflections-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perspectives-reflections-eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.perspectives-reflections-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.3rem, 16vw, 6.5rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.perspectives-reflections-hero h1 span {
+  display: block;
+}
+
+.perspectives-reflections-intro {
+  margin: 2rem 0 0;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* SECTIONS */
+
+.pr-section {
+  padding: 5rem 1.25rem;
+}
+
+.pr-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pr-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pr-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pr-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pr-number {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pr-section > h2 {
+  margin: 0 0 2.5rem;
+
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.8;
+  letter-spacing: -0.065em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pr-copy {
+  max-width: 760px;
+}
+
+.pr-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+
+/* CALLOUT */
+
+.pr-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.4rem, 7vw, 2.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* REFLECTION LIBRARY */
+
+.pr-reflections {
+  padding: 5rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.pr-reflections-heading {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+}
+
+.pr-reflections-heading > p:first-child {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pr-reflections-heading h2 {
+  margin: 0 0 2rem;
+
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pr-reflections-heading > p:last-child {
+  max-width: 650px;
+
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+
+/* REFLECTION CARDS */
+
+.pr-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  gap: 1rem;
+}
+
+.pr-card {
+  min-height: 520px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+
+  border: 4px solid var(--black);
+}
+
+.pr-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pr-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pr-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pr-card-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pr-card-number {
+  margin: 0 0 0.5rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.pr-card-topic {
+  margin: 0 0 2.5rem;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.pr-card h3 {
+  margin: 0 0 1.5rem;
+
+  font-size: clamp(2.5rem, 10vw, 4.25rem);
+  line-height: 0.82;
+  letter-spacing: -0.055em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pr-card > p:not(.pr-card-number):not(.pr-card-topic) {
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.pr-card-question {
+  margin-top: auto;
+  padding-top: 1.5rem;
+
+  border-top: 3px solid currentColor;
+}
+
+.pr-card-question span {
+  display: block;
+  margin-bottom: 0.75rem;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.pr-card-question p {
+  margin: 0;
+
+  line-height: 1.35;
+  font-weight: 900;
+}
+
+
+/* BOTH CAN BE TRUE */
+
+.pr-both-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 0.75rem;
+  margin: 2.5rem 0;
+}
+
+.pr-both-grid > div {
+  padding: 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+}
+
+.pr-both-grid span {
+  display: block;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.pr-both-grid strong {
+  display: block;
+  margin: 0.3rem 0;
+
+  font-size: clamp(1.8rem, 8vw, 3rem);
+  line-height: 0.9;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pr-both-grid p {
+  margin: 0;
+
+  font-weight: 700;
+}
+
+
+/* QUESTIONS */
+
+.pr-questions {
+  margin: 2.5rem 0;
+
+  border-top: 3px solid currentColor;
+}
+
+.pr-questions p {
+  margin: 0;
+  padding: 1.25rem 0;
+
+  border-bottom: 3px solid currentColor;
+
+  font-size: clamp(1.3rem, 6vw, 2rem);
+  line-height: 1.1;
+
+  font-weight: 900;
+}
+
+
+/* THOUGHT */
+
+.pr-thought {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: clamp(1.4rem, 7vw, 2.5rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* ENDING */
+
+.pr-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pr-ending > p:first-child {
+  margin: 0 0 2rem;
+
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.pr-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pr-ending-copy {
+  max-width: 650px;
+  margin: 2rem 0 3rem;
+
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.pr-back-link {
+  display: inline-block;
+
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.pr-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .perspectives-reflections-hero {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.42) 42%,
+        rgba(8, 8, 8, 0.03) 75%
+      ),
+      url("perspectives_reflections_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .perspectives-reflections-hero h1 {
+    font-size: clamp(6rem, 10vw, 10rem);
+  }
+
+  .perspectives-reflections-intro {
+    font-size: 1.25rem;
+  }
+
+  .pr-section {
+    padding: 8rem 7vw;
+  }
+
+  .pr-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .pr-copy {
+    margin-left: 35%;
+  }
+
+  .pr-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .pr-reflections {
+    padding: 8rem 7vw;
+  }
+
+  .pr-reflections-heading h2 {
+    font-size: clamp(6rem, 9vw, 9rem);
+  }
+
+  .pr-reflections-heading > p:last-child {
+    margin-left: 35%;
+    font-size: 1.15rem;
+  }
+
+  .pr-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pr-card {
+    min-height: 590px;
+    padding: 2rem;
+  }
+
+  .pr-card h3 {
+    font-size: clamp(3rem, 4.5vw, 5rem);
+  }
+
+  .pr-both-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pr-ending {
+    padding: 9rem 7vw;
+  }
+
+  .pr-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+

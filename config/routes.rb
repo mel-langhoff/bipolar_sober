@@ -159,4 +159,25 @@ Rails.application.routes.draw do
       to: "spirituality_topics#my_spirituality",
       as: :spirituality_my_spirituality
 
+
+  # ==========================================
+  # PERSPECTIVES > TOPICS
+  # ==========================================
+
+  get "perspectives/reflections",
+      to: "perspectives_topics#reflections",
+      as: :perspectives_reflections
+
+  get "perspectives/books",
+      to: "perspectives_topics#books",
+      as: :perspectives_books
+
+  get "perspectives/quotes",
+      to: "perspectives_topics#quotes",
+      as: :perspectives_quotes
+
+  get "perspectives/on-the-inside",
+      to: "perspectives_topics#inside",
+      as: :perspectives_inside
+
 end
