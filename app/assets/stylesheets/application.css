@@ -7289,3 +7289,9631 @@ body {
   }
 }
 
+/* =========================================
+   ADDICTION > IMPULSIVITY
+   ========================================= */
+
+.addiction-impulsivity-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.addiction-impulsivity-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.76) 48%,
+      rgba(0, 0, 0, 0.16) 100%
+    ),
+    url("addiction_impulsivity_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.addiction-impulsivity-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.addiction-impulsivity-eyebrow {
+  margin: 0 0 25px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.addiction-impulsivity-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 16vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-impulsivity-hero h1 span {
+  display: block;
+}
+
+.addiction-impulsivity-hero h1 span:nth-child(1) {
+  color: var(--pink);
+}
+
+.addiction-impulsivity-hero h1 span:nth-child(2) {
+  color: var(--white);
+}
+
+.addiction-impulsivity-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.addiction-impulsivity-intro {
+  margin: 40px 0 0;
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+
+/* SECTIONS */
+
+.addiction-impulsivity-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.ai-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.addiction-impulsivity-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3.4rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.ai-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.ai-copy > p {
+  margin: 0 0 22px;
+}
+
+.ai-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.ai-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.55rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/* COLORS */
+
+.ai-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.ai-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ai-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.ai-purple .ai-number,
+.ai-purple blockquote {
+  color: var(--yellow);
+}
+
+.ai-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.ai-black .ai-number {
+  color: var(--pink);
+}
+
+.ai-black .addiction-impulsivity-heading h2 {
+  color: var(--yellow);
+}
+
+.ai-black blockquote {
+  color: var(--pink);
+}
+
+
+/* URGE CYCLE */
+
+.ai-cycle {
+  margin: 35px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.ai-cycle span {
+  padding: 12px 14px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ai-cycle b {
+  font-size: 1.6rem;
+}
+
+
+/* BEHAVIORS */
+
+.ai-behaviors {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ai-behaviors > div {
+  padding: 20px;
+
+  background: #111;
+  border: 3px solid var(--pink);
+}
+
+.ai-behaviors span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ai-behaviors p {
+  margin: 0;
+}
+
+
+/* NOW VS LATER */
+
+.ai-now-later {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 12px;
+
+  text-align: center;
+}
+
+.ai-now-later > div {
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.ai-now-later span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--pink);
+
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ai-now-later p {
+  margin: 0;
+}
+
+.ai-now-later > b {
+  font-size: 2rem;
+}
+
+
+/* IMPULSIVE THOUGHTS */
+
+.ai-thoughts {
+  margin: 35px 0;
+
+  border-top: 4px solid var(--black);
+  border-bottom: 4px solid var(--black);
+}
+
+.ai-thoughts p {
+  margin: 0;
+  padding: 17px 0;
+
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+  font-size: 1.1rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ai-thoughts p:last-child {
+  border-bottom: 0;
+}
+
+
+/* FRICTION */
+
+.ai-friction-grid {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ai-friction-grid > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--pink);
+
+  color: var(--white);
+}
+
+.ai-friction-grid span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ai-friction-grid p {
+  margin: 0;
+}
+
+
+/* PAUSE STEPS */
+
+.ai-pause {
+  margin-top: 35px;
+
+  border-top: 3px solid var(--pink);
+}
+
+.ai-pause > div {
+  padding: 20px 0;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+
+  border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+}
+
+.ai-pause span {
+  color: var(--pink);
+
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.ai-pause p {
+  margin: 0;
+}
+
+
+/* ENDING */
+
+.addiction-impulsivity-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ai-ending-small {
+  margin: 0 0 10px;
+
+  font-size: 1.35rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.addiction-impulsivity-ending h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-impulsivity-ending h2 span {
+  color: var(--pink);
+}
+
+.ai-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.ai-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK BUTTON */
+
+.ai-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.ai-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .addiction-impulsivity-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.20) 62%,
+        rgba(0, 0, 0, 0.04) 100%
+      ),
+      url("addiction_impulsivity_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .addiction-impulsivity-hero h1 {
+    font-size: clamp(6rem, 8.5vw, 10.5rem);
+  }
+
+  .addiction-impulsivity-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .addiction-impulsivity-heading h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .ai-copy {
+    font-size: 1.1rem;
+  }
+
+  .ai-lead {
+    font-size: 1.5rem;
+  }
+
+  .ai-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .ai-behaviors,
+  .ai-friction-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ai-now-later {
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+
+  .addiction-impulsivity-ending {
+    min-height: 80vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .addiction-impulsivity-ending h2 {
+    font-size: clamp(5rem, 7.5vw, 9rem);
+  }
+
+  .ai-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .addiction-impulsivity-hero h1 {
+    font-size: 15vw;
+  }
+
+  .addiction-impulsivity-heading h2 {
+    font-size: 14vw;
+  }
+
+  .ai-copy {
+    font-size: 0.98rem;
+  }
+
+  .addiction-impulsivity-ending h2 {
+    font-size: 14vw;
+  }
+}
+
+/* =========================================
+   ADDICTION > PERSPECTIVES
+   ========================================= */
+
+.addiction-perspectives-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.addiction-perspectives-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.76) 48%,
+      rgba(0, 0, 0, 0.16) 100%
+    ),
+    url("addiction_perspectives_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.addiction-perspectives-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.addiction-perspectives-eyebrow {
+  margin: 0 0 25px;
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.addiction-perspectives-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.3rem, 15vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-perspectives-hero h1 span {
+  display: block;
+}
+
+.addiction-perspectives-hero h1 span:nth-child(1) {
+  color: var(--pink);
+}
+
+.addiction-perspectives-hero h1 span:nth-child(2) {
+  color: var(--white);
+}
+
+.addiction-perspectives-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.addiction-perspectives-intro {
+  margin: 40px 0 0;
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+
+/* SECTIONS */
+
+.addiction-perspectives-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.ap-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.ap-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.ap-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.ap-copy > p {
+  margin: 0 0 22px;
+}
+
+.ap-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.ap-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.55rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/* COLORS */
+
+.ap-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.ap-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ap-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.ap-purple .ap-number,
+.ap-purple blockquote {
+  color: var(--yellow);
+}
+
+.ap-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.ap-black .ap-number {
+  color: var(--pink);
+}
+
+.ap-black .ap-heading h2 {
+  color: var(--yellow);
+}
+
+.ap-black blockquote {
+  color: var(--pink);
+}
+
+
+/* LENS BOX */
+
+.ap-lens {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.ap-lens span {
+  display: block;
+  margin-bottom: 10px;
+
+  color: var(--pink);
+
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.ap-lens h3 {
+  margin: 0;
+
+  color: var(--yellow);
+
+  font-size: clamp(1.6rem, 6vw, 2.8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+
+/* CBT THOUGHTS */
+
+.ap-thoughts {
+  margin: 35px 0;
+
+  border-top: 4px solid var(--black);
+  border-bottom: 4px solid var(--black);
+}
+
+.ap-thoughts p {
+  margin: 0;
+  padding: 17px 0;
+
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+  font-size: 1.05rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ap-thoughts p:last-child {
+  border-bottom: 0;
+}
+
+
+/* MOOD CHECK */
+
+.ap-mood-check {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ap-mood-check > div {
+  padding: 20px;
+
+  background: #111;
+  border: 3px solid var(--pink);
+}
+
+.ap-mood-check span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.15rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ap-mood-check p {
+  margin: 0;
+}
+
+
+/* SIX LENSES */
+
+.ap-stack {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ap-stack > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.ap-stack span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--pink);
+
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ap-stack p {
+  margin: 0;
+}
+
+
+/* ENDING */
+
+.addiction-perspectives-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ap-ending-small {
+  margin: 0 0 10px;
+
+  font-size: 1.35rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.addiction-perspectives-ending h2 {
+  margin: 0;
+
+  font-size: clamp(3.7rem, 16vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-perspectives-ending h2 span {
+  color: var(--pink);
+}
+
+.ap-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.ap-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK BUTTON */
+
+.ap-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.ap-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .addiction-perspectives-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.20) 62%,
+        rgba(0, 0, 0, 0.04) 100%
+      ),
+      url("addiction_perspectives_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .addiction-perspectives-hero h1 {
+    font-size: clamp(5.5rem, 8vw, 10rem);
+  }
+
+  .addiction-perspectives-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .ap-heading h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .ap-copy {
+    font-size: 1.1rem;
+  }
+
+  .ap-lead {
+    font-size: 1.5rem;
+  }
+
+  .ap-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .ap-mood-check,
+  .ap-stack {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .addiction-perspectives-ending {
+    min-height: 80vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .addiction-perspectives-ending h2 {
+    font-size: clamp(5rem, 7.5vw, 9rem);
+  }
+
+  .ap-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .addiction-perspectives-hero h1 {
+    font-size: 14vw;
+  }
+
+  .ap-heading h2 {
+    font-size: 14vw;
+  }
+
+  .ap-copy {
+    font-size: 0.98rem;
+  }
+
+  .addiction-perspectives-ending h2 {
+    font-size: 15vw;
+  }
+}
+
+/* =========================================
+   ADDICTION > TRIGGERS
+   ========================================= */
+
+.addiction-triggers-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.addiction-triggers-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.76) 48%,
+      rgba(0, 0, 0, 0.16) 100%
+    ),
+    url("addiction_triggers_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.addiction-triggers-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.addiction-triggers-eyebrow {
+  margin: 0 0 25px;
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.addiction-triggers-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.4rem, 15vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-triggers-hero h1 span {
+  display: block;
+}
+
+.addiction-triggers-hero h1 span:nth-child(1) {
+  color: var(--white);
+}
+
+.addiction-triggers-hero h1 span:nth-child(2) {
+  color: var(--pink);
+}
+
+.addiction-triggers-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.addiction-triggers-intro {
+  margin: 40px 0 0;
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+}
+
+
+/* SECTIONS */
+
+.addiction-triggers-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.at-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.at-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3.4rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.at-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.at-copy > p {
+  margin: 0 0 22px;
+}
+
+.at-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.at-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.55rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/* COLORS */
+
+.at-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.at-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.at-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.at-purple .at-number,
+.at-purple blockquote {
+  color: var(--yellow);
+}
+
+.at-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.at-black .at-number {
+  color: var(--pink);
+}
+
+.at-black .at-heading h2 {
+  color: var(--yellow);
+}
+
+.at-black blockquote {
+  color: var(--pink);
+}
+
+
+/* BIG THREE */
+
+.at-big-three {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.at-big-three > div {
+  padding: 22px;
+
+  background: var(--black);
+  border: 4px solid var(--pink);
+
+  color: var(--white);
+}
+
+.at-big-three span {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--yellow);
+
+  font-size: 1.35rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.at-big-three p {
+  margin: 0;
+}
+
+
+/* TRIGGER THOUGHT */
+
+.at-trigger-thought {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+
+  color: var(--pink);
+
+  font-size: clamp(1.7rem, 7vw, 3.2rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+}
+
+
+/* MANIA WARNING GRID */
+
+.at-warning-grid {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.at-warning-grid > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.at-warning-grid span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--pink);
+
+  font-size: 1.15rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.at-warning-grid p {
+  margin: 0;
+}
+
+
+/* TRIGGER CHAIN */
+
+.at-chain {
+  margin: 35px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.at-chain span {
+  padding: 12px 14px;
+
+  background: var(--black);
+  border: 3px solid var(--pink);
+
+  color: var(--white);
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.at-chain b {
+  font-size: 1.6rem;
+}
+
+
+/* INTERNAL / EXTERNAL */
+
+.at-two-column {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 10px;
+}
+
+.at-two-column > div {
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.at-two-column span {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--pink);
+
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.at-two-column p {
+  margin: 0;
+  padding: 8px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.at-two-column p:last-child {
+  border-bottom: 0;
+}
+
+
+/* TRIGGER MAP */
+
+.at-map {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.at-map > div {
+  padding: 20px;
+
+  background: #111;
+  border: 3px solid var(--pink);
+}
+
+.at-map span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--yellow);
+
+  font-size: 1.15rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.at-map p {
+  margin: 0;
+}
+
+
+/* STEPS */
+
+.at-steps {
+  margin: 35px 0;
+
+  border-top: 3px solid var(--black);
+}
+
+.at-steps > div {
+  padding: 20px 0;
+
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+
+  border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+}
+
+.at-steps span {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.at-steps p {
+  margin: 0;
+}
+
+
+/* ENDING */
+
+.addiction-triggers-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.at-ending-small {
+  margin: 0 0 10px;
+
+  font-size: 1.35rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.addiction-triggers-ending h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-triggers-ending h2 span {
+  color: var(--pink);
+}
+
+.at-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.at-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK */
+
+.at-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.at-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .addiction-triggers-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.20) 62%,
+        rgba(0, 0, 0, 0.04) 100%
+      ),
+      url("addiction_triggers_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .addiction-triggers-hero h1 {
+    font-size: clamp(6rem, 8.5vw, 10.5rem);
+  }
+
+  .addiction-triggers-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .at-heading h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .at-copy {
+    font-size: 1.1rem;
+  }
+
+  .at-lead {
+    font-size: 1.5rem;
+  }
+
+  .at-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .at-big-three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .at-warning-grid,
+  .at-map {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .at-two-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .addiction-triggers-ending {
+    min-height: 80vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .addiction-triggers-ending h2 {
+    font-size: clamp(5rem, 7.5vw, 9rem);
+  }
+
+  .at-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .addiction-triggers-hero h1 {
+    font-size: 14vw;
+  }
+
+  .at-heading h2 {
+    font-size: 14vw;
+  }
+
+  .at-copy {
+    font-size: 0.98rem;
+  }
+
+  .addiction-triggers-ending h2 {
+    font-size: 14vw;
+  }
+}
+
+/* =========================================
+   ADDICTION > WHAT AM I ESCAPING?
+   ========================================= */
+
+.addiction-escaping-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.addiction-escaping-hero {
+  min-height: 90svh;
+  padding: 35px 18px 55px;
+
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.76) 48%,
+      rgba(0, 0, 0, 0.16) 100%
+    ),
+    url("addiction_escaping_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.addiction-escaping-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+.addiction-escaping-eyebrow {
+  margin: 0 0 25px;
+
+  color: var(--yellow);
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.addiction-escaping-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.6rem, 17vw, 9rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.75;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-escaping-hero h1 span {
+  display: block;
+}
+
+.addiction-escaping-hero h1 span:nth-child(1) {
+  color: var(--white);
+}
+
+.addiction-escaping-hero h1 span:nth-child(2) {
+  color: var(--pink);
+}
+
+.addiction-escaping-hero h1 span:nth-child(3) {
+  color: var(--yellow);
+}
+
+.addiction-escaping-intro {
+  margin: 40px 0 0;
+
+  font-size: clamp(1.35rem, 5vw, 2.4rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+}
+
+
+/* SECTIONS */
+
+.addiction-escaping-section {
+  padding: 65px 18px;
+
+  display: grid;
+  gap: 40px;
+}
+
+.ae-number {
+  margin: 0 0 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.ae-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3.4rem, 15vw, 7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.ae-copy {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.ae-copy > p {
+  margin: 0 0 22px;
+}
+
+.ae-lead {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.ae-copy blockquote {
+  margin: 35px 0;
+  padding: 20px 0 20px 22px;
+
+  border-left: 8px solid currentColor;
+
+  font-size: clamp(1.55rem, 6vw, 2.7rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+
+/* COLORS */
+
+.ae-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.ae-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ae-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.ae-purple .ae-number,
+.ae-purple blockquote {
+  color: var(--yellow);
+}
+
+.ae-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.ae-black .ae-number {
+  color: var(--pink);
+}
+
+.ae-black .ae-heading h2 {
+  color: var(--yellow);
+}
+
+.ae-black blockquote {
+  color: var(--pink);
+}
+
+
+/* ESCAPE GRID */
+
+.ae-escape-grid {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ae-escape-grid > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.ae-escape-grid span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--pink);
+
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ae-escape-grid p {
+  margin: 0;
+}
+
+
+/* BIG CALLOUT */
+
+.ae-callout,
+.ae-thought {
+  margin: 35px 0;
+  padding: 25px;
+
+  background: var(--black);
+  border: 4px solid var(--yellow);
+
+  color: var(--pink);
+
+  font-size: clamp(1.65rem, 6vw, 3rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+
+/* RUSH CYCLE */
+
+.ae-cycle {
+  margin: 35px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.ae-cycle span {
+  padding: 12px 14px;
+
+  background: var(--black);
+  border: 3px solid var(--pink);
+
+  color: var(--white);
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ae-cycle b {
+  font-size: 1.6rem;
+}
+
+
+/* ESCAPE LOOP */
+
+.ae-loop {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 10px;
+}
+
+.ae-loop > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.ae-loop > div span {
+  display: block;
+  margin-bottom: 6px;
+
+  color: var(--pink);
+
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ae-loop > div p {
+  margin: 0;
+}
+
+.ae-loop > b {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+
+/* QUESTIONS */
+
+.ae-questions {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ae-questions > div {
+  padding: 20px;
+
+  background: #111;
+  border: 3px solid var(--pink);
+}
+
+.ae-questions span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--yellow);
+
+  font-size: 1.15rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ae-questions p {
+  margin: 0;
+}
+
+
+/* NEEDS */
+
+.ae-needs {
+  margin: 35px 0;
+
+  display: grid;
+  gap: 8px;
+}
+
+.ae-needs > div {
+  padding: 20px;
+
+  background: var(--black);
+  border: 3px solid var(--yellow);
+
+  color: var(--white);
+}
+
+.ae-needs span {
+  display: block;
+  margin-bottom: 7px;
+
+  color: var(--pink);
+
+  font-size: 1.15rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ae-needs p {
+  margin: 0;
+}
+
+
+/* ENDING */
+
+.addiction-escaping-ending {
+  min-height: 80svh;
+  padding: 70px 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ae-ending-small {
+  margin: 0 0 10px;
+
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.addiction-escaping-ending h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 15vw, 8rem);
+  font-weight: 900;
+  font-style: italic;
+
+  line-height: 0.76;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.addiction-escaping-ending h2 span {
+  color: var(--pink);
+}
+
+.ae-ending-copy {
+  max-width: 650px;
+  margin-top: 45px;
+
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.ae-ending-copy p {
+  margin: 0 0 15px;
+}
+
+
+/* BACK */
+
+.ae-back-button {
+  display: inline-block;
+
+  margin-top: 25px;
+  padding: 14px 20px;
+
+  background: var(--pink);
+  border: 3px solid var(--black);
+
+  color: var(--black);
+
+  font-weight: 900;
+  text-decoration: none;
+
+  transition: 0.15s ease;
+}
+
+.ae-back-button:hover {
+  background: var(--white);
+  transform: translate(-3px, -3px);
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .addiction-escaping-hero {
+    min-height: 100vh;
+    padding: 70px 6vw;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.72) 34%,
+        rgba(0, 0, 0, 0.20) 62%,
+        rgba(0, 0, 0, 0.04) 100%
+      ),
+      url("addiction_escaping_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .addiction-escaping-hero h1 {
+    font-size: clamp(6rem, 9vw, 11rem);
+  }
+
+  .addiction-escaping-section {
+    min-height: 70vh;
+    padding: 90px 6vw;
+
+    grid-template-columns:
+      minmax(0, 0.9fr)
+      minmax(450px, 1.1fr);
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .ae-heading h2 {
+    font-size: clamp(4.5rem, 6.5vw, 8rem);
+  }
+
+  .ae-copy {
+    font-size: 1.1rem;
+  }
+
+  .ae-lead {
+    font-size: 1.5rem;
+  }
+
+  .ae-copy blockquote {
+    font-size: 2.3rem;
+  }
+
+  .ae-escape-grid,
+  .ae-questions,
+  .ae-needs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ae-loop {
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+    align-items: center;
+  }
+
+  .addiction-escaping-ending {
+    min-height: 80vh;
+    padding: 90px 6vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+
+    align-items: center;
+    gap: 80px;
+  }
+
+  .addiction-escaping-ending h2 {
+    font-size: clamp(5rem, 7.5vw, 9rem);
+  }
+
+  .ae-ending-copy {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+
+  .addiction-escaping-hero h1 {
+    font-size: 15vw;
+  }
+
+  .ae-heading h2 {
+    font-size: 14vw;
+  }
+
+  .ae-copy {
+    font-size: 0.98rem;
+  }
+
+  .addiction-escaping-ending h2 {
+    font-size: 14vw;
+  }
+}
+
+/* =========================================================
+   TOOLBOX — ADHD
+   ========================================================= */
+
+.toolbox-adhd-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.toolbox-adhd-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.12),
+      rgba(8, 8, 8, 0.45) 45%,
+      rgba(8, 8, 8, 0.96)
+    ),
+    url("toolbox_adhd_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  padding: 32px 22px 60px;
+}
+
+.toolbox-adhd-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.toolbox-adhd-eyebrow {
+  margin: 0 0 18px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.toolbox-adhd-hero h1 {
+  margin: 0;
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.toolbox-adhd-hero h1 span {
+  display: block;
+}
+
+.toolbox-adhd-intro {
+  margin: 30px 0 0;
+  max-width: 650px;
+  font-size: clamp(1.15rem, 5vw, 2rem);
+  line-height: 0.95;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* SECTIONS */
+
+.adhd-section {
+  padding: 75px 22px;
+  border-top: 5px solid var(--black);
+}
+
+.adhd-section-number {
+  margin-bottom: 45px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.adhd-section-content {
+  max-width: 850px;
+}
+
+.adhd-section h2 {
+  margin: 0 0 35px;
+  font-size: clamp(3rem, 14vw, 6.5rem);
+  line-height: 0.82;
+  letter-spacing: -0.06em;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.adhd-section-content > p {
+  max-width: 760px;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.adhd-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.adhd-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.adhd-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.adhd-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+
+/* CALLOUT */
+
+.adhd-callout {
+  margin: 40px 0;
+  padding: 25px;
+  border: 4px solid currentColor;
+}
+
+.adhd-callout p {
+  margin: 0;
+  font-size: clamp(1.25rem, 6vw, 2.2rem);
+  line-height: 0.95;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* TOOL LIST */
+
+.adhd-tool-list {
+  margin-top: 40px;
+  border-top: 3px solid currentColor;
+}
+
+.adhd-tool-list > div {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 15px;
+  align-items: start;
+
+  padding: 20px 0;
+  border-bottom: 3px solid currentColor;
+}
+
+.adhd-tool-list span {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.adhd-tool-list p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+
+/* TOOL BOX */
+
+.adhd-tool-box {
+  margin-top: 40px;
+  padding: 25px;
+  background: var(--black);
+  color: var(--white);
+}
+
+.adhd-tool-box h3 {
+  margin: 0 0 20px;
+  font-size: clamp(1.8rem, 8vw, 3rem);
+  line-height: 0.9;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.adhd-tool-box p {
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+
+/* BIG QUESTIONS */
+
+.adhd-big-question {
+  margin: 30px 0;
+  padding: 25px 0;
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+
+  font-size: clamp(2rem, 9vw, 4.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* PAUSE */
+
+.adhd-pause {
+  margin-top: 45px;
+  padding: 30px;
+  border: 4px solid var(--pink);
+  text-align: center;
+}
+
+.adhd-pause-label {
+  color: var(--pink);
+  font-size: 0.8rem !important;
+  letter-spacing: 0.15em;
+}
+
+.adhd-pause p {
+  margin: 15px 0;
+  font-size: clamp(1.4rem, 6vw, 2.5rem);
+  line-height: 1;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.adhd-pause span {
+  display: block;
+  color: var(--yellow);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+
+/* ENDING */
+
+.adhd-ending {
+  padding: 100px 22px;
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.adhd-ending-small {
+  margin-bottom: 25px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.adhd-ending h2 {
+  margin: 0 0 35px;
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.adhd-ending > p:not(.adhd-ending-small) {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.adhd-back-link {
+  display: inline-block;
+  margin-top: 45px;
+  padding-bottom: 5px;
+
+  color: var(--black);
+  border-bottom: 3px solid var(--black);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+
+.adhd-back-link:hover {
+  opacity: 0.6;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .toolbox-adhd-hero {
+    min-height: 92vh;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.9) 0%,
+        rgba(8, 8, 8, 0.45) 45%,
+        rgba(8, 8, 8, 0.12) 100%
+      ),
+      url("toolbox_adhd_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    padding: 70px;
+    align-items: center;
+  }
+
+  .toolbox-adhd-hero h1 {
+    max-width: 900px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .adhd-section {
+    padding: 110px 70px;
+    display: grid;
+    grid-template-columns: 180px minmax(0, 850px);
+    gap: 60px;
+    justify-content: center;
+  }
+
+  .adhd-section-number {
+    margin: 8px 0 0;
+  }
+
+  .adhd-ending {
+    padding: 130px 70px;
+  }
+
+  .adhd-ending h2 {
+    max-width: 1000px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+}
+
+/* =========================================================
+   TOOLBOX — COGNITIVE DISTORTIONS
+   ========================================================= */
+
+.toolbox-cd-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.toolbox-cd-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.1),
+      rgba(8, 8, 8, 0.4) 45%,
+      rgba(8, 8, 8, 0.97)
+    ),
+    url("toolbox_cognitive_distortions_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  padding: 32px 22px 60px;
+}
+
+.toolbox-cd-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.toolbox-cd-eyebrow {
+  margin: 0 0 18px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.toolbox-cd-hero h1 {
+  margin: 0;
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.toolbox-cd-hero h1 span {
+  display: block;
+}
+
+.toolbox-cd-intro {
+  margin: 30px 0 0;
+  max-width: 650px;
+  font-size: clamp(1.15rem, 5vw, 2rem);
+  line-height: 0.95;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* SECTIONS */
+
+.cd-section {
+  padding: 75px 22px;
+  border-top: 5px solid var(--black);
+}
+
+.cd-section-number {
+  margin-bottom: 45px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.cd-section-content {
+  max-width: 850px;
+}
+
+.cd-section h2 {
+  margin: 0 0 35px;
+  font-size: clamp(3rem, 14vw, 6.5rem);
+  line-height: 0.82;
+  letter-spacing: -0.06em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.cd-section-content > p {
+  max-width: 760px;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.cd-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.cd-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.cd-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.cd-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+
+/* CALLOUT */
+
+.cd-callout {
+  margin: 40px 0;
+  padding: 25px;
+  border: 4px solid currentColor;
+}
+
+.cd-callout p {
+  margin: 0;
+  font-size: clamp(1.35rem, 6vw, 2.3rem);
+  line-height: 0.95;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* PROCESS */
+
+.cd-process {
+  margin-top: 40px;
+  border-top: 3px solid currentColor;
+}
+
+.cd-process > div {
+  padding: 22px 0;
+  border-bottom: 3px solid currentColor;
+}
+
+.cd-process span {
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.cd-process h3 {
+  margin: 8px 0;
+  font-size: clamp(1.8rem, 8vw, 3rem);
+  line-height: 0.9;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.cd-process p {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+
+/* EXAMPLES */
+
+.cd-example {
+  margin: 25px 0;
+  padding: 22px;
+  border: 3px solid currentColor;
+}
+
+.cd-example-label {
+  margin: 0 0 10px !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.12em;
+  font-weight: 900 !important;
+}
+
+.cd-example p:last-child {
+  margin: 0;
+  font-size: clamp(1.15rem, 5vw, 1.7rem);
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+
+/* PERMISSION THOUGHTS */
+
+.cd-permission-list {
+  margin: 40px 0;
+  border-top: 4px solid currentColor;
+}
+
+.cd-permission-list p {
+  margin: 0;
+  padding: 18px 0;
+  border-bottom: 4px solid currentColor;
+
+  font-size: clamp(1.3rem, 6vw, 2.2rem);
+  line-height: 1;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* THOUGHT TRIAL */
+
+.cd-trial {
+  margin-top: 40px;
+  border-top: 3px solid currentColor;
+}
+
+.cd-trial > div {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 15px;
+
+  padding: 22px 0;
+  border-bottom: 3px solid currentColor;
+}
+
+.cd-trial span {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.cd-trial p {
+  margin: 0;
+  font-size: clamp(1.05rem, 5vw, 1.5rem);
+  line-height: 1.25;
+  font-weight: 900;
+}
+
+
+/* END */
+
+.cd-ending {
+  padding: 100px 22px;
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.cd-ending-small {
+  margin-bottom: 25px;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.cd-ending h2 {
+  margin: 0 0 35px;
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.cd-ending > p:not(.cd-ending-small) {
+  max-width: 650px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.cd-back-link {
+  display: inline-block;
+  margin-top: 45px;
+  padding-bottom: 5px;
+
+  color: var(--black);
+  border-bottom: 3px solid var(--black);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+
+.cd-back-link:hover {
+  opacity: 0.6;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .toolbox-cd-hero {
+    min-height: 92vh;
+    align-items: center;
+    padding: 70px;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.9) 0%,
+        rgba(8, 8, 8, 0.4) 45%,
+        rgba(8, 8, 8, 0.1) 100%
+      ),
+      url("toolbox_cognitive_distortions_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .toolbox-cd-hero h1 {
+    max-width: 950px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .cd-section {
+    padding: 110px 70px;
+
+    display: grid;
+    grid-template-columns: 180px minmax(0, 850px);
+    gap: 60px;
+    justify-content: center;
+  }
+
+  .cd-section-number {
+    margin: 8px 0 0;
+  }
+
+  .cd-process > div {
+    display: grid;
+    grid-template-columns: 50px 220px 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .cd-process h3 {
+    margin: 0;
+  }
+
+  .cd-ending {
+    padding: 130px 70px;
+  }
+
+  .cd-ending h2 {
+    max-width: 1050px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+}
+
+/* =========================================================
+   TOOLBOX — ESSAYS
+   ========================================================= */
+
+.toolbox-essays-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.toolbox-essays-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.1),
+      rgba(8, 8, 8, 0.42) 45%,
+      rgba(8, 8, 8, 0.97)
+    ),
+    url("toolbox_essays_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 32px 22px 60px;
+}
+
+.toolbox-essays-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.toolbox-essays-eyebrow {
+  margin: 0 0 18px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.toolbox-essays-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.7rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.toolbox-essays-hero h1 span {
+  display: block;
+}
+
+.toolbox-essays-intro {
+  margin: 30px 0 0;
+
+  font-size: clamp(1.1rem, 5vw, 2rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* INTRO */
+
+.essays-intro-section,
+.essays-write-section,
+.essays-prompts {
+  padding: 80px 22px;
+  border-top: 5px solid var(--black);
+}
+
+.essays-intro-section {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.essays-write-section {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.essays-prompts {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.essays-section-number {
+  margin-bottom: 45px;
+
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.essays-intro-content,
+.essays-write-content,
+.essays-prompts-content {
+  max-width: 850px;
+}
+
+.essays-intro-section h2,
+.essays-write-section h2,
+.essays-prompts h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3rem, 14vw, 6.5rem);
+  line-height: 0.82;
+  letter-spacing: -0.06em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.essays-intro-content > p,
+.essays-write-content > p {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+
+/* LIBRARY */
+
+.essays-library {
+  padding: 80px 22px;
+  background: var(--black);
+}
+
+.essays-library-heading {
+  max-width: 850px;
+  margin-bottom: 55px;
+}
+
+.essays-library-heading > p:first-child {
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.essays-library-heading h2 {
+  margin: 25px 0;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.essays-library-heading > p:last-child {
+  max-width: 600px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+
+/* ESSAY CARDS */
+
+.essays-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.essay-card {
+  min-height: 420px;
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 3px solid var(--black);
+}
+
+.essay-card-number,
+.essay-card-category {
+  margin: 0;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.essay-card-category {
+  margin-top: 12px;
+}
+
+.essay-card h3 {
+  margin: 45px 0 25px;
+
+  font-size: clamp(2.8rem, 12vw, 5rem);
+  line-height: 0.82;
+  letter-spacing: -0.05em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.essay-card > p:not(.essay-card-number):not(.essay-card-category) {
+  max-width: 500px;
+
+  font-size: 0.95rem;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.essay-card > span {
+  margin-top: auto;
+  padding-top: 35px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.essay-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.essay-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.essay-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.essay-card-black {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--white);
+}
+
+
+/* WRITING CALLOUT */
+
+.essays-callout {
+  margin: 45px 0 0;
+  padding: 25px;
+
+  border: 4px solid currentColor;
+}
+
+.essays-callout p {
+  margin: 0;
+
+  font-size: clamp(1.4rem, 6vw, 2.4rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* PROMPTS */
+
+.essay-prompt-list {
+  margin-top: 45px;
+  border-top: 3px solid currentColor;
+}
+
+.essay-prompt-list > div {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 15px;
+
+  padding: 24px 0;
+  border-bottom: 3px solid currentColor;
+}
+
+.essay-prompt-list span {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.essay-prompt-list p {
+  margin: 0;
+
+  font-size: clamp(1.1rem, 5vw, 1.6rem);
+  line-height: 1.25;
+  font-weight: 900;
+}
+
+
+/* ENDING */
+
+.essays-ending {
+  padding: 100px 22px;
+
+  background: var(--pink);
+  color: var(--black);
+}
+
+.essays-ending-small {
+  margin-bottom: 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.essays-ending h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.essays-ending > p:not(.essays-ending-small) {
+  max-width: 600px;
+
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.essays-back-link {
+  display: inline-block;
+
+  margin-top: 45px;
+  padding-bottom: 5px;
+
+  color: var(--black);
+  border-bottom: 3px solid var(--black);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+}
+
+.essays-back-link:hover {
+  opacity: 0.6;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .toolbox-essays-hero {
+    min-height: 92vh;
+    align-items: center;
+
+    padding: 70px;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.9) 0%,
+        rgba(8, 8, 8, 0.4) 45%,
+        rgba(8, 8, 8, 0.1) 100%
+      ),
+      url("toolbox_essays_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .toolbox-essays-hero h1 {
+    max-width: 950px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .essays-intro-section,
+  .essays-write-section,
+  .essays-prompts {
+    padding: 110px 70px;
+
+    display: grid;
+    grid-template-columns: 180px minmax(0, 850px);
+    gap: 60px;
+
+    justify-content: center;
+  }
+
+  .essays-section-number {
+    margin-top: 8px;
+  }
+
+  .essays-library {
+    padding: 110px 70px;
+  }
+
+  .essays-library-heading {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+
+  .essays-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .essay-card {
+    min-height: 500px;
+    padding: 38px;
+  }
+
+  .essay-prompt-list > div {
+    grid-template-columns: 60px 1fr;
+  }
+
+  .essays-ending {
+    padding: 130px 70px;
+  }
+
+  .essays-ending h2 {
+    max-width: 1000px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+}
+
+/* =========================================================
+   TOOLBOX — IFS
+   ========================================================= */
+
+.toolbox-ifs-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.toolbox-ifs-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.08),
+      rgba(8, 8, 8, 0.4) 45%,
+      rgba(8, 8, 8, 0.97)
+    ),
+    url("toolbox_ifs_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 32px 22px 60px;
+}
+
+.toolbox-ifs-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.toolbox-ifs-eyebrow {
+  margin: 0 0 18px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.toolbox-ifs-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.7rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.toolbox-ifs-hero h1 span {
+  display: block;
+}
+
+.toolbox-ifs-intro {
+  margin: 30px 0 0;
+
+  font-size: clamp(1.15rem, 5vw, 2rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* MAIN SECTIONS */
+
+.ifs-tool-section {
+  padding: 80px 22px;
+  border-top: 5px solid var(--black);
+}
+
+.ifs-tool-number {
+  margin-bottom: 45px;
+
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.ifs-tool-content {
+  max-width: 850px;
+}
+
+.ifs-tool-section h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3rem, 14vw, 6.5rem);
+  line-height: 0.82;
+  letter-spacing: -0.06em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ifs-tool-content > p {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.ifs-tool-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.ifs-tool-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ifs-tool-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.ifs-tool-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+
+/* CALLOUT */
+
+.ifs-tool-callout {
+  margin: 40px 0;
+  padding: 25px;
+
+  border: 4px solid currentColor;
+}
+
+.ifs-tool-callout p {
+  margin: 0;
+
+  font-size: clamp(1.3rem, 6vw, 2.3rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* BIG QUESTION */
+
+.ifs-tool-big-question {
+  margin: 40px 0;
+  padding: 25px 0;
+
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+
+  font-size: clamp(2rem, 9vw, 4.5rem);
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* QUESTIONS */
+
+.ifs-tool-questions {
+  margin-top: 40px;
+  border-top: 3px solid currentColor;
+}
+
+.ifs-tool-questions > div {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 15px;
+
+  padding: 22px 0;
+  border-bottom: 3px solid currentColor;
+}
+
+.ifs-tool-questions span {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.ifs-tool-questions p {
+  margin: 0;
+
+  font-size: clamp(1.05rem, 5vw, 1.5rem);
+  line-height: 1.3;
+  font-weight: 900;
+}
+
+
+/* PART CARDS */
+
+.ifs-part-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3px;
+
+  margin: 45px 0;
+
+  background: var(--white);
+  border: 3px solid var(--white);
+}
+
+.ifs-part-grid > div {
+  padding: 25px;
+
+  background: var(--black);
+  color: var(--white);
+}
+
+.ifs-part-grid h3 {
+  margin: 0 0 15px;
+
+  color: var(--yellow);
+
+  font-size: clamp(1.5rem, 7vw, 2.5rem);
+  line-height: 0.9;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ifs-part-grid p {
+  margin: 0;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+
+/* BLENDED / UNBLENDED */
+
+.ifs-tool-before-after {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  margin: 40px 0;
+}
+
+.ifs-tool-before-after > div {
+  padding: 25px;
+  border: 4px solid currentColor;
+}
+
+.ifs-tool-before-after p {
+  margin: 0;
+
+  font-size: clamp(1.4rem, 6vw, 2.4rem);
+  line-height: 1;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ifs-tool-before-after .ifs-tool-label {
+  margin-bottom: 18px;
+
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  font-style: normal;
+}
+
+
+/* INTERNAL CONFLICT */
+
+.ifs-tool-conflict {
+  display: grid;
+  gap: 15px;
+
+  margin: 40px 0;
+  text-align: center;
+}
+
+.ifs-tool-conflict > div {
+  padding: 30px;
+  border: 4px solid currentColor;
+}
+
+.ifs-tool-conflict p {
+  margin: 0;
+
+  font-size: clamp(1.5rem, 7vw, 2.8rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ifs-tool-conflict > span {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+
+/* FLOW */
+
+.ifs-tool-flow {
+  margin: 45px 0;
+  text-align: center;
+}
+
+.ifs-tool-flow p {
+  margin: 0;
+  padding: 22px;
+
+  border: 3px solid currentColor;
+
+  font-size: clamp(1.2rem, 5vw, 1.8rem);
+  line-height: 1;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ifs-tool-flow span {
+  display: block;
+
+  padding: 10px;
+
+  color: var(--yellow);
+
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+
+/* WORKBOOK */
+
+.ifs-tool-workbook {
+  margin-top: 40px;
+  border-top: 3px solid currentColor;
+}
+
+.ifs-tool-workbook > div {
+  padding: 25px 0;
+  border-bottom: 3px solid currentColor;
+}
+
+.ifs-tool-workbook span {
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.ifs-tool-workbook h3 {
+  margin: 8px 0;
+
+  font-size: clamp(1.8rem, 8vw, 3rem);
+  line-height: 0.9;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ifs-tool-workbook p {
+  margin: 0;
+
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+
+/* ENDING */
+
+.ifs-tool-ending {
+  padding: 100px 22px;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ifs-tool-ending-small {
+  margin-bottom: 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.ifs-tool-ending h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ifs-tool-ending > p:not(.ifs-tool-ending-small) {
+  max-width: 650px;
+
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.ifs-tool-back-link {
+  display: inline-block;
+
+  margin-top: 45px;
+  padding-bottom: 5px;
+
+  color: var(--black);
+  border-bottom: 3px solid var(--black);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+}
+
+.ifs-tool-back-link:hover {
+  opacity: 0.6;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .toolbox-ifs-hero {
+    min-height: 92vh;
+    align-items: center;
+
+    padding: 70px;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.9) 0%,
+        rgba(8, 8, 8, 0.4) 45%,
+        rgba(8, 8, 8, 0.08) 100%
+      ),
+      url("toolbox_ifs_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .toolbox-ifs-hero h1 {
+    max-width: 950px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .ifs-tool-section {
+    padding: 110px 70px;
+
+    display: grid;
+    grid-template-columns: 180px minmax(0, 850px);
+    gap: 60px;
+
+    justify-content: center;
+  }
+
+  .ifs-tool-number {
+    margin-top: 8px;
+  }
+
+  .ifs-part-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ifs-tool-before-after {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ifs-tool-conflict {
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+
+  .ifs-tool-workbook > div {
+    display: grid;
+    grid-template-columns: 50px 180px 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .ifs-tool-workbook h3 {
+    margin: 0;
+  }
+
+  .ifs-tool-ending {
+    padding: 130px 70px;
+  }
+
+  .ifs-tool-ending h2 {
+    max-width: 1050px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+}
+
+/* =========================================================
+   TOOLBOX — JOBS
+   ========================================================= */
+
+.toolbox-jobs-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.toolbox-jobs-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.08),
+      rgba(8, 8, 8, 0.4) 45%,
+      rgba(8, 8, 8, 0.97)
+    ),
+    url("toolbox_jobs_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 32px 22px 60px;
+}
+
+.toolbox-jobs-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.toolbox-jobs-eyebrow {
+  margin: 0 0 18px;
+
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.toolbox-jobs-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.7rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.toolbox-jobs-hero h1 span {
+  display: block;
+}
+
+.toolbox-jobs-intro {
+  margin: 30px 0 0;
+
+  font-size: clamp(1.15rem, 5vw, 2rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* SECTIONS */
+
+.jobs-section {
+  padding: 80px 22px;
+  border-top: 5px solid var(--black);
+}
+
+.jobs-section-number {
+  margin-bottom: 45px;
+
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.jobs-section-content {
+  max-width: 850px;
+}
+
+.jobs-section h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3rem, 14vw, 6.5rem);
+  line-height: 0.82;
+  letter-spacing: -0.06em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.jobs-section-content > p {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.jobs-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.jobs-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.jobs-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.jobs-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+
+/* CALLOUT */
+
+.jobs-callout {
+  margin: 40px 0;
+  padding: 25px;
+
+  border: 4px solid currentColor;
+}
+
+.jobs-callout p {
+  margin: 0;
+
+  font-size: clamp(1.3rem, 6vw, 2.3rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* STORY VS FACT */
+
+.jobs-before-after {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  margin: 40px 0;
+}
+
+.jobs-before-after > div {
+  padding: 25px;
+  border: 4px solid currentColor;
+}
+
+.jobs-before-after p {
+  margin: 0;
+
+  font-size: clamp(1.3rem, 6vw, 2.2rem);
+  line-height: 1;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.jobs-before-after .jobs-label {
+  margin-bottom: 18px;
+
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  font-style: normal;
+}
+
+
+/* BIG QUESTION */
+
+.jobs-question {
+  margin: 40px 0;
+  padding: 28px 0;
+
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+
+  font-size: clamp(1.8rem, 8vw, 4rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* LISTS */
+
+.jobs-list {
+  margin: 40px 0;
+  border-top: 3px solid currentColor;
+}
+
+.jobs-list > div {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 15px;
+
+  padding: 22px 0;
+  border-bottom: 3px solid currentColor;
+}
+
+.jobs-list span {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.jobs-list p {
+  margin: 0;
+
+  font-size: clamp(1.05rem, 5vw, 1.45rem);
+  line-height: 1.3;
+  font-weight: 900;
+}
+
+
+/* CONTROL GRID */
+
+.jobs-control-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  margin: 40px 0;
+}
+
+.jobs-control-grid > div {
+  padding: 25px;
+  border: 4px solid currentColor;
+}
+
+.jobs-control-grid .jobs-label {
+  margin-bottom: 25px;
+
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  font-weight: 900;
+}
+
+.jobs-control-grid > div > p:not(.jobs-label) {
+  margin: 0;
+  padding: 12px 0;
+
+  border-bottom: 2px solid currentColor;
+
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+
+/* ENDING */
+
+.jobs-ending {
+  padding: 100px 22px;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.jobs-ending-small {
+  margin-bottom: 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.jobs-ending h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.jobs-ending > p:not(.jobs-ending-small) {
+  max-width: 650px;
+
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.jobs-back-link {
+  display: inline-block;
+
+  margin-top: 45px;
+  padding-bottom: 5px;
+
+  color: var(--black);
+  border-bottom: 3px solid var(--black);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+}
+
+.jobs-back-link:hover {
+  opacity: 0.6;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .toolbox-jobs-hero {
+    min-height: 92vh;
+    align-items: center;
+
+    padding: 70px;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.9) 0%,
+        rgba(8, 8, 8, 0.42) 45%,
+        rgba(8, 8, 8, 0.08) 100%
+      ),
+      url("toolbox_jobs_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .toolbox-jobs-hero h1 {
+    max-width: 1000px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .jobs-section {
+    padding: 110px 70px;
+
+    display: grid;
+    grid-template-columns: 180px minmax(0, 850px);
+    gap: 60px;
+
+    justify-content: center;
+  }
+
+  .jobs-section-number {
+    margin-top: 8px;
+  }
+
+  .jobs-before-after {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .jobs-control-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .jobs-ending {
+    padding: 130px 70px;
+  }
+
+  .jobs-ending h2 {
+    max-width: 1050px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+}
+
+/* =========================================================
+   TOOLBOX — OTHERS
+   ========================================================= */
+
+.toolbox-others-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.toolbox-others-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.08),
+      rgba(8, 8, 8, 0.4) 45%,
+      rgba(8, 8, 8, 0.97)
+    ),
+    url("toolbox_others_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 32px 22px 60px;
+}
+
+.toolbox-others-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.toolbox-others-eyebrow {
+  margin: 0 0 18px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.toolbox-others-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.7rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.toolbox-others-hero h1 span {
+  display: block;
+}
+
+.toolbox-others-intro {
+  margin: 30px 0 0;
+
+  font-size: clamp(1.15rem, 5vw, 2rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* SECTIONS */
+
+.others-section {
+  padding: 80px 22px;
+  border-top: 5px solid var(--black);
+}
+
+.others-section-number {
+  margin-bottom: 45px;
+
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.others-section-content {
+  max-width: 850px;
+}
+
+.others-section h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3rem, 14vw, 6.5rem);
+  line-height: 0.82;
+  letter-spacing: -0.06em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.others-section-content > p {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.others-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.others-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.others-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.others-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+
+/* CALLOUT */
+
+.others-callout {
+  margin: 40px 0;
+  padding: 25px;
+
+  border: 4px solid currentColor;
+}
+
+.others-callout p {
+  margin: 0;
+
+  font-size: clamp(1.3rem, 6vw, 2.3rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* CONTROL */
+
+.others-control-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  margin: 40px 0;
+}
+
+.others-control-grid > div {
+  padding: 25px;
+  border: 4px solid currentColor;
+}
+
+.others-label {
+  margin: 0 0 22px !important;
+
+  font-size: 0.7rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.12em;
+}
+
+.others-control-grid > div > p:not(.others-label) {
+  margin: 0;
+  padding: 12px 0;
+
+  border-bottom: 2px solid currentColor;
+
+  font-weight: 800;
+}
+
+
+/* BEFORE / AFTER */
+
+.others-before-after {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  margin: 40px 0;
+}
+
+.others-before-after > div {
+  padding: 25px;
+  border: 4px solid currentColor;
+}
+
+.others-before-after > div > p:last-child {
+  margin: 0;
+
+  font-size: clamp(1.3rem, 6vw, 2.2rem);
+  line-height: 1;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* THOUGHTS */
+
+.others-thoughts {
+  margin: 40px 0;
+  border-top: 3px solid currentColor;
+}
+
+.others-thoughts p {
+  margin: 0;
+  padding: 18px 0;
+
+  border-bottom: 3px solid currentColor;
+
+  font-size: clamp(1.2rem, 6vw, 2rem);
+  line-height: 1;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* QUESTION */
+
+.others-question {
+  margin: 40px 0;
+  padding: 28px 0;
+
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+
+  font-size: clamp(1.8rem, 8vw, 4rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* PAUSE */
+
+.others-pause {
+  margin: 40px 0;
+  border-top: 3px solid currentColor;
+}
+
+.others-pause > div {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 15px;
+
+  padding: 22px 0;
+  border-bottom: 3px solid currentColor;
+}
+
+.others-pause span {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.others-pause p {
+  margin: 0;
+
+  font-size: clamp(1.05rem, 5vw, 1.5rem);
+  line-height: 1.3;
+
+  font-weight: 900;
+}
+
+
+/* ENDING */
+
+.others-ending {
+  padding: 100px 22px;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.others-ending-small {
+  margin-bottom: 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.others-ending h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.others-ending > p:not(.others-ending-small) {
+  max-width: 650px;
+
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.others-back-link {
+  display: inline-block;
+
+  margin-top: 45px;
+  padding-bottom: 5px;
+
+  color: var(--black);
+  border-bottom: 3px solid var(--black);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+}
+
+.others-back-link:hover {
+  opacity: 0.6;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .toolbox-others-hero {
+    min-height: 92vh;
+    align-items: center;
+
+    padding: 70px;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.9) 0%,
+        rgba(8, 8, 8, 0.4) 45%,
+        rgba(8, 8, 8, 0.08) 100%
+      ),
+      url("toolbox_others_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .toolbox-others-hero h1 {
+    max-width: 1000px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .others-section {
+    padding: 110px 70px;
+
+    display: grid;
+    grid-template-columns: 180px minmax(0, 850px);
+    gap: 60px;
+
+    justify-content: center;
+  }
+
+  .others-section-number {
+    margin-top: 8px;
+  }
+
+  .others-control-grid,
+  .others-before-after {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .others-ending {
+    padding: 130px 70px;
+  }
+
+  .others-ending h2 {
+    max-width: 1050px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+}
+
+/* =========================================================
+   TOOLBOX — RELAPSE PLANS
+   ========================================================= */
+
+.toolbox-relapse-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.toolbox-relapse-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.08),
+      rgba(8, 8, 8, 0.42) 45%,
+      rgba(8, 8, 8, 0.97)
+    ),
+    url("toolbox_relapse_plans_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 32px 22px 60px;
+}
+
+.toolbox-relapse-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.toolbox-relapse-eyebrow {
+  margin: 0 0 18px;
+
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.toolbox-relapse-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.toolbox-relapse-hero h1 span {
+  display: block;
+}
+
+.toolbox-relapse-intro {
+  margin: 30px 0 0;
+
+  font-size: clamp(1.15rem, 5vw, 2rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* SECTIONS */
+
+.relapse-section {
+  padding: 80px 22px;
+  border-top: 5px solid var(--black);
+}
+
+.relapse-section-number {
+  margin-bottom: 45px;
+
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.relapse-section-content {
+  max-width: 850px;
+}
+
+.relapse-section h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3rem, 14vw, 6.5rem);
+  line-height: 0.82;
+  letter-spacing: -0.06em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.relapse-section-content > p {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.relapse-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.relapse-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.relapse-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.relapse-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+
+/* CALLOUT */
+
+.relapse-callout {
+  margin: 40px 0;
+  padding: 25px;
+
+  border: 4px solid currentColor;
+}
+
+.relapse-callout p {
+  margin: 0;
+
+  font-size: clamp(1.3rem, 6vw, 2.3rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* RELAPSE FLOW */
+
+.relapse-flow {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.relapse-flow p {
+  margin: 0;
+  padding: 20px;
+
+  border: 3px solid currentColor;
+
+  font-size: clamp(1.15rem, 5vw, 1.8rem);
+  line-height: 1;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.relapse-flow span {
+  display: block;
+  padding: 8px;
+
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+
+/* CHECKLIST */
+
+.relapse-checklist,
+.relapse-action-list,
+.relapse-tape {
+  margin: 40px 0;
+  border-top: 3px solid currentColor;
+}
+
+.relapse-checklist > div,
+.relapse-action-list > div,
+.relapse-tape > div {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 15px;
+
+  padding: 22px 0;
+  border-bottom: 3px solid currentColor;
+}
+
+.relapse-checklist span,
+.relapse-action-list span,
+.relapse-tape span {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.relapse-checklist p,
+.relapse-action-list p,
+.relapse-tape p {
+  margin: 0;
+
+  font-size: clamp(1.05rem, 5vw, 1.45rem);
+  line-height: 1.3;
+
+  font-weight: 900;
+}
+
+
+/* TRIGGER PLAN */
+
+.relapse-plan-grid,
+.relapse-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  margin: 40px 0;
+}
+
+.relapse-plan-grid > div,
+.relapse-contact-grid > div {
+  padding: 25px;
+  border: 4px solid currentColor;
+}
+
+.relapse-plan-grid p,
+.relapse-contact-grid p {
+  margin: 0;
+
+  font-size: 1.05rem;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+.relapse-label {
+  margin-bottom: 18px !important;
+
+  font-size: 0.7rem !important;
+  letter-spacing: 0.12em;
+  font-weight: 900 !important;
+}
+
+
+/* WORKBOOK */
+
+.relapse-workbook {
+  margin-top: 40px;
+  border-top: 3px solid currentColor;
+}
+
+.relapse-workbook > div {
+  padding: 25px 0;
+  border-bottom: 3px solid currentColor;
+}
+
+.relapse-workbook span {
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.relapse-workbook h3 {
+  margin: 8px 0;
+
+  font-size: clamp(1.8rem, 8vw, 3rem);
+  line-height: 0.9;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.relapse-workbook p {
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+
+/* LAPSE */
+
+.relapse-before-after {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  margin: 40px 0;
+}
+
+.relapse-before-after > div {
+  padding: 25px;
+  border: 4px solid currentColor;
+}
+
+.relapse-before-after > div > p:last-child {
+  margin: 0;
+
+  font-size: clamp(1.3rem, 6vw, 2.2rem);
+  line-height: 1;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* ENDING */
+
+.relapse-ending {
+  padding: 100px 22px;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.relapse-ending-small {
+  margin-bottom: 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.relapse-ending h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.relapse-ending > p:not(.relapse-ending-small) {
+  max-width: 650px;
+
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.relapse-back-link {
+  display: inline-block;
+
+  margin-top: 45px;
+  padding-bottom: 5px;
+
+  color: var(--black);
+  border-bottom: 3px solid var(--black);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+}
+
+.relapse-back-link:hover {
+  opacity: 0.6;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .toolbox-relapse-hero {
+    min-height: 92vh;
+    align-items: center;
+
+    padding: 70px;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.9) 0%,
+        rgba(8, 8, 8, 0.42) 45%,
+        rgba(8, 8, 8, 0.08) 100%
+      ),
+      url("toolbox_relapse_plans_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .toolbox-relapse-hero h1 {
+    max-width: 1050px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .relapse-section {
+    padding: 110px 70px;
+
+    display: grid;
+    grid-template-columns: 180px minmax(0, 850px);
+    gap: 60px;
+
+    justify-content: center;
+  }
+
+  .relapse-section-number {
+    margin-top: 8px;
+  }
+
+  .relapse-plan-grid,
+  .relapse-contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .relapse-before-after {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .relapse-workbook > div {
+    display: grid;
+    grid-template-columns: 50px 220px 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .relapse-workbook h3 {
+    margin: 0;
+  }
+
+  .relapse-ending {
+    padding: 130px 70px;
+  }
+
+  .relapse-ending h2 {
+    max-width: 1100px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+}
+
+/* =========================================================
+   TOOLBOX — SCIATICA
+   ========================================================= */
+
+.toolbox-sciatica-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.toolbox-sciatica-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.08),
+      rgba(8, 8, 8, 0.4) 45%,
+      rgba(8, 8, 8, 0.97)
+    ),
+    url("toolbox_sciatica_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 32px 22px 60px;
+}
+
+.toolbox-sciatica-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.toolbox-sciatica-eyebrow {
+  margin: 0 0 18px;
+
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.toolbox-sciatica-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.toolbox-sciatica-hero h1 span {
+  display: block;
+}
+
+.toolbox-sciatica-intro {
+  margin: 30px 0 0;
+
+  max-width: 700px;
+
+  font-size: clamp(1.15rem, 5vw, 2rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* SECTIONS */
+
+.sciatica-section {
+  padding: 80px 22px;
+  border-top: 5px solid var(--black);
+}
+
+.sciatica-section-number {
+  margin-bottom: 45px;
+
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.sciatica-section-content {
+  max-width: 850px;
+}
+
+.sciatica-section h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3rem, 14vw, 6.5rem);
+  line-height: 0.82;
+  letter-spacing: -0.06em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.sciatica-section-content > p {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.sciatica-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.sciatica-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.sciatica-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.sciatica-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+
+/* CALLOUT */
+
+.sciatica-callout {
+  margin: 40px 0;
+  padding: 25px;
+
+  border: 4px solid currentColor;
+}
+
+.sciatica-callout p {
+  margin: 0;
+
+  font-size: clamp(1.3rem, 6vw, 2.3rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* BIG QUESTION */
+
+.sciatica-big-question {
+  margin: 40px 0;
+  padding: 28px 0;
+
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+
+  font-size: clamp(1.8rem, 8vw, 4rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* BEFORE / AFTER */
+
+.sciatica-before-after {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  margin: 40px 0;
+}
+
+.sciatica-before-after > div {
+  padding: 25px;
+  border: 4px solid currentColor;
+}
+
+.sciatica-label {
+  margin: 0 0 18px !important;
+
+  font-size: 0.7rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.12em;
+}
+
+.sciatica-before-after > div > p:last-child {
+  margin: 0;
+
+  font-size: clamp(1.3rem, 6vw, 2.2rem);
+  line-height: 1;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* TOOL LIST */
+
+.sciatica-tool-list {
+  margin: 40px 0;
+  border-top: 3px solid currentColor;
+}
+
+.sciatica-tool-list > div {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 15px;
+
+  padding: 22px 0;
+  border-bottom: 3px solid currentColor;
+}
+
+.sciatica-tool-list span {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.sciatica-tool-list p {
+  margin: 0;
+
+  font-size: clamp(1.05rem, 5vw, 1.45rem);
+  line-height: 1.3;
+
+  font-weight: 900;
+}
+
+
+/* CONTROL GRID */
+
+.sciatica-control-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  margin: 40px 0;
+}
+
+.sciatica-control-grid > div {
+  padding: 25px;
+  border: 4px solid currentColor;
+}
+
+.sciatica-control-grid > div > p:not(.sciatica-label) {
+  margin: 0;
+  padding: 12px 0;
+
+  border-bottom: 2px solid currentColor;
+
+  font-weight: 800;
+}
+
+
+/* WORKBOOK */
+
+.sciatica-workbook {
+  margin-top: 40px;
+  border-top: 3px solid currentColor;
+}
+
+.sciatica-workbook > div {
+  padding: 25px 0;
+  border-bottom: 3px solid currentColor;
+}
+
+.sciatica-workbook span {
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.sciatica-workbook h3 {
+  margin: 8px 0;
+
+  font-size: clamp(1.8rem, 8vw, 3rem);
+  line-height: 0.9;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.sciatica-workbook p {
+  margin: 0;
+
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+
+/* ENDING */
+
+.sciatica-ending {
+  padding: 100px 22px;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.sciatica-ending-small {
+  margin-bottom: 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.sciatica-ending h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.sciatica-ending > p:not(.sciatica-ending-small) {
+  max-width: 700px;
+
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.sciatica-back-link {
+  display: inline-block;
+
+  margin-top: 45px;
+  padding-bottom: 5px;
+
+  color: var(--black);
+  border-bottom: 3px solid var(--black);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+}
+
+.sciatica-back-link:hover {
+  opacity: 0.6;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .toolbox-sciatica-hero {
+    min-height: 92vh;
+    align-items: center;
+
+    padding: 70px;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.9) 0%,
+        rgba(8, 8, 8, 0.4) 45%,
+        rgba(8, 8, 8, 0.08) 100%
+      ),
+      url("toolbox_sciatica_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .toolbox-sciatica-hero h1 {
+    max-width: 1000px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .sciatica-section {
+    padding: 110px 70px;
+
+    display: grid;
+    grid-template-columns: 180px minmax(0, 850px);
+    gap: 60px;
+
+    justify-content: center;
+  }
+
+  .sciatica-section-number {
+    margin-top: 8px;
+  }
+
+  .sciatica-before-after,
+  .sciatica-control-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sciatica-workbook > div {
+    display: grid;
+    grid-template-columns: 50px 180px 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .sciatica-workbook h3 {
+    margin: 0;
+  }
+
+  .sciatica-ending {
+    padding: 130px 70px;
+  }
+
+  .sciatica-ending h2 {
+    max-width: 1050px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+}
+
+/* =========================================================
+   TOOLBOX — STIGMA
+   ========================================================= */
+
+.toolbox-stigma-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.toolbox-stigma-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.08),
+      rgba(8, 8, 8, 0.42) 45%,
+      rgba(8, 8, 8, 0.97)
+    ),
+    url("toolbox_stigma_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+
+  padding: 32px 22px 60px;
+}
+
+.toolbox-stigma-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.toolbox-stigma-eyebrow {
+  margin: 0 0 18px;
+
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.toolbox-stigma-hero h1 {
+  margin: 0;
+
+  max-width: 1100px;
+
+  font-size: clamp(3.3rem, 15vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.toolbox-stigma-hero h1 span {
+  display: block;
+}
+
+.toolbox-stigma-intro {
+  margin: 30px 0 0;
+
+  font-size: clamp(1.1rem, 5vw, 2rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* SECTIONS */
+
+.stigma-section {
+  padding: 80px 22px;
+  border-top: 5px solid var(--black);
+}
+
+.stigma-section-number {
+  margin-bottom: 45px;
+
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.stigma-section-content {
+  max-width: 850px;
+}
+
+.stigma-section h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3rem, 14vw, 6.5rem);
+  line-height: 0.82;
+  letter-spacing: -0.06em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.stigma-section-content > p {
+  max-width: 760px;
+
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.stigma-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.stigma-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.stigma-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.stigma-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+
+/* CALLOUT */
+
+.stigma-callout {
+  margin: 40px 0;
+  padding: 25px;
+
+  border: 4px solid currentColor;
+}
+
+.stigma-callout p {
+  margin: 0;
+
+  font-size: clamp(1.3rem, 6vw, 2.3rem);
+  line-height: 0.95;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* THOUGHTS */
+
+.stigma-thoughts {
+  margin: 40px 0;
+  border-top: 3px solid currentColor;
+}
+
+.stigma-thoughts p {
+  margin: 0;
+  padding: 18px 0;
+
+  border-bottom: 3px solid currentColor;
+
+  font-size: clamp(1.15rem, 5vw, 1.8rem);
+  line-height: 1;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* BEFORE / AFTER */
+
+.stigma-before-after,
+.stigma-compare {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  margin: 40px 0;
+}
+
+.stigma-before-after > div,
+.stigma-compare > div {
+  padding: 25px;
+  border: 4px solid currentColor;
+}
+
+.stigma-label {
+  margin: 0 0 18px !important;
+
+  font-size: 0.7rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.12em;
+}
+
+.stigma-before-after > div > p:last-child,
+.stigma-compare > div > p:last-child {
+  margin: 0;
+
+  font-size: clamp(1.3rem, 6vw, 2.2rem);
+  line-height: 1;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* QUESTIONS */
+
+.stigma-question-list {
+  margin: 40px 0;
+  border-top: 3px solid currentColor;
+}
+
+.stigma-question-list > div {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 15px;
+
+  padding: 22px 0;
+  border-bottom: 3px solid currentColor;
+}
+
+.stigma-question-list span {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.stigma-question-list p {
+  margin: 0;
+
+  font-size: clamp(1.05rem, 5vw, 1.5rem);
+  line-height: 1.3;
+
+  font-weight: 900;
+}
+
+
+/* BIG QUESTION */
+
+.stigma-big-question {
+  margin: 40px 0;
+  padding: 28px 0;
+
+  border-top: 4px solid currentColor;
+  border-bottom: 4px solid currentColor;
+
+  font-size: clamp(1.8rem, 8vw, 4rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* WHO GETS A VOTE */
+
+.stigma-vote-grid,
+.stigma-response-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  margin: 40px 0;
+}
+
+.stigma-vote-grid > div,
+.stigma-response-grid > div {
+  padding: 25px;
+  border: 4px solid currentColor;
+}
+
+.stigma-vote-grid h3 {
+  margin: 0 0 25px;
+
+  font-size: clamp(1.6rem, 7vw, 2.6rem);
+  line-height: 0.9;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.stigma-vote-grid p {
+  margin: 0;
+  padding: 12px 0;
+
+  border-bottom: 2px solid currentColor;
+
+  font-weight: 800;
+}
+
+.stigma-response-grid > div > p:last-child {
+  margin: 0;
+
+  font-size: clamp(1.15rem, 5vw, 1.6rem);
+  line-height: 1.25;
+
+  font-weight: 900;
+}
+
+
+/* ENDING */
+
+.stigma-ending {
+  padding: 100px 22px;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.stigma-ending-small {
+  margin-bottom: 25px;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.stigma-ending h2 {
+  margin: 0 0 35px;
+
+  font-size: clamp(3.5rem, 15vw, 7rem);
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.stigma-ending > p:not(.stigma-ending-small) {
+  max-width: 700px;
+
+  font-size: 1.1rem;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.stigma-back-link {
+  display: inline-block;
+
+  margin-top: 45px;
+  padding-bottom: 5px;
+
+  color: var(--black);
+  border-bottom: 3px solid var(--black);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+
+  text-decoration: none;
+}
+
+.stigma-back-link:hover {
+  opacity: 0.6;
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .toolbox-stigma-hero {
+    min-height: 92vh;
+    align-items: center;
+
+    padding: 70px;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.9) 0%,
+        rgba(8, 8, 8, 0.4) 45%,
+        rgba(8, 8, 8, 0.08) 100%
+      ),
+      url("toolbox_stigma_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .toolbox-stigma-hero h1 {
+    max-width: 1150px;
+    font-size: clamp(5rem, 8.5vw, 9rem);
+  }
+
+  .stigma-section {
+    padding: 110px 70px;
+
+    display: grid;
+    grid-template-columns: 180px minmax(0, 850px);
+    gap: 60px;
+
+    justify-content: center;
+  }
+
+  .stigma-section-number {
+    margin-top: 8px;
+  }
+
+  .stigma-before-after,
+  .stigma-compare,
+  .stigma-vote-grid,
+  .stigma-response-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stigma-ending {
+    padding: 130px 70px;
+  }
+
+  .stigma-ending h2 {
+    max-width: 1100px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+}
+
+/* =========================================================
+   SPIRITUALITY / BUDDHISM
+   ========================================================= */
+
+.spirituality-buddhism-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.spirituality-buddhism-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.10) 0%,
+      rgba(8, 8, 8, 0.25) 45%,
+      rgba(8, 8, 8, 0.95) 100%
+    ),
+    url("spirituality_buddhism_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.spirituality-buddhism-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spirituality-buddhism-eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.spirituality-buddhism-hero h1 {
+  margin: 0;
+  font-size: clamp(3.2rem, 15vw, 6rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.spirituality-buddhism-hero h1 span {
+  display: block;
+}
+
+.spirituality-buddhism-intro {
+  margin: 2rem 0 0;
+  max-width: 700px;
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+
+/* CONTENT */
+
+.spirituality-buddhism-content {
+  width: 100%;
+}
+
+.sb-section {
+  padding: 5rem 1.25rem;
+}
+
+.sb-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.sb-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.sb-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.sb-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.sb-number {
+  margin: 0 0 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.sb-section > h2 {
+  margin: 0 0 2.5rem;
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.82;
+  letter-spacing: -0.065em;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sb-copy {
+  max-width: 760px;
+}
+
+.sb-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.sb-copy strong {
+  font-weight: 900;
+}
+
+
+/* CALLOUTS */
+
+.sb-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.5rem, 7vw, 2.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* FOUR TRUTHS */
+
+.sb-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.sb-mini-card {
+  border: 4px solid var(--black);
+  padding: 1.5rem;
+}
+
+.sb-mini-card > span {
+  display: block;
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+
+.sb-mini-card h3 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  line-height: 0.95;
+  font-weight: 900;
+}
+
+.sb-mini-card p {
+  margin-bottom: 0;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+
+/* THOUGHT BLOCKS */
+
+.sb-thought {
+  margin: 2rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: 1.25rem;
+  line-height: 1.1;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* STACK */
+
+.sb-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.sb-stack span {
+  display: block;
+  width: fit-content;
+
+  padding: 0.6rem 0.8rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+/* PRACTICE */
+
+.sb-practice-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.sb-practice-grid > div {
+  padding: 1.5rem;
+  border: 3px solid var(--white);
+}
+
+.sb-practice-grid span {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--yellow);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.sb-practice-grid p {
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+
+/* ENDING */
+
+.sb-ending {
+  padding: 6rem 1.25rem;
+  background: var(--white);
+  color: var(--black);
+}
+
+.sb-ending > p:first-child {
+  margin: 0 0 2rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.sb-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.sb-ending-copy {
+  margin: 2rem 0 3rem;
+  max-width: 600px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.sb-back-link {
+  display: inline-block;
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.sb-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .spirituality-buddhism-hero {
+    min-height: 100vh;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.86) 0%,
+        rgba(8, 8, 8, 0.45) 42%,
+        rgba(8, 8, 8, 0.05) 75%
+      ),
+      url("spirituality_buddhism_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 5vw 5rem;
+  }
+
+  .spirituality-buddhism-hero h1 {
+    max-width: 950px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .spirituality-buddhism-intro {
+    font-size: 1.25rem;
+  }
+
+  .sb-section {
+    padding: 8rem 7vw;
+  }
+
+  .sb-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .sb-copy {
+    margin-left: 35%;
+  }
+
+  .sb-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .sb-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sb-practice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sb-ending {
+    padding: 9rem 7vw;
+  }
+
+  .sb-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   SPIRITUALITY / HINDUISM
+   ========================================================= */
+
+.spirituality-hinduism-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.spirituality-hinduism-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.08) 0%,
+      rgba(8, 8, 8, 0.22) 45%,
+      rgba(8, 8, 8, 0.96) 100%
+    ),
+    url("spirituality_hinduism_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.spirituality-hinduism-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spirituality-hinduism-eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.spirituality-hinduism-hero h1 {
+  margin: 0;
+  font-size: clamp(3.2rem, 15vw, 6rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.spirituality-hinduism-hero h1 span {
+  display: block;
+}
+
+.spirituality-hinduism-intro {
+  margin: 2rem 0 0;
+  max-width: 750px;
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* CONTENT */
+
+.spirituality-hinduism-content {
+  width: 100%;
+}
+
+.sh-section {
+  padding: 5rem 1.25rem;
+}
+
+.sh-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.sh-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.sh-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.sh-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.sh-number {
+  margin: 0 0 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.sh-section > h2 {
+  margin: 0 0 2.5rem;
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.82;
+  letter-spacing: -0.065em;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sh-copy {
+  max-width: 760px;
+}
+
+.sh-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.sh-copy strong {
+  font-weight: 900;
+}
+
+
+/* CALLOUT */
+
+.sh-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.5rem, 7vw, 2.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* THOUGHT */
+
+.sh-thought {
+  margin: 2rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: clamp(1.4rem, 6vw, 2.5rem);
+  line-height: 1;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* STACK */
+
+.sh-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.sh-stack span {
+  padding: 0.6rem 0.8rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+/* CARDS */
+
+.sh-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.sh-mini-card {
+  padding: 1.5rem;
+  border: 4px solid currentColor;
+}
+
+.sh-mini-card > span {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.sh-mini-card h3 {
+  margin: 0 0 1rem;
+
+  font-size: 1.6rem;
+  line-height: 0.95;
+  font-weight: 900;
+}
+
+.sh-mini-card p {
+  margin: 0;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+
+/* PRACTICE */
+
+.sh-practice-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.sh-practice-grid > div {
+  padding: 1.5rem;
+  border: 3px solid var(--white);
+}
+
+.sh-practice-grid span {
+  display: block;
+  margin-bottom: 1rem;
+
+  color: var(--yellow);
+
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.sh-practice-grid p {
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+
+/* ENDING */
+
+.sh-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.sh-ending > p:first-child {
+  margin: 0 0 2rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.sh-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.sh-ending-copy {
+  margin: 2rem 0 3rem;
+  max-width: 600px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.sh-back-link {
+  display: inline-block;
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.sh-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .spirituality-hinduism-hero {
+    min-height: 100vh;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.48) 40%,
+        rgba(8, 8, 8, 0.05) 75%
+      ),
+      url("spirituality_hinduism_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 5vw 5rem;
+  }
+
+  .spirituality-hinduism-hero h1 {
+    max-width: 1000px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .spirituality-hinduism-intro {
+    font-size: 1.25rem;
+  }
+
+  .sh-section {
+    padding: 8rem 7vw;
+  }
+
+  .sh-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .sh-copy {
+    margin-left: 35%;
+  }
+
+  .sh-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .sh-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sh-practice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sh-ending {
+    padding: 9rem 7vw;
+  }
+
+  .sh-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   SPIRITUALITY / MIXING TRADITIONS
+   ========================================================= */
+
+.spirituality-mixing-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.spirituality-mixing-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.06) 0%,
+      rgba(8, 8, 8, 0.22) 45%,
+      rgba(8, 8, 8, 0.96) 100%
+    ),
+    url("spirituality_mixing_traditions_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.spirituality-mixing-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spirituality-mixing-eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.spirituality-mixing-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.2rem, 15vw, 6rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.spirituality-mixing-hero h1 span {
+  display: block;
+}
+
+.spirituality-mixing-intro {
+  margin: 2rem 0 0;
+  max-width: 760px;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* SECTIONS */
+
+.spirituality-mixing-content {
+  width: 100%;
+}
+
+.smt-section {
+  padding: 5rem 1.25rem;
+}
+
+.smt-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.smt-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.smt-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.smt-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.smt-number {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.smt-section > h2 {
+  margin: 0 0 2.5rem;
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.82;
+  letter-spacing: -0.065em;
+
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.smt-copy {
+  max-width: 760px;
+}
+
+.smt-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.smt-copy strong {
+  font-weight: 900;
+}
+
+
+/* CALLOUT */
+
+.smt-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.5rem, 7vw, 2.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* THOUGHT */
+
+.smt-thought {
+  margin: 2rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: clamp(1.25rem, 6vw, 2.25rem);
+  line-height: 1;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* STACK */
+
+.smt-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.smt-stack span {
+  padding: 0.6rem 0.8rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+/* CARDS */
+
+.smt-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.smt-mini-card {
+  padding: 1.5rem;
+  border: 4px solid currentColor;
+}
+
+.smt-mini-card > span {
+  display: block;
+  margin-bottom: 2rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.smt-mini-card h3 {
+  margin: 0 0 1rem;
+
+  font-size: 1.6rem;
+  line-height: 0.95;
+  font-weight: 900;
+}
+
+.smt-mini-card p {
+  margin: 0;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+
+/* PRACTICE */
+
+.smt-practice-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.smt-practice-grid > div {
+  padding: 1.5rem;
+  border: 3px solid var(--white);
+}
+
+.smt-practice-grid span {
+  display: block;
+  margin-bottom: 1rem;
+
+  color: var(--yellow);
+
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.smt-practice-grid p {
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+
+/* QUESTIONS */
+
+.smt-question-list {
+  margin: 2.5rem 0;
+}
+
+.smt-question-list p {
+  margin: 0;
+  padding: 1rem 0;
+
+  border-bottom: 3px solid var(--black);
+
+  font-size: 1.1rem;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+
+/* ENDING */
+
+.smt-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.smt-ending > p:first-child {
+  margin: 0 0 2rem;
+
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.smt-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.smt-ending-copy {
+  margin: 2rem 0 3rem;
+  max-width: 650px;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.smt-back-link {
+  display: inline-block;
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.smt-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .spirituality-mixing-hero {
+    min-height: 100vh;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.45) 42%,
+        rgba(8, 8, 8, 0.05) 75%
+      ),
+      url("spirituality_mixing_traditions_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .spirituality-mixing-hero h1 {
+    max-width: 1050px;
+    font-size: clamp(5rem, 9vw, 9rem);
+  }
+
+  .spirituality-mixing-intro {
+    font-size: 1.25rem;
+  }
+
+  .smt-section {
+    padding: 8rem 7vw;
+  }
+
+  .smt-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .smt-copy {
+    margin-left: 35%;
+  }
+
+  .smt-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .smt-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .smt-practice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .smt-question-list p {
+    font-size: 1.35rem;
+  }
+
+  .smt-ending {
+    padding: 9rem 7vw;
+  }
+
+  .smt-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   SPIRITUALITY / MY SPIRITUALITY
+   ========================================================= */
+
+.my-spirituality-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.my-spirituality-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.05) 0%,
+      rgba(8, 8, 8, 0.20) 45%,
+      rgba(8, 8, 8, 0.96) 100%
+    ),
+    url("spirituality_my_spirituality_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.my-spirituality-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.my-spirituality-eyebrow {
+  margin: 0 0 1rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.my-spirituality-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3rem, 14vw, 5.75rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.my-spirituality-hero h1 span {
+  display: block;
+}
+
+.my-spirituality-intro {
+  margin: 2rem 0 0;
+  max-width: 760px;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* SECTIONS */
+
+.my-spirituality-content {
+  width: 100%;
+}
+
+.ms-section {
+  padding: 5rem 1.25rem;
+}
+
+.ms-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.ms-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.ms-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.ms-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.ms-number {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.ms-section > h2 {
+  margin: 0 0 2.5rem;
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.82;
+  letter-spacing: -0.065em;
+
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.ms-copy {
+  max-width: 760px;
+}
+
+.ms-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.ms-copy strong {
+  font-weight: 900;
+}
+
+
+/* CALLOUTS */
+
+.ms-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.5rem, 7vw, 2.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* THOUGHT */
+
+.ms-thought {
+  margin: 2rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: clamp(1.35rem, 6vw, 2.5rem);
+  line-height: 1;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* STACK */
+
+.ms-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.ms-stack span {
+  padding: 0.6rem 0.8rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+/* CARDS */
+
+.ms-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.ms-mini-card {
+  padding: 1.5rem;
+  border: 4px solid currentColor;
+}
+
+.ms-mini-card > span {
+  display: block;
+  margin-bottom: 2rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.ms-mini-card h3 {
+  margin: 0 0 1rem;
+
+  font-size: 1.6rem;
+  line-height: 0.95;
+  font-weight: 900;
+}
+
+.ms-mini-card p {
+  margin: 0;
+
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+
+/* PRACTICE */
+
+.ms-practice-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.ms-practice-grid > div {
+  padding: 1.5rem;
+  border: 3px solid var(--black);
+}
+
+.ms-practice-grid span {
+  display: block;
+  margin-bottom: 1rem;
+
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.ms-practice-grid p {
+  margin: 0;
+
+  line-height: 1.4;
+  font-weight: 800;
+}
+
+
+/* ENDING */
+
+.ms-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.ms-ending > p:first-child {
+  margin: 0 0 2rem;
+
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.ms-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.ms-ending-copy {
+  margin: 2rem 0 3rem;
+  max-width: 650px;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.ms-back-link {
+  display: inline-block;
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.ms-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .my-spirituality-hero {
+    min-height: 100vh;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.44) 42%,
+        rgba(8, 8, 8, 0.04) 75%
+      ),
+      url("spirituality_my_spirituality_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .my-spirituality-hero h1 {
+    max-width: 1050px;
+    font-size: clamp(5rem, 8.5vw, 8.5rem);
+  }
+
+  .my-spirituality-intro {
+    font-size: 1.25rem;
+  }
+
+  .ms-section {
+    padding: 8rem 7vw;
+  }
+
+  .ms-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .ms-copy {
+    margin-left: 35%;
+  }
+
+  .ms-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .ms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ms-practice-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ms-ending {
+    padding: 9rem 7vw;
+  }
+
+  .ms-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   PERSPECTIVES
+   ========================================================= */
+
+.perspectives-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.perspectives-hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.05) 0%,
+      rgba(8, 8, 8, 0.25) 50%,
+      rgba(8, 8, 8, 0.97) 100%
+    ),
+    url("perspectives_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.perspectives-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perspectives-eyebrow {
+  margin: 0 0 1rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.perspectives-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.3rem, 16vw, 6.5rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.perspectives-hero h1 span {
+  display: block;
+}
+
+.perspectives-intro {
+  margin: 2rem 0 0;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* TOPICS */
+
+.perspectives-topics {
+  background: var(--white);
+  color: var(--black);
+
+  padding: 5rem 1.25rem;
+}
+
+.perspectives-topics-heading {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+}
+
+.perspectives-topics-heading > p:first-child {
+  margin: 0 0 1.25rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.perspectives-topics-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.perspectives-topics-subtitle {
+  max-width: 650px;
+  margin: 2rem 0 0;
+
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+
+/* GRID */
+
+.perspectives-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  gap: 1rem;
+}
+
+
+/* CARDS */
+
+.perspectives-card {
+  min-height: 330px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+
+  border: 4px solid var(--black);
+
+  color: var(--black);
+  text-decoration: none;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.perspectives-card:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 8px 8px 0 var(--black);
+}
+
+.perspectives-card-pink {
+  background: var(--pink);
+}
+
+.perspectives-card-yellow {
+  background: var(--yellow);
+}
+
+.perspectives-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.perspectives-card-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.perspectives-card-number {
+  margin: 0 0 3rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.perspectives-card h3 {
+  margin: 0 0 1rem;
+
+  font-size: clamp(2.5rem, 11vw, 4rem);
+  line-height: 0.82;
+  letter-spacing: -0.055em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.perspectives-card-description {
+  max-width: 470px;
+  margin: 0 0 2rem;
+
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.perspectives-card > span {
+  margin-top: auto;
+
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .perspectives-hero {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.42) 42%,
+        rgba(8, 8, 8, 0.04) 75%
+      ),
+      url("perspectives_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .perspectives-hero h1 {
+    max-width: 1050px;
+
+    font-size: clamp(6rem, 10vw, 10rem);
+  }
+
+  .perspectives-intro {
+    font-size: 1.25rem;
+  }
+
+  .perspectives-topics {
+    padding: 8rem 7vw;
+  }
+
+  .perspectives-topics-heading h2 {
+    font-size: clamp(6rem, 9vw, 9rem);
+  }
+
+  .perspectives-topics-subtitle {
+    margin-left: 35%;
+    font-size: 1.15rem;
+  }
+
+  .perspectives-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .perspectives-card {
+    min-height: 390px;
+    padding: 2rem;
+  }
+
+  .perspectives-card h3 {
+    font-size: clamp(3rem, 5vw, 5rem);
+  }
+}
+
+/* =========================================================
+   PERSPECTIVES / BOOKS
+   ========================================================= */
+
+.perspectives-books-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.perspectives-books-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.04) 0%,
+      rgba(8, 8, 8, 0.22) 48%,
+      rgba(8, 8, 8, 0.97) 100%
+    ),
+    url("perspectives_books_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.perspectives-books-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perspectives-books-eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.perspectives-books-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 17vw, 6.5rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.perspectives-books-hero h1 span {
+  display: block;
+}
+
+.perspectives-books-intro {
+  margin: 2rem 0 0;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* INTRO */
+
+.pb-intro-section,
+.pb-reading-section {
+  padding: 5rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.pb-number {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pb-intro-section > h2,
+.pb-reading-section > h2 {
+  margin: 0 0 2.5rem;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.8;
+  letter-spacing: -0.065em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pb-copy {
+  max-width: 760px;
+}
+
+.pb-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+.pb-callout {
+  margin: 3rem 0 0;
+  padding: 1.5rem;
+
+  border: 4px solid var(--black);
+
+  font-size: clamp(1.4rem, 7vw, 2.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* LIBRARY */
+
+.pb-library {
+  padding: 5rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+}
+
+.pb-library-heading {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+}
+
+.pb-library-heading p {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pb-library-heading h2 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* BOOK GRID */
+
+.pb-books-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  gap: 1rem;
+}
+
+.pb-book {
+  min-height: 520px;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 4px solid var(--white);
+}
+
+.pb-book-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pb-book-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pb-book-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pb-book-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pb-book-empty {
+  min-height: 350px;
+
+  background: var(--white);
+  color: var(--black);
+
+  border-color: var(--white);
+}
+
+.pb-book-number {
+  margin: 0 0 1rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.pb-book-type {
+  margin: 0 0 2.5rem;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.pb-book h3 {
+  margin: 0;
+
+  font-size: clamp(2.5rem, 10vw, 4.5rem);
+  line-height: 0.82;
+  letter-spacing: -0.055em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pb-author {
+  margin: 1rem 0 2rem;
+
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.pb-book-copy p {
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.pb-takeaway {
+  margin-top: auto;
+  padding-top: 2rem;
+
+  border-top: 3px solid currentColor;
+}
+
+.pb-takeaway span {
+  display: block;
+  margin-bottom: 0.75rem;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.pb-takeaway p {
+  margin: 0;
+
+  font-size: 1.05rem;
+  line-height: 1.35;
+  font-weight: 900;
+}
+
+
+/* MINI LIST */
+
+.pb-mini-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 0.45rem;
+  margin: 1.5rem 0;
+}
+
+.pb-mini-list span {
+  padding: 0.45rem 0.65rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: 0.8rem;
+  line-height: 1;
+  font-weight: 900;
+}
+
+
+/* HOW I READ */
+
+.pb-reading-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.pb-reading-grid > div {
+  padding: 1.5rem;
+
+  border: 3px solid var(--black);
+}
+
+.pb-reading-grid span {
+  display: block;
+  margin-bottom: 1rem;
+
+  color: var(--pink);
+
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.pb-reading-grid p {
+  margin: 0;
+
+  line-height: 1.35;
+  font-weight: 900;
+}
+
+
+/* ENDING */
+
+.pb-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pb-ending > p {
+  margin: 0 0 2rem;
+
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.pb-ending h2 {
+  margin: 0 0 3rem;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pb-back-link {
+  display: inline-block;
+
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.pb-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .perspectives-books-hero {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.42) 42%,
+        rgba(8, 8, 8, 0.03) 75%
+      ),
+      url("perspectives_books_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .perspectives-books-hero h1 {
+    font-size: clamp(6rem, 10vw, 10rem);
+  }
+
+  .perspectives-books-intro {
+    font-size: 1.25rem;
+  }
+
+  .pb-intro-section,
+  .pb-reading-section {
+    padding: 8rem 7vw;
+  }
+
+  .pb-intro-section > h2,
+  .pb-reading-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .pb-copy {
+    margin-left: 35%;
+  }
+
+  .pb-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .pb-library {
+    padding: 8rem 7vw;
+  }
+
+  .pb-library-heading h2 {
+    font-size: clamp(6rem, 9vw, 9rem);
+  }
+
+  .pb-books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pb-book {
+    min-height: 600px;
+    padding: 2rem;
+  }
+
+  .pb-book h3 {
+    font-size: clamp(3rem, 4.5vw, 5rem);
+  }
+
+  .pb-reading-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pb-ending {
+    padding: 9rem 7vw;
+  }
+
+  .pb-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   PERSPECTIVES / ON THE INSIDE
+   ========================================================= */
+
+.perspectives-inside-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.perspectives-inside-hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.05) 0%,
+      rgba(8, 8, 8, 0.22) 45%,
+      rgba(8, 8, 8, 0.97) 100%
+    ),
+    url("perspectives_inside_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.perspectives-inside-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perspectives-inside-eyebrow {
+  margin: 0 0 1rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.perspectives-inside-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.4rem, 16vw, 6.5rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.perspectives-inside-hero h1 span {
+  display: block;
+}
+
+.perspectives-inside-intro {
+  margin: 2rem 0 0;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* CONTENT SECTIONS */
+
+.pi-section {
+  padding: 5rem 1.25rem;
+}
+
+.pi-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pi-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pi-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pi-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pi-number {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pi-section > h2 {
+  margin: 0 0 2.5rem;
+
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.8;
+  letter-spacing: -0.065em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pi-copy {
+  max-width: 760px;
+}
+
+.pi-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+
+/* CALLOUT */
+
+.pi-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.5rem, 7vw, 2.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* THOUGHT */
+
+.pi-thought {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: clamp(1.4rem, 7vw, 2.5rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* THEN + NOW */
+
+.pi-two-column {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
+.pi-perspective-card {
+  padding: 1.5rem;
+
+  border: 4px solid var(--black);
+}
+
+.pi-perspective-card > span {
+  display: block;
+  margin-bottom: 2rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.pi-perspective-card h3 {
+  margin: 0 0 1.25rem;
+
+  font-size: 2.25rem;
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pi-perspective-card p {
+  margin: 0;
+
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+
+/* FRAGMENTS */
+
+.pi-fragments {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+  margin: 2.5rem 0;
+}
+
+.pi-fragments span {
+  padding: 0.65rem 0.8rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+/* JOURNALS */
+
+.pi-journals {
+  padding: 5rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.pi-journals-heading {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+}
+
+.pi-journals-heading > p:first-child {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pi-journals-heading h2 {
+  margin: 0 0 2rem;
+
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pi-journals-heading > p:last-child {
+  max-width: 650px;
+
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+
+/* JOURNAL CARDS */
+
+.pi-journal-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  gap: 1rem;
+}
+
+.pi-journal-card {
+  min-height: 340px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+
+  border: 4px solid var(--black);
+}
+
+.pi-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pi-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pi-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pi-card-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pi-card-number {
+  margin: 0 0 3rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.pi-journal-card h3 {
+  margin: 0 0 1rem;
+
+  font-size: clamp(2.5rem, 11vw, 4rem);
+  line-height: 0.82;
+  letter-spacing: -0.055em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pi-journal-card > p:not(.pi-card-number) {
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.pi-journal-card > span {
+  margin-top: auto;
+
+  padding-top: 2rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+
+/* ENDING */
+
+.pi-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.pi-ending > p:first-child {
+  margin: 0 0 2rem;
+
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.pi-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pi-ending-copy {
+  max-width: 650px;
+  margin: 2rem 0 3rem;
+
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.pi-back-link {
+  display: inline-block;
+
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.pi-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .perspectives-inside-hero {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.42) 42%,
+        rgba(8, 8, 8, 0.03) 75%
+      ),
+      url("perspectives_inside_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .perspectives-inside-hero h1 {
+    font-size: clamp(6rem, 10vw, 10rem);
+  }
+
+  .perspectives-inside-intro {
+    font-size: 1.25rem;
+  }
+
+  .pi-section {
+    padding: 8rem 7vw;
+  }
+
+  .pi-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .pi-copy {
+    margin-left: 35%;
+  }
+
+  .pi-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .pi-two-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pi-journals {
+    padding: 8rem 7vw;
+  }
+
+  .pi-journals-heading h2 {
+    font-size: clamp(6rem, 9vw, 9rem);
+  }
+
+  .pi-journals-heading > p:last-child {
+    margin-left: 35%;
+    font-size: 1.15rem;
+  }
+
+  .pi-journal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pi-journal-card {
+    min-height: 390px;
+    padding: 2rem;
+  }
+
+  .pi-journal-card h3 {
+    font-size: clamp(3rem, 4.5vw, 5rem);
+  }
+
+  .pi-ending {
+    padding: 9rem 7vw;
+  }
+
+  .pi-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   PERSPECTIVES / QUOTES
+   ========================================================= */
+
+.perspectives-quotes-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.perspectives-quotes-hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.05) 0%,
+      rgba(8, 8, 8, 0.22) 45%,
+      rgba(8, 8, 8, 0.97) 100%
+    ),
+    url("perspectives_quotes_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.perspectives-quotes-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perspectives-quotes-eyebrow {
+  margin: 0 0 1rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.perspectives-quotes-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.5rem, 17vw, 6.5rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.perspectives-quotes-hero h1 span {
+  display: block;
+}
+
+.perspectives-quotes-intro {
+  margin: 2rem 0 0;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* GENERAL SECTIONS */
+
+.pq-section {
+  padding: 5rem 1.25rem;
+}
+
+.pq-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pq-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pq-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pq-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pq-number {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pq-section > h2 {
+  margin: 0 0 2.5rem;
+
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.8;
+  letter-spacing: -0.065em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pq-copy {
+  max-width: 760px;
+}
+
+.pq-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+
+/* CALLOUT */
+
+.pq-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.4rem, 7vw, 2.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* QUOTE LIBRARY */
+
+.pq-library {
+  padding: 5rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.pq-library-heading {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+}
+
+.pq-library-heading > p:first-child {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pq-library-heading h2 {
+  margin: 0 0 2rem;
+
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pq-library-heading > p:last-child {
+  max-width: 650px;
+
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+
+/* QUOTE CARDS */
+
+.pq-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  gap: 1rem;
+}
+
+.pq-card {
+  min-height: 480px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+
+  border: 4px solid var(--black);
+}
+
+.pq-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pq-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pq-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pq-card-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pq-card-number {
+  margin: 0 0 3rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.pq-card blockquote {
+  margin: 0;
+
+  font-size: clamp(2.3rem, 10vw, 4rem);
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pq-source {
+  margin: 1.5rem 0 3rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.pq-reflection {
+  margin-top: auto;
+  padding-top: 1.5rem;
+
+  border-top: 3px solid currentColor;
+}
+
+.pq-reflection span {
+  display: block;
+  margin-bottom: 0.75rem;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.pq-reflection p {
+  margin: 0;
+
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+
+/* TAGS */
+
+.pq-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+  margin: 2.5rem 0;
+}
+
+.pq-tags span {
+  padding: 0.65rem 0.8rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  font-weight: 900;
+  line-height: 1;
+}
+
+
+/* THOUGHT */
+
+.pq-thought {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: clamp(1.4rem, 7vw, 2.5rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* ENDING */
+
+.pq-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.pq-ending > p:first-child {
+  margin: 0 0 2rem;
+
+  font-weight: 900;
+}
+
+.pq-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pq-ending-copy {
+  max-width: 650px;
+  margin: 2rem 0 3rem;
+
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.pq-back-link {
+  display: inline-block;
+
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.pq-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .perspectives-quotes-hero {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.42) 42%,
+        rgba(8, 8, 8, 0.03) 75%
+      ),
+      url("perspectives_quotes_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .perspectives-quotes-hero h1 {
+    font-size: clamp(6rem, 10vw, 10rem);
+  }
+
+  .perspectives-quotes-intro {
+    font-size: 1.25rem;
+  }
+
+  .pq-section {
+    padding: 8rem 7vw;
+  }
+
+  .pq-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .pq-copy {
+    margin-left: 35%;
+  }
+
+  .pq-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .pq-library {
+    padding: 8rem 7vw;
+  }
+
+  .pq-library-heading h2 {
+    font-size: clamp(6rem, 9vw, 9rem);
+  }
+
+  .pq-library-heading > p:last-child {
+    margin-left: 35%;
+    font-size: 1.15rem;
+  }
+
+  .pq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pq-card {
+    min-height: 550px;
+    padding: 2rem;
+  }
+
+  .pq-card blockquote {
+    font-size: clamp(2.75rem, 4vw, 4.5rem);
+  }
+
+  .pq-ending {
+    padding: 9rem 7vw;
+  }
+
+  .pq-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+
+/* =========================================================
+   PERSPECTIVES / REFLECTIONS
+   ========================================================= */
+
+.perspectives-reflections-page {
+  background: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+
+/* HERO */
+
+.perspectives-reflections-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(8, 8, 8, 0.05) 0%,
+      rgba(8, 8, 8, 0.22) 45%,
+      rgba(8, 8, 8, 0.97) 100%
+    ),
+    url("perspectives_reflections_mobile_background.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 2rem 1.25rem 4rem;
+}
+
+.perspectives-reflections-hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.perspectives-reflections-eyebrow {
+  margin: 0 0 1rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.perspectives-reflections-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3.3rem, 16vw, 6.5rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.perspectives-reflections-hero h1 span {
+  display: block;
+}
+
+.perspectives-reflections-intro {
+  margin: 2rem 0 0;
+
+  font-size: 1rem;
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+
+/* SECTIONS */
+
+.pr-section {
+  padding: 5rem 1.25rem;
+}
+
+.pr-section-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pr-section-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pr-section-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pr-section-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pr-number {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pr-section > h2 {
+  margin: 0 0 2.5rem;
+
+  max-width: 1000px;
+
+  font-size: clamp(3rem, 14vw, 6rem);
+  line-height: 0.8;
+  letter-spacing: -0.065em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pr-copy {
+  max-width: 760px;
+}
+
+.pr-copy > p {
+  font-size: 1.05rem;
+  line-height: 1.55;
+  font-weight: 700;
+}
+
+
+/* CALLOUT */
+
+.pr-callout {
+  margin: 3rem 0;
+  padding: 1.5rem;
+
+  border: 4px solid currentColor;
+
+  font-size: clamp(1.4rem, 7vw, 2.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* REFLECTION LIBRARY */
+
+.pr-reflections {
+  padding: 5rem 1.25rem;
+
+  background: var(--white);
+  color: var(--black);
+}
+
+.pr-reflections-heading {
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+}
+
+.pr-reflections-heading > p:first-child {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.pr-reflections-heading h2 {
+  margin: 0 0 2rem;
+
+  font-size: clamp(3.5rem, 16vw, 7rem);
+  line-height: 0.78;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pr-reflections-heading > p:last-child {
+  max-width: 650px;
+
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+
+/* REFLECTION CARDS */
+
+.pr-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  max-width: 1100px;
+  margin: 0 auto;
+
+  gap: 1rem;
+}
+
+.pr-card {
+  min-height: 520px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+
+  border: 4px solid var(--black);
+}
+
+.pr-card-pink {
+  background: var(--pink);
+  color: var(--black);
+}
+
+.pr-card-yellow {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pr-card-purple {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.pr-card-black {
+  background: var(--black);
+  color: var(--white);
+}
+
+.pr-card-number {
+  margin: 0 0 0.5rem;
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.pr-card-topic {
+  margin: 0 0 2.5rem;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.pr-card h3 {
+  margin: 0 0 1.5rem;
+
+  font-size: clamp(2.5rem, 10vw, 4.25rem);
+  line-height: 0.82;
+  letter-spacing: -0.055em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pr-card > p:not(.pr-card-number):not(.pr-card-topic) {
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.pr-card-question {
+  margin-top: auto;
+  padding-top: 1.5rem;
+
+  border-top: 3px solid currentColor;
+}
+
+.pr-card-question span {
+  display: block;
+  margin-bottom: 0.75rem;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.pr-card-question p {
+  margin: 0;
+
+  line-height: 1.35;
+  font-weight: 900;
+}
+
+
+/* BOTH CAN BE TRUE */
+
+.pr-both-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: 0.75rem;
+  margin: 2.5rem 0;
+}
+
+.pr-both-grid > div {
+  padding: 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+}
+
+.pr-both-grid span {
+  display: block;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.pr-both-grid strong {
+  display: block;
+  margin: 0.3rem 0;
+
+  font-size: clamp(1.8rem, 8vw, 3rem);
+  line-height: 0.9;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pr-both-grid p {
+  margin: 0;
+
+  font-weight: 700;
+}
+
+
+/* QUESTIONS */
+
+.pr-questions {
+  margin: 2.5rem 0;
+
+  border-top: 3px solid currentColor;
+}
+
+.pr-questions p {
+  margin: 0;
+  padding: 1.25rem 0;
+
+  border-bottom: 3px solid currentColor;
+
+  font-size: clamp(1.3rem, 6vw, 2rem);
+  line-height: 1.1;
+
+  font-weight: 900;
+}
+
+
+/* THOUGHT */
+
+.pr-thought {
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+
+  background: var(--white);
+  color: var(--black);
+
+  font-size: clamp(1.4rem, 7vw, 2.5rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* ENDING */
+
+.pr-ending {
+  padding: 6rem 1.25rem;
+
+  background: var(--yellow);
+  color: var(--black);
+}
+
+.pr-ending > p:first-child {
+  margin: 0 0 2rem;
+
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.pr-ending h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 18vw, 8rem);
+  line-height: 0.77;
+  letter-spacing: -0.07em;
+
+  font-weight: 900;
+  font-style: italic;
+}
+
+.pr-ending-copy {
+  max-width: 650px;
+  margin: 2rem 0 3rem;
+
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.pr-back-link {
+  display: inline-block;
+
+  padding: 1rem 1.25rem;
+
+  background: var(--black);
+  color: var(--white);
+
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+.pr-back-link:hover {
+  background: var(--pink);
+  color: var(--black);
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  .perspectives-reflections-hero {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.88) 0%,
+        rgba(8, 8, 8, 0.42) 42%,
+        rgba(8, 8, 8, 0.03) 75%
+      ),
+      url("perspectives_reflections_desktop_background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 4rem 5vw 5rem;
+  }
+
+  .perspectives-reflections-hero h1 {
+    font-size: clamp(6rem, 10vw, 10rem);
+  }
+
+  .perspectives-reflections-intro {
+    font-size: 1.25rem;
+  }
+
+  .pr-section {
+    padding: 8rem 7vw;
+  }
+
+  .pr-section > h2 {
+    font-size: clamp(5rem, 8vw, 8rem);
+  }
+
+  .pr-copy {
+    margin-left: 35%;
+  }
+
+  .pr-copy > p {
+    font-size: 1.2rem;
+  }
+
+  .pr-reflections {
+    padding: 8rem 7vw;
+  }
+
+  .pr-reflections-heading h2 {
+    font-size: clamp(6rem, 9vw, 9rem);
+  }
+
+  .pr-reflections-heading > p:last-child {
+    margin-left: 35%;
+    font-size: 1.15rem;
+  }
+
+  .pr-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pr-card {
+    min-height: 590px;
+    padding: 2rem;
+  }
+
+  .pr-card h3 {
+    font-size: clamp(3rem, 4.5vw, 5rem);
+  }
+
+  .pr-both-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pr-ending {
+    padding: 9rem 7vw;
+  }
+
+  .pr-ending h2 {
+    font-size: clamp(6rem, 11vw, 11rem);
+  }
+}
+

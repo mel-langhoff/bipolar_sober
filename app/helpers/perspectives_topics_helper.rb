@@ -1,0 +1,2 @@
+module PerspectivesTopicsHelper
+end

@@ -4,6 +4,7 @@
 
   <!-- HERO -->
   <section class="perspectives-hero">
+
     <div class="perspectives-hero-content">
 
       <p class="perspectives-eyebrow">
@@ -12,36 +13,38 @@
 
       <h1>
         <span>CHANGE</span>
-        <span>THE VIEW.</span>
+        <span>THE FUCKING</span>
+        <span>ANGLE.</span>
       </h1>
 
       <p class="perspectives-intro">
-        SAME SHIT.<br>
-        DIFFERENT PERSPECTIVE.
+        THOUGHTS. BOOKS. QUOTES.<br>
+        NOTES FROM THE INSIDE.<br>
+        THINGS THAT MADE ME LOOK TWICE.
       </p>
 
-     
-
     </div>
+
   </section>
 
 
-  <!-- PERSPECTIVES -->
-  <section class="perspectives-topics" id="perspectives-topics">
+  <!-- TOPICS -->
+  <section class="perspectives-topics">
 
-    <div class="perspectives-heading">
+    <div class="perspectives-topics-heading">
 
       <p>01 / PERSPECTIVES</p>
 
       <h2>
-        TRY ANOTHER<br>
-        ANGLE.
+        ANOTHER<br>
+        WAY TO<br>
+        LOOK AT IT.
       </h2>
 
-      <p class="perspectives-subtitle">
-        There isn't one correct way to understand your brain,
-        your behavior, or your recovery. Sometimes changing the
-        way you look at something changes what you can do about it.
+      <p class="perspectives-topics-subtitle">
+        Things I've read. Things I've written.
+        Things I've lived through. Things that changed
+        the way I look at myself, recovery, and everything else.
       </p>
 
     </div>
@@ -49,86 +52,93 @@
 
     <div class="perspectives-grid">
 
-  <!-- REFLECTIONS -->
-  <a href="#" class="perspectives-card perspectives-card-pink">
 
-    <p class="perspectives-card-number">01</p>
+      <!-- 01 / REFLECTIONS -->
+      <%= link_to perspectives_reflections_path,
+          class: "perspectives-card perspectives-card-pink" do %>
 
-    <h3>
-      REFLECTIONS
-    </h3>
+        <p class="perspectives-card-number">01</p>
 
-    <p class="perspectives-card-description">
-      Personal writing about recovery, mental health, mistakes,
-      growth, identity, and whatever the hell I'm figuring out
-      along the way.
-    </p>
+        <h3>
+          REFLECTIONS
+        </h3>
 
-    <span>READ MY THOUGHTS →</span>
+        <p class="perspectives-card-description">
+          Thoughts, lessons, questions, contradictions,
+          and shit I've figured out — or am still trying
+          to figure out.
+        </p>
 
-  </a>
+        <span>READ →</span>
 
-
-  <!-- BOOKS -->
-  <a href="#" class="perspectives-card perspectives-card-yellow">
-
-    <p class="perspectives-card-number">02</p>
-
-    <h3>
-      BOOKS
-    </h3>
-
-    <p class="perspectives-card-description">
-      Books that made me think, pissed me off, taught me something,
-      changed my perspective, or gave me something useful to carry
-      into recovery.
-    </p>
-
-    <span>OPEN THE BOOKSHELF →</span>
-
-  </a>
+      <% end %>
 
 
-  <!-- QUOTES -->
-  <a href="#" class="perspectives-card perspectives-card-purple">
+      <!-- 02 / BOOKS -->
+      <%= link_to perspectives_books_path,
+          class: "perspectives-card perspectives-card-yellow" do %>
 
-    <p class="perspectives-card-number">03</p>
+        <p class="perspectives-card-number">02</p>
 
-    <h3>
-      QUOTES
-    </h3>
+        <h3>
+          BOOKS
+        </h3>
 
-    <p class="perspectives-card-description">
-      Words worth remembering. Philosophy, literature, recovery,
-      spirituality, and the occasional sentence that hits you
-      right between the fucking eyes.
-    </p>
+        <p class="perspectives-card-description">
+          Books that made me stop, underline something,
+          argue with the author, rethink something,
+          or carry an idea with me afterward.
+        </p>
 
-    <span>READ THE WORDS →</span>
+        <span>OPEN THE STACK →</span>
 
-    <!-- NOTES FROM THE INSIDE -->
-<a href="#" class="perspectives-card perspectives-card-black">
+      <% end %>
 
-  <p class="perspectives-card-number">04</p>
 
-  <h3>
-    NOTES FROM<br>
-    THE INSIDE
-  </h3>
+      <!-- 03 / QUOTES -->
+      <%= link_to perspectives_quotes_path,
+          class: "perspectives-card perspectives-card-purple" do %>
 
-  <p class="perspectives-card-description">
-    What I wrote when there was nowhere to go.
-    Jail journals, observations, fear, boredom, loneliness,
-    hope, hopelessness, and the thoughts I don't want to forget.
-  </p>
+        <p class="perspectives-card-number">03</p>
 
-  <span>READ THE JOURNALS →</span>
+        <h3>
+          QUOTES
+        </h3>
 
-</a>
+        <p class="perspectives-card-description">
+          Words worth keeping — and what they actually
+          mean to me beyond looking profound on the internet.
+        </p>
 
-  </a>
+        <span>READ →</span>
 
-</div>
+      <% end %>
+
+
+      <!-- 04 / ON THE INSIDE -->
+      <%= link_to perspectives_inside_path,
+          class: "perspectives-card perspectives-card-black" do %>
+
+        <p class="perspectives-card-number">04</p>
+
+        <h3>
+          ON THE<br>
+          INSIDE
+        </h3>
+
+        <p class="perspectives-card-description">
+          Notes from jail. What I saw, what I felt,
+          what I wrote down, and what I never want
+          to fucking forget.
+        </p>
+
+        <span>GO INSIDE →</span>
+
+      <% end %>
+
+
+    </div>
+
   </section>
 
 </main>

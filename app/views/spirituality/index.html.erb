@@ -4,6 +4,7 @@
 
   <!-- HERO -->
   <section class="spirituality-hero">
+
     <div class="spirituality-hero-content">
 
       <p class="spirituality-eyebrow">
@@ -20,8 +21,8 @@
         ALL THE FUCKING ANSWERS.
       </p>
 
-     
     </div>
+
   </section>
 
 
@@ -47,8 +48,10 @@
 
     <div class="spirituality-grid">
 
-      <!-- BUDDHISM -->
-      <a href="#" class="spirituality-card spirituality-card-pink">
+
+      <!-- 01 / BUDDHISM -->
+      <%= link_to spirituality_buddhism_path,
+          class: "spirituality-card spirituality-card-pink" do %>
 
         <p class="spirituality-card-number">01</p>
 
@@ -64,11 +67,12 @@
 
         <span>EXPLORE →</span>
 
-      </a>
+      <% end %>
 
 
-      <!-- HINDUISM -->
-      <a href="#" class="spirituality-card spirituality-card-yellow">
+      <!-- 02 / HINDUISM -->
+      <%= link_to spirituality_hinduism_path,
+          class: "spirituality-card spirituality-card-yellow" do %>
 
         <p class="spirituality-card-number">02</p>
 
@@ -77,18 +81,19 @@
         </h3>
 
         <p class="spirituality-card-description">
-          Dharma, karma, the self, spiritual discipline, the Bhagavad Gita,
-          and what ancient ideas can teach us about living through
-          modern chaos.
+          Dharma, karma, the Self, spiritual discipline,
+          the Bhagavad Gita, and ancient ideas about living,
+          acting, suffering, and letting go of outcomes.
         </p>
 
         <span>EXPLORE →</span>
 
-      </a>
+      <% end %>
 
 
-      <!-- MIXING TRADITIONS -->
-      <a href="#" class="spirituality-card spirituality-card-purple">
+      <!-- 03 / MIXING TRADITIONS -->
+      <%= link_to spirituality_mixing_traditions_path,
+          class: "spirituality-card spirituality-card-purple" do %>
 
         <p class="spirituality-card-number">03</p>
 
@@ -98,18 +103,20 @@
         </h3>
 
         <p class="spirituality-card-description">
-          Buddhism. Hinduism. Christianity. Where they overlap,
-          where they absolutely don't, and what happens when you
-          learn from more than one tradition.
+          Buddhism. Hinduism. Christianity.
+          Where they overlap, where they don't,
+          and what it means to learn from more than one tradition
+          without pretending they're all the same thing.
         </p>
 
         <span>EXPLORE →</span>
 
-      </a>
+      <% end %>
 
 
-      <!-- MY SPIRITUALITY -->
-      <a href="#" class="spirituality-card spirituality-card-black">
+      <!-- 04 / MY SPIRITUALITY -->
+      <%= link_to spirituality_my_spirituality_path,
+          class: "spirituality-card spirituality-card-black" do %>
 
         <p class="spirituality-card-number">04</p>
 
@@ -120,13 +127,14 @@
 
         <p class="spirituality-card-description">
           The universe. Nature. Energy. Guardian spirits.
-          Ritual, connection, mystery, and building a relationship
-          with something bigger than myself.
+          Ritual, connection, mystery, and my own way of
+          relating to something bigger than myself.
         </p>
 
         <span>MY PERSPECTIVE →</span>
 
-      </a>
+      <% end %>
+
 
     </div>
 

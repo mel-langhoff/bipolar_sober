@@ -19,8 +19,6 @@
         THE WHOLE FUCKING STORY.
       </p>
 
-    
-
     </div>
   </section>
 
@@ -37,7 +35,7 @@
       </h2>
 
       <p class="addiction-topics-subtitle">
-        Drinking was the behavior. Now let's look at the what's underneath.
+        Drinking was the behavior. Now let's look at what's underneath.
       </p>
 
     </div>
@@ -47,7 +45,8 @@
 
       <!-- PERSPECTIVES -->
 
-      <a href="#" class="addiction-card addiction-card-black">
+      <%= link_to addiction_perspectives_path,
+          class: "addiction-card addiction-card-black" do %>
 
         <p class="addiction-card-number">01</p>
 
@@ -62,12 +61,13 @@
 
         <span>EXPLORE →</span>
 
-      </a>
+      <% end %>
 
 
       <!-- WHAT AM I ESCAPING? -->
 
-      <a href="#" class="addiction-card addiction-card-yellow">
+      <%= link_to addiction_what_am_i_escaping_path,
+          class: "addiction-card addiction-card-yellow" do %>
 
         <p class="addiction-card-number">02</p>
 
@@ -83,12 +83,13 @@
 
         <span>GO THERE →</span>
 
-      </a>
+      <% end %>
 
 
       <!-- TRIGGERS -->
 
-      <a href="#" class="addiction-card addiction-card-pink">
+      <%= link_to addiction_triggers_path,
+          class: "addiction-card addiction-card-pink" do %>
 
         <p class="addiction-card-number">03</p>
 
@@ -103,12 +104,13 @@
 
         <span>IDENTIFY THEM →</span>
 
-      </a>
+      <% end %>
 
 
       <!-- IMPULSIVITY -->
 
-      <a href="#" class="addiction-card addiction-card-purple">
+      <%= link_to addiction_impulsivity_path,
+          class: "addiction-card addiction-card-purple" do %>
 
         <p class="addiction-card-number">04</p>
 
@@ -123,7 +125,7 @@
 
         <span>SLOW IT DOWN →</span>
 
-      </a>
+      <% end %>
 
     </div>
 
