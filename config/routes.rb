@@ -1,13 +1,4 @@
 Rails.application.routes.draw do
-  get 'toolbox_topics/essays'
-  get 'toolbox_topics/relapse_plans'
-  get 'toolbox_topics/sciatica'
-  get 'toolbox_topics/others'
-  get 'toolbox_topics/jobs'
-  get 'toolbox_topics/cognitive_distortions'
-  get 'toolbox_topics/ifs'
-  get 'toolbox_topics/adhd'
-  get 'toolbox_topics/stigma'
 
   # ==========================================
   # HOME
@@ -110,5 +101,62 @@ Rails.application.routes.draw do
   get "toolbox/so-you-want-to-drink",
       to: "toolbox#so_you_want_to_drink",
       as: :so_you_want_to_drink
+
+  get "toolbox/essays",
+      to: "toolbox_topics#essays",
+      as: :toolbox_essays
+
+  get "toolbox/relapse-plans",
+      to: "toolbox_topics#relapse_plans",
+      as: :toolbox_relapse_plans
+
+  get "toolbox/sciatica",
+      to: "toolbox_topics#sciatica",
+      as: :toolbox_sciatica
+
+  get "toolbox/others",
+      to: "toolbox_topics#others",
+      as: :toolbox_others
+
+  get "toolbox/jobs",
+      to: "toolbox_topics#jobs",
+      as: :toolbox_jobs
+
+  get "toolbox/cognitive-distortions",
+      to: "toolbox_topics#cognitive_distortions",
+      as: :toolbox_cognitive_distortions
+
+  get "toolbox/ifs",
+      to: "toolbox_topics#ifs",
+      as: :toolbox_ifs
+
+  get "toolbox/adhd",
+      to: "toolbox_topics#adhd",
+      as: :toolbox_adhd
+
+  get "toolbox/stigma",
+      to: "toolbox_topics#stigma",
+      as: :toolbox_stigma
+
+
+  # ==========================================
+  # SPIRITUALITY > TOPICS
+  # ==========================================
+
+  get "spirituality/buddhism",
+      to: "spirituality_topics#buddhism",
+      as: :spirituality_buddhism
+
+  get "spirituality/hinduism",
+      to: "spirituality_topics#hinduism",
+      as: :spirituality_hinduism
+
+  get "spirituality/mixing-traditions",
+      to: "spirituality_topics#mixing_traditions",
+      as: :spirituality_mixing_traditions
+
+  get "spirituality/my-spirituality",
+      to: "spirituality_topics#my_spirituality",
+      as: :spirituality_my_spirituality
 
 end

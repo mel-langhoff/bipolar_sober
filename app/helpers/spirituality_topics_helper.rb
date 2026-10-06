@@ -1,0 +1,2 @@
+module SpiritualityTopicsHelper
+end

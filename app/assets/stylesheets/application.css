@@ -9536,7 +9536,7 @@ body {
       rgba(8, 8, 8, 0.45) 45%,
       rgba(8, 8, 8, 0.96)
     ),
-    image-url("toolbox_adhd_mobile_background.png");
+    url("toolbox_adhd_mobile_background.png");
 
   background-size: cover;
   background-position: center;
@@ -9817,7 +9817,7 @@ body {
         rgba(8, 8, 8, 0.45) 45%,
         rgba(8, 8, 8, 0.12) 100%
       ),
-      image-url("toolbox_adhd_desktop_background.png");
+      url("toolbox_adhd_desktop_background.png");
 
     background-size: cover;
     background-position: center;
@@ -9878,7 +9878,7 @@ body {
       rgba(8, 8, 8, 0.4) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    image-url("toolbox_cognitive_distortions_mobile_background.png");
+    url("toolbox_cognitive_distortions_mobile_background.png");
 
   background-size: cover;
   background-position: center;
@@ -10162,7 +10162,7 @@ body {
         rgba(8, 8, 8, 0.4) 45%,
         rgba(8, 8, 8, 0.1) 100%
       ),
-      image-url("toolbox_cognitive_distortions_desktop_background.png");
+      url("toolbox_cognitive_distortions_desktop_background.png");
 
     background-size: cover;
     background-position: center;
@@ -10232,7 +10232,7 @@ body {
       rgba(8, 8, 8, 0.42) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    image-url("toolbox_essays_mobile_background.png");
+    url("toolbox_essays_mobile_background.png");
 
   background-size: cover;
   background-position: center;
@@ -10580,7 +10580,7 @@ body {
         rgba(8, 8, 8, 0.4) 45%,
         rgba(8, 8, 8, 0.1) 100%
       ),
-      image-url("toolbox_essays_desktop_background.png");
+      url("toolbox_essays_desktop_background.png");
 
     background-size: cover;
     background-position: center;
@@ -10668,7 +10668,7 @@ body {
       rgba(8, 8, 8, 0.4) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    image-url("toolbox_ifs_mobile_background.png");
+    url("toolbox_ifs_mobile_background.png");
 
   background-size: cover;
   background-position: center;
@@ -11087,7 +11087,7 @@ body {
         rgba(8, 8, 8, 0.4) 45%,
         rgba(8, 8, 8, 0.08) 100%
       ),
-      image-url("toolbox_ifs_desktop_background.png");
+      url("toolbox_ifs_desktop_background.png");
 
     background-size: cover;
     background-position: center;
@@ -11171,7 +11171,7 @@ body {
       rgba(8, 8, 8, 0.4) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    image-url("toolbox_jobs_mobile_background.png");
+    url("toolbox_jobs_mobile_background.png");
 
   background-size: cover;
   background-position: center;
@@ -11488,7 +11488,7 @@ body {
         rgba(8, 8, 8, 0.42) 45%,
         rgba(8, 8, 8, 0.08) 100%
       ),
-      image-url("toolbox_jobs_desktop_background.png");
+      url("toolbox_jobs_desktop_background.png");
 
     background-size: cover;
     background-position: center;
@@ -11556,7 +11556,7 @@ body {
       rgba(8, 8, 8, 0.4) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    image-url("toolbox_others_mobile_background.png");
+    url("toolbox_others_mobile_background.png");
 
   background-size: cover;
   background-position: center;
@@ -11885,7 +11885,7 @@ body {
         rgba(8, 8, 8, 0.4) 45%,
         rgba(8, 8, 8, 0.08) 100%
       ),
-      image-url("toolbox_others_desktop_background.png");
+      url("toolbox_others_desktop_background.png");
 
     background-size: cover;
     background-position: center;
@@ -11950,7 +11950,7 @@ body {
       rgba(8, 8, 8, 0.42) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    image-url("toolbox_relapse_plans_mobile_background.png");
+    url("toolbox_relapse_plans_mobile_background.png");
 
   background-size: cover;
   background-position: center;
@@ -12314,7 +12314,7 @@ body {
         rgba(8, 8, 8, 0.42) 45%,
         rgba(8, 8, 8, 0.08) 100%
       ),
-      image-url("toolbox_relapse_plans_desktop_background.png");
+      url("toolbox_relapse_plans_desktop_background.png");
 
     background-size: cover;
     background-position: center;
@@ -12394,7 +12394,7 @@ body {
       rgba(8, 8, 8, 0.4) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    image-url("toolbox_sciatica_mobile_background.png");
+    url("toolbox_sciatica_mobile_background.png");
 
   background-size: cover;
   background-position: center;
@@ -12740,7 +12740,7 @@ body {
         rgba(8, 8, 8, 0.4) 45%,
         rgba(8, 8, 8, 0.08) 100%
       ),
-      image-url("toolbox_sciatica_desktop_background.png");
+      url("toolbox_sciatica_desktop_background.png");
 
     background-size: cover;
     background-position: center;
@@ -12816,7 +12816,7 @@ body {
       rgba(8, 8, 8, 0.42) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    image-url("toolbox_stigma_mobile_background.png");
+    url("toolbox_stigma_mobile_background.png");
 
   background-size: cover;
   background-position: center;
@@ -13172,7 +13172,7 @@ body {
         rgba(8, 8, 8, 0.4) 45%,
         rgba(8, 8, 8, 0.08) 100%
       ),
-      image-url("toolbox_stigma_desktop_background.png");
+      url("toolbox_stigma_desktop_background.png");
 
     background-size: cover;
     background-position: center;

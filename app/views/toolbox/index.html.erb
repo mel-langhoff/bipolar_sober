@@ -4,6 +4,7 @@
 
   <!-- HERO -->
   <section class="toolbox-hero">
+
     <div class="toolbox-hero-content">
 
       <p class="toolbox-eyebrow">
@@ -22,6 +23,7 @@
       </p>
 
     </div>
+
   </section>
 
 
@@ -47,7 +49,8 @@
 
     <div class="toolbox-grid">
 
-      <!-- SO YOU WANT TO DRINK? -->
+
+      <!-- 01 / SO YOU WANT TO DRINK? -->
       <%= link_to so_you_want_to_drink_path,
           class: "toolbox-card toolbox-card-black" do %>
 
@@ -71,8 +74,9 @@
       <% end %>
 
 
-      <!-- ESSAYS -->
-      <a href="#" class="toolbox-card toolbox-card-pink">
+      <!-- 02 / ESSAYS -->
+      <%= link_to toolbox_essays_path,
+          class: "toolbox-card toolbox-card-pink" do %>
 
         <p class="toolbox-card-number">02</p>
 
@@ -87,11 +91,12 @@
 
         <span>READ →</span>
 
-      </a>
+      <% end %>
 
 
-      <!-- RELAPSE PLANS -->
-      <a href="#" class="toolbox-card toolbox-card-yellow">
+      <!-- 03 / RELAPSE PLANS -->
+      <%= link_to toolbox_relapse_plans_path,
+          class: "toolbox-card toolbox-card-yellow" do %>
 
         <p class="toolbox-card-number">03</p>
 
@@ -101,18 +106,19 @@
         </h3>
 
         <p class="toolbox-card-description">
-          Don't wait until everything goes sideways.
-          Recognize the warning signs, know what to do,
-          and have a plan before you need the plan.
+          Warning signs, triggers, cravings, people to call,
+          emergency moves, and what to do before your brain
+          starts bargaining.
         </p>
 
         <span>MAKE A PLAN →</span>
 
-      </a>
+      <% end %>
 
 
-      <!-- SCIATICA -->
-      <a href="#" class="toolbox-card toolbox-card-purple">
+      <!-- 04 / SCIATICA -->
+      <%= link_to toolbox_sciatica_path,
+          class: "toolbox-card toolbox-card-purple" do %>
 
         <p class="toolbox-card-number">04</p>
 
@@ -122,17 +128,19 @@
         </h3>
 
         <p class="toolbox-card-description">
-          Chronic pain, limitations, frustration, recovery,
-          and dealing with life when your body has other fucking plans.
+          Pain, limitations, bad days, frustration, pacing,
+          recovery, and having a fucking life when your body
+          isn't cooperating.
         </p>
 
         <span>READ →</span>
 
-      </a>
+      <% end %>
 
 
-      <!-- OTHERS -->
-      <a href="#" class="toolbox-card toolbox-card-black">
+      <!-- 05 / OTHERS -->
+      <%= link_to toolbox_others_path,
+          class: "toolbox-card toolbox-card-black" do %>
 
         <p class="toolbox-card-number">05</p>
 
@@ -142,17 +150,18 @@
         </h3>
 
         <p class="toolbox-card-description">
-          Other people: boundaries, expectations, judgment,
-          relationships, assholes, and figuring out what actually belongs to you.
+          Boundaries, expectations, judgment, relationships,
+          assholes, and figuring out what actually belongs to you.
         </p>
 
         <span>DEAL WITH PEOPLE →</span>
 
-      </a>
+      <% end %>
 
 
-      <!-- JOBS -->
-      <a href="#" class="toolbox-card toolbox-card-split">
+      <!-- 06 / JOBS -->
+      <%= link_to toolbox_jobs_path,
+          class: "toolbox-card toolbox-card-split" do %>
 
         <p class="toolbox-card-number">06</p>
 
@@ -168,11 +177,12 @@
 
         <span>READ →</span>
 
-      </a>
+      <% end %>
 
 
-      <!-- COGNITIVE DISTORTIONS -->
-      <a href="#" class="toolbox-card toolbox-card-pink">
+      <!-- 07 / COGNITIVE DISTORTIONS -->
+      <%= link_to toolbox_cognitive_distortions_path,
+          class: "toolbox-card toolbox-card-pink" do %>
 
         <p class="toolbox-card-number">07</p>
 
@@ -189,11 +199,12 @@
 
         <span>CALL OUT THE BULLSHIT →</span>
 
-      </a>
+      <% end %>
 
 
-      <!-- IFS -->
-      <a href="#" class="toolbox-card toolbox-card-yellow">
+      <!-- 08 / IFS -->
+      <%= link_to toolbox_ifs_path,
+          class: "toolbox-card toolbox-card-yellow" do %>
 
         <p class="toolbox-card-number">08</p>
 
@@ -202,17 +213,18 @@
         </h3>
 
         <p class="toolbox-card-description">
-          Parts, protectors, exiles, Self, and a different way
-          of understanding all the conflicting voices inside your head.
+          Parts, protectors, Self, and a different way of
+          understanding all the conflicting voices inside your head.
         </p>
 
         <span>MEET YOUR PARTS →</span>
 
-      </a>
+      <% end %>
 
 
-      <!-- ADHD -->
-      <a href="#" class="toolbox-card toolbox-card-purple">
+      <!-- 09 / ADHD -->
+      <%= link_to toolbox_adhd_path,
+          class: "toolbox-card toolbox-card-purple" do %>
 
         <p class="toolbox-card-number">09</p>
 
@@ -223,17 +235,18 @@
 
         <p class="toolbox-card-description">
           Attention, motivation, impulsivity, executive dysfunction,
-          chaos, and figuring out how to work with your brain instead of
-          constantly fighting the damn thing.
+          chaos, and figuring out how to work with your brain instead
+          of constantly fighting the damn thing.
         </p>
 
         <span>READ →</span>
 
-      </a>
+      <% end %>
 
 
-      <!-- STIGMA -->
-      <a href="#" class="toolbox-card toolbox-card-black">
+      <!-- 10 / STIGMA -->
+      <%= link_to toolbox_stigma_path,
+          class: "toolbox-card toolbox-card-black" do %>
 
         <p class="toolbox-card-number">10</p>
 
@@ -243,14 +256,14 @@
         </h3>
 
         <p class="toolbox-card-description">
-          Labels, judgment, stereotypes, shame, and other people's
-          assumptions about mental illness and addiction.
-          Their understanding of you does not define you.
+          Labels, judgment, shame, disclosure, stereotypes,
+          and deciding whose fucking opinion actually gets a vote.
         </p>
 
-        <span>CHALLENGE THE LABELS →</span>
+        <span>OWN YOUR STORY →</span>
 
-      </a>
+      <% end %>
+
 
     </div>
 
