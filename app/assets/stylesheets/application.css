@@ -16917,3 +16917,323 @@ body {
   }
 }
 
+.bipolar-topic-page {
+  --topic-black: #080808;
+  --topic-pink: #ff1493;
+  --topic-yellow: #eaff00;
+  --topic-purple: #8a00ff;
+  --topic-accent: var(--topic-pink);
+
+  background: var(--topic-black);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.bipolar-topic-page *,
+.bipolar-topic-page *::before,
+.bipolar-topic-page *::after {
+  box-sizing: border-box;
+}
+
+.bipolar-topic-page.topic-mania {
+  --topic-accent: var(--topic-purple);
+}
+
+.bipolar-topic-page.topic-depression,
+.bipolar-topic-page.topic-impulsivity {
+  --topic-accent: var(--topic-yellow);
+}
+
+.bipolar-topic-page a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+.bipolar-topic-page a:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 6px;
+}
+
+.bipolar-topic-page .topic-hero {
+  min-height: 37rem;
+  border-bottom: 10px solid var(--topic-accent);
+  background: var(--topic-black);
+  color: #fff;
+}
+
+.bipolar-topic-page .topic-hero-inner,
+.bipolar-topic-page .topic-band-inner,
+.bipolar-topic-page .topic-footer-inner {
+  width: min(100%, 92rem);
+  margin-inline: auto;
+  padding: 3rem 1.5rem;
+}
+
+.bipolar-topic-page .topic-eyebrow,
+.bipolar-topic-page .topic-kicker {
+  margin: 0 0 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.bipolar-topic-page .topic-hero h1 {
+  margin: 3rem 0 2rem;
+  color: var(--topic-accent);
+  font-size: clamp(2.9rem, 10.5vw, 9.25rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.88;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.bipolar-topic-page .topic-hero h1 span {
+  display: block;
+}
+
+.bipolar-topic-page .topic-intro {
+  max-width: 44rem;
+  margin: 2rem 0;
+  font-size: clamp(1rem, 2.2vw, 1.55rem);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.bipolar-topic-page .topic-back-link,
+.bipolar-topic-page .topic-text-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.bipolar-topic-page .topic-band {
+  border-bottom: 2px solid var(--topic-black);
+}
+
+.bipolar-topic-page .topic-band--pink {
+  background: var(--topic-pink);
+  color: var(--topic-black);
+}
+
+.bipolar-topic-page .topic-band--yellow {
+  background: var(--topic-yellow);
+  color: var(--topic-black);
+}
+
+.bipolar-topic-page .topic-band--purple {
+  background: var(--topic-purple);
+  color: #fff;
+}
+
+.bipolar-topic-page .topic-band--black {
+  background: var(--topic-black);
+  color: #fff;
+}
+
+.bipolar-topic-page .topic-band--white {
+  background: #fff;
+  color: var(--topic-black);
+}
+
+.bipolar-topic-page .topic-band-inner {
+  display: grid;
+  gap: 2rem;
+}
+
+.bipolar-topic-page .topic-section-heading,
+.bipolar-topic-page .topic-copy {
+  min-width: 0;
+}
+
+.bipolar-topic-page .topic-section-heading h2 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4.5vw, 4.4rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.bipolar-topic-page .topic-copy {
+  max-width: 65ch;
+  font-size: 1.04rem;
+  line-height: 1.7;
+}
+
+.bipolar-topic-page .topic-copy > p {
+  margin: 0 0 1.35rem;
+}
+
+.bipolar-topic-page .topic-copy > :last-child {
+  margin-bottom: 0;
+}
+
+.bipolar-topic-page .topic-lead {
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
+.bipolar-topic-page .topic-notes {
+  display: grid;
+  gap: 0.85rem;
+  margin-block: 1.5rem;
+}
+
+.bipolar-topic-page .topic-note {
+  min-width: 0;
+  padding: 1.2rem;
+  border: 2px solid currentColor;
+}
+
+.bipolar-topic-page .topic-note h3,
+.bipolar-topic-page .topic-steps h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.035em;
+}
+
+.bipolar-topic-page .topic-note p,
+.bipolar-topic-page .topic-steps p {
+  margin: 0;
+}
+
+.bipolar-topic-page .topic-steps {
+  margin: 0;
+  padding-left: 1.45rem;
+}
+
+.bipolar-topic-page .topic-steps li {
+  padding-left: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.bipolar-topic-page .topic-steps li::marker {
+  font-weight: 900;
+}
+
+.bipolar-topic-page .topic-callout {
+  margin: 2rem 0 0;
+  padding: 1rem 0 1rem 1.25rem;
+  border-left: 6px solid currentColor;
+  font-size: 1.3rem;
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.bipolar-topic-page .topic-chain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bipolar-topic-page .topic-chain li {
+  border: 2px solid currentColor;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.bipolar-topic-page .topic-support {
+  background: var(--topic-black);
+  color: #fff;
+  border-top: 6px solid var(--topic-yellow);
+}
+
+.bipolar-topic-page .topic-support h2,
+.bipolar-topic-page .topic-sources h2,
+.bipolar-topic-page .topic-navigation h2 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+}
+
+.bipolar-topic-page .topic-support p,
+.bipolar-topic-page .topic-sources p {
+  max-width: 70ch;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.bipolar-topic-page .topic-support a {
+  color: var(--topic-yellow);
+  font-weight: 800;
+}
+
+.bipolar-topic-page .topic-sources {
+  background: #fff;
+  color: var(--topic-black);
+  border-bottom: 2px solid var(--topic-black);
+}
+
+.bipolar-topic-page .topic-navigation {
+  background: var(--topic-black);
+  color: #fff;
+}
+
+.bipolar-topic-page .topic-navigation-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.bipolar-topic-page .topic-navigation-link {
+  padding: 0.75rem 1rem;
+  border: 2px solid #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.bipolar-topic-page .topic-navigation-link:hover,
+.bipolar-topic-page .topic-navigation-link[aria-current="page"] {
+  background: var(--topic-yellow);
+  color: var(--topic-black);
+  border-color: var(--topic-yellow);
+}
+
+@media (min-width: 760px) {
+  .bipolar-topic-page .topic-hero-inner,
+  .bipolar-topic-page .topic-band-inner,
+  .bipolar-topic-page .topic-footer-inner {
+    padding: 4rem;
+  }
+
+  .bipolar-topic-page .topic-hero {
+    min-height: 44rem;
+  }
+
+  .bipolar-topic-page .topic-band-inner {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 3rem;
+  }
+
+  .bipolar-topic-page .topic-section-heading {
+    align-self: start;
+    position: sticky;
+    top: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bipolar-topic-page * {
+    scroll-behavior: auto;
+  }
+}

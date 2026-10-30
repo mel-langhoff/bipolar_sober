@@ -180,4 +180,10 @@ Rails.application.routes.draw do
       to: "perspectives_topics#inside",
       as: :perspectives_inside
 
+    get "bipolar/anger", to: "bipolar_topics#anger", as: :bipolar_anger
+    get "bipolar/mania", to: "bipolar_topics#mania", as: :bipolar_mania
+    get "bipolar/depression", to: "bipolar_topics#depression", as: :bipolar_depression
+    get "bipolar/mixed_episodes", to: "bipolar_topics#mixed_episodes", as: :bipolar_mixed_episodes
+    get "bipolar/impulsivity", to: "bipolar_topics#impulsivity", as: :bipolar_impulsivity
+
 end

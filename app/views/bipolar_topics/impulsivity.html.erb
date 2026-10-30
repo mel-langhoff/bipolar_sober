@@ -1,0 +1,544 @@
+<% content_for :title, "On Impulsivity | Bipolar Sober" %>
+
+<style>
+  .impulsivity-page {
+    background: #080808;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .impulsivity-page *,
+  .impulsivity-page *::before,
+  .impulsivity-page *::after {
+    box-sizing: border-box;
+  }
+
+  .impulsivity-hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 6%;
+    background-color: #080808;
+    background-image:
+      linear-gradient(90deg, rgba(8, 8, 8, .55), transparent),
+      url("<%= asset_path('bipolar_impulsivity_desktop.png') %>");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .impulsivity-hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .impulsivity-eyebrow {
+    max-width: 440px;
+    margin: 0 0 28px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.6;
+    letter-spacing: .12em;
+  }
+
+  .impulsivity-hero h1 {
+    margin: 0;
+    font-size: clamp(44px, 7vw, 106px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .95;
+    letter-spacing: -.055em;
+    text-transform: uppercase;
+  }
+
+  .impulsivity-hero h1 span {
+    display: block;
+  }
+
+  .impulsivity-intro {
+    margin: 32px 0 0;
+    font-size: clamp(15px, 1.6vw, 22px);
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  .impulsivity-quote {
+    padding: 48px 6%;
+    text-align: center;
+  }
+
+  .impulsivity-quote blockquote {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .impulsivity-quote blockquote p {
+    margin: 0 0 20px;
+    color: #eaff00;
+    font-size: clamp(24px, 3.5vw, 46px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.2;
+  }
+
+  .impulsivity-quote cite {
+    font-size: 14px;
+    font-style: normal;
+  }
+
+  .impulsivity-section {
+    padding: 72px 6%;
+  }
+
+  .impulsivity-section-inner {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .impulsivity-number {
+    margin: 0 0 22px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .12em;
+  }
+
+  .impulsivity-section h2 {
+    margin: 0;
+    font-size: clamp(36px, 4.5vw, 68px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .95;
+    letter-spacing: -.045em;
+    text-transform: uppercase;
+  }
+
+  .impulsivity-copy {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .impulsivity-copy p {
+    margin: 0 0 22px;
+  }
+
+  .impulsivity-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  .impulsivity-copy ul {
+    margin: 0 0 24px;
+    padding-left: 22px;
+  }
+
+  .impulsivity-copy li {
+    margin-bottom: 12px;
+  }
+
+  .impulsivity-pink {
+    background: #ff1493;
+    color: #080808;
+  }
+
+  .impulsivity-yellow {
+    background: #eaff00;
+    color: #080808;
+  }
+
+  .impulsivity-purple {
+    background: #8a00ff;
+    color: #fff;
+  }
+
+  .impulsivity-black {
+    background: #080808;
+    color: #fff;
+  }
+
+  .impulsivity-white {
+    background: #fff;
+    color: #080808;
+  }
+
+  .impulsivity-takeaway {
+    padding-top: 22px;
+    border-top: 3px solid currentColor;
+    font-weight: 800;
+  }
+
+  .impulsivity-footer {
+    padding: 40px 6%;
+    border-top: 1px solid #444;
+  }
+
+  .impulsivity-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .impulsivity-footer a {
+    color: #eaff00;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  .impulsivity-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .impulsivity-footer a:focus-visible {
+    outline: 3px solid #ff1493;
+    outline-offset: 6px;
+  }
+
+  @media (max-width: 767px) {
+    .impulsivity-hero {
+      min-height: 88svh;
+      align-items: flex-start;
+      padding: 48px 6% 60px;
+      background-image:
+        url("<%= asset_path('bipolar_impulsivity_mobile.png') %>");
+      background-position: center bottom;
+    }
+
+    .impulsivity-eyebrow {
+      margin-bottom: 24px;
+      font-size: 10px;
+    }
+
+    .impulsivity-hero h1 {
+      font-size: clamp(32px, 10.5vw, 80px);
+    }
+
+    .impulsivity-intro {
+      margin-top: 24px;
+      font-size: 14px;
+    }
+
+    .impulsivity-section {
+      padding: 48px 6%;
+    }
+
+    .impulsivity-section-inner {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .impulsivity-section h2 {
+      font-size: clamp(36px, 10vw, 58px);
+    }
+
+    .impulsivity-copy {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .impulsivity-number {
+      margin-bottom: 16px;
+    }
+  }
+</style>
+
+<main class="impulsivity-page">
+
+  <!-- HERO -->
+  <section class="impulsivity-hero" aria-labelledby="impulsivity-title">
+    <div class="impulsivity-hero-content">
+
+      <p class="impulsivity-eyebrow">
+        BIPOLAR SOBER / BIPOLAR / IMPULSIVITY
+      </p>
+
+      <h1 id="impulsivity-title">
+        <span>ON</span>
+        <span>IMPULSIVITY.</span>
+      </h1>
+
+      <p class="impulsivity-intro">
+        THE URGE. THE EXCUSE.<br>
+        THE FUCK-IT MOMENT.<br>
+        THE SPACE BEFORE YOU ACT.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- QUOTE -->
+  <section class="impulsivity-quote" aria-label="Opening quote">
+    <blockquote>
+      <p>
+        “Your scientists were so preoccupied with whether or not
+        they could, they didn’t stop to think if they should.”
+      </p>
+      <cite>— Ian Malcolm</cite>
+    </blockquote>
+  </section>
+
+
+  <!-- 01 / THE URGE -->
+  <section class="impulsivity-section impulsivity-pink">
+    <div class="impulsivity-section-inner">
+
+      <div class="impulsivity-section-heading">
+        <p class="impulsivity-number">01 / THE FUCK-IT MOMENT</p>
+
+        <h2>
+          TWO WORDS.<br>
+          EXPENSIVE<br>
+          AS FUCK.
+        </h2>
+      </div>
+
+      <div class="impulsivity-copy">
+        <p>
+          Fuck it. Sometimes the cost is money. Sometimes it is
+          sobriety, safety, or the stability you have worked to build.
+          You want the thing, the experience, the relief.
+          The consequences feel like another version of you’s problem.
+        </p>
+
+        <p>
+          Overspending and substance use can both involve reaching
+          for an immediate change in how you feel. Alcoholism is
+          more complex than impulsivity, and cravings can involve
+          planning. Notice the sudden decision and the hours spent
+          negotiating yourself into permission.
+        </p>
+
+        <p class="impulsivity-takeaway">
+          The urge deserves attention before it becomes a decision
+          with consequences.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 02 / PERMISSION -->
+  <section class="impulsivity-section impulsivity-yellow">
+    <div class="impulsivity-section-inner">
+
+      <div class="impulsivity-section-heading">
+        <p class="impulsivity-number">02 / CHECK THE ARGUMENT</p>
+
+        <h2>
+          SOUNDS<br>
+          REASONABLE.<br>
+          LOOK<br>
+          AGAIN.
+        </h2>
+      </div>
+
+      <div class="impulsivity-copy">
+        <p>
+          “I deserve it.” “I’ll figure out the money.”
+          “One won’t hurt.” “Today was unbearable.”
+          Ask whether the explanation considers your whole situation
+          or clears a path toward what you already want.
+        </p>
+
+        <p>
+          Wanting relief is understandable. It does not establish
+          that alcohol, weed, or another purchase will meet the need
+          without adding problems. Consider the promise alongside
+          your own history.
+        </p>
+
+        <p>
+          “I already messed up, so whatever” can turn one harmful
+          decision into several. You can interrupt the sequence
+          after it starts. The next choice still matters.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 03 / THE NEED -->
+  <section class="impulsivity-section impulsivity-purple">
+    <div class="impulsivity-section-inner">
+
+      <div class="impulsivity-section-heading">
+        <p class="impulsivity-number">03 / UNDERNEATH THE URGE</p>
+
+        <h2>
+          WHAT ARE<br>
+          YOU TRYING<br>
+          TO CHANGE?
+        </h2>
+      </div>
+
+      <div class="impulsivity-copy">
+        <p>
+          What do you want the substance, purchase, or sudden action
+          to provide? Relief from pain? Quiet? Excitement?
+          Escape from boredom, anger, or depression?
+          Understanding the need gives you something specific to address.
+        </p>
+
+        <p>
+          A part of you may be exhausted by budgeting, symptoms,
+          appointments, and consequences. Listen to what it needs
+          while giving the part that wants sobriety and stability
+          a voice too.
+        </p>
+
+        <p>
+          Bring ordinary things you are protecting into the decision:
+          money for a bill, waking without a hangover, being available
+          for something you care about. Let the future enter
+          the conversation.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / THE PAUSE -->
+  <section class="impulsivity-section impulsivity-black">
+    <div class="impulsivity-section-inner">
+
+      <div class="impulsivity-section-heading">
+        <p class="impulsivity-number">04 / CREATE SOME ROOM</p>
+
+        <h2>
+          WANTING.<br>
+          PAUSING.<br>
+          CHOOSING.
+        </h2>
+      </div>
+
+      <div class="impulsivity-copy">
+        <p>
+          Notice the demand that discomfort end right fucking now.
+          Give yourself a short stretch of time to postpone acting
+          and bring support closer. You do not have to enjoy
+          the feeling to take a protective step.
+        </p>
+
+        <ul>
+          <li>Close the shopping app or leave the purchase unfinished.</li>
+          <li>Step away from access to alcohol or other substances.</li>
+          <li>Say, “I want to drink, and I’m starting to justify it.”</li>
+          <li>Ask someone to stay on the phone or help you follow your relapse plan.</li>
+        </ul>
+
+        <p class="impulsivity-takeaway">
+          A craving can be present without becoming a command.
+          Let your surroundings and support plan help hold the gap.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 05 / SAFEGUARDS -->
+  <section class="impulsivity-section impulsivity-white">
+    <div class="impulsivity-section-inner">
+
+      <div class="impulsivity-section-heading">
+        <p class="impulsivity-number">05 / HELP YOUR FUTURE SELF</p>
+
+        <h2>
+          MAKE THE<br>
+          PAUSE<br>
+          EASIER.
+        </h2>
+      </div>
+
+      <div class="impulsivity-copy">
+        <p>
+          Build safeguards while you have room to choose them.
+          Remove saved payment details, turn off sales notifications,
+          and set a waiting period for purchases. Keep recovery
+          contacts accessible and decide what to do when using
+          starts becoming a plan.
+        </p>
+
+        <p>
+          Respond to the need too. Eat if you are hungry.
+          Reach out if you need connection. Use your established
+          pain plan and tell your care team when it is insufficient.
+          Make the evening smaller when everything feels overwhelming.
+        </p>
+
+        <p>
+          Treat the pause as a challenge in resourcefulness:
+          given these circumstances, what protective action is
+          available? Success can mean getting through this stretch
+          without adding another problem.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 06 / ACCOUNTABILITY -->
+  <section class="impulsivity-section impulsivity-yellow">
+    <div class="impulsivity-section-inner">
+
+      <div class="impulsivity-section-heading">
+        <p class="impulsivity-number">06 / THE NEXT CHOICE</p>
+
+        <h2>
+          REPAIR.<br>
+          RECONNECT.<br>
+          KEEP GOING.
+        </h2>
+      </div>
+
+      <div class="impulsivity-copy">
+        <p>
+          Bipolar disorder, ADHD, and alcohol use disorder belong
+          in your understanding of your patterns. Taking your
+          medication does not mean you will never need more support.
+          Speak up when urges intensify or safeguards stop feeling
+          sufficient.
+        </p>
+
+        <p>
+          If you acted, address what needs care now. Cancel or return
+          the purchase where possible. Review the money. If you used,
+          tell someone who can help you respond and reconnect with
+          treatment. You can ask before shame passes.
+        </p>
+
+        <p>
+          What came before the urge? What made acting seem acceptable?
+          Where could support enter earlier? These questions give you
+          something to change beyond calling yourself a fucking idiot.
+        </p>
+
+        <p class="impulsivity-takeaway">
+          You can want relief and remain committed to recovery.
+          Your future needs care when the present feels urgent.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- NAVIGATION -->
+  <nav class="impulsivity-footer" aria-label="Bipolar topic navigation">
+    <div class="impulsivity-footer-inner">
+      <%= link_to "← BACK TO BIPOLAR", bipolar_path %>
+      <%= link_to "EXPLORE PERSPECTIVES →", bipolar_perspectives_path %>
+    </div>
+  </nav>
+
+</main>

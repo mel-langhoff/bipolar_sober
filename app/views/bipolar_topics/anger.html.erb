@@ -1,0 +1,581 @@
+<% content_for :title, "On Anger | Bipolar Sober" %>
+
+<style>
+  .anger-page {
+    background: #080808;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .anger-page *,
+  .anger-page *::before,
+  .anger-page *::after {
+    box-sizing: border-box;
+  }
+
+  .anger-hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 6%;
+    background-color: #080808;
+    background-image:
+      linear-gradient(90deg, rgba(8, 8, 8, .55), transparent),
+      url("<%= asset_path('bipolar_anger_desktop.png') %>");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .anger-hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .anger-eyebrow {
+    max-width: 440px;
+    margin: 0 0 28px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.6;
+    letter-spacing: .12em;
+  }
+
+  .anger-hero h1 {
+    margin: 0;
+    font-size: clamp(72px, 10vw, 150px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .88;
+    letter-spacing: -.065em;
+    text-transform: uppercase;
+  }
+
+  .anger-hero h1 span {
+    display: block;
+  }
+
+  .anger-intro {
+    margin: 32px 0 0;
+    font-size: clamp(15px, 1.6vw, 22px);
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  .anger-quote {
+    padding: 48px 6%;
+    background: #080808;
+    text-align: center;
+  }
+
+  .anger-quote blockquote {
+    margin: 0;
+  }
+
+  .anger-quote blockquote p {
+    margin: 0 0 12px;
+    color: #eaff00;
+    font-size: clamp(30px, 5vw, 64px);
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  .anger-quote cite {
+    font-size: 14px;
+    font-style: normal;
+  }
+
+  .anger-section {
+    padding: 72px 6%;
+  }
+
+  .anger-section-inner {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .anger-number {
+    margin: 0 0 22px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .12em;
+  }
+
+  .anger-section h2 {
+    margin: 0;
+    font-size: clamp(36px, 4.5vw, 68px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .95;
+    letter-spacing: -.045em;
+    text-transform: uppercase;
+  }
+
+  .anger-copy {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .anger-copy p {
+    margin: 0 0 22px;
+  }
+
+  .anger-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  .anger-copy ul {
+    margin: 0 0 24px;
+    padding-left: 22px;
+  }
+
+  .anger-copy li {
+    margin-bottom: 12px;
+  }
+
+  .anger-pink {
+    background: #ff1493;
+    color: #080808;
+  }
+
+  .anger-yellow {
+    background: #eaff00;
+    color: #080808;
+  }
+
+  .anger-purple {
+    background: #8a00ff;
+    color: #fff;
+  }
+
+  .anger-black {
+    background: #080808;
+    color: #fff;
+  }
+
+  .anger-white {
+    background: #fff;
+    color: #080808;
+  }
+
+  .anger-takeaway {
+    padding-top: 22px;
+    border-top: 3px solid currentColor;
+    font-weight: 800;
+  }
+
+  .anger-footer {
+    padding: 40px 6%;
+    border-top: 1px solid #444;
+  }
+
+  .anger-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .anger-footer a {
+    color: #eaff00;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  .anger-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .anger-footer a:focus-visible {
+    outline: 3px solid #ff1493;
+    outline-offset: 6px;
+  }
+
+  @media (max-width: 767px) {
+    .anger-hero {
+      min-height: 88svh;
+      align-items: flex-start;
+      padding: 48px 6% 60px;
+      background-image:
+        url("<%= asset_path('bipolar_anger_mobile.png') %>");
+      background-position: center bottom;
+    }
+
+    .anger-eyebrow {
+      margin-bottom: 24px;
+      font-size: 10px;
+    }
+
+    .anger-hero h1 {
+      font-size: clamp(64px, 19vw, 108px);
+    }
+
+    .anger-intro {
+      margin-top: 24px;
+      font-size: 14px;
+    }
+
+    .anger-section {
+      padding: 48px 6%;
+    }
+
+    .anger-section-inner {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .anger-section h2 {
+      font-size: clamp(36px, 10vw, 58px);
+    }
+
+    .anger-copy {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .anger-number {
+      margin-bottom: 16px;
+    }
+  }
+</style>
+
+<main class="anger-page">
+
+  <!-- HERO -->
+  <section class="anger-hero" aria-labelledby="anger-title">
+    <div class="anger-hero-content">
+
+      <p class="anger-eyebrow">
+        BIPOLAR SOBER / BIPOLAR / ANGER
+      </p>
+
+      <h1 id="anger-title">
+        <span>ON</span>
+        <span>ANGER.</span>
+      </h1>
+
+      <p class="anger-intro">
+        THE SHORT FUSE.<br>
+        THE FULL-BODY FUCK THIS.<br>
+        THE SPACE BEFORE YOU REACT.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- QUOTE -->
+  <section class="anger-quote" aria-label="Opening quote">
+    <blockquote>
+      <p>“Serenity now!”</p>
+      <cite>— Frank Costanza</cite>
+    </blockquote>
+  </section>
+
+
+  <!-- 01 / BIPOLAR RAGE -->
+  <section class="anger-section anger-pink">
+    <div class="anger-section-inner">
+
+      <div class="anger-section-heading">
+        <p class="anger-number">01 / BIPOLAR RAGE</p>
+
+        <h2>
+          ONE MORE<br>
+          FUCKING<br>
+          THING.
+        </h2>
+      </div>
+
+      <div class="anger-copy">
+        <p>
+          Traffic won’t move. Your computer freezes. You drop something
+          when your back already hurts. One small inconvenience suddenly
+          feels unbearable. Then you get angry at yourself for getting
+          so angry, and now you have two things to be pissed off about.
+        </p>
+
+        <p>
+          “Bipolar rage” describes overwhelming anger or irritability;
+          it is not a separate diagnosis. Irritability can occur during
+          mood episodes, but anger alone does not mean you are having one.
+          Having bipolar disorder does not make you inherently aggressive.
+          Pay attention to the intensity and the broader pattern.
+        </p>
+
+        <p>
+          Your jaw clenches. Your hands tighten. Everything demands an
+          immediate reaction. Recognizing that your response feels bigger
+          than the situation can help you pause. Turning that awareness
+          into another reason to hate yourself only adds pressure.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 02 / THOUGHTS -->
+  <section class="anger-section anger-yellow">
+    <div class="anger-section-inner">
+
+      <div class="anger-section-heading">
+        <p class="anger-number">02 / CHECK THE STORY</p>
+
+        <h2>
+          A FROZEN<br>
+          SCREEN.<br>
+          A WHOLE<br>
+          SPIRAL.
+        </h2>
+      </div>
+
+      <div class="anger-copy">
+        <p>
+          One problem can collect every other problem you have been
+          carrying. A lost document becomes “nothing ever works.”
+          An unfinished chore becomes “I can’t manage my life.”
+          Pain interrupts your day, and suddenly you are reliving
+          everything your body has kept you from doing.
+        </p>
+
+        <p>
+          Come back to the specific event. What happened? What are you
+          predicting? What judgment did you add? “I lost my work and need
+          to redo it” is frustrating enough without becoming
+          “I’m a fucking failure.”
+        </p>
+
+        <p class="anger-takeaway">
+          You can recognize anger, tension, and the urge to act without
+          treating that urge as an instruction.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 03 / RESPONDING -->
+  <section class="anger-section anger-purple">
+    <div class="anger-section-inner">
+
+      <div class="anger-section-heading">
+        <p class="anger-number">03 / WORK WITH WHAT IS</p>
+
+        <h2>
+          WHAT CAN<br>
+          YOU DO<br>
+          WITH THIS?
+        </h2>
+      </div>
+
+      <div class="anger-copy">
+        <p>
+          Try treating the inconvenience as a challenge to your
+          resourcefulness. Given that this happened, what response
+          would help? A delay asks for patience. A broken plan asks
+          for improvisation. A mistake asks for repair.
+        </p>
+
+        <p>
+          You do not have to enjoy it or believe it happened for a reason.
+          Give your attention something useful to do beyond listing
+          how unfair everything is. Success might mean leaving the task
+          alone for ten minutes instead of breaking something you will
+          have to replace.
+        </p>
+
+        <p>
+          You cannot force traffic to move or guarantee your body will
+          cooperate. Ask, “What can I do with things as they are?”
+          Your effort still matters when the outcome disappoints you.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / THE PAUSE -->
+  <section class="anger-section anger-black">
+    <div class="anger-section-inner">
+
+      <div class="anger-section-heading">
+        <p class="anger-number">04 / BEFORE YOU REACT</p>
+
+        <h2>
+          PUT THE<br>
+          FUCKING<br>
+          THING<br>
+          DOWN.
+        </h2>
+      </div>
+
+      <div class="anger-copy">
+        <p>
+          When your body is highly activated, complicated reflection
+          can wait. Stop, step back, and observe before proceeding.
+          Set down the object. Stop typing. Pause the task.
+        </p>
+
+        <ul>
+          <li>Name what is happening: “I’m angry and I want to react.”</li>
+          <li>Give yourself time without rehearsing the grievance.</li>
+          <li>Ask what will leave you with fewer problems an hour from now.</li>
+          <li>Get support when you cannot settle enough to respond safely.</li>
+        </ul>
+
+        <p>
+          On the road, prioritize safe driving over recovering lost time.
+          Loosen your grip, leave space, and let a missed turn stay missed
+          until you can change direction safely. If you are too overwhelmed
+          to drive safely, pull over somewhere safe.
+        </p>
+
+        <p class="anger-takeaway">
+          You can be late and still have handled the situation well.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 05 / SELF-DIRECTED ANGER -->
+  <section class="anger-section anger-white">
+    <div class="anger-section-inner">
+
+      <div class="anger-section-heading">
+        <p class="anger-number">05 / ANGRY AT YOURSELF</p>
+
+        <h2>
+          OWN IT.<br>
+          REPAIR IT.<br>
+          KEEP YOUR<br>
+          DIGNITY.
+        </h2>
+      </div>
+
+      <div class="anger-copy">
+        <p>
+          Later, get curious about what the anger is protecting.
+          Helplessness? Fear of losing control? Exhaustion from pain?
+          Explore without forcing an explanation. You can listen to
+          the angry part while also listening to the parts that want
+          safety, sobriety, and stability.
+        </p>
+
+        <p>
+          Calling yourself stupid will not restore lost money or undo
+          a decision. Name what happened accurately, address what you can,
+          and consider what would help next time: a reminder, a limit,
+          an earlier break, or another person’s support.
+        </p>
+
+        <p class="anger-takeaway">
+          Your mistakes need attention. You remain worthy of care
+          while addressing them.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 06 / COMMISERATING -->
+  <section class="anger-section anger-pink">
+    <div class="anger-section-inner">
+
+      <div class="anger-section-heading">
+        <p class="anger-number">06 / ANGER CAN SPREAD</p>
+
+        <h2>
+          VENTING.<br>
+          OR ADDING<br>
+          FUEL?
+        </h2>
+      </div>
+
+      <div class="anger-copy">
+        <p>
+          Someone agrees that your situation is bullshit, you remember
+          another grievance, and soon you are taking turns getting
+          each other more furious. It feels validating. Check what
+          happens afterward: do you feel supported and more able
+          to cope, or more ready to explode?
+        </p>
+
+        <p>
+          Commiserating can help you feel less alone. Repeatedly
+          replaying the same grievance can also keep you stuck in it.
+          Agreement may feel like proof while you reinforce each
+          other’s assumptions.
+        </p>
+
+        <p>
+          Try saying, “I need to vent for a few minutes, then help me
+          figure out what to do.” Compassion can acknowledge how
+          shitty something is and help you find a way forward.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 07 / THE BIGGER PATTERN -->
+  <section class="anger-section anger-yellow">
+    <div class="anger-section-inner">
+
+      <div class="anger-section-heading">
+        <p class="anger-number">07 / PROTECT YOUR PROGRESS</p>
+
+        <h2>
+          THE PAUSE<br>
+          COUNTS.
+        </h2>
+      </div>
+
+      <div class="anger-copy">
+        <p>
+          If anger is unusual for you or comes with changes in sleep,
+          energy, thoughts, or behavior, bring it to your treatment team.
+          Coping skills and reflection can support you. Some symptoms
+          need more help than your usual strategies can provide.
+        </p>
+
+        <p>
+          You will not handle every frustration gracefully. Notice
+          the reckless move you do not make, the object you put down,
+          and the mistake you address without spending the evening
+          hating yourself.
+        </p>
+
+        <p class="anger-takeaway">
+          Those responses count. You are learning to experience anger
+          while protecting the life you are working to build.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- NAVIGATION -->
+  <nav class="anger-footer" aria-label="Bipolar topic navigation">
+    <div class="anger-footer-inner">
+      <%= link_to "← BACK TO BIPOLAR", bipolar_path %>
+      <%= link_to "NEXT: ON MANIA →", bipolar_mania_path %>
+    </div>
+  </nav>
+
+</main>

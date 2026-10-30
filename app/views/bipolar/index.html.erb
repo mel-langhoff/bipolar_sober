@@ -4,7 +4,6 @@
 
   <!-- HERO -->
   <section class="bipolar-hero">
-
     <div class="bipolar-hero-content">
 
       <p class="bipolar-eyebrow">
@@ -23,18 +22,14 @@
       </p>
 
     </div>
-
   </section>
-
 
   <!-- TOPICS -->
   <section class="bipolar-topics" id="bipolar-topics">
 
     <div class="bipolar-topics-heading">
 
-      <p>
-        01 / BIPOLAR
-      </p>
+      <p>01 / BIPOLAR</p>
 
       <h2>
         PICK YOUR<br>
@@ -48,17 +43,13 @@
 
     </div>
 
-
     <div class="bipolar-grid">
-
 
       <!-- PERSPECTIVES -->
       <%= link_to bipolar_perspectives_path,
           class: "bipolar-card card-pink" do %>
 
-        <p class="bipolar-card-number">
-          01
-        </p>
+        <p class="bipolar-card-number">01</p>
 
         <h3>
           PERSPECTIVES<br>
@@ -71,19 +62,15 @@
           recovery, identity, and living with your own brain.
         </p>
 
-        <span>
-          EXPLORE →
-        </span>
+        <span>EXPLORE →</span>
 
       <% end %>
 
-
       <!-- ANGER -->
-      <a href="#" class="bipolar-card card-yellow">
+      <%= link_to bipolar_anger_path,
+          class: "bipolar-card card-yellow" do %>
 
-        <p class="bipolar-card-number">
-          02
-        </p>
+        <p class="bipolar-card-number">02</p>
 
         <h3>
           ON<br>
@@ -95,19 +82,15 @@
           and what happens when zero suddenly becomes one hundred.
         </p>
 
-        <span>
-          EXPLORE →
-        </span>
+        <span>EXPLORE →</span>
 
-      </a>
-
+      <% end %>
 
       <!-- MANIA -->
-      <a href="#" class="bipolar-card card-purple">
+      <%= link_to bipolar_mania_path,
+          class: "bipolar-card card-purple" do %>
 
-        <p class="bipolar-card-number">
-          03
-        </p>
+        <p class="bipolar-card-number">03</p>
 
         <h3>
           ON<br>
@@ -119,19 +102,15 @@
           bigger, and considerably more complicated.
         </p>
 
-        <span>
-          EXPLORE →
-        </span>
+        <span>EXPLORE →</span>
 
-      </a>
-
+      <% end %>
 
       <!-- DEPRESSION -->
-      <a href="#" class="bipolar-card card-black">
+      <%= link_to bipolar_depression_path,
+          class: "bipolar-card card-black" do %>
 
-        <p class="bipolar-card-number">
-          04
-        </p>
+        <p class="bipolar-card-number">04</p>
 
         <h3>
           ON<br>
@@ -144,19 +123,15 @@
           the fucking thing.
         </p>
 
-        <span>
-          EXPLORE →
-        </span>
+        <span>EXPLORE →</span>
 
-      </a>
-
+      <% end %>
 
       <!-- MIXED EPISODES -->
-      <a href="#" class="bipolar-card card-split">
+      <%= link_to bipolar_mixed_episodes_path,
+          class: "bipolar-card card-split" do %>
 
-        <p class="bipolar-card-number">
-          05
-        </p>
+        <p class="bipolar-card-number">05</p>
 
         <h3>
           ON MIXED<br>
@@ -168,19 +143,15 @@
           When opposite symptoms decide to show up together.
         </p>
 
-        <span>
-          EXPLORE →
-        </span>
+        <span>EXPLORE →</span>
 
-      </a>
-
+      <% end %>
 
       <!-- IMPULSIVITY -->
-      <a href="#" class="bipolar-card card-pink">
+      <%= link_to bipolar_impulsivity_path,
+          class: "bipolar-card card-pink" do %>
 
-        <p class="bipolar-card-number">
-          06
-        </p>
+        <p class="bipolar-card-number">06</p>
 
         <h3>
           ON<br>
@@ -192,16 +163,11 @@
           And learning how to put something between them.
         </p>
 
-        <span>
-          EXPLORE →
-        </span>
+        <span>EXPLORE →</span>
 
-        
-
-      </a>
+      <% end %>
 
     </div>
-
   </section>
 
 </main>

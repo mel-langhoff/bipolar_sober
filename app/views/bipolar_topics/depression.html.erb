@@ -1,0 +1,570 @@
+<% content_for :title, "On Depression | Bipolar Sober" %>
+
+<style>
+  .depression-page {
+    background: #080808;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .depression-page *,
+  .depression-page *::before,
+  .depression-page *::after {
+    box-sizing: border-box;
+  }
+
+  .depression-hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 6%;
+    background-color: #080808;
+    background-image:
+      linear-gradient(90deg, rgba(8, 8, 8, .55), transparent),
+      url("<%= asset_path('bipolar_depression_desktop.png') %>");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .depression-hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .depression-eyebrow {
+    max-width: 440px;
+    margin: 0 0 28px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.6;
+    letter-spacing: .12em;
+  }
+
+  .depression-hero h1 {
+    margin: 0;
+    font-size: clamp(48px, 7.5vw, 112px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .95;
+    letter-spacing: -.055em;
+    text-transform: uppercase;
+  }
+
+  .depression-hero h1 span {
+    display: block;
+  }
+
+  .depression-intro {
+    margin: 32px 0 0;
+    font-size: clamp(15px, 1.6vw, 22px);
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  .depression-statement {
+    padding: 48px 6%;
+    text-align: center;
+  }
+
+  .depression-statement p {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #eaff00;
+    font-size: clamp(26px, 4vw, 52px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  .depression-section {
+    padding: 72px 6%;
+  }
+
+  .depression-section-inner {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .depression-number {
+    margin: 0 0 22px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .12em;
+  }
+
+  .depression-section h2 {
+    margin: 0;
+    font-size: clamp(36px, 4.5vw, 68px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .95;
+    letter-spacing: -.045em;
+    text-transform: uppercase;
+  }
+
+  .depression-copy {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .depression-copy p {
+    margin: 0 0 22px;
+  }
+
+  .depression-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  .depression-copy ul {
+    margin: 0 0 24px;
+    padding-left: 22px;
+  }
+
+  .depression-copy li {
+    margin-bottom: 12px;
+  }
+
+  .depression-pink {
+    background: #ff1493;
+    color: #080808;
+  }
+
+  .depression-yellow {
+    background: #eaff00;
+    color: #080808;
+  }
+
+  .depression-purple {
+    background: #8a00ff;
+    color: #fff;
+  }
+
+  .depression-black {
+    background: #080808;
+    color: #fff;
+  }
+
+  .depression-white {
+    background: #fff;
+    color: #080808;
+  }
+
+  .depression-takeaway {
+    padding-top: 22px;
+    border-top: 3px solid currentColor;
+    font-weight: 800;
+  }
+
+  .depression-footer {
+    padding: 40px 6%;
+    border-top: 1px solid #444;
+  }
+
+  .depression-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .depression-footer a {
+    color: #eaff00;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  .depression-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .depression-footer a:focus-visible {
+    outline: 3px solid #ff1493;
+    outline-offset: 6px;
+  }
+
+  @media (max-width: 767px) {
+    .depression-hero {
+      min-height: 88svh;
+      align-items: flex-start;
+      padding: 48px 6% 60px;
+      background-image:
+        url("<%= asset_path('bipolar_depression_mobile.png') %>");
+      background-position: center bottom;
+    }
+
+    .depression-eyebrow {
+      margin-bottom: 24px;
+      font-size: 10px;
+    }
+
+    .depression-hero h1 {
+      font-size: clamp(36px, 11.5vw, 86px);
+    }
+
+    .depression-intro {
+      margin-top: 24px;
+      font-size: 14px;
+    }
+
+    .depression-section {
+      padding: 48px 6%;
+    }
+
+    .depression-section-inner {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .depression-section h2 {
+      font-size: clamp(36px, 10vw, 58px);
+    }
+
+    .depression-copy {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .depression-number {
+      margin-bottom: 16px;
+    }
+  }
+</style>
+
+<main class="depression-page">
+
+  <!-- HERO -->
+  <section class="depression-hero" aria-labelledby="depression-title">
+    <div class="depression-hero-content">
+
+      <p class="depression-eyebrow">
+        BIPOLAR SOBER / BIPOLAR / DEPRESSION
+      </p>
+
+      <h1 id="depression-title">
+        <span>ON</span>
+        <span>DEPRESSION.</span>
+      </h1>
+
+      <p class="depression-intro">
+        THE WEIGHT. THE NOTHING.<br>
+        THE DAYS THAT KEEP COMING.<br>
+        GETTING THROUGH THE FUCKING THING.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- OPENING -->
+  <section class="depression-statement" aria-label="Opening thought">
+    <p>
+      YOU DO NOT HAVE TO FEEL HOPEFUL<br>
+      TO DESERVE HELP.
+    </p>
+  </section>
+
+
+  <!-- 01 / THE LONG HAUL -->
+  <section class="depression-section depression-purple">
+    <div class="depression-section-inner">
+
+      <div class="depression-section-heading">
+        <p class="depression-number">01 / THE LONG HAUL</p>
+
+        <h2>
+          WHEN THE<br>
+          LOW DOESN’T<br>
+          LET UP.
+        </h2>
+      </div>
+
+      <div class="depression-copy">
+        <p>
+          Sometimes depression means months of waking up and finding
+          the same weight waiting for you. Four months in, you can
+          get tired of explaining that you are still struggling.
+          You are tired of the episode. Tired of waiting. Tired of
+          having to get through another day that feels like this.
+        </p>
+
+        <p>
+          Maybe you feel painfully sad. Maybe you feel almost nothing.
+          Things you usually care about seem distant, and ordinary
+          tasks take more effort than anyone can see. Then comes
+          the guilt about everything you think you should be doing.
+        </p>
+
+        <p class="depression-takeaway">
+          Your capacity deserves to be taken seriously, including
+          when the struggle has lasted longer than other people understand.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 02 / THOUGHTS -->
+  <section class="depression-section depression-yellow">
+    <div class="depression-section-inner">
+
+      <div class="depression-section-heading">
+        <p class="depression-number">02 / CHECK THE VERDICT</p>
+
+        <h2>
+          IT FEELS<br>
+          FOREVER.
+        </h2>
+      </div>
+
+      <div class="depression-copy">
+        <p>
+          When you have felt awful for months, “this will never change”
+          can seem like a reasonable conclusion. The feeling is real.
+          The prediction still deserves questioning. How you feel today
+          cannot tell you everything about your future.
+        </p>
+
+        <p>
+          Notice when your mind turns difficulty into identity:
+          “I couldn’t finish that” becomes “I’m useless.”
+          “I need help” becomes “I’m a burden.”
+          Try describing what happened without sentencing your
+          entire self.
+        </p>
+
+        <p>
+          You do not need a bright, inspirational replacement thought.
+          “I’m having a hard time, and I need support” can be accurate
+          enough. Give yourself a statement you can actually believe.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 03 / SMALL ACTIONS -->
+  <section class="depression-section depression-pink">
+    <div class="depression-section-inner">
+
+      <div class="depression-section-heading">
+        <p class="depression-number">03 / MAKE IT SMALLER</p>
+
+        <h2>
+          ONE THING.<br>
+          THEN SEE.
+        </h2>
+      </div>
+
+      <div class="depression-copy">
+        <p>
+          The whole day may feel impossible. Bring the task down
+          to something you can attempt with the energy available.
+          Eat something simple. Change your shirt. Send one message.
+          Put one dish in the sink.
+        </p>
+
+        <ul>
+          <li>Choose one manageable action instead of a complete overhaul.</li>
+          <li>Break tasks into smaller pieces and allow breaks.</li>
+          <li>Adapt expectations around pain, exhaustion, and your actual limits.</li>
+          <li>Let someone help with the parts you cannot manage alone.</li>
+        </ul>
+
+        <p>
+          Sometimes a small action gives you a little momentum.
+          Sometimes it takes everything you have. Its value does
+          not depend on whether you suddenly feel better afterward.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / SELF-COMPASSION -->
+  <section class="depression-section depression-black">
+    <div class="depression-section-inner">
+
+      <div class="depression-section-heading">
+        <p class="depression-number">04 / DROP THE EXTRA WEIGHT</p>
+
+        <h2>
+          YOU’RE<br>
+          ALREADY<br>
+          CARRYING<br>
+          ENOUGH.
+        </h2>
+      </div>
+
+      <div class="depression-copy">
+        <p>
+          Depression is exhausting enough without spending the day
+          calling yourself lazy, weak, or a fucking disappointment.
+          Notice the suffering already here and the punishment you
+          add to it. You can work on the second without pretending
+          you can simply switch off the first.
+        </p>
+
+        <p>
+          When it helps, come back to something immediate: the feel
+          of the chair, a sound in the room, the next sip of water.
+          You can acknowledge “this is painful” without solving
+          your entire life in that moment.
+        </p>
+
+        <p class="depression-takeaway">
+          You remain worthy of care on the days when your main
+          accomplishment is getting through.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 05 / SUPPORT -->
+  <section class="depression-section depression-white">
+    <div class="depression-section-inner">
+
+      <div class="depression-section-heading">
+        <p class="depression-number">05 / LET SOMEONE IN</p>
+
+        <h2>
+          MAKE THE<br>
+          ASK<br>
+          SPECIFIC.
+        </h2>
+      </div>
+
+      <div class="depression-copy">
+        <p>
+          Explaining everything can feel like another impossible task.
+          Start with the practical help you need. Someone does not
+          have to understand every part of the episode to bring food,
+          sit beside you, or help you make a call.
+        </p>
+
+        <ul>
+          <li>“Can you check in with me tonight?”</li>
+          <li>“Can you help me sort out dinner?”</li>
+          <li>“Can you sit with me while I handle this appointment?”</li>
+          <li>“I don’t need advice right now. I could use some company.”</li>
+        </ul>
+
+        <p>
+          You can ask for quiet company. You can say that you are
+          still struggling even if you have said it before.
+          Your need for support does not expire because the episode
+          has lasted a long time.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 06 / ACCEPTANCE -->
+  <section class="depression-section depression-purple">
+    <div class="depression-section-inner">
+
+      <div class="depression-section-heading">
+        <p class="depression-number">06 / WORK WITH TODAY</p>
+
+        <h2>
+          WHAT IS<br>
+          AVAILABLE<br>
+          RIGHT NOW?
+        </h2>
+      </div>
+
+      <div class="depression-copy">
+        <p>
+          You may not be able to produce motivation, relief, or a
+          different mood on demand. Ask what is available today:
+          a smaller task, an honest conversation, some rest,
+          or help getting through the next hour.
+        </p>
+
+        <p>
+          You can approach the day as a problem to work with:
+          given these limits, how can you respond with care and
+          resourcefulness? There is no requirement to turn the pain
+          into a lesson or prove how much you can endure.
+        </p>
+
+        <p>
+          Accepting your current limits can help you choose a workable
+          next step. It leaves room for your circumstances to change
+          and for other people to help.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 07 / CARE AND HOPE -->
+  <section class="depression-section depression-yellow">
+    <div class="depression-section-inner">
+
+      <div class="depression-section-heading">
+        <p class="depression-number">07 / KEEP ROOM FOR CHANGE</p>
+
+        <h2>
+          YOU DON’T<br>
+          HAVE TO<br>
+          DO THIS<br>
+          ALONE.
+        </h2>
+      </div>
+
+      <div class="depression-copy">
+        <p>
+          Let your treatment team know when depression persists,
+          worsens, or makes everyday care difficult. Tell them
+          what your days actually look like, including the things
+          you have stopped being able to do.
+        </p>
+
+        <p>
+          If you are thinking about suicide, feel unable to stay safe,
+          or cannot meet basic needs, seek urgent help. You deserve
+          support before things become unbearable.
+        </p>
+
+        <p>
+          Hope can be difficult to feel from inside a long episode.
+          For now, it can look like keeping an appointment, accepting
+          a meal, or telling someone the truth about how you are doing.
+        </p>
+
+        <p class="depression-takeaway">
+          Leave some room for a future you cannot clearly picture yet.
+          You deserve care while you get there.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- NAVIGATION -->
+  <nav class="depression-footer" aria-label="Bipolar topic navigation">
+    <div class="depression-footer-inner">
+      <%= link_to "← BACK TO BIPOLAR", bipolar_path %>
+      <%= link_to "NEXT: ON MIXED EPISODES →", bipolar_mixed_episodes_path %>
+    </div>
+  </nav>
+
+</main>
