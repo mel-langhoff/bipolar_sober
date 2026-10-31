@@ -10,4 +10,10 @@ class AddictionTopicsController < ApplicationController
 
   def impulsivity
   end
+
+  def bipolar; end
+
+def cravings; end
+
+def shame; end
 end

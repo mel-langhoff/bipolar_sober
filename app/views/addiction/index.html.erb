@@ -6,11 +6,11 @@
     <div class="addiction-hero-content">
 
       <p class="addiction-eyebrow">
-        BIPOLAR SOBER / BIPOLAR ADDICTION
+        BIPOLAR SOBER / ADDICTION
       </p>
 
       <h1>
-        <span>BIPOLAR</span>
+        <span>ON</span>
         <span>ADDICTION.</span>
       </h1>
 
@@ -64,12 +64,35 @@
       <% end %>
 
 
+      <!-- BIPOLAR & ADDICTION -->
+
+      <%= link_to addiction_bipolar_path,
+          class: "addiction-card addiction-card-purple" do %>
+
+        <p class="addiction-card-number">02</p>
+
+        <h3>
+          BIPOLAR &amp;<br>
+          ADDICTION
+        </h3>
+
+        <p class="addiction-card-description">
+          Mania. Depression. Mixed episodes.
+          How drinking and substance use get tangled up with bipolar
+          disorder, including when your mood is stable.
+        </p>
+
+        <span>UNTANGLE IT →</span>
+
+      <% end %>
+
+
       <!-- WHAT AM I ESCAPING? -->
 
       <%= link_to addiction_what_am_i_escaping_path,
           class: "addiction-card addiction-card-yellow" do %>
 
-        <p class="addiction-card-number">02</p>
+        <p class="addiction-card-number">03</p>
 
         <h3>
           WHAT AM I<br>
@@ -91,7 +114,7 @@
       <%= link_to addiction_triggers_path,
           class: "addiction-card addiction-card-pink" do %>
 
-        <p class="addiction-card-number">03</p>
+        <p class="addiction-card-number">04</p>
 
         <h3>
           TRIGGERS
@@ -107,12 +130,34 @@
       <% end %>
 
 
+      <!-- CRAVINGS -->
+
+      <%= link_to addiction_cravings_path,
+          class: "addiction-card addiction-card-black" do %>
+
+        <p class="addiction-card-number">05</p>
+
+        <h3>
+          CRAVINGS
+        </h3>
+
+        <p class="addiction-card-description">
+          The urge. The bargaining. The selective fucking memory.
+          Understanding what you want, what you expect it to give you,
+          and how the craving builds.
+        </p>
+
+        <span>UNDERSTAND THE URGE →</span>
+
+      <% end %>
+
+
       <!-- IMPULSIVITY -->
 
       <%= link_to addiction_impulsivity_path,
           class: "addiction-card addiction-card-purple" do %>
 
-        <p class="addiction-card-number">04</p>
+        <p class="addiction-card-number">06</p>
 
         <h3>
           IMPULSIVITY
@@ -124,6 +169,29 @@
         </p>
 
         <span>SLOW IT DOWN →</span>
+
+      <% end %>
+
+
+      <!-- SHAME & ACCOUNTABILITY -->
+
+      <%= link_to addiction_shame_path,
+          class: "addiction-card addiction-card-yellow" do %>
+
+        <p class="addiction-card-number">07</p>
+
+        <h3>
+          SHAME &amp;<br>
+          ACCOUNTABILITY
+        </h3>
+
+        <p class="addiction-card-description">
+          Regret. Secrecy. The shit you wish you could undo.
+          Taking responsibility and making repairs
+          without turning your past into your entire identity.
+        </p>
+
+        <span>FACE IT WITH COMPASSION →</span>
 
       <% end %>
 

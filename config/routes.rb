@@ -186,4 +186,13 @@ Rails.application.routes.draw do
     get "bipolar/mixed_episodes", to: "bipolar_topics#mixed_episodes", as: :bipolar_mixed_episodes
     get "bipolar/impulsivity", to: "bipolar_topics#impulsivity", as: :bipolar_impulsivity
 
+
+    get "addiction/bipolar", to: "addiction_topics#bipolar",
+    as: :addiction_bipolar
+
+get "addiction/cravings", to: "addiction_topics#cravings",
+    as: :addiction_cravings
+
+get "addiction/shame", to: "addiction_topics#shame",
+    as: :addiction_shame
 end
