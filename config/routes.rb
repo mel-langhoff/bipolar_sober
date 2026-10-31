@@ -37,6 +37,31 @@ Rails.application.routes.draw do
 
 
   # ==========================================
+  # BIPOLAR > TOPICS
+  # ==========================================
+
+  get "bipolar/anger",
+      to: "bipolar_topics#anger",
+      as: :bipolar_anger
+
+  get "bipolar/mania",
+      to: "bipolar_topics#mania",
+      as: :bipolar_mania
+
+  get "bipolar/depression",
+      to: "bipolar_topics#depression",
+      as: :bipolar_depression
+
+  get "bipolar/mixed_episodes",
+      to: "bipolar_topics#mixed_episodes",
+      as: :bipolar_mixed_episodes
+
+  get "bipolar/impulsivity",
+      to: "bipolar_topics#impulsivity",
+      as: :bipolar_impulsivity
+
+
+  # ==========================================
   # BIPOLAR > PERSPECTIVES
   # ==========================================
 
@@ -92,6 +117,51 @@ Rails.application.routes.draw do
   get "addiction/impulsivity",
       to: "addiction_topics#impulsivity",
       as: :addiction_impulsivity
+
+  get "addiction/bipolar",
+      to: "addiction_topics#bipolar",
+      as: :addiction_bipolar
+
+  get "addiction/cravings",
+      to: "addiction_topics#cravings",
+      as: :addiction_cravings
+
+  get "addiction/shame",
+      to: "addiction_topics#shame",
+      as: :addiction_shame
+
+
+  # ==========================================
+  # ADDICTION > PERSPECTIVES > INDIVIDUAL PAGES
+  # ==========================================
+
+  get "addiction/perspectives/buddhism",
+      to: "addiction_perspectives#buddhism",
+      as: :addiction_perspectives_buddhism
+
+  get "addiction/perspectives/hinduism",
+      to: "addiction_perspectives#hinduism",
+      as: :addiction_perspectives_hinduism
+
+  get "addiction/perspectives/stoicism",
+      to: "addiction_perspectives#stoicism",
+      as: :addiction_perspectives_stoicism
+
+  get "addiction/perspectives/cbt",
+      to: "addiction_perspectives#cbt",
+      as: :addiction_perspectives_cbt
+
+  get "addiction/perspectives/dbt",
+      to: "addiction_perspectives#dbt",
+      as: :addiction_perspectives_dbt
+
+  get "addiction/perspectives/ifs",
+      to: "addiction_perspectives#ifs",
+      as: :addiction_perspectives_ifs
+
+  get "addiction/perspectives/big-picture",
+      to: "addiction_perspectives#big_picture",
+      as: :addiction_perspectives_big_picture
 
 
   # ==========================================
@@ -180,19 +250,4 @@ Rails.application.routes.draw do
       to: "perspectives_topics#inside",
       as: :perspectives_inside
 
-    get "bipolar/anger", to: "bipolar_topics#anger", as: :bipolar_anger
-    get "bipolar/mania", to: "bipolar_topics#mania", as: :bipolar_mania
-    get "bipolar/depression", to: "bipolar_topics#depression", as: :bipolar_depression
-    get "bipolar/mixed_episodes", to: "bipolar_topics#mixed_episodes", as: :bipolar_mixed_episodes
-    get "bipolar/impulsivity", to: "bipolar_topics#impulsivity", as: :bipolar_impulsivity
-
-
-    get "addiction/bipolar", to: "addiction_topics#bipolar",
-    as: :addiction_bipolar
-
-get "addiction/cravings", to: "addiction_topics#cravings",
-    as: :addiction_cravings
-
-get "addiction/shame", to: "addiction_topics#shame",
-    as: :addiction_shame
 end
