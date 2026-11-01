@@ -250,4 +250,57 @@ Rails.application.routes.draw do
       to: "perspectives_topics#inside",
       as: :perspectives_inside
 
+
+      # TOOLBOX TOOLS
+get "toolbox/play-the-tape-forward",
+    to: "toolbox_tools#play_the_tape_forward",
+    as: :play_the_tape_forward
+
+get "toolbox/ten-ten-ten",
+    to: "toolbox_tools#ten_ten_ten",
+    as: :ten_ten_ten
+
+get "toolbox/when-you-dont-trust-your-mood",
+    to: "toolbox_tools#when_you_dont_trust_your_mood",
+    as: :when_you_dont_trust_your_mood
+
+get "toolbox/press-pause",
+    to: "toolbox_tools#press_pause",
+    as: :press_pause
+
+get "toolbox/after-you-fuck-up",
+    to: "toolbox_tools#after_you_fuck_up",
+    as: :after_you_fuck_up
+
+get "toolbox/bare-minimum-day",
+    to: "toolbox_tools#bare_minimum_day",
+    as: :bare_minimum_day
+
+get "toolbox/time-capsule",
+    to: "toolbox_tools#time_capsule",
+    as: :time_capsule
+
+    get "toolbox/are-you-the-fucking-oracle",
+    to: "toolbox_tools#are_you_the_fucking_oracle",
+    as: :are_you_the_fucking_oracle
+
+get "toolbox/asking-for-help",
+    to: "toolbox_tools#asking_for_help",
+    as: :asking_for_help
+
+get "toolbox/let-creativity-in",
+    to: "toolbox_tools#let_creativity_in",
+    as: :let_creativity_in
+
+get "toolbox/whats-your-fucking-normal",
+    to: "toolbox_tools#whats_your_fucking_normal",
+    as: :whats_your_fucking_normal
+
+get "toolbox/urgent-according-to-who",
+    to: "toolbox_tools#urgent_according_to_who",
+    as: :urgent_according_to_who
+
+get "toolbox/dont-poke-the-bipolar-bear",
+    to: "toolbox_tools#dont_poke_the_bipolar_bear",
+    as: :dont_poke_the_bipolar_bear
 end

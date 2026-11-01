@@ -17819,3 +17819,2973 @@ body {
     font-size: clamp(1.25rem, 2vw, 2rem);
   }
 }
+
+/* ==========================================
+   BUDDHISM & ADDICTION
+   ========================================== */
+
+.buddhism-addiction-page {
+  --ba-black: #080808;
+  --ba-pink: #ff1493;
+  --ba-yellow: #eaff00;
+  --ba-purple: #8a00ff;
+
+  background: var(--ba-black);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.buddhism-addiction-page,
+.buddhism-addiction-page * {
+  box-sizing: border-box;
+}
+
+.buddhism-addiction-page h1,
+.buddhism-addiction-page h2,
+.buddhism-addiction-page h3,
+.buddhism-addiction-page p,
+.buddhism-addiction-page blockquote {
+  margin: 0;
+}
+
+/* HERO */
+
+.buddhism-addiction-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: 92svh;
+  padding: 100px 6vw;
+  background: var(--ba-black);
+}
+
+.buddhism-addiction-background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  display: block;
+  pointer-events: none;
+}
+
+.buddhism-addiction-background-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.buddhism-addiction-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 8, 8, 0.45) 0%,
+    rgba(8, 8, 8, 0.12) 55%,
+    transparent 80%
+  );
+  pointer-events: none;
+}
+
+.buddhism-addiction-hero-content {
+  width: 100%;
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+.buddhism-addiction-eyebrow {
+  max-width: 650px;
+  margin-bottom: 30px !important;
+  color: var(--ba-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+}
+
+.buddhism-addiction-hero h1 {
+  max-width: 850px;
+  font-size: clamp(56px, 7.7vw, 132px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.94;
+}
+
+.buddhism-addiction-hero h1 span {
+  display: block;
+}
+
+.buddhism-addiction-hero h1 span:last-child {
+  color: var(--ba-yellow);
+}
+
+.buddhism-addiction-intro {
+  max-width: 650px;
+  margin-top: 34px !important;
+  font-size: clamp(16px, 1.8vw, 25px);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+/* SECTIONS */
+
+.ba-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(64px, 8vw, 120px) 6vw;
+}
+
+.ba-pink {
+  background: var(--ba-pink);
+  color: var(--ba-black);
+}
+
+.ba-yellow {
+  background: var(--ba-yellow);
+  color: var(--ba-black);
+}
+
+.ba-purple {
+  background: var(--ba-purple);
+  color: #fff;
+}
+
+.ba-black {
+  background: var(--ba-black);
+  color: #fff;
+}
+
+.ba-heading,
+.ba-copy {
+  min-width: 0;
+}
+
+.ba-number {
+  margin-bottom: 26px !important;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  line-height: 1.6;
+}
+
+.ba-heading h2 {
+  font-size: clamp(40px, 4.7vw, 80px);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  overflow-wrap: anywhere;
+}
+
+.ba-copy {
+  max-width: 780px;
+}
+
+.ba-copy > p,
+.ba-ending-copy > p {
+  margin-bottom: 24px;
+  font-size: clamp(17px, 1.35vw, 20px);
+  line-height: 1.75;
+}
+
+.ba-copy > p:last-child,
+.ba-ending-copy > p:last-child {
+  margin-bottom: 0;
+}
+
+.ba-copy > .ba-lead {
+  margin-bottom: 28px;
+  font-size: clamp(23px, 2.1vw, 31px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+/* QUOTE */
+
+.ba-copy blockquote {
+  margin-bottom: 34px;
+  padding: 6px 0 6px 24px;
+  border-left: 6px solid currentColor;
+  font-size: clamp(24px, 2.3vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+.ba-copy blockquote cite {
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.7;
+}
+
+/* BOXES */
+
+.ba-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.ba-box {
+  min-width: 0;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.ba-box h3,
+.ba-stack-item h3 {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.ba-box p,
+.ba-stack-item p {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.ba-callout {
+  margin: 32px 0;
+  padding: 28px;
+  border: 3px solid currentColor;
+  font-size: clamp(23px, 2.4vw, 35px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+/* NUMBERED BOXES */
+
+.ba-stack {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.ba-stack-item {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 20px;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.ba-stack-item > span {
+  color: var(--ba-yellow);
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.ba-stack-item > div {
+  min-width: 0;
+}
+
+/* ENDING */
+
+.buddhism-addiction-ending {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(70px, 9vw, 140px) 6vw;
+  background: var(--ba-black);
+  color: #fff;
+}
+
+.ba-ending-heading,
+.ba-ending-copy {
+  min-width: 0;
+}
+
+.ba-ending-small {
+  margin-bottom: 28px !important;
+  color: var(--ba-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+}
+
+.ba-ending-heading h2 {
+  font-size: clamp(48px, 6vw, 100px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.96;
+  overflow-wrap: anywhere;
+}
+
+.ba-ending-heading h2 span {
+  color: var(--ba-pink);
+}
+
+.ba-ending-copy {
+  max-width: 780px;
+}
+
+.ba-back-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 18px 22px;
+  border: 2px solid var(--ba-yellow);
+  background: var(--ba-yellow);
+  color: var(--ba-black);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.035em;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.ba-back-button:hover {
+  background: var(--ba-black);
+  color: var(--ba-yellow);
+}
+
+.ba-back-button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .buddhism-addiction-hero {
+    align-items: flex-start;
+    min-height: max(900px, 125svh);
+    padding: 70px 6vw 80px;
+  }
+
+  .buddhism-addiction-background-image {
+    object-position: right bottom;
+  }
+
+  .buddhism-addiction-hero::after {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 8, 8, 0.25) 0%,
+      rgba(8, 8, 8, 0.08) 45%,
+      transparent 70%
+    );
+  }
+
+  .buddhism-addiction-eyebrow {
+    max-width: 340px;
+    margin-bottom: 26px !important;
+    font-size: 10px;
+    letter-spacing: 0.065em;
+  }
+
+  .buddhism-addiction-hero h1 {
+    max-width: 600px;
+    font-size: clamp(44px, 9.8vw, 76px);
+  }
+
+  .buddhism-addiction-intro {
+    max-width: 360px;
+    margin-top: 26px !important;
+    font-size: 16px;
+  }
+
+  .ba-section,
+  .buddhism-addiction-ending {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+    padding: 60px 6vw;
+  }
+
+  .ba-heading h2 {
+    font-size: clamp(40px, 9vw, 65px);
+  }
+
+  .ba-copy,
+  .ba-ending-copy {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .ba-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ba-box,
+  .ba-callout {
+    padding: 22px;
+  }
+
+  .ba-stack-item {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .ba-stack-item > span {
+    font-size: 27px;
+  }
+
+  .ba-back-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   CBT & ADDICTION
+   ========================================== */
+
+.cbt-addiction-page {
+  --ca-black: #080808;
+  --ca-pink: #ff1493;
+  --ca-yellow: #eaff00;
+  --ca-purple: #8a00ff;
+
+  background: var(--ca-black);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cbt-addiction-page,
+.cbt-addiction-page * {
+  box-sizing: border-box;
+}
+
+.cbt-addiction-page h1,
+.cbt-addiction-page h2,
+.cbt-addiction-page h3,
+.cbt-addiction-page p,
+.cbt-addiction-page blockquote {
+  margin: 0;
+}
+
+/* HERO */
+
+.cbt-addiction-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: 92svh;
+  padding: 100px 6vw;
+  background: var(--ca-black);
+}
+
+.cbt-addiction-background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  display: block;
+  pointer-events: none;
+}
+
+.cbt-addiction-background-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.cbt-addiction-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 8, 8, 0.45) 0%,
+    rgba(8, 8, 8, 0.12) 55%,
+    transparent 80%
+  );
+  pointer-events: none;
+}
+
+.cbt-addiction-hero-content {
+  width: 100%;
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+.cbt-addiction-eyebrow {
+  max-width: 650px;
+  margin-bottom: 30px !important;
+  color: var(--ca-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+}
+
+.cbt-addiction-hero h1 {
+  max-width: 850px;
+  font-size: clamp(56px, 7.7vw, 132px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.94;
+}
+
+.cbt-addiction-hero h1 span {
+  display: block;
+}
+
+.cbt-addiction-hero h1 span:last-child {
+  color: var(--ca-yellow);
+}
+
+.cbt-addiction-intro {
+  max-width: 650px;
+  margin-top: 34px !important;
+  font-size: clamp(16px, 1.8vw, 25px);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+/* SECTIONS */
+
+.ca-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(64px, 8vw, 120px) 6vw;
+}
+
+.ca-pink {
+  background: var(--ca-pink);
+  color: var(--ca-black);
+}
+
+.ca-yellow {
+  background: var(--ca-yellow);
+  color: var(--ca-black);
+}
+
+.ca-purple {
+  background: var(--ca-purple);
+  color: #fff;
+}
+
+.ca-black {
+  background: var(--ca-black);
+  color: #fff;
+}
+
+.ca-heading,
+.ca-copy {
+  min-width: 0;
+}
+
+.ca-number {
+  margin-bottom: 26px !important;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  line-height: 1.6;
+}
+
+.ca-heading h2 {
+  font-size: clamp(40px, 4.7vw, 80px);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  overflow-wrap: anywhere;
+}
+
+.ca-copy {
+  max-width: 780px;
+}
+
+.ca-copy > p,
+.ca-ending-copy > p {
+  margin-bottom: 24px;
+  font-size: clamp(17px, 1.35vw, 20px);
+  line-height: 1.75;
+}
+
+.ca-copy > p:last-child,
+.ca-ending-copy > p:last-child {
+  margin-bottom: 0;
+}
+
+.ca-copy > .ca-lead {
+  margin-bottom: 28px;
+  font-size: clamp(23px, 2.1vw, 31px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+/* QUOTE */
+
+.ca-copy blockquote {
+  margin-bottom: 34px;
+  padding: 6px 0 6px 24px;
+  border-left: 6px solid currentColor;
+  font-size: clamp(24px, 2.3vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+.ca-copy blockquote cite {
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.7;
+}
+
+/* BOXES */
+
+.ca-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.ca-box {
+  min-width: 0;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.ca-box h3,
+.ca-stack-item h3,
+.ca-thoughts h3 {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.ca-box p,
+.ca-stack-item p,
+.ca-thoughts p {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.ca-callout {
+  margin: 32px 0;
+  padding: 28px;
+  border: 3px solid currentColor;
+  font-size: clamp(23px, 2.4vw, 35px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+/* THINKING PATTERNS */
+
+.ca-thoughts {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.ca-thoughts > div {
+  min-width: 0;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+/* NUMBERED BOXES */
+
+.ca-stack {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.ca-stack-item {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 20px;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.ca-stack-item > span {
+  color: var(--ca-yellow);
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.ca-stack-item > div {
+  min-width: 0;
+}
+
+/* ENDING */
+
+.cbt-addiction-ending {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(70px, 9vw, 140px) 6vw;
+  background: var(--ca-black);
+  color: #fff;
+}
+
+.ca-ending-heading,
+.ca-ending-copy {
+  min-width: 0;
+}
+
+.ca-ending-small {
+  margin-bottom: 28px !important;
+  color: var(--ca-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+}
+
+.ca-ending-heading h2 {
+  font-size: clamp(48px, 6vw, 100px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.96;
+  overflow-wrap: anywhere;
+}
+
+.ca-ending-heading h2 span {
+  color: var(--ca-pink);
+}
+
+.ca-ending-copy {
+  max-width: 780px;
+}
+
+.ca-back-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 18px 22px;
+  border: 2px solid var(--ca-yellow);
+  background: var(--ca-yellow);
+  color: var(--ca-black);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.035em;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.ca-back-button:hover {
+  background: var(--ca-black);
+  color: var(--ca-yellow);
+}
+
+.ca-back-button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .cbt-addiction-hero {
+    align-items: flex-start;
+    min-height: max(900px, 125svh);
+    padding: 70px 6vw 80px;
+  }
+
+  .cbt-addiction-background-image {
+    object-position: right bottom;
+  }
+
+  .cbt-addiction-hero::after {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 8, 8, 0.25) 0%,
+      rgba(8, 8, 8, 0.08) 45%,
+      transparent 70%
+    );
+  }
+
+  .cbt-addiction-eyebrow {
+    max-width: 340px;
+    margin-bottom: 26px !important;
+    font-size: 10px;
+    letter-spacing: 0.065em;
+  }
+
+  .cbt-addiction-hero h1 {
+    max-width: 600px;
+    font-size: clamp(44px, 9.8vw, 76px);
+  }
+
+  .cbt-addiction-intro {
+    max-width: 360px;
+    margin-top: 26px !important;
+    font-size: 16px;
+  }
+
+  .ca-section,
+  .cbt-addiction-ending {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+    padding: 60px 6vw;
+  }
+
+  .ca-heading h2 {
+    font-size: clamp(40px, 9vw, 65px);
+  }
+
+  .ca-copy,
+  .ca-ending-copy {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .ca-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ca-box,
+  .ca-callout,
+  .ca-thoughts > div {
+    padding: 22px;
+  }
+
+  .ca-stack-item {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .ca-stack-item > span {
+    font-size: 27px;
+  }
+
+  .ca-back-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   DBT & ADDICTION
+   ========================================== */
+
+.dbt-addiction-page {
+  --da-black: #080808;
+  --da-pink: #ff1493;
+  --da-yellow: #eaff00;
+  --da-purple: #8a00ff;
+
+  background: var(--da-black);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dbt-addiction-page,
+.dbt-addiction-page * {
+  box-sizing: border-box;
+}
+
+.dbt-addiction-page h1,
+.dbt-addiction-page h2,
+.dbt-addiction-page h3,
+.dbt-addiction-page p,
+.dbt-addiction-page blockquote {
+  margin: 0;
+}
+
+/* HERO */
+
+.dbt-addiction-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: 92svh;
+  padding: 100px 6vw;
+  background: var(--da-black);
+}
+
+.dbt-addiction-background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  display: block;
+  pointer-events: none;
+}
+
+.dbt-addiction-background-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.dbt-addiction-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 8, 8, 0.45) 0%,
+    rgba(8, 8, 8, 0.12) 55%,
+    transparent 80%
+  );
+  pointer-events: none;
+}
+
+.dbt-addiction-hero-content {
+  width: 100%;
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+.dbt-addiction-eyebrow {
+  max-width: 650px;
+  margin-bottom: 30px !important;
+  color: var(--da-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+}
+
+.dbt-addiction-hero h1 {
+  max-width: 850px;
+  font-size: clamp(56px, 7.7vw, 132px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.94;
+}
+
+.dbt-addiction-hero h1 span {
+  display: block;
+}
+
+.dbt-addiction-hero h1 span:last-child {
+  color: var(--da-yellow);
+}
+
+.dbt-addiction-intro {
+  max-width: 650px;
+  margin-top: 34px !important;
+  font-size: clamp(16px, 1.8vw, 25px);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+/* SECTIONS */
+
+.da-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(64px, 8vw, 120px) 6vw;
+}
+
+.da-pink {
+  background: var(--da-pink);
+  color: var(--da-black);
+}
+
+.da-yellow {
+  background: var(--da-yellow);
+  color: var(--da-black);
+}
+
+.da-purple {
+  background: var(--da-purple);
+  color: #fff;
+}
+
+.da-black {
+  background: var(--da-black);
+  color: #fff;
+}
+
+.da-heading,
+.da-copy {
+  min-width: 0;
+}
+
+.da-number {
+  margin-bottom: 26px !important;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  line-height: 1.6;
+}
+
+.da-heading h2 {
+  font-size: clamp(40px, 4.7vw, 80px);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  overflow-wrap: anywhere;
+}
+
+.da-copy {
+  max-width: 780px;
+}
+
+.da-copy > p,
+.da-ending-copy > p {
+  margin-bottom: 24px;
+  font-size: clamp(17px, 1.35vw, 20px);
+  line-height: 1.75;
+}
+
+.da-copy > p:last-child,
+.da-ending-copy > p:last-child {
+  margin-bottom: 0;
+}
+
+.da-copy > .da-lead {
+  margin-bottom: 28px;
+  font-size: clamp(23px, 2.1vw, 31px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+/* QUOTES */
+
+.da-copy blockquote {
+  margin-bottom: 34px;
+  padding: 6px 0 6px 24px;
+  border-left: 6px solid currentColor;
+  font-size: clamp(24px, 2.3vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+.da-copy blockquote cite {
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.7;
+}
+
+/* BOXES */
+
+.da-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.da-box {
+  min-width: 0;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.da-box h3,
+.da-stack-item h3 {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.da-box p,
+.da-stack-item p {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.da-callout {
+  margin: 32px 0;
+  padding: 28px;
+  border: 3px solid currentColor;
+  font-size: clamp(23px, 2.4vw, 35px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+/* NUMBERED BOXES */
+
+.da-stack {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.da-stack-item {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 20px;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.da-stack-item > span {
+  color: var(--da-yellow);
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.da-stack-item > div {
+  min-width: 0;
+}
+
+/* ENDING */
+
+.dbt-addiction-ending {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(70px, 9vw, 140px) 6vw;
+  background: var(--da-black);
+  color: #fff;
+}
+
+.da-ending-heading,
+.da-ending-copy {
+  min-width: 0;
+}
+
+.da-ending-small {
+  margin-bottom: 28px !important;
+  color: var(--da-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+}
+
+.da-ending-heading h2 {
+  font-size: clamp(48px, 6vw, 100px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.96;
+  overflow-wrap: anywhere;
+}
+
+.da-ending-heading h2 span {
+  color: var(--da-pink);
+}
+
+.da-ending-copy {
+  max-width: 780px;
+}
+
+.da-back-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 18px 22px;
+  border: 2px solid var(--da-yellow);
+  background: var(--da-yellow);
+  color: var(--da-black);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.035em;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.da-back-button:hover {
+  background: var(--da-black);
+  color: var(--da-yellow);
+}
+
+.da-back-button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .dbt-addiction-hero {
+    align-items: flex-start;
+    min-height: max(900px, 125svh);
+    padding: 70px 6vw 80px;
+  }
+
+  .dbt-addiction-background-image {
+    object-position: right bottom;
+  }
+
+  .dbt-addiction-hero::after {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 8, 8, 0.25) 0%,
+      rgba(8, 8, 8, 0.08) 45%,
+      transparent 70%
+    );
+  }
+
+  .dbt-addiction-eyebrow {
+    max-width: 340px;
+    margin-bottom: 26px !important;
+    font-size: 10px;
+    letter-spacing: 0.065em;
+  }
+
+  .dbt-addiction-hero h1 {
+    max-width: 600px;
+    font-size: clamp(44px, 9.8vw, 76px);
+  }
+
+  .dbt-addiction-intro {
+    max-width: 360px;
+    margin-top: 26px !important;
+    font-size: 16px;
+  }
+
+  .da-section,
+  .dbt-addiction-ending {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+    padding: 60px 6vw;
+  }
+
+  .da-heading h2 {
+    font-size: clamp(40px, 9vw, 65px);
+  }
+
+  .da-copy,
+  .da-ending-copy {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .da-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .da-box,
+  .da-callout {
+    padding: 22px;
+  }
+
+  .da-stack-item {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .da-stack-item > span {
+    font-size: 27px;
+  }
+
+  .da-back-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   HINDUISM & ADDICTION
+   ========================================== */
+
+.hinduism-addiction-page {
+  --ha-black: #080808;
+  --ha-pink: #ff1493;
+  --ha-yellow: #eaff00;
+  --ha-purple: #8a00ff;
+
+  background: var(--ha-black);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hinduism-addiction-page,
+.hinduism-addiction-page * {
+  box-sizing: border-box;
+}
+
+.hinduism-addiction-page h1,
+.hinduism-addiction-page h2,
+.hinduism-addiction-page h3,
+.hinduism-addiction-page p,
+.hinduism-addiction-page blockquote {
+  margin: 0;
+}
+
+/* HERO */
+
+.hinduism-addiction-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: 92svh;
+  padding: 100px 6vw;
+  background: var(--ha-black);
+}
+
+.hinduism-addiction-background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  display: block;
+  pointer-events: none;
+}
+
+.hinduism-addiction-background-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.hinduism-addiction-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 8, 8, 0.45) 0%,
+    rgba(8, 8, 8, 0.12) 55%,
+    transparent 80%
+  );
+  pointer-events: none;
+}
+
+.hinduism-addiction-hero-content {
+  width: 100%;
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+.hinduism-addiction-eyebrow {
+  max-width: 650px;
+  margin-bottom: 30px !important;
+  color: var(--ha-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+}
+
+.hinduism-addiction-hero h1 {
+  max-width: 850px;
+  font-size: clamp(56px, 7.7vw, 132px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.94;
+}
+
+.hinduism-addiction-hero h1 span {
+  display: block;
+}
+
+.hinduism-addiction-hero h1 span:last-child {
+  color: var(--ha-yellow);
+}
+
+.hinduism-addiction-intro {
+  max-width: 650px;
+  margin-top: 34px !important;
+  font-size: clamp(16px, 1.8vw, 25px);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+/* SECTIONS */
+
+.ha-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(64px, 8vw, 120px) 6vw;
+}
+
+.ha-pink {
+  background: var(--ha-pink);
+  color: var(--ha-black);
+}
+
+.ha-yellow {
+  background: var(--ha-yellow);
+  color: var(--ha-black);
+}
+
+.ha-purple {
+  background: var(--ha-purple);
+  color: #fff;
+}
+
+.ha-black {
+  background: var(--ha-black);
+  color: #fff;
+}
+
+.ha-heading,
+.ha-copy {
+  min-width: 0;
+}
+
+.ha-number {
+  margin-bottom: 26px !important;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  line-height: 1.6;
+}
+
+.ha-heading h2 {
+  font-size: clamp(40px, 4.7vw, 80px);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  overflow-wrap: anywhere;
+}
+
+.ha-copy {
+  max-width: 780px;
+}
+
+.ha-copy > p,
+.ha-ending-copy > p {
+  margin-bottom: 24px;
+  font-size: clamp(17px, 1.35vw, 20px);
+  line-height: 1.75;
+}
+
+.ha-copy > p:last-child,
+.ha-ending-copy > p:last-child {
+  margin-bottom: 0;
+}
+
+.ha-copy > .ha-lead {
+  margin-bottom: 28px;
+  font-size: clamp(23px, 2.1vw, 31px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+/* QUOTES */
+
+.ha-copy blockquote {
+  margin-bottom: 34px;
+  padding: 6px 0 6px 24px;
+  border-left: 6px solid currentColor;
+  font-size: clamp(24px, 2.3vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+.ha-copy blockquote cite {
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.7;
+}
+
+/* BOXES */
+
+.ha-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.ha-box {
+  min-width: 0;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.ha-box h3,
+.ha-stack-item h3 {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.ha-box p,
+.ha-stack-item p {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.ha-callout {
+  margin: 32px 0;
+  padding: 28px;
+  border: 3px solid currentColor;
+  font-size: clamp(23px, 2.4vw, 35px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+/* NUMBERED BOXES */
+
+.ha-stack {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.ha-stack-item {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 20px;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.ha-stack-item > span {
+  color: var(--ha-yellow);
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.ha-stack-item > div {
+  min-width: 0;
+}
+
+/* ENDING */
+
+.hinduism-addiction-ending {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(70px, 9vw, 140px) 6vw;
+  background: var(--ha-black);
+  color: #fff;
+}
+
+.ha-ending-heading,
+.ha-ending-copy {
+  min-width: 0;
+}
+
+.ha-ending-small {
+  margin-bottom: 28px !important;
+  color: var(--ha-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+}
+
+.ha-ending-heading h2 {
+  font-size: clamp(48px, 6vw, 100px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.96;
+  overflow-wrap: anywhere;
+}
+
+.ha-ending-heading h2 span {
+  color: var(--ha-pink);
+}
+
+.ha-ending-copy {
+  max-width: 780px;
+}
+
+.ha-back-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 18px 22px;
+  border: 2px solid var(--ha-yellow);
+  background: var(--ha-yellow);
+  color: var(--ha-black);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.035em;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.ha-back-button:hover {
+  background: var(--ha-black);
+  color: var(--ha-yellow);
+}
+
+.ha-back-button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .hinduism-addiction-hero {
+    align-items: flex-start;
+    min-height: max(900px, 125svh);
+    padding: 70px 6vw 80px;
+  }
+
+  .hinduism-addiction-background-image {
+    object-position: right bottom;
+  }
+
+  .hinduism-addiction-hero::after {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 8, 8, 0.25) 0%,
+      rgba(8, 8, 8, 0.08) 45%,
+      transparent 70%
+    );
+  }
+
+  .hinduism-addiction-eyebrow {
+    max-width: 340px;
+    margin-bottom: 26px !important;
+    font-size: 10px;
+    letter-spacing: 0.065em;
+  }
+
+  .hinduism-addiction-hero h1 {
+    max-width: 600px;
+    font-size: clamp(44px, 9.8vw, 76px);
+  }
+
+  .hinduism-addiction-intro {
+    max-width: 360px;
+    margin-top: 26px !important;
+    font-size: 16px;
+  }
+
+  .ha-section,
+  .hinduism-addiction-ending {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+    padding: 60px 6vw;
+  }
+
+  .ha-heading h2 {
+    font-size: clamp(40px, 9vw, 65px);
+  }
+
+  .ha-copy,
+  .ha-ending-copy {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .ha-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ha-box,
+  .ha-callout {
+    padding: 22px;
+  }
+
+  .ha-stack-item {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .ha-stack-item > span {
+    font-size: 27px;
+  }
+
+  .ha-back-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   IFS & ADDICTION
+   ========================================== */
+
+.ifs-addiction-page {
+  --ia-black: #080808;
+  --ia-pink: #ff1493;
+  --ia-yellow: #eaff00;
+  --ia-purple: #8a00ff;
+
+  background: var(--ia-black);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ifs-addiction-page,
+.ifs-addiction-page * {
+  box-sizing: border-box;
+}
+
+.ifs-addiction-page h1,
+.ifs-addiction-page h2,
+.ifs-addiction-page h3,
+.ifs-addiction-page p,
+.ifs-addiction-page blockquote {
+  margin: 0;
+}
+
+/* HERO */
+
+.ifs-addiction-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: 92svh;
+  padding: 100px 6vw;
+  background: var(--ia-black);
+}
+
+.ifs-addiction-background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  display: block;
+  pointer-events: none;
+}
+
+.ifs-addiction-background-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.ifs-addiction-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 8, 8, 0.45) 0%,
+    rgba(8, 8, 8, 0.12) 55%,
+    transparent 80%
+  );
+  pointer-events: none;
+}
+
+.ifs-addiction-hero-content {
+  width: 100%;
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+.ifs-addiction-eyebrow {
+  max-width: 650px;
+  margin-bottom: 30px !important;
+  color: var(--ia-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+}
+
+.ifs-addiction-hero h1 {
+  max-width: 850px;
+  font-size: clamp(56px, 7.7vw, 132px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.94;
+}
+
+.ifs-addiction-hero h1 span {
+  display: block;
+}
+
+.ifs-addiction-hero h1 span:last-child {
+  color: var(--ia-yellow);
+}
+
+.ifs-addiction-intro {
+  max-width: 650px;
+  margin-top: 34px !important;
+  font-size: clamp(16px, 1.8vw, 25px);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+/* SECTIONS */
+
+.ia-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(64px, 8vw, 120px) 6vw;
+}
+
+.ia-pink {
+  background: var(--ia-pink);
+  color: var(--ia-black);
+}
+
+.ia-yellow {
+  background: var(--ia-yellow);
+  color: var(--ia-black);
+}
+
+.ia-purple {
+  background: var(--ia-purple);
+  color: #fff;
+}
+
+.ia-black {
+  background: var(--ia-black);
+  color: #fff;
+}
+
+.ia-heading,
+.ia-copy {
+  min-width: 0;
+}
+
+.ia-number {
+  margin-bottom: 26px !important;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  line-height: 1.6;
+}
+
+.ia-heading h2 {
+  font-size: clamp(40px, 4.7vw, 80px);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  overflow-wrap: anywhere;
+}
+
+.ia-copy {
+  max-width: 780px;
+}
+
+.ia-copy > p,
+.ia-ending-copy > p {
+  margin-bottom: 24px;
+  font-size: clamp(17px, 1.35vw, 20px);
+  line-height: 1.75;
+}
+
+.ia-copy > p:last-child,
+.ia-ending-copy > p:last-child {
+  margin-bottom: 0;
+}
+
+.ia-copy > .ia-lead {
+  margin-bottom: 28px;
+  font-size: clamp(23px, 2.1vw, 31px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+/* QUOTE */
+
+.ia-copy blockquote {
+  margin-bottom: 34px;
+  padding: 6px 0 6px 24px;
+  border-left: 6px solid currentColor;
+  font-size: clamp(24px, 2.3vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+.ia-copy blockquote cite {
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.7;
+}
+
+/* BOXES */
+
+.ia-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.ia-box {
+  min-width: 0;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.ia-box h3,
+.ia-stack-item h3 {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.ia-box p,
+.ia-stack-item p {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.ia-callout {
+  margin: 32px 0;
+  padding: 28px;
+  border: 3px solid currentColor;
+  font-size: clamp(23px, 2.4vw, 35px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+/* NUMBERED BOXES */
+
+.ia-stack {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.ia-stack-item {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 20px;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.ia-stack-item > span {
+  color: var(--ia-yellow);
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.ia-stack-item > div {
+  min-width: 0;
+}
+
+/* ENDING */
+
+.ifs-addiction-ending {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(70px, 9vw, 140px) 6vw;
+  background: var(--ia-black);
+  color: #fff;
+}
+
+.ia-ending-heading,
+.ia-ending-copy {
+  min-width: 0;
+}
+
+.ia-ending-small {
+  margin-bottom: 28px !important;
+  color: var(--ia-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+}
+
+.ia-ending-heading h2 {
+  font-size: clamp(48px, 6vw, 100px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.96;
+  overflow-wrap: anywhere;
+}
+
+.ia-ending-heading h2 span {
+  color: var(--ia-pink);
+}
+
+.ia-ending-copy {
+  max-width: 780px;
+}
+
+.ia-back-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 18px 22px;
+  border: 2px solid var(--ia-yellow);
+  background: var(--ia-yellow);
+  color: var(--ia-black);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.035em;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.ia-back-button:hover {
+  background: var(--ia-black);
+  color: var(--ia-yellow);
+}
+
+.ia-back-button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .ifs-addiction-hero {
+    align-items: flex-start;
+    min-height: max(900px, 125svh);
+    padding: 70px 6vw 80px;
+  }
+
+  .ifs-addiction-background-image {
+    object-position: right bottom;
+  }
+
+  .ifs-addiction-hero::after {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 8, 8, 0.25) 0%,
+      rgba(8, 8, 8, 0.08) 45%,
+      transparent 70%
+    );
+  }
+
+  .ifs-addiction-eyebrow {
+    max-width: 340px;
+    margin-bottom: 26px !important;
+    font-size: 10px;
+    letter-spacing: 0.065em;
+  }
+
+  .ifs-addiction-hero h1 {
+    max-width: 600px;
+    font-size: clamp(44px, 9.8vw, 76px);
+  }
+
+  .ifs-addiction-intro {
+    max-width: 360px;
+    margin-top: 26px !important;
+    font-size: 16px;
+  }
+
+  .ia-section,
+  .ifs-addiction-ending {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+    padding: 60px 6vw;
+  }
+
+  .ia-heading h2 {
+    font-size: clamp(40px, 9vw, 65px);
+  }
+
+  .ia-copy,
+  .ia-ending-copy {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .ia-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ia-box,
+  .ia-callout {
+    padding: 22px;
+  }
+
+  .ia-stack-item {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .ia-stack-item > span {
+    font-size: 27px;
+  }
+
+  .ia-back-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   STOICISM & ADDICTION
+   ========================================== */
+
+.stoicism-addiction-page {
+  --sa-black: #080808;
+  --sa-pink: #ff1493;
+  --sa-yellow: #eaff00;
+  --sa-purple: #8a00ff;
+
+  background: var(--sa-black);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stoicism-addiction-page,
+.stoicism-addiction-page * {
+  box-sizing: border-box;
+}
+
+.stoicism-addiction-page h1,
+.stoicism-addiction-page h2,
+.stoicism-addiction-page h3,
+.stoicism-addiction-page p,
+.stoicism-addiction-page blockquote {
+  margin: 0;
+}
+
+/* HERO */
+
+.stoicism-addiction-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: 92svh;
+  padding: 100px 6vw;
+  background: var(--sa-black);
+}
+
+.stoicism-addiction-background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  display: block;
+  pointer-events: none;
+}
+
+.stoicism-addiction-background-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.stoicism-addiction-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 8, 8, 0.45) 0%,
+    rgba(8, 8, 8, 0.12) 55%,
+    transparent 80%
+  );
+  pointer-events: none;
+}
+
+.stoicism-addiction-hero-content {
+  width: 100%;
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+.stoicism-addiction-eyebrow {
+  max-width: 650px;
+  margin-bottom: 30px !important;
+  color: var(--sa-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+}
+
+.stoicism-addiction-hero h1 {
+  max-width: 850px;
+  font-size: clamp(56px, 7.7vw, 132px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.94;
+}
+
+.stoicism-addiction-hero h1 span {
+  display: block;
+}
+
+.stoicism-addiction-hero h1 span:last-child {
+  color: var(--sa-yellow);
+}
+
+.stoicism-addiction-intro {
+  max-width: 650px;
+  margin-top: 34px !important;
+  font-size: clamp(16px, 1.8vw, 25px);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+/* SECTIONS */
+
+.sa-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(64px, 8vw, 120px) 6vw;
+}
+
+.sa-pink {
+  background: var(--sa-pink);
+  color: var(--sa-black);
+}
+
+.sa-yellow {
+  background: var(--sa-yellow);
+  color: var(--sa-black);
+}
+
+.sa-purple {
+  background: var(--sa-purple);
+  color: #fff;
+}
+
+.sa-black {
+  background: var(--sa-black);
+  color: #fff;
+}
+
+.sa-heading,
+.sa-copy {
+  min-width: 0;
+}
+
+.sa-number {
+  margin-bottom: 26px !important;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  line-height: 1.6;
+}
+
+.sa-heading h2 {
+  font-size: clamp(40px, 4.7vw, 80px);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  overflow-wrap: anywhere;
+}
+
+.sa-copy {
+  max-width: 780px;
+}
+
+.sa-copy > p,
+.sa-ending-copy > p {
+  margin-bottom: 24px;
+  font-size: clamp(17px, 1.35vw, 20px);
+  line-height: 1.75;
+}
+
+.sa-copy > p:last-child,
+.sa-ending-copy > p:last-child {
+  margin-bottom: 0;
+}
+
+.sa-copy > .sa-lead {
+  margin-bottom: 28px;
+  font-size: clamp(23px, 2.1vw, 31px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+/* QUOTE */
+
+.sa-copy blockquote {
+  margin-bottom: 34px;
+  padding: 6px 0 6px 24px;
+  border-left: 6px solid currentColor;
+  font-size: clamp(24px, 2.3vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+.sa-copy blockquote cite {
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.7;
+}
+
+/* BOXES */
+
+.sa-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.sa-box {
+  min-width: 0;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.sa-box h3,
+.sa-stack-item h3 {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.sa-box p,
+.sa-stack-item p {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.sa-callout {
+  margin: 32px 0;
+  padding: 28px;
+  border: 3px solid currentColor;
+  font-size: clamp(23px, 2.4vw, 35px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+/* NUMBERED BOXES */
+
+.sa-stack {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.sa-stack-item {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 20px;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.sa-stack-item > span {
+  color: var(--sa-yellow);
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.sa-stack-item > div {
+  min-width: 0;
+}
+
+/* ENDING */
+
+.stoicism-addiction-ending {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(70px, 9vw, 140px) 6vw;
+  background: var(--sa-black);
+  color: #fff;
+}
+
+.sa-ending-heading,
+.sa-ending-copy {
+  min-width: 0;
+}
+
+.sa-ending-small {
+  margin-bottom: 28px !important;
+  color: var(--sa-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+}
+
+.sa-ending-heading h2 {
+  font-size: clamp(48px, 6vw, 100px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.96;
+  overflow-wrap: anywhere;
+}
+
+.sa-ending-heading h2 span {
+  color: var(--sa-pink);
+}
+
+.sa-ending-copy {
+  max-width: 780px;
+}
+
+.sa-back-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 18px 22px;
+  border: 2px solid var(--sa-yellow);
+  background: var(--sa-yellow);
+  color: var(--sa-black);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.035em;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.sa-back-button:hover {
+  background: var(--sa-black);
+  color: var(--sa-yellow);
+}
+
+.sa-back-button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .stoicism-addiction-hero {
+    align-items: flex-start;
+    min-height: max(900px, 125svh);
+    padding: 70px 6vw 80px;
+  }
+
+  .stoicism-addiction-background-image {
+    object-position: right bottom;
+  }
+
+  .stoicism-addiction-hero::after {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 8, 8, 0.25) 0%,
+      rgba(8, 8, 8, 0.08) 45%,
+      transparent 70%
+    );
+  }
+
+  .stoicism-addiction-eyebrow {
+    max-width: 340px;
+    margin-bottom: 26px !important;
+    font-size: 10px;
+    letter-spacing: 0.065em;
+  }
+
+  .stoicism-addiction-hero h1 {
+    max-width: 600px;
+    font-size: clamp(44px, 9.8vw, 76px);
+  }
+
+  .stoicism-addiction-intro {
+    max-width: 360px;
+    margin-top: 26px !important;
+    font-size: 16px;
+  }
+
+  .sa-section,
+  .stoicism-addiction-ending {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+    padding: 60px 6vw;
+  }
+
+  .sa-heading h2 {
+    font-size: clamp(40px, 9vw, 65px);
+  }
+
+  .sa-copy,
+  .sa-ending-copy {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .sa-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sa-box,
+  .sa-callout {
+    padding: 22px;
+  }
+
+  .sa-stack-item {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .sa-stack-item > span {
+    font-size: 27px;
+  }
+
+  .sa-back-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   THE BIG PICTURE & ADDICTION
+   ========================================== */
+
+.big-picture-addiction-page {
+  --bpa-black: #080808;
+  --bpa-pink: #ff1493;
+  --bpa-yellow: #eaff00;
+  --bpa-purple: #8a00ff;
+
+  background: var(--bpa-black);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.big-picture-addiction-page,
+.big-picture-addiction-page * {
+  box-sizing: border-box;
+}
+
+.big-picture-addiction-page h1,
+.big-picture-addiction-page h2,
+.big-picture-addiction-page h3,
+.big-picture-addiction-page p,
+.big-picture-addiction-page blockquote {
+  margin: 0;
+}
+
+/* HERO */
+
+.big-picture-addiction-hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: 92svh;
+  padding: 100px 6vw;
+  background: var(--bpa-black);
+}
+
+.big-picture-addiction-background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  display: block;
+  pointer-events: none;
+}
+
+.big-picture-addiction-background-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+.big-picture-addiction-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 8, 8, 0.45) 0%,
+    rgba(8, 8, 8, 0.12) 55%,
+    transparent 80%
+  );
+  pointer-events: none;
+}
+
+.big-picture-addiction-hero-content {
+  width: 100%;
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+.big-picture-addiction-eyebrow {
+  max-width: 650px;
+  margin-bottom: 30px !important;
+  color: var(--bpa-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+}
+
+.big-picture-addiction-hero h1 {
+  max-width: 850px;
+  font-size: clamp(56px, 7.7vw, 132px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.94;
+}
+
+.big-picture-addiction-hero h1 span {
+  display: block;
+}
+
+.big-picture-addiction-hero h1 span:last-child {
+  color: var(--bpa-yellow);
+}
+
+.big-picture-addiction-intro {
+  max-width: 650px;
+  margin-top: 34px !important;
+  font-size: clamp(16px, 1.8vw, 25px);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+/* SECTIONS */
+
+.bpa-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(64px, 8vw, 120px) 6vw;
+}
+
+.bpa-pink {
+  background: var(--bpa-pink);
+  color: var(--bpa-black);
+}
+
+.bpa-yellow {
+  background: var(--bpa-yellow);
+  color: var(--bpa-black);
+}
+
+.bpa-purple {
+  background: var(--bpa-purple);
+  color: #fff;
+}
+
+.bpa-black {
+  background: var(--bpa-black);
+  color: #fff;
+}
+
+.bpa-heading,
+.bpa-copy {
+  min-width: 0;
+}
+
+.bpa-number {
+  margin-bottom: 26px !important;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  line-height: 1.6;
+}
+
+.bpa-heading h2 {
+  font-size: clamp(40px, 4.7vw, 80px);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  overflow-wrap: anywhere;
+}
+
+.bpa-copy {
+  max-width: 780px;
+}
+
+.bpa-copy > p,
+.bpa-ending-copy > p {
+  margin-bottom: 24px;
+  font-size: clamp(17px, 1.35vw, 20px);
+  line-height: 1.75;
+}
+
+.bpa-copy > p:last-child,
+.bpa-ending-copy > p:last-child {
+  margin-bottom: 0;
+}
+
+.bpa-copy > .bpa-lead {
+  margin-bottom: 28px;
+  font-size: clamp(23px, 2.1vw, 31px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+/* QUOTE */
+
+.bpa-copy blockquote {
+  margin-bottom: 34px;
+  padding: 6px 0 6px 24px;
+  border-left: 6px solid currentColor;
+  font-size: clamp(24px, 2.3vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+.bpa-copy blockquote cite {
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.7;
+}
+
+/* BOXES */
+
+.bpa-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.bpa-box {
+  min-width: 0;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.bpa-box h3,
+.bpa-stack-item h3 {
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+
+.bpa-box p,
+.bpa-stack-item p {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.bpa-callout {
+  margin: 32px 0;
+  padding: 28px;
+  border: 3px solid currentColor;
+  font-size: clamp(23px, 2.4vw, 35px);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+/* NUMBERED BOXES */
+
+.bpa-stack {
+  display: grid;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.bpa-stack-item {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 20px;
+  padding: 24px;
+  border: 2px solid currentColor;
+}
+
+.bpa-stack-item > span {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.bpa-stack-item > div {
+  min-width: 0;
+}
+
+/* ENDING */
+
+.big-picture-addiction-ending {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(36px, 6vw, 100px);
+  padding: clamp(70px, 9vw, 140px) 6vw;
+  background: var(--bpa-black);
+  color: #fff;
+}
+
+.bpa-ending-heading,
+.bpa-ending-copy {
+  min-width: 0;
+}
+
+.bpa-ending-small {
+  margin-bottom: 28px !important;
+  color: var(--bpa-yellow);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+}
+
+.bpa-ending-heading h2 {
+  font-size: clamp(48px, 6vw, 100px);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 0.96;
+  overflow-wrap: anywhere;
+}
+
+.bpa-ending-heading h2 span {
+  color: var(--bpa-pink);
+}
+
+.bpa-ending-copy {
+  max-width: 780px;
+}
+
+.bpa-back-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 18px 22px;
+  border: 2px solid var(--bpa-yellow);
+  background: var(--bpa-yellow);
+  color: var(--bpa-black);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.035em;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.bpa-back-button:hover {
+  background: var(--bpa-black);
+  color: var(--bpa-yellow);
+}
+
+.bpa-back-button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .big-picture-addiction-hero {
+    align-items: flex-start;
+    min-height: max(900px, 125svh);
+    padding: 70px 6vw 80px;
+  }
+
+  .big-picture-addiction-background-image {
+    object-position: right bottom;
+  }
+
+  .big-picture-addiction-hero::after {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 8, 8, 0.25) 0%,
+      rgba(8, 8, 8, 0.08) 45%,
+      transparent 70%
+    );
+  }
+
+  .big-picture-addiction-eyebrow {
+    max-width: 340px;
+    margin-bottom: 26px !important;
+    font-size: 10px;
+    letter-spacing: 0.065em;
+  }
+
+  .big-picture-addiction-hero h1 {
+    max-width: 600px;
+    font-size: clamp(44px, 9.8vw, 76px);
+  }
+
+  .big-picture-addiction-intro {
+    max-width: 360px;
+    margin-top: 26px !important;
+    font-size: 16px;
+  }
+
+  .bpa-section,
+  .big-picture-addiction-ending {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 34px;
+    padding: 60px 6vw;
+  }
+
+  .bpa-heading h2 {
+    font-size: clamp(40px, 9vw, 65px);
+  }
+
+  .bpa-copy,
+  .bpa-ending-copy {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .bpa-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .bpa-box,
+  .bpa-callout {
+    padding: 22px;
+  }
+
+  .bpa-stack-item {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 14px;
+    padding: 20px;
+  }
+
+  .bpa-stack-item > span {
+    font-size: 27px;
+  }
+
+  .bpa-back-button {
+    width: 100%;
+    text-align: center;
+  }
+}

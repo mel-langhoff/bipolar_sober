@@ -1,2 +1,484 @@
-<h1>AddictionPerspectives#cbt</h1>
-<p>Find me in app/views/addiction_perspectives/cbt.html.erb</p>
+<% content_for :title, "CBT & Addiction | Bipolar Sober" %>
+
+<main class="cbt-addiction-page">
+
+  <!-- HERO -->
+  <section class="cbt-addiction-hero">
+
+    <picture class="cbt-addiction-background">
+      <source
+        media="(max-width: 767px)"
+        srcset="<%= asset_path('addiction_cbt_mobile.png') %>">
+
+      <%= image_tag "addiction_cbt_desktop.png",
+          alt: "",
+          class: "cbt-addiction-background-image",
+          fetchpriority: "high" %>
+    </picture>
+
+    <div class="cbt-addiction-hero-content">
+
+      <p class="cbt-addiction-eyebrow">
+        BIPOLAR SOBER / ADDICTION / PERSPECTIVES / CBT
+      </p>
+
+      <h1>
+        <span>ADDICTION</span>
+        <span>THROUGH A</span>
+        <span>CBT LENS.</span>
+      </h1>
+
+      <p class="cbt-addiction-intro">
+        EXAMINE THE THOUGHT.<br>
+        LOOK AT THE WHOLE FUCKING PICTURE.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- 01 / OPENING -->
+  <section class="ca-section ca-pink">
+
+    <div class="ca-heading">
+      <p class="ca-number">01 / ANOTHER WAY TO LOOK</p>
+
+      <h2>
+        WHAT'S<br>
+        THE STORY<br>
+        HERE?
+      </h2>
+    </div>
+
+    <div class="ca-copy">
+
+      <blockquote>
+        “Just because I think something, doesn’t necessarily
+        mean it’s true.”
+
+        <cite>
+          — Beck Institute, CBT worksheet
+        </cite>
+      </blockquote>
+
+      <p class="ca-lead">
+        Placeholder introduction to the CBT perspective
+        on addiction and recovery.
+      </p>
+
+      <p>
+        This opening will introduce the relationships among
+        thoughts, feelings, behavior, and the circumstances
+        in which they occur.
+      </p>
+
+      <p>
+        We will replace this paragraph with your edited introduction,
+        including what this perspective helps you understand
+        about your history and life in recovery.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- 02 / THE PATTERN -->
+  <section class="ca-section ca-yellow">
+
+    <div class="ca-heading">
+      <p class="ca-number">02 / THOUGHTS, FEELINGS & BEHAVIOR</p>
+
+      <h2>
+        LOOK AT<br>
+        HOW IT<br>
+        CONNECTS.
+      </h2>
+    </div>
+
+    <div class="ca-copy">
+
+      <p class="ca-lead">
+        Placeholder copy about how interpretations,
+        emotions, and actions influence one another.
+      </p>
+
+      <p>
+        This section will introduce a specific situation
+        and examine the different parts of the experience.
+      </p>
+
+      <div class="ca-grid">
+
+        <div class="ca-box">
+          <h3>THE SITUATION</h3>
+          <p>
+            Placeholder for describing what happened
+            and the circumstances around it.
+          </p>
+        </div>
+
+        <div class="ca-box">
+          <h3>THE THOUGHT</h3>
+          <p>
+            Placeholder for identifying the interpretation
+            that came to mind.
+          </p>
+        </div>
+
+        <div class="ca-box">
+          <h3>THE FEELING</h3>
+          <p>
+            Placeholder for describing emotions
+            and physical responses.
+          </p>
+        </div>
+
+        <div class="ca-box">
+          <h3>THE BEHAVIOR</h3>
+          <p>
+            Placeholder for examining what you did
+            and what followed.
+          </p>
+        </div>
+
+      </div>
+
+      <p>
+        Add an example here that connects these ideas
+        to ordinary life in recovery.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- 03 / DISTORTIONS -->
+  <section class="ca-section ca-purple">
+
+    <div class="ca-heading">
+      <p class="ca-number">03 / FAMILIAR THINKING PATTERNS</p>
+
+      <h2>
+        CATCH THE<br>
+        SWEEPING<br>
+        VERDICT.
+      </h2>
+    </div>
+
+    <div class="ca-copy">
+
+      <p class="ca-lead">
+        Placeholder copy about recognizing thinking patterns
+        that deserve a closer look.
+      </p>
+
+      <p>
+        This section will explore how a specific event
+        can become a much larger conclusion about yourself,
+        other people, or the future.
+      </p>
+
+      <div class="ca-thoughts">
+
+        <div>
+          <h3>ALL-OR-NOTHING THINKING</h3>
+          <p>
+            Placeholder for an example involving perfection,
+            progress, or a perceived failure.
+          </p>
+        </div>
+
+        <div>
+          <h3>OVERGENERALIZATION</h3>
+          <p>
+            Placeholder for an example of turning one event
+            into an “always” or “never.”
+          </p>
+        </div>
+
+        <div>
+          <h3>EMOTIONAL REASONING</h3>
+          <p>
+            Placeholder for examining a conclusion
+            based entirely on how something feels.
+          </p>
+        </div>
+
+        <div>
+          <h3>ASSUMPTIONS & PREDICTIONS</h3>
+          <p>
+            Placeholder for examining what you assume
+            others think or what you expect to happen.
+          </p>
+        </div>
+
+      </div>
+
+      <p>
+        Add your reflection here about which patterns
+        feel familiar and how you recognize them.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- 04 / EVIDENCE -->
+  <section class="ca-section ca-black">
+
+    <div class="ca-heading">
+      <p class="ca-number">04 / EXAMINING THE EVIDENCE</p>
+
+      <h2>
+        DOES IT<br>
+        ACTUALLY<br>
+        HOLD UP?
+      </h2>
+    </div>
+
+    <div class="ca-copy">
+
+      <p class="ca-lead">
+        Placeholder copy about approaching a thought
+        with curiosity and accuracy.
+      </p>
+
+      <p>
+        This section will introduce questions that help
+        you examine an interpretation more fully.
+      </p>
+
+      <div class="ca-stack">
+
+        <div class="ca-stack-item">
+          <span>01</span>
+          <div>
+            <h3>NAME THE THOUGHT</h3>
+            <p>
+              Placeholder for identifying the specific
+              statement you want to examine.
+            </p>
+          </div>
+        </div>
+
+        <div class="ca-stack-item">
+          <span>02</span>
+          <div>
+            <h3>LOOK AT THE EVIDENCE</h3>
+            <p>
+              Placeholder for considering what supports
+              the thought and what complicates it.
+            </p>
+          </div>
+        </div>
+
+        <div class="ca-stack-item">
+          <span>03</span>
+          <div>
+            <h3>CONSIDER ANOTHER ACCOUNT</h3>
+            <p>
+              Placeholder for developing an interpretation
+              that includes more of the available information.
+            </p>
+          </div>
+        </div>
+
+        <div class="ca-stack-item">
+          <span>04</span>
+          <div>
+            <h3>IDENTIFY A USEFUL ACTION</h3>
+            <p>
+              Placeholder for deciding what you can do
+              with that fuller understanding.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <p>
+        Add a worked example here, using a situation
+        that feels relevant to your experience.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- 05 / EXPECTATIONS -->
+  <section class="ca-section ca-pink">
+
+    <div class="ca-heading">
+      <p class="ca-number">05 / EXPECTATIONS & EXPERIENCE</p>
+
+      <h2>
+        INCLUDE<br>
+        THE WHOLE<br>
+        EXPERIENCE.
+      </h2>
+    </div>
+
+    <div class="ca-copy">
+
+      <p class="ca-lead">
+        Placeholder copy about comparing expectations
+        with what actually happened.
+      </p>
+
+      <p>
+        This section will examine beliefs about what drinking
+        provided and how those beliefs compare with the
+        larger experience.
+      </p>
+
+      <div class="ca-grid">
+
+        <div class="ca-box">
+          <h3>WHAT YOU EXPECTED</h3>
+          <p>
+            Placeholder for the anticipated experience,
+            benefit, or change.
+          </p>
+        </div>
+
+        <div class="ca-box">
+          <h3>WHAT YOU EXPERIENCED</h3>
+          <p>
+            Placeholder for considering the immediate
+            effects and what followed.
+          </p>
+        </div>
+
+      </div>
+
+      <p>
+        Add a paragraph here about what you understand
+        differently with some distance and stability.
+      </p>
+
+      <div class="ca-callout">
+        ROOM FOR A KEY IDEA<br>
+        IN YOUR OWN WORDS.
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- 06 / PRACTICE -->
+  <section class="ca-section ca-yellow">
+
+    <div class="ca-heading">
+      <p class="ca-number">06 / LEARNING THROUGH ACTION</p>
+
+      <h2>
+        TRY IT.<br>
+        NOTICE.<br>
+        LEARN.
+      </h2>
+    </div>
+
+    <div class="ca-copy">
+
+      <p class="ca-lead">
+        Placeholder copy about testing assumptions
+        through manageable actions.
+      </p>
+
+      <p>
+        This section will explore behavioral experiments,
+        approaching avoided tasks, and building routines
+        that fit your circumstances.
+      </p>
+
+      <div class="ca-grid">
+
+        <div class="ca-box">
+          <h3>THE PREDICTION</h3>
+          <p>
+            Placeholder for what you expect
+            will happen.
+          </p>
+        </div>
+
+        <div class="ca-box">
+          <h3>THE EXPERIMENT</h3>
+          <p>
+            Placeholder for a small, realistic action
+            that lets you gather information.
+          </p>
+        </div>
+
+        <div class="ca-box">
+          <h3>THE OBSERVATION</h3>
+          <p>
+            Placeholder for recording what happened
+            without forcing a particular conclusion.
+          </p>
+        </div>
+
+        <div class="ca-box">
+          <h3>THE NEXT STEP</h3>
+          <p>
+            Placeholder for adjusting your approach
+            based on what you learned.
+          </p>
+        </div>
+
+      </div>
+
+      <p>
+        Add your reflection here about making these practices
+        useful during ordinary, stable days.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ENDING -->
+  <section class="cbt-addiction-ending">
+
+    <div class="ca-ending-heading">
+
+      <p class="ca-ending-small">
+        KEEP ASKING BETTER QUESTIONS.
+      </p>
+
+      <h2>
+        LOOK<br>
+        A LITTLE<br>
+        <span>CLOSER.</span>
+      </h2>
+
+    </div>
+
+    <div class="ca-ending-copy">
+
+      <p>
+        Placeholder closing paragraph connecting this
+        perspective to your life in recovery.
+      </p>
+
+      <p>
+        Add your final reflection here about understanding
+        patterns, examining assumptions, and making
+        informed decisions.
+      </p>
+
+      <%= link_to "← BACK TO ADDICTION PERSPECTIVES",
+          addiction_perspectives_path,
+          class: "ca-back-button" %>
+
+    </div>
+
+  </section>
+
+</main>
