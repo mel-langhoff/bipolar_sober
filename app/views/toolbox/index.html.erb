@@ -4,7 +4,6 @@
 
   <!-- HERO -->
   <section class="toolbox-hero">
-
     <div class="toolbox-hero-content">
 
       <p class="toolbox-eyebrow">
@@ -23,7 +22,6 @@
       </p>
 
     </div>
-
   </section>
 
 
@@ -49,7 +47,6 @@
 
     <div class="toolbox-grid">
 
-
       <!-- 01 / SO YOU WANT TO DRINK? -->
       <%= link_to so_you_want_to_drink_path,
           class: "toolbox-card toolbox-card-black" do %>
@@ -74,22 +71,25 @@
       <% end %>
 
 
-      <!-- 02 / ESSAYS -->
-      <%= link_to toolbox_essays_path,
+      <!-- 02 / PLAY THE TAPE FORWARD -->
+      <%= link_to play_the_tape_forward_path,
           class: "toolbox-card toolbox-card-pink" do %>
 
         <p class="toolbox-card-number">02</p>
 
         <h3>
-          ESSAYS
+          PLAY THE<br>
+          TAPE<br>
+          FORWARD
         </h3>
 
         <p class="toolbox-card-description">
-          Longer thoughts on recovery, mental health, life,
-          and the shit I've learned along the way.
+          Your brain keeps replaying the good part.
+          Keep watching. What happens tonight, tomorrow morning,
+          and after the relief wears off?
         </p>
 
-        <span>READ →</span>
+        <span>WATCH THE WHOLE THING →</span>
 
       <% end %>
 
@@ -116,182 +116,79 @@
       <% end %>
 
 
-      <!-- 04 / SCIATICA -->
-      <%= link_to toolbox_sciatica_path,
+      <!-- 04 / ARE YOU THE FUCKING ORACLE? -->
+      <%= link_to are_you_the_fucking_oracle_path,
           class: "toolbox-card toolbox-card-purple" do %>
 
         <p class="toolbox-card-number">04</p>
 
         <h3>
-          ON<br>
-          SCIATICA
+          ARE YOU THE<br>
+          FUCKING<br>
+          ORACLE?
         </h3>
 
         <p class="toolbox-card-description">
-          Pain, limitations, bad days, frustration, pacing,
-          recovery, and having a fucking life when your body
-          isn't cooperating.
+          Predictions, assumptions, and mind-reading.
+          What do you actually know, and what is your brain
+          filling in? Check the fucking evidence.
         </p>
 
-        <span>READ →</span>
+        <span>CHECK THE FACTS →</span>
 
       <% end %>
 
 
-      <!-- 05 / OTHERS -->
-      <%= link_to toolbox_others_path,
+      <!-- 05 / BIPOLAR RAGE -->
+      <%= link_to dont_poke_the_bipolar_bear_path,
           class: "toolbox-card toolbox-card-black" do %>
 
         <p class="toolbox-card-number">05</p>
 
         <h3>
-          ON<br>
-          OTHERS
+          DON'T POKE<br>
+          THE<br>
+          BIPOLAR BEAR.
         </h3>
 
         <p class="toolbox-card-description">
-          Boundaries, expectations, judgment, relationships,
-          assholes, and figuring out what actually belongs to you.
+          Irritability, overload, and anger that keeps building.
+          Recognize your warning signs, make some space,
+          and find words that don't leave damage behind.
         </p>
 
-        <span>DEAL WITH PEOPLE →</span>
+        <span>COOL THE FUCK DOWN →</span>
 
       <% end %>
 
 
-      <!-- 06 / JOBS -->
-      <%= link_to toolbox_jobs_path,
-          class: "toolbox-card toolbox-card-split" do %>
+      <!-- 06 / PRESS PAUSE -->
+      <%= link_to press_pause_path,
+          class: "toolbox-card toolbox-card-pink" do %>
 
         <p class="toolbox-card-number">06</p>
 
         <h3>
-          ON<br>
-          JOBS
+          PRESS<br>
+          PAUSE
         </h3>
 
         <p class="toolbox-card-description">
-          Work, unemployment, rejection, identity, starting over,
-          and separating what you do for money from who the hell you are.
+          The text. The purchase. The drink. The big decision.
+          Give yourself some space between wanting to do
+          something and actually fucking doing it.
         </p>
 
-        <span>READ →</span>
+        <span>GIVE IT A MINUTE →</span>
 
       <% end %>
 
 
-      <!-- 07 / COGNITIVE DISTORTIONS -->
-      <%= link_to toolbox_cognitive_distortions_path,
-          class: "toolbox-card toolbox-card-pink" do %>
-
-        <p class="toolbox-card-number">07</p>
-
-        <h3>
-          COGNITIVE<br>
-          DISTORTIONS
-        </h3>
-
-        <p class="toolbox-card-description">
-          The convincing bullshit your brain tells you.
-          Learn to recognize distorted thinking, put it on trial,
-          and see whether it actually holds up.
-        </p>
-
-        <span>CALL OUT THE BULLSHIT →</span>
-
-      <% end %>
-
-
-      <!-- 08 / IFS -->
-      <%= link_to toolbox_ifs_path,
-          class: "toolbox-card toolbox-card-yellow" do %>
-
-        <p class="toolbox-card-number">08</p>
-
-        <h3>
-          IFS
-        </h3>
-
-        <p class="toolbox-card-description">
-          Parts, protectors, Self, and a different way of
-          understanding all the conflicting voices inside your head.
-        </p>
-
-        <span>MEET YOUR PARTS →</span>
-
-      <% end %>
-
-
-      <!-- 09 / ADHD -->
-      <%= link_to toolbox_adhd_path,
-          class: "toolbox-card toolbox-card-purple" do %>
-
-        <p class="toolbox-card-number">09</p>
-
-        <h3>
-          ON<br>
-          ADHD
-        </h3>
-
-        <p class="toolbox-card-description">
-          Attention, motivation, impulsivity, executive dysfunction,
-          chaos, and figuring out how to work with your brain instead
-          of constantly fighting the damn thing.
-        </p>
-
-        <span>READ →</span>
-
-      <% end %>
-
-
-      <!-- 10 / STIGMA -->
-      <%= link_to toolbox_stigma_path,
-          class: "toolbox-card toolbox-card-black" do %>
-
-        <p class="toolbox-card-number">10</p>
-
-        <h3>
-          ON<br>
-          STIGMA
-        </h3>
-
-        <p class="toolbox-card-description">
-          Labels, judgment, shame, disclosure, stereotypes,
-          and deciding whose fucking opinion actually gets a vote.
-        </p>
-
-        <span>OWN YOUR STORY →</span>
-
-      <% end %>
-      
-            <!-- 11 / PLAY THE TAPE FORWARD -->
-      <%= link_to play_the_tape_forward_path,
-          class: "toolbox-card toolbox-card-pink" do %>
-
-        <p class="toolbox-card-number">11</p>
-
-        <h3>
-          PLAY THE<br>
-          TAPE<br>
-          FORWARD
-        </h3>
-
-        <p class="toolbox-card-description">
-          Your brain keeps replaying the good part.
-          Keep watching. What happens tonight, tomorrow morning,
-          and after the relief wears off?
-        </p>
-
-        <span>WATCH THE WHOLE THING →</span>
-
-      <% end %>
-
-
-      <!-- 12 / TEN TEN TEN -->
+      <!-- 07 / TEN TEN TEN -->
       <%= link_to ten_ten_ten_path,
           class: "toolbox-card toolbox-card-yellow" do %>
 
-        <p class="toolbox-card-number">12</p>
+        <p class="toolbox-card-number">07</p>
 
         <h3>
           10 /<br>
@@ -310,11 +207,34 @@
       <% end %>
 
 
-      <!-- 13 / WHEN YOU DON'T TRUST YOUR MOOD -->
-      <%= link_to when_you_dont_trust_your_mood_path,
+      <!-- 08 / URGENCY -->
+      <%= link_to urgent_according_to_who_path,
           class: "toolbox-card toolbox-card-purple" do %>
 
-        <p class="toolbox-card-number">13</p>
+        <p class="toolbox-card-number">08</p>
+
+        <h3>
+          URGENT<br>
+          ACCORDING<br>
+          TO WHO?
+        </h3>
+
+        <p class="toolbox-card-description">
+          Every idea, purchase, and life decision suddenly
+          needs to happen right fucking now. Check the deadline,
+          check your pace, and see what can wait.
+        </p>
+
+        <span>QUESTION THE URGENCY →</span>
+
+      <% end %>
+
+
+      <!-- 09 / WHEN YOU DON'T TRUST YOUR MOOD -->
+      <%= link_to when_you_dont_trust_your_mood_path,
+          class: "toolbox-card toolbox-card-black" do %>
+
+        <p class="toolbox-card-number">09</p>
 
         <h3>
           WHEN YOU<br>
@@ -333,33 +253,34 @@
       <% end %>
 
 
-      <!-- 14 / PRESS PAUSE -->
-      <%= link_to press_pause_path,
-          class: "toolbox-card toolbox-card-black" do %>
+      <!-- 10 / KNOW YOUR BASELINE -->
+      <%= link_to whats_your_fucking_normal_path,
+          class: "toolbox-card toolbox-card-yellow" do %>
 
-        <p class="toolbox-card-number">14</p>
+        <p class="toolbox-card-number">10</p>
 
         <h3>
-          PRESS<br>
-          PAUSE
+          WHAT'S YOUR<br>
+          FUCKING<br>
+          NORMAL?
         </h3>
 
         <p class="toolbox-card-description">
-          The text. The purchase. The drink. The big decision.
-          Give yourself some space between wanting to do
-          something and actually fucking doing it.
+          Sleep, energy, mood, spending, and your everyday patterns.
+          Get to know your baseline so you have something
+          to compare the changes against.
         </p>
 
-        <span>GIVE IT A MINUTE →</span>
+        <span>KNOW YOUR BASELINE →</span>
 
       <% end %>
 
 
-      <!-- 15 / AFTER YOU FUCK UP -->
+      <!-- 11 / AFTER YOU FUCK UP -->
       <%= link_to after_you_fuck_up_path,
           class: "toolbox-card toolbox-card-split" do %>
 
-        <p class="toolbox-card-number">15</p>
+        <p class="toolbox-card-number">11</p>
 
         <h3>
           AFTER YOU<br>
@@ -377,11 +298,33 @@
       <% end %>
 
 
-      <!-- 16 / THE BARE MINIMUM DAY -->
+      <!-- 12 / ASKING FOR HELP -->
+      <%= link_to asking_for_help_path,
+          class: "toolbox-card toolbox-card-purple" do %>
+
+        <p class="toolbox-card-number">12</p>
+
+        <h3>
+          YOU NEED<br>
+          A HAND.
+        </h3>
+
+        <p class="toolbox-card-description">
+          Not a defense attorney. Figure out what you need,
+          who you can ask, and how to say it without building
+          a fucking case for deserving support.
+        </p>
+
+        <span>FIND THE WORDS →</span>
+
+      <% end %>
+
+
+      <!-- 13 / THE BARE MINIMUM DAY -->
       <%= link_to bare_minimum_day_path,
           class: "toolbox-card toolbox-card-pink" do %>
 
-        <p class="toolbox-card-number">16</p>
+        <p class="toolbox-card-number">13</p>
 
         <h3>
           THE BARE<br>
@@ -400,11 +343,35 @@
       <% end %>
 
 
-      <!-- 17 / TIME CAPSULE -->
+      <!-- 14 / WHO AM I WITHOUT IT? -->
+      <%= link_to who_am_i_without_it_path,
+          class: "toolbox-card toolbox-card-purple" do %>
+
+        <p class="toolbox-card-number">14</p>
+
+        <h3>
+          WHO THE<br>
+          FUCK AM I<br>
+          WITHOUT IT?
+        </h3>
+
+        <p class="toolbox-card-description">
+          You can miss it and still leave it. Letting go of
+          alcohol, chaos, and who you thought you needed to be.
+          Figure out what you miss, what belongs to you,
+          and who you're getting to know now.
+        </p>
+
+        <span>MEET YOURSELF AGAIN →</span>
+
+      <% end %>
+
+
+      <!-- 15 / TIME CAPSULE -->
       <%= link_to time_capsule_path,
           class: "toolbox-card toolbox-card-yellow" do %>
 
-        <p class="toolbox-card-number">17</p>
+        <p class="toolbox-card-number">15</p>
 
         <h3>
           TIME<br>
@@ -418,6 +385,194 @@
         </p>
 
         <span>LEAVE YOURSELF A REMINDER →</span>
+
+      <% end %>
+
+
+      <!-- 16 / LET CREATIVITY IN -->
+      <%= link_to let_creativity_in_path,
+          class: "toolbox-card toolbox-card-black" do %>
+
+        <p class="toolbox-card-number">16</p>
+
+        <h3>
+          LET<br>
+          CREATIVITY<br>
+          IN.
+        </h3>
+
+        <p class="toolbox-card-description">
+          Perfection can fuck off. Make something, try something,
+          and give yourself room to create without turning
+          every hobby into another obligation.
+        </p>
+
+        <span>MAKE SOMETHING →</span>
+
+      <% end %>
+
+
+      <!-- 17 / COGNITIVE DISTORTIONS -->
+      <%= link_to toolbox_cognitive_distortions_path,
+          class: "toolbox-card toolbox-card-pink" do %>
+
+        <p class="toolbox-card-number">17</p>
+
+        <h3>
+          COGNITIVE<br>
+          DISTORTIONS
+        </h3>
+
+        <p class="toolbox-card-description">
+          The convincing bullshit your brain tells you.
+          Learn to recognize distorted thinking, put it on trial,
+          and see whether it actually holds up.
+        </p>
+
+        <span>CALL OUT THE BULLSHIT →</span>
+
+      <% end %>
+
+
+      <!-- 18 / IFS -->
+      <%= link_to toolbox_ifs_path,
+          class: "toolbox-card toolbox-card-yellow" do %>
+
+        <p class="toolbox-card-number">18</p>
+
+        <h3>IFS</h3>
+
+        <p class="toolbox-card-description">
+          Parts, protectors, Self, and a different way of
+          understanding all the conflicting voices inside your head.
+        </p>
+
+        <span>MEET YOUR PARTS →</span>
+
+      <% end %>
+
+
+      <!-- 19 / ADHD -->
+      <%= link_to toolbox_adhd_path,
+          class: "toolbox-card toolbox-card-purple" do %>
+
+        <p class="toolbox-card-number">19</p>
+
+        <h3>
+          ON<br>
+          ADHD
+        </h3>
+
+        <p class="toolbox-card-description">
+          Attention, motivation, impulsivity, executive dysfunction,
+          chaos, and figuring out how to work with your brain instead
+          of constantly fighting the damn thing.
+        </p>
+
+        <span>READ →</span>
+
+      <% end %>
+
+
+      <!-- 20 / SCIATICA -->
+      <%= link_to toolbox_sciatica_path,
+          class: "toolbox-card toolbox-card-black" do %>
+
+        <p class="toolbox-card-number">20</p>
+
+        <h3>
+          ON<br>
+          SCIATICA
+        </h3>
+
+        <p class="toolbox-card-description">
+          Pain, limitations, bad days, frustration, pacing,
+          recovery, and having a fucking life when your body
+          isn't cooperating.
+        </p>
+
+        <span>READ →</span>
+
+      <% end %>
+
+
+      <!-- 21 / OTHERS -->
+      <%= link_to toolbox_others_path,
+          class: "toolbox-card toolbox-card-pink" do %>
+
+        <p class="toolbox-card-number">21</p>
+
+        <h3>
+          ON<br>
+          OTHERS
+        </h3>
+
+        <p class="toolbox-card-description">
+          Boundaries, expectations, judgment, relationships,
+          assholes, and figuring out what actually belongs to you.
+        </p>
+
+        <span>DEAL WITH PEOPLE →</span>
+
+      <% end %>
+
+
+      <!-- 22 / STIGMA -->
+      <%= link_to toolbox_stigma_path,
+          class: "toolbox-card toolbox-card-yellow" do %>
+
+        <p class="toolbox-card-number">22</p>
+
+        <h3>
+          ON<br>
+          STIGMA
+        </h3>
+
+        <p class="toolbox-card-description">
+          Labels, judgment, shame, disclosure, stereotypes,
+          and deciding whose fucking opinion actually gets a vote.
+        </p>
+
+        <span>OWN YOUR STORY →</span>
+
+      <% end %>
+
+
+      <!-- 23 / JOBS -->
+      <%= link_to toolbox_jobs_path,
+          class: "toolbox-card toolbox-card-split" do %>
+
+        <p class="toolbox-card-number">23</p>
+
+        <h3>
+          ON<br>
+          JOBS
+        </h3>
+
+        <p class="toolbox-card-description">
+          Work, unemployment, rejection, identity, starting over,
+          and separating what you do for money from who the hell you are.
+        </p>
+
+        <span>READ →</span>
+
+      <% end %>
+
+
+      <!-- 24 / ESSAYS -->
+      <%= link_to toolbox_essays_path,
+          class: "toolbox-card toolbox-card-purple" do %>
+
+        <p class="toolbox-card-number">24</p>
+
+        <h3>ESSAYS</h3>
+
+        <p class="toolbox-card-description">
+          Longer thoughts on recovery, mental health, life,
+          and the shit I've learned along the way.
+        </p>
+
+        <span>READ →</span>
 
       <% end %>
 

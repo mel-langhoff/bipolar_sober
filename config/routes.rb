@@ -303,4 +303,8 @@ get "toolbox/urgent-according-to-who",
 get "toolbox/dont-poke-the-bipolar-bear",
     to: "toolbox_tools#dont_poke_the_bipolar_bear",
     as: :dont_poke_the_bipolar_bear
+
+    get "toolbox/who-am-i-without-it",
+    to: "toolbox_tools#who_am_i_without_it",
+    as: :who_am_i_without_it
 end

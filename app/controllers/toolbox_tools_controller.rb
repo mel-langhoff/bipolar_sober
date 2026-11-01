@@ -38,4 +38,8 @@ end
 def dont_poke_the_bipolar_bear
 end
 
+def who_am_i_without_it
+end
+
+
 end
