@@ -64,6 +64,14 @@ Rails.application.routes.draw do
       to: "bipolar_topics#psychosis",
       as: :bipolar_psychosis
 
+      get "bipolar/medications",
+    to: "bipolar_topics#medications",
+    as: :bipolar_medications
+
+    get "bipolar/mood-swings",
+    to: "bipolar_topics#mood_swings",
+    as: :bipolar_mood_swings
+
 
   # ==========================================
   # BIPOLAR > PERSPECTIVES

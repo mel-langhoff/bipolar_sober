@@ -16,5 +16,10 @@ class BipolarTopicsController < ApplicationController
 
   def psychosis
   end
+def medications
+end
+
+def mood_swings
+end
 
 end
