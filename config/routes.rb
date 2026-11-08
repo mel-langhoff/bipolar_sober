@@ -229,6 +229,18 @@ Rails.application.routes.draw do
       to: "spirituality_topics#my_spirituality",
       as: :spirituality_my_spirituality
 
+      get "spirituality/shinto",
+    to: "spirituality_topics#shinto",
+    as: :spirituality_shinto
+
+get "spirituality/paganism",
+    to: "spirituality_topics#paganism",
+    as: :spirituality_paganism
+
+    get "spirituality/taoism",
+    to: "spirituality_topics#taoism",
+    as: :spirituality_taoism
+
 
   # ==========================================
   # PERSPECTIVES > TOPICS
@@ -307,4 +319,21 @@ get "toolbox/dont-poke-the-bipolar-bear",
     get "toolbox/who-am-i-without-it",
     to: "toolbox_tools#who_am_i_without_it",
     as: :who_am_i_without_it
+
+    # RELAPSE PLANS
+scope "toolbox/relapse-plans", controller: :relapse_plans, as: :relapse_plan do
+  get "mania", to: "relapse_plans#mania", as: :mania
+  get "depression", to: "relapse_plans#depression", as: :depression
+  get "mixed-symptoms", to: "relapse_plans#mixed_symptoms", as: :mixed_symptoms
+  get "impulsivity", to: "relapse_plans#impulsivity", as: :impulsivity
+  get "chronic-pain", to: "relapse_plans#chronic_pain", as: :chronic_pain
+  get "boredom", to: "relapse_plans#boredom", as: :boredom
+  get "anger", to: "relapse_plans#anger", as: :anger
+  get "loneliness", to: "relapse_plans#loneliness", as: :loneliness
+  get "social-pressure", to: "relapse_plans#social_pressure", as: :social_pressure
+  get "after-drinking", to: "relapse_plans#after_drinking", as: :after_drinking
+end
+
+
+
 end

@@ -1,0 +1,1158 @@
+<% content_for :title, "Shinto | Bipolar Sober" %>
+
+<style>
+  /* ==========================================
+     SHINTO — COMPLETE PAGE STYLES
+     ========================================== */
+
+  .st-page {
+    --st-black: #080808;
+    --st-pink: #ff1493;
+    --st-yellow: #eaff00;
+    --st-purple: #8a00ff;
+    --st-white: #ffffff;
+
+    width: 100%;
+    margin: 0;
+    background: var(--st-black);
+    color: var(--st-white);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .st-page,
+  .st-page *,
+  .st-page *::before,
+  .st-page *::after {
+    box-sizing: border-box;
+  }
+
+  .st-page h1,
+  .st-page h2,
+  .st-page h3,
+  .st-page p {
+    margin: 0;
+  }
+
+  /* HERO */
+
+  .st-page .st-hero {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    min-height: 800px;
+    min-height: max(800px, 100svh);
+    padding: 130px 5vw 90px;
+    background: var(--st-black);
+  }
+
+  .st-page .st-hero-picture {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .st-page .st-hero-picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+  }
+
+  .st-page .st-hero::after {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    content: "";
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.55),
+        rgba(8, 8, 8, 0.1) 70%
+      );
+    pointer-events: none;
+  }
+
+  .st-page .st-hero-content {
+    width: 58%;
+    max-width: 880px;
+  }
+
+  .st-page .st-eyebrow {
+    margin-bottom: 32px;
+    color: var(--st-yellow);
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.6;
+    letter-spacing: 0.12em;
+  }
+
+  .st-page .st-hero h1 {
+    color: var(--st-white);
+    font-size: clamp(64px, 7.4vw, 142px);
+    font-weight: 900;
+    line-height: 0.94;
+    letter-spacing: -0.065em;
+    text-transform: uppercase;
+  }
+
+  .st-page .st-hero h1 span {
+    display: block;
+  }
+
+  .st-page .st-intro {
+    max-width: 540px;
+    margin-top: 32px;
+    color: var(--st-white);
+    font-size: clamp(14px, 1.25vw, 19px);
+    font-weight: 800;
+    line-height: 1.65;
+  }
+
+  /* SECTIONS */
+
+  .st-page .st-section {
+    padding: 88px 5vw;
+  }
+
+  .st-page .st-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    align-items: start;
+    gap: clamp(35px, 5vw, 100px);
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .st-page .st-heading,
+  .st-page .st-copy {
+    min-width: 0;
+  }
+
+  .st-page .st-number {
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.6;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .st-page .st-heading h2 {
+    font-size: clamp(38px, 4.6vw, 82px);
+    font-weight: 900;
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+  }
+
+  .st-page .st-copy > p {
+    margin-bottom: 23px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .st-page .st-copy > p:last-child {
+    margin-bottom: 0;
+  }
+
+  .st-page .st-copy > .st-lead {
+    font-size: clamp(21px, 2vw, 27px);
+    font-weight: 800;
+    line-height: 1.45;
+    letter-spacing: -0.025em;
+  }
+
+  /* COLORS */
+
+  .st-page .st-black {
+    background: var(--st-black);
+    color: var(--st-white);
+  }
+
+  .st-page .st-pink {
+    background: var(--st-pink);
+    color: var(--st-black);
+  }
+
+  .st-page .st-yellow {
+    background: var(--st-yellow);
+    color: var(--st-black);
+  }
+
+  .st-page .st-purple {
+    background: var(--st-purple);
+    color: var(--st-white);
+  }
+
+  .st-page .st-black .st-number,
+  .st-page .st-purple .st-number {
+    color: var(--st-yellow);
+  }
+
+  /* LITTLE BOXES */
+
+  .st-page .st-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 30px 0;
+  }
+
+  .st-page .st-card {
+    min-width: 0;
+    padding: 24px;
+    border: 2px solid currentColor;
+    background: transparent;
+    color: inherit;
+  }
+
+  .st-page .st-card-label {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .st-page .st-card h3 {
+    margin-bottom: 14px;
+    font-size: clamp(21px, 2vw, 29px);
+    font-weight: 900;
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+  }
+
+  .st-page .st-card p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* CALLOUTS */
+
+  .st-page .st-callout {
+    margin: 30px 0;
+    padding: 26px;
+    border: 3px solid currentColor;
+    font-size: clamp(21px, 2.4vw, 34px);
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+  }
+
+  .st-page .st-black .st-callout,
+  .st-page .st-purple .st-callout {
+    color: var(--st-yellow);
+  }
+
+  .st-page .st-stack {
+    display: grid;
+    gap: 12px;
+    margin: 30px 0;
+  }
+
+  .st-page .st-stack p {
+    padding: 18px 20px;
+    border: 2px solid currentColor;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  /* PRACTICE BOXES */
+
+  .st-page .st-practice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .st-page .st-practice {
+    min-width: 0;
+    padding: 24px;
+    border: 2px solid currentColor;
+  }
+
+  .st-page .st-practice span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.05em;
+  }
+
+  .st-page .st-practice p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.65;
+  }
+
+  /* ENDING */
+
+  .st-page .st-ending {
+    padding: 95px 5vw;
+    background: var(--st-black);
+    color: var(--st-white);
+  }
+
+  .st-page .st-ending-inner {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .st-page .st-ending-label {
+    margin-bottom: 30px;
+    color: var(--st-yellow);
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+  }
+
+  .st-page .st-ending h2 {
+    margin-bottom: 32px;
+    font-size: clamp(54px, 8vw, 135px);
+    font-weight: 900;
+    line-height: 0.93;
+    letter-spacing: -0.065em;
+  }
+
+  .st-page .st-ending-copy {
+    max-width: 620px;
+    margin-bottom: 35px;
+    font-size: 19px;
+    line-height: 1.8;
+  }
+
+  .st-page .st-back {
+    display: inline-block;
+    max-width: 100%;
+    padding: 17px 22px;
+    border: 2px solid var(--st-yellow);
+    background: transparent;
+    color: var(--st-yellow);
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition:
+      background-color 160ms ease,
+      color 160ms ease;
+  }
+
+  .st-page .st-back:hover {
+    background: var(--st-yellow);
+    color: var(--st-black);
+  }
+
+  .st-page .st-back:focus-visible {
+    outline: 3px solid var(--st-white);
+    outline-offset: 5px;
+  }
+
+  /* TABLET */
+
+  @media (max-width: 1000px) {
+    .st-page .st-inner {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 35px;
+      max-width: 850px;
+    }
+
+    .st-page .st-heading h2 {
+      font-size: clamp(48px, 7vw, 76px);
+    }
+
+    .st-page .st-hero-content {
+      width: 62%;
+    }
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 767px) {
+    .st-page .st-hero {
+      align-items: flex-start;
+      min-height: 1000px;
+      min-height: max(1000px, 125svh);
+      padding: 110px 22px 60px;
+    }
+
+    .st-page .st-hero-picture img {
+      object-position: center bottom;
+    }
+
+    .st-page .st-hero::after {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(8, 8, 8, 0.25),
+          transparent 70%
+        );
+    }
+
+    .st-page .st-hero-content {
+      width: 100%;
+      max-width: 550px;
+    }
+
+    .st-page .st-eyebrow {
+      margin-bottom: 28px;
+      font-size: 10px;
+      letter-spacing: 0.08em;
+    }
+
+    .st-page .st-hero h1 {
+      font-size: clamp(45px, 11.5vw, 85px);
+    }
+
+    .st-page .st-intro {
+      max-width: 360px;
+      margin-top: 27px;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .st-page .st-section {
+      padding: 60px 22px;
+    }
+
+    .st-page .st-inner {
+      gap: 30px;
+    }
+
+    .st-page .st-heading h2 {
+      font-size: clamp(39px, 10vw, 66px);
+    }
+
+    .st-page .st-number {
+      margin-bottom: 20px;
+      font-size: 11px;
+    }
+
+    .st-page .st-copy > p {
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .st-page .st-grid,
+    .st-page .st-practice-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .st-page .st-card h3 {
+      font-size: 26px;
+    }
+
+    .st-page .st-callout {
+      padding: 23px;
+      font-size: 25px;
+    }
+
+    .st-page .st-ending {
+      padding: 70px 22px;
+    }
+
+    .st-page .st-ending h2 {
+      font-size: clamp(48px, 12vw, 85px);
+    }
+
+    .st-page .st-ending-copy {
+      font-size: 17px;
+    }
+  }
+</style>
+
+
+<main class="st-page">
+
+  <!-- HERO -->
+  <section class="st-hero">
+
+    <picture class="st-hero-picture">
+      <source
+        media="(max-width: 767px)"
+        srcset="<%= asset_path('spirituality_shinto_mobile.png') %>"
+      >
+
+      <%= image_tag "spirituality_shinto_desktop.png",
+          alt: "",
+          fetchpriority: "high" %>
+    </picture>
+
+    <div class="st-hero-content">
+
+      <p class="st-eyebrow">
+        BIPOLAR SOBER / SPIRITUALITY / SHINTO
+      </p>
+
+      <h1>
+        <span>PAY</span>
+        <span>ATTENTION.</span>
+        <span>GIVE THANKS.</span>
+      </h1>
+
+      <p class="st-intro">
+        KAMI. SINCERITY. RENEWAL.<br>
+        REVERENCE FOR THE WORLD YOU LIVE IN.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- 01 / INTRODUCTION -->
+  <section class="st-section st-black">
+    <div class="st-inner">
+
+      <div class="st-heading">
+        <p class="st-number">01 / THE WAY OF THE KAMI</p>
+
+        <h2>
+          BEGIN WITH<br>
+          THE WORLD<br>
+          AROUND YOU.
+        </h2>
+      </div>
+
+      <div class="st-copy">
+
+        <p class="st-lead">
+          Through Shinto, you encounter a Japanese tradition
+          rooted in reverence, ritual, and relationships.
+        </p>
+
+        <p>
+          You explore practices shaped by local communities,
+          sacred places, mythology, and centuries of observance.
+          Shinto is commonly translated as “the Way of the Kami.”
+        </p>
+
+        <p>
+          As you learn, pay attention to how gratitude,
+          sincerity, purification, and community give
+          spiritual life a practical expression.
+        </p>
+
+        <div class="st-stack">
+          <p>What sustains your life?</p>
+          <p>What inspires your reverence?</p>
+          <p>How do you express gratitude?</p>
+          <p>How do you care for your relationships?</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 02 / KAMI -->
+  <section class="st-section st-pink">
+    <div class="st-inner">
+
+      <div class="st-heading">
+        <p class="st-number">02 / KAMI</p>
+
+        <h2>
+          APPROACH<br>
+          WITH<br>
+          REVERENCE.
+        </h2>
+      </div>
+
+      <div class="st-copy">
+
+        <p>
+          You encounter kami as divine or sacred beings
+          and presences associated with natural phenomena,
+          particular places, ancestral figures,
+          and extraordinary qualities.
+        </p>
+
+        <p>
+          Learn about individual kami through their stories,
+          shrines, and traditions. The term carries meanings
+          that a simple translation such as “god” or “spirit”
+          cannot fully express.
+        </p>
+
+        <div class="st-grid">
+
+          <div class="st-card">
+            <span class="st-card-label">PLACE</span>
+            <h3>Land &amp; water.</h3>
+            <p>
+              You may encounter reverence for kami
+              associated with mountains, rivers,
+              waterfalls, or particular trees.
+            </p>
+          </div>
+
+          <div class="st-card">
+            <span class="st-card-label">HISTORY</span>
+            <h3>Memory &amp; presence.</h3>
+            <p>
+              You may learn about kami associated
+              with ancestral or historical figures,
+              and the communities that honor them.
+            </p>
+          </div>
+
+        </div>
+
+        <p>
+          Let your understanding develop through learning
+          about specific traditions and places.
+          Avoid assuming that every natural object
+          is automatically regarded as a separate kami.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 03 / NATURE -->
+  <section class="st-section st-yellow">
+    <div class="st-inner">
+
+      <div class="st-heading">
+        <p class="st-number">03 / NATURE &amp; SACRED PLACES</p>
+
+        <h2>
+          NOTICE<br>
+          WHERE<br>
+          YOU ARE.
+        </h2>
+      </div>
+
+      <div class="st-copy">
+
+        <p>
+          You may encounter shrines within wooded grounds
+          or closely associated with a particular landscape.
+          Sacred trees, rocks, and other places may be
+          marked with shimenawa, or sacred ropes.
+        </p>
+
+        <p>
+          As you approach these places, learn how their
+          communities care for them and what respectful
+          conduct involves.
+        </p>
+
+        <div class="st-grid">
+
+          <div class="st-card">
+            <span class="st-card-label">ATTENTION</span>
+            <h3>Learn the place.</h3>
+            <p>
+              Notice its history, landscape, and practices.
+              Give your appreciation time to become informed.
+            </p>
+          </div>
+
+          <div class="st-card">
+            <span class="st-card-label">CARE</span>
+            <h3>Respect its boundaries.</h3>
+            <p>
+              Follow local guidance, protect the environment,
+              and leave sacred objects where they belong.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="st-callout">
+          PAY ATTENTION.<br>
+          LEARN THE CONTEXT.<br>
+          TREAT THE PLACE WITH CARE.
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / HARMONY -->
+  <section class="st-section st-purple">
+    <div class="st-inner">
+
+      <div class="st-heading">
+        <p class="st-number">04 / WA — HARMONY</p>
+
+        <h2>
+          CONSIDER<br>
+          YOUR PLACE<br>
+          IN THE WHOLE.
+        </h2>
+      </div>
+
+      <div class="st-copy">
+
+        <p>
+          Through the value of harmony, you consider
+          your relationships with other people,
+          your community, nature, and the kami.
+        </p>
+
+        <p>
+          Your choices influence the conditions you share.
+          You can practice cooperation, consideration,
+          and responsibility while making room for
+          honest disagreement and necessary boundaries.
+        </p>
+
+        <div class="st-stack">
+          <p>Who will your decision affect?</p>
+          <p>What commitment needs your attention?</p>
+          <p>Where could you offer practical care?</p>
+          <p>What relationship needs repair?</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 05 / PURIFICATION -->
+  <section class="st-section st-black">
+    <div class="st-inner">
+
+      <div class="st-heading">
+        <p class="st-number">05 / PURIFICATION &amp; RENEWAL</p>
+
+        <h2>
+          MAKE ROOM<br>
+          TO BEGIN<br>
+          AGAIN.
+        </h2>
+      </div>
+
+      <div class="st-copy">
+
+        <p>
+          In Shinto, you encounter practices of purification
+          that prepare you to approach sacred spaces
+          and renew relationships with the kami.
+        </p>
+
+        <p>
+          You may also encounter the term kegare:
+          ritual impurity associated in some contexts
+          with death, blood, illness, or disruption.
+          This ritual category should not become a judgment
+          of your worth or anyone else's.
+        </p>
+
+        <div class="st-grid">
+
+          <div class="st-card">
+            <span class="st-card-label">HARAE</span>
+            <h3>Purification rites.</h3>
+            <p>
+              You may participate in rites involving
+              prayers and ritual actions, often
+              conducted by Shinto priests.
+            </p>
+          </div>
+
+          <div class="st-card">
+            <span class="st-card-label">MISOGI</span>
+            <h3>Water purification.</h3>
+            <p>
+              You encounter traditions of purification
+              through water, practiced within
+              particular settings and guidance.
+            </p>
+          </div>
+
+          <div class="st-card">
+            <span class="st-card-label">TEMIZU</span>
+            <h3>Before approaching.</h3>
+            <p>
+              At many shrines, you cleanse your hands
+              and mouth according to local guidance
+              before worship.
+            </p>
+          </div>
+
+          <div class="st-card">
+            <span class="st-card-label">RENEWAL</span>
+            <h3>Return with care.</h3>
+            <p>
+              You can reflect on preparation, renewal,
+              and approaching your relationships
+              with fresh attention.
+            </p>
+          </div>
+
+        </div>
+
+        <p>
+          Ritual renewal can accompany practical repair.
+          You still attend to harm, responsibilities,
+          and the care a situation requires.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 06 / SINCERITY -->
+  <section class="st-section st-pink">
+    <div class="st-inner">
+
+      <div class="st-heading">
+        <p class="st-number">06 / MAKOTO — SINCERITY</p>
+
+        <h2>
+          BRING<br>
+          YOUR WHOLE<br>
+          FUCKING HEART.
+        </h2>
+      </div>
+
+      <div class="st-copy">
+
+        <p class="st-lead">
+          Through makoto, you cultivate sincerity,
+          honesty, and integrity in your conduct.
+        </p>
+
+        <p>
+          Bring genuine attention to your prayers,
+          offerings, and relationships. Let your intentions
+          become visible through the way you act.
+        </p>
+
+        <p>
+          You express sincerity when you keep a commitment,
+          admit what happened, offer gratitude,
+          or acknowledge what you do not understand.
+        </p>
+
+        <div class="st-callout">
+          WHAT DOES YOUR INTENTION<br>
+          LOOK LIKE IN YOUR ACTIONS?
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 07 / GRATITUDE -->
+  <section class="st-section st-yellow">
+    <div class="st-inner">
+
+      <div class="st-heading">
+        <p class="st-number">07 / GRATITUDE &amp; OFFERINGS</p>
+
+        <h2>
+          RECOGNIZE<br>
+          WHAT<br>
+          SUSTAINS YOU.
+        </h2>
+      </div>
+
+      <div class="st-copy">
+
+        <p>
+          Your life depends on food, water, sunlight,
+          the land, and the contributions of others.
+          Gratitude gives you a way to acknowledge
+          those relationships.
+        </p>
+
+        <p>
+          At shrines, you may encounter offerings such as
+          rice, water, salt, and sake. Their meaning belongs
+          to the ritual and community in which they are offered.
+        </p>
+
+        <div class="st-grid">
+
+          <div class="st-card">
+            <span class="st-card-label">REVERENCE</span>
+            <h3>Offer thanks.</h3>
+            <p>
+              Recognize what you receive and approach
+              your offering with respect and sincerity.
+            </p>
+          </div>
+
+          <div class="st-card">
+            <span class="st-card-label">RELATIONSHIP</span>
+            <h3>Keep showing up.</h3>
+            <p>
+              Cultivate an ongoing practice of attention
+              rather than treating an offering
+              as a guaranteed exchange for a favor.
+            </p>
+          </div>
+
+        </div>
+
+        <p>
+          In your own practice, choose forms of gratitude
+          compatible with your sobriety. You can learn
+          about appropriate water or rice offerings
+          without keeping alcohol in your home.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 08 / COMMUNITY AND SEASONS -->
+  <section class="st-section st-purple">
+    <div class="st-inner">
+
+      <div class="st-heading">
+        <p class="st-number">08 / COMMUNITY, MEMORY &amp; SEASONS</p>
+
+        <h2>
+          PARTICIPATE<br>
+          IN A<br>
+          SHARED WORLD.
+        </h2>
+      </div>
+
+      <div class="st-copy">
+
+        <p>
+          Through festivals, ceremonies, and seasonal
+          observances, you encounter spiritual life
+          practiced within a community.
+        </p>
+
+        <p>
+          You may see gratitude for harvests, celebrations
+          of new beginnings, and rituals marking
+          important transitions.
+        </p>
+
+        <div class="st-grid">
+
+          <div class="st-card">
+            <span class="st-card-label">MATSURI</span>
+            <h3>Gather &amp; celebrate.</h3>
+            <p>
+              You encounter festivals honoring kami
+              and sustaining relationships between
+              shrines and their communities.
+            </p>
+          </div>
+
+          <div class="st-card">
+            <span class="st-card-label">SEASONAL OBSERVANCE</span>
+            <h3>Mark the change.</h3>
+            <p>
+              You acknowledge the passage of time
+              and the conditions that support
+              growth and renewal.
+            </p>
+          </div>
+
+        </div>
+
+        <p>
+          You can also learn how family and ancestral
+          observances connect generations. Keep their
+          cultural context in view: Japanese ancestral
+          practices often draw on Buddhist and other
+          traditions alongside Shinto.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 09 / CONDUCT -->
+  <section class="st-section st-black">
+    <div class="st-inner">
+
+      <div class="st-heading">
+        <p class="st-number">09 / CONDUCT &amp; RESTORATION</p>
+
+        <h2>
+          CARE FOR<br>
+          WHAT YOU<br>
+          ARE PART OF.
+        </h2>
+      </div>
+
+      <div class="st-copy">
+
+        <p>
+          You can explore ethical conduct through sincerity,
+          respect, and your responsibility to the relationships
+          that sustain your life.
+        </p>
+
+        <p>
+          When you cause harm, consider what acknowledgment,
+          correction, and repair require.
+          Give your spiritual intentions a practical expression.
+        </p>
+
+        <div class="st-stack">
+          <p>Tell the truth about what happened.</p>
+          <p>Listen to the people affected.</p>
+          <p>Address what you can repair.</p>
+          <p>Follow through on realistic commitments.</p>
+        </div>
+
+        <p>
+          You can take wrongdoing seriously while remaining
+          open to change. What you do next matters
+          to the relationships you want to maintain.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 10 / EVERYDAY PRACTICE -->
+  <section class="st-section st-pink">
+    <div class="st-inner">
+
+      <div class="st-heading">
+        <p class="st-number">10 / EVERYDAY PRACTICE</p>
+
+        <h2>
+          BRING<br>
+          REVERENCE<br>
+          INTO YOUR DAY.
+        </h2>
+      </div>
+
+      <div class="st-copy">
+
+        <p>
+          As you learn about Shinto, distinguish traditional
+          shrine practices from your own personal reflections.
+          Let study, humility, and respect guide
+          how you participate.
+        </p>
+
+        <div class="st-practice-grid">
+
+          <div class="st-practice">
+            <span>01</span>
+            <p>
+              Notice something that sustains you:
+              water, food, sunlight, or another person's care.
+            </p>
+          </div>
+
+          <div class="st-practice">
+            <span>02</span>
+            <p>
+              Learn about a particular shrine,
+              its kami, and its community.
+            </p>
+          </div>
+
+          <div class="st-practice">
+            <span>03</span>
+            <p>
+              Approach a moment of gratitude
+              with deliberate attention.
+            </p>
+          </div>
+
+          <div class="st-practice">
+            <span>04</span>
+            <p>
+              Care for your surroundings through
+              one manageable practical action.
+            </p>
+          </div>
+
+          <div class="st-practice">
+            <span>05</span>
+            <p>
+              Honor a commitment or attend
+              to a relationship you have neglected.
+            </p>
+          </div>
+
+          <div class="st-practice">
+            <span>06</span>
+            <p>
+              When visiting a shrine, follow
+              its guidance and local etiquette.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ENDING -->
+  <section class="st-ending">
+    <div class="st-ending-inner">
+
+      <p class="st-ending-label">
+        YOUR ATTENTION.<br>
+        YOUR SINCERITY.<br>
+        YOUR GRATITUDE.
+      </p>
+
+      <h2>
+        NOTICE.<br>
+        RESPECT.<br>
+        GIVE THANKS.
+      </h2>
+
+      <p class="st-ending-copy">
+        Cultivate reverence through the care you bring
+        to your surroundings, relationships,
+        and everyday conduct.
+      </p>
+
+      <%= link_to "← BACK TO SPIRITUALITY",
+          spirituality_path,
+          class: "st-back" %>
+
+    </div>
+  </section>
+
+</main>
