@@ -1,0 +1,534 @@
+<% content_for :title, "On Mixed Episodes | Bipolar Sober" %>
+
+<style>
+  .mixed-page {
+    background: #080808;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .mixed-page *,
+  .mixed-page *::before,
+  .mixed-page *::after {
+    box-sizing: border-box;
+  }
+
+  .mixed-hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 6%;
+    background-color: #080808;
+    background-image:
+      linear-gradient(90deg, rgba(8, 8, 8, .55), transparent),
+      url("<%= asset_path('bipolar_mixed_episodes_desktop.png') %>");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mixed-hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .mixed-eyebrow {
+    max-width: 440px;
+    margin: 0 0 28px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.6;
+    letter-spacing: .12em;
+  }
+
+  .mixed-hero h1 {
+    margin: 0;
+    font-size: clamp(56px, 8vw, 120px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .9;
+    letter-spacing: -.055em;
+    text-transform: uppercase;
+  }
+
+  .mixed-hero h1 span {
+    display: block;
+  }
+
+  .mixed-intro {
+    margin: 32px 0 0;
+    font-size: clamp(15px, 1.6vw, 22px);
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  .mixed-quote {
+    padding: 48px 6%;
+    text-align: center;
+  }
+
+  .mixed-quote blockquote {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .mixed-quote blockquote p {
+    margin: 0 0 20px;
+    color: #eaff00;
+    font-size: clamp(28px, 4vw, 56px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.2;
+  }
+
+  .mixed-quote cite {
+    font-size: 14px;
+    font-style: normal;
+  }
+
+  .mixed-section {
+    padding: 72px 6%;
+  }
+
+  .mixed-section-inner {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .mixed-number {
+    margin: 0 0 22px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .12em;
+  }
+
+  .mixed-section h2 {
+    margin: 0;
+    font-size: clamp(36px, 4.5vw, 68px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .95;
+    letter-spacing: -.045em;
+    text-transform: uppercase;
+  }
+
+  .mixed-copy {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .mixed-copy p {
+    margin: 0 0 22px;
+  }
+
+  .mixed-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  .mixed-copy ul {
+    margin: 0 0 24px;
+    padding-left: 22px;
+  }
+
+  .mixed-copy li {
+    margin-bottom: 12px;
+  }
+
+  .mixed-pink {
+    background: #ff1493;
+    color: #080808;
+  }
+
+  .mixed-yellow {
+    background: #eaff00;
+    color: #080808;
+  }
+
+  .mixed-purple {
+    background: #8a00ff;
+    color: #fff;
+  }
+
+  .mixed-black {
+    background: #080808;
+    color: #fff;
+  }
+
+  .mixed-white {
+    background: #fff;
+    color: #080808;
+  }
+
+  .mixed-takeaway {
+    padding-top: 22px;
+    border-top: 3px solid currentColor;
+    font-weight: 800;
+  }
+
+  .mixed-footer {
+    padding: 40px 6%;
+    border-top: 1px solid #444;
+  }
+
+  .mixed-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .mixed-footer a {
+    color: #eaff00;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  .mixed-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .mixed-footer a:focus-visible {
+    outline: 3px solid #ff1493;
+    outline-offset: 6px;
+  }
+
+  @media (max-width: 767px) {
+    .mixed-hero {
+      min-height: 88svh;
+      align-items: flex-start;
+      padding: 48px 6% 60px;
+      background-image:
+        url("<%= asset_path('bipolar_mixed_episodes_mobile.png') %>");
+      background-position: center bottom;
+    }
+
+    .mixed-eyebrow {
+      margin-bottom: 24px;
+      font-size: 10px;
+    }
+
+    .mixed-hero h1 {
+      font-size: clamp(44px, 13.5vw, 94px);
+    }
+
+    .mixed-intro {
+      margin-top: 24px;
+      font-size: 14px;
+    }
+
+    .mixed-section {
+      padding: 48px 6%;
+    }
+
+    .mixed-section-inner {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .mixed-section h2 {
+      font-size: clamp(36px, 10vw, 58px);
+    }
+
+    .mixed-copy {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .mixed-number {
+      margin-bottom: 16px;
+    }
+  }
+</style>
+
+<main class="mixed-page">
+
+  <!-- HERO -->
+  <section class="mixed-hero" aria-labelledby="mixed-title">
+    <div class="mixed-hero-content">
+
+      <p class="mixed-eyebrow">
+        BIPOLAR SOBER / BIPOLAR / MIXED EPISODES
+      </p>
+
+      <h1 id="mixed-title">
+        <span>ON MIXED</span>
+        <span>EPISODES.</span>
+      </h1>
+
+      <p class="mixed-intro">
+        EXHAUSTED AND WIRED.<br>
+        MISERABLE AND RESTLESS.<br>
+        AN ENGINE THAT WON’T TURN OFF.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- QUOTE -->
+  <section class="mixed-quote" aria-label="Opening quote">
+    <blockquote>
+      <p>“We’re all mad here.”</p>
+      <cite>— The Cheshire Cat</cite>
+    </blockquote>
+  </section>
+
+
+  <!-- 01 / THE CONTRADICTIONS -->
+  <section class="mixed-section mixed-purple">
+    <div class="mixed-section-inner">
+
+      <div class="mixed-section-heading">
+        <p class="mixed-number">01 / WIRED AND MISERABLE</p>
+
+        <h2>
+          TIRED AS<br>
+          FUCK.<br>
+          STILL<br>
+          RUNNING.
+        </h2>
+      </div>
+
+      <div class="mixed-copy">
+        <p>
+          You feel like shit, but your brain will not shut the
+          fuck up. You want to withdraw, yet sitting still feels
+          unbearable. Your thoughts move quickly and keep taking
+          you somewhere painful.
+        </p>
+
+        <p>
+          Mixed experiences can bring urgency without optimism
+          and activity without enjoyment. You want something
+          to change immediately without knowing what would help.
+        </p>
+
+        <p class="mixed-takeaway">
+          Describe what you can observe. You do not have to make
+          the contradictions fit a neat category before asking
+          your treatment team for help.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 02 / ACCEPTANCE -->
+  <section class="mixed-section mixed-yellow">
+    <div class="mixed-section-inner">
+
+      <div class="mixed-section-heading">
+        <p class="mixed-number">02 / ACKNOWLEDGE WHAT’S HERE</p>
+
+        <h2>
+          BOTH CAN<br>
+          BE TRUE.
+        </h2>
+      </div>
+
+      <div class="mixed-copy">
+        <p>
+          You can feel exhausted and restless. Want company and
+          find conversation overwhelming. Need help and feel
+          irritated about needing it.
+        </p>
+
+        <p>
+          “I should relax.” “I should get something done.”
+          “I should know what the fuck I want.”
+          Those demands add frustration to an already difficult
+          experience. Acknowledge what is happening before
+          demanding a different state.
+        </p>
+
+        <p>
+          Try “This is extremely uncomfortable, and I need support
+          getting through it.” You do not have to convince yourself
+          everything is fine. Choose words that leave room for help.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 03 / IMPULSIVITY -->
+  <section class="mixed-section mixed-pink">
+    <div class="mixed-section-inner">
+
+      <div class="mixed-section-heading">
+        <p class="mixed-number">03 / URGENCY ISN’T AN INSTRUCTION</p>
+
+        <h2>
+          DON’T REDO<br>
+          YOUR LIFE<br>
+          TONIGHT.
+        </h2>
+      </div>
+
+      <div class="mixed-copy">
+        <p>
+          Spending, a new project, or an abrupt decision can
+          promise relief. Ask what you expect it to accomplish.
+          Will it address a need or leave another problem
+          once the immediate satisfaction wears off?
+        </p>
+
+        <p>
+          Make the next decision smaller. Postpone the purchase,
+          leave the message unsent, and write down the idea
+          without committing. Ask someone you trust to help
+          review decisions that feel urgent.
+        </p>
+
+        <p class="mixed-takeaway">
+          Treat the pause as a practical challenge: what would
+          protect you through the next stretch and leave fewer
+          consequences afterward?
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / REDUCE DEMANDS -->
+  <section class="mixed-section mixed-black">
+    <div class="mixed-section-inner">
+
+      <div class="mixed-section-heading">
+        <p class="mixed-number">04 / TURN DOWN THE INPUT</p>
+
+        <h2>
+          FEWER TABS.<br>
+          LESS NOISE.<br>
+          ONE STEP.
+        </h2>
+      </div>
+
+      <div class="mixed-copy">
+        <p>
+          Close extra tabs, silence unnecessary notifications,
+          and choose something familiar and undemanding.
+          Give yourself fewer things to respond to.
+        </p>
+
+        <ul>
+          <li>Feel your feet against the floor or name five things you can see.</li>
+          <li>Breathe gently, slowing your exhale if that feels comfortable.</li>
+          <li>Eat something simple, drink water, and protect your usual sleep routine.</li>
+          <li>Leave nonessential tasks unfinished and reduce demands on your time.</li>
+        </ul>
+
+        <p>
+          Avoid pushing through exhaustion with caffeine or
+          trying to escape agitation with alcohol or weed.
+          You do not have to become perfectly calm or wear
+          yourself out to earn rest.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 05 / SUPPORT -->
+  <section class="mixed-section mixed-white">
+    <div class="mixed-section-inner">
+
+      <div class="mixed-section-heading">
+        <p class="mixed-number">05 / SAY WHAT’S HAPPENING</p>
+
+        <h2>
+          GIVE HELP<br>
+          SOMETHING<br>
+          TO WORK<br>
+          WITH.
+        </h2>
+      </div>
+
+      <div class="mixed-copy">
+        <p>
+          “I feel depressed, but my thoughts are racing and
+          I’m getting impulsive” tells someone more than
+          “I’m having a bad day.” Contact your treatment team
+          and describe the experience as accurately as you can.
+        </p>
+
+        <p>
+          Make a specific request: check in tonight, help you
+          stay off shopping sites, or sit with you while you
+          contact your psych. When reflection feels beyond
+          reach, rely more on prepared safeguards and support.
+        </p>
+
+        <p>
+          Notice the parts that want to escape, act, criticize,
+          or protect you. Listen with curiosity while choosing
+          actions that support your safety and stability.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 06 / AFTERWARD -->
+  <section class="mixed-section mixed-yellow">
+    <div class="mixed-section-inner">
+
+      <div class="mixed-section-heading">
+        <p class="mixed-number">06 / PROTECT THE NEXT STEP</p>
+
+        <h2>
+          ROOM TO<br>
+          BREATHE.<br>
+          THEN<br>
+          UNDERSTAND.
+        </h2>
+      </div>
+
+      <div class="mixed-copy">
+        <p>
+          Afterward, the experience may be difficult to explain.
+          You were doing things but felt awful. You wanted relief
+          and made decisions that complicated your life.
+          Address the consequences specifically and discuss
+          what support could enter earlier next time.
+        </p>
+
+        <p>
+          You do not have to make the episode meaningful while
+          getting through it. Eating, postponing a purchase,
+          settling somewhere quieter, or asking for help can
+          each be a useful next step.
+        </p>
+
+        <p class="mixed-takeaway">
+          You deserve care when your feelings contradict each
+          other and your usual coping skills feel insufficient.
+          Let the next step protect you. Understanding can come later.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- NAVIGATION -->
+  <nav class="mixed-footer" aria-label="Bipolar topic navigation">
+    <div class="mixed-footer-inner">
+      <%= link_to "← BACK TO BIPOLAR", bipolar_path %>
+      <%= link_to "NEXT: ON IMPULSIVITY →", bipolar_impulsivity_path %>
+    </div>
+  </nav>
+
+</main>

@@ -1,0 +1,2 @@
+module AddictionPerspectivesHelper
+end

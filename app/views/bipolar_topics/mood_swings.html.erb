@@ -1,0 +1,446 @@
+<% content_for :title, "Mood Swings | Bipolar Sober" %>
+
+<main class="bipolar-mood-swings-page">
+
+  <style>
+    .bipolar-mood-swings-page {
+      --bms-black: #080808;
+      --bms-white: #fff;
+      --bms-pink: #ff1493;
+      --bms-yellow: #eaff00;
+      --bms-purple: #8a00ff;
+      background: var(--bms-black);
+      color: var(--bms-white);
+      font-family: Arial, sans-serif;
+    }
+
+    .bipolar-mood-swings-page * {
+      box-sizing: border-box;
+    }
+
+    .bms-hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      padding: 100px 7vw;
+      background-image:
+        linear-gradient(
+          90deg,
+          rgba(8, 8, 8, .97) 0%,
+          rgba(8, 8, 8, .78) 48%,
+          rgba(8, 8, 8, .12) 100%
+        ),
+        var(--bms-desktop);
+      background-position: center, right center;
+      background-size: cover, cover;
+    }
+
+    .bms-hero-content {
+      max-width: 1000px;
+    }
+
+    .bms-eyebrow,
+    .bms-section-label,
+    .bms-box-label {
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .bms-eyebrow {
+      color: var(--bms-pink);
+    }
+
+    .bms-hero h1 {
+      margin: 24px 0;
+      font-size: clamp(58px, 10vw, 142px);
+      line-height: .88;
+      letter-spacing: -.07em;
+      text-transform: uppercase;
+    }
+
+    .bms-hero h1 span {
+      display: block;
+    }
+
+    .bms-intro {
+      color: var(--bms-yellow);
+      font-size: clamp(17px, 2vw, 25px);
+      font-weight: 900;
+      line-height: 1.45;
+    }
+
+    .bms-section {
+      padding: 76px 7vw;
+      border-top: 2px solid rgba(255, 255, 255, .2);
+    }
+
+    .bms-section-inner {
+      max-width: 1250px;
+      margin: 0 auto;
+    }
+
+    .bms-section-label {
+      color: var(--bms-pink);
+    }
+
+    .bms-section h2 {
+      max-width: 900px;
+      margin: 18px 0 30px;
+      font-size: clamp(38px, 6vw, 78px);
+      line-height: .98;
+      letter-spacing: -.055em;
+      text-transform: uppercase;
+    }
+
+    .bms-copy {
+      max-width: 850px;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .bms-copy p {
+      margin: 0 0 22px;
+    }
+
+    .bms-box-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .bms-box {
+      padding: 24px;
+      border: 2px solid var(--bms-pink);
+      background: #111;
+    }
+
+    .bms-box:nth-child(2) {
+      border-color: var(--bms-yellow);
+    }
+
+    .bms-box:nth-child(3) {
+      border-color: var(--bms-purple);
+    }
+
+    .bms-box:nth-child(4) {
+      border-color: var(--bms-white);
+    }
+
+    .bms-box h3 {
+      margin: 12px 0;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+
+    .bms-box p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .bms-callout {
+      max-width: 950px;
+      margin: 35px 0;
+      padding: 24px;
+      border: 3px solid var(--bms-yellow);
+      color: var(--bms-yellow);
+      font-size: clamp(21px, 3vw, 34px);
+      font-weight: 900;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .bms-ending {
+      padding: 80px 7vw;
+      background: var(--bms-purple);
+    }
+
+    .bms-ending-inner {
+      max-width: 1250px;
+      margin: 0 auto;
+    }
+
+    .bms-ending h2 {
+      margin: 12px 0 24px;
+      font-size: clamp(46px, 8vw, 110px);
+      line-height: .92;
+      letter-spacing: -.06em;
+      text-transform: uppercase;
+    }
+
+    .bms-ending p {
+      max-width: 780px;
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    .bms-back {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 14px 18px;
+      border: 2px solid var(--bms-yellow);
+      color: var(--bms-yellow);
+      font-weight: 900;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 700px) {
+      .bms-hero {
+        min-height: 75vh;
+        padding: 90px 22px;
+        background-image:
+          linear-gradient(
+            180deg,
+            rgba(8, 8, 8, .42),
+            rgba(8, 8, 8, .08)
+          ),
+          var(--bms-mobile);
+        background-position: center, center bottom;
+      }
+
+      .bms-section {
+        padding: 58px 22px;
+      }
+
+      .bms-box-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bms-ending {
+        padding: 65px 22px;
+      }
+    }
+  </style>
+
+
+  <!-- HERO -->
+  <section class="bms-hero"
+           style="--bms-desktop: url('<%= asset_path('bipolar_mood_swings_desktop.png') %>');
+                  --bms-mobile: url('<%= asset_path('bipolar_mood_swings_mobile.png') %>');">
+
+    <div class="bms-hero-content">
+
+      <p class="bms-eyebrow">
+        BIPOLAR SOBER / BIPOLAR / MOOD SWINGS
+      </p>
+
+      <h1>
+        <span>ON</span>
+        <span>MOOD</span>
+        <span>SWINGS.</span>
+      </h1>
+
+      <p class="bms-intro">
+        THE WEATHER CAN CHANGE.<br>
+        LEARN YOUR OWN PATTERNS.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- 01 / MORE THAN A BAD DAY -->
+  <section class="bms-section">
+    <div class="bms-section-inner">
+
+      <p class="bms-section-label">01 / MORE THAN A BAD DAY</p>
+
+      <h2>
+        LOOK AT THE<br>
+        WHOLE PATTERN.
+      </h2>
+
+      <div class="bms-copy">
+        <p>
+          Everybody has changes in mood. With bipolar disorder, the shifts
+          you’re tracking can involve more than feeling happy one day and
+          irritated the next. Your mood, energy, activity, sleep, thoughts,
+          and ability to function can all change together.
+        </p>
+
+        <p>
+          That doesn’t mean every rough afternoon or burst of excitement
+          is an episode. It helps to look at how long a change lasts, how
+          intense it feels, what else is changing, and how different it is
+          from your usual baseline.
+        </p>
+      </div>
+
+      <div class="bms-callout">
+        ONE FEELING IS A MOMENT. A PATTERN TELLS YOU MORE.
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 02 / YOUR RANGE -->
+  <section class="bms-section">
+    <div class="bms-section-inner">
+
+      <p class="bms-section-label">02 / YOUR RANGE</p>
+
+      <h2>
+        YOU KNOW<br>
+        BOTH ENDS.
+      </h2>
+
+      <div class="bms-copy">
+        <p>
+          Depression can mean months of heaviness and disconnection for
+          you—episodes that last four months or longer. Mania can bring
+          racing thoughts, restless energy, irritability, confidence, and
+          impulses that make acting now feel more important than thinking
+          through what comes next.
+        </p>
+
+        <p>
+          Mixed symptoms can scramble those descriptions. You can feel
+          miserable and wired, exhausted and unable to settle, desperate
+          for relief while your mind keeps pushing you to do something.
+          The experience doesn’t always fit neatly into “high” or “low.”
+        </p>
+      </div>
+
+      <div class="bms-box-grid">
+
+        <article class="bms-box">
+          <p class="bms-box-label">LOW</p>
+          <h3>WHEN IT LASTS</h3>
+          <p>
+            Depression for you can stretch across months. That length
+            belongs in the story; it isn’t just a passing bad mood.
+          </p>
+        </article>
+
+        <article class="bms-box">
+          <p class="bms-box-label">UP</p>
+          <h3>WHEN IT RACES</h3>
+          <p>
+            Energy, confidence, ideas, irritability, and impulsive choices
+            can shift together and affect what you do.
+          </p>
+        </article>
+
+        <article class="bms-box">
+          <p class="bms-box-label">BOTH</p>
+          <h3>WHEN THEY COLLIDE</h3>
+          <p>
+            Mixed symptoms can feel painful and activated at the same time,
+            leaving you with urgency and very little quiet.
+          </p>
+        </article>
+
+        <article class="bms-box">
+          <p class="bms-box-label">IN BETWEEN</p>
+          <h3>YOUR BASELINE</h3>
+          <p>
+            Your ordinary range matters too. It gives you something to
+            compare a possible shift against.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 03 / WHAT CHANGES -->
+  <section class="bms-section">
+    <div class="bms-section-inner">
+
+      <p class="bms-section-label">03 / WHAT CHANGES FIRST?</p>
+
+      <h2>
+        NOTICE THE<br>
+        DETAILS.
+      </h2>
+
+      <div class="bms-copy">
+        <p>
+          Mood can be the loudest change, but it isn’t the only one.
+          You might also notice differences in sleep, energy, pace of
+          thought, irritability, activity, spending, or how quickly you
+          move from an idea to doing it.
+        </p>
+
+        <p>
+          You don’t have to monitor yourself every second or turn your
+          life into a spreadsheet. A brief, honest note can help you
+          remember what changed and when. Write down what you actually
+          noticed instead of diagnosing yourself from one moment.
+        </p>
+      </div>
+
+      <div class="bms-callout">
+        DESCRIBE WHAT HAPPENED. LET YOUR CARE TEAM HELP INTERPRET IT.
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / YOUR OWN STORY -->
+  <section class="bms-section">
+    <div class="bms-section-inner">
+
+      <p class="bms-section-label">04 / YOUR OWN PATTERNS</p>
+
+      <h2>
+        YOUR MOOD<br>
+        HAS CONTEXT.
+      </h2>
+
+      <div class="bms-copy">
+        <p>
+          Pain, boredom, stress, relationships, substance use, and changes
+          in routine can all matter in your life. They don’t automatically
+          explain a mood episode, and a mood episode doesn’t make every
+          feeling or decision meaningless.
+        </p>
+
+        <p>
+          You can hold more than one fact at a time: your mood affects
+          your experience, your circumstances matter, and your actions
+          still have consequences. Paying attention helps you understand
+          what belongs in the same picture without forcing every detail
+          into one explanation.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ENDING -->
+  <section class="bms-ending">
+    <div class="bms-ending-inner">
+
+      <p class="bms-section-label">KEEP THE WHOLE PICTURE</p>
+
+      <h2>
+        NAME THE<br>
+        SHIFT.<br>
+        GET SUPPORT.
+      </h2>
+
+      <p>
+        You don’t have to decide on your own what every change means.
+        Notice what’s different, how long it has been happening, and
+        how it’s affecting your life. Bring that information to your
+        treatment team and let the conversation be part of your care.
+      </p>
+
+      <%= link_to "← BACK TO BIPOLAR",
+          bipolar_path,
+          class: "bms-back" %>
+
+    </div>
+  </section>
+
+</main>

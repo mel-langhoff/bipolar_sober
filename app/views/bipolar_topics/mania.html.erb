@@ -1,0 +1,536 @@
+<% content_for :title, "On Mania | Bipolar Sober" %>
+
+<style>
+  .mania-page {
+    background: #080808;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .mania-page *,
+  .mania-page *::before,
+  .mania-page *::after {
+    box-sizing: border-box;
+  }
+
+  .mania-hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 6%;
+    background-color: #080808;
+    background-image:
+      linear-gradient(90deg, rgba(8, 8, 8, .55), transparent),
+      url("<%= asset_path('bipolar_mania_desktop.png') %>");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mania-hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .mania-eyebrow {
+    max-width: 440px;
+    margin: 0 0 28px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.6;
+    letter-spacing: .12em;
+  }
+
+  .mania-hero h1 {
+    margin: 0;
+    font-size: clamp(72px, 10vw, 150px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .88;
+    letter-spacing: -.065em;
+    text-transform: uppercase;
+  }
+
+  .mania-hero h1 span {
+    display: block;
+  }
+
+  .mania-intro {
+    margin: 32px 0 0;
+    font-size: clamp(15px, 1.6vw, 22px);
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  .mania-quote {
+    padding: 48px 6%;
+    text-align: center;
+  }
+
+  .mania-quote blockquote {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .mania-quote blockquote p {
+    margin: 0 0 20px;
+    color: #eaff00;
+    font-size: clamp(28px, 4vw, 56px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.2;
+  }
+
+  .mania-quote cite {
+    font-size: 14px;
+    font-style: normal;
+  }
+
+  .mania-section {
+    padding: 72px 6%;
+  }
+
+  .mania-section-inner {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .mania-number {
+    margin: 0 0 22px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .12em;
+  }
+
+  .mania-section h2 {
+    margin: 0;
+    font-size: clamp(36px, 4.5vw, 68px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .95;
+    letter-spacing: -.045em;
+    text-transform: uppercase;
+  }
+
+  .mania-copy {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .mania-copy p {
+    margin: 0 0 22px;
+  }
+
+  .mania-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  .mania-copy ul {
+    margin: 0 0 24px;
+    padding-left: 22px;
+  }
+
+  .mania-copy li {
+    margin-bottom: 12px;
+  }
+
+  .mania-pink {
+    background: #ff1493;
+    color: #080808;
+  }
+
+  .mania-yellow {
+    background: #eaff00;
+    color: #080808;
+  }
+
+  .mania-purple {
+    background: #8a00ff;
+    color: #fff;
+  }
+
+  .mania-black {
+    background: #080808;
+    color: #fff;
+  }
+
+  .mania-white {
+    background: #fff;
+    color: #080808;
+  }
+
+  .mania-takeaway {
+    padding-top: 22px;
+    border-top: 3px solid currentColor;
+    font-weight: 800;
+  }
+
+  .mania-footer {
+    padding: 40px 6%;
+    border-top: 1px solid #444;
+  }
+
+  .mania-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .mania-footer a {
+    color: #eaff00;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  .mania-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .mania-footer a:focus-visible {
+    outline: 3px solid #ff1493;
+    outline-offset: 6px;
+  }
+
+  @media (max-width: 767px) {
+    .mania-hero {
+      min-height: 88svh;
+      align-items: flex-start;
+      padding: 48px 6% 60px;
+      background-image:
+        url("<%= asset_path('bipolar_mania_mobile.png') %>");
+      background-position: center bottom;
+    }
+
+    .mania-eyebrow {
+      margin-bottom: 24px;
+      font-size: 10px;
+    }
+
+    .mania-hero h1 {
+      font-size: clamp(64px, 19vw, 108px);
+    }
+
+    .mania-intro {
+      margin-top: 24px;
+      font-size: 14px;
+    }
+
+    .mania-section {
+      padding: 48px 6%;
+    }
+
+    .mania-section-inner {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .mania-section h2 {
+      font-size: clamp(36px, 10vw, 58px);
+    }
+
+    .mania-copy {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .mania-number {
+      margin-bottom: 16px;
+    }
+  }
+</style>
+
+<main class="mania-page">
+
+  <!-- HERO -->
+  <section class="mania-hero" aria-labelledby="mania-title">
+    <div class="mania-hero-content">
+
+      <p class="mania-eyebrow">
+        BIPOLAR SOBER / BIPOLAR / MANIA
+      </p>
+
+      <h1 id="mania-title">
+        <span>ON</span>
+        <span>MANIA.</span>
+      </h1>
+
+      <p class="mania-intro">
+        THE IDEAS. THE URGENCY.<br>
+        THE FUCK-ITS. THE SPENDING.<br>
+        MAKING ROOM BEFORE YOU ACT.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- QUOTE -->
+  <section class="mania-quote" aria-label="Opening quote">
+    <blockquote>
+      <p>“Boy, that escalated quickly.”</p>
+      <cite>— Ron Burgundy</cite>
+    </blockquote>
+  </section>
+
+
+  <!-- 01 / URGENCY -->
+  <section class="mania-section mania-purple">
+    <div class="mania-section-inner">
+
+      <div class="mania-section-heading">
+        <p class="mania-number">01 / EVERYTHING FEELS URGENT</p>
+
+        <h2>
+          BUY IT.<br>
+          START IT.<br>
+          RIGHT NOW.
+        </h2>
+      </div>
+
+      <div class="mania-copy">
+        <p>
+          Mania can shrink the space between an idea and an action.
+          Buy something. Start a project. Change the plan.
+          Consequences that usually matter feel distant, and this
+          decision seems completely reasonable.
+        </p>
+
+        <p>
+          For you, overspending and impulsivity are a huge part of it.
+          You take your medication and want stability. You also know
+          what it means to get the fuck-its and act before considering
+          what comes next.
+        </p>
+
+        <p class="mania-takeaway">
+          Wanting to manage your illness and struggling during an
+          episode can both be true. You deserve compassion and
+          a practical plan.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 02 / OVERSPENDING -->
+  <section class="mania-section mania-yellow">
+    <div class="mania-section-inner">
+
+      <div class="mania-section-heading">
+        <p class="mania-number">02 / THE CART KEEPS GROWING</p>
+
+        <h2>
+          YOUR BUDGET<br>
+          DESERVES<br>
+          A SAY.
+        </h2>
+      </div>
+
+      <div class="mania-copy">
+        <p>
+          You need it. It is useful. It is an investment.
+          You will figure out the money later. Each purchase
+          sounds reasonable on its own while the total keeps growing.
+          Even a project you genuinely care about can become
+          an urgent reason to spend.
+        </p>
+
+        <p>
+          Notice the excitement, the explanation, and the discomfort
+          of leaving something alone. What do you expect the purchase
+          to provide: enjoyment, relief, a fresh start?
+          Understanding desire gives you room to examine it.
+        </p>
+
+        <p>
+          “I can afford it” means checking your actual finances.
+          “I need it today” means asking what happens if you wait.
+          Your future self has the same bills and deserves
+          consideration now.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 03 / SAFEGUARDS -->
+  <section class="mania-section mania-pink">
+    <div class="mania-section-inner">
+
+      <div class="mania-section-heading">
+        <p class="mania-number">03 / PLAN WHILE YOU CAN</p>
+
+        <h2>
+          GIVE THE<br>
+          IDEA SOME<br>
+          SPACE.
+        </h2>
+      </div>
+
+      <div class="mania-copy">
+        <p>
+          Build safeguards before your priorities start shifting.
+          Choose limits you are willing to use and people you trust
+          to help you assess decisions.
+        </p>
+
+        <ul>
+          <li>Remove saved payment information and set spending alerts.</li>
+          <li>Give larger purchases a waiting period or a trusted second opinion.</li>
+          <li>Step away from browsing when it keeps turning into buying.</li>
+          <li>Write ideas down before turning them into commitments.</li>
+        </ul>
+
+        <p>
+          Everything can feel possible at once. Letting an idea
+          exist overnight gives you another chance to consider
+          the money, time, and obligations it would require.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / DESIRE AND LIMITS -->
+  <section class="mania-section mania-black">
+    <div class="mania-section-inner">
+
+      <div class="mania-section-heading">
+        <p class="mania-number">04 / PRACTICE THE PAUSE</p>
+
+        <h2>
+          CAN YOU<br>
+          LET IT<br>
+          WAIT?
+        </h2>
+      </div>
+
+      <div class="mania-copy">
+        <p>
+          Treat waiting as a challenge in resourcefulness.
+          Can you leave the item in the cart? Let the plan sit?
+          Allow someone else to help assess it?
+          Give yourself credit for making space around the urge.
+        </p>
+
+        <p>
+          One part of you wants freedom, excitement, and immediate
+          action. Another wants stability, sobriety, and money for
+          necessities. Get curious about both. What feels unbearable
+          about waiting? What are you hoping to gain?
+        </p>
+
+        <p class="mania-takeaway">
+          You can care about the part that wants everything right
+          now while protecting your choices for tomorrow.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 05 / SUPPORT -->
+  <section class="mania-section mania-white">
+    <div class="mania-section-inner">
+
+      <div class="mania-section-heading">
+        <p class="mania-number">05 / MAKE ROOM FOR SUPPORT</p>
+
+        <h2>
+          YOU DON’T<br>
+          HAVE TO<br>
+          ASSESS IT<br>
+          ALONE.
+        </h2>
+      </div>
+
+      <div class="mania-copy">
+        <p>
+          You cannot guarantee that every episode will be prevented.
+          You can prepare by knowing your patterns, protecting
+          essential money, and deciding who can help when your
+          judgment changes. An episode does not erase those efforts.
+        </p>
+
+        <p>
+          Your experience of mania can also involve psychosis.
+          Include that in your treatment plan, even when spending
+          and impulsivity are the changes you notice first.
+          If experiences or beliefs become unusual, or trusted
+          people notice concerning changes, involve your treatment
+          team promptly.
+        </p>
+
+        <p>
+          Support belongs in the plan for the times when pausing
+          and evaluating decisions become difficult.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 06 / AFTERWARD -->
+  <section class="mania-section mania-yellow">
+    <div class="mania-section-inner">
+
+      <div class="mania-section-heading">
+        <p class="mania-number">06 / REPAIR WITHOUT SELF-DESTRUCTION</p>
+
+        <h2>
+          FACE THE<br>
+          AFTERMATH.<br>
+          KEEP YOUR<br>
+          DIGNITY.
+        </h2>
+      </div>
+
+      <div class="mania-copy">
+        <p>
+          Looking at the purchases and commitments afterward can
+          feel overwhelming. Start with what needs attention.
+          Return or cancel what you can, review obligations,
+          and ask for help with the rest. You do not have to
+          resolve everything in one sitting.
+        </p>
+
+        <p>
+          “I spent money I needed” identifies something to address.
+          “I ruin everything” turns it into your identity.
+          Accountability gives you a place to begin repairing
+          and preparing.
+        </p>
+
+        <p class="mania-takeaway">
+          You are more than an episode or a decision you regret.
+          Keep building room to choose and support for the times
+          when choosing becomes difficult.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- NAVIGATION -->
+  <nav class="mania-footer" aria-label="Bipolar topic navigation">
+    <div class="mania-footer-inner">
+      <%= link_to "← BACK TO BIPOLAR", bipolar_path %>
+      <%= link_to "NEXT: ON DEPRESSION →", bipolar_depression_path %>
+    </div>
+  </nav>
+
+</main>

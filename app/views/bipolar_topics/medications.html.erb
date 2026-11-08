@@ -1,0 +1,411 @@
+<% content_for :title, "On Medications | Bipolar Sober" %>
+
+<main class="bipolar-medications-page">
+
+  <style>
+    .bipolar-medications-page {
+      --bm-black: #080808;
+      --bm-white: #fff;
+      --bm-pink: #ff1493;
+      --bm-yellow: #eaff00;
+      --bm-purple: #8a00ff;
+      background: var(--bm-black);
+      color: var(--bm-white);
+      font-family: Arial, sans-serif;
+    }
+
+    .bipolar-medications-page * {
+      box-sizing: border-box;
+    }
+
+    .bm-hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      padding: 100px 7vw;
+      background-image:
+        linear-gradient(
+          90deg,
+          rgba(8, 8, 8, .96) 0%,
+          rgba(8, 8, 8, .72) 48%,
+          rgba(8, 8, 8, .12) 100%
+        ),
+        var(--bm-desktop);
+      background-position: center, right center;
+      background-size: cover, cover;
+    }
+
+    .bm-hero-content {
+      max-width: 1000px;
+    }
+
+    .bm-eyebrow,
+    .bm-section-label,
+    .bm-card-label {
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .bm-eyebrow {
+      color: var(--bm-pink);
+    }
+
+    .bm-hero h1 {
+      margin: 24px 0;
+      font-size: clamp(58px, 10vw, 142px);
+      line-height: .88;
+      letter-spacing: -.07em;
+      text-transform: uppercase;
+    }
+
+    .bm-hero h1 span {
+      display: block;
+    }
+
+    .bm-intro {
+      color: var(--bm-yellow);
+      font-size: clamp(17px, 2vw, 25px);
+      font-weight: 900;
+      line-height: 1.45;
+    }
+
+    .bm-section {
+      padding: 76px 7vw;
+      border-top: 2px solid rgba(255, 255, 255, .2);
+    }
+
+    .bm-section-inner {
+      max-width: 1250px;
+      margin: 0 auto;
+    }
+
+    .bm-section-label {
+      color: var(--bm-pink);
+    }
+
+    .bm-section h2 {
+      max-width: 850px;
+      margin: 18px 0 30px;
+      font-size: clamp(38px, 6vw, 78px);
+      line-height: .98;
+      letter-spacing: -.055em;
+      text-transform: uppercase;
+    }
+
+    .bm-copy {
+      max-width: 850px;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .bm-copy p {
+      margin: 0 0 22px;
+    }
+
+    .bm-box-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .bm-box {
+      padding: 24px;
+      border: 2px solid var(--bm-pink);
+      background: #111;
+    }
+
+    .bm-box:nth-child(2) {
+      border-color: var(--bm-yellow);
+    }
+
+    .bm-box:nth-child(3) {
+      border-color: var(--bm-purple);
+    }
+
+    .bm-box:nth-child(4) {
+      border-color: var(--bm-white);
+    }
+
+    .bm-box h3 {
+      margin: 12px 0;
+      font-size: 24px;
+      text-transform: uppercase;
+    }
+
+    .bm-box p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .bm-callout {
+      max-width: 950px;
+      margin: 35px 0;
+      padding: 24px;
+      border: 3px solid var(--bm-yellow);
+      color: var(--bm-yellow);
+      font-size: clamp(21px, 3vw, 34px);
+      font-weight: 900;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .bm-ending {
+      padding: 80px 7vw;
+      background: var(--bm-purple);
+    }
+
+    .bm-ending-inner {
+      max-width: 1250px;
+      margin: 0 auto;
+    }
+
+    .bm-ending h2 {
+      margin: 12px 0 24px;
+      font-size: clamp(46px, 8vw, 110px);
+      line-height: .92;
+      letter-spacing: -.06em;
+      text-transform: uppercase;
+    }
+
+    .bm-ending p {
+      max-width: 780px;
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    .bm-back {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 14px 18px;
+      border: 2px solid var(--bm-yellow);
+      color: var(--bm-yellow);
+      font-weight: 900;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 700px) {
+      .bm-hero {
+        min-height: 75vh;
+        padding: 90px 22px;
+        background-image:
+          linear-gradient(
+            180deg,
+            rgba(8, 8, 8, .55),
+            rgba(8, 8, 8, .08)
+          ),
+          var(--bm-mobile);
+        background-position: center, center bottom;
+      }
+
+      .bm-section {
+        padding: 58px 22px;
+      }
+
+      .bm-box-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .bm-ending {
+        padding: 65px 22px;
+      }
+    }
+  </style>
+
+
+  <!-- HERO -->
+  <section class="bm-hero"
+           style="--bm-desktop: url('<%= asset_path('bipolar_medications_desktop.png') %>');
+                  --bm-mobile: url('<%= asset_path('bipolar_medications_mobile.png') %>');">
+
+    <div class="bm-hero-content">
+
+      <p class="bm-eyebrow">
+        BIPOLAR SOBER / BIPOLAR / ON MEDICATIONS
+      </p>
+
+      <h1>
+        <span>ON</span>
+        <span>MEDICATIONS.</span>
+      </h1>
+
+      <p class="bm-intro">
+        PART OF THE WORK.<br>
+        NOT THE WHOLE STORY.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- 01 / YOUR ROUTINE -->
+  <section class="bm-section">
+    <div class="bm-section-inner">
+
+      <p class="bm-section-label">01 / YOUR ROUTINE</p>
+
+      <h2>
+        TAKING THEM<br>
+        ISN'T THE HARD PART.
+      </h2>
+
+      <div class="bm-copy">
+        <p>
+          You take your medication. You don’t have to invent a struggle
+          with it just because medication is a complicated subject for
+          some people. This is one part of your life with bipolar disorder
+          that you can describe plainly: you take your meds.
+        </p>
+
+        <p>
+          That routine matters to you, but it doesn’t have to become your
+          whole identity or the only measure of how well you’re doing.
+          Taking medication doesn’t mean every symptom disappears, and
+          having a difficult episode doesn’t erase the fact that you’ve
+          kept taking it.
+        </p>
+      </div>
+
+      <div class="bm-callout">
+        YOU CAN TAKE YOUR MEDS AND STILL NEED SUPPORT.
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 02 / THE WHOLE PICTURE -->
+  <section class="bm-section">
+    <div class="bm-section-inner">
+
+      <p class="bm-section-label">02 / THE WHOLE PICTURE</p>
+
+      <h2>
+        MEDICATION<br>
+        IS ONE PART.
+      </h2>
+
+      <div class="bm-copy">
+        <p>
+          Living with bipolar disorder still asks things of you: noticing
+          mood changes, managing impulsivity, dealing with the effects of
+          depression, asking for help, and taking responsibility for
+          decisions and their consequences.
+        </p>
+
+        <p>
+          You’ve described overspending and impulsive decisions as real
+          challenges. Those deserve attention in their own right. You
+          don’t need to turn them into proof that you aren’t trying or
+          that your medication routine doesn’t count.
+        </p>
+      </div>
+
+      <div class="bm-box-grid">
+
+        <article class="bm-box">
+          <p class="bm-card-label">YOU CAN</p>
+          <h3>KEEP TAKING THEM</h3>
+          <p>
+            Medication can be part of the structure you use to care
+            for yourself.
+          </p>
+        </article>
+
+        <article class="bm-box">
+          <p class="bm-card-label">AND</p>
+          <h3>KEEP PAYING ATTENTION</h3>
+          <p>
+            Your moods, sleep, energy, and choices still deserve honest
+            attention.
+          </p>
+        </article>
+
+        <article class="bm-box">
+          <p class="bm-card-label">AND</p>
+          <h3>ASK FOR SUPPORT</h3>
+          <p>
+            You can bring concerns or changes to your treatment team
+            without needing to prove that things are bad enough first.
+          </p>
+        </article>
+
+        <article class="bm-box">
+          <p class="bm-card-label">AND</p>
+          <h3>OWN YOUR CHOICES</h3>
+          <p>
+            Treatment and accountability can sit beside each other.
+            Neither one cancels the other out.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 03 / WHEN SOMETHING CHANGES -->
+  <section class="bm-section">
+    <div class="bm-section-inner">
+
+      <p class="bm-section-label">03 / WHEN SOMETHING CHANGES</p>
+
+      <h2>
+        BRING IT<br>
+        INTO THE ROOM.
+      </h2>
+
+      <div class="bm-copy">
+        <p>
+          If your symptoms, routine, or concerns change, you can tell your
+          prescriber directly. You don’t have to make the conversation
+          dramatic or show up with a perfect explanation. “Something feels
+          different” is a useful place to start.
+        </p>
+
+        <p>
+          Questions about your medication plan belong in a conversation
+          with your health care provider. You don’t have to make changes
+          to that plan on your own.
+        </p>
+      </div>
+
+      <div class="bm-callout">
+        HONEST INFORMATION HELPS YOUR CARE TEAM UNDERSTAND WHAT’S HAPPENING.
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ENDING -->
+  <section class="bm-ending">
+    <div class="bm-ending-inner">
+
+      <p class="bm-section-label">KEEP THE WHOLE PERSON IN VIEW</p>
+
+      <h2>
+        TREATMENT<br>
+        IS PART OF<br>
+        YOUR LIFE.
+      </h2>
+
+      <p>
+        You take your medication. You also have a life, responsibilities,
+        relationships, symptoms, plans, and difficult days. Let the routine
+        support you without reducing you to a diagnosis or a pill organizer.
+      </p>
+
+      <%= link_to "← BACK TO BIPOLAR",
+          bipolar_path,
+          class: "bm-back" %>
+
+    </div>
+  </section>
+
+</main>

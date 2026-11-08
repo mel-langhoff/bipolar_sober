@@ -4,7 +4,6 @@
 
   <!-- HERO -->
   <section class="bipolar-hero">
-
     <div class="bipolar-hero-content">
 
       <p class="bipolar-eyebrow">
@@ -23,18 +22,14 @@
       </p>
 
     </div>
-
   </section>
-
 
   <!-- TOPICS -->
   <section class="bipolar-topics" id="bipolar-topics">
 
     <div class="bipolar-topics-heading">
 
-      <p>
-        01 / BIPOLAR
-      </p>
+      <p>01 / BIPOLAR</p>
 
       <h2>
         PICK YOUR<br>
@@ -48,17 +43,13 @@
 
     </div>
 
-
     <div class="bipolar-grid">
-
 
       <!-- PERSPECTIVES -->
       <%= link_to bipolar_perspectives_path,
           class: "bipolar-card card-pink" do %>
 
-        <p class="bipolar-card-number">
-          01
-        </p>
+        <p class="bipolar-card-number">01</p>
 
         <h3>
           PERSPECTIVES<br>
@@ -71,19 +62,15 @@
           recovery, identity, and living with your own brain.
         </p>
 
-        <span>
-          EXPLORE →
-        </span>
+        <span>EXPLORE →</span>
 
       <% end %>
 
-
       <!-- ANGER -->
-      <a href="#" class="bipolar-card card-yellow">
+      <%= link_to bipolar_anger_path,
+          class: "bipolar-card card-yellow" do %>
 
-        <p class="bipolar-card-number">
-          02
-        </p>
+        <p class="bipolar-card-number">02</p>
 
         <h3>
           ON<br>
@@ -95,19 +82,15 @@
           and what happens when zero suddenly becomes one hundred.
         </p>
 
-        <span>
-          EXPLORE →
-        </span>
+        <span>EXPLORE →</span>
 
-      </a>
-
+      <% end %>
 
       <!-- MANIA -->
-      <a href="#" class="bipolar-card card-purple">
+      <%= link_to bipolar_mania_path,
+          class: "bipolar-card card-purple" do %>
 
-        <p class="bipolar-card-number">
-          03
-        </p>
+        <p class="bipolar-card-number">03</p>
 
         <h3>
           ON<br>
@@ -119,19 +102,15 @@
           bigger, and considerably more complicated.
         </p>
 
-        <span>
-          EXPLORE →
-        </span>
+        <span>EXPLORE →</span>
 
-      </a>
-
+      <% end %>
 
       <!-- DEPRESSION -->
-      <a href="#" class="bipolar-card card-black">
+      <%= link_to bipolar_depression_path,
+          class: "bipolar-card card-black" do %>
 
-        <p class="bipolar-card-number">
-          04
-        </p>
+        <p class="bipolar-card-number">04</p>
 
         <h3>
           ON<br>
@@ -144,19 +123,15 @@
           the fucking thing.
         </p>
 
-        <span>
-          EXPLORE →
-        </span>
+        <span>EXPLORE →</span>
 
-      </a>
-
+      <% end %>
 
       <!-- MIXED EPISODES -->
-      <a href="#" class="bipolar-card card-split">
+      <%= link_to bipolar_mixed_episodes_path,
+          class: "bipolar-card card-split" do %>
 
-        <p class="bipolar-card-number">
-          05
-        </p>
+        <p class="bipolar-card-number">05</p>
 
         <h3>
           ON MIXED<br>
@@ -168,19 +143,15 @@
           When opposite symptoms decide to show up together.
         </p>
 
-        <span>
-          EXPLORE →
-        </span>
+        <span>EXPLORE →</span>
 
-      </a>
-
+      <% end %>
 
       <!-- IMPULSIVITY -->
-      <a href="#" class="bipolar-card card-pink">
+      <%= link_to bipolar_impulsivity_path,
+          class: "bipolar-card card-pink" do %>
 
-        <p class="bipolar-card-number">
-          06
-        </p>
+        <p class="bipolar-card-number">06</p>
 
         <h3>
           ON<br>
@@ -192,16 +163,76 @@
           And learning how to put something between them.
         </p>
 
-        <span>
-          EXPLORE →
-        </span>
+        <span>EXPLORE →</span>
 
-        
+      <% end %>
 
-      </a>
 
+
+      <!-- PSYCHOSIS -->
+      <%= link_to bipolar_psychosis_path,
+          class: "bipolar-card card-purple" do %>
+
+        <p class="bipolar-card-number">07</p>
+
+        <h3>
+          ON<br>
+          PSYCHOSIS
+        </h3>
+
+        <p class="bipolar-card-description">
+          When perception and reality stop lining up.
+          Delusions, hallucinations, altered beliefs,
+          and trying to make sense of what your mind
+          is telling you.
+        </p>
+
+        <span>EXPLORE →</span>
+
+      <% end %>
+
+<!-- MEDICATIONS -->
+<%= link_to bipolar_medications_path,
+    class: "bipolar-card card-yellow" do %>
+
+  <p class="bipolar-card-number">08</p>
+
+  <h3>
+    ON<br>
+    MEDICATIONS
+  </h3>
+
+  <p class="bipolar-card-description">
+    Taking your meds is part of your routine. It doesn’t erase
+    the work of living with bipolar disorder, and struggling
+    with symptoms doesn’t mean you’ve failed at treatment.
+  </p>
+
+  <span>LOOK AT THE WHOLE PICTURE →</span>
+
+<% end %>
+
+      <!-- MOOD SWINGS -->
+      <%= link_to bipolar_mood_swings_path,
+          class: "bipolar-card card-pink" do %>
+
+        <p class="bipolar-card-number">09</p>
+
+        <h3>
+          ON<br>
+          MOOD SWINGS
+        </h3>
+
+        <p class="bipolar-card-description">
+          Shifts in mood, energy, and irritability.
+          What you notice, how it affects your day,
+          and where it fits among the other topics.
+        </p>
+
+        <span>EXPLORE →</span>
+
+      <% end %>
     </div>
-
   </section>
 
 </main>

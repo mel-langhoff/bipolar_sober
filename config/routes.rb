@@ -37,6 +37,43 @@ Rails.application.routes.draw do
 
 
   # ==========================================
+  # BIPOLAR > TOPICS
+  # ==========================================
+
+  get "bipolar/anger",
+      to: "bipolar_topics#anger",
+      as: :bipolar_anger
+
+  get "bipolar/mania",
+      to: "bipolar_topics#mania",
+      as: :bipolar_mania
+
+  get "bipolar/depression",
+      to: "bipolar_topics#depression",
+      as: :bipolar_depression
+
+  get "bipolar/mixed_episodes",
+      to: "bipolar_topics#mixed_episodes",
+      as: :bipolar_mixed_episodes
+
+  get "bipolar/impulsivity",
+      to: "bipolar_topics#impulsivity",
+      as: :bipolar_impulsivity
+
+      get "bipolar/psychosis",
+      to: "bipolar_topics#psychosis",
+      as: :bipolar_psychosis
+
+      get "bipolar/medications",
+    to: "bipolar_topics#medications",
+    as: :bipolar_medications
+
+    get "bipolar/mood-swings",
+    to: "bipolar_topics#mood_swings",
+    as: :bipolar_mood_swings
+
+
+  # ==========================================
   # BIPOLAR > PERSPECTIVES
   # ==========================================
 
@@ -92,6 +129,64 @@ Rails.application.routes.draw do
   get "addiction/impulsivity",
       to: "addiction_topics#impulsivity",
       as: :addiction_impulsivity
+
+  get "addiction/bipolar",
+      to: "addiction_topics#bipolar",
+      as: :addiction_bipolar
+
+  get "addiction/cravings",
+      to: "addiction_topics#cravings",
+      as: :addiction_cravings
+
+  get "addiction/shame",
+      to: "addiction_topics#shame",
+      as: :addiction_shame
+
+
+  # ==========================================
+  # ADDICTION > PERSPECTIVES > INDIVIDUAL PAGES
+  # ==========================================
+
+  get "addiction/perspectives/buddhism",
+      to: "addiction_perspectives#buddhism",
+      as: :addiction_perspectives_buddhism
+
+  get "addiction/perspectives/hinduism",
+      to: "addiction_perspectives#hinduism",
+      as: :addiction_perspectives_hinduism
+
+  get "addiction/perspectives/stoicism",
+      to: "addiction_perspectives#stoicism",
+      as: :addiction_perspectives_stoicism
+
+  get "addiction/perspectives/cbt",
+      to: "addiction_perspectives#cbt",
+      as: :addiction_perspectives_cbt
+
+  get "addiction/perspectives/dbt",
+      to: "addiction_perspectives#dbt",
+      as: :addiction_perspectives_dbt
+
+  get "addiction/perspectives/ifs",
+      to: "addiction_perspectives#ifs",
+      as: :addiction_perspectives_ifs
+
+  get "addiction/perspectives/big-picture",
+      to: "addiction_perspectives#big_picture",
+      as: :addiction_perspectives_big_picture
+
+      get "addiction/perspectives/shinto",
+    to: "addiction_perspectives#shinto",
+    as: :addiction_perspectives_shinto
+
+    get "addiction/perspectives/paganism",
+    to: "addiction_perspectives#paganism",
+    as: :addiction_perspectives_paganism
+
+      get "addiction/perspectives/taoism",
+      to: "addiction_perspectives#taoism",
+      as: :addiction_perspectives_taoism
+
 
 
   # ==========================================
@@ -159,6 +254,18 @@ Rails.application.routes.draw do
       to: "spirituality_topics#my_spirituality",
       as: :spirituality_my_spirituality
 
+      get "spirituality/shinto",
+    to: "spirituality_topics#shinto",
+    as: :spirituality_shinto
+
+get "spirituality/paganism",
+    to: "spirituality_topics#paganism",
+    as: :spirituality_paganism
+
+    get "spirituality/taoism",
+    to: "spirituality_topics#taoism",
+    as: :spirituality_taoism
+
 
   # ==========================================
   # PERSPECTIVES > TOPICS
@@ -179,5 +286,91 @@ Rails.application.routes.draw do
   get "perspectives/on-the-inside",
       to: "perspectives_topics#inside",
       as: :perspectives_inside
+
+      get "addiction/first-dui",
+    to: "addiction_perspectives#first_dui",
+    as: :addiction_perspectives_first_dui
+
+    get "addiction/third-dui",
+    to: "addiction_perspectives#third_dui",
+    as: :addiction_perspectives_third_dui
+
+    get "/addiction/press-send",
+    to: "addiction_perspectives#press_send",
+    as: :addiction_perspectives_press_send
+
+
+      # TOOLBOX TOOLS
+get "toolbox/play-the-tape-forward",
+    to: "toolbox_tools#play_the_tape_forward",
+    as: :play_the_tape_forward
+
+get "toolbox/ten-ten-ten",
+    to: "toolbox_tools#ten_ten_ten",
+    as: :ten_ten_ten
+
+get "toolbox/when-you-dont-trust-your-mood",
+    to: "toolbox_tools#when_you_dont_trust_your_mood",
+    as: :when_you_dont_trust_your_mood
+
+get "toolbox/press-pause",
+    to: "toolbox_tools#press_pause",
+    as: :press_pause
+
+get "toolbox/after-you-fuck-up",
+    to: "toolbox_tools#after_you_fuck_up",
+    as: :after_you_fuck_up
+
+get "toolbox/bare-minimum-day",
+    to: "toolbox_tools#bare_minimum_day",
+    as: :bare_minimum_day
+
+get "toolbox/time-capsule",
+    to: "toolbox_tools#time_capsule",
+    as: :time_capsule
+
+    get "toolbox/are-you-the-fucking-oracle",
+    to: "toolbox_tools#are_you_the_fucking_oracle",
+    as: :are_you_the_fucking_oracle
+
+get "toolbox/asking-for-help",
+    to: "toolbox_tools#asking_for_help",
+    as: :asking_for_help
+
+get "toolbox/let-creativity-in",
+    to: "toolbox_tools#let_creativity_in",
+    as: :let_creativity_in
+
+get "toolbox/whats-your-fucking-normal",
+    to: "toolbox_tools#whats_your_fucking_normal",
+    as: :whats_your_fucking_normal
+
+get "toolbox/urgent-according-to-who",
+    to: "toolbox_tools#urgent_according_to_who",
+    as: :urgent_according_to_who
+
+get "toolbox/dont-poke-the-bipolar-bear",
+    to: "toolbox_tools#dont_poke_the_bipolar_bear",
+    as: :dont_poke_the_bipolar_bear
+
+    get "toolbox/who-am-i-without-it",
+    to: "toolbox_tools#who_am_i_without_it",
+    as: :who_am_i_without_it
+
+    # RELAPSE PLANS
+scope "toolbox/relapse-plans", controller: :relapse_plans, as: :relapse_plan do
+  get "mania", to: "relapse_plans#mania", as: :mania
+  get "depression", to: "relapse_plans#depression", as: :depression
+  get "mixed-symptoms", to: "relapse_plans#mixed_symptoms", as: :mixed_symptoms
+  get "impulsivity", to: "relapse_plans#impulsivity", as: :impulsivity
+  get "chronic-pain", to: "relapse_plans#chronic_pain", as: :chronic_pain
+  get "boredom", to: "relapse_plans#boredom", as: :boredom
+  get "anger", to: "relapse_plans#anger", as: :anger
+  get "loneliness", to: "relapse_plans#loneliness", as: :loneliness
+  get "social-pressure", to: "relapse_plans#social_pressure", as: :social_pressure
+  get "after-drinking", to: "relapse_plans#after_drinking", as: :after_drinking
+end
+
+
 
 end

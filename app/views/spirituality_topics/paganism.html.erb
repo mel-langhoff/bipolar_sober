@@ -1,0 +1,1188 @@
+<% content_for :title, "Paganism | Bipolar Sober" %>
+
+<style>
+  /* ==========================================
+     PAGANISM — COMPLETE PAGE STYLES
+     ========================================== */
+
+  .pg-page {
+    --pg-black: #080808;
+    --pg-pink: #ff1493;
+    --pg-yellow: #eaff00;
+    --pg-purple: #8a00ff;
+    --pg-white: #ffffff;
+
+    width: 100%;
+    margin: 0;
+    background: var(--pg-black);
+    color: var(--pg-white);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pg-page,
+  .pg-page *,
+  .pg-page *::before,
+  .pg-page *::after {
+    box-sizing: border-box;
+  }
+
+  .pg-page h1,
+  .pg-page h2,
+  .pg-page h3,
+  .pg-page p {
+    margin: 0;
+  }
+
+  /* HERO */
+
+  .pg-page .pg-hero {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    min-height: 800px;
+    min-height: max(800px, 100svh);
+    padding: 130px 5vw 90px;
+    background: var(--pg-black);
+  }
+
+  .pg-page .pg-hero-picture {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .pg-page .pg-hero-picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+  }
+
+  .pg-page .pg-hero::after {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    content: "";
+    background:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, 0.35),
+        transparent 70%
+      );
+    pointer-events: none;
+  }
+
+  .pg-page .pg-hero-content {
+    width: 58%;
+    max-width: 880px;
+  }
+
+  .pg-page .pg-eyebrow {
+    margin-bottom: 32px;
+    color: var(--pg-yellow);
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.6;
+    letter-spacing: 0.12em;
+  }
+
+  .pg-page .pg-hero h1 {
+    color: var(--pg-white);
+    font-size: clamp(64px, 7.4vw, 142px);
+    font-weight: 900;
+    line-height: 0.94;
+    letter-spacing: -0.065em;
+    text-transform: uppercase;
+  }
+
+  .pg-page .pg-hero h1 span {
+    display: block;
+  }
+
+  .pg-page .pg-intro {
+    max-width: 530px;
+    margin-top: 32px;
+    color: var(--pg-white);
+    font-size: clamp(14px, 1.25vw, 19px);
+    font-weight: 800;
+    line-height: 1.65;
+  }
+
+  /* SECTION LAYOUT */
+
+  .pg-page .pg-section {
+    padding: 88px 5vw;
+  }
+
+  .pg-page .pg-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    align-items: start;
+    gap: clamp(35px, 5vw, 100px);
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .pg-page .pg-heading,
+  .pg-page .pg-copy {
+    min-width: 0;
+  }
+
+  .pg-page .pg-number {
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.6;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .pg-page .pg-heading h2 {
+    font-size: clamp(38px, 4.6vw, 82px);
+    font-weight: 900;
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+  }
+
+  .pg-page .pg-copy > p {
+    margin-bottom: 23px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .pg-page .pg-copy > p:last-child {
+    margin-bottom: 0;
+  }
+
+  .pg-page .pg-copy > .pg-lead {
+    font-size: clamp(21px, 2vw, 27px);
+    font-weight: 800;
+    line-height: 1.45;
+    letter-spacing: -0.025em;
+  }
+
+  /* SECTION COLORS */
+
+  .pg-page .pg-black {
+    background: var(--pg-black);
+    color: var(--pg-white);
+  }
+
+  .pg-page .pg-pink {
+    background: var(--pg-pink);
+    color: var(--pg-black);
+  }
+
+  .pg-page .pg-yellow {
+    background: var(--pg-yellow);
+    color: var(--pg-black);
+  }
+
+  .pg-page .pg-purple {
+    background: var(--pg-purple);
+    color: var(--pg-white);
+  }
+
+  .pg-page .pg-black .pg-number,
+  .pg-page .pg-purple .pg-number {
+    color: var(--pg-yellow);
+  }
+
+  /* CARDS */
+
+  .pg-page .pg-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 30px 0;
+  }
+
+  .pg-page .pg-card {
+    min-width: 0;
+    padding: 24px;
+    border: 2px solid currentColor;
+    background: transparent;
+    color: inherit;
+  }
+
+  .pg-page .pg-card-label {
+    display: block;
+    margin-bottom: 18px;
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .pg-page .pg-card h3 {
+    margin-bottom: 14px;
+    font-size: clamp(21px, 2vw, 29px);
+    font-weight: 900;
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+  }
+
+  .pg-page .pg-card p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* CALLOUTS AND STACKED BOXES */
+
+  .pg-page .pg-callout {
+    margin: 30px 0;
+    padding: 26px;
+    border: 3px solid currentColor;
+    font-size: clamp(21px, 2.4vw, 34px);
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+  }
+
+  .pg-page .pg-black .pg-callout,
+  .pg-page .pg-purple .pg-callout {
+    color: var(--pg-yellow);
+  }
+
+  .pg-page .pg-stack {
+    display: grid;
+    gap: 12px;
+    margin: 30px 0;
+  }
+
+  .pg-page .pg-stack p {
+    padding: 18px 20px;
+    border: 2px solid currentColor;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  /* PRACTICE BOXES */
+
+  .pg-page .pg-practice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .pg-page .pg-practice {
+    min-width: 0;
+    padding: 24px;
+    border: 2px solid currentColor;
+  }
+
+  .pg-page .pg-practice span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.05em;
+  }
+
+  .pg-page .pg-practice p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.65;
+  }
+
+  /* ENDING */
+
+  .pg-page .pg-ending {
+    padding: 95px 5vw;
+    background: var(--pg-black);
+    color: var(--pg-white);
+  }
+
+  .pg-page .pg-ending-inner {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .pg-page .pg-ending-label {
+    margin-bottom: 30px;
+    color: var(--pg-yellow);
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+  }
+
+  .pg-page .pg-ending h2 {
+    margin-bottom: 32px;
+    font-size: clamp(54px, 8vw, 135px);
+    font-weight: 900;
+    line-height: 0.93;
+    letter-spacing: -0.065em;
+  }
+
+  .pg-page .pg-ending-copy {
+    max-width: 620px;
+    margin-bottom: 35px;
+    font-size: 19px;
+    line-height: 1.8;
+  }
+
+  .pg-page .pg-back {
+    display: inline-block;
+    max-width: 100%;
+    padding: 17px 22px;
+    border: 2px solid var(--pg-yellow);
+    color: var(--pg-yellow);
+    background: transparent;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition:
+      background-color 160ms ease,
+      color 160ms ease;
+  }
+
+  .pg-page .pg-back:hover {
+    background: var(--pg-yellow);
+    color: var(--pg-black);
+  }
+
+  .pg-page .pg-back:focus-visible {
+    outline: 3px solid var(--pg-white);
+    outline-offset: 5px;
+  }
+
+  /* TABLET */
+
+  @media (max-width: 1000px) {
+    .pg-page .pg-inner {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 35px;
+      max-width: 850px;
+    }
+
+    .pg-page .pg-heading h2 {
+      font-size: clamp(48px, 7vw, 76px);
+    }
+
+    .pg-page .pg-hero-content {
+      width: 62%;
+    }
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 767px) {
+    .pg-page .pg-hero {
+      align-items: flex-start;
+      min-height: 1000px;
+      min-height: max(1000px, 125svh);
+      padding: 110px 22px 60px;
+    }
+
+    .pg-page .pg-hero-picture img {
+      object-position: center bottom;
+    }
+
+    .pg-page .pg-hero::after {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(8, 8, 8, 0.12),
+          transparent 65%
+        );
+    }
+
+    .pg-page .pg-hero-content {
+      width: 100%;
+      max-width: 550px;
+    }
+
+    .pg-page .pg-eyebrow {
+      margin-bottom: 28px;
+      font-size: 10px;
+      letter-spacing: 0.08em;
+    }
+
+    .pg-page .pg-hero h1 {
+      font-size: clamp(45px, 11.5vw, 85px);
+    }
+
+    .pg-page .pg-intro {
+      max-width: 360px;
+      margin-top: 27px;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    .pg-page .pg-section {
+      padding: 60px 22px;
+    }
+
+    .pg-page .pg-inner {
+      gap: 30px;
+    }
+
+    .pg-page .pg-heading h2 {
+      font-size: clamp(39px, 10vw, 66px);
+    }
+
+    .pg-page .pg-number {
+      margin-bottom: 20px;
+      font-size: 11px;
+    }
+
+    .pg-page .pg-copy > p {
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .pg-page .pg-grid,
+    .pg-page .pg-practice-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .pg-page .pg-card,
+    .pg-page .pg-practice {
+      padding: 24px;
+    }
+
+    .pg-page .pg-card h3 {
+      font-size: 26px;
+    }
+
+    .pg-page .pg-callout {
+      padding: 23px;
+      font-size: 25px;
+    }
+
+    .pg-page .pg-ending {
+      padding: 70px 22px;
+    }
+
+    .pg-page .pg-ending h2 {
+      font-size: clamp(48px, 12vw, 85px);
+    }
+
+    .pg-page .pg-ending-copy {
+      font-size: 17px;
+    }
+  }
+</style>
+
+
+<main class="pg-page">
+
+  <!-- HERO -->
+  <section class="pg-hero">
+
+    <picture class="pg-hero-picture">
+      <source
+        media="(max-width: 767px)"
+        srcset="<%= asset_path('spirituality_paganism_mobile.png') %>"
+      >
+
+      <%= image_tag "spirituality_paganism_desktop.png",
+          alt: "",
+          fetchpriority: "high" %>
+    </picture>
+
+    <div class="pg-hero-content">
+
+      <p class="pg-eyebrow">
+        BIPOLAR SOBER / SPIRITUALITY / PAGANISM
+      </p>
+
+      <h1>
+        <span>YOU ARE</span>
+        <span>PART OF</span>
+        <span>THIS WORLD.</span>
+      </h1>
+
+      <p class="pg-intro">
+        NATURE. RITUAL. RELATIONSHIP.<br>
+        FINDING THE SACRED IN YOUR EVERYDAY LIFE.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- 01 / INTRODUCTION -->
+  <section class="pg-section pg-black">
+    <div class="pg-inner">
+
+      <div class="pg-heading">
+        <p class="pg-number">01 / THE BIG FUCKING PICTURE</p>
+
+        <h2>
+          MANY PATHS.<br>
+          A WORLD<br>
+          TO EXPLORE.
+        </h2>
+      </div>
+
+      <div class="pg-copy">
+
+        <p class="pg-lead">
+          Through Paganism, you encounter a diverse family
+          of spiritual traditions.
+        </p>
+
+        <p>
+          You might explore Druidry, Heathenry, Hellenic
+          polytheism, Wicca, or other contemporary Pagan paths.
+          Each brings its own histories, practices,
+          and understandings of the sacred.
+        </p>
+
+        <p>
+          Across many of these traditions, you find an invitation
+          to cultivate reverence, pay attention to your
+          relationships, and consider what you contribute.
+        </p>
+
+        <div class="pg-stack">
+          <p>What do you hold sacred?</p>
+          <p>How do you express gratitude?</p>
+          <p>What relationships do you cultivate?</p>
+          <p>What responsibilities follow?</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 02 / NATURE -->
+  <section class="pg-section pg-pink">
+    <div class="pg-inner">
+
+      <div class="pg-heading">
+        <p class="pg-number">02 / NATURE &amp; RELATIONSHIP</p>
+
+        <h2>
+          NOTICE<br>
+          THE WORLD<br>
+          AROUND YOU.
+        </h2>
+      </div>
+
+      <div class="pg-copy">
+
+        <p>
+          You can approach mountains, rivers, forests,
+          animals, and plants with spiritual reverence.
+          Your tradition may understand them through
+          deities, spirits, or the sacredness of nature itself.
+        </p>
+
+        <p>
+          You also depend on this world. Your food, water,
+          shelter, and breath connect your life with
+          ecological systems larger than yourself.
+        </p>
+
+        <div class="pg-grid">
+
+          <div class="pg-card">
+            <span class="pg-card-label">ATTENTION</span>
+            <h3>Know your place.</h3>
+            <p>
+              Learn about the plants, wildlife, weather,
+              and seasonal changes where you live.
+            </p>
+          </div>
+
+          <div class="pg-card">
+            <span class="pg-card-label">RESPONSIBILITY</span>
+            <h3>Let respect become care.</h3>
+            <p>
+              Consider how your choices affect the land,
+              water, and beings around you.
+            </p>
+          </div>
+
+        </div>
+
+        <p>
+          Begin wherever you are: a window, your doorstep,
+          or a familiar view. Your relationship with nature
+          can develop within your physical capacity.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 03 / BELIEFS -->
+  <section class="pg-section pg-yellow">
+    <div class="pg-inner">
+
+      <div class="pg-heading">
+        <p class="pg-number">03 / UNDERSTANDING THE SACRED</p>
+
+        <h2>
+          EXPLORE<br>
+          WHAT YOU<br>
+          REVERENCE.
+        </h2>
+      </div>
+
+      <div class="pg-copy">
+
+        <p>
+          You will encounter different understandings
+          of divinity within Paganism. These perspectives
+          may overlap, depending on the tradition
+          and practitioner.
+        </p>
+
+        <div class="pg-grid">
+
+          <div class="pg-card">
+            <span class="pg-card-label">POLYTHEISM</span>
+            <h3>Many deities.</h3>
+            <p>
+              You may honor distinct gods with their
+              own identities, stories, and relationships.
+            </p>
+          </div>
+
+          <div class="pg-card">
+            <span class="pg-card-label">PANTHEISM</span>
+            <h3>Divine existence.</h3>
+            <p>
+              You may understand nature or the universe
+              itself as divine.
+            </p>
+          </div>
+
+          <div class="pg-card">
+            <span class="pg-card-label">ANIMISM</span>
+            <h3>A wider community.</h3>
+            <p>
+              You may relate to animals, plants, places,
+              or other beings as possessing agency,
+              personhood, or spiritual presence.
+            </p>
+          </div>
+
+          <div class="pg-card">
+            <span class="pg-card-label">NON-THEISTIC PRACTICE</span>
+            <h3>Reverence &amp; meaning.</h3>
+            <p>
+              You may cultivate ritual and a sacred
+              relationship with nature without
+              belief in deities.
+            </p>
+          </div>
+
+        </div>
+
+        <p>
+          Learn how each tradition understands its practices.
+          Give your personal exploration a foundation
+          in study and respect for living communities.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / SEASONS -->
+  <section class="pg-section pg-purple">
+    <div class="pg-inner">
+
+      <div class="pg-heading">
+        <p class="pg-number">04 / SEASONS &amp; CYCLES</p>
+
+        <h2>
+          YOUR WORLD<br>
+          KEEPS<br>
+          CHANGING.
+        </h2>
+      </div>
+
+      <div class="pg-copy">
+
+        <p>
+          You can mark seasonal changes, lunar phases,
+          agricultural rhythms, and festivals.
+          Some contemporary Pagan paths observe an
+          eight-festival Wheel of the Year; others
+          follow different calendars.
+        </p>
+
+        <div class="pg-grid">
+
+          <div class="pg-card">
+            <span class="pg-card-label">SPRING</span>
+            <h3>Emergence.</h3>
+            <p>
+              Notice returning growth.
+              Consider what you want to begin or nurture.
+            </p>
+          </div>
+
+          <div class="pg-card">
+            <span class="pg-card-label">SUMMER</span>
+            <h3>Growth.</h3>
+            <p>
+              Recognize vitality and abundance.
+              Tend what is developing.
+            </p>
+          </div>
+
+          <div class="pg-card">
+            <span class="pg-card-label">AUTUMN</span>
+            <h3>Harvest &amp; release.</h3>
+            <p>
+              Express gratitude for what sustains you.
+              Acknowledge what is ending.
+            </p>
+          </div>
+
+          <div class="pg-card">
+            <span class="pg-card-label">WINTER</span>
+            <h3>Rest &amp; reflection.</h3>
+            <p>
+              Make room for quiet and limits.
+              Consider what needs patient care.
+            </p>
+          </div>
+
+        </div>
+
+        <p>
+          Use these cycles as invitations for reflection.
+          Your grief, energy, and growth can follow
+          their own timing.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 05 / ANCESTORS -->
+  <section class="pg-section pg-black">
+    <div class="pg-inner">
+
+      <div class="pg-heading">
+        <p class="pg-number">05 / ANCESTORS &amp; INHERITANCE</p>
+
+        <h2>
+          REMEMBER<br>
+          WHO CAME<br>
+          BEFORE YOU.
+        </h2>
+      </div>
+
+      <div class="pg-copy">
+
+        <p>
+          In traditions that honor ancestors, you may
+          remember deceased relatives, cultural predecessors,
+          or people who shaped your spiritual community.
+        </p>
+
+        <p>
+          Keep a photograph, speak a name, prepare a meaningful
+          meal, or create a place for remembrance.
+          Your understanding of ancestral presence depends
+          on your beliefs and tradition.
+        </p>
+
+        <p>
+          You can examine difficult inheritances too.
+          Honor your history while choosing what
+          deserves to continue through your own life.
+        </p>
+
+        <div class="pg-stack">
+          <p>What stories have you inherited?</p>
+          <p>What wisdom will you keep?</p>
+          <p>What patterns will you question?</p>
+          <p>What will you pass on?</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 06 / OFFERINGS -->
+  <section class="pg-section pg-pink">
+    <div class="pg-inner">
+
+      <div class="pg-heading">
+        <p class="pg-number">06 / RECIPROCITY &amp; RITUAL</p>
+
+        <h2>
+          WHAT ARE<br>
+          YOU GIVING<br>
+          BACK?
+        </h2>
+      </div>
+
+      <div class="pg-copy">
+
+        <p>
+          Through reciprocity, you consider what you
+          contribute to relationships that sustain you.
+          Your offerings may express gratitude,
+          devotion, hospitality, or remembrance.
+        </p>
+
+        <div class="pg-grid">
+
+          <div class="pg-card">
+            <span class="pg-card-label">YOUR ALTAR</span>
+            <h3>Water &amp; flowers.</h3>
+            <p>
+              Make a simple offering appropriate
+              to your tradition and circumstances.
+            </p>
+          </div>
+
+          <div class="pg-card">
+            <span class="pg-card-label">YOUR CREATIVITY</span>
+            <h3>Make something.</h3>
+            <p>
+              Dedicate a drawing, song, poem,
+              or handmade object to your practice.
+            </p>
+          </div>
+
+          <div class="pg-card">
+            <span class="pg-card-label">YOUR TIME</span>
+            <h3>Offer attention.</h3>
+            <p>
+              Make space for prayer, remembrance,
+              study, or tending your altar.
+            </p>
+          </div>
+
+          <div class="pg-card">
+            <span class="pg-card-label">YOUR ACTIONS</span>
+            <h3>Practice care.</h3>
+            <p>
+              Help your community, care for an animal,
+              or contribute to your surroundings.
+            </p>
+          </div>
+
+        </div>
+
+        <p>
+          Ritual gives your intentions a deliberate expression.
+          Prepare your space, name your purpose,
+          make your offering, and close with gratitude.
+        </p>
+
+        <p>
+          Choose offerings that support your sobriety.
+          Outdoors, protect wildlife and leave
+          no harmful materials behind.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 07 / DISCERNMENT -->
+  <section class="pg-section pg-yellow">
+    <div class="pg-inner">
+
+      <div class="pg-heading">
+        <p class="pg-number">07 / MAGIC &amp; DISCERNMENT</p>
+
+        <h2>
+          STAY CURIOUS.<br>
+          USE YOUR<br>
+          JUDGMENT.
+        </h2>
+      </div>
+
+      <div class="pg-copy">
+
+        <p>
+          Some Pagan paths include magic or divination.
+          You may encounter spiritual, symbolic,
+          or psychological understandings of these practices.
+          Other paths emphasize worship and observance.
+        </p>
+
+        <p>
+          Give yourself room to question your interpretations.
+          A dream, coincidence, or ritual experience can
+          invite reflection while leaving factual
+          questions open.
+        </p>
+
+        <div class="pg-stack">
+          <p>What did you actually observe?</p>
+          <p>What meaning are you adding?</p>
+          <p>What else could explain it?</p>
+          <p>What practical information do you need?</p>
+        </div>
+
+        <p>
+          Keep your treatment, trusted support,
+          and everyday responsibilities involved
+          in your decisions.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 08 / ETHICS -->
+  <section class="pg-section pg-purple">
+    <div class="pg-inner">
+
+      <div class="pg-heading">
+        <p class="pg-number">08 / ETHICS &amp; RESPONSIBILITY</p>
+
+        <h2>
+          LET YOUR<br>
+          ACTIONS<br>
+          SPEAK.
+        </h2>
+      </div>
+
+      <div class="pg-copy">
+
+        <p>
+          You will find different ethical teachings across
+          Pagan traditions, including hospitality, honor,
+          compassion, truthfulness, reciprocity,
+          and ecological responsibility.
+        </p>
+
+        <p>
+          Learn what your tradition asks of you.
+          Examine how your conduct affects yourself,
+          other people, and the wider world.
+        </p>
+
+        <div class="pg-grid">
+
+          <div class="pg-card">
+            <span class="pg-card-label">RELATIONSHIPS</span>
+            <h3>Honor your commitments.</h3>
+            <p>
+              Practice honesty, respect boundaries,
+              and address harm when you cause it.
+            </p>
+          </div>
+
+          <div class="pg-card">
+            <span class="pg-card-label">COMMUNITY</span>
+            <h3>Consider your impact.</h3>
+            <p>
+              Notice who bears the consequences
+              of your choices and where
+              you can contribute care.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="pg-callout">
+          WHAT DO YOUR VALUES<br>
+          LOOK LIKE IN YOUR CONDUCT?
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 09 / LOSS AND RENEWAL -->
+  <section class="pg-section pg-black">
+    <div class="pg-inner">
+
+      <div class="pg-heading">
+        <p class="pg-number">09 / LOSS &amp; RENEWAL</p>
+
+        <h2>
+          HONOR<br>
+          WHAT ENDS.<br>
+          TEND WHAT BEGINS.
+        </h2>
+      </div>
+
+      <div class="pg-copy">
+
+        <p>
+          Nature's cycles can offer you a language
+          for contemplating growth, rest, death,
+          and renewal.
+        </p>
+
+        <p>
+          You can grieve what has ended while considering
+          how to participate in what follows.
+          Some losses remain painful, even as
+          new relationships and meaning develop.
+        </p>
+
+        <p>
+          Your understanding of death and the afterlife
+          may come through a particular tradition.
+          Allow yourself to acknowledge uncertainty
+          while honoring those you remember.
+        </p>
+
+        <div class="pg-callout">
+          WHAT NEEDS REMEMBRANCE?<br>
+          WHAT NEEDS REST?<br>
+          WHAT NEEDS YOUR CARE?
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 10 / PRACTICE -->
+  <section class="pg-section pg-pink">
+    <div class="pg-inner">
+
+      <div class="pg-heading">
+        <p class="pg-number">10 / EVERYDAY PRACTICE</p>
+
+        <h2>
+          START WITH<br>
+          THE LIFE<br>
+          AROUND YOU.
+        </h2>
+      </div>
+
+      <div class="pg-copy">
+
+        <p>
+          Build your practice through attention,
+          learning, and actions you can sustain.
+          Let your understanding develop through
+          the relationships you cultivate.
+        </p>
+
+        <div class="pg-practice-grid">
+
+          <div class="pg-practice">
+            <span>01</span>
+            <p>
+              Notice one seasonal change
+              where you live.
+            </p>
+          </div>
+
+          <div class="pg-practice">
+            <span>02</span>
+            <p>
+              Refresh your altar or set aside
+              a space for reflection.
+            </p>
+          </div>
+
+          <div class="pg-practice">
+            <span>03</span>
+            <p>
+              Study a tradition through its
+              practitioners and historical sources.
+            </p>
+          </div>
+
+          <div class="pg-practice">
+            <span>04</span>
+            <p>
+              Express gratitude through an offering,
+              creativity, prayer, or service.
+            </p>
+          </div>
+
+          <div class="pg-practice">
+            <span>05</span>
+            <p>
+              Remember someone whose life
+              continues to influence yours.
+            </p>
+          </div>
+
+          <div class="pg-practice">
+            <span>06</span>
+            <p>
+              Choose one practical way
+              to care for your wider community.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ENDING -->
+  <section class="pg-ending">
+    <div class="pg-ending-inner">
+
+      <p class="pg-ending-label">
+        YOUR ATTENTION.<br>
+        YOUR RELATIONSHIPS.<br>
+        YOUR CONTRIBUTION.
+      </p>
+
+      <h2>
+        NOTICE.<br>
+        HONOR.<br>
+        GIVE BACK.
+      </h2>
+
+      <p class="pg-ending-copy">
+        Explore what you hold sacred and give that
+        reverence a place in how you live.
+      </p>
+
+      <%= link_to "← BACK TO SPIRITUALITY",
+          spirituality_path,
+          class: "pg-back" %>
+
+    </div>
+  </section>
+
+</main>
