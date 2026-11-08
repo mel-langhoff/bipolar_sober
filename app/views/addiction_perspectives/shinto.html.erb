@@ -1,0 +1,878 @@
+<% content_for :title, "Shinto & Addiction | Bipolar Sober" %>
+
+<style>
+  /* ==========================================
+     SHINTO & ADDICTION
+     ========================================== */
+
+  .sha-page {
+    --sha-black: #080808;
+    --sha-pink: #ff1493;
+    --sha-yellow: #eaff00;
+    --sha-purple: #8a00ff;
+    --sha-white: #ffffff;
+
+    margin: 0;
+    background: var(--sha-black);
+    color: var(--sha-white);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .sha-page,
+  .sha-page *,
+  .sha-page *::before,
+  .sha-page *::after {
+    box-sizing: border-box;
+  }
+
+  .sha-page h1,
+  .sha-page h2,
+  .sha-page h3,
+  .sha-page p {
+    margin: 0;
+  }
+
+  /* HERO */
+
+  .sha-page .sha-hero {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    min-height: 800px;
+    min-height: max(800px, 100svh);
+    padding: 130px 5vw 90px;
+    background: var(--sha-black);
+  }
+
+  .sha-page .sha-picture {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sha-page .sha-picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+  }
+
+  .sha-page .sha-hero::after {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    content: "";
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.35),
+      transparent 75%
+    );
+  }
+
+  .sha-page .sha-hero-content {
+    width: 58%;
+    max-width: 850px;
+  }
+
+  .sha-page .sha-eyebrow {
+    margin-bottom: 30px;
+    color: var(--sha-yellow);
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+  }
+
+  .sha-page .sha-hero h1 {
+    font-size: clamp(62px, 7vw, 130px);
+    font-weight: 900;
+    line-height: 0.94;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+  }
+
+  .sha-page .sha-hero h1 span {
+    display: block;
+  }
+
+  .sha-page .sha-intro {
+    max-width: 500px;
+    margin-top: 32px;
+    font-size: clamp(14px, 1.3vw, 19px);
+    font-weight: 800;
+    line-height: 1.7;
+  }
+
+  /* CONTENT */
+
+  .sha-page .sha-section {
+    padding: 85px 5vw;
+  }
+
+  .sha-page .sha-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    align-items: start;
+    gap: clamp(35px, 5vw, 90px);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .sha-page .sha-heading,
+  .sha-page .sha-copy {
+    min-width: 0;
+  }
+
+  .sha-page .sha-number {
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+  }
+
+  .sha-page .sha-heading h2 {
+    font-size: clamp(38px, 4.5vw, 80px);
+    font-weight: 900;
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+    overflow-wrap: break-word;
+  }
+
+  .sha-page .sha-copy > p {
+    margin-bottom: 23px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .sha-page .sha-copy > p:last-child {
+    margin-bottom: 0;
+  }
+
+  .sha-page .sha-copy > .sha-lead {
+    font-size: clamp(21px, 2vw, 27px);
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: -0.025em;
+  }
+
+  /* COLORS */
+
+  .sha-page .sha-black {
+    background: var(--sha-black);
+    color: var(--sha-white);
+  }
+
+  .sha-page .sha-pink {
+    background: var(--sha-pink);
+    color: var(--sha-black);
+  }
+
+  .sha-page .sha-yellow {
+    background: var(--sha-yellow);
+    color: var(--sha-black);
+  }
+
+  .sha-page .sha-purple {
+    background: var(--sha-purple);
+    color: var(--sha-white);
+  }
+
+  .sha-page .sha-black .sha-number,
+  .sha-page .sha-purple .sha-number {
+    color: var(--sha-yellow);
+  }
+
+  /* CARDS */
+
+  .sha-page .sha-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 30px 0;
+  }
+
+  .sha-page .sha-card {
+    min-width: 0;
+    padding: 24px;
+    border: 2px solid currentColor;
+  }
+
+  .sha-page .sha-card span {
+    display: block;
+    margin-bottom: 17px;
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+  }
+
+  .sha-page .sha-card h3 {
+    margin-bottom: 15px;
+    font-size: clamp(22px, 2vw, 29px);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+    overflow-wrap: break-word;
+  }
+
+  .sha-page .sha-card p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  /* CALLOUTS */
+
+  .sha-page .sha-callout {
+    margin: 30px 0;
+    padding: 26px;
+    border: 3px solid currentColor;
+    font-size: clamp(22px, 2.4vw, 34px);
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: -0.03em;
+    overflow-wrap: break-word;
+  }
+
+  .sha-page .sha-black .sha-callout,
+  .sha-page .sha-purple .sha-callout {
+    color: var(--sha-yellow);
+  }
+
+  .sha-page .sha-stack {
+    display: grid;
+    gap: 12px;
+    margin: 30px 0;
+  }
+
+  .sha-page .sha-stack p {
+    padding: 18px 20px;
+    border: 2px solid currentColor;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  /* ENDING */
+
+  .sha-page .sha-ending {
+    padding: 90px 5vw;
+    background: var(--sha-black);
+    color: var(--sha-white);
+  }
+
+  .sha-page .sha-ending-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .sha-page .sha-ending-label {
+    margin-bottom: 28px;
+    color: var(--sha-yellow);
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+  }
+
+  .sha-page .sha-ending h2 {
+    margin-bottom: 30px;
+    font-size: clamp(50px, 8vw, 125px);
+    font-weight: 900;
+    line-height: 0.94;
+    letter-spacing: -0.06em;
+  }
+
+  .sha-page .sha-ending-copy {
+    max-width: 680px;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .sha-page .sha-back {
+    display: inline-block;
+    max-width: 100%;
+    padding: 17px 22px;
+    border: 2px solid var(--sha-yellow);
+    color: var(--sha-yellow);
+    background: transparent;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-decoration: none;
+    transition:
+      background-color 160ms ease,
+      color 160ms ease;
+  }
+
+  .sha-page .sha-back:hover {
+    background: var(--sha-yellow);
+    color: var(--sha-black);
+  }
+
+  .sha-page .sha-back:focus-visible {
+    outline: 3px solid var(--sha-white);
+    outline-offset: 5px;
+  }
+
+  /* TABLET */
+
+  @media (max-width: 1000px) {
+    .sha-page .sha-inner {
+      grid-template-columns: minmax(0, 1fr);
+      max-width: 850px;
+      gap: 35px;
+    }
+
+    .sha-page .sha-heading h2 {
+      font-size: clamp(45px, 7vw, 75px);
+    }
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 767px) {
+    .sha-page .sha-hero {
+      align-items: flex-start;
+      min-height: 1000px;
+      min-height: max(1000px, 125svh);
+      padding: 110px 22px 60px;
+    }
+
+    .sha-page .sha-picture img {
+      object-position: center bottom;
+    }
+
+    .sha-page .sha-hero::after {
+      background: linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.15),
+        transparent 70%
+      );
+    }
+
+    .sha-page .sha-hero-content {
+      width: 100%;
+      max-width: 550px;
+    }
+
+    .sha-page .sha-eyebrow {
+      margin-bottom: 27px;
+      font-size: 10px;
+      letter-spacing: 0.06em;
+    }
+
+    .sha-page .sha-hero h1 {
+      font-size: clamp(44px, 11vw, 82px);
+    }
+
+    .sha-page .sha-intro {
+      margin-top: 27px;
+      font-size: 13px;
+    }
+
+    .sha-page .sha-section {
+      padding: 60px 22px;
+    }
+
+    .sha-page .sha-heading h2 {
+      font-size: clamp(38px, 10vw, 65px);
+    }
+
+    .sha-page .sha-copy > p {
+      font-size: 17px;
+    }
+
+    .sha-page .sha-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .sha-page .sha-card h3 {
+      font-size: 26px;
+    }
+
+    .sha-page .sha-callout {
+      padding: 23px;
+      font-size: 25px;
+    }
+
+    .sha-page .sha-ending {
+      padding: 70px 22px;
+    }
+
+    .sha-page .sha-ending h2 {
+      font-size: clamp(45px, 11vw, 80px);
+    }
+
+    .sha-page .sha-ending-copy {
+      font-size: 17px;
+    }
+  }
+</style>
+
+
+<main class="sha-page">
+
+  <!-- HERO -->
+  <section class="sha-hero">
+
+    <picture class="sha-picture">
+      <source
+        media="(max-width: 767px)"
+        srcset="<%= asset_path('addiction_shinto_mobile.png') %>"
+      >
+
+      <%= image_tag "addiction_shinto_desktop.png",
+          alt: "",
+          fetchpriority: "high" %>
+    </picture>
+
+    <div class="sha-hero-content">
+
+      <p class="sha-eyebrow">
+        BIPOLAR SOBER / ADDICTION / PERSPECTIVES / SHINTO
+      </p>
+
+      <h1>
+        <span>ADDICTION</span>
+        <span>THROUGH A</span>
+        <span>SHINTO LENS.</span>
+      </h1>
+
+      <p class="sha-intro">
+        SINCERITY. RELATIONSHIP. RENEWAL.<br>
+        WHAT DOES RETURNING TO YOUR LIFE LOOK LIKE?
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- 01 / THE PERSPECTIVE -->
+  <section class="sha-section sha-black">
+    <div class="sha-inner">
+
+      <div class="sha-heading">
+        <p class="sha-number">01 / A WAY OF LOOKING</p>
+
+        <h2>
+          LOOK AT<br>
+          THE LIFE<br>
+          AROUND IT.
+        </h2>
+      </div>
+
+      <div class="sha-copy">
+
+        <p class="sha-lead">
+          Your drinking happened within a life:
+          your body, circumstances, relationships,
+          and decisions.
+        </p>
+
+        <p>
+          A Shinto lens invites you to consider sincerity,
+          gratitude, renewal, and your participation
+          in a shared world. These ideas can help you
+          reflect on what drinking disrupted
+          and what you want to care for now.
+        </p>
+
+        <p>
+          This is a personal application of Shinto ideas
+          to addiction. Shinto contains diverse practices,
+          and it does not provide one universal
+          addiction treatment model.
+        </p>
+
+        <div class="sha-callout">
+          WHAT WAS HAPPENING?<br>
+          WHAT WAS AFFECTED?<br>
+          WHAT NEEDS YOUR ATTENTION NOW?
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 02 / SINCERITY -->
+  <section class="sha-section sha-pink">
+    <div class="sha-inner">
+
+      <div class="sha-heading">
+        <p class="sha-number">02 / MAKOTO — SINCERITY</p>
+
+        <h2>
+          TELL<br>
+          THE WHOLE<br>
+          FUCKING STORY.
+        </h2>
+      </div>
+
+      <div class="sha-copy">
+
+        <p>
+          Through makoto, you can reflect on honesty
+          and integrity between your intentions and conduct.
+          Start with an account you are willing
+          to examine closely.
+        </p>
+
+        <p>
+          Include the pain, the urgency, the appeal of alcohol,
+          and what followed. Distinguish what you remember
+          from what you learned afterward.
+          Leave uncertainty visible where it exists.
+        </p>
+
+        <div class="sha-grid">
+
+          <div class="sha-card">
+            <span>YOUR EXPERIENCE</span>
+            <h3>WHAT YOU FELT.</h3>
+            <p>
+              What was happening physically and mentally?
+              What did you hope drinking would change?
+            </p>
+          </div>
+
+          <div class="sha-card">
+            <span>YOUR CONDUCT</span>
+            <h3>WHAT YOU DID.</h3>
+            <p>
+              What decisions and actions can you identify?
+              What consequences need acknowledgment?
+            </p>
+          </div>
+
+        </div>
+
+        <p>
+          You can feel ashamed while telling the truth.
+          You do not have to resolve every feeling
+          about yourself before looking at the details.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 03 / RELATIONSHIPS -->
+  <section class="sha-section sha-yellow">
+    <div class="sha-inner">
+
+      <div class="sha-heading">
+        <p class="sha-number">03 / RELATIONSHIP &amp; HARMONY</p>
+
+        <h2>
+          FOLLOW<br>
+          THE EFFECTS<br>
+          OUTWARD.
+        </h2>
+      </div>
+
+      <div class="sha-copy">
+
+        <p>
+          Your actions affect a wider network of people
+          and relationships. Consider what drinking changed
+          in your daily life and what others experienced
+          alongside you.
+        </p>
+
+        <p>
+          A reflection on harmony asks what supports
+          the well-being of that shared world.
+          Sometimes that involves a difficult conversation,
+          a boundary, or accepting help.
+        </p>
+
+        <div class="sha-stack">
+          <p>WHAT COMMITMENTS WERE AFFECTED?</p>
+          <p>WHO HAD TO RESPOND TO WHAT HAPPENED?</p>
+          <p>WHAT TRUST OR SAFETY NEEDS ATTENTION?</p>
+          <p>WHAT CAN YOU REALISTICALLY REPAIR?</p>
+        </div>
+
+        <p>
+          Keep the account accurate. You can take responsibility
+          for your actions without assigning yourself
+          every problem in someone else's life.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / RENEWAL -->
+  <section class="sha-section sha-purple">
+    <div class="sha-inner">
+
+      <div class="sha-heading">
+        <p class="sha-number">04 / PURIFICATION &amp; RENEWAL</p>
+
+        <h2>
+          RETURN<br>
+          WITH<br>
+          ATTENTION.
+        </h2>
+      </div>
+
+      <div class="sha-copy">
+
+        <p>
+          Shinto purification practices belong to a particular
+          religious context. You can learn from their emphasis
+          on preparation and renewal while respecting
+          what those practices mean.
+        </p>
+
+        <p>
+          Applied to your recovery, renewal might involve
+          acknowledging disruption and deliberately
+          returning to the responsibilities of your life.
+          You prepare to participate again.
+        </p>
+
+        <div class="sha-callout">
+          YOU CAN BEGIN AGAIN<br>
+          WHILE STILL ADDRESSING<br>
+          WHAT HAPPENED.
+        </div>
+
+        <p>
+          Ritual cannot erase a DUI or restore trust
+          on someone else's behalf. Your next actions
+          give a new beginning substance:
+          an appointment kept, an honest conversation,
+          a practical safeguard.
+        </p>
+
+        <p>
+          Addiction does not make you spiritually dirty.
+          You deserve care while you address its effects.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 05 / ALCOHOL IN CONTEXT -->
+  <section class="sha-section sha-black">
+    <div class="sha-inner">
+
+      <div class="sha-heading">
+        <p class="sha-number">05 / ALCOHOL &amp; YOUR OWN HISTORY</p>
+
+        <h2>
+          CONTEXT<br>
+          MATTERS.<br>
+          SO DOES YOURS.
+        </h2>
+      </div>
+
+      <div class="sha-copy">
+
+        <p>
+          Sake has a ceremonial role in Shinto.
+          That religious use does not determine
+          whether drinking is appropriate for you.
+          Your own experience belongs in that decision.
+        </p>
+
+        <p>
+          You can respect a tradition's practices
+          while protecting your sobriety.
+          Learning about a ritual does not obligate
+          you to drink or keep alcohol at home.
+        </p>
+
+        <div class="sha-grid">
+
+          <div class="sha-card">
+            <span>REVERENCE</span>
+            <h3>LEARN THE CONTEXT.</h3>
+            <p>
+              Understand what an offering means
+              within its tradition and community.
+            </p>
+          </div>
+
+          <div class="sha-card">
+            <span>DISCERNMENT</span>
+            <h3>RESPECT YOUR LIMITS.</h3>
+            <p>
+              Choose participation that supports
+              your recovery and seek guidance
+              where appropriate.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 06 / GRATITUDE -->
+  <section class="sha-section sha-pink">
+    <div class="sha-inner">
+
+      <div class="sha-heading">
+        <p class="sha-number">06 / GRATITUDE &amp; PARTICIPATION</p>
+
+        <h2>
+          NOTICE<br>
+          WHAT YOU<br>
+          WANT TO TEND.
+        </h2>
+      </div>
+
+      <div class="sha-copy">
+
+        <p>
+          Gratitude can begin with recognizing what sustains you:
+          practical help, companionship, food, shelter,
+          treatment, or time to make something.
+        </p>
+
+        <p>
+          You can appreciate those things while remaining
+          angry about pain or disappointed with your circumstances.
+          Gratitude can share space with a difficult day.
+        </p>
+
+        <p>
+          In stable sobriety, this perspective gives you
+          somewhere to direct your attention.
+          Care for Banjo. Work on your website.
+          Make an offering. Thank someone who showed up.
+          Participate in the relationships you value.
+        </p>
+
+        <div class="sha-callout">
+          WHAT SUSTAINS YOU?<br>
+          HOW DO YOU CARE FOR IT?
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 07 / STORY REFLECTION -->
+  <section class="sha-section sha-yellow">
+    <div class="sha-inner">
+
+      <div class="sha-heading">
+        <p class="sha-number">07 / RETURN TO YOUR STORIES</p>
+
+        <h2>
+          SAME EVENTS.<br>
+          ANOTHER<br>
+          SET OF QUESTIONS.
+        </h2>
+      </div>
+
+      <div class="sha-copy">
+
+        <p>
+          Use these questions alongside your First DUI
+          and Third DUI accounts. Give each story
+          its own circumstances and uncertainties.
+        </p>
+
+        <div class="sha-grid">
+
+          <div class="sha-card">
+            <span>01 / SINCERITY</span>
+            <h3>WHAT IS HARD TO ADMIT?</h3>
+            <p>
+              Which details do you minimize, avoid,
+              or judge before you have described them?
+            </p>
+          </div>
+
+          <div class="sha-card">
+            <span>02 / RELATIONSHIP</span>
+            <h3>WHAT WAS DISRUPTED?</h3>
+            <p>
+              What happened to your safety,
+              commitments, relationships,
+              and ability to participate in daily life?
+            </p>
+          </div>
+
+          <div class="sha-card">
+            <span>03 / RENEWAL</span>
+            <h3>WHAT DOES RETURNING REQUIRE?</h3>
+            <p>
+              What practical action would express
+              your intention to respond differently?
+            </p>
+          </div>
+
+          <div class="sha-card">
+            <span>04 / GRATITUDE</span>
+            <h3>WHAT HELPED YOU CONTINUE?</h3>
+            <p>
+              Who or what supported you afterward?
+              How do you acknowledge that support now?
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ENDING -->
+  <section class="sha-ending">
+    <div class="sha-ending-inner">
+
+      <p class="sha-ending-label">
+        SINCERITY. RESPONSIBILITY. RENEWAL.
+      </p>
+
+      <h2>
+        ACKNOWLEDGE.<br>
+        REPAIR.<br>
+        PARTICIPATE.
+      </h2>
+
+      <p class="sha-ending-copy">
+        You can face your history with honesty,
+        care for what was affected, and give your
+        intentions a practical place in your life.
+      </p>
+
+      <%= link_to "← BACK TO ADDICTION PERSPECTIVES",
+          addiction_perspectives_path,
+          class: "sha-back" %>
+
+    </div>
+  </section>
+
+</main>

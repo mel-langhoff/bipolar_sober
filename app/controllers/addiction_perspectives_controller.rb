@@ -19,4 +19,24 @@ class AddictionPerspectivesController < ApplicationController
 
   def big_picture
   end
+
+  def first_dui
+end
+
+def third_dui
+end
+
+def press_send
+end
+
+def shinto
+end
+
+def paganism
+end
+
+def taoism
+end
+
+
 end

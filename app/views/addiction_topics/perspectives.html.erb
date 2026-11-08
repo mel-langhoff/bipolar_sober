@@ -32,15 +32,107 @@
   </section>
 
 
+  <!-- STORIES / CONTEXT -->
+  <section class="bipolar-perspectives-topics"
+           id="addiction-stories">
+
+    <div class="bipolar-perspectives-heading">
+
+      <p>START WITH THE STORIES</p>
+
+      <h2>
+        BEFORE<br>
+        THE LENSES.
+      </h2>
+
+      <p class="bipolar-perspectives-subtitle">
+        Read these stories first for context. The perspectives below
+        return to these experiences to examine the decisions,
+        circumstances, consequences, and patterns involved.
+        Same stories. Different ways of understanding what happened.
+      </p>
+
+    </div>
+
+    <div class="bipolar-perspectives-grid">
+
+      <!-- FIRST DUI -->
+      <%= link_to addiction_perspectives_first_dui_path,
+          class: "bipolar-perspective-card bp-card-yellow" do %>
+
+        <p class="bipolar-perspective-number">01 / THE STORY</p>
+
+        <h3>
+          FIRST<br>
+          DUI
+        </h3>
+
+        <p class="bipolar-perspective-description">
+          Read the account of my first DUI before exploring
+          how the different perspectives interpret the experience.
+        </p>
+
+        <span>READ THE STORY →</span>
+
+      <% end %>
+
+
+      <!-- THIRD DUI -->
+      <%= link_to addiction_perspectives_third_dui_path,
+          class: "bipolar-perspective-card bp-card-pink" do %>
+
+        <p class="bipolar-perspective-number">02 / THE STORY</p>
+
+        <h3>
+          THIRD<br>
+          DUI
+        </h3>
+
+        <p class="bipolar-perspective-description">
+          Read the account of my third DUI for the context
+          behind the reflections on responsibility,
+          mental illness, addiction, and consequences.
+        </p>
+
+        <span>READ THE STORY →</span>
+
+      <% end %>
+
+
+      <!-- PRESS SEND -->
+      <%= link_to addiction_perspectives_press_send_path,
+          class: "bipolar-perspective-card bp-card-purple" do %>
+
+        <p class="bipolar-perspective-number">03 / THE STORY</p>
+
+        <h3>
+          PRESS<br>
+          SEND.
+        </h3>
+
+        <p class="bipolar-perspective-description">
+          Drunk texts. Impulsive words. Sober consequences.
+          An account of the things I said while intoxicated,
+          the relationships affected, and what happens
+          when you can't take back what you've sent.
+        </p>
+
+        <span>READ THE STORY →</span>
+
+      <% end %>
+
+    </div>
+
+  </section>
+
+
   <!-- PERSPECTIVES -->
   <section class="bipolar-perspectives-topics"
            id="addiction-perspective-options">
 
     <div class="bipolar-perspectives-heading">
 
-      <p>
-        01 / PERSPECTIVES ON ADDICTION
-      </p>
+      <p>01 / PERSPECTIVES ON ADDICTION</p>
 
       <h2>
         PICK A<br>
@@ -63,13 +155,9 @@
       <%= link_to addiction_perspectives_buddhism_path,
           class: "bipolar-perspective-card bp-card-pink" do %>
 
-        <p class="bipolar-perspective-number">
-          01
-        </p>
+        <p class="bipolar-perspective-number">01</p>
 
-        <h3>
-          BUDDHISM
-        </h3>
+        <h3>BUDDHISM</h3>
 
         <p class="bipolar-perspective-description">
           Suffering, craving, attachment, impermanence,
@@ -77,9 +165,7 @@
           with relief and what it means to live with greater awareness.
         </p>
 
-        <span>
-          LOOK A LITTLE CLOSER →
-        </span>
+        <span>LOOK A LITTLE CLOSER →</span>
 
       <% end %>
 
@@ -88,13 +174,9 @@
       <%= link_to addiction_perspectives_hinduism_path,
           class: "bipolar-perspective-card bp-card-yellow" do %>
 
-        <p class="bipolar-perspective-number">
-          02
-        </p>
+        <p class="bipolar-perspective-number">02</p>
 
-        <h3>
-          HINDUISM
-        </h3>
+        <h3>HINDUISM</h3>
 
         <p class="bipolar-perspective-description">
           The Self, discernment, dharma, devotion, and non-harming.
@@ -102,9 +184,7 @@
           of acting with care while accepting uncertain outcomes.
         </p>
 
-        <span>
-          EXPLORE →
-        </span>
+        <span>EXPLORE →</span>
 
       <% end %>
 
@@ -113,13 +193,9 @@
       <%= link_to addiction_perspectives_stoicism_path,
           class: "bipolar-perspective-card bp-card-purple" do %>
 
-        <p class="bipolar-perspective-number">
-          03
-        </p>
+        <p class="bipolar-perspective-number">03</p>
 
-        <h3>
-          STOICISM
-        </h3>
+        <h3>STOICISM</h3>
 
         <p class="bipolar-perspective-description">
           Judgment, desire, responsibility, and what is yours
@@ -127,9 +203,7 @@
           and consider how your daily actions express your values.
         </p>
 
-        <span>
-          FOCUS ON WHAT'S YOURS →
-        </span>
+        <span>FOCUS ON WHAT'S YOURS →</span>
 
       <% end %>
 
@@ -138,13 +212,9 @@
       <%= link_to addiction_perspectives_cbt_path,
           class: "bipolar-perspective-card bp-card-black" do %>
 
-        <p class="bipolar-perspective-number">
-          04
-        </p>
+        <p class="bipolar-perspective-number">04</p>
 
-        <h3>
-          CBT
-        </h3>
+        <h3>CBT</h3>
 
         <p class="bipolar-perspective-description">
           Thoughts, expectations, learned behavior, and the stories
@@ -153,9 +223,7 @@
           of your experience.
         </p>
 
-        <span>
-          QUESTION THE THOUGHT →
-        </span>
+        <span>QUESTION THE THOUGHT →</span>
 
       <% end %>
 
@@ -164,13 +232,9 @@
       <%= link_to addiction_perspectives_dbt_path,
           class: "bipolar-perspective-card bp-card-split" do %>
 
-        <p class="bipolar-perspective-number">
-          05
-        </p>
+        <p class="bipolar-perspective-number">05</p>
 
-        <h3>
-          DBT
-        </h3>
+        <h3>DBT</h3>
 
         <p class="bipolar-perspective-description">
           Acceptance and change, emotion regulation, distress
@@ -179,9 +243,7 @@
           you want to participate in.
         </p>
 
-        <span>
-          FIND THE MIDDLE →
-        </span>
+        <span>FIND THE MIDDLE →</span>
 
       <% end %>
 
@@ -190,13 +252,9 @@
       <%= link_to addiction_perspectives_ifs_path,
           class: "bipolar-perspective-card bp-card-pink" do %>
 
-        <p class="bipolar-perspective-number">
-          06
-        </p>
+        <p class="bipolar-perspective-number">06</p>
 
-        <h3>
-          IFS
-        </h3>
+        <h3>IFS</h3>
 
         <p class="bipolar-perspective-description">
           Get curious about the parts of you carrying pain,
@@ -205,9 +263,61 @@
           while considering its effects on your whole life.
         </p>
 
-        <span>
-          MEET YOUR PARTS →
-        </span>
+        <span>MEET YOUR PARTS →</span>
+
+      <% end %>
+
+
+      <!-- SHINTO -->
+      <%= link_to addiction_perspectives_shinto_path,
+          class: "bipolar-perspective-card bp-card-yellow" do %>
+
+        <p class="bipolar-perspective-number">07</p>
+
+        <h3>SHINTO</h3>
+
+        <p class="bipolar-perspective-description">
+          Sincerity, relationship, renewal, and care for the life
+          around you. Consider what these ideas can offer recovery.
+        </p>
+
+        <span>EXPLORE THE LENS →</span>
+
+      <% end %>
+
+
+      <!-- TAOISM -->
+      <%= link_to addiction_perspectives_taoism_path,
+          class: "bipolar-perspective-card bp-card-purple" do %>
+
+        <p class="bipolar-perspective-number">08</p>
+
+        <h3>TAOISM</h3>
+
+        <p class="bipolar-perspective-description">
+          Adaptability, balance, simplicity, and responding without
+          forcing an outcome. A different lens on change and recovery.
+        </p>
+
+        <span>EXPLORE THE LENS →</span>
+
+      <% end %>
+
+
+      <!-- PAGANISM -->
+      <%= link_to addiction_perspectives_paganism_path,
+          class: "bipolar-perspective-card bp-card-pink" do %>
+
+        <p class="bipolar-perspective-number">09</p>
+
+        <h3>PAGANISM</h3>
+
+        <p class="bipolar-perspective-description">
+          Nature, cycles, ritual, reciprocity, and personal meaning.
+          Explore how these ideas might connect with living in recovery.
+        </p>
+
+        <span>EXPLORE THE LENS →</span>
 
       <% end %>
 
@@ -217,7 +327,7 @@
           class: "bipolar-perspective-card bp-card-big-picture" do %>
 
         <p class="bipolar-perspective-number">
-          07 / PUTTING IT ALL TOGETHER
+          10 / PUTTING IT ALL TOGETHER
         </p>
 
         <h3>
@@ -227,15 +337,13 @@
 
         <p class="bipolar-perspective-description">
           Buddhism. Hinduism. Stoicism. CBT. DBT. IFS.
-          Bring the perspectives into conversation with treatment,
-          community, accountability, and everyday life.
-          Consider what each offers and how it fits
+          Shinto. Taoism. Paganism. Bring these perspectives
+          into conversation with treatment, community, accountability,
+          and everyday life. Consider what each offers and how it fits
           your own recovery.
         </p>
 
-        <span>
-          PUT IT ALL TOGETHER →
-        </span>
+        <span>PUT IT ALL TOGETHER →</span>
 
       <% end %>
 

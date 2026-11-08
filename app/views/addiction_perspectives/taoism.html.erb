@@ -1,0 +1,950 @@
+<% content_for :title, "Paganism & Addiction | Bipolar Sober" %>
+
+<style>
+  /* ==========================================
+     PAGANISM & ADDICTION
+     ========================================== */
+
+  .pga-page {
+    --pga-black: #080808;
+    --pga-pink: #ff1493;
+    --pga-yellow: #eaff00;
+    --pga-purple: #8a00ff;
+    --pga-white: #ffffff;
+
+    margin: 0;
+    background: var(--pga-black);
+    color: var(--pga-white);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pga-page,
+  .pga-page *,
+  .pga-page *::before,
+  .pga-page *::after {
+    box-sizing: border-box;
+  }
+
+  .pga-page h1,
+  .pga-page h2,
+  .pga-page h3,
+  .pga-page p {
+    margin: 0;
+  }
+
+  /* HERO */
+
+  .pga-page .pga-hero {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    min-height: 800px;
+    min-height: max(800px, 100svh);
+    padding: 130px 5vw 90px;
+    background: var(--pga-black);
+  }
+
+  .pga-page .pga-picture {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .pga-page .pga-picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right center;
+  }
+
+  .pga-page .pga-hero::after {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    content: "";
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.4),
+      transparent 75%
+    );
+  }
+
+  .pga-page .pga-hero-content {
+    width: 58%;
+    max-width: 850px;
+  }
+
+  .pga-page .pga-eyebrow {
+    margin-bottom: 30px;
+    color: var(--pga-yellow);
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+  }
+
+  .pga-page .pga-hero h1 {
+    font-size: clamp(62px, 7vw, 130px);
+    font-weight: 900;
+    line-height: 0.94;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+  }
+
+  .pga-page .pga-hero h1 span {
+    display: block;
+  }
+
+  .pga-page .pga-intro {
+    max-width: 520px;
+    margin-top: 32px;
+    font-size: clamp(14px, 1.3vw, 19px);
+    font-weight: 800;
+    line-height: 1.7;
+  }
+
+  /* SECTIONS */
+
+  .pga-page .pga-section {
+    padding: 85px 5vw;
+  }
+
+  .pga-page .pga-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    align-items: start;
+    gap: clamp(35px, 5vw, 90px);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .pga-page .pga-heading,
+  .pga-page .pga-copy {
+    min-width: 0;
+  }
+
+  .pga-page .pga-number {
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+  }
+
+  .pga-page .pga-heading h2 {
+    font-size: clamp(38px, 4.5vw, 80px);
+    font-weight: 900;
+    line-height: 0.98;
+    letter-spacing: -0.05em;
+    overflow-wrap: break-word;
+  }
+
+  .pga-page .pga-copy > p {
+    margin-bottom: 23px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .pga-page .pga-copy > p:last-child {
+    margin-bottom: 0;
+  }
+
+  .pga-page .pga-copy > .pga-lead {
+    font-size: clamp(21px, 2vw, 27px);
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: -0.025em;
+  }
+
+  /* COLORS */
+
+  .pga-page .pga-black {
+    background: var(--pga-black);
+    color: var(--pga-white);
+  }
+
+  .pga-page .pga-pink {
+    background: var(--pga-pink);
+    color: var(--pga-black);
+  }
+
+  .pga-page .pga-yellow {
+    background: var(--pga-yellow);
+    color: var(--pga-black);
+  }
+
+  .pga-page .pga-purple {
+    background: var(--pga-purple);
+    color: var(--pga-white);
+  }
+
+  .pga-page .pga-black .pga-number,
+  .pga-page .pga-purple .pga-number {
+    color: var(--pga-yellow);
+  }
+
+  /* CARDS */
+
+  .pga-page .pga-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 30px 0;
+  }
+
+  .pga-page .pga-card {
+    min-width: 0;
+    padding: 24px;
+    border: 2px solid currentColor;
+  }
+
+  .pga-page .pga-card span {
+    display: block;
+    margin-bottom: 17px;
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+  }
+
+  .pga-page .pga-card h3 {
+    margin-bottom: 15px;
+    font-size: clamp(22px, 2vw, 29px);
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+    overflow-wrap: break-word;
+  }
+
+  .pga-page .pga-card p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  /* CALLOUTS */
+
+  .pga-page .pga-callout {
+    margin: 30px 0;
+    padding: 26px;
+    border: 3px solid currentColor;
+    font-size: clamp(22px, 2.4vw, 34px);
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: -0.03em;
+    overflow-wrap: break-word;
+  }
+
+  .pga-page .pga-black .pga-callout,
+  .pga-page .pga-purple .pga-callout {
+    color: var(--pga-yellow);
+  }
+
+  .pga-page .pga-stack {
+    display: grid;
+    gap: 12px;
+    margin: 30px 0;
+  }
+
+  .pga-page .pga-stack p {
+    padding: 18px 20px;
+    border: 2px solid currentColor;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  /* ENDING */
+
+  .pga-page .pga-ending {
+    padding: 90px 5vw;
+    background: var(--pga-black);
+    color: var(--pga-white);
+  }
+
+  .pga-page .pga-ending-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .pga-page .pga-ending-label {
+    margin-bottom: 28px;
+    color: var(--pga-yellow);
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+  }
+
+  .pga-page .pga-ending h2 {
+    margin-bottom: 30px;
+    font-size: clamp(50px, 8vw, 125px);
+    font-weight: 900;
+    line-height: 0.94;
+    letter-spacing: -0.06em;
+  }
+
+  .pga-page .pga-ending-copy {
+    max-width: 680px;
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .pga-page .pga-back {
+    display: inline-block;
+    max-width: 100%;
+    padding: 17px 22px;
+    border: 2px solid var(--pga-yellow);
+    color: var(--pga-yellow);
+    background: transparent;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-decoration: none;
+    transition:
+      background-color 160ms ease,
+      color 160ms ease;
+  }
+
+  .pga-page .pga-back:hover {
+    background: var(--pga-yellow);
+    color: var(--pga-black);
+  }
+
+  .pga-page .pga-back:focus-visible {
+    outline: 3px solid var(--pga-white);
+    outline-offset: 5px;
+  }
+
+  /* TABLET */
+
+  @media (max-width: 1000px) {
+    .pga-page .pga-inner {
+      grid-template-columns: minmax(0, 1fr);
+      max-width: 850px;
+      gap: 35px;
+    }
+
+    .pga-page .pga-heading h2 {
+      font-size: clamp(45px, 7vw, 75px);
+    }
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 767px) {
+    .pga-page .pga-hero {
+      align-items: flex-start;
+      min-height: 1000px;
+      min-height: max(1000px, 125svh);
+      padding: 110px 22px 60px;
+    }
+
+    .pga-page .pga-picture img {
+      object-position: center bottom;
+    }
+
+    .pga-page .pga-hero::after {
+      background: linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.15),
+        transparent 70%
+      );
+    }
+
+    .pga-page .pga-hero-content {
+      width: 100%;
+      max-width: 550px;
+    }
+
+    .pga-page .pga-eyebrow {
+      margin-bottom: 27px;
+      font-size: 10px;
+      letter-spacing: 0.06em;
+    }
+
+    .pga-page .pga-hero h1 {
+      font-size: clamp(44px, 11vw, 82px);
+    }
+
+    .pga-page .pga-intro {
+      margin-top: 27px;
+      font-size: 13px;
+    }
+
+    .pga-page .pga-section {
+      padding: 60px 22px;
+    }
+
+    .pga-page .pga-heading h2 {
+      font-size: clamp(38px, 10vw, 65px);
+    }
+
+    .pga-page .pga-copy > p {
+      font-size: 17px;
+    }
+
+    .pga-page .pga-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .pga-page .pga-card h3 {
+      font-size: 26px;
+    }
+
+    .pga-page .pga-callout {
+      padding: 23px;
+      font-size: 25px;
+    }
+
+    .pga-page .pga-ending {
+      padding: 70px 22px;
+    }
+
+    .pga-page .pga-ending h2 {
+      font-size: clamp(45px, 11vw, 80px);
+    }
+
+    .pga-page .pga-ending-copy {
+      font-size: 17px;
+    }
+  }
+</style>
+
+
+<main class="pga-page">
+
+  <!-- HERO -->
+  <section class="pga-hero">
+
+    <picture class="pga-picture">
+      <source
+        media="(max-width: 767px)"
+        srcset="<%= asset_path('addiction_paganism_mobile.png') %>"
+      >
+
+      <%= image_tag "addiction_paganism_desktop.png",
+          alt: "",
+          fetchpriority: "high" %>
+    </picture>
+
+    <div class="pga-hero-content">
+
+      <p class="pga-eyebrow">
+        BIPOLAR SOBER / ADDICTION / PERSPECTIVES / PAGANISM
+      </p>
+
+      <h1>
+        <span>ADDICTION</span>
+        <span>THROUGH A</span>
+        <span>PAGAN LENS.</span>
+      </h1>
+
+      <p class="pga-intro">
+        RELATIONSHIP. RESPONSIBILITY. RENEWAL.<br>
+        WHAT KIND OF LIFE ARE YOU CULTIVATING?
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- 01 / THE PERSPECTIVE -->
+  <section class="pga-section pga-black">
+    <div class="pga-inner">
+
+      <div class="pga-heading">
+        <p class="pga-number">01 / A WAY OF LOOKING</p>
+
+        <h2>
+          LOOK AT<br>
+          WHAT YOUR<br>
+          LIFE TOUCHES.
+        </h2>
+      </div>
+
+      <div class="pga-copy">
+
+        <p class="pga-lead">
+          Your relationship with alcohol affects the wider
+          life you belong to.
+        </p>
+
+        <p>
+          A Pagan lens can invite reflection on your body,
+          relationships, surroundings, rituals, and responsibilities.
+          You consider what drinking offered and what it disrupted,
+          alongside what you want to nurture in recovery.
+        </p>
+
+        <p>
+          Paganism includes many distinct traditions.
+          This is a personal application of themes such as
+          reciprocity, seasonal awareness, and reverence.
+          It does not represent a single Pagan teaching
+          about addiction.
+        </p>
+
+        <div class="pga-callout">
+          WHAT SUSTAINS YOU?<br>
+          WHAT ARE YOU PRACTICING?<br>
+          WHAT DO YOU WANT TO PROTECT?
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 02 / THE BODY -->
+  <section class="pga-section pga-pink">
+    <div class="pga-inner">
+
+      <div class="pga-heading">
+        <p class="pga-number">02 / YOUR BODY &amp; YOUR NEEDS</p>
+
+        <h2>
+          YOUR PAIN<br>
+          DESERVES<br>
+          ATTENTION.
+        </h2>
+      </div>
+
+      <div class="pga-copy">
+
+        <p>
+          Reverence for life can include attention
+          to your own body. You have physical needs,
+          limits, and pain that deserve a response.
+        </p>
+
+        <p>
+          In your first DUI story, look closely at the sciatica
+          and the circumstances surrounding your search for relief.
+          What was available? What were you waiting for?
+          What did alcohol seem able to offer?
+        </p>
+
+        <p>
+          You can understand the desperation involved
+          while examining what drinking led to.
+          Care for your body includes finding support
+          that takes both your pain and your recovery seriously.
+        </p>
+
+        <div class="pga-grid">
+
+          <div class="pga-card">
+            <span>THE NEED</span>
+            <h3>RELIEF &amp; CARE.</h3>
+            <p>
+              Describe what you were experiencing
+              and the help you needed.
+            </p>
+          </div>
+
+          <div class="pga-card">
+            <span>THE RESPONSE</span>
+            <h3>THE WHOLE EFFECT.</h3>
+            <p>
+              Examine what drinking changed immediately
+              and what it left you dealing with afterward.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 03 / RECIPROCITY -->
+  <section class="pga-section pga-yellow">
+    <div class="pga-inner">
+
+      <div class="pga-heading">
+        <p class="pga-number">03 / RECIPROCITY &amp; RELATIONSHIP</p>
+
+        <h2>
+          WHAT ARE<br>
+          YOU GIVING<br>
+          BACK?
+        </h2>
+      </div>
+
+      <div class="pga-copy">
+
+        <p>
+          Reciprocity asks you to consider your contribution
+          to relationships that sustain you.
+          Who offers care, company, practical help,
+          or a place to belong?
+        </p>
+
+        <p>
+          Reflect on how drinking affected your ability
+          to participate in those relationships.
+          What commitments became difficult to keep?
+          Who had to respond when things went wrong?
+        </p>
+
+        <div class="pga-stack">
+          <p>RECOGNIZE THE SUPPORT YOU RECEIVE.</p>
+          <p>BE HONEST ABOUT WHAT YOU CAN OFFER.</p>
+          <p>RESPECT OTHER PEOPLE'S BOUNDARIES.</p>
+          <p>FOLLOW THROUGH WHERE YOU CAN.</p>
+        </div>
+
+        <p>
+          Receiving help does not mean you must repay
+          every kindness immediately. You can express gratitude
+          through honesty, consideration, and participation
+          within your capacity.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / RITUAL -->
+  <section class="pga-section pga-purple">
+    <div class="pga-inner">
+
+      <div class="pga-heading">
+        <p class="pga-number">04 / RITUAL &amp; INTENTION</p>
+
+        <h2>
+          GIVE YOUR<br>
+          INTENTIONS<br>
+          A PLACE.
+        </h2>
+      </div>
+
+      <div class="pga-copy">
+
+        <p>
+          Ritual can help you mark a commitment,
+          acknowledge a loss, or give thanks.
+          An altar or deliberate practice gives
+          your attention somewhere to settle.
+        </p>
+
+        <p>
+          You might refresh a water offering,
+          write down a commitment, or dedicate
+          something you make to the life you want to care for.
+        </p>
+
+        <div class="pga-grid">
+
+          <div class="pga-card">
+            <span>REMEMBRANCE</span>
+            <h3>ACKNOWLEDGE.</h3>
+            <p>
+              Give yourself room to name what happened
+              and what it means to you.
+            </p>
+          </div>
+
+          <div class="pga-card">
+            <span>COMMITMENT</span>
+            <h3>FOLLOW THROUGH.</h3>
+            <p>
+              Connect your ritual with a practical action:
+              a conversation, appointment, or safeguard.
+            </p>
+          </div>
+
+        </div>
+
+        <p>
+          Your practice can support sobriety.
+          Choose offerings appropriate to your tradition
+          and circumstances, including water, flowers,
+          art, or service.
+        </p>
+
+        <div class="pga-callout">
+          WHAT ACTION WILL GIVE<br>
+          YOUR INTENTION SUBSTANCE?
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 05 / ANCESTORS -->
+  <section class="pga-section pga-black">
+    <div class="pga-inner">
+
+      <div class="pga-heading">
+        <p class="pga-number">05 / ANCESTORS &amp; INHERITANCE</p>
+
+        <h2>
+          WHAT DO<br>
+          YOU CARRY<br>
+          FORWARD?
+        </h2>
+      </div>
+
+      <div class="pga-copy">
+
+        <p>
+          If ancestral remembrance belongs to your practice,
+          consider the people and histories that shaped you.
+          What examples of care, courage, or persistence
+          do you want to keep?
+        </p>
+
+        <p>
+          You can also examine difficult patterns.
+          You do not have to know every detail of your family's
+          history to reflect on what you learned about
+          pain, drinking, shame, and asking for help.
+        </p>
+
+        <p>
+          Let remembrance offer perspective without
+          turning imagined ancestral judgment into
+          another way to punish yourself.
+          You can choose what deserves to continue
+          through your own conduct.
+        </p>
+
+        <div class="pga-stack">
+          <p>WHAT HELPED YOU SURVIVE?</p>
+          <p>WHAT DID YOU LEARN ABOUT COPING?</p>
+          <p>WHAT PATTERN NEEDS TO CHANGE?</p>
+          <p>WHAT EXAMPLE DO YOU WANT TO SET?</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 06 / CYCLES -->
+  <section class="pga-section pga-pink">
+    <div class="pga-inner">
+
+      <div class="pga-heading">
+        <p class="pga-number">06 / CYCLES, CHANGE &amp; RENEWAL</p>
+
+        <h2>
+          TEND THE<br>
+          LIFE YOU<br>
+          HAVE NOW.
+        </h2>
+      </div>
+
+      <div class="pga-copy">
+
+        <p>
+          Seasonal observance can give you a language
+          for growth, rest, endings, and renewal.
+          You can use those themes to reflect on
+          what your life currently requires.
+        </p>
+
+        <p>
+          You may need more rest, stronger support,
+          a practical change, or something enjoyable
+          to give your attention to.
+          Growth can involve recognizing a limit.
+        </p>
+
+        <p>
+          Natural cycles do not make relapse inevitable,
+          and bipolar episodes need clinical understanding.
+          Use seasonal imagery as a reflective practice
+          alongside treatment and concrete planning.
+        </p>
+
+        <div class="pga-callout">
+          WHAT NEEDS REST?<br>
+          WHAT NEEDS PROTECTION?<br>
+          WHAT NEEDS YOUR EFFORT?
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 07 / ACCOUNTABILITY -->
+  <section class="pga-section pga-yellow">
+    <div class="pga-inner">
+
+      <div class="pga-heading">
+        <p class="pga-number">07 / VALUES &amp; ACCOUNTABILITY</p>
+
+        <h2>
+          LET YOUR<br>
+          VALUES<br>
+          SHOW UP.
+        </h2>
+      </div>
+
+      <div class="pga-copy">
+
+        <p>
+          Pagan traditions differ in their ethical teachings.
+          As you explore a particular path, consider
+          how its values affect your actual decisions.
+        </p>
+
+        <p>
+          In your DUI stories, accountability involves
+          facing what happened and its effects.
+          Your pain and mental state belong in the account,
+          alongside the consequences and support you needed.
+        </p>
+
+        <p>
+          You can feel ashamed and still take a specific
+          responsible action. Address what can be repaired.
+          Respect a boundary. Tell someone when your judgment
+          is changing. Help your plans become usable.
+        </p>
+
+        <div class="pga-grid">
+
+          <div class="pga-card">
+            <span>UNDERSTANDING</span>
+            <h3>EXAMINE THE CONDITIONS.</h3>
+            <p>
+              What made the decision more likely?
+              Where was support missing?
+            </p>
+          </div>
+
+          <div class="pga-card">
+            <span>RESPONSIBILITY</span>
+            <h3>RESPOND TO THE EFFECTS.</h3>
+            <p>
+              What needs attention now?
+              What protection could reduce repetition?
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 08 / STORY REFLECTION -->
+  <section class="pga-section pga-purple">
+    <div class="pga-inner">
+
+      <div class="pga-heading">
+        <p class="pga-number">08 / RETURN TO YOUR STORIES</p>
+
+        <h2>
+          SAME EVENTS.<br>
+          ANOTHER<br>
+          SET OF QUESTIONS.
+        </h2>
+      </div>
+
+      <div class="pga-copy">
+
+        <p>
+          Use these questions with your First DUI
+          and Third DUI accounts. Let each story
+          retain its own circumstances.
+        </p>
+
+        <div class="pga-grid">
+
+          <div class="pga-card">
+            <span>01 / YOUR BODY</span>
+            <h3>WHAT NEEDED CARE?</h3>
+            <p>
+              What physical or emotional experience
+              were you trying to change?
+              What care was available?
+            </p>
+          </div>
+
+          <div class="pga-card">
+            <span>02 / RELATIONSHIP</span>
+            <h3>WHAT WAS AFFECTED?</h3>
+            <p>
+              How did drinking change your connection
+              with yourself, others, and daily life?
+            </p>
+          </div>
+
+          <div class="pga-card">
+            <span>03 / RENEWAL</span>
+            <h3>WHAT WILL YOU CULTIVATE?</h3>
+            <p>
+              What habit, relationship, or safeguard
+              deserves deliberate attention now?
+            </p>
+          </div>
+
+          <div class="pga-card">
+            <span>04 / PRACTICE</span>
+            <h3>WHAT MAKES IT CONCRETE?</h3>
+            <p>
+              What action could express your values
+              beyond the moment of reflection?
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ENDING -->
+  <section class="pga-ending">
+    <div class="pga-ending-inner">
+
+      <p class="pga-ending-label">
+        ATTENTION. RELATIONSHIP. RESPONSIBILITY.
+      </p>
+
+      <h2>
+        REMEMBER.<br>
+        RECONNECT.<br>
+        CULTIVATE.
+      </h2>
+
+      <p class="pga-ending-copy">
+        You can acknowledge your history, care for
+        the relationships that sustain you, and give
+        your values a practical place in recovery.
+      </p>
+
+      <%= link_to "← BACK TO ADDICTION PERSPECTIVES",
+          addiction_perspectives_path,
+          class: "pga-back" %>
+
+    </div>
+  </section>
+
+</main>

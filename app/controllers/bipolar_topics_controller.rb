@@ -13,4 +13,8 @@ class BipolarTopicsController < ApplicationController
 
   def impulsivity
   end
+
+  def psychosis
+  end
+
 end

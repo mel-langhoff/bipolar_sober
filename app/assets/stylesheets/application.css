@@ -24844,3 +24844,2236 @@ body {
   }
 }
 
+/* ==========================================
+   FIRST DUI / THIRD DUI — COMPLETE STYLES
+   ========================================== */
+
+.dui-story-page {
+  --story-black: #080808;
+  --story-pink: #ff1493;
+  --story-yellow: #eaff00;
+  --story-purple: #8a00ff;
+  --story-white: #ffffff;
+
+  width: 100%;
+  margin: 0;
+  background: var(--story-black);
+  color: var(--story-white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dui-story-page,
+.dui-story-page *,
+.dui-story-page *::before,
+.dui-story-page *::after {
+  box-sizing: border-box;
+}
+
+.dui-story-page h1,
+.dui-story-page h2,
+.dui-story-page p {
+  margin: 0;
+}
+
+/* ==========================================
+   HERO / BACKGROUND IMAGES
+   ========================================== */
+
+.dui-story-page .ds-hero {
+  position: relative;
+  isolation: isolate;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 800px;
+  min-height: max(800px, 100svh);
+
+  padding: 140px 6vw 90px;
+  border-bottom: 4px solid var(--story-pink);
+
+  background-color: var(--story-black);
+  background-image: var(--dui-desktop, none);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+}
+
+.dui-story-page .ds-hero::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  content: "";
+  pointer-events: none;
+
+  background: linear-gradient(
+    90deg,
+    rgba(8, 8, 8, 0.35) 0%,
+    rgba(8, 8, 8, 0.1) 45%,
+    transparent 75%
+  );
+}
+
+.dui-story-page .ds-hero-inner,
+.dui-story-page .ds-layout,
+.dui-story-page .ds-ending-inner {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.dui-story-page .ds-hero-inner {
+  position: relative;
+}
+
+.dui-story-page .ds-eyebrow {
+  max-width: 55%;
+  margin-bottom: 30px;
+
+  color: var(--story-yellow);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.7;
+  letter-spacing: 0.1em;
+  overflow-wrap: anywhere;
+}
+
+.dui-story-page .ds-hero h1 {
+  max-width: 58%;
+
+  color: var(--story-white);
+  font-size: clamp(76px, 12vw, 190px);
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: -0.065em;
+  text-transform: uppercase;
+}
+
+.dui-story-page .ds-hero h1 span {
+  display: block;
+}
+
+.dui-story-page .ds-hero h1 span:last-child {
+  color: var(--story-pink);
+}
+
+.dui-story-page .ds-intro {
+  max-width: 48%;
+  margin-top: 35px;
+
+  font-size: clamp(17px, 1.7vw, 24px);
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   CONTEXT STRIP
+   ========================================== */
+
+.dui-story-page .ds-context {
+  padding: 35px 6vw;
+  background: var(--story-yellow);
+  color: var(--story-black);
+}
+
+.dui-story-page .ds-context p {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+/* ==========================================
+   STORY LAYOUT
+   ========================================== */
+
+.dui-story-page .ds-body {
+  padding: 80px 6vw;
+  background: var(--story-black);
+}
+
+.dui-story-page .ds-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.4fr) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(35px, 5vw, 80px);
+}
+
+.dui-story-page .ds-sidebar,
+.dui-story-page .ds-copy {
+  min-width: 0;
+}
+
+/* ==========================================
+   SIDEBAR
+   ========================================== */
+
+.dui-story-page .ds-label {
+  margin-bottom: 20px;
+
+  color: var(--story-yellow);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+}
+
+.dui-story-page .ds-sidebar h2 {
+  font-size: clamp(34px, 4vw, 58px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+.dui-story-page .ds-note {
+  margin-top: 28px;
+  padding: 22px;
+  border: 2px solid var(--story-purple);
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+/* ==========================================
+   STORY TEXT
+   ========================================== */
+
+.dui-story-page .ds-copy {
+  width: 100%;
+  max-width: 780px;
+  overflow-wrap: break-word;
+}
+
+.dui-story-page .ds-copy p {
+  margin-bottom: 25px;
+
+  font-size: 19px;
+  line-height: 1.9;
+}
+
+.dui-story-page .ds-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.dui-story-page .ds-copy h2 {
+  margin: 55px 0 25px;
+
+  color: var(--story-yellow);
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+}
+
+.dui-story-page .ds-copy h2:first-child {
+  margin-top: 0;
+}
+
+.dui-story-page .ds-copy h3 {
+  margin: 35px 0 18px;
+
+  color: var(--story-pink);
+  font-size: clamp(23px, 2.5vw, 30px);
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.dui-story-page .ds-copy a {
+  color: var(--story-yellow);
+  text-underline-offset: 4px;
+}
+
+.dui-story-page .ds-copy a:hover {
+  color: var(--story-pink);
+}
+
+.dui-story-page .ds-copy a:focus-visible {
+  outline: 2px solid var(--story-yellow);
+  outline-offset: 4px;
+}
+
+/* QUOTES */
+
+.dui-story-page .ds-copy blockquote {
+  margin: 35px 0;
+  padding: 25px;
+  border-left: 4px solid var(--story-pink);
+
+  background: #151515;
+}
+
+.dui-story-page .ds-copy blockquote p {
+  font-size: clamp(21px, 2.5vw, 29px);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.dui-story-page .ds-copy blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.dui-story-page .ds-copy blockquote cite {
+  display: block;
+  margin-top: 18px;
+
+  color: var(--story-yellow);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+/* OPTIONAL STORY IMAGES */
+
+.dui-story-page .ds-copy img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 30px 0;
+}
+
+/* SECTION DIVIDERS */
+
+.dui-story-page .ds-copy hr {
+  margin: 40px 0;
+  border: 0;
+  border-top: 2px solid var(--story-purple);
+}
+
+/* ==========================================
+   EDITABLE PLACEHOLDERS
+   ========================================== */
+
+.dui-story-page .ds-copy .ds-placeholder {
+  padding: 25px;
+  border-left: 4px solid var(--story-pink);
+
+  background: #151515;
+  color: #dddddd;
+}
+
+/* ==========================================
+   ENDING
+   ========================================== */
+
+.dui-story-page .ds-ending {
+  padding: 70px 6vw;
+  background: var(--story-purple);
+  color: var(--story-white);
+}
+
+.dui-story-page .ds-ending h2 {
+  margin-bottom: 25px;
+
+  font-size: clamp(38px, 6vw, 75px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.dui-story-page .ds-ending-copy {
+  max-width: 720px;
+  margin-bottom: 30px;
+
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.dui-story-page .ds-back {
+  display: inline-block;
+  max-width: 100%;
+
+  padding: 17px 22px;
+  border: 2px solid var(--story-yellow);
+
+  background: var(--story-black);
+  color: var(--story-yellow);
+
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
+}
+
+.dui-story-page .ds-back:hover {
+  background: var(--story-yellow);
+  color: var(--story-black);
+}
+
+.dui-story-page .ds-back:focus-visible {
+  outline: 3px solid var(--story-white);
+  outline-offset: 5px;
+}
+
+/* ==========================================
+   TABLET
+   ========================================== */
+
+@media (max-width: 1000px) {
+  .dui-story-page .ds-layout {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 780px;
+    gap: 45px;
+  }
+
+  .dui-story-page .ds-note {
+    max-width: 600px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 767px) {
+  .dui-story-page .ds-hero {
+    align-items: flex-start;
+
+    min-height: 1000px;
+    min-height: max(1000px, 125svh);
+
+    padding: 115px 22px 60px;
+
+    background-image: var(--dui-mobile, none);
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  .dui-story-page .ds-hero::before {
+    background: linear-gradient(
+      180deg,
+      rgba(8, 8, 8, 0.15) 0%,
+      transparent 65%
+    );
+  }
+
+  .dui-story-page .ds-eyebrow {
+    max-width: 100%;
+    margin-bottom: 28px;
+
+    font-size: 10px;
+    letter-spacing: 0.06em;
+  }
+
+  .dui-story-page .ds-hero h1 {
+    max-width: 100%;
+    font-size: clamp(75px, 22vw, 145px);
+  }
+
+  .dui-story-page .ds-intro {
+    max-width: 100%;
+    margin-top: 28px;
+    font-size: 17px;
+  }
+
+  .dui-story-page .ds-context {
+    padding: 28px 22px;
+  }
+
+  .dui-story-page .ds-context p {
+    font-size: 16px;
+  }
+
+  .dui-story-page .ds-body,
+  .dui-story-page .ds-ending {
+    padding: 55px 22px;
+  }
+
+  .dui-story-page .ds-layout {
+    gap: 38px;
+  }
+
+  .dui-story-page .ds-sidebar h2 {
+    font-size: 42px;
+  }
+
+  .dui-story-page .ds-note {
+    margin-top: 23px;
+    padding: 20px;
+  }
+
+  .dui-story-page .ds-copy p {
+    font-size: 17px;
+    line-height: 1.85;
+  }
+
+  .dui-story-page .ds-copy h2 {
+    margin-top: 40px;
+    font-size: 29px;
+  }
+
+  .dui-story-page .ds-copy h3 {
+    font-size: 24px;
+  }
+
+  .dui-story-page .ds-copy .ds-placeholder,
+  .dui-story-page .ds-copy blockquote {
+    padding: 20px;
+  }
+
+  .dui-story-page .ds-ending-copy {
+    font-size: 17px;
+  }
+
+  .dui-story-page .ds-back {
+    padding: 16px 18px;
+    font-size: 12px;
+  }
+}
+
+
+/* =========================================
+   PRESS SEND — BIPOLAR SOBER
+   Addiction / Perspectives
+========================================= */
+
+.press-send-page {
+  --ps-black: #080808;
+  --ps-pink: #ff1493;
+  --ps-yellow: #eaff00;
+  --ps-purple: #8a00ff;
+  --ps-white: #ffffff;
+
+  background: var(--ps-black);
+  color: var(--ps-white);
+  overflow: hidden;
+  font-family: inherit;
+}
+
+.press-send-page *,
+.press-send-page *::before,
+.press-send-page *::after {
+  box-sizing: border-box;
+}
+
+.press-send-container {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.press-send-hero {
+  min-height: 85vh;
+  background:
+    radial-gradient(
+      circle at 85% 60%,
+      rgba(138, 0, 255, .17),
+      transparent 45%
+    ),
+    var(--ps-black);
+  display: flex;
+}
+
+.press-send-hero-inner {
+  width: min(1280px, calc(100% - 64px));
+  margin: auto;
+  padding: 65px 0 35px;
+}
+
+.press-send-eyebrow {
+  color: var(--ps-yellow);
+  font-size: .73rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  margin: 0 0 50px;
+}
+
+.press-send-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 60px;
+  align-items: center;
+}
+
+.press-send-kicker {
+  font-size: .9rem;
+  font-weight: 900;
+  color: var(--ps-pink);
+  letter-spacing: .15em;
+  margin: 0 0 20px;
+}
+
+.press-send-hero h1 {
+  font-size: clamp(5rem, 12vw, 11rem);
+  font-weight: 1000;
+  line-height: .82;
+  letter-spacing: -.085em;
+  margin: 0;
+}
+
+.press-send-hero h1 > span {
+  display: block;
+}
+
+.press-send-title-accent {
+  color: var(--ps-pink);
+}
+
+.press-send-period {
+  color: var(--ps-yellow);
+}
+
+.press-send-tagline {
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  line-height: 1.45;
+  font-weight: 900;
+  letter-spacing: .07em;
+  margin: 35px 0 0;
+}
+
+.press-send-hero-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 1px solid #404040;
+  margin-top: 70px;
+  padding-top: 18px;
+  color: #bcbcbc;
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+/* PHONE GRAPHIC */
+
+.press-send-phone {
+  width: 100%;
+  max-width: 310px;
+  min-height: 485px;
+  border: 7px solid #303030;
+  border-radius: 38px;
+  background: #171717;
+  padding: 24px 17px 20px;
+  box-shadow:
+    0 0 0 2px #666,
+    18px 22px 0 rgba(138, 0, 255, .6);
+  transform: rotate(7deg);
+}
+
+.press-send-phone-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ddd;
+  font-size: .67rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #333;
+}
+
+.press-send-phone-dot {
+  width: 9px;
+  height: 9px;
+  background: var(--ps-pink);
+  border-radius: 50%;
+}
+
+.press-send-bubble {
+  width: fit-content;
+  max-width: 88%;
+  padding: 13px 17px;
+  border-radius: 19px;
+  margin: 15px 0;
+  font-size: .93rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.press-send-bubble.incoming {
+  background: #3b3b3b;
+  color: white;
+  border-bottom-left-radius: 4px;
+}
+
+.press-send-bubble.outgoing {
+  background: var(--ps-pink);
+  color: #080808;
+  margin-left: auto;
+  border-bottom-right-radius: 4px;
+}
+
+.press-send-bubble.last {
+  min-width: 68px;
+}
+
+.press-send-typing {
+  display: flex;
+  gap: 5px;
+  padding: 3px;
+}
+
+.press-send-typing i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #080808;
+  opacity: .7;
+}
+
+.press-send-phone-bottom {
+  margin-top: 45px;
+  border: 1px solid #555;
+  border-radius: 30px;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 7px 6px 15px;
+  font-size: .65rem;
+  color: #999;
+  letter-spacing: .1em;
+}
+
+.press-send-send-arrow {
+  background: var(--ps-yellow);
+  color: #080808;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+/* SHARED SECTIONS */
+
+.press-send-section {
+  padding: 105px 0;
+}
+
+.press-send-section-number {
+  color: var(--ps-pink);
+  font-size: .8rem;
+  font-weight: 900;
+  letter-spacing: .15em;
+  margin: 0 0 30px;
+}
+
+.press-send-section h2 {
+  font-size: clamp(2.6rem, 6.8vw, 6rem);
+  font-weight: 1000;
+  letter-spacing: -.055em;
+  line-height: 1.02;
+  text-transform: uppercase;
+  margin: 0 0 42px;
+}
+
+.press-send-section h2 span {
+  color: var(--ps-pink);
+}
+
+.press-send-prose {
+  max-width: 790px;
+  font-size: clamp(1rem, 1.35vw, 1.15rem);
+  line-height: 1.9;
+}
+
+.press-send-prose p {
+  margin: 0 0 1.5em;
+}
+
+/* INTRO */
+
+.press-send-intro-section {
+  background: var(--ps-yellow);
+  color: var(--ps-black);
+}
+
+.press-send-intro-section .press-send-section-number {
+  color: var(--ps-purple);
+}
+
+.press-send-intro-section h2 span {
+  color: var(--ps-purple);
+}
+
+/* JOURNAL */
+
+.press-send-journal-section {
+  background: var(--ps-black);
+}
+
+.press-send-journal-section h2 span {
+  color: var(--ps-yellow);
+}
+
+.press-send-journal {
+  max-width: 850px;
+  padding: 45px 48px;
+  background: #151515;
+  border-left: 6px solid var(--ps-pink);
+  box-shadow: 12px 12px 0 rgba(138, 0, 255, .35);
+}
+
+.press-send-journal-label {
+  color: var(--ps-yellow);
+  font-size: .76rem;
+  font-weight: 900;
+  letter-spacing: .18em;
+  margin: 0 0 35px;
+}
+
+.press-send-journal p:not(.press-send-journal-label) {
+  font-size: clamp(1rem, 1.3vw, 1.13rem);
+  line-height: 1.95;
+  margin: 0 0 1.5em;
+}
+
+.press-send-journal p:last-child {
+  margin-bottom: 0;
+}
+
+/* REFLECTION */
+
+.press-send-reflection-section {
+  background: var(--ps-purple);
+  color: white;
+}
+
+.press-send-reflection-section .press-send-section-number {
+  color: var(--ps-yellow);
+}
+
+.press-send-reflection-section h2 span {
+  color: var(--ps-yellow);
+}
+
+/* END */
+
+.press-send-end {
+  background: var(--ps-pink);
+  color: var(--ps-black);
+  padding: 65px 0;
+  text-align: center;
+}
+
+.press-send-end-title {
+  font-size: clamp(3rem, 9vw, 7rem);
+  font-weight: 1000;
+  letter-spacing: -.07em;
+  line-height: 1;
+  margin: 0 0 15px;
+}
+
+.press-send-end-title span {
+  color: var(--ps-yellow);
+}
+
+.press-send-end p:not(.press-send-end-title) {
+  font-size: .8rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  line-height: 1.6;
+}
+
+.press-send-back {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 15px 25px;
+  background: var(--ps-black);
+  color: var(--ps-white);
+  border: 2px solid var(--ps-black);
+  text-decoration: none;
+  font-size: .8rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  transition: .2s ease;
+}
+
+.press-send-back:hover {
+  background: var(--ps-yellow);
+  color: var(--ps-black);
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .press-send-hero-grid {
+    grid-template-columns: minmax(0, 1fr) 240px;
+    gap: 20px;
+  }
+
+  .press-send-phone {
+    min-height: 430px;
+    transform: rotate(4deg) scale(.88);
+    transform-origin: center;
+  }
+
+  .press-send-hero h1 {
+    font-size: clamp(4.5rem, 12vw, 8rem);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .press-send-container {
+    width: calc(100% - 36px);
+  }
+
+  .press-send-hero {
+    min-height: auto;
+  }
+
+  .press-send-hero-inner {
+    width: calc(100% - 36px);
+    padding: 45px 0 24px;
+  }
+
+  .press-send-eyebrow {
+    font-size: .59rem;
+    line-height: 1.6;
+    margin-bottom: 42px;
+  }
+
+  .press-send-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .press-send-hero h1 {
+    font-size: clamp(4.2rem, 19vw, 7.6rem);
+  }
+
+  .press-send-tagline {
+    font-size: 1rem;
+    margin-top: 28px;
+  }
+
+  .press-send-phone {
+    width: 255px;
+    min-height: 415px;
+    margin: 0 auto;
+    transform: rotate(5deg);
+    box-shadow:
+      0 0 0 2px #666,
+      10px 12px 0 rgba(138, 0, 255, .6);
+  }
+
+  .press-send-hero-footer {
+    margin-top: 48px;
+    font-size: .55rem;
+    line-height: 1.5;
+  }
+
+  .press-send-section {
+    padding: 70px 0;
+  }
+
+  .press-send-section h2 {
+    font-size: clamp(2.4rem, 10vw, 4rem);
+    margin-bottom: 32px;
+  }
+
+  .press-send-prose {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .press-send-journal {
+    padding: 30px 22px;
+    border-left-width: 4px;
+    box-shadow: 6px 6px 0 rgba(138, 0, 255, .35);
+  }
+
+  .press-send-journal p:not(.press-send-journal-label) {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .press-send-end {
+    padding: 55px 0;
+  }
+
+  .press-send-end-title {
+    font-size: clamp(3rem, 13vw, 5rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .press-send-back {
+    transition: none;
+  }
+}
+
+
+/* =========================================
+   BIPOLAR SOBER — ON PSYCHOSIS
+   Desktop + Mobile
+========================================= */
+
+.psychosis-page {
+  --psy-black: #080808;
+  --psy-pink: #ff1493;
+  --psy-yellow: #eaff00;
+  --psy-purple: #8a00ff;
+  --psy-white: #ffffff;
+
+  background: var(--psy-black);
+  color: var(--psy-white);
+  overflow-x: clip;
+  font-family: inherit;
+}
+
+.psychosis-page *,
+.psychosis-page *::before,
+.psychosis-page *::after {
+  box-sizing: border-box;
+}
+
+.psychosis-container {
+  width: min(1040px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.psychosis-page h1,
+.psychosis-page h2,
+.psychosis-page h3 {
+  text-transform: uppercase;
+  overflow-wrap: break-word;
+}
+
+.psychosis-page p {
+  overflow-wrap: break-word;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.psychosis-hero {
+  position: relative;
+  min-height: 92svh;
+  display: flex;
+  align-items: center;
+
+  background-color: var(--psy-black);
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, .95) 0%,
+      rgba(8, 8, 8, .78) 34%,
+      rgba(8, 8, 8, .20) 75%,
+      rgba(8, 8, 8, .08) 100%
+    ),
+    url("bipolar-psychosis-desktop.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.psychosis-hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(1260px, calc(100% - 72px));
+  margin: auto;
+  padding: 105px 0 75px;
+}
+
+.psychosis-eyebrow {
+  color: var(--psy-yellow);
+  font-size: .75rem;
+  font-weight: 900;
+  letter-spacing: .15em;
+  margin: 0 0 70px;
+}
+
+.psychosis-hero-number {
+  color: var(--psy-pink);
+  font-size: .9rem;
+  font-weight: 900;
+  letter-spacing: .19em;
+  margin: 0 0 18px;
+}
+
+.psychosis-hero h1 {
+  max-width: 950px;
+  font-size: clamp(3.4rem, 8.3vw, 9rem);
+  line-height: .91;
+  letter-spacing: -.075em;
+  font-weight: 1000;
+  margin: 0;
+}
+
+.psychosis-hero h1 > span {
+  display: block;
+}
+
+.psychosis-hero h1 > span:nth-child(2) {
+  color: var(--psy-pink);
+}
+
+.psychosis-dot {
+  color: var(--psy-yellow);
+}
+
+.psychosis-hero-tagline {
+  font-size: clamp(1.1rem, 2vw, 1.65rem);
+  font-weight: 900;
+  line-height: 1.35;
+  letter-spacing: .065em;
+  margin: 35px 0 40px;
+}
+
+.psychosis-scroll,
+.psychosis-back {
+  display: inline-block;
+  padding: 16px 24px;
+  font-size: .8rem;
+  font-weight: 900;
+  letter-spacing: .07em;
+  text-decoration: none;
+  transition:
+    transform .2s ease,
+    background-color .2s ease;
+}
+
+.psychosis-scroll {
+  background: var(--psy-yellow);
+  color: var(--psy-black);
+}
+
+.psychosis-scroll:hover {
+  background: var(--psy-pink);
+  color: var(--psy-black);
+  transform: translateY(-3px);
+}
+
+.psychosis-scroll:focus-visible,
+.psychosis-back:focus-visible {
+  outline: 3px solid var(--psy-white);
+  outline-offset: 5px;
+}
+
+/* =========================================
+   SHARED TYPOGRAPHY
+========================================= */
+
+.psychosis-label {
+  color: var(--psy-pink);
+  font-size: .75rem;
+  font-weight: 900;
+  letter-spacing: .18em;
+  line-height: 1.6;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+}
+
+.psychosis-story-text {
+  max-width: 775px;
+  margin-top: 35px;
+}
+
+.psychosis-story-text p {
+  font-size: clamp(1.04rem, 1.5vw, 1.19rem);
+  line-height: 2;
+  margin: 0 0 1.65em;
+  font-weight: 400;
+}
+
+.psychosis-story-text p:last-child {
+  margin-bottom: 0;
+}
+
+.psychosis-story-text em {
+  font-style: italic;
+  color: var(--psy-pink);
+}
+
+.psychosis-scene {
+  padding: 110px 0 125px;
+}
+
+/* =========================================
+   OPENING
+========================================= */
+
+.psychosis-opening {
+  background: var(--psy-black);
+  padding: 115px 0;
+}
+
+.psychosis-opening h2 {
+  font-size: clamp(3.5rem, 9vw, 8.4rem);
+  font-weight: 1000;
+  line-height: .94;
+  letter-spacing: -.07em;
+  margin: 0 0 55px;
+}
+
+.psychosis-opening h2 span {
+  color: var(--psy-pink);
+}
+
+.psychosis-opening-line {
+  font-size: clamp(1.4rem, 2.5vw, 2rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+}
+
+/* =========================================
+   911 / PINK
+========================================= */
+
+.psychosis-scene-pink {
+  background: var(--psy-pink);
+  color: var(--psy-black);
+}
+
+.psychosis-scene-pink .psychosis-label {
+  color: var(--psy-black);
+}
+
+.psychosis-scene-pink h2 {
+  font-size: clamp(6rem, 17vw, 14rem);
+  font-weight: 1000;
+  line-height: .9;
+  letter-spacing: -.09em;
+  margin: 0 0 60px;
+}
+
+.psychosis-dialogue {
+  max-width: 900px;
+  padding: 32px 0 45px;
+  border-top: 4px solid var(--psy-black);
+  border-bottom: 4px solid var(--psy-black);
+}
+
+.psychosis-dialogue-label {
+  font-size: .8rem;
+  font-weight: 900;
+  letter-spacing: .14em;
+  margin-bottom: 30px;
+}
+
+.psychosis-dialogue-big {
+  font-size: clamp(1.9rem, 4.5vw, 4rem);
+  font-weight: 1000;
+  letter-spacing: -.045em;
+  line-height: 1.1;
+  margin: 0 0 45px;
+}
+
+.psychosis-dialogue-small {
+  font-size: clamp(1.4rem, 3vw, 2.3rem);
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+.psychosis-dialogue-answer {
+  color: var(--psy-yellow);
+  background: var(--psy-black);
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: 1000;
+  line-height: 1.1;
+  transform: rotate(-2deg);
+  margin: 10px 0;
+}
+
+/* =========================================
+   THE NIGHT / BLACK
+========================================= */
+
+.psychosis-scene-dark {
+  background:
+    radial-gradient(
+      circle at 95% 10%,
+      rgba(138, 0, 255, .20),
+      transparent 50%
+    ),
+    var(--psy-black);
+}
+
+.psychosis-scene-dark h2 {
+  font-size: clamp(2.7rem, 7vw, 6.4rem);
+  line-height: 1.04;
+  letter-spacing: -.06em;
+  font-weight: 1000;
+  margin: 0 0 55px;
+}
+
+.psychosis-scene-dark h2 span {
+  color: var(--psy-yellow);
+}
+
+.psychosis-pullquote {
+  position: relative;
+  max-width: 940px;
+  border-left: 8px solid var(--psy-pink);
+  padding: 32px 0 32px 35px;
+  margin: 80px 0;
+  color: var(--psy-pink);
+  background: rgba(255, 20, 147, .045);
+  font-size: clamp(1.7rem, 4.2vw, 4rem);
+  font-weight: 1000;
+  line-height: 1.18;
+  letter-spacing: -.045em;
+}
+
+/* =========================================
+   SLEEP / YELLOW
+========================================= */
+
+.psychosis-sleep {
+  padding: 115px 0;
+  background: var(--psy-yellow);
+  color: var(--psy-black);
+}
+
+.psychosis-sleep .psychosis-label {
+  color: var(--psy-purple);
+}
+
+.psychosis-sleep-lead {
+  font-size: clamp(1rem, 2.4vw, 1.8rem);
+  font-weight: 900;
+  letter-spacing: .12em;
+  margin: 0 0 15px;
+}
+
+.psychosis-sleep h2 {
+  font-size: clamp(5rem, 16vw, 12rem);
+  font-weight: 1000;
+  line-height: .84;
+  letter-spacing: -.075em;
+  margin: 0 0 60px;
+}
+
+.psychosis-sleep h2 span {
+  color: var(--psy-purple);
+}
+
+/* =========================================
+   RECORD PLAYER / PURPLE
+========================================= */
+
+.psychosis-scene-purple {
+  background: var(--psy-purple);
+  color: var(--psy-white);
+}
+
+.psychosis-scene-purple .psychosis-label {
+  color: var(--psy-yellow);
+}
+
+.psychosis-command {
+  padding: 30px 0;
+  border-top: 3px solid var(--psy-yellow);
+  border-bottom: 3px solid var(--psy-yellow);
+  max-width: 930px;
+}
+
+.psychosis-command-index {
+  display: block;
+  color: var(--psy-yellow);
+  font-size: .75rem;
+  font-weight: 900;
+  letter-spacing: .18em;
+  margin-bottom: 25px;
+}
+
+.psychosis-command p {
+  font-size: clamp(2.4rem, 6vw, 5.8rem);
+  font-weight: 1000;
+  letter-spacing: -.06em;
+  line-height: 1.04;
+  margin: 0;
+}
+
+.psychosis-warning {
+  display: inline-block;
+  background: var(--psy-yellow);
+  color: var(--psy-black);
+  padding: 18px 28px;
+  margin: 55px 0 15px;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-weight: 1000;
+  line-height: 1.1;
+  letter-spacing: -.055em;
+  transform: rotate(-2deg);
+}
+
+/* =========================================
+   REACHING OUT / YELLOW
+========================================= */
+
+.psychosis-scene-yellow {
+  background: #f0f0ed;
+  color: var(--psy-black);
+}
+
+.psychosis-scene-yellow .psychosis-label {
+  color: var(--psy-purple);
+}
+
+.psychosis-scene-yellow h2 {
+  font-size: clamp(2.9rem, 7vw, 6.5rem);
+  font-weight: 1000;
+  letter-spacing: -.06em;
+  line-height: 1.03;
+  margin: 0 0 60px;
+}
+
+.psychosis-scene-yellow h2 span {
+  color: var(--psy-purple);
+}
+
+.psychosis-help-words {
+  margin-top: 65px;
+  padding: 28px 0;
+  border-top: 5px solid var(--psy-black);
+  border-bottom: 5px solid var(--psy-black);
+  color: var(--psy-purple);
+  font-size: clamp(1.6rem, 4.7vw, 4.2rem);
+  font-weight: 1000;
+  letter-spacing: -.04em;
+  line-height: 1.15;
+}
+
+/* =========================================
+   DIAGNOSIS / BLACK
+========================================= */
+
+.psychosis-diagnosis {
+  padding: 120px 0 135px;
+  background: var(--psy-black);
+}
+
+.psychosis-diagnosis-heading > span {
+  display: block;
+  color: var(--psy-yellow);
+  font-size: .85rem;
+  font-weight: 900;
+  letter-spacing: .14em;
+  margin-bottom: 28px;
+}
+
+.psychosis-diagnosis h2 {
+  font-size: clamp(2.4rem, 6.5vw, 6rem);
+  font-weight: 1000;
+  letter-spacing: -.065em;
+  line-height: 1.08;
+  margin: 0 0 60px;
+}
+
+.psychosis-diagnosis h2 span {
+  color: var(--psy-pink);
+}
+
+.psychosis-final-line {
+  margin-top: 85px;
+  border-top: 1px solid #555;
+  padding-top: 45px;
+  max-width: 970px;
+  font-size: clamp(1.5rem, 4vw, 3.7rem);
+  font-weight: 1000;
+  line-height: 1.25;
+  letter-spacing: -.04em;
+}
+
+.psychosis-final-line span {
+  color: var(--psy-yellow);
+}
+
+/* =========================================
+   EDUCATION / EDITABLE ARTICLE
+========================================= */
+
+.psychosis-education {
+  padding: 115px 0 135px;
+  background: #f3f0e8;
+  color: var(--psy-black);
+}
+
+.psychosis-education .psychosis-label {
+  color: var(--psy-purple);
+}
+
+.psychosis-education > .psychosis-container > h2 {
+  font-size: clamp(3rem, 7.5vw, 7rem);
+  font-weight: 1000;
+  line-height: .98;
+  letter-spacing: -.065em;
+  margin: 0 0 45px;
+}
+
+.psychosis-education > .psychosis-container > h2 span {
+  color: var(--psy-purple);
+}
+
+.psychosis-education-intro {
+  max-width: 760px;
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 0 0 75px;
+}
+
+.psychosis-article {
+  border-top: 5px solid var(--psy-black);
+}
+
+.psychosis-article-block {
+  padding: 65px 0;
+  border-bottom: 2px solid rgba(8, 8, 8, .18);
+}
+
+.psychosis-article-number {
+  color: var(--psy-purple);
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .13em;
+  margin: 0 0 18px;
+}
+
+.psychosis-article-block h3 {
+  font-size: clamp(1.65rem, 3.7vw, 3.2rem);
+  font-weight: 1000;
+  letter-spacing: -.045em;
+  line-height: 1.1;
+  margin: 0 0 30px;
+}
+
+.psychosis-article-block p:not(.psychosis-article-number) {
+  max-width: 780px;
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  line-height: 1.95;
+  margin: 0 0 1.5em;
+}
+
+.psychosis-article-block p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   END
+========================================= */
+
+.psychosis-end {
+  background: var(--psy-pink);
+  color: var(--psy-black);
+  padding: 100px 0;
+}
+
+.psychosis-end-small {
+  font-size: .75rem;
+  font-weight: 900;
+  letter-spacing: .15em;
+  margin: 0 0 30px;
+}
+
+.psychosis-end h2 {
+  font-size: clamp(2.8rem, 7vw, 7rem);
+  font-weight: 1000;
+  letter-spacing: -.06em;
+  line-height: 1.03;
+  margin: 0 0 45px;
+}
+
+.psychosis-end h2 span {
+  color: var(--psy-white);
+}
+
+.psychosis-back {
+  background: var(--psy-black);
+  color: var(--psy-white);
+}
+
+.psychosis-back:hover {
+  background: var(--psy-yellow);
+  color: var(--psy-black);
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .psychosis-hero {
+    min-height: 78svh;
+    background-position: 58% center;
+  }
+
+  .psychosis-hero-content {
+    width: calc(100% - 48px);
+  }
+
+  .psychosis-hero h1 {
+    font-size: clamp(3.2rem, 9vw, 6.5rem);
+  }
+
+  .psychosis-scene,
+  .psychosis-opening,
+  .psychosis-sleep,
+  .psychosis-diagnosis,
+  .psychosis-education {
+    padding-top: 90px;
+    padding-bottom: 95px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+  .psychosis-container {
+    width: calc(100% - 36px);
+  }
+
+  .psychosis-hero {
+    min-height: 92svh;
+    align-items: flex-start;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 8, .83) 0%,
+        rgba(8, 8, 8, .55) 33%,
+        rgba(8, 8, 8, .12) 65%,
+        rgba(8, 8, 8, .27) 100%
+      ),
+      url("bipolar-psychosis-mobile.png");
+
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .psychosis-hero-content {
+    width: calc(100% - 36px);
+    padding: 45px 0 50px;
+  }
+
+  .psychosis-eyebrow {
+    font-size: .58rem;
+    line-height: 1.6;
+    margin-bottom: 48px;
+  }
+
+  .psychosis-hero-number {
+    font-size: .72rem;
+  }
+
+  .psychosis-hero h1 {
+    font-size: clamp(2.8rem, 12.5vw, 5.2rem);
+    line-height: .96;
+  }
+
+  .psychosis-hero-tagline {
+    font-size: 1rem;
+    margin-top: 28px;
+    margin-bottom: 30px;
+  }
+
+  .psychosis-scroll {
+    padding: 13px 18px;
+    font-size: .72rem;
+  }
+
+  .psychosis-scene,
+  .psychosis-opening,
+  .psychosis-sleep,
+  .psychosis-diagnosis,
+  .psychosis-education {
+    padding: 70px 0 80px;
+  }
+
+  .psychosis-label {
+    font-size: .67rem;
+    margin-bottom: 25px;
+  }
+
+  .psychosis-story-text {
+    margin-top: 28px;
+  }
+
+  .psychosis-story-text p {
+    font-size: 1.03rem;
+    line-height: 1.82;
+    margin-bottom: 1.5em;
+  }
+
+  .psychosis-opening h2 {
+    font-size: clamp(2.7rem, 12vw, 4.5rem);
+    margin-bottom: 38px;
+  }
+
+  .psychosis-scene-pink h2 {
+    font-size: clamp(5rem, 24vw, 8rem);
+    margin-bottom: 35px;
+  }
+
+  .psychosis-dialogue {
+    padding: 25px 0 32px;
+  }
+
+  .psychosis-dialogue-big {
+    font-size: clamp(1.45rem, 7.5vw, 2.8rem);
+    margin-bottom: 30px;
+  }
+
+  .psychosis-dialogue-answer {
+    font-size: 2.3rem;
+    padding: 12px 14px;
+  }
+
+  .psychosis-scene-dark h2 {
+    font-size: clamp(2.35rem, 9.5vw, 4rem);
+    margin-bottom: 35px;
+  }
+
+  .psychosis-pullquote {
+    margin: 55px 0;
+    padding: 22px 0 22px 18px;
+    border-left-width: 5px;
+    font-size: clamp(1.45rem, 6.8vw, 2.6rem);
+  }
+
+  .psychosis-sleep h2 {
+    font-size: clamp(4.5rem, 19vw, 7.5rem);
+    margin-bottom: 40px;
+  }
+
+  .psychosis-command p {
+    font-size: clamp(1.9rem, 8.5vw, 3.8rem);
+  }
+
+  .psychosis-warning {
+    font-size: clamp(1.6rem, 8vw, 3.2rem);
+    padding: 16px 18px;
+    margin-top: 35px;
+  }
+
+  .psychosis-scene-yellow h2,
+  .psychosis-diagnosis h2 {
+    font-size: clamp(2.25rem, 9.2vw, 4rem);
+    margin-bottom: 35px;
+  }
+
+  .psychosis-help-words {
+    margin-top: 45px;
+    font-size: clamp(1.3rem, 6.3vw, 2.5rem);
+  }
+
+  .psychosis-final-line {
+    margin-top: 55px;
+    padding-top: 30px;
+    font-size: clamp(1.3rem, 6.5vw, 2.5rem);
+  }
+
+  .psychosis-education > .psychosis-container > h2 {
+    font-size: clamp(2.65rem, 11vw, 4.5rem);
+  }
+
+  .psychosis-education-intro {
+    font-size: 1.1rem;
+    margin-bottom: 55px;
+  }
+
+  .psychosis-article-block {
+    padding: 45px 0;
+  }
+
+  .psychosis-article-block h3 {
+    font-size: clamp(1.55rem, 7vw, 2.6rem);
+  }
+
+  .psychosis-article-block p:not(.psychosis-article-number) {
+    font-size: 1rem;
+    line-height: 1.82;
+  }
+
+  .psychosis-end {
+    padding: 65px 0;
+  }
+
+  .psychosis-end h2 {
+    font-size: clamp(2.4rem, 10vw, 4.5rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .psychosis-scroll,
+  .psychosis-back {
+    transition: none;
+  }
+}
+
+
+/* ========================================
+   FIRST DUI — STORY IMPACT STYLING
+======================================== */
+
+/* Emphasized narrative statements */
+
+.first-dui-page .ds-impact {
+  margin: 45px 0 !important;
+  padding: 22px 0 22px 25px;
+  border-left: 6px solid var(--story-pink);
+  color: var(--story-pink);
+  font-size: clamp(23px, 3vw, 35px) !important;
+  font-weight: 900;
+  line-height: 1.35 !important;
+}
+
+
+/* BLACKOUT MOMENT */
+
+.first-dui-page .ds-blackout {
+  margin: 75px 0;
+  padding: 55px 30px;
+  background: var(--story-pink);
+  color: var(--story-black);
+  text-align: center;
+  transform: rotate(-1deg);
+}
+
+.first-dui-page .ds-blackout-label {
+  display: block;
+  margin-bottom: 28px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .16em;
+}
+
+.first-dui-page .ds-blackout p {
+  margin: 0;
+  font-size: clamp(38px, 6vw, 72px);
+  font-weight: 900;
+  letter-spacing: -.055em;
+  line-height: 1.05;
+}
+
+
+/* JAIL INSTRUCTIONS */
+
+.first-dui-page .ds-jail-commands {
+  margin: 45px 0;
+  padding: 30px;
+  background: #181818;
+  border: 2px solid var(--story-purple);
+}
+
+.first-dui-page .ds-jail-commands p {
+  margin: 0 0 15px;
+  color: var(--story-yellow);
+  font-size: clamp(18px, 2.5vw, 28px);
+  font-weight: 900;
+  line-height: 1.3;
+  letter-spacing: -.015em;
+}
+
+.first-dui-page .ds-jail-commands p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* CONSEQUENCES */
+
+.first-dui-page .ds-consequences {
+  margin: 45px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.first-dui-page .ds-consequences span {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  padding: 12px 18px;
+  background: var(--story-yellow);
+  color: var(--story-black);
+  font-size: clamp(17px, 2.5vw, 25px);
+  font-weight: 900;
+  line-height: 1.3;
+  transform: rotate(-1deg);
+}
+
+.first-dui-page .ds-consequences span:nth-child(2) {
+  background: var(--story-purple);
+  color: white;
+  transform: rotate(1deg);
+}
+
+
+/* FINAL STORY SENTENCE */
+
+.first-dui-page .ds-story-final {
+  margin: 55px 0 0 !important;
+  padding-top: 25px;
+  border-top: 3px solid var(--story-yellow);
+  color: var(--story-yellow);
+  font-size: clamp(24px, 4vw, 43px) !important;
+  font-weight: 900;
+  letter-spacing: -.035em;
+  line-height: 1.15 !important;
+}
+
+
+/* ENDING EYEBROW */
+
+.first-dui-page .ds-ending-eyebrow {
+  margin-bottom: 22px;
+  color: var(--story-yellow);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+  .first-dui-page .ds-impact {
+    margin: 35px 0 !important;
+    padding-left: 18px;
+    font-size: 24px !important;
+  }
+
+  .first-dui-page .ds-blackout {
+    margin: 55px 0;
+    padding: 45px 18px;
+  }
+
+  .first-dui-page .ds-blackout p {
+    font-size: clamp(35px, 10vw, 55px);
+  }
+
+  .first-dui-page .ds-jail-commands {
+    padding: 22px 18px;
+  }
+
+  .first-dui-page .ds-jail-commands p {
+    font-size: 20px;
+  }
+
+  .first-dui-page .ds-consequences span {
+    font-size: 19px;
+    padding: 12px;
+  }
+
+  .first-dui-page .ds-story-final {
+    font-size: 28px !important;
+  }
+}
+
+
+/* =========================================
+   THIRD DUI — STORY STYLING
+   Bipolar Sober / Addiction / Perspectives
+========================================= */
+
+/* Mania announcement */
+
+.third-dui-page .ds-mania-callout {
+  margin: 50px 0;
+  padding: 28px 30px;
+  background: var(--story-purple);
+  color: #ffffff;
+  border-left: 7px solid var(--story-yellow);
+  transform: rotate(-1deg);
+}
+
+.third-dui-page .ds-mania-callout p {
+  margin: 0 0 12px;
+  color: var(--story-yellow);
+  font-size: clamp(45px, 7vw, 90px);
+  font-weight: 900;
+  letter-spacing: -.06em;
+  line-height: 1;
+}
+
+.third-dui-page .ds-mania-callout span {
+  display: block;
+  font-size: clamp(15px, 2.3vw, 23px);
+  font-weight: 900;
+  letter-spacing: .08em;
+}
+
+
+/* Phone call */
+
+.third-dui-page .ds-phone-call {
+  padding: 28px 32px;
+  margin: 35px 0;
+  background: #181818;
+  border: 2px solid var(--story-pink);
+}
+
+.third-dui-page .ds-phone-call .ds-phone-label {
+  color: var(--story-pink);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .15em;
+  margin: 0 0 15px;
+}
+
+.third-dui-page .ds-phone-call p:last-child {
+  color: #ffffff;
+  font-size: clamp(24px, 3vw, 37px);
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+}
+
+
+/* Jackpot / internal conflict */
+
+.third-dui-page .ds-jackpot {
+  margin: 65px 0 45px;
+  padding: 40px 30px;
+  background: var(--story-yellow);
+  color: var(--story-black);
+}
+
+.third-dui-page .ds-jackpot .ds-jackpot-main {
+  font-size: clamp(48px, 9vw, 110px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.065em;
+  margin: 0 0 12px;
+}
+
+.third-dui-page .ds-jackpot .ds-jackpot-sub {
+  margin: 0 0 25px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .12em;
+  line-height: 1.5;
+}
+
+.third-dui-page .ds-jackpot .ds-jackpot-no {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 8px 18px;
+  background: var(--story-black);
+  color: var(--story-pink);
+  font-size: clamp(42px, 7vw, 80px);
+  line-height: 1;
+  font-weight: 900;
+  transform: rotate(-3deg);
+}
+
+
+/* Guess who won */
+
+.third-dui-page .ds-guess-who {
+  color: var(--story-pink);
+  font-size: clamp(30px, 5vw, 58px) !important;
+  font-weight: 900;
+  letter-spacing: -.045em;
+  line-height: 1.2 !important;
+  margin: 45px 0 70px !important;
+}
+
+
+/* Drinking decision */
+
+.third-dui-page .ds-impact {
+  padding: 25px 0 25px 25px;
+  margin: 50px 0 !important;
+  border-left: 7px solid var(--story-pink);
+  color: var(--story-pink);
+  font-size: clamp(22px, 3vw, 34px) !important;
+  font-weight: 900;
+  line-height: 1.45 !important;
+}
+
+
+/* Blackout */
+
+.third-dui-page .ds-blackout {
+  margin: 70px 0;
+  padding: 55px 28px;
+  text-align: center;
+  background: var(--story-pink);
+  color: var(--story-black);
+  transform: rotate(-1deg);
+}
+
+.third-dui-page .ds-blackout-label {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+
+.third-dui-page .ds-blackout p {
+  margin: 0;
+  font-size: clamp(37px, 6vw, 70px);
+  font-weight: 900;
+  letter-spacing: -.055em;
+  line-height: 1.05;
+}
+
+
+/* Legal consequences */
+
+.third-dui-page .ds-consequences {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 50px 0;
+}
+
+.third-dui-page .ds-consequences span {
+  display: inline-block;
+  max-width: 100%;
+  padding: 13px 18px;
+  background: var(--story-yellow);
+  color: var(--story-black);
+  font-size: clamp(17px, 2.5vw, 25px);
+  font-weight: 900;
+  line-height: 1.25;
+  transform: rotate(-1deg);
+}
+
+.third-dui-page .ds-consequences span:nth-child(2) {
+  background: var(--story-purple);
+  color: white;
+  transform: rotate(1deg);
+}
+
+.third-dui-page .ds-consequences span:nth-child(3) {
+  background: var(--story-pink);
+  color: var(--story-black);
+}
+
+
+/* Accountability */
+
+.third-dui-page .ds-accountability {
+  padding: 28px 0;
+  margin: 55px 0 !important;
+  border-top: 4px solid var(--story-yellow);
+  border-bottom: 4px solid var(--story-yellow);
+  color: var(--story-yellow);
+  font-size: clamp(25px, 4vw, 46px) !important;
+  font-weight: 900;
+  line-height: 1.18 !important;
+  letter-spacing: -.045em;
+}
+
+
+/* Final prison statement */
+
+.third-dui-page .ds-prison-warning {
+  margin: 40px 0 65px;
+  padding: 42px 35px;
+  background: var(--story-purple);
+  color: white;
+  border: 3px solid var(--story-pink);
+  box-shadow: 12px 12px 0 rgba(255, 20, 147, .35);
+}
+
+.third-dui-page .ds-prison-warning .ds-prison-label {
+  color: var(--story-yellow);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .15em;
+  margin: 0 0 25px;
+}
+
+.third-dui-page .ds-prison-warning p:last-child {
+  margin: 0;
+  font-size: clamp(30px, 5.2vw, 62px);
+  font-weight: 900;
+  line-height: 1.12;
+  letter-spacing: -.05em;
+}
+
+
+/* Ending eyebrow */
+
+.third-dui-page .ds-ending-eyebrow {
+  margin-bottom: 22px;
+  color: var(--story-yellow);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+  .third-dui-page .ds-mania-callout {
+    padding: 25px 20px;
+  }
+
+  .third-dui-page .ds-mania-callout p {
+    font-size: clamp(45px, 15vw, 70px);
+  }
+
+  .third-dui-page .ds-phone-call {
+    padding: 25px 20px;
+  }
+
+  .third-dui-page .ds-jackpot {
+    padding: 35px 18px;
+  }
+
+  .third-dui-page .ds-jackpot .ds-jackpot-main {
+    font-size: clamp(44px, 13vw, 75px);
+  }
+
+  .third-dui-page .ds-guess-who {
+    font-size: clamp(28px, 8vw, 42px) !important;
+  }
+
+  .third-dui-page .ds-impact {
+    padding-left: 18px;
+    font-size: 23px !important;
+  }
+
+  .third-dui-page .ds-blackout {
+    padding: 45px 15px;
+  }
+
+  .third-dui-page .ds-blackout p {
+    font-size: clamp(34px, 9vw, 55px);
+  }
+
+  .third-dui-page .ds-consequences span {
+    font-size: 19px;
+    padding: 12px;
+  }
+
+  .third-dui-page .ds-accountability {
+    font-size: clamp(24px, 7.4vw, 36px) !important;
+  }
+
+  .third-dui-page .ds-prison-warning {
+    padding: 35px 20px;
+    box-shadow: 6px 6px 0 rgba(255, 20, 147, .35);
+  }
+
+  .third-dui-page .ds-prison-warning p:last-child {
+    font-size: clamp(28px, 8vw, 45px);
+  }
+}
+
+
+

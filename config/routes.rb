@@ -60,6 +60,10 @@ Rails.application.routes.draw do
       to: "bipolar_topics#impulsivity",
       as: :bipolar_impulsivity
 
+      get "bipolar/psychosis",
+      to: "bipolar_topics#psychosis",
+      as: :bipolar_psychosis
+
 
   # ==========================================
   # BIPOLAR > PERSPECTIVES
@@ -163,6 +167,19 @@ Rails.application.routes.draw do
       to: "addiction_perspectives#big_picture",
       as: :addiction_perspectives_big_picture
 
+      get "addiction/perspectives/shinto",
+    to: "addiction_perspectives#shinto",
+    as: :addiction_perspectives_shinto
+
+    get "addiction/perspectives/paganism",
+    to: "addiction_perspectives#paganism",
+    as: :addiction_perspectives_paganism
+
+      get "addiction/perspectives/taoism",
+      to: "addiction_perspectives#taoism",
+      as: :addiction_perspectives_taoism
+
+
 
   # ==========================================
   # TOOLBOX
@@ -261,6 +278,18 @@ get "spirituality/paganism",
   get "perspectives/on-the-inside",
       to: "perspectives_topics#inside",
       as: :perspectives_inside
+
+      get "addiction/first-dui",
+    to: "addiction_perspectives#first_dui",
+    as: :addiction_perspectives_first_dui
+
+    get "addiction/third-dui",
+    to: "addiction_perspectives#third_dui",
+    as: :addiction_perspectives_third_dui
+
+    get "/addiction/press-send",
+    to: "addiction_perspectives#press_send",
+    as: :addiction_perspectives_press_send
 
 
       # TOOLBOX TOOLS
