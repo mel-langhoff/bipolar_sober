@@ -6,6 +6,9 @@ Rails.application.routes.draw do
 
   root "home#index"
 
+  get "dear-journal",
+    to: "home#dear_journal",
+    as: :dear_journal
 
   # ==========================================
   # MAIN SECTIONS

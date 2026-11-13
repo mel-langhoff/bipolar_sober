@@ -1,0 +1,321 @@
+<% content_for :title, "Dear Journal | Bipolar Sober" %>
+
+<main class="dear-journal-page">
+
+  <style>
+    .dear-journal-page {
+      --dj-ink: #171717;
+      --dj-paper: #fffdf3;
+      --dj-blue-line: rgba(93, 145, 184, .32);
+      --dj-pink: #ff1493;
+      --dj-yellow: #eaff00;
+      min-height: 100vh;
+      padding: 70px 22px 90px;
+      background:
+        radial-gradient(ellipse at 20% 15%, rgba(138, 0, 255, .18), transparent 38%),
+        #080808;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .dj-header {
+      max-width: 900px;
+      margin: 0 auto 38px;
+    }
+
+    .dj-eyebrow,
+    .dj-meta,
+    .dj-label {
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .dj-eyebrow {
+      color: var(--dj-pink);
+    }
+
+    .dj-header h1 {
+      margin: 14px 0;
+      font-size: clamp(52px, 9vw, 112px);
+      line-height: .88;
+      letter-spacing: -.07em;
+      text-transform: uppercase;
+    }
+
+    .dj-subtitle {
+      color: var(--dj-yellow);
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .dj-notebook {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+      padding-top: 34px;
+      filter: drop-shadow(0 24px 35px rgba(0, 0, 0, .55));
+    }
+
+    /* Spiral binding */
+    .dj-spiral {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 8%;
+      right: 8%;
+      height: 48px;
+      background:
+        radial-gradient(ellipse at center, #c5c5c5 0 22%, transparent 25%)
+        0 0 / 42px 48px repeat-x;
+    }
+
+    .dj-paper {
+      position: relative;
+      overflow: hidden;
+      padding: 62px clamp(28px, 8vw, 82px) 70px;
+      color: var(--dj-ink);
+      background-color: var(--dj-paper);
+      background-image:
+        linear-gradient(
+          90deg,
+          transparent 0,
+          transparent 54px,
+          rgba(255, 20, 147, .58) 55px,
+          rgba(255, 20, 147, .58) 57px,
+          transparent 58px
+        ),
+        repeating-linear-gradient(
+          to bottom,
+          transparent 0,
+          transparent 37px,
+          var(--dj-blue-line) 38px,
+          transparent 39px
+        );
+      border-radius: 3px 8px 8px 3px;
+      box-shadow:
+        inset 8px 0 12px rgba(0, 0, 0, .08),
+        4px 5px 0 #e7e2d1;
+    }
+
+    /* Notebook holes */
+    .dj-paper::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 18px;
+      width: 16px;
+      background:
+        radial-gradient(circle, #080808 0 5px, #d8d2c1 5.5px 7px, transparent 7.5px)
+        center 18px / 16px 58px repeat-y;
+    }
+
+    .dj-date {
+      display: inline-block;
+      margin: 0 0 28px;
+      padding: 7px 10px;
+      background: var(--dj-yellow);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      transform: rotate(-2deg);
+    }
+
+    .dj-greeting {
+      margin: 0 0 18px;
+      color: #8a00ff;
+      font-family: Georgia, serif;
+      font-size: clamp(30px, 5vw, 48px);
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    .dj-copy {
+      max-width: 690px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(17px, 2vw, 20px);
+      line-height: 1.95;
+    }
+
+    .dj-copy p {
+      margin: 0 0 20px;
+    }
+
+    .dj-sticky {
+      max-width: 530px;
+      margin: 42px 0 34px auto;
+      padding: 24px 26px;
+      background: #eaff00;
+      box-shadow: 5px 7px 0 rgba(0, 0, 0, .18);
+      transform: rotate(1.5deg);
+    }
+
+    .dj-sticky .dj-label {
+      margin: 0 0 12px;
+      color: #8a00ff;
+    }
+
+    .dj-sticky p {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .dj-links-heading {
+      margin: 52px 0 16px;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .dj-bookmarks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .dj-bookmarks a {
+      display: inline-block;
+      padding: 11px 14px;
+      border: 2px solid #171717;
+      color: #171717;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background .2s ease, color .2s ease;
+    }
+
+    .dj-bookmarks a:hover {
+      background: #171717;
+      color: var(--dj-paper);
+    }
+
+    .dj-back {
+      display: inline-block;
+      margin-top: 38px;
+      color: #171717;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .dj-back:hover {
+      color: #8a00ff;
+    }
+
+    @media (max-width: 600px) {
+      .dear-journal-page {
+        padding: 48px 14px 60px;
+      }
+
+      .dj-header {
+        margin-bottom: 30px;
+      }
+
+      .dj-notebook {
+        padding-top: 28px;
+      }
+
+      .dj-spiral {
+        height: 42px;
+        background-size: 36px 42px;
+      }
+
+      .dj-paper {
+        padding: 52px 22px 48px 52px;
+        background-position: 0 0, 0 0;
+      }
+
+      .dj-paper::before {
+        left: 12px;
+      }
+
+      .dj-sticky {
+        margin: 34px 0 28px;
+        padding: 20px;
+      }
+    }
+  </style>
+
+
+  <header class="dj-header">
+    <p class="dj-eyebrow">BIPOLAR SOBER / PERSONAL NOTES</p>
+
+    <h1>
+      DEAR<br>
+      JOURNAL.
+    </h1>
+
+    <p class="dj-subtitle">
+      A place to put the pieces.
+    </p>
+  </header>
+
+
+  <article class="dj-notebook">
+    <div class="dj-spiral" aria-hidden="true"></div>
+
+    <div class="dj-paper">
+
+      <p class="dj-date">A NOTE TO MYSELF</p>
+
+      <div class="dj-copy">
+        <p class="dj-greeting">Dear Journal,</p>
+
+        <p>
+          This is the place where I say it all. Well, maybe not everything, 
+          but a lot of it. It's not a neat little story, I'm no hero, and
+          most pages are just jibberish. It's me, and that's all there is here.
+          There's nothing else. Just me.
+        </p>
+
+        <p>
+        I've seen too much in my opinion, and I'm tired of it. Time to settle,
+        and the advice to do so is all right here. All I have to do is just
+        listen. See the world, live fully, and stay sober. The world is brighter
+        with sobriety. You're at 99 days as you write this, and it's been an
+        awesome 99 days. Keep going.
+        </p>
+
+        <p>
+          Love,
+          <br>
+          Mel
+        </p>
+
+      </div>
+
+      <aside class="dj-sticky">
+        <p class="dj-label">REMINDER</p>
+        <p>
+          You do not have to be polished, finished, or figured out
+          before you belong.
+        </p>
+      </aside>
+
+      <p class="dj-links-heading">Flip to a section</p>
+
+      <nav class="dj-bookmarks" aria-label="Journal sections">
+        <%= link_to "Bipolar", bipolar_path %>
+        <%= link_to "Addiction", addiction_path %>
+        <%= link_to "Toolbox", toolbox_path %>
+        <%= link_to "Perspectives", perspectives_path %>
+        <%= link_to "Spirituality", spirituality_path %>
+      </nav>
+
+      <%= link_to "← BACK HOME", root_path, class: "dj-back" %>
+
+    </div>
+  </article>
+
+</main>
