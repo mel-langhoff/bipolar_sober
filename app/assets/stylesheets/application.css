@@ -27110,3 +27110,154 @@ body {
 }
 
 
+/* BIPOLAR PERSPECTIVES BOTTOM NAV */
+
+.bipolar-perspectives-bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 5vw;
+  background: #080808;
+}
+
+.bipolar-perspectives-nav-button {
+  display: inline-block;
+  padding: 18px 28px;
+  border: 2px solid #eaff00;
+  color: #eaff00;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.bipolar-perspectives-nav-button:hover {
+  background: #eaff00;
+  color: #080808;
+}
+
+@media (max-width: 600px) {
+  .bipolar-perspectives-bottom-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bipolar-perspectives-nav-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+/* SHARED INDEX PAGE HOME BUTTON */
+
+.index-home-nav {
+  display: flex;
+  justify-content: center;
+  padding: 50px 24px 75px;
+  background: #080808;
+}
+
+.index-home-button {
+  display: inline-block;
+  padding: 18px 32px;
+  border: 2px solid #eaff00;
+  color: #eaff00;
+  background: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.index-home-button:hover {
+  background: #eaff00;
+  color: #080808;
+}
+
+.index-home-button:focus-visible {
+  outline: 3px solid #ff1493;
+  outline-offset: 5px;
+}
+
+@media (max-width: 600px) {
+  .index-home-button {
+    width: 100%;
+    max-width: 360px;
+  }
+}
+
+
+
+/* CARRIE FISHER QUOTE */
+
+.bm-quote-section {
+  padding: 75px 7vw;
+  background: #ff1493;
+  color: #080808;
+  text-align: center;
+}
+
+.bm-quote {
+  max-width: 1000px;
+  margin: 0 auto 24px;
+  font-size: clamp(32px, 5vw, 72px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+}
+
+.bm-quote-author {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+
+/* HOMEPAGE CARRIE FISHER QUOTE */
+
+.home-quote {
+  margin: 34px 0 38px;
+  padding: 0 0 0 20px;
+  border-left: 4px solid #ff1493;
+}
+
+.home-quote p {
+  margin: 0 0 10px;
+  color: #eaff00;
+  font-size: clamp(16px, 2vw, 26px);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+.home-quote cite {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .home-quote {
+    margin: 28px 0 32px;
+    padding-left: 14px;
+  }
+
+  .home-quote p {
+    font-size: clamp(15px, 4vw, 20px);
+  }
+}

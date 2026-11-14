@@ -1,446 +1,764 @@
-<% content_for :title, "Mood Swings | Bipolar Sober" %>
 
-<main class="bipolar-mood-swings-page">
+<% content_for :title, "On Mood Swings | Bipolar Sober" %>
 
-  <style>
-    .bipolar-mood-swings-page {
-      --bms-black: #080808;
-      --bms-white: #fff;
-      --bms-pink: #ff1493;
-      --bms-yellow: #eaff00;
-      --bms-purple: #8a00ff;
-      background: var(--bms-black);
-      color: var(--bms-white);
-      font-family: Arial, sans-serif;
-    }
+<style>
+  .mood-swings-page {
+    background: #080808;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-    .bipolar-mood-swings-page * {
-      box-sizing: border-box;
-    }
+  .mood-swings-page *,
+  .mood-swings-page *::before,
+  .mood-swings-page *::after {
+    box-sizing: border-box;
+  }
 
-    .bms-hero {
-      min-height: 82vh;
-      display: flex;
-      align-items: center;
-      padding: 100px 7vw;
+  /* HERO */
+
+  .mood-swings-hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 6%;
+    background-color: #080808;
+    background-image:
+      linear-gradient(90deg, rgba(8, 8, 8, .65), transparent),
+      url("<%= asset_path('bipolar_mood_swings_desktop.png') %>");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mood-swings-hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .mood-swings-eyebrow {
+    max-width: 440px;
+    margin: 0 0 28px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.6;
+    letter-spacing: .12em;
+  }
+
+  .mood-swings-hero h1 {
+    margin: 0;
+    font-size: clamp(58px, 10vw, 150px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .88;
+    letter-spacing: -.065em;
+    text-transform: uppercase;
+  }
+
+  .mood-swings-hero h1 span {
+    display: block;
+  }
+
+  .mood-swings-intro {
+    margin: 32px 0 0;
+    font-size: clamp(15px, 1.6vw, 22px);
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  /* QUOTE */
+
+  .mood-swings-quote {
+    padding: 48px 6%;
+    background: #080808;
+    text-align: center;
+  }
+
+  .mood-swings-quote blockquote {
+    margin: 0;
+  }
+
+  .mood-swings-quote blockquote p {
+    margin: 0 0 12px;
+    color: #eaff00;
+    font-size: clamp(30px, 5vw, 64px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  .mood-swings-quote cite {
+    font-size: 14px;
+    font-style: normal;
+  }
+
+  /* SECTIONS */
+
+  .mood-swings-section {
+    padding: 72px 6%;
+  }
+
+  .mood-swings-section-inner {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .mood-swings-number {
+    margin: 0 0 22px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .12em;
+  }
+
+  .mood-swings-section h2 {
+    margin: 0;
+    font-size: clamp(36px, 4.5vw, 68px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .95;
+    letter-spacing: -.045em;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+  }
+
+  .mood-swings-copy {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .mood-swings-copy p {
+    margin: 0 0 22px;
+  }
+
+  .mood-swings-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* COLORS */
+
+  .mood-swings-pink {
+    background: #ff1493;
+    color: #080808;
+  }
+
+  .mood-swings-yellow {
+    background: #eaff00;
+    color: #080808;
+  }
+
+  .mood-swings-purple {
+    background: #8a00ff;
+    color: #fff;
+  }
+
+  .mood-swings-black {
+    background: #080808;
+    color: #fff;
+  }
+
+  .mood-swings-white {
+    background: #fff;
+    color: #080808;
+  }
+
+  /* TAKEAWAYS */
+
+  .mood-swings-takeaway {
+    padding-top: 22px;
+    border-top: 3px solid currentColor;
+    font-weight: 800;
+  }
+
+  /* FOOTER */
+
+  .mood-swings-footer {
+    padding: 40px 6%;
+    border-top: 1px solid #444;
+    background: #080808;
+  }
+
+  .mood-swings-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .mood-swings-footer a {
+    color: #eaff00;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  .mood-swings-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .mood-swings-footer a:focus-visible {
+    outline: 3px solid #ff1493;
+    outline-offset: 6px;
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 767px) {
+    .mood-swings-hero {
+      min-height: 88svh;
+      align-items: flex-start;
+      padding: 48px 6% 60px;
       background-image:
-        linear-gradient(
-          90deg,
-          rgba(8, 8, 8, .97) 0%,
-          rgba(8, 8, 8, .78) 48%,
-          rgba(8, 8, 8, .12) 100%
-        ),
-        var(--bms-desktop);
-      background-position: center, right center;
-      background-size: cover, cover;
+        url("<%= asset_path('bipolar_mood_swings_mobile.png') %>");
+      background-position: center bottom;
     }
 
-    .bms-hero-content {
-      max-width: 1000px;
+    .mood-swings-eyebrow {
+      margin-bottom: 24px;
+      font-size: 10px;
     }
 
-    .bms-eyebrow,
-    .bms-section-label,
-    .bms-box-label {
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: .16em;
-      text-transform: uppercase;
+    .mood-swings-hero h1 {
+      font-size: clamp(48px, 14vw, 90px);
     }
 
-    .bms-eyebrow {
-      color: var(--bms-pink);
-    }
-
-    .bms-hero h1 {
-      margin: 24px 0;
-      font-size: clamp(58px, 10vw, 142px);
-      line-height: .88;
-      letter-spacing: -.07em;
-      text-transform: uppercase;
-    }
-
-    .bms-hero h1 span {
-      display: block;
-    }
-
-    .bms-intro {
-      color: var(--bms-yellow);
-      font-size: clamp(17px, 2vw, 25px);
-      font-weight: 900;
-      line-height: 1.45;
-    }
-
-    .bms-section {
-      padding: 76px 7vw;
-      border-top: 2px solid rgba(255, 255, 255, .2);
-    }
-
-    .bms-section-inner {
-      max-width: 1250px;
-      margin: 0 auto;
-    }
-
-    .bms-section-label {
-      color: var(--bms-pink);
-    }
-
-    .bms-section h2 {
-      max-width: 900px;
-      margin: 18px 0 30px;
-      font-size: clamp(38px, 6vw, 78px);
-      line-height: .98;
-      letter-spacing: -.055em;
-      text-transform: uppercase;
-    }
-
-    .bms-copy {
-      max-width: 850px;
-      font-size: 18px;
-      line-height: 1.8;
-    }
-
-    .bms-copy p {
-      margin: 0 0 22px;
-    }
-
-    .bms-box-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 34px;
-    }
-
-    .bms-box {
-      padding: 24px;
-      border: 2px solid var(--bms-pink);
-      background: #111;
-    }
-
-    .bms-box:nth-child(2) {
-      border-color: var(--bms-yellow);
-    }
-
-    .bms-box:nth-child(3) {
-      border-color: var(--bms-purple);
-    }
-
-    .bms-box:nth-child(4) {
-      border-color: var(--bms-white);
-    }
-
-    .bms-box h3 {
-      margin: 12px 0;
-      font-size: 24px;
-      text-transform: uppercase;
-    }
-
-    .bms-box p {
-      margin: 0;
-      font-size: 16px;
-      line-height: 1.7;
-    }
-
-    .bms-callout {
-      max-width: 950px;
-      margin: 35px 0;
-      padding: 24px;
-      border: 3px solid var(--bms-yellow);
-      color: var(--bms-yellow);
-      font-size: clamp(21px, 3vw, 34px);
-      font-weight: 900;
-      line-height: 1.2;
-      text-transform: uppercase;
-    }
-
-    .bms-ending {
-      padding: 80px 7vw;
-      background: var(--bms-purple);
-    }
-
-    .bms-ending-inner {
-      max-width: 1250px;
-      margin: 0 auto;
-    }
-
-    .bms-ending h2 {
-      margin: 12px 0 24px;
-      font-size: clamp(46px, 8vw, 110px);
-      line-height: .92;
-      letter-spacing: -.06em;
-      text-transform: uppercase;
-    }
-
-    .bms-ending p {
-      max-width: 780px;
-      font-size: 18px;
-      line-height: 1.75;
-    }
-
-    .bms-back {
-      display: inline-block;
+    .mood-swings-intro {
       margin-top: 24px;
-      padding: 14px 18px;
-      border: 2px solid var(--bms-yellow);
-      color: var(--bms-yellow);
-      font-weight: 900;
-      text-decoration: none;
-      text-transform: uppercase;
+      font-size: 14px;
     }
 
-    @media (max-width: 700px) {
-      .bms-hero {
-        min-height: 75vh;
-        padding: 90px 22px;
-        background-image:
-          linear-gradient(
-            180deg,
-            rgba(8, 8, 8, .42),
-            rgba(8, 8, 8, .08)
-          ),
-          var(--bms-mobile);
-        background-position: center, center bottom;
-      }
-
-      .bms-section {
-        padding: 58px 22px;
-      }
-
-      .bms-box-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .bms-ending {
-        padding: 65px 22px;
-      }
+    .mood-swings-section {
+      padding: 48px 6%;
     }
-  </style>
 
+    .mood-swings-section-inner {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .mood-swings-section h2 {
+      font-size: clamp(36px, 10vw, 58px);
+    }
+
+    .mood-swings-copy {
+      font-size: 16px;
+    }
+
+    .mood-swings-number {
+      margin-bottom: 16px;
+    }
+  }
+</style>
+
+
+<main class="mood-swings-page">
 
   <!-- HERO -->
-  <section class="bms-hero"
-           style="--bms-desktop: url('<%= asset_path('bipolar_mood_swings_desktop.png') %>');
-                  --bms-mobile: url('<%= asset_path('bipolar_mood_swings_mobile.png') %>');">
+  <section class="mood-swings-hero"
+           aria-labelledby="mood-swings-title">
 
-    <div class="bms-hero-content">
+    <div class="mood-swings-hero-content">
 
-      <p class="bms-eyebrow">
+      <p class="mood-swings-eyebrow">
         BIPOLAR SOBER / BIPOLAR / MOOD SWINGS
       </p>
 
-      <h1>
+      <h1 id="mood-swings-title">
         <span>ON</span>
         <span>MOOD</span>
         <span>SWINGS.</span>
       </h1>
 
-      <p class="bms-intro">
-        THE WEATHER CAN CHANGE.<br>
-        LEARN YOUR OWN PATTERNS.
+      <p class="mood-swings-intro">
+        THE HIGHS. THE LOWS.<br>
+        THE EVERYTHING IN BETWEEN.<br>
+        AND THE BRAIN THAT CAN'T MAKE UP ITS MIND.
       </p>
 
     </div>
   </section>
 
 
-  <!-- 01 / MORE THAN A BAD DAY -->
-  <section class="bms-section">
-    <div class="bms-section-inner">
-
-      <p class="bms-section-label">01 / MORE THAN A BAD DAY</p>
-
-      <h2>
-        LOOK AT THE<br>
-        WHOLE PATTERN.
-      </h2>
-
-      <div class="bms-copy">
-        <p>
-          Everybody has changes in mood. With bipolar disorder, the shifts
-          you’re tracking can involve more than feeling happy one day and
-          irritated the next. Your mood, energy, activity, sleep, thoughts,
-          and ability to function can all change together.
-        </p>
-
-        <p>
-          That doesn’t mean every rough afternoon or burst of excitement
-          is an episode. It helps to look at how long a change lasts, how
-          intense it feels, what else is changing, and how different it is
-          from your usual baseline.
-        </p>
-      </div>
-
-      <div class="bms-callout">
-        ONE FEELING IS A MOMENT. A PATTERN TELLS YOU MORE.
-      </div>
-
-    </div>
+  <!-- MEAN GIRLS QUOTE -->
+  <section class="mood-swings-quote" aria-label="Opening quote">
+    <blockquote>
+      <p>"I just have a lot of feelings."</p>
+      <cite>— Mean Girls</cite>
+    </blockquote>
   </section>
 
 
-  <!-- 02 / YOUR RANGE -->
-  <section class="bms-section">
-    <div class="bms-section-inner">
+  
+<!-- 01 / NORMAL VS. BIPOLAR MOOD SWINGS -->
+<section class="mood-swings-section mood-swings-pink">
+  <div class="mood-swings-section-inner">
 
-      <p class="bms-section-label">02 / YOUR RANGE</p>
+    <div class="mood-swings-section-heading">
+      <p class="mood-swings-number">
+        01 / NORMAL VS. BIPOLAR
+      </p>
 
       <h2>
-        YOU KNOW<br>
-        BOTH ENDS.
+        PICK A<br>
+        GODDAMN<br>
+        MOOD<br>
+        ALREADY.
       </h2>
-
-      <div class="bms-copy">
-        <p>
-          Depression can mean months of heaviness and disconnection for
-          you—episodes that last four months or longer. Mania can bring
-          racing thoughts, restless energy, irritability, confidence, and
-          impulses that make acting now feel more important than thinking
-          through what comes next.
-        </p>
-
-        <p>
-          Mixed symptoms can scramble those descriptions. You can feel
-          miserable and wired, exhausted and unable to settle, desperate
-          for relief while your mind keeps pushing you to do something.
-          The experience doesn’t always fit neatly into “high” or “low.”
-        </p>
-      </div>
-
-      <div class="bms-box-grid">
-
-        <article class="bms-box">
-          <p class="bms-box-label">LOW</p>
-          <h3>WHEN IT LASTS</h3>
-          <p>
-            Depression for you can stretch across months. That length
-            belongs in the story; it isn’t just a passing bad mood.
-          </p>
-        </article>
-
-        <article class="bms-box">
-          <p class="bms-box-label">UP</p>
-          <h3>WHEN IT RACES</h3>
-          <p>
-            Energy, confidence, ideas, irritability, and impulsive choices
-            can shift together and affect what you do.
-          </p>
-        </article>
-
-        <article class="bms-box">
-          <p class="bms-box-label">BOTH</p>
-          <h3>WHEN THEY COLLIDE</h3>
-          <p>
-            Mixed symptoms can feel painful and activated at the same time,
-            leaving you with urgency and very little quiet.
-          </p>
-        </article>
-
-        <article class="bms-box">
-          <p class="bms-box-label">IN BETWEEN</p>
-          <h3>YOUR BASELINE</h3>
-          <p>
-            Your ordinary range matters too. It gives you something to
-            compare a possible shift against.
-          </p>
-        </article>
-
-      </div>
-
     </div>
-  </section>
 
-
-  <!-- 03 / WHAT CHANGES -->
-  <section class="bms-section">
-    <div class="bms-section-inner">
-
-      <p class="bms-section-label">03 / WHAT CHANGES FIRST?</p>
-
-      <h2>
-        NOTICE THE<br>
-        DETAILS.
-      </h2>
-
-      <div class="bms-copy">
-        <p>
-          Mood can be the loudest change, but it isn’t the only one.
-          You might also notice differences in sleep, energy, pace of
-          thought, irritability, activity, spending, or how quickly you
-          move from an idea to doing it.
-        </p>
-
-        <p>
-          You don’t have to monitor yourself every second or turn your
-          life into a spreadsheet. A brief, honest note can help you
-          remember what changed and when. Write down what you actually
-          noticed instead of diagnosing yourself from one moment.
-        </p>
-      </div>
-
-      <div class="bms-callout">
-        DESCRIBE WHAT HAPPENED. LET YOUR CARE TEAM HELP INTERPRET IT.
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- 04 / YOUR OWN STORY -->
-  <section class="bms-section">
-    <div class="bms-section-inner">
-
-      <p class="bms-section-label">04 / YOUR OWN PATTERNS</p>
-
-      <h2>
-        YOUR MOOD<br>
-        HAS CONTEXT.
-      </h2>
-
-      <div class="bms-copy">
-        <p>
-          Pain, boredom, stress, relationships, substance use, and changes
-          in routine can all matter in your life. They don’t automatically
-          explain a mood episode, and a mood episode doesn’t make every
-          feeling or decision meaningless.
-        </p>
-
-        <p>
-          You can hold more than one fact at a time: your mood affects
-          your experience, your circumstances matter, and your actions
-          still have consequences. Paying attention helps you understand
-          what belongs in the same picture without forcing every detail
-          into one explanation.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ENDING -->
-  <section class="bms-ending">
-    <div class="bms-ending-inner">
-
-      <p class="bms-section-label">KEEP THE WHOLE PICTURE</p>
-
-      <h2>
-        NAME THE<br>
-        SHIFT.<br>
-        GET SUPPORT.
-      </h2>
+    <div class="mood-swings-copy">
 
       <p>
-        You don’t have to decide on your own what every change means.
-        Notice what’s different, how long it has been happening, and
-        how it’s affecting your life. Bring that information to your
-        treatment team and let the conversation be part of your care.
+        Everybody has mood swings. You wake up in a
+        good mood, something pisses you off, and
+        suddenly you're irritated. You get exciting
+        news and feel fantastic. You have a shitty
+        conversation and feel miserable. Your
+        emotions respond to what's happening
+        around you. That's normal.
       </p>
 
-      <%= link_to "← BACK TO BIPOLAR",
-          bipolar_path,
-          class: "bms-back" %>
+      <p>
+        Bipolar disorder is different. It's not
+        simply experiencing stronger emotions
+        or changing your mind about how you feel.
+        Bipolar mood episodes involve significant
+        shifts in mood, energy, sleep, activity,
+        thinking, and behavior. They can last
+        days, weeks, or months, and they can
+        substantially change how you function.
+      </p>
+
+      <p>
+        A normal mood swing might mean feeling
+        angry for an afternoon. A bipolar manic
+        episode can mean days of sleeping very
+        little, racing thoughts, increased energy,
+        impulsive spending, and decisions that
+        make perfect sense to you at the time
+        but absolutely fucking don't later.
+      </p>
+
+      <p>
+        A normal low might mean feeling sad
+        after a disappointing day. Bipolar
+        depression can mean losing your energy,
+        motivation, and interest in life for
+        weeks or months. Your depressive
+        episodes have lasted four months
+        or longer. That's not a bad Tuesday.
+      </p>
+
+      <p>
+        And bipolar disorder isn't necessarily
+        an endless back-and-forth between
+        happiness and sadness. You can experience
+        mania without feeling happy, depression
+        without constantly crying, and mixed
+        symptoms that combine agitation or
+        increased energy with depressive feelings.
+      </p>
+
+      <p>
+        You can also have ordinary emotional
+        reactions while living with bipolar
+        disorder. Getting angry doesn't
+        automatically mean mania. Feeling
+        sad doesn't automatically mean
+        depression. Sometimes you're just
+        having a shitty day.
+      </p>
+
+      <p class="mood-swings-takeaway">
+        NORMAL MOOD SWINGS CHANGE HOW YOU FEEL.<br>
+        BIPOLAR EPISODES CAN CHANGE HOW YOU FUNCTION.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- 02 / THE HIGHS -->
+  <section class="mood-swings-section mood-swings-yellow">
+    <div class="mood-swings-section-inner">
+
+      <div class="mood-swings-section-heading">
+        <p class="mood-swings-number">
+          02 / THE HIGHS
+        </p>
+
+        <h2>
+          EVERYTHING.<br>
+          ALL AT<br>
+          ONCE.
+        </h2>
+      </div>
+
+      <div class="mood-swings-copy">
+
+        <p>
+          When your mood climbs into mania,
+          everything can start moving faster.
+          Your thoughts race. Your energy increases.
+          Ideas feel brilliant. Plans feel urgent.
+          You become convinced that whatever
+          you're thinking about needs to happen
+          right now.
+        </p>
+
+        <p>
+          Confidence can turn into certainty.
+          Impulses become decisions before
+          you've had much time to consider
+          what comes next. Spending money,
+          starting projects, making plans,
+          or acting on an idea can feel
+          completely reasonable in the moment.
+        </p>
+
+        <p>
+          The problem isn't necessarily that
+          you feel good. Mania doesn't always
+          feel good anyway. You can be irritable,
+          agitated, restless, or furious.
+          What matters is recognizing when
+          your mood and energy are changing
+          your judgment and behavior.
+        </p>
+
+        <p class="mood-swings-takeaway">
+          WHEN EVERY IDEA FEELS URGENT,<br>
+          URGENCY STOPS MEANING MUCH.
+        </p>
+
+      </div>
 
     </div>
   </section>
+
+
+  <!-- 03 / THE LOWS -->
+  <section class="mood-swings-section mood-swings-purple">
+    <div class="mood-swings-section-inner">
+
+      <div class="mood-swings-section-heading">
+        <p class="mood-swings-number">
+          03 / THE LOWS
+        </p>
+
+        <h2>
+          FOUR<br>
+          LONG<br>
+          MONTHS.
+        </h2>
+      </div>
+
+      <div class="mood-swings-copy">
+
+        <p>
+          Depression isn't necessarily a few days
+          of feeling sad. For you, depressive
+          episodes can last four months or longer.
+          That's months of exhaustion, heaviness,
+          disconnection, and trying to function
+          while your mind makes everything
+          feel considerably more difficult.
+        </p>
+
+        <p>
+          Things that normally interest you
+          stop being interesting. Motivation
+          disappears. Ordinary tasks require
+          more effort. You might know perfectly
+          well that your life hasn't suddenly
+          become worthless, but knowing something
+          and feeling it are two different things.
+        </p>
+
+        <p>
+          And unlike a bad afternoon, you
+          can't simply wait until tomorrow
+          and assume you'll feel better.
+          Depression can settle in and
+          stay for months, making even
+          familiar parts of your life
+          feel distant.
+        </p>
+
+        <p class="mood-swings-takeaway">
+          SOME MOODS PASS IN HOURS.<br>
+          SOME TAKE MONTHS OF YOUR LIFE.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / MIXED SYMPTOMS -->
+  <section class="mood-swings-section mood-swings-black">
+    <div class="mood-swings-section-inner">
+
+      <div class="mood-swings-section-heading">
+        <p class="mood-swings-number">
+          04 / MIXED SYMPTOMS
+        </p>
+
+        <h2>
+          UP.<br>
+          DOWN.<br>
+          BOTH.<br>
+          FUCK.
+        </h2>
+      </div>
+
+      <div class="mood-swings-copy">
+
+        <p>
+          As if mania and depression weren't
+          complicated enough separately,
+          sometimes symptoms from both
+          show up together.
+        </p>
+
+        <p>
+          You can feel miserable while your
+          thoughts race. Exhausted but restless.
+          Depressed but agitated. You want
+          everything to stop, yet your mind
+          refuses to slow down.
+        </p>
+
+        <p>
+          It's an especially frustrating
+          combination because your energy
+          and your emotions aren't necessarily
+          moving in the same direction.
+          You may feel an overwhelming need
+          to do something without having
+          the clarity to decide what would
+          actually help.
+        </p>
+
+        <p>
+          You don't have to force the
+          experience into either "high"
+          or "low" to recognize that
+          something is wrong.
+        </p>
+
+        <p class="mood-swings-takeaway">
+          YOU CAN FEEL EVERYTHING<br>
+          AND NOTHING AT THE SAME TIME.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 05 / THE IN-BETWEEN -->
+  <section class="mood-swings-section mood-swings-white">
+    <div class="mood-swings-section-inner">
+
+      <div class="mood-swings-section-heading">
+        <p class="mood-swings-number">
+          05 / YOUR BASELINE
+        </p>
+
+        <h2>
+          WHAT'S<br>
+          NORMAL<br>
+          FOR YOU?
+        </h2>
+      </div>
+
+      <div class="mood-swings-copy">
+
+        <p>
+          Between episodes, you have your own
+          ordinary range of emotions, energy,
+          habits, and behavior. You aren't
+          supposed to feel exactly the same
+          every day. Nobody does.
+        </p>
+
+        <p>
+          Knowing your baseline gives you
+          something to compare changes against.
+          Maybe you're sleeping less.
+          Maybe you're spending more.
+          Maybe you've become unusually
+          irritable, restless, withdrawn,
+          or certain about everything.
+        </p>
+
+        <p>
+          The important question isn't
+          whether you're happy or sad.
+          It's whether something has
+          shifted significantly from
+          what's normal for you.
+        </p>
+
+        <p class="mood-swings-takeaway">
+          YOU CAN'T RECOGNIZE A CHANGE<br>
+          IF YOU DON'T KNOW YOUR BASELINE.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 06 / RECOGNIZING PATTERNS -->
+  <section class="mood-swings-section mood-swings-pink">
+    <div class="mood-swings-section-inner">
+
+      <div class="mood-swings-section-heading">
+        <p class="mood-swings-number">
+          06 / RECOGNIZING PATTERNS
+        </p>
+
+        <h2>
+          PAY<br>
+          ATTENTION.
+        </h2>
+      </div>
+
+      <div class="mood-swings-copy">
+
+        <p>
+          You don't need to analyze every
+          emotion or spend your entire day
+          monitoring your brain. But when
+          something starts changing, it's
+          worth noticing.
+        </p>
+
+        <p>
+          Your sleep, energy, mood, thoughts,
+          spending, and impulsivity can tell
+          you a lot about what's happening.
+          One unusual day might mean nothing.
+          Several changes happening together
+          over time deserve more attention.
+        </p>
+
+        <p>
+          Physical pain, stress, boredom,
+          relationships, and changes in
+          routine can also affect how you
+          feel. Those circumstances matter,
+          even when they don't explain
+          everything about a mood episode.
+        </p>
+
+        <p>
+          Write down what you're noticing
+          if it helps. Talk to your psych
+          when changes seem significant.
+          You don't have to figure out
+          everything yourself.
+        </p>
+
+        <p class="mood-swings-takeaway">
+          NOTICE THE PATTERN.<br>
+          NOT JUST THE MOMENT.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 07 / THE BIGGER PICTURE -->
+  <section class="mood-swings-section mood-swings-yellow">
+    <div class="mood-swings-section-inner">
+
+      <div class="mood-swings-section-heading">
+        <p class="mood-swings-number">
+          07 / THE BIGGER PICTURE
+        </p>
+
+        <h2>
+          SAME BRAIN.<br>
+          DIFFERENT<br>
+          WEATHER.
+        </h2>
+      </div>
+
+      <div class="mood-swings-copy">
+
+        <p>
+          Living with bipolar disorder means
+          understanding that your internal
+          world can change dramatically,
+          sometimes without your permission
+          or a clear explanation.
+        </p>
+
+        <p>
+          Your moods affect how you experience
+          your circumstances, but they don't
+          make every thought accurate or
+          every impulse worth following.
+          You can recognize the influence
+          of your illness while still
+          taking responsibility for
+          your actions.
+        </p>
+
+        <p>
+          Medication, sleep, awareness,
+          and support all have a place
+          in managing bipolar disorder.
+          None of them guarantee that
+          every day will be easy or
+          every mood predictable.
+        </p>
+
+        <p>
+          You don't have to treat every
+          feeling as a warning sign.
+          You also don't have to ignore
+          the patterns you've learned
+          to recognize.
+        </p>
+
+        <p class="mood-swings-takeaway">
+          YOUR MOOD CAN CHANGE.<br>
+          YOUR ENTIRE LIFE DOESN'T HAVE TO FOLLOW.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- NAVIGATION -->
+  <nav class="mood-swings-footer" aria-label="Bipolar topic navigation">
+    <div class="mood-swings-footer-inner">
+
+      <%= link_to "← BACK TO BIPOLAR",
+          bipolar_path %>
+
+      <%= link_to "ON PERSPECTIVES →",
+          bipolar_perspectives_path %>
+
+    </div>
+  </nav>
 
 </main>
