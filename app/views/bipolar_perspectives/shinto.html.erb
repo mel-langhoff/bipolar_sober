@@ -1,0 +1,731 @@
+
+<% content_for :title, "Shinto & Bipolar | Bipolar Sober" %>
+
+<style>
+  .shinto-bipolar-page {
+    background: #080808;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .shinto-bipolar-page *,
+  .shinto-bipolar-page *::before,
+  .shinto-bipolar-page *::after {
+    box-sizing: border-box;
+  }
+
+  /* HERO */
+
+  .shinto-bipolar-hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 90px 6%;
+    background-color: #080808;
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, .78) 0%,
+        rgba(8, 8, 8, .35) 55%,
+        transparent 85%
+      ),
+      url("<%= asset_path('bipolar_shinto_desktop.png') %>");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .shinto-bipolar-hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .shinto-bipolar-eyebrow {
+    margin: 0 0 28px;
+    color: #ff1493;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .15em;
+    line-height: 1.6;
+    text-transform: uppercase;
+  }
+
+  .shinto-bipolar-hero h1 {
+    margin: 0;
+    max-width: 1000px;
+    font-size: clamp(46px, 7vw, 105px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .94;
+    letter-spacing: -.06em;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+  }
+
+  .shinto-bipolar-hero h1 span {
+    display: block;
+  }
+
+  .shinto-bipolar-intro {
+    margin: 30px 0 0;
+    color: #eaff00;
+    font-size: clamp(16px, 2vw, 24px);
+    font-weight: 900;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  /* OPENING QUOTE */
+
+  .shinto-quote {
+    padding: 55px 6%;
+    background: #080808;
+    text-align: center;
+  }
+
+  .shinto-quote blockquote {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .shinto-quote blockquote p {
+    margin: 0 0 15px;
+    color: #eaff00;
+    font-size: clamp(28px, 4.5vw, 60px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.15;
+    text-transform: uppercase;
+  }
+
+  .shinto-quote cite {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+  }
+
+  /* MAIN SECTIONS */
+
+  .shinto-section {
+    display: grid;
+    grid-template-columns:
+      minmax(0, .85fr)
+      minmax(0, 1.15fr);
+    gap: 60px;
+    padding: 80px max(6%, calc((100% - 1200px) / 2));
+    align-items: start;
+  }
+
+  .shinto-section-heading,
+  .shinto-copy {
+    min-width: 0;
+  }
+
+  .shinto-number {
+    margin: 0 0 20px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .15em;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  .shinto-section h2 {
+    margin: 0;
+    font-size: clamp(36px, 4.5vw, 68px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .98;
+    letter-spacing: -.05em;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+  }
+
+  .shinto-copy {
+    font-size: 17px;
+    line-height: 1.85;
+    overflow-wrap: anywhere;
+  }
+
+  .shinto-copy p {
+    margin: 0 0 22px;
+  }
+
+  .shinto-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  .shinto-copy em {
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  /* TAKEAWAYS */
+
+  .shinto-takeaway {
+    margin-top: 28px !important;
+    padding-top: 22px;
+    border-top: 3px solid currentColor;
+    font-weight: 900;
+    line-height: 1.5;
+  }
+
+  /* COLORS */
+
+  .shinto-pink {
+    background: #ff1493;
+    color: #080808;
+  }
+
+  .shinto-yellow {
+    background: #eaff00;
+    color: #080808;
+  }
+
+  .shinto-black {
+    background: #080808;
+    color: #fff;
+  }
+
+  .shinto-purple {
+    background: #8a00ff;
+    color: #fff;
+  }
+
+  .shinto-white {
+    background: #fff;
+    color: #080808;
+  }
+
+  /* CLOSING */
+
+  .shinto-ending {
+    display: grid;
+    grid-template-columns:
+      minmax(0, .85fr)
+      minmax(0, 1.15fr);
+    gap: 60px;
+    padding: 85px 6%;
+    background: #ff1493;
+    color: #080808;
+  }
+
+  .shinto-ending > div {
+    min-width: 0;
+  }
+
+  .shinto-ending-small {
+    margin: 0 0 20px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+  }
+
+  .shinto-ending h2 {
+    margin: 0;
+    font-size: clamp(48px, 7vw, 100px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .95;
+    letter-spacing: -.06em;
+    text-transform: uppercase;
+  }
+
+  .shinto-ending h2 span {
+    color: #fff;
+  }
+
+  .shinto-ending-copy {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .shinto-ending-copy p {
+    margin: 0 0 24px;
+  }
+
+  .shinto-back-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px 20px;
+    border: 2px solid #080808;
+    color: #080808;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: .08em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s ease;
+  }
+
+  .shinto-back-button:hover {
+    background: #080808;
+    color: #eaff00;
+  }
+
+  .shinto-back-button:focus-visible {
+    outline: 3px solid #eaff00;
+    outline-offset: 5px;
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 767px) {
+    .shinto-bipolar-hero {
+      min-height: 88svh;
+      align-items: flex-start;
+      padding: 50px 6% 65px;
+      background-image:
+        linear-gradient(
+          180deg,
+          rgba(8, 8, 8, .55),
+          rgba(8, 8, 8, .12) 65%,
+          rgba(8, 8, 8, .20)
+        ),
+        url("<%= asset_path('bipolar_shinto_mobile.png') %>");
+      background-position: center, center bottom;
+      background-size: cover;
+    }
+
+    .shinto-bipolar-eyebrow {
+      font-size: 10px;
+      margin-bottom: 24px;
+    }
+
+    .shinto-bipolar-hero h1 {
+      font-size: clamp(40px, 9vw, 68px);
+    }
+
+    .shinto-bipolar-intro {
+      font-size: 14px;
+      margin-top: 24px;
+    }
+
+    .shinto-quote {
+      padding: 45px 6%;
+    }
+
+    .shinto-section {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      padding: 55px 6%;
+    }
+
+    .shinto-section h2 {
+      font-size: clamp(36px, 10vw, 58px);
+    }
+
+    .shinto-copy {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .shinto-ending {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      padding: 65px 6%;
+    }
+
+    .shinto-ending-copy {
+      font-size: 16px;
+    }
+  }
+</style>
+
+
+<main class="shinto-bipolar-page">
+
+  <!-- HERO -->
+  <section class="shinto-bipolar-hero"
+           aria-labelledby="shinto-title">
+
+    <div class="shinto-bipolar-hero-content">
+
+      <p class="shinto-bipolar-eyebrow">
+        BIPOLAR SOBER / BIPOLAR / PERSPECTIVES / SHINTO
+      </p>
+
+      <h1 id="shinto-title">
+        <span>BIPOLAR</span>
+        <span>THROUGH A</span>
+        <span>SHINTO LENS.</span>
+      </h1>
+
+      <p class="shinto-bipolar-intro">
+        THE WORLD KEEPS TURNING.<br>
+        YOU CAN KEEP BEGINNING AGAIN.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- SHINTO QUOTE -->
+  <section class="shinto-quote" aria-label="Opening quote">
+    <blockquote>
+      <p>
+        "Even the wishes of an ant reach to heaven."
+      </p>
+      <cite>— Traditional Shinto Proverb</cite>
+    </blockquote>
+  </section>
+
+
+  <!-- 01 / THE SHINTO PERSPECTIVE -->
+  <section class="shinto-section shinto-pink"
+           aria-labelledby="shinto-perspective-title">
+
+    <div class="shinto-section-heading">
+      <p class="shinto-number">
+        01 / THE SHINTO PERSPECTIVE
+      </p>
+
+      <h2 id="shinto-perspective-title">
+        STAY<br>
+        CONNECTED.
+      </h2>
+    </div>
+
+    <div class="shinto-copy">
+
+      <p>
+        Shinto emphasizes relationships with nature,
+        the kami, and the people and places around you.
+        Ritual, gratitude, and participation in
+        everyday life help maintain those connections.
+      </p>
+
+      <p>
+        Living with bipolar disorder doesn't mean
+        achieving a permanently balanced mind.
+        It means continuing to care for your
+        relationships and your life, even when
+        your internal experience changes.
+      </p>
+
+      <p class="shinto-takeaway">
+        YOUR MOOD CAN CHANGE.<br>
+        YOUR CONNECTION TO LIFE CAN REMAIN.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- 02 / KEGARE -->
+  <section class="shinto-section shinto-yellow"
+           aria-labelledby="shinto-kegare-title">
+
+    <div class="shinto-section-heading">
+      <p class="shinto-number">
+        02 / KEGARE
+      </p>
+
+      <h2 id="shinto-kegare-title">
+        YOU ARE<br>
+        NOT<br>
+        UNCLEAN.
+      </h2>
+    </div>
+
+    <div class="shinto-copy">
+
+      <p>
+        In Shinto, <em>kegare</em> refers to
+        impurity or disruption. It shouldn't
+        be used to describe bipolar disorder
+        as spiritual dirt, punishment,
+        or moral failure.
+      </p>
+
+      <p>
+        Depression can leave you withdrawn
+        and disconnected. Mania can overwhelm
+        your life with racing thoughts,
+        spending, plans, and impulses.
+        Afterward, you may be left dealing
+        with consequences and regret.
+      </p>
+
+      <p>
+        These experiences can disrupt your
+        life without defining your character.
+        They deserve treatment, attention,
+        and sometimes repair.
+      </p>
+
+      <p class="shinto-takeaway">
+        DISRUPTION DOESN'T MEAN<br>
+        THERE'S SOMETHING WRONG WITH YOUR WORTH.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- 03 / PURIFICATION AND RENEWAL -->
+  <section class="shinto-section shinto-black"
+           aria-labelledby="shinto-renewal-title">
+
+    <div class="shinto-section-heading">
+      <p class="shinto-number">
+        03 / HARAE AND MISOGI
+      </p>
+
+      <h2 id="shinto-renewal-title">
+        BEGIN<br>
+        AGAIN.
+      </h2>
+    </div>
+
+    <div class="shinto-copy">
+
+      <p>
+        Shinto purification practices such as
+        <em>harae</em> and <em>misogi</em>
+        emphasize renewal. They aren't
+        psychiatric treatments, and they
+        can't erase an episode or its consequences.
+      </p>
+
+      <p>
+        But renewal can still mean something.
+        Washing your face, taking a shower,
+        changing clothes, or cleaning a small
+        space can become simple ways to
+        return your attention to the present.
+      </p>
+
+      <p>
+        After a difficult episode, you can
+        acknowledge what happened, apologize
+        where necessary, repair what you can,
+        and move forward without pretending
+        the past never occurred.
+      </p>
+
+      <p class="shinto-takeaway">
+        YOU CAN'T ERASE THE PAST.<br>
+        YOU CAN BEGIN AGAIN.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / THE KAMI AND NATURE -->
+  <section class="shinto-section shinto-purple"
+           aria-labelledby="shinto-kami-title">
+
+    <div class="shinto-section-heading">
+      <p class="shinto-number">
+        04 / THE KAMI AND NATURE
+      </p>
+
+      <h2 id="shinto-kami-title">
+        THE WORLD<br>
+        IS BIGGER<br>
+        THAN YOUR<br>
+        MOOD.
+      </h2>
+    </div>
+
+    <div class="shinto-copy">
+
+      <p>
+        Shinto recognizes the kami, sacred
+        presences associated with nature,
+        places, ancestors, and other
+        dimensions of existence.
+        Nature can be a source of
+        reverence and connection.
+      </p>
+
+      <p>
+        A mountain can still matter
+        when you're depressed.
+        Trees keep growing while your
+        thoughts race. The seasons
+        continue whether or not
+        you feel ready for change.
+      </p>
+
+      <p>
+        Even when pain or exhaustion
+        keeps you inside, you can
+        notice the sky, weather,
+        or a plant near your window.
+        Your immediate mental state
+        isn't the entirety of reality.
+      </p>
+
+      <p class="shinto-takeaway">
+        YOUR WORLD IS MORE<br>
+        THAN WHAT YOUR MIND IS DOING.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- 05 / RITUAL AND GRATITUDE -->
+  <section class="shinto-section shinto-white"
+           aria-labelledby="shinto-ritual-title">
+
+    <div class="shinto-section-heading">
+      <p class="shinto-number">
+        05 / RITUAL AND GRATITUDE
+      </p>
+
+      <h2 id="shinto-ritual-title">
+        THE SMALL<br>
+        THINGS<br>
+        STILL<br>
+        MATTER.
+      </h2>
+    </div>
+
+    <div class="shinto-copy">
+
+      <p>
+        Ordinary routines can offer continuity
+        when your mind feels unpredictable.
+        Preparing an offering, tending your
+        altar, or caring for your surroundings
+        can help you stay connected to
+        familiar parts of life.
+      </p>
+
+      <p>
+        These practices don't need to be
+        elaborate. During depression,
+        something small may be enough.
+        When your mind is racing, returning
+        to a familiar routine can provide
+        structure without treating every
+        thought as a spiritual message.
+      </p>
+
+      <p>
+        Gratitude doesn't mean being
+        thankful for bipolar disorder.
+        You don't have to appreciate
+        depression, side effects,
+        or the consequences of mania.
+      </p>
+
+      <p>
+        You can appreciate ordinary things:
+        food, shelter, your dog, a familiar
+        place, someone who supports you,
+        or a moment of quiet.
+      </p>
+
+      <p class="shinto-takeaway">
+        YOU DON'T HAVE TO LOVE YOUR ILLNESS<br>
+        TO APPRECIATE YOUR LIFE.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- 06 / RESTORING HARMONY -->
+  <section class="shinto-section shinto-yellow"
+           aria-labelledby="shinto-harmony-title">
+
+    <div class="shinto-section-heading">
+      <p class="shinto-number">
+        06 / RESTORING HARMONY
+      </p>
+
+      <h2 id="shinto-harmony-title">
+        KEEP<br>
+        COMING<br>
+        BACK.
+      </h2>
+    </div>
+
+    <div class="shinto-copy">
+
+      <p>
+        Harmony isn't a permanent state
+        you either achieve or lose.
+        It's something you maintain
+        through your relationships,
+        responsibilities, surroundings,
+        and care for yourself.
+      </p>
+
+      <p>
+        Sometimes restoring harmony means
+        resting or accepting help.
+        Sometimes it means attending an
+        appointment, apologizing,
+        or repairing a relationship.
+      </p>
+
+      <p>
+        Bipolar disorder may disrupt
+        your connection with yourself,
+        but it doesn't remove your
+        ability to participate in life.
+        You can return to familiar
+        practices after depression
+        and rebuild after impulsive decisions.
+      </p>
+
+      <p>
+        Ritual, gratitude, and nature
+        can't guarantee mood stability
+        or replace medication and
+        psychiatric care. They can,
+        however, remain meaningful
+        parts of your life alongside treatment.
+      </p>
+
+      <p class="shinto-takeaway">
+        HARMONY ISN'T NEVER FALLING APART.<br>
+        IT'S CONTINUING TO CARE FOR WHAT MATTERS.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- CLOSING -->
+  <section class="shinto-ending"
+           aria-labelledby="shinto-closing-title">
+
+    <div>
+      <p class="shinto-ending-small">
+        CLOSING
+      </p>
+
+      <h2 id="shinto-closing-title">
+        BEGIN<br>
+        <span>AGAIN.</span>
+      </h2>
+    </div>
+
+    <div class="shinto-ending-copy">
+
+      <p>
+        You don't have to become untouched
+        by suffering. You can acknowledge
+        disruption, care for yourself,
+        and restore your connection
+        with the world one ordinary
+        act at a time.
+      </p>
+
+      <%= link_to "← BACK TO PERSPECTIVES",
+          bipolar_perspectives_path,
+          class: "shinto-back-button" %>
+
+    </div>
+  </section>
+
+</main>

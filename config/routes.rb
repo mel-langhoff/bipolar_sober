@@ -112,6 +112,18 @@ Rails.application.routes.draw do
       to: "bipolar_perspectives#the_big_picture",
       as: :bipolar_big_picture
 
+      
+  get "bipolar/perspectives/taoism",
+      to: "bipolar_perspectives#taoism",
+      as: :bipolar_taoism
+
+        get "bipolar/perspectives/paganism",
+      to: "bipolar_perspectives#paganism",
+      as: :bipolar_paganism
+
+        get "bipolar/perspectives/shinto",
+      to: "bipolar_perspectives#shinto",
+      as: :bipolar_shinto
 
   # ==========================================
   # ADDICTION > TOPICS

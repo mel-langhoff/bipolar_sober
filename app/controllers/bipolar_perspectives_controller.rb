@@ -22,4 +22,14 @@ class BipolarPerspectivesController < ApplicationController
 
   def the_big_picture
 end
+
+def taoism
+end
+
+def shinto
+end
+
+def paganism
+end
+
 end

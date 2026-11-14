@@ -1,3 +1,4 @@
+
 <% content_for :title, "Bipolar | Bipolar Sober" %>
 
 <main class="bipolar-page">
@@ -23,6 +24,7 @@
 
     </div>
   </section>
+
 
   <!-- TOPICS -->
   <section class="bipolar-topics" id="bipolar-topics">
@@ -57,14 +59,16 @@
         </h3>
 
         <p class="bipolar-card-description">
-          Buddhism, Hinduism, Stoicism, CBT, DBT, IFS,
-          and different ways of looking at bipolar disorder,
-          recovery, identity, and living with your own brain.
+          Buddhism, Hinduism, Stoicism, Taoism, Paganism,
+          Shinto, CBT, DBT, and IFS. Nine different ways
+          to understand your brain, question your thinking,
+          and navigate life with bipolar disorder.
         </p>
 
         <span>EXPLORE →</span>
 
       <% end %>
+
 
       <!-- ANGER -->
       <%= link_to bipolar_anger_path,
@@ -78,13 +82,16 @@
         </h3>
 
         <p class="bipolar-card-description">
-          Rage, irritability, hair-trigger reactions,
-          and what happens when zero suddenly becomes one hundred.
+          The short fuse, disproportionate reactions,
+          and getting pissed off at everything.
+          Understanding bipolar irritability and
+          learning when to put the thing down.
         </p>
 
         <span>EXPLORE →</span>
 
       <% end %>
+
 
       <!-- MANIA -->
       <%= link_to bipolar_mania_path,
@@ -98,13 +105,15 @@
         </h3>
 
         <p class="bipolar-card-description">
-          When everything gets faster, louder, brighter,
-          bigger, and considerably more complicated.
+          Racing thoughts, too much confidence, too little
+          sleep, impulsive decisions, psychosis, and the dangerous
+          feeling that every idea needs to happen right now.
         </p>
 
         <span>EXPLORE →</span>
 
       <% end %>
+
 
       <!-- DEPRESSION -->
       <%= link_to bipolar_depression_path,
@@ -118,14 +127,16 @@
         </h3>
 
         <p class="bipolar-card-description">
-          The other side of the swing: exhaustion,
-          emptiness, hopelessness, and getting through
-          the fucking thing.
+          Not just feeling sad. Months of exhaustion,
+          disconnection, lost motivation, and trying
+          to function when even the smallest things
+          feel like too much.
         </p>
 
         <span>EXPLORE →</span>
 
       <% end %>
+
 
       <!-- MIXED EPISODES -->
       <%= link_to bipolar_mixed_episodes_path,
@@ -139,13 +150,16 @@
         </h3>
 
         <p class="bipolar-card-description">
-          Depressed and wired. Exhausted and agitated.
-          When opposite symptoms decide to show up together.
+          Depressed but wired. Exhausted but restless.
+          Racing thoughts and miserable feelings
+          occupying the same brain at the same time.
+          The worst of both worlds.
         </p>
 
         <span>EXPLORE →</span>
 
       <% end %>
+
 
       <!-- IMPULSIVITY -->
       <%= link_to bipolar_impulsivity_path,
@@ -159,14 +173,16 @@
         </h3>
 
         <p class="bipolar-card-description">
-          The idea. The urge. The decision. The consequences.
-          And learning how to put something between them.
+          Spending, sudden decisions, questionable ideas,
+          and the dangerously short gap between wanting
+          something and doing it. Getting the "fuck it's". 
+          Learning to pause
+          before the consequences show up.
         </p>
 
         <span>EXPLORE →</span>
 
       <% end %>
-
 
 
       <!-- PSYCHOSIS -->
@@ -181,36 +197,39 @@
         </h3>
 
         <p class="bipolar-card-description">
-          When perception and reality stop lining up.
-          Delusions, hallucinations, altered beliefs,
-          and trying to make sense of what your mind
-          is telling you.
+          Hearing things, seeing things, believing things
+          that aren't happening, and trying to distinguish
+          reality from what your brain insists is real. Not only having the experience
+          but reliving it.
         </p>
 
         <span>EXPLORE →</span>
 
       <% end %>
 
-<!-- MEDICATIONS -->
-<%= link_to bipolar_medications_path,
-    class: "bipolar-card card-yellow" do %>
 
-  <p class="bipolar-card-number">08</p>
+      <!-- MEDICATIONS -->
+      <%= link_to bipolar_medications_path,
+          class: "bipolar-card card-yellow" do %>
 
-  <h3>
-    ON<br>
-    MEDICATIONS
-  </h3>
+        <p class="bipolar-card-number">08</p>
 
-  <p class="bipolar-card-description">
-    Taking your meds is part of your routine. It doesn’t erase
-    the work of living with bipolar disorder, and struggling
-    with symptoms doesn’t mean you’ve failed at treatment.
-  </p>
+        <h3>
+          ON<br>
+          MEDICATIONS
+        </h3>
 
-  <span>LOOK AT THE WHOLE PICTURE →</span>
+        <p class="bipolar-card-description">
+          The Carousel of Medicine. Five and a half years
+          of different pills, changing dosages, waiting,
+          weight gain, and other insane side effects before finally
+          finding a combination that works.
+        </p>
 
-<% end %>
+        <span>LOOK AT THE WHOLE PICTURE →</span>
+
+      <% end %>
+
 
       <!-- MOOD SWINGS -->
       <%= link_to bipolar_mood_swings_path,
@@ -224,24 +243,27 @@
         </h3>
 
         <p class="bipolar-card-description">
-          Shifts in mood, energy, and irritability.
-          What you notice, how it affects your day,
-          and where it fits among the other topics.
+          What's the difference between a normal mood swing
+          and a bipolar episode? Understanding the duration,
+          intensity, and changes in sleep, energy, judgment,
+          and behavior that make bipolar different.
         </p>
 
         <span>EXPLORE →</span>
 
       <% end %>
+
     </div>
   </section>
 
 
-<!-- BACK TO HOME -->
-<nav class="index-home-nav" aria-label="Return home">
-  <%= link_to "← BACK TO HOME",
-      root_path,
-      class: "index-home-button" %>
-</nav>
+  <!-- BACK TO HOME -->
+  <nav class="index-home-nav" aria-label="Return home">
 
+    <%= link_to "← BACK TO HOME",
+        root_path,
+        class: "index-home-button" %>
+
+  </nav>
 
 </main>

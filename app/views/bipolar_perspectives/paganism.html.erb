@@ -1,0 +1,777 @@
+
+<% content_for :title, "Paganism & Bipolar | Bipolar Sober" %>
+
+<style>
+  .pagan-bipolar-page {
+    background: #080808;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pagan-bipolar-page *,
+  .pagan-bipolar-page *::before,
+  .pagan-bipolar-page *::after {
+    box-sizing: border-box;
+  }
+
+  /* HERO */
+
+  .pagan-bipolar-hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 90px 6%;
+    background-color: #080808;
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(8, 8, 8, .78) 0%,
+        rgba(8, 8, 8, .35) 55%,
+        transparent 85%
+      ),
+      url("<%= asset_path('bipolar_paganism_desktop.png') %>");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .pagan-bipolar-hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .pagan-bipolar-eyebrow {
+    margin: 0 0 28px;
+    color: #ff1493;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .15em;
+    line-height: 1.6;
+  }
+
+  .pagan-bipolar-hero h1 {
+    margin: 0;
+    max-width: 1000px;
+    font-size: clamp(46px, 7vw, 105px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .94;
+    letter-spacing: -.06em;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+  }
+
+  .pagan-bipolar-hero h1 span {
+    display: block;
+  }
+
+  .pagan-bipolar-intro {
+    margin: 30px 0 0;
+    color: #eaff00;
+    font-size: clamp(16px, 2vw, 24px);
+    font-weight: 900;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  /* OPENING QUOTE */
+
+  .pagan-quote {
+    padding: 55px 6%;
+    background: #080808;
+    text-align: center;
+  }
+
+  .pagan-quote blockquote {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .pagan-quote blockquote p {
+    margin: 0 0 15px;
+    color: #eaff00;
+    font-size: clamp(28px, 4.5vw, 60px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.15;
+    text-transform: uppercase;
+  }
+
+  .pagan-quote cite {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+  }
+
+  /* MAIN SECTIONS */
+
+  .pagan-section {
+    display: grid;
+    grid-template-columns:
+      minmax(0, .85fr)
+      minmax(0, 1.15fr);
+    gap: 60px;
+    padding: 80px max(6%, calc((100% - 1200px) / 2));
+    align-items: start;
+  }
+
+  .pagan-section-heading,
+  .pagan-copy {
+    min-width: 0;
+  }
+
+  .pagan-number {
+    margin: 0 0 20px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .15em;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  .pagan-section h2 {
+    margin: 0;
+    font-size: clamp(36px, 4.5vw, 68px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .98;
+    letter-spacing: -.05em;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+  }
+
+  .pagan-copy {
+    font-size: 17px;
+    line-height: 1.85;
+    overflow-wrap: anywhere;
+  }
+
+  .pagan-copy p {
+    margin: 0 0 22px;
+  }
+
+  .pagan-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  .pagan-takeaway {
+    margin-top: 28px !important;
+    padding-top: 22px;
+    border-top: 3px solid currentColor;
+    font-weight: 900;
+    line-height: 1.5;
+  }
+
+  /* COLORS */
+
+  .pagan-pink {
+    background: #ff1493;
+    color: #080808;
+  }
+
+  .pagan-yellow {
+    background: #eaff00;
+    color: #080808;
+  }
+
+  .pagan-black {
+    background: #080808;
+    color: #fff;
+  }
+
+  .pagan-purple {
+    background: #8a00ff;
+    color: #fff;
+  }
+
+  .pagan-white {
+    background: #fff;
+    color: #080808;
+  }
+
+  /* CLOSING */
+
+  .pagan-ending {
+    display: grid;
+    grid-template-columns:
+      minmax(0, .85fr)
+      minmax(0, 1.15fr);
+    gap: 60px;
+    padding: 85px 6%;
+    background: #ff1493;
+    color: #080808;
+  }
+
+  .pagan-ending > div {
+    min-width: 0;
+  }
+
+  .pagan-ending-small {
+    margin: 0 0 20px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .15em;
+  }
+
+  .pagan-ending h2 {
+    margin: 0;
+    font-size: clamp(48px, 7vw, 100px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .95;
+    letter-spacing: -.06em;
+    text-transform: uppercase;
+  }
+
+  .pagan-ending h2 span {
+    color: #fff;
+  }
+
+  .pagan-ending-copy {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .pagan-ending-copy p {
+    margin: 0 0 24px;
+  }
+
+  .pagan-back-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px 20px;
+    border: 2px solid #080808;
+    color: #080808;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: .08em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s ease;
+  }
+
+  .pagan-back-button:hover {
+    background: #080808;
+    color: #eaff00;
+  }
+
+  .pagan-back-button:focus-visible {
+    outline: 3px solid #eaff00;
+    outline-offset: 5px;
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 767px) {
+    .pagan-bipolar-hero {
+      min-height: 88svh;
+      align-items: flex-start;
+      padding: 50px 6% 65px;
+      background-image:
+        linear-gradient(
+          180deg,
+          rgba(8, 8, 8, .55),
+          rgba(8, 8, 8, .12) 65%,
+          rgba(8, 8, 8, .20)
+        ),
+        url("<%= asset_path('bipolar_paganism_mobile.png') %>");
+      background-position: center, center bottom;
+      background-size: cover;
+    }
+
+    .pagan-bipolar-eyebrow {
+      font-size: 10px;
+      margin-bottom: 24px;
+    }
+
+    .pagan-bipolar-hero h1 {
+      font-size: clamp(40px, 9vw, 68px);
+    }
+
+    .pagan-bipolar-intro {
+      font-size: 14px;
+      margin-top: 24px;
+    }
+
+    .pagan-quote {
+      padding: 45px 6%;
+    }
+
+    .pagan-section {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      padding: 55px 6%;
+    }
+
+    .pagan-section h2 {
+      font-size: clamp(36px, 10vw, 58px);
+    }
+
+    .pagan-copy {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .pagan-ending {
+      grid-template-columns: 1fr;
+      gap: 28px;
+      padding: 65px 6%;
+    }
+
+    .pagan-ending-copy {
+      font-size: 16px;
+    }
+  }
+</style>
+
+
+<main class="pagan-bipolar-page">
+
+  <!-- HERO -->
+  <section class="pagan-bipolar-hero"
+           aria-labelledby="pagan-title">
+
+    <div class="pagan-bipolar-hero-content">
+
+      <p class="pagan-bipolar-eyebrow">
+        BIPOLAR SOBER / BIPOLAR / PERSPECTIVES / PAGANISM
+      </p>
+
+      <h1 id="pagan-title">
+        <span>BIPOLAR</span>
+        <span>THROUGH A</span>
+        <span>PAGAN LENS.</span>
+      </h1>
+
+      <p class="pagan-bipolar-intro">
+        THE SEASONS CHANGE.<br>
+        SO DO YOU.<br>
+        KEEP YOUR ROOTS.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- STARHAWK QUOTE -->
+  <section class="pagan-quote" aria-label="Opening quote">
+    <blockquote>
+      <p>
+        "Any ritual is an opportunity for transformation."
+      </p>
+      <cite>— Starhawk</cite>
+    </blockquote>
+  </section>
+
+
+  <!-- 01 / THE PAGAN PERSPECTIVE -->
+  <section class="pagan-section pagan-pink"
+           aria-labelledby="pagan-perspective-title">
+
+    <div class="pagan-section-heading">
+      <p class="pagan-number">
+        01 / THE PAGAN PERSPECTIVE
+      </p>
+
+      <h2 id="pagan-perspective-title">
+        FIND YOUR<br>
+        OWN<br>
+        MEANING.
+      </h2>
+    </div>
+
+    <div class="pagan-copy">
+
+      <p>
+        Paganism includes many traditions with
+        different beliefs about nature, the
+        sacred, ritual, and personal experience.
+        There isn't one official Pagan
+        explanation for bipolar disorder.
+      </p>
+
+      <p>
+        You can draw meaning from nature,
+        spiritual practices, and your own
+        experiences without treating your
+        illness as a divine message,
+        punishment, or spiritual assignment.
+      </p>
+
+      <p>
+        Your spirituality can be part of
+        your life without needing to
+        explain every part of it.
+      </p>
+
+      <p class="pagan-takeaway">
+        YOUR ILLNESS DOESN'T NEED<br>
+        A SPIRITUAL EXPLANATION.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- 02 / THE CYCLES OF NATURE -->
+  <section class="pagan-section pagan-yellow"
+           aria-labelledby="pagan-cycles-title">
+
+    <div class="pagan-section-heading">
+      <p class="pagan-number">
+        02 / THE CYCLES OF NATURE
+      </p>
+
+      <h2 id="pagan-cycles-title">
+        NOTHING<br>
+        STAYS THE<br>
+        SAME.
+      </h2>
+    </div>
+
+    <div class="pagan-copy">
+
+      <p>
+        Spring brings growth, summer brings
+        abundance, autumn brings decline,
+        and winter brings stillness.
+        Nature is always changing.
+      </p>
+
+      <p>
+        These cycles can offer a metaphor
+        for living with changing circumstances,
+        but mania and depression aren't
+        natural forces that need to balance
+        each other. They're medical
+        conditions that deserve treatment.
+      </p>
+
+      <p>
+        You can't demand that winter
+        become summer, but you can prepare
+        for winter. Likewise, you can't
+        always prevent a bipolar episode,
+        but you can recognize patterns,
+        prepare for difficult periods,
+        and make choices that protect
+        your stability.
+      </p>
+
+      <p class="pagan-takeaway">
+        YOU CAN'T CONTROL EVERY CHANGE.<br>
+        YOU CAN PREPARE FOR IT.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- 03 / GROWTH AND REST -->
+  <section class="pagan-section pagan-black"
+           aria-labelledby="pagan-growth-title">
+
+    <div class="pagan-section-heading">
+      <p class="pagan-number">
+        03 / GROWTH AND REST
+      </p>
+
+      <h2 id="pagan-growth-title">
+        EVEN A<br>
+        GARDEN<br>
+        NEEDS<br>
+        PRUNING.
+      </h2>
+    </div>
+
+    <div class="pagan-copy">
+
+      <p>
+        Your depressive episodes can last
+        four months or longer. That isn't
+        a brief seasonal pause or a
+        spiritual lesson you need to
+        appreciate. Depression can
+        be exhausting, isolating,
+        and disruptive.
+      </p>
+
+      <p>
+        During those periods, you can
+        recognize your limitations,
+        accept support, and care for
+        yourself without demanding
+        that you function normally.
+        Rest and treatment aren't
+        failures of spiritual practice.
+      </p>
+
+      <p>
+        Mania presents a different
+        challenge. Energy, creativity,
+        spending, and new ideas can
+        feel impossible to contain.
+        But a garden doesn't benefit
+        from limitless growth.
+        Sometimes it needs tending,
+        boundaries, and restraint.
+      </p>
+
+      <p>
+        You can value your creativity
+        without acting on every impulse.
+        Slowing down a decision can
+        protect your money, safety,
+        and relationships.
+      </p>
+
+      <p class="pagan-takeaway">
+        NOT EVERYTHING THAT GROWS<br>
+        NEEDS ROOM TO KEEP GROWING.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / THE BODY AND NATURE -->
+  <section class="pagan-section pagan-purple"
+           aria-labelledby="pagan-body-title">
+
+    <div class="pagan-section-heading">
+      <p class="pagan-number">
+        04 / THE BODY AND NATURE
+      </p>
+
+      <h2 id="pagan-body-title">
+        YOU'RE<br>
+        PART OF<br>
+        NATURE<br>
+        TOO.
+      </h2>
+    </div>
+
+    <div class="pagan-copy">
+
+      <p>
+        Many Pagan traditions emphasize
+        a relationship with the natural
+        world. That connection includes
+        your own body, with all its
+        needs and limitations.
+      </p>
+
+      <p>
+        Your body needs sleep, food,
+        rest, medical care, and movement
+        that respects what you're
+        physically capable of doing.
+        Those needs don't disappear
+        when your mind is racing
+        or depression makes
+        everything feel pointless.
+      </p>
+
+      <p>
+        Caring for yourself doesn't
+        have to be complicated or
+        ceremonial. Sometimes it
+        means eating something,
+        taking your medication,
+        resting, or spending a
+        little time outside.
+      </p>
+
+      <p class="pagan-takeaway">
+        CARING FOR YOUR BODY<br>
+        IS PART OF CARING FOR YOUR LIFE.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- 05 / RITUAL AND SPIRITUALITY -->
+  <section class="pagan-section pagan-white"
+           aria-labelledby="pagan-ritual-title">
+
+    <div class="pagan-section-heading">
+      <p class="pagan-number">
+        05 / RITUAL AND SPIRITUALITY
+      </p>
+
+      <h2 id="pagan-ritual-title">
+        MAKE<br>
+        SPACE FOR<br>
+        THE SACRED.
+      </h2>
+    </div>
+
+    <div class="pagan-copy">
+
+      <p>
+        Ritual can give you a familiar
+        way to pause, reflect, and
+        connect with what matters.
+        Lighting a candle, keeping
+        an altar, making an offering,
+        or sitting with meaningful
+        objects can create moments
+        of quiet and intention.
+      </p>
+
+      <p>
+        These practices can support
+        your spiritual life without
+        being treatments for bipolar
+        disorder. You can find them
+        meaningful while continuing
+        medication and psychiatric care.
+      </p>
+
+      <p>
+        During mania or psychosis,
+        coincidences may feel unusually
+        significant, and thoughts
+        can carry an overwhelming
+        sense of certainty.
+        You don't have to abandon
+        your beliefs to question
+        an interpretation.
+      </p>
+
+      <p>
+        A spiritual experience doesn't
+        require you to act immediately,
+        spend money, stop treatment,
+        or make a sudden commitment.
+        You can pause, talk with
+        someone you trust, and give
+        yourself time before deciding
+        what something means.
+      </p>
+
+      <p class="pagan-takeaway">
+        SOMETHING CAN FEEL MEANINGFUL<br>
+        WITHOUT DEMANDING ACTION.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- 06 / PERSONAL AGENCY -->
+  <section class="pagan-section pagan-yellow"
+           aria-labelledby="pagan-agency-title">
+
+    <div class="pagan-section-heading">
+      <p class="pagan-number">
+        06 / PERSONAL AGENCY
+      </p>
+
+      <h2 id="pagan-agency-title">
+        YOUR LIFE.<br>
+        YOUR<br>
+        RESPONSIBILITY.
+      </h2>
+    </div>
+
+    <div class="pagan-copy">
+
+      <p>
+        Pagan spirituality can leave
+        room to explore traditions,
+        choose personal rituals,
+        and decide what holds
+        meaning for you.
+        That freedom doesn't mean
+        you can control every part
+        of bipolar disorder.
+      </p>
+
+      <p>
+        You didn't choose your diagnosis,
+        and spiritual practice alone
+        can't make symptoms disappear.
+        But you can choose how you
+        respond, seek support, set
+        boundaries, and care for yourself.
+      </p>
+
+      <p>
+        Your illness can help explain
+        why certain decisions became
+        difficult to manage. It doesn't
+        erase their consequences.
+        You can recognize the role
+        of an episode while still
+        acknowledging what happened
+        and repairing what you can.
+      </p>
+
+      <p>
+        You don't have to turn every
+        period of suffering into
+        a lesson. Sometimes the
+        meaningful thing is simply
+        continuing to take care
+        of yourself and staying
+        connected to the life
+        you want to maintain.
+      </p>
+
+      <p class="pagan-takeaway">
+        YOU AREN'T RESPONSIBLE FOR<br>
+        HAVING BIPOLAR DISORDER.<br>
+        YOU ARE RESPONSIBLE FOR HOW<br>
+        YOU CARE FOR YOURSELF.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- CLOSING -->
+  <section class="pagan-ending"
+           aria-labelledby="pagan-closing-title">
+
+    <div>
+      <p class="pagan-ending-small">
+        CLOSING
+      </p>
+
+      <h2 id="pagan-closing-title">
+        STAY<br>
+        <span>ROOTED.</span>
+      </h2>
+    </div>
+
+    <div class="pagan-ending-copy">
+
+      <p>
+        You don't have to call bipolar
+        disorder a blessing, a curse,
+        or a spiritual assignment.
+        Your beliefs, rituals, and
+        connection to nature can
+        remain meaningful through
+        depression, mania, and
+        everything in between.
+      </p>
+
+      <p>
+        The world keeps changing.
+        You can keep caring for
+        yourself through those changes.
+      </p>
+
+      <%= link_to "← BACK TO PERSPECTIVES",
+          bipolar_perspectives_path,
+          class: "pagan-back-button" %>
+
+    </div>
+
+  </section>
+
+</main>
