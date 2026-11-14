@@ -27292,3 +27292,600 @@ body {
 
 
 
+
+/* ==========================================
+   RELAPSE PLANS HUB — HERO BACKGROUND
+========================================== */
+
+.relapse-hub .relapse-hub-hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.75) 0%,
+      rgba(8, 8, 8, 0.25) 60%,
+      transparent 100%
+    ),
+    url("toolbox_relapse_plans_desktop.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.relapse-hub .relapse-hub-hero .relapse-hub-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .relapse-hub .relapse-hub-hero {
+    min-height: 85svh;
+    align-items: flex-start;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.65) 0%,
+        rgba(8, 8, 8, 0.15) 100%
+      ),
+      url("toolbox_relapse_plans_mobile.png");
+
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+
+/* ==========================================
+   MANIA & HYPOMANIA RELAPSE PLAN — HERO
+========================================== */
+
+.relapse-plan-mania .relapse-plan-hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+
+  background-color: #080808;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.85) 0%,
+      rgba(8, 8, 8, 0.45) 50%,
+      rgba(8, 8, 8, 0.05) 100%
+    ),
+    url("/assets/relapse_plan_mania_desktop.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.relapse-plan-mania .relapse-plan-hero .relapse-plan-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .relapse-plan-mania .relapse-plan-hero {
+    min-height: 85svh;
+    align-items: flex-start;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.70) 0%,
+        rgba(8, 8, 8, 0.35) 55%,
+        rgba(8, 8, 8, 0.10) 100%
+      ),
+      url("/assets/relapse_plan_mania_mobile.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+/* ==========================================
+   AFTER DRINKING RELAPSE PLAN — HERO
+========================================== */
+
+.relapse-plan-after-drinking .relapse-plan-hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+
+  background-color: #080808;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.85) 0%,
+      rgba(8, 8, 8, 0.45) 50%,
+      rgba(8, 8, 8, 0.05) 100%
+    ),
+    url("/assets/relapse_plan_after_drinking_desktop.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.relapse-plan-after-drinking .relapse-plan-hero .relapse-plan-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .relapse-plan-after-drinking .relapse-plan-hero {
+    min-height: 85svh;
+    align-items: flex-start;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.75) 0%,
+        rgba(8, 8, 8, 0.35) 55%,
+        rgba(8, 8, 8, 0.10) 100%
+      ),
+      url("/assets/relapse_plan_after_drinking_mobile.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+/* ==========================================
+   ANGER & CONFLICT RELAPSE PLAN — HERO
+========================================== */
+
+.relapse-plan-anger .relapse-plan-hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+
+  background-color: #080808;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.85) 0%,
+      rgba(8, 8, 8, 0.45) 50%,
+      rgba(8, 8, 8, 0.05) 100%
+    ),
+    url("/assets/relapse_plan_anger_desktop.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.relapse-plan-anger .relapse-plan-hero .relapse-plan-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .relapse-plan-anger .relapse-plan-hero {
+    min-height: 85svh;
+    align-items: flex-start;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.75) 0%,
+        rgba(8, 8, 8, 0.35) 55%,
+        rgba(8, 8, 8, 0.10) 100%
+      ),
+      url("/assets/relapse_plan_anger_mobile.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+/* ==========================================
+   BOREDOM & RESTLESSNESS RELAPSE PLAN — HERO
+========================================== */
+
+.relapse-plan-boredom .relapse-plan-hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+
+  background-color: #080808;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.85) 0%,
+      rgba(8, 8, 8, 0.45) 50%,
+      rgba(8, 8, 8, 0.05) 100%
+    ),
+    url("/assets/relapse_plan_boredom_desktop.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.relapse-plan-boredom .relapse-plan-hero .relapse-plan-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .relapse-plan-boredom .relapse-plan-hero {
+    min-height: 85svh;
+    align-items: flex-start;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.75) 0%,
+        rgba(8, 8, 8, 0.35) 55%,
+        rgba(8, 8, 8, 0.10) 100%
+      ),
+      url("/assets/relapse_plan_boredom_mobile.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+
+/* ==========================================
+   CHRONIC PAIN RELAPSE PLAN — HERO
+========================================== */
+
+.relapse-plan-chronic-pain .relapse-plan-hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+
+  background-color: #080808;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.85) 0%,
+      rgba(8, 8, 8, 0.45) 50%,
+      rgba(8, 8, 8, 0.05) 100%
+    ),
+    url("/assets/relapse_plan_chronic_pain_desktop.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.relapse-plan-chronic-pain .relapse-plan-hero .relapse-plan-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .relapse-plan-chronic-pain .relapse-plan-hero {
+    min-height: 85svh;
+    align-items: flex-start;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.75) 0%,
+        rgba(8, 8, 8, 0.35) 55%,
+        rgba(8, 8, 8, 0.10) 100%
+      ),
+      url("/assets/relapse_plan_chronic_pain_mobile.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+/* ==========================================
+   DEPRESSION RELAPSE PLAN — HERO
+========================================== */
+
+.relapse-plan-depression .relapse-plan-hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+
+  background-color: #080808;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.85) 0%,
+      rgba(8, 8, 8, 0.45) 50%,
+      rgba(8, 8, 8, 0.05) 100%
+    ),
+    url("/assets/relapse_plan_depression_desktop.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.relapse-plan-depression .relapse-plan-hero .relapse-plan-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .relapse-plan-depression .relapse-plan-hero {
+    min-height: 85svh;
+    align-items: flex-start;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.75) 0%,
+        rgba(8, 8, 8, 0.35) 55%,
+        rgba(8, 8, 8, 0.10) 100%
+      ),
+      url("/assets/relapse_plan_depression_mobile.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+/* ==========================================
+   IMPULSIVITY RELAPSE PLAN — HERO
+========================================== */
+
+.relapse-plan-impulsivity .relapse-plan-hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+
+  background-color: #080808;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.85) 0%,
+      rgba(8, 8, 8, 0.45) 50%,
+      rgba(8, 8, 8, 0.05) 100%
+    ),
+    url("/assets/relapse_plan_impulsivity_desktop.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.relapse-plan-impulsivity .relapse-plan-hero .relapse-plan-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .relapse-plan-impulsivity .relapse-plan-hero {
+    min-height: 85svh;
+    align-items: flex-start;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.75) 0%,
+        rgba(8, 8, 8, 0.35) 55%,
+        rgba(8, 8, 8, 0.10) 100%
+      ),
+      url("/assets/relapse_plan_impulsivity_mobile.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+/* ==========================================
+   LONELINESS & ISOLATION RELAPSE PLAN — HERO
+========================================== */
+
+.relapse-plan-loneliness .relapse-plan-hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+
+  background-color: #080808;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.85) 0%,
+      rgba(8, 8, 8, 0.45) 50%,
+      rgba(8, 8, 8, 0.05) 100%
+    ),
+    url("/assets/relapse_plan_loneliness_desktop.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.relapse-plan-loneliness .relapse-plan-hero .relapse-plan-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .relapse-plan-loneliness .relapse-plan-hero {
+    min-height: 85svh;
+    align-items: flex-start;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.75) 0%,
+        rgba(8, 8, 8, 0.35) 55%,
+        rgba(8, 8, 8, 0.10) 100%
+      ),
+      url("/assets/relapse_plan_loneliness_mobile.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+/* ==========================================
+   MIXED SYMPTOMS RELAPSE PLAN — HERO
+========================================== */
+
+.relapse-plan-mixed-symptoms .relapse-plan-hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+
+  background-color: #080808;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.85) 0%,
+      rgba(8, 8, 8, 0.45) 50%,
+      rgba(8, 8, 8, 0.05) 100%
+    ),
+    url("/assets/relapse_plan_mixed_episodes_desktop.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.relapse-plan-mixed-symptoms .relapse-plan-hero .relapse-plan-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .relapse-plan-mixed-symptoms .relapse-plan-hero {
+    min-height: 85svh;
+    align-items: flex-start;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.75) 0%,
+        rgba(8, 8, 8, 0.35) 55%,
+        rgba(8, 8, 8, 0.10) 100%
+      ),
+      url("/assets/relapse_plan_mixed_episodes_mobile.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
+/* ==========================================
+   SOCIAL PRESSURE RELAPSE PLAN — HERO
+========================================== */
+
+.relapse-plan-social-pressure .relapse-plan-hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+
+  background-color: #080808;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.85) 0%,
+      rgba(8, 8, 8, 0.45) 50%,
+      rgba(8, 8, 8, 0.05) 100%
+    ),
+    url("/assets/relapse_plan_social_pressure_desktop.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.relapse-plan-social-pressure .relapse-plan-hero .relapse-plan-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  .relapse-plan-social-pressure .relapse-plan-hero {
+    min-height: 85svh;
+    align-items: flex-start;
+
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.75) 0%,
+        rgba(8, 8, 8, 0.35) 55%,
+        rgba(8, 8, 8, 0.10) 100%
+      ),
+      url("/assets/relapse_plan_social_pressure_mobile.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
