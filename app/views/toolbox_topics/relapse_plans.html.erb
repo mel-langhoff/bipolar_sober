@@ -1,4 +1,7 @@
+
 <% content_for :title, "Relapse Plans | Bipolar Sober" %>
+
+
 
 <main class="relapse-hub">
 
@@ -22,16 +25,20 @@
 
       <p class="relapse-hub-intro">
         Different triggers. Different plans.
-        Pick what’s happening.
+        Pick what's happening.
       </p>
 
     </div>
   </section>
 
+
   <!-- YOUR INTRODUCTION -->
   <section class="relapse-hub-note">
     <div class="relapse-hub-container">
-      <p class="relapse-hub-label">01 / BEFORE THE BARGAINING STARTS</p>
+
+      <p class="relapse-hub-label">
+        01 / BEFORE THE BARGAINING STARTS
+      </p>
 
       <h2>
         A LITTLE<br>
@@ -40,192 +47,347 @@
 
       <div class="relapse-hub-copy">
         <p>
-          [Your introduction goes here. What these plans are for,
-          how you use them, and what you want someone to know
-          before choosing one.]
+          Relapse doesn't always start with a drink.
+          Sometimes it starts with an argument,
+          a sleepless night, a pain flare,
+          or an ordinary afternoon when
+          you want to feel something different.
+        </p>
+
+        <p>
+          These plans are for recognizing what's
+          happening before alcohol starts looking
+          like a reasonable solution.
+          Each one addresses a different situation,
+          the warning signs that come with it,
+          and what you can do next.
+        </p>
+
+        <p>
+          You don't need to wait until you're
+          seriously considering drinking to use one.
+          The point is to have a plan before
+          your judgment, mood, or circumstances
+          make following it more difficult.
         </p>
       </div>
+
     </div>
   </section>
+
 
   <!-- PLAN DIRECTORY -->
   <section class="relapse-hub-plans">
     <div class="relapse-hub-container">
 
       <div class="relapse-hub-heading">
-        <p class="relapse-hub-label">02 / PICK YOUR PLAN</p>
+
+        <p class="relapse-hub-label">
+          02 / PICK YOUR PLAN
+        </p>
 
         <h2>
-          WHAT’S GOING<br>
+          WHAT'S GOING<br>
           ON RIGHT NOW?
         </h2>
 
         <p>
-          You can need more than one. There’s no prize
+          You can need more than one. There's no prize
           for making this shit fit neatly into a box.
         </p>
+
       </div>
 
       <div class="relapse-hub-grid">
 
+        <!-- MANIA -->
         <%= link_to relapse_plan_mania_path,
             class: "relapse-hub-card relapse-hub-card-pink" do %>
-          <p class="relapse-hub-number">01 / MANIA &amp; HYPOMANIA</p>
+
+          <p class="relapse-hub-number">
+            01 / MANIA &amp; HYPOMANIA
+          </p>
+
           <h3>
             FEELING<br>
             FUCKING<br>
             INVINCIBLE?
           </h3>
+
           <p class="relapse-hub-description">
-            A drinking relapse prevention plan for when
-            your mood is heading up.
+            Racing thoughts, reduced sleep,
+            excessive confidence, impulsive spending,
+            and the temptation to drink
+            when everything feels possible.
           </p>
-          <span class="relapse-hub-cta">OPEN THE PLAN →</span>
+
+          <span class="relapse-hub-cta">
+            OPEN THE PLAN →
+          </span>
+
         <% end %>
 
+
+        <!-- DEPRESSION -->
         <%= link_to relapse_plan_depression_path,
             class: "relapse-hub-card relapse-hub-card-purple" do %>
-          <p class="relapse-hub-number">02 / DEPRESSION</p>
+
+          <p class="relapse-hub-number">
+            02 / DEPRESSION
+          </p>
+
           <h3>
             WHEN<br>
             EVERYTHING<br>
             FEELS HEAVY.
           </h3>
+
           <p class="relapse-hub-description">
-            A drinking relapse prevention plan for
-            the low days.
+            Months of exhaustion, isolation,
+            hopelessness, and wanting alcohol
+            to make you feel something different.
           </p>
-          <span class="relapse-hub-cta">OPEN THE PLAN →</span>
+
+          <span class="relapse-hub-cta">
+            OPEN THE PLAN →
+          </span>
+
         <% end %>
 
+
+        <!-- MIXED SYMPTOMS -->
         <%= link_to relapse_plan_mixed_symptoms_path,
             class: "relapse-hub-card relapse-hub-card-yellow" do %>
-          <p class="relapse-hub-number">03 / MIXED SYMPTOMS</p>
+
+          <p class="relapse-hub-number">
+            03 / MIXED SYMPTOMS
+          </p>
+
           <h3>
             WIRED.<br>
             MISERABLE.<br>
             NOW WHAT?
           </h3>
+
           <p class="relapse-hub-description">
-            A drinking relapse prevention plan for
-            when things feel up and down at once.
+            Depressive thoughts, manic agitation,
+            racing thoughts, impulsivity,
+            and the overwhelming desire
+            to make it all stop.
           </p>
-          <span class="relapse-hub-cta">OPEN THE PLAN →</span>
+
+          <span class="relapse-hub-cta">
+            OPEN THE PLAN →
+          </span>
+
         <% end %>
 
+
+        <!-- IMPULSIVITY -->
         <%= link_to relapse_plan_impulsivity_path,
             class: "relapse-hub-card relapse-hub-card-black" do %>
-          <p class="relapse-hub-number">04 / IMPULSIVITY</p>
+
+          <p class="relapse-hub-number">
+            04 / IMPULSIVITY
+          </p>
+
           <h3>
             BEFORE<br>
-            “FUCK IT”<br>
+            "FUCK IT"<br>
             TAKES OVER.
           </h3>
+
           <p class="relapse-hub-description">
-            A drinking relapse prevention plan for
-            the act-now, think-later moments.
+            The urge, the justification,
+            the decision. Creating space
+            between wanting something
+            and acting on it.
           </p>
-          <span class="relapse-hub-cta">OPEN THE PLAN →</span>
+
+          <span class="relapse-hub-cta">
+            OPEN THE PLAN →
+          </span>
+
         <% end %>
 
+
+        <!-- CHRONIC PAIN -->
         <%= link_to relapse_plan_chronic_pain_path,
             class: "relapse-hub-card relapse-hub-card-yellow" do %>
-          <p class="relapse-hub-number">05 / CHRONIC PAIN</p>
+
+          <p class="relapse-hub-number">
+            05 / CHRONIC PAIN
+          </p>
+
           <h3>
             IT HURTS.<br>
             YOU WANT<br>
             A BREAK.
           </h3>
+
           <p class="relapse-hub-description">
-            A drinking relapse prevention plan for
-            pain flares and exhausting body days.
+            Sciatica, nerve pain, limited mobility,
+            and the temptation to turn to alcohol
+            when your body won't cooperate.
           </p>
-          <span class="relapse-hub-cta">OPEN THE PLAN →</span>
+
+          <span class="relapse-hub-cta">
+            OPEN THE PLAN →
+          </span>
+
         <% end %>
 
+
+        <!-- BOREDOM -->
         <%= link_to relapse_plan_boredom_path,
             class: "relapse-hub-card relapse-hub-card-pink" do %>
-          <p class="relapse-hub-number">06 / BOREDOM &amp; RESTLESSNESS</p>
+
+          <p class="relapse-hub-number">
+            06 / BOREDOM &amp; RESTLESSNESS
+          </p>
+
           <h3>
             BORED<br>
             OUT OF YOUR<br>
             FUCKING SKULL?
           </h3>
+
           <p class="relapse-hub-description">
-            A drinking relapse prevention plan for
-            empty hours and wanting something to happen.
+            Empty evenings, restless energy,
+            missing the excitement of drinking,
+            and finding something else
+            worth doing.
           </p>
-          <span class="relapse-hub-cta">OPEN THE PLAN →</span>
+
+          <span class="relapse-hub-cta">
+            OPEN THE PLAN →
+          </span>
+
         <% end %>
 
+
+        <!-- ANGER -->
         <%= link_to relapse_plan_anger_path,
             class: "relapse-hub-card relapse-hub-card-purple" do %>
-          <p class="relapse-hub-number">07 / ANGER &amp; CONFLICT</p>
+
+          <p class="relapse-hub-number">
+            07 / ANGER &amp; CONFLICT
+          </p>
+
           <h3>
             PISSED OFF.<br>
             STILL<br>
             SOBER.
           </h3>
+
           <p class="relapse-hub-description">
-            A drinking relapse prevention plan for
-            arguments, resentment, and seeing red.
+            Arguments, resentment, irritability,
+            and wanting a drink because
+            someone or something
+            pushed you too far.
           </p>
-          <span class="relapse-hub-cta">OPEN THE PLAN →</span>
+
+          <span class="relapse-hub-cta">
+            OPEN THE PLAN →
+          </span>
+
         <% end %>
 
+
+        <!-- LONELINESS -->
         <%= link_to relapse_plan_loneliness_path,
             class: "relapse-hub-card relapse-hub-card-yellow" do %>
-          <p class="relapse-hub-number">08 / LONELINESS &amp; ISOLATION</p>
+
+          <p class="relapse-hub-number">
+            08 / LONELINESS &amp; ISOLATION
+          </p>
+
           <h3>
             JUST YOU<br>
             AND YOUR<br>
             LOUD BRAIN.
           </h3>
+
           <p class="relapse-hub-description">
-            A drinking relapse prevention plan for
-            feeling alone or pulling away.
+            Drinking alone, withdrawing
+            from people, missing connection,
+            and recognizing when solitude
+            becomes isolation.
           </p>
-          <span class="relapse-hub-cta">OPEN THE PLAN →</span>
+
+          <span class="relapse-hub-cta">
+            OPEN THE PLAN →
+          </span>
+
         <% end %>
 
+
+        <!-- SOCIAL PRESSURE -->
         <%= link_to relapse_plan_social_pressure_path,
             class: "relapse-hub-card relapse-hub-card-black" do %>
-          <p class="relapse-hub-number">09 / SOCIAL PRESSURE &amp; CELEBRATIONS</p>
+
+          <p class="relapse-hub-number">
+            09 / SOCIAL PRESSURE &amp; CELEBRATIONS
+          </p>
+
           <h3>
-            EVERYONE’S<br>
+            EVERYONE'S<br>
             DRINKING.<br>
             AND?
           </h3>
+
           <p class="relapse-hub-description">
-            A drinking relapse prevention plan for
-            parties, celebrations, and “just have one.”
+            Parties, celebrations, unwanted offers,
+            missing social drinking, and knowing
+            when it's time to leave.
           </p>
-          <span class="relapse-hub-cta">OPEN THE PLAN →</span>
+
+          <span class="relapse-hub-cta">
+            OPEN THE PLAN →
+          </span>
+
         <% end %>
 
+
+        <!-- AFTER DRINKING -->
         <%= link_to relapse_plan_after_drinking_path,
             class: "relapse-hub-card relapse-hub-card-pink" do %>
-          <p class="relapse-hub-number">10 / AFTER DRINKING</p>
+
+          <p class="relapse-hub-number">
+            10 / AFTER DRINKING
+          </p>
+
           <h3>
             I DRANK.<br>
             WHAT THE<br>
             FUCK NOW?
           </h3>
+
           <p class="relapse-hub-description">
-            A plan for what comes next
-            after you’ve already had a drink.
+            You drank. Now what?
+            Stop the sequence, address
+            the consequences, get support,
+            and decide what happens next.
           </p>
-          <span class="relapse-hub-cta">OPEN THE PLAN →</span>
+
+          <span class="relapse-hub-cta">
+            OPEN THE PLAN →
+          </span>
+
         <% end %>
 
       </div>
     </div>
   </section>
 
+
   <!-- PERSONAL NOTES -->
   <section class="relapse-hub-footer">
     <div class="relapse-hub-container">
-      <p class="relapse-hub-label">03 / MAKE IT YOURS</p>
+
+      <p class="relapse-hub-label">
+        03 / MAKE IT YOURS
+      </p>
 
       <h2>
         YOUR PATTERNS.<br>
@@ -234,12 +396,35 @@
       </h2>
 
       <div class="relapse-hub-copy">
+
         <p>
-          [Your closing content goes here. Add your thoughts
-          on personal warning signs, support, and coming
-          back to these plans.]
+          Your warning signs won't always
+          look the same. Sometimes the problem
+          is your mood. Sometimes it's pain,
+          boredom, loneliness, or a situation
+          you didn't expect.
         </p>
+
+        <p>
+          Know what tends to happen before
+          you want to drink. Know who you
+          can contact, what helps you pause,
+          and when you need more support
+          than a self-help exercise can provide.
+        </p>
+
+        <p>
+          A relapse plan isn't a guarantee
+          that you'll never drink again.
+          It's a way to make your next
+          decision more deliberate,
+          especially when your brain
+          is making a convincing argument
+          for doing something else.
+        </p>
+
       </div>
+
     </div>
   </section>
 

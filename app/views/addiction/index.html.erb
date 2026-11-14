@@ -1,7 +1,9 @@
+
 <% content_for :title, "Addiction | Bipolar Sober" %>
 
 <main class="addiction-page">
 
+  <!-- HERO -->
   <section class="addiction-hero">
     <div class="addiction-hero-content">
 
@@ -15,14 +17,15 @@
       </h1>
 
       <p class="addiction-intro">
-        THE DRINK ISN'T<br>
-        THE WHOLE FUCKING STORY.
+        THE RELIEF WAS REAL.<br>
+        SO WERE THE CONSEQUENCES.
       </p>
 
     </div>
   </section>
 
 
+  <!-- TOPICS -->
   <section class="addiction-topics" id="addiction-topics">
 
     <div class="addiction-topics-heading">
@@ -30,12 +33,15 @@
       <p>01 / ADDICTION</p>
 
       <h2>
-        WHAT'S<br>
-        UNDERNEATH?
+        LOOK<br>
+        BENEATH<br>
+        THE SURFACE.
       </h2>
 
       <p class="addiction-topics-subtitle">
-        Drinking was the behavior. Now let's look at what's underneath.
+        The drinking. The relief. The excuses. The fallout.
+        Understanding addiction means looking at the whole story,
+        including the parts you'd rather forget and the ones you regret.
       </p>
 
     </div>
@@ -52,11 +58,13 @@
         <h3>PERSPECTIVES</h3>
 
         <p class="addiction-card-description">
-          Different ways of looking at addiction, craving, suffering,
-          recovery, and why we keep reaching for the thing that's hurting us.
+          Three stories. Nine different lenses.
+          Examine pain, pleasure, impulsivity,
+          and the decisions that changed your life.
+          Different perspectives. Same consequences.
         </p>
 
-        <span>EXPLORE →</span>
+        <span>CHANGE THE VIEW →</span>
 
       <% end %>
 
@@ -73,12 +81,14 @@
         </h3>
 
         <p class="addiction-card-description">
-          Mania. Depression. Mixed episodes.
-          How drinking and substance use get tangled up with bipolar
-          disorder, including when your mood is stable.
+          Mania accelerates. Depression weighs you down.
+          Mixed episodes are hitting the gas and the brake at the same time.
+          Alcohol promises relief from all of them.
+          Explore how bipolar symptoms, substance use,
+          and impaired judgment can reinforce each other.
         </p>
 
-        <span>UNTANGLE IT →</span>
+        <span>UNTANGLE THE PATTERN →</span>
 
       <% end %>
 
@@ -95,11 +105,13 @@
         </h3>
 
         <p class="addiction-card-description">
-          What's behind the urge to disappear? Feelings, memories,
-          boredom, pain, fear, loneliness — or just being inside your own head.
+          Pain. Boredom. Loneliness. Your own thoughts.
+          Sometimes you're running from something.
+          Sometimes you're chasing a feeling.
+          What did alcohol promise to change?
         </p>
 
-        <span>GO THERE →</span>
+        <span>FIND THE REASON →</span>
 
       <% end %>
 
@@ -113,11 +125,13 @@
         <h3>TRIGGERS</h3>
 
         <p class="addiction-card-description">
-          People. Places. Feelings. Memories. Situations.
-          Figure out what flips the switch before the switch gets flipped.
+          A familiar place. A difficult emotion.
+          An unexpected memory. Recognize the people,
+          situations, and patterns that bring drinking
+          back into focus before you act on them.
         </p>
 
-        <span>IDENTIFY THEM →</span>
+        <span>KNOW YOUR TRIGGERS →</span>
 
       <% end %>
 
@@ -131,12 +145,13 @@
         <h3>CRAVINGS</h3>
 
         <p class="addiction-card-description">
-          The urge. The bargaining. The selective fucking memory.
-          Understanding what you want, what you expect it to give you,
-          and how the craving builds.
+          The urge arrives. The bargaining begins.
+          Suddenly, you remember everything you liked
+          about drinking and conveniently forget the rest.
+          Understand the craving without obeying it.
         </p>
 
-        <span>UNDERSTAND THE URGE →</span>
+        <span>EXAMINE THE URGE →</span>
 
       <% end %>
 
@@ -150,11 +165,14 @@
         <h3>IMPULSIVITY</h3>
 
         <p class="addiction-card-description">
-          Want it. Do it. Regret it. Repeat.
-          Breaking down the space between an impulse and an action.
+          Want it. Do it. Regret it.
+          When the distance between an impulse
+          and a decision disappears, consequences
+          can arrive before you've considered them.
+          Learn to create a pause.
         </p>
 
-        <span>SLOW IT DOWN →</span>
+        <span>BREAK THE CYCLE →</span>
 
       <% end %>
 
@@ -171,17 +189,29 @@
         </h3>
 
         <p class="addiction-card-description">
-          Regret. Secrecy. The shit you wish you could undo.
-          Taking responsibility and making repairs
-          without turning your past into your entire identity.
+          You can't rewrite the past.
+          You can acknowledge the harm, accept
+          responsibility, and repair what you can.
+          Your mistakes deserve attention,
+          not a lifetime of self-condemnation.
         </p>
 
-        <span>FACE IT WITH COMPASSION →</span>
+        <span>OWN IT. REPAIR IT. →</span>
 
       <% end %>
 
     </div>
 
   </section>
+
+
+  <!-- BACK TO HOME -->
+  <nav class="index-home-nav" aria-label="Return home">
+
+    <%= link_to "← BACK TO HOME",
+        root_path,
+        class: "index-home-button" %>
+
+  </nav>
 
 </main>

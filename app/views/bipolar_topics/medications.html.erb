@@ -1,347 +1,346 @@
+
 <% content_for :title, "On Medications | Bipolar Sober" %>
 
-<main class="bipolar-medications-page">
+<style>
+  .medications-page {
+    background: #080808;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-  <style>
-    .bipolar-medications-page {
-      --bm-black: #080808;
-      --bm-white: #fff;
-      --bm-pink: #ff1493;
-      --bm-yellow: #eaff00;
-      --bm-purple: #8a00ff;
-      background: var(--bm-black);
-      color: var(--bm-white);
-      font-family: Arial, sans-serif;
-    }
+  .medications-page *,
+  .medications-page *::before,
+  .medications-page *::after {
+    box-sizing: border-box;
+  }
 
-    .bipolar-medications-page * {
-      box-sizing: border-box;
-    }
+  /* HERO */
 
-    .bm-hero {
-      min-height: 82vh;
-      display: flex;
-      align-items: center;
-      padding: 100px 7vw;
+  .medications-hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 6%;
+    background-color: #080808;
+    background-image:
+      linear-gradient(90deg, rgba(8, 8, 8, .65), transparent),
+      url("<%= asset_path('bipolar_medications_desktop.png') %>");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .medications-hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .medications-eyebrow {
+    max-width: 440px;
+    margin: 0 0 28px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.6;
+    letter-spacing: .12em;
+  }
+
+  .medications-hero h1 {
+    margin: 0;
+    font-size: clamp(58px, 10vw, 150px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .88;
+    letter-spacing: -.065em;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+  }
+
+  .medications-hero h1 span {
+    display: block;
+  }
+
+  .medications-intro {
+    margin: 32px 0 0;
+    font-size: clamp(15px, 1.6vw, 22px);
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  /* QUOTE */
+
+  .medications-quote {
+    padding: 48px 6%;
+    background: #080808;
+    text-align: center;
+  }
+
+  .medications-quote blockquote {
+    margin: 0;
+  }
+
+  .medications-quote blockquote p {
+    margin: 0 0 12px;
+    color: #eaff00;
+    font-size: clamp(30px, 5vw, 64px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.15;
+    text-transform: uppercase;
+  }
+
+  .medications-quote cite {
+    font-size: 14px;
+    font-style: normal;
+  }
+
+  /* SECTIONS */
+
+  .medications-section {
+    padding: 72px 6%;
+  }
+
+  .medications-section-inner {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .medications-number {
+    margin: 0 0 22px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .12em;
+  }
+
+  .medications-section h2 {
+    margin: 0;
+    font-size: clamp(36px, 4.5vw, 68px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: .95;
+    letter-spacing: -.045em;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+  }
+
+  .medications-copy {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+
+  .medications-copy p {
+    margin: 0 0 22px;
+  }
+
+  .medications-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* COLORS */
+
+  .medications-pink {
+    background: #ff1493;
+    color: #080808;
+  }
+
+  .medications-yellow {
+    background: #eaff00;
+    color: #080808;
+  }
+
+  .medications-purple {
+    background: #8a00ff;
+    color: #fff;
+  }
+
+  .medications-black {
+    background: #080808;
+    color: #fff;
+  }
+
+  .medications-white {
+    background: #fff;
+    color: #080808;
+  }
+
+  /* TAKEAWAYS */
+
+  .medications-takeaway {
+    padding-top: 22px;
+    border-top: 3px solid currentColor;
+    font-weight: 800;
+  }
+
+  /* FOOTER */
+
+  .medications-footer {
+    padding: 40px 6%;
+    border-top: 1px solid #444;
+    background: #080808;
+  }
+
+  .medications-footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .medications-footer a {
+    color: #eaff00;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  .medications-footer a:hover {
+    text-decoration: underline;
+  }
+
+  .medications-footer a:focus-visible {
+    outline: 3px solid #ff1493;
+    outline-offset: 6px;
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 767px) {
+    .medications-hero {
+      min-height: 88svh;
+      align-items: flex-start;
+      padding: 48px 6% 60px;
       background-image:
-        linear-gradient(
-          90deg,
-          rgba(8, 8, 8, .96) 0%,
-          rgba(8, 8, 8, .72) 48%,
-          rgba(8, 8, 8, .12) 100%
-        ),
-        var(--bm-desktop);
-      background-position: center, right center;
-      background-size: cover, cover;
+        url("<%= asset_path('bipolar_medications_mobile.png') %>");
+      background-position: center bottom;
     }
 
-    .bm-hero-content {
-      max-width: 1000px;
+    .medications-eyebrow {
+      margin-bottom: 24px;
+      font-size: 10px;
     }
 
-    .bm-eyebrow,
-    .bm-section-label,
-    .bm-card-label {
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: .16em;
-      text-transform: uppercase;
+    .medications-hero h1 {
+      font-size: clamp(48px, 12vw, 90px);
     }
 
-    .bm-eyebrow {
-      color: var(--bm-pink);
-    }
-
-    .bm-hero h1 {
-      margin: 24px 0;
-      font-size: clamp(58px, 10vw, 142px);
-      line-height: .88;
-      letter-spacing: -.07em;
-      text-transform: uppercase;
-    }
-
-    .bm-hero h1 span {
-      display: block;
-    }
-
-    .bm-intro {
-      color: var(--bm-yellow);
-      font-size: clamp(17px, 2vw, 25px);
-      font-weight: 900;
-      line-height: 1.45;
-    }
-
-    .bm-section {
-      padding: 76px 7vw;
-      border-top: 2px solid rgba(255, 255, 255, .2);
-    }
-
-    .bm-section-inner {
-      max-width: 1250px;
-      margin: 0 auto;
-    }
-
-    .bm-section-label {
-      color: var(--bm-pink);
-    }
-
-    .bm-section h2 {
-      max-width: 850px;
-      margin: 18px 0 30px;
-      font-size: clamp(38px, 6vw, 78px);
-      line-height: .98;
-      letter-spacing: -.055em;
-      text-transform: uppercase;
-    }
-
-    .bm-copy {
-      max-width: 850px;
-      font-size: 18px;
-      line-height: 1.8;
-    }
-
-    .bm-copy p {
-      margin: 0 0 22px;
-    }
-
-    .bm-box-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 34px;
-    }
-
-    .bm-box {
-      padding: 24px;
-      border: 2px solid var(--bm-pink);
-      background: #111;
-    }
-
-    .bm-box:nth-child(2) {
-      border-color: var(--bm-yellow);
-    }
-
-    .bm-box:nth-child(3) {
-      border-color: var(--bm-purple);
-    }
-
-    .bm-box:nth-child(4) {
-      border-color: var(--bm-white);
-    }
-
-    .bm-box h3 {
-      margin: 12px 0;
-      font-size: 24px;
-      text-transform: uppercase;
-    }
-
-    .bm-box p {
-      margin: 0;
-      font-size: 16px;
-      line-height: 1.7;
-    }
-
-    .bm-callout {
-      max-width: 950px;
-      margin: 35px 0;
-      padding: 24px;
-      border: 3px solid var(--bm-yellow);
-      color: var(--bm-yellow);
-      font-size: clamp(21px, 3vw, 34px);
-      font-weight: 900;
-      line-height: 1.2;
-      text-transform: uppercase;
-    }
-
-    .bm-ending {
-      padding: 80px 7vw;
-      background: var(--bm-purple);
-    }
-
-    .bm-ending-inner {
-      max-width: 1250px;
-      margin: 0 auto;
-    }
-
-    .bm-ending h2 {
-      margin: 12px 0 24px;
-      font-size: clamp(46px, 8vw, 110px);
-      line-height: .92;
-      letter-spacing: -.06em;
-      text-transform: uppercase;
-    }
-
-    .bm-ending p {
-      max-width: 780px;
-      font-size: 18px;
-      line-height: 1.75;
-    }
-
-    .bm-back {
-      display: inline-block;
+    .medications-intro {
       margin-top: 24px;
-      padding: 14px 18px;
-      border: 2px solid var(--bm-yellow);
-      color: var(--bm-yellow);
-      font-weight: 900;
-      text-decoration: none;
-      text-transform: uppercase;
+      font-size: 14px;
     }
 
-    @media (max-width: 700px) {
-      .bm-hero {
-        min-height: 75vh;
-        padding: 90px 22px;
-        background-image:
-          linear-gradient(
-            180deg,
-            rgba(8, 8, 8, .55),
-            rgba(8, 8, 8, .08)
-          ),
-          var(--bm-mobile);
-        background-position: center, center bottom;
-      }
-
-      .bm-section {
-        padding: 58px 22px;
-      }
-
-      .bm-box-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .bm-ending {
-        padding: 65px 22px;
-      }
+    .medications-section {
+      padding: 48px 6%;
     }
-  </style>
 
+    .medications-section-inner {
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .medications-section h2 {
+      font-size: clamp(36px, 10vw, 58px);
+    }
+
+    .medications-copy {
+      font-size: 16px;
+    }
+
+    .medications-number {
+      margin-bottom: 16px;
+    }
+  }
+</style>
+
+
+<main class="medications-page">
 
   <!-- HERO -->
-  <section class="bm-hero"
-           style="--bm-desktop: url('<%= asset_path('bipolar_medications_desktop.png') %>');
-                  --bm-mobile: url('<%= asset_path('bipolar_medications_mobile.png') %>');">
+  <section class="medications-hero" aria-labelledby="medications-title">
+    <div class="medications-hero-content">
 
-    <div class="bm-hero-content">
-
-      <p class="bm-eyebrow">
-        BIPOLAR SOBER / BIPOLAR / ON MEDICATIONS
+      <p class="medications-eyebrow">
+        BIPOLAR SOBER / BIPOLAR / MEDICATIONS
       </p>
 
-      <h1>
+      <h1 id="medications-title">
         <span>ON</span>
         <span>MEDICATIONS.</span>
       </h1>
 
-      <p class="bm-intro">
-        PART OF THE WORK.<br>
-        NOT THE WHOLE STORY.
+      <p class="medications-intro">
+        FIVE AND A HALF YEARS.<br>
+        A WHOLE LOT OF TRIAL AND ERROR.<br>
+        AND FINALLY, SOMETHING THAT WORKS.
       </p>
 
     </div>
   </section>
 
 
-  <!-- 01 / YOUR ROUTINE -->
-  <section class="bm-section">
-    <div class="bm-section-inner">
-
-      <p class="bm-section-label">01 / YOUR ROUTINE</p>
-
-      <h2>
-        TAKING THEM<br>
-        ISN'T THE HARD PART.
-      </h2>
-
-      <div class="bm-copy">
-        <p>
-          You take your medication. You don’t have to invent a struggle
-          with it just because medication is a complicated subject for
-          some people. This is one part of your life with bipolar disorder
-          that you can describe plainly: you take your meds.
-        </p>
-
-        <p>
-          That routine matters to you, but it doesn’t have to become your
-          whole identity or the only measure of how well you’re doing.
-          Taking medication doesn’t mean every symptom disappears, and
-          having a difficult episode doesn’t erase the fact that you’ve
-          kept taking it.
-        </p>
-      </div>
-
-      <div class="bm-callout">
-        YOU CAN TAKE YOUR MEDS AND STILL NEED SUPPORT.
-      </div>
-
-    </div>
+  <!-- CARRIE FISHER QUOTE -->
+  <section class="medications-quote" aria-label="Opening quote">
+    <blockquote>
+      <p>"“What's in the horse pill?”</p>
+      <cite>— Randle McMurphycite>
+    </blockquote>
   </section>
 
 
-  <!-- 02 / THE WHOLE PICTURE -->
-  <section class="bm-section">
-    <div class="bm-section-inner">
+  <!-- 01 / THE CAROUSEL OF MEDICINE -->
+  <section class="medications-section medications-pink">
+    <div class="medications-section-inner">
 
-      <p class="bm-section-label">02 / THE WHOLE PICTURE</p>
-
-      <h2>
-        MEDICATION<br>
-        IS ONE PART.
-      </h2>
-
-      <div class="bm-copy">
-        <p>
-          Living with bipolar disorder still asks things of you: noticing
-          mood changes, managing impulsivity, dealing with the effects of
-          depression, asking for help, and taking responsibility for
-          decisions and their consequences.
+      <div class="medications-section-heading">
+        <p class="medications-number">
+          01 / THE CAROUSEL OF MEDICINE
         </p>
 
-        <p>
-          You’ve described overspending and impulsive decisions as real
-          challenges. Those deserve attention in their own right. You
-          don’t need to turn them into proof that you aren’t trying or
-          that your medication routine doesn’t count.
-        </p>
+        <h2>
+          ROUND AND<br>
+          FUCKING<br>
+          ROUND.
+        </h2>
       </div>
 
-      <div class="bm-box-grid">
+      <div class="medications-copy">
 
-        <article class="bm-box">
-          <p class="bm-card-label">YOU CAN</p>
-          <h3>KEEP TAKING THEM</h3>
-          <p>
-            Medication can be part of the structure you use to care
-            for yourself.
-          </p>
-        </article>
+        <p>
+          Taking your medication was never the problem.
+          Finding the right medication was. For five to
+          five and a half years, you went through what
+          felt like an endless carousel of medications,
+          dosages, adjustments, and waiting.
+          Try this. Increase that. Decrease something
+          else. Give it a few weeks. See how you feel.
+          Repeat.
+        </p>
 
-        <article class="bm-box">
-          <p class="bm-card-label">AND</p>
-          <h3>KEEP PAYING ATTENTION</h3>
-          <p>
-            Your moods, sleep, energy, and choices still deserve honest
-            attention.
-          </p>
-        </article>
+        <p>
+          One medication doesn't work, so you try another.
+          One dosage isn't enough, so it gets increased.
+          Then the side effects show up, and you're
+          adjusting everything all over again.
+          Meanwhile, your brain is still doing whatever
+          the hell it wants.
+        </p>
 
-        <article class="bm-box">
-          <p class="bm-card-label">AND</p>
-          <h3>ASK FOR SUPPORT</h3>
-          <p>
-            You can bring concerns or changes to your treatment team
-            without needing to prove that things are bad enough first.
-          </p>
-        </article>
+        <p>
+          And you're expected to be patient through
+          the whole thing. As though spending years
+          experimenting with your brain chemistry
+          is just another ordinary inconvenience.
+          It isn't.
+        </p>
 
-        <article class="bm-box">
-          <p class="bm-card-label">AND</p>
-          <h3>OWN YOUR CHOICES</h3>
-          <p>
-            Treatment and accountability can sit beside each other.
-            Neither one cancels the other out.
-          </p>
-        </article>
+        <p class="medications-takeaway">
+          YOU TAKE YOUR MEDS.<br>
+          THAT WAS NEVER THE PROBLEM.
+        </p>
 
       </div>
 
@@ -349,63 +348,366 @@
   </section>
 
 
-  <!-- 03 / WHEN SOMETHING CHANGES -->
-  <section class="bm-section">
-    <div class="bm-section-inner">
+  <!-- 02 / THE WAITING -->
+  <section class="medications-section medications-yellow">
+    <div class="medications-section-inner">
 
-      <p class="bm-section-label">03 / WHEN SOMETHING CHANGES</p>
-
-      <h2>
-        BRING IT<br>
-        INTO THE ROOM.
-      </h2>
-
-      <div class="bm-copy">
-        <p>
-          If your symptoms, routine, or concerns change, you can tell your
-          prescriber directly. You don’t have to make the conversation
-          dramatic or show up with a perfect explanation. “Something feels
-          different” is a useful place to start.
+      <div class="medications-section-heading">
+        <p class="medications-number">
+          02 / THE WAITING GAME
         </p>
 
-        <p>
-          Questions about your medication plan belong in a conversation
-          with your health care provider. You don’t have to make changes
-          to that plan on your own.
-        </p>
+        <h2>
+          IS IT<br>
+          WORKING<br>
+          YET?
+        </h2>
       </div>
 
-      <div class="bm-callout">
-        HONEST INFORMATION HELPS YOUR CARE TEAM UNDERSTAND WHAT’S HAPPENING.
+      <div class="medications-copy">
+
+        <p>
+          You start a medication and then you wait.
+          And wait. And wait some more.
+          Maybe you notice something immediately.
+          Maybe you spend weeks trying to figure out
+          whether anything has changed at all.
+        </p>
+
+        <p>
+          Then you finally get enough time on the
+          medication to know whether it's helping,
+          only to discover that the dosage needs
+          adjusting or something else needs replacing.
+          Congratulations. You get to start
+          the waiting game all over again.
+        </p>
+
+        <p>
+          Meanwhile, your life doesn't stop.
+          You still have responsibilities, relationships,
+          moods, and symptoms. You can't put bipolar
+          disorder on hold while a medication
+          decides whether it's going to work.
+        </p>
+
+        <p class="medications-takeaway">
+          YOUR BRAIN DOESN'T GIVE A SHIT<br>
+          ABOUT THE ADJUSTMENT SCHEDULE.
+        </p>
+
       </div>
 
     </div>
   </section>
 
 
-  <!-- ENDING -->
-  <section class="bm-ending">
-    <div class="bm-ending-inner">
+  <!-- 03 / SIDE EFFECTS -->
+  <section class="medications-section medications-purple">
+    <div class="medications-section-inner">
 
-      <p class="bm-section-label">KEEP THE WHOLE PERSON IN VIEW</p>
+      <div class="medications-section-heading">
+        <p class="medications-number">
+          03 / THE SIDE EFFECTS
+        </p>
 
-      <h2>
-        TREATMENT<br>
-        IS PART OF<br>
-        YOUR LIFE.
-      </h2>
+        <h2>
+          NOTHING<br>
+          FITS.
+        </h2>
+      </div>
 
-      <p>
-        You take your medication. You also have a life, responsibilities,
-        relationships, symptoms, plans, and difficult days. Let the routine
-        support you without reducing you to a diagnosis or a pill organizer.
-      </p>
+      <div class="medications-copy">
+
+        <p>
+          As if finding the right medication
+          weren't frustrating enough, you also
+          get to deal with what it does to your body.
+          Weight gain is a particularly obnoxious
+          example.
+        </p>
+
+        <p>
+          Your body changes. Your clothes stop fitting.
+          Suddenly, getting dressed becomes another
+          reminder that you have bipolar disorder.
+          You're taking something to help your brain,
+          and now you're dealing with a completely
+          different problem because of it.
+        </p>
+
+        <p>
+          And yes, it's frustrating. You're allowed
+          to be annoyed that none of your clothes fit.
+          You're allowed to hate that your body
+          has changed because of medication.
+          It's another consequence of treatment
+          that people who haven't experienced
+          it may never fully understand.
+        </p>
+
+        <p class="medications-takeaway">
+          YOU'RE TREATING YOUR BRAIN.<br>
+          YOUR BODY GETS DRAGGED ALONG.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 04 / ANTIDEPRESSANTS -->
+  <section class="medications-section medications-black">
+    <div class="medications-section-inner">
+
+      <div class="medications-section-heading">
+        <p class="medications-number">
+          04 / WHEN MEDICATION BACKFIRES
+        </p>
+
+        <h2>
+          WELL,<br>
+          THAT WENT<br>
+          TO SHIT.
+        </h2>
+      </div>
+
+      <div class="medications-copy">
+
+        <p>
+          Sometimes a medication doesn't just fail
+          to help. Sometimes it makes everything
+          considerably worse.
+        </p>
+
+        <p>
+          You know what it's like to have an
+          antidepressant send your brain completely
+          haywire. Something prescribed to improve
+          your mental health ended up destabilizing
+          it instead. Sometimes bipolar rage steps in.
+        </p>
+
+        <p>
+          Antidepressants can sometimes trigger
+          mania or worsen mood instability in
+          people with bipolar disorder.
+          You know firsthand why medication
+          changes aren't always minor adjustments.
+          Sometimes the consequences are enormous.
+        </p>
+
+        <p>
+          It adds another layer of frustration. 
+          You take the medication
+          because you're trying to manage your
+          illness, and the medication itself
+          becomes part of the problem.
+        </p>
+
+        <p class="medications-takeaway">
+          THE THING THAT WAS SUPPOSED TO HELP<br>
+          MADE YOUR BRAIN GO OFF THE WALL.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 05 / OTHER PEOPLE -->
+  <section class="medications-section medications-white">
+    <div class="medications-section-inner">
+
+      <div class="medications-section-heading">
+        <p class="medications-number">
+          05 / THE FRUSTRATION
+        </p>
+
+        <h2>
+          MUST<br>
+          BE FUCKING<br>
+          NICE.
+        </h2>
+      </div>
+
+      <div class="medications-copy">
+
+        <p>
+          Most people don't have to spend years
+          finding a combination of psychiatric
+          medications just to establish some
+          stability. They don't have to think
+          about dosages, side effects, mood
+          destabilization, and whether the
+          latest adjustment is actually working.
+        </p>
+
+        <p>
+          They get to go about their lives
+          without a constant reminder that
+          their brain requires this much
+          maintenance. Meanwhile, you've spent
+          years dealing with appointments,
+          adjustments, waiting periods,
+          unexpected reactions, and physical
+          changes you never asked for.
+        </p>
+
+        <p>
+          You can accept that medication is
+          important and still be pissed off
+          about how much effort it took to
+          get the right combination.
+          Those things aren't contradictory.
+        </p>
+
+        <p class="medications-takeaway">
+          YOU CAN BE GRATEFUL IT WORKS<br>
+          AND STILL HATE THE PROCESS.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 06 / FINDING THE RIGHT COMBINATION -->
+  <section class="medications-section medications-pink">
+    <div class="medications-section-inner">
+
+      <div class="medications-section-heading">
+        <p class="medications-number">
+          06 / FINALLY, SOMETHING WORKS
+        </p>
+
+        <h2>
+          FIVE AND<br>
+          A HALF<br>
+          YEARS LATER.
+        </h2>
+      </div>
+
+      <div class="medications-copy">
+
+        <p>
+          After roughly five and a half
+          years of trying different medications,
+          adjusting dosages, dealing with side
+          effects, and waiting for results,
+          you finally found a combination
+          that works for you.
+        </p>
+
+        <p>
+          That doesn't mean bipolar disorder
+          disappeared. You still have symptoms
+          to recognize, impulses to manage,
+          and responsibilities to handle.
+          Medication isn't a magical cure
+          that makes every difficult part
+          of the illness vanish.
+        </p>
+
+        <p>
+          But you aren't constantly starting
+          over with another medication,
+          another dosage, and another round
+          of waiting. You've reached a point
+          where your treatment routine is
+          established, and taking your meds
+          is simply something you do.
+        </p>
+
+        <p>
+          It took years to get here.
+          You're allowed to appreciate
+          finally having something that works
+          while remembering exactly how
+        exhausting it was to find it.
+        </p>
+
+        <p class="medications-takeaway">
+          THE CAROUSEL FINALLY SLOWED DOWN.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 07 / THE BIGGER PICTURE -->
+  <section class="medications-section medications-yellow">
+    <div class="medications-section-inner">
+
+      <div class="medications-section-heading">
+        <p class="medications-number">
+          07 / THE BIGGER PICTURE
+        </p>
+
+        <h2>
+          PART OF<br>
+          YOUR LIFE.<br>
+          NOT ALL OF IT.
+        </h2>
+      </div>
+
+      <div class="medications-copy">
+
+        <p>
+          Medication is one part of living with
+          bipolar disorder. You still have to
+          pay attention to your moods, sleep,
+          judgment, and impulsivity. You still
+          have to deal with difficult episodes
+          and the consequences of your decisions.
+        </p>
+
+        <p>
+          Finding the right combination doesn't
+          guarantee that nothing will ever go
+          wrong again. And if symptoms change,
+          your psychiatrist needs to know.
+          You don't have to make medication
+          adjustments on your own.
+        </p>
+
+        <p>
+          Your treatment is important, but
+          it isn't your entire identity.
+          You've spent enough time thinking
+          about what your brain needs.
+          You also get to have a life beyond
+          appointments, prescriptions,
+          and medication bottles.
+        </p>
+
+        <p class="medications-takeaway">
+          YOU HAVE BIPOLAR DISORDER.<br>
+          YOU ALSO HAVE A WHOLE FUCKING LIFE.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- NAVIGATION -->
+  <nav class="medications-footer" aria-label="Bipolar topic navigation">
+    <div class="medications-footer-inner">
 
       <%= link_to "← BACK TO BIPOLAR",
-          bipolar_path,
-          class: "bm-back" %>
+          bipolar_path %>
+
+      <%= link_to "NEXT: ON MOOD SWINGS →",
+          bipolar_mood_swings_path %>
 
     </div>
-  </section>
+  </nav>
 
 </main>
