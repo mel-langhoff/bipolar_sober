@@ -137,15 +137,36 @@
       <% end %>
 
 
+      <!-- 05 / ESSAYS -->
+      <%= link_to toolbox_essays_path,
+          class: "perspectives-card perspectives-card-yellow" do %>
+
+        <p class="perspectives-card-number">05</p>
+
+        <h3>
+          ESSAYS
+        </h3>
+
+        <p class="perspectives-card-description">
+          Longer pieces about recovery, mental health,
+          spirituality, and the ideas I keep turning over.
+        </p>
+
+        <span>READ THE ESSAYS →</span>
+
+      <% end %>
+
+
     </div>
 
   </section>
 
-<!-- BACK TO HOME -->
-<nav class="index-home-nav" aria-label="Return home">
-  <%= link_to "← BACK TO HOME",
-      root_path,
-      class: "index-home-button" %>
-</nav>
+
+  <!-- BACK TO HOME -->
+  <nav class="index-home-nav" aria-label="Return home">
+    <%= link_to "← BACK TO HOME",
+        root_path,
+        class: "index-home-button" %>
+  </nav>
 
 </main>

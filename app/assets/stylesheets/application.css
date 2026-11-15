@@ -38,7 +38,7 @@ body {
 
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)),
-    url("mobile_background.png");
+    url("mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -181,7 +181,7 @@ body {
 
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)),
-      url("desktop_background.png");
+      url("desktop_background.webp");
   }
 
   .hero h1 {
@@ -220,7 +220,7 @@ body {
       rgba(0, 0, 0, 0.72) 55%,
       rgba(255, 20, 147, 0.18) 100%
     ),
-    url("so_you_want_to_drink_mobile_background.png");
+    url("so_you_want_to_drink_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -477,7 +477,7 @@ body {
         rgba(0, 0, 0, 0.78) 43%,
         rgba(0, 0, 0, 0.22) 100%
       ),
-      url("so_you_want_to_drink_desktop_background.png");
+      url("so_you_want_to_drink_desktop_background.webp");
 
     background-position: center;
   }
@@ -603,7 +603,7 @@ body {
       rgba(0, 0, 0, 0.35),
       rgba(0, 0, 0, 0.8)
     ),
-    url("resources_mobile_background.png");
+    url("resources_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -851,7 +851,7 @@ body {
         rgba(0, 0, 0, 0.6) 50%,
         rgba(0, 0, 0, 0.2) 100%
       ),
-      url("resources_desktop_background.png");
+      url("resources_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -931,7 +931,7 @@ body {
       rgba(0, 0, 0, 0.55) 55%,
       rgba(0, 0, 0, 0.15) 100%
     ),
-    url("bipolar_mobile_background.png");
+    url("bipolar_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -1197,7 +1197,7 @@ body {
         rgba(0, 0, 0, 0.15) 72%,
         rgba(0, 0, 0, 0.05) 100%
       ),
-      url("bipolar_desktop_background.png");
+      url("bipolar_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -1275,7 +1275,7 @@ body {
       rgba(0, 0, 0, 0.62) 55%,
       rgba(0, 0, 0, 0.15) 100%
     ),
-    url("addiction_mobile_background.png");
+    url("addiction_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -1528,7 +1528,7 @@ body {
         rgba(0, 0, 0, 0.18) 72%,
         rgba(0, 0, 0, 0.05) 100%
       ),
-      url("addiction_desktop_background.png");
+      url("addiction_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -1608,7 +1608,7 @@ body {
       rgba(0, 0, 0, 0.62) 55%,
       rgba(0, 0, 0, 0.15) 100%
     ),
-    url("spirituality_mobile_background.png");
+    url("spirituality_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -1874,7 +1874,7 @@ body {
         rgba(0, 0, 0, 0.18) 72%,
         rgba(0, 0, 0, 0.05) 100%
       ),
-      url("spirituality_desktop_background.png");
+      url("spirituality_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -1952,7 +1952,7 @@ body {
       rgba(0, 0, 0, 0.62) 55%,
       rgba(0, 0, 0, 0.12) 100%
     ),
-    url("toolbox_mobile_background.png");
+    url("toolbox_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -2223,7 +2223,7 @@ body {
         rgba(0, 0, 0, 0.15) 72%,
         rgba(0, 0, 0, 0.04) 100%
       ),
-      url("toolbox_desktop_background.png");
+      url("toolbox_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -2303,7 +2303,7 @@ body {
       rgba(0, 0, 0, 0.65) 52%,
       rgba(0, 0, 0, 0.12) 100%
     ),
-    url("perspectives_mobile_background.png");
+    url("perspectives_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -2560,7 +2560,7 @@ body {
         rgba(0, 0, 0, 0.16) 72%,
         rgba(0, 0, 0, 0.04) 100%
       ),
-      url("perspectives_desktop_background.png");
+      url("perspectives_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -2638,7 +2638,7 @@ body {
       rgba(0, 0, 0, 0.72) 50%,
       rgba(0, 0, 0, 0.20) 100%
     ),
-    url("bipolar_perspectives_mobile_background.png");
+    url("bipolar_perspectives_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -2909,7 +2909,7 @@ body {
         rgba(0, 0, 0, 0.15) 72%,
         rgba(0, 0, 0, 0.03) 100%
       ),
-      url("bipolar_perspectives_desktop_background.png");
+      url("bipolar_perspectives_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -3502,7 +3502,7 @@ body {
       rgba(0, 0, 0, 0.78) 48%,
       rgba(0, 0, 0, 0.20) 100%
     ),
-    url("bipolar_buddhism_mobile_background.png");
+    url("bipolar_buddhism_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -3875,7 +3875,7 @@ body {
         rgba(0, 0, 0, 0.22) 62%,
         rgba(0, 0, 0, 0.05) 100%
       ),
-      url("bipolar_buddhism_desktop_background.png");
+      url("bipolar_buddhism_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -3988,7 +3988,7 @@ body {
       rgba(0, 0, 0, 0.78) 48%,
       rgba(0, 0, 0, 0.20) 100%
     ),
-    url("bipolar_hinduism_mobile_background.png");
+    url("bipolar_hinduism_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -4400,7 +4400,7 @@ body {
         rgba(0, 0, 0, 0.22) 62%,
         rgba(0, 0, 0, 0.05) 100%
       ),
-      url("bipolar_hinduism_desktop_background.png");
+      url("bipolar_hinduism_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -4515,7 +4515,7 @@ body {
       rgba(0, 0, 0, 0.78) 48%,
       rgba(0, 0, 0, 0.20) 100%
     ),
-    url("bipolar_stoicism_mobile_background.png");
+    url("bipolar_stoicism_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -4921,7 +4921,7 @@ body {
         rgba(0, 0, 0, 0.22) 62%,
         rgba(0, 0, 0, 0.05) 100%
       ),
-      url("bipolar_stoicism_desktop_background.png");
+      url("bipolar_stoicism_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -5034,7 +5034,7 @@ body {
       rgba(0, 0, 0, 0.78) 48%,
       rgba(0, 0, 0, 0.20) 100%
     ),
-    url("bipolar_cbt_mobile_background.png");
+    url("bipolar_cbt_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -5506,7 +5506,7 @@ body {
         rgba(0, 0, 0, 0.22) 62%,
         rgba(0, 0, 0, 0.05) 100%
       ),
-      url("bipolar_cbt_desktop_background.png");
+      url("bipolar_cbt_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -5627,7 +5627,7 @@ body {
       rgba(0, 0, 0, 0.78) 48%,
       rgba(0, 0, 0, 0.20) 100%
     ),
-    url("bipolar_dbt_mobile_background.png");
+    url("bipolar_dbt_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -6104,7 +6104,7 @@ body {
         rgba(0, 0, 0, 0.22) 62%,
         rgba(0, 0, 0, 0.05) 100%
       ),
-      url("bipolar_dbt_desktop_background.png");
+      url("bipolar_dbt_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -6221,7 +6221,7 @@ body {
       rgba(0, 0, 0, 0.78) 48%,
       rgba(0, 0, 0, 0.20) 100%
     ),
-    url("bipolar_ifs_mobile_background.png");
+    url("bipolar_ifs_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -6714,7 +6714,7 @@ body {
         rgba(0, 0, 0, 0.22) 62%,
         rgba(0, 0, 0, 0.05) 100%
       ),
-      url("bipolar_ifs_desktop_background.png");
+      url("bipolar_ifs_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -6843,7 +6843,7 @@ body {
       rgba(0, 0, 0, 0.78) 48%,
       rgba(0, 0, 0, 0.20) 100%
     ),
-    url("bipolar_big_picture_mobile_background.png");
+    url("bipolar_big_picture_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -7202,7 +7202,7 @@ body {
         rgba(0, 0, 0, 0.22) 62%,
         rgba(0, 0, 0, 0.05) 100%
       ),
-      url("bipolar_big_picture_desktop_background.png");
+      url("bipolar_big_picture_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -7316,7 +7316,7 @@ body {
       rgba(0, 0, 0, 0.76) 48%,
       rgba(0, 0, 0, 0.16) 100%
     ),
-    url("addiction_impulsivity_mobile_background.png");
+    url("addiction_impulsivity_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -7762,7 +7762,7 @@ body {
         rgba(0, 0, 0, 0.20) 62%,
         rgba(0, 0, 0, 0.04) 100%
       ),
-      url("addiction_impulsivity_desktop_background.png");
+      url("addiction_impulsivity_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -7881,7 +7881,7 @@ body {
       rgba(0, 0, 0, 0.76) 48%,
       rgba(0, 0, 0, 0.16) 100%
     ),
-    url("addiction_perspectives_mobile_background.png");
+    url("addiction_perspectives_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -8264,7 +8264,7 @@ body {
         rgba(0, 0, 0, 0.20) 62%,
         rgba(0, 0, 0, 0.04) 100%
       ),
-      url("addiction_perspectives_desktop_background.png");
+      url("addiction_perspectives_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -8378,7 +8378,7 @@ body {
       rgba(0, 0, 0, 0.76) 48%,
       rgba(0, 0, 0, 0.16) 100%
     ),
-    url("triggers_mobile_background.png");
+    url("triggers_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -8850,7 +8850,7 @@ body {
         rgba(0, 0, 0, 0.20) 62%,
         rgba(0, 0, 0, 0.04) 100%
       ),
-      url("triggers_desktop_background.png");
+      url("triggers_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -8972,7 +8972,7 @@ body {
       rgba(0, 0, 0, 0.76) 48%,
       rgba(0, 0, 0, 0.16) 100%
     ),
-    url("addiction_escaping_mobile_background.png");
+    url("addiction_escaping_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -9418,7 +9418,7 @@ body {
         rgba(0, 0, 0, 0.20) 62%,
         rgba(0, 0, 0, 0.04) 100%
       ),
-      url("addiction_escaping_desktop_background.png");
+      url("addiction_escaping_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -9536,7 +9536,7 @@ body {
       rgba(8, 8, 8, 0.45) 45%,
       rgba(8, 8, 8, 0.96)
     ),
-    url("toolbox_adhd_mobile_background.png");
+    url("toolbox_adhd_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -9817,7 +9817,7 @@ body {
         rgba(8, 8, 8, 0.45) 45%,
         rgba(8, 8, 8, 0.12) 100%
       ),
-      url("toolbox_adhd_desktop_background.png");
+      url("toolbox_adhd_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -9878,7 +9878,7 @@ body {
       rgba(8, 8, 8, 0.4) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    url("toolbox_cognitive_distortions_mobile_background.png");
+    url("toolbox_cognitive_distortions_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -10162,7 +10162,7 @@ body {
         rgba(8, 8, 8, 0.4) 45%,
         rgba(8, 8, 8, 0.1) 100%
       ),
-      url("toolbox_cognitive_distortions_desktop_background.png");
+      url("toolbox_cognitive_distortions_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -10232,7 +10232,7 @@ body {
       rgba(8, 8, 8, 0.42) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    url("toolbox_essays_mobile_background.png");
+    url("toolbox_essays_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -10580,7 +10580,7 @@ body {
         rgba(8, 8, 8, 0.4) 45%,
         rgba(8, 8, 8, 0.1) 100%
       ),
-      url("toolbox_essays_desktop_background.png");
+      url("toolbox_essays_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -10668,7 +10668,7 @@ body {
       rgba(8, 8, 8, 0.4) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    url("toolbox_ifs_mobile_background.png");
+    url("toolbox_ifs_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -11087,7 +11087,7 @@ body {
         rgba(8, 8, 8, 0.4) 45%,
         rgba(8, 8, 8, 0.08) 100%
       ),
-      url("toolbox_ifs_desktop_background.png");
+      url("toolbox_ifs_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -11171,7 +11171,7 @@ body {
       rgba(8, 8, 8, 0.4) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    url("toolbox_jobs_mobile_background.png");
+    url("toolbox_jobs_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -11488,7 +11488,7 @@ body {
         rgba(8, 8, 8, 0.42) 45%,
         rgba(8, 8, 8, 0.08) 100%
       ),
-      url("toolbox_jobs_desktop_background.png");
+      url("toolbox_jobs_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -11556,7 +11556,7 @@ body {
       rgba(8, 8, 8, 0.4) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    url("toolbox_others_mobile_background.png");
+    url("toolbox_others_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -11885,7 +11885,7 @@ body {
         rgba(8, 8, 8, 0.4) 45%,
         rgba(8, 8, 8, 0.08) 100%
       ),
-      url("toolbox_others_desktop_background.png");
+      url("toolbox_others_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -11950,7 +11950,7 @@ body {
       rgba(8, 8, 8, 0.42) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    url("toolbox_relapse_plans_mobile_background.png");
+    url("toolbox_relapse_plans_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -12314,7 +12314,7 @@ body {
         rgba(8, 8, 8, 0.42) 45%,
         rgba(8, 8, 8, 0.08) 100%
       ),
-      url("toolbox_relapse_plans_desktop_background.png");
+      url("toolbox_relapse_plans_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -12394,7 +12394,7 @@ body {
       rgba(8, 8, 8, 0.4) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    url("toolbox_sciatica_mobile_background.png");
+    url("toolbox_sciatica_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -12740,7 +12740,7 @@ body {
         rgba(8, 8, 8, 0.4) 45%,
         rgba(8, 8, 8, 0.08) 100%
       ),
-      url("toolbox_sciatica_desktop_background.png");
+      url("toolbox_sciatica_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -12816,7 +12816,7 @@ body {
       rgba(8, 8, 8, 0.42) 45%,
       rgba(8, 8, 8, 0.97)
     ),
-    url("toolbox_stigma_mobile_background.png");
+    url("toolbox_stigma_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -13172,7 +13172,7 @@ body {
         rgba(8, 8, 8, 0.4) 45%,
         rgba(8, 8, 8, 0.08) 100%
       ),
-      url("toolbox_stigma_desktop_background.png");
+      url("toolbox_stigma_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -13239,7 +13239,7 @@ body {
       rgba(8, 8, 8, 0.25) 45%,
       rgba(8, 8, 8, 0.95) 100%
     ),
-    url("spirituality_buddhism_mobile_background.png");
+    url("spirituality_buddhism_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -13531,7 +13531,7 @@ body {
         rgba(8, 8, 8, 0.45) 42%,
         rgba(8, 8, 8, 0.05) 75%
       ),
-      url("spirituality_buddhism_desktop_background.png");
+      url("spirituality_buddhism_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -13605,7 +13605,7 @@ body {
       rgba(8, 8, 8, 0.22) 45%,
       rgba(8, 8, 8, 0.96) 100%
     ),
-    url("spirituality_hinduism_mobile_background.png");
+    url("spirituality_hinduism_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -13900,7 +13900,7 @@ body {
         rgba(8, 8, 8, 0.48) 40%,
         rgba(8, 8, 8, 0.05) 75%
       ),
-      url("spirituality_hinduism_desktop_background.png");
+      url("spirituality_hinduism_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -13974,7 +13974,7 @@ body {
       rgba(8, 8, 8, 0.22) 45%,
       rgba(8, 8, 8, 0.96) 100%
     ),
-    url("spirituality_mixing_traditions_mobile_background.png");
+    url("spirituality_mixing_traditions_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -14300,7 +14300,7 @@ body {
         rgba(8, 8, 8, 0.45) 42%,
         rgba(8, 8, 8, 0.05) 75%
       ),
-      url("spirituality_mixing_traditions_desktop_background.png");
+      url("spirituality_mixing_traditions_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -14379,7 +14379,7 @@ body {
       rgba(8, 8, 8, 0.20) 45%,
       rgba(8, 8, 8, 0.96) 100%
     ),
-    url("spirituality_my_spirituality_mobile_background.png");
+    url("spirituality_my_spirituality_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -14688,7 +14688,7 @@ body {
         rgba(8, 8, 8, 0.44) 42%,
         rgba(8, 8, 8, 0.04) 75%
       ),
-      url("spirituality_my_spirituality_desktop_background.png");
+      url("spirituality_my_spirituality_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -14764,7 +14764,7 @@ body {
       rgba(8, 8, 8, 0.25) 50%,
       rgba(8, 8, 8, 0.97) 100%
     ),
-    url("perspectives_mobile_background.png");
+    url("perspectives_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -14960,7 +14960,7 @@ body {
         rgba(8, 8, 8, 0.42) 42%,
         rgba(8, 8, 8, 0.04) 75%
       ),
-      url("perspectives_desktop_background.png");
+      url("perspectives_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -15030,7 +15030,7 @@ body {
       rgba(8, 8, 8, 0.22) 48%,
       rgba(8, 8, 8, 0.97) 100%
     ),
-    url("perspectives_books_mobile_background.png");
+    url("perspectives_books_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -15397,7 +15397,7 @@ body {
         rgba(8, 8, 8, 0.42) 42%,
         rgba(8, 8, 8, 0.03) 75%
       ),
-      url("perspectives_books_desktop_background.png");
+      url("perspectives_books_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -15491,7 +15491,7 @@ body {
       rgba(8, 8, 8, 0.22) 45%,
       rgba(8, 8, 8, 0.97) 100%
     ),
-    url("perspectives_inside_mobile_background.png");
+    url("perspectives_inside_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -15883,7 +15883,7 @@ body {
         rgba(8, 8, 8, 0.42) 42%,
         rgba(8, 8, 8, 0.03) 75%
       ),
-      url("perspectives_inside_desktop_background.png");
+      url("perspectives_inside_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -15980,7 +15980,7 @@ body {
       rgba(8, 8, 8, 0.22) 45%,
       rgba(8, 8, 8, 0.97) 100%
     ),
-    url("perspectives_quotes_mobile_background.png");
+    url("perspectives_quotes_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -16343,7 +16343,7 @@ body {
         rgba(8, 8, 8, 0.42) 42%,
         rgba(8, 8, 8, 0.03) 75%
       ),
-      url("perspectives_quotes_desktop_background.png");
+      url("perspectives_quotes_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -16435,7 +16435,7 @@ body {
       rgba(8, 8, 8, 0.22) 45%,
       rgba(8, 8, 8, 0.97) 100%
     ),
-    url("perspectives_reflections_mobile_background.png");
+    url("perspectives_reflections_mobile_background.webp");
 
   background-size: cover;
   background-position: center;
@@ -16846,7 +16846,7 @@ body {
         rgba(8, 8, 8, 0.42) 42%,
         rgba(8, 8, 8, 0.03) 75%
       ),
-      url("perspectives_reflections_desktop_background.png");
+      url("perspectives_reflections_desktop_background.webp");
 
     background-size: cover;
     background-position: center;
@@ -17281,7 +17281,7 @@ body {
 
   background-color: var(--ba-black);
   background-image:
-    url("/assets/addiction_bipolar_mobile_background.png");
+    url("/assets/addiction_bipolar_mobile_background.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17608,7 +17608,7 @@ body {
     align-items: center;
     padding: 6rem 3rem;
     background-image:
-      url("/assets/addiction_bipolar_desktop_background.png");
+      url("/assets/addiction_bipolar_desktop_background.webp");
     background-position: center center;
   }
 
@@ -20823,7 +20823,7 @@ body {
       rgba(8, 8, 8, 0.85),
       rgba(8, 8, 8, 0.2)
     ),
-    url("/assets/toolbox_play_the_tape_forward_mobile.png");
+    url("/assets/toolbox_play_the_tape_forward_mobile.webp");
 
   background-size: cover;
   background-position: center;
@@ -20984,7 +20984,7 @@ body {
         rgba(8, 8, 8, 0.8),
         rgba(8, 8, 8, 0.05)
       ),
-      url("/assets/toolbox_play_the_tape_forward_desktop.png");
+      url("/assets/toolbox_play_the_tape_forward_desktop.webp");
   }
 
   .tape-page .tape-section {
@@ -24472,7 +24472,7 @@ body {
 
   background-color: var(--pagan-black);
   background-image:
-    url("/assets/spirituality_paganism_mobile.png");
+    url("/assets/spirituality_paganism_mobile.webp");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -24801,7 +24801,7 @@ body {
     padding: 120px 5vw 90px;
 
     background-image:
-      url("/assets/spirituality_paganism_desktop.png");
+      url("/assets/spirituality_paganism_desktop.webp");
     background-position: right center;
   }
 
@@ -25869,7 +25869,7 @@ body {
       rgba(8, 8, 8, .20) 75%,
       rgba(8, 8, 8, .08) 100%
     ),
-    url("bipolar-psychosis-desktop.png");
+    url("bipolar-psychosis-desktop.webp");
 
   background-size: cover;
   background-position: center center;
@@ -26450,7 +26450,7 @@ body {
         rgba(8, 8, 8, .12) 65%,
         rgba(8, 8, 8, .27) 100%
       ),
-      url("bipolar-psychosis-mobile.png");
+      url("bipolar-psychosis-mobile.webp");
 
     background-position: center center;
     background-size: cover;
@@ -27309,7 +27309,7 @@ body {
       rgba(8, 8, 8, 0.25) 60%,
       transparent 100%
     ),
-    url("toolbox_relapse_plans_desktop.png");
+    url("toolbox_relapse_plans_desktop.webp");
 
   background-size: cover;
   background-position: center;
@@ -27334,7 +27334,7 @@ body {
         rgba(8, 8, 8, 0.65) 0%,
         rgba(8, 8, 8, 0.15) 100%
       ),
-      url("toolbox_relapse_plans_mobile.png");
+      url("toolbox_relapse_plans_mobile.webp");
 
     background-position: center;
     background-size: cover;
@@ -27360,7 +27360,7 @@ body {
       rgba(8, 8, 8, 0.45) 50%,
       rgba(8, 8, 8, 0.05) 100%
     ),
-    url("/assets/relapse_plan_mania_desktop.png");
+    url("/assets/relapse_plan_mania_desktop.webp");
 
   background-size: cover;
   background-position: center center;
@@ -27387,7 +27387,7 @@ body {
         rgba(8, 8, 8, 0.35) 55%,
         rgba(8, 8, 8, 0.10) 100%
       ),
-      url("/assets/relapse_plan_mania_mobile.png");
+      url("/assets/relapse_plan_mania_mobile.webp");
 
     background-size: cover;
     background-position: center center;
@@ -27414,7 +27414,7 @@ body {
       rgba(8, 8, 8, 0.45) 50%,
       rgba(8, 8, 8, 0.05) 100%
     ),
-    url("/assets/relapse_plan_after_drinking_desktop.png");
+    url("/assets/relapse_plan_after_drinking_desktop.webp");
 
   background-size: cover;
   background-position: center center;
@@ -27441,7 +27441,7 @@ body {
         rgba(8, 8, 8, 0.35) 55%,
         rgba(8, 8, 8, 0.10) 100%
       ),
-      url("/assets/relapse_plan_after_drinking_mobile.png");
+      url("/assets/relapse_plan_after_drinking_mobile.webp");
 
     background-size: cover;
     background-position: center center;
@@ -27469,7 +27469,7 @@ body {
       rgba(8, 8, 8, 0.45) 50%,
       rgba(8, 8, 8, 0.05) 100%
     ),
-    url("/assets/relapse_plan_anger_desktop.png");
+    url("/assets/relapse_plan_anger_desktop.webp");
 
   background-size: cover;
   background-position: center center;
@@ -27496,7 +27496,7 @@ body {
         rgba(8, 8, 8, 0.35) 55%,
         rgba(8, 8, 8, 0.10) 100%
       ),
-      url("/assets/relapse_plan_anger_mobile.png");
+      url("/assets/relapse_plan_anger_mobile.webp");
 
     background-size: cover;
     background-position: center center;
@@ -27524,7 +27524,7 @@ body {
       rgba(8, 8, 8, 0.45) 50%,
       rgba(8, 8, 8, 0.05) 100%
     ),
-    url("/assets/relapse_plan_boredom_desktop.png");
+    url("/assets/relapse_plan_boredom_desktop.webp");
 
   background-size: cover;
   background-position: center center;
@@ -27551,7 +27551,7 @@ body {
         rgba(8, 8, 8, 0.35) 55%,
         rgba(8, 8, 8, 0.10) 100%
       ),
-      url("/assets/relapse_plan_boredom_mobile.png");
+      url("/assets/relapse_plan_boredom_mobile.webp");
 
     background-size: cover;
     background-position: center center;
@@ -27580,7 +27580,7 @@ body {
       rgba(8, 8, 8, 0.45) 50%,
       rgba(8, 8, 8, 0.05) 100%
     ),
-    url("/assets/relapse_plan_chronic_pain_desktop.png");
+    url("/assets/relapse_plan_chronic_pain_desktop.webp");
 
   background-size: cover;
   background-position: center center;
@@ -27607,7 +27607,7 @@ body {
         rgba(8, 8, 8, 0.35) 55%,
         rgba(8, 8, 8, 0.10) 100%
       ),
-      url("/assets/relapse_plan_chronic_pain_mobile.png");
+      url("/assets/relapse_plan_chronic_pain_mobile.webp");
 
     background-size: cover;
     background-position: center center;
@@ -27634,7 +27634,7 @@ body {
       rgba(8, 8, 8, 0.45) 50%,
       rgba(8, 8, 8, 0.05) 100%
     ),
-    url("/assets/relapse_plan_depression_desktop.png");
+    url("/assets/relapse_plan_depression_desktop.webp");
 
   background-size: cover;
   background-position: center center;
@@ -27661,7 +27661,7 @@ body {
         rgba(8, 8, 8, 0.35) 55%,
         rgba(8, 8, 8, 0.10) 100%
       ),
-      url("/assets/relapse_plan_depression_mobile.png");
+      url("/assets/relapse_plan_depression_mobile.webp");
 
     background-size: cover;
     background-position: center center;
@@ -27689,7 +27689,7 @@ body {
       rgba(8, 8, 8, 0.45) 50%,
       rgba(8, 8, 8, 0.05) 100%
     ),
-    url("/assets/relapse_plan_impulsivity_desktop.png");
+    url("/assets/relapse_plan_impulsivity_desktop.webp");
 
   background-size: cover;
   background-position: center center;
@@ -27716,7 +27716,7 @@ body {
         rgba(8, 8, 8, 0.35) 55%,
         rgba(8, 8, 8, 0.10) 100%
       ),
-      url("/assets/relapse_plan_impulsivity_mobile.png");
+      url("/assets/relapse_plan_impulsivity_mobile.webp");
 
     background-size: cover;
     background-position: center center;
@@ -27744,7 +27744,7 @@ body {
       rgba(8, 8, 8, 0.45) 50%,
       rgba(8, 8, 8, 0.05) 100%
     ),
-    url("/assets/relapse_plan_loneliness_desktop.png");
+    url("/assets/relapse_plan_loneliness_desktop.webp");
 
   background-size: cover;
   background-position: center center;
@@ -27771,7 +27771,7 @@ body {
         rgba(8, 8, 8, 0.35) 55%,
         rgba(8, 8, 8, 0.10) 100%
       ),
-      url("/assets/relapse_plan_loneliness_mobile.png");
+      url("/assets/relapse_plan_loneliness_mobile.webp");
 
     background-size: cover;
     background-position: center center;
@@ -27799,7 +27799,7 @@ body {
       rgba(8, 8, 8, 0.45) 50%,
       rgba(8, 8, 8, 0.05) 100%
     ),
-    url("/assets/relapse_plan_mixed_episodes_desktop.png");
+    url("/assets/relapse_plan_mixed_episodes_desktop.webp");
 
   background-size: cover;
   background-position: center center;
@@ -27826,7 +27826,7 @@ body {
         rgba(8, 8, 8, 0.35) 55%,
         rgba(8, 8, 8, 0.10) 100%
       ),
-      url("/assets/relapse_plan_mixed_episodes_mobile.png");
+      url("/assets/relapse_plan_mixed_episodes_mobile.webp");
 
     background-size: cover;
     background-position: center center;
@@ -27854,7 +27854,7 @@ body {
       rgba(8, 8, 8, 0.45) 50%,
       rgba(8, 8, 8, 0.05) 100%
     ),
-    url("/assets/relapse_plan_social_pressure_desktop.png");
+    url("/assets/relapse_plan_social_pressure_desktop.webp");
 
   background-size: cover;
   background-position: center center;
@@ -27881,7 +27881,7 @@ body {
         rgba(8, 8, 8, 0.35) 55%,
         rgba(8, 8, 8, 0.10) 100%
       ),
-      url("/assets/relapse_plan_social_pressure_mobile.png");
+      url("/assets/relapse_plan_social_pressure_mobile.webp");
 
     background-size: cover;
     background-position: center center;
