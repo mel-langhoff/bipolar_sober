@@ -1,0 +1,157 @@
+
+<% content_for :title, "IOP Essays | Bipolar Sober" %>
+
+<main class="iop-page">
+
+  <!-- HERO -->
+  <section class="iop-hero">
+
+    <div class="iop-hero-content">
+
+      <p class="iop-eyebrow">
+        BIPOLAR SOBER / PERSPECTIVES / ESSAYS / IOP
+      </p>
+
+      <h1>
+        <span>THE WORK</span>
+        <span>YOU CHOSE</span>
+        <span>TO DO.</span>
+      </h1>
+
+      <p class="iop-tagline">
+        TWELVE WEEKS.<br>
+        YOUR OWN WORDS.
+      </p>
+
+      <p class="iop-intro">
+        NOBODY MADE YOU WRITE THESE.<br>
+        YOU HAD SHIT YOU WANTED TO FIGURE OUT.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+  <section class="iop-section iop-black">
+
+    <div class="iop-inner">
+
+      <p class="iop-number">01 / WHY YOU WROTE</p>
+
+      <h2>
+        IT WASN'T<br>
+        FUCKING<br>
+        HOMEWORK.
+      </h2>
+
+      <div class="iop-copy">
+
+        <p>
+          You weren't required to write these essays.
+          You decided to.
+        </p>
+
+        <p>
+          During twelve weeks of intensive outpatient
+          treatment, you explored addiction, recovery,
+          and the ways your thoughts influence
+          your behavior.
+        </p>
+
+        <p>
+          Writing gave you room to question,
+          disagree, and examine what you
+          were learning through your own experiences.
+        </p>
+
+        <p>
+          These essays are what you chose
+          to put into words during those
+          twelve weeks.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TWELVE WEEK ARCHIVE -->
+  <section class="iop-library">
+
+    <div class="iop-inner">
+
+      <p class="iop-number">02 / THE ARCHIVE</p>
+
+      <h2>
+        TWELVE<br>
+        FUCKING<br>
+        WEEKS.
+      </h2>
+
+      <div class="iop-grid">
+
+        <% (1..12).each do |week| %>
+
+          <% color = %w[pink yellow purple black][(week - 1) % 4] %>
+
+          <%= link_to iop_essay_week_path(week: week),
+              class: "iop-card iop-card-#{color}" do %>
+
+            <p class="iop-card-number">
+              <%= format("%02d", week) %>
+            </p>
+
+            <p class="iop-card-label">
+              IOP / PERSONAL WRITING
+            </p>
+
+            <h3>
+              WEEK<br>
+              <%= format("%02d", week) %>.
+            </h3>
+
+            <p class="iop-card-description">
+              Your original writing from
+              Week <%= week %>.
+            </p>
+
+            <span class="iop-card-action">
+              READ WEEK <%= format("%02d", week) %> →
+            </span>
+
+          <% end %>
+
+        <% end %>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ENDING -->
+  <section class="iop-ending">
+
+    <p>
+      TWELVE WEEKS.<br>
+      YOUR OWN WORDS.
+    </p>
+
+    <h2>
+      KEEP<br>
+      THE FUCKING<br>
+      NOTEBOOK.
+    </h2>
+
+    <%= link_to "← BACK TO ESSAYS",
+        toolbox_essays_path,
+        class: "iop-back-link" %>
+
+  </section>
+
+</main>

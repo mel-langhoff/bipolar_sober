@@ -1,0 +1,110 @@
+
+<% content_for :title, "IOP Week #{@week_label} | Bipolar Sober" %>
+
+<main class="iop-page iop-week-page">
+
+  <!-- HERO -->
+  <section class="iop-hero">
+
+    <div class="iop-hero-content">
+
+      <p class="iop-eyebrow">
+        BIPOLAR SOBER / PERSPECTIVES / IOP /
+        WEEK <%= @week_label %>
+      </p>
+
+      <h1>
+        <span>WEEK</span>
+        <span><%= @week_label %>.</span>
+      </h1>
+
+      <p class="iop-tagline">
+        YOUR WORDS.<br>
+        YOUR PERSPECTIVE.
+      </p>
+
+      <p class="iop-intro">
+        WHAT YOU CHOSE TO WRITE<br>
+        DURING WEEK <%= @week_label %>.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- WEEK CONTENT -->
+  <section class="iop-section iop-black">
+
+    <div class="iop-inner">
+
+      <p class="iop-number">
+        WEEK <%= @week_label %> / THE WRITING
+      </p>
+
+      <h2>
+        WHAT WAS<br>
+        ON YOUR<br>
+        MIND?
+      </h2>
+
+      <div class="iop-copy">
+
+        <p>
+          These are your original thoughts
+          from Week <%= @week %> of IOP,
+          written because you wanted
+          to explore what you were learning.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ORIGINAL ESSAYS -->
+  <section class="iop-library">
+
+    <div class="iop-inner">
+
+      <p class="iop-number">
+        WEEK <%= @week_label %> / ESSAYS
+      </p>
+
+      <h2>
+        BETWEEN<br>
+        THE LINES.
+      </h2>
+
+      <div class="iop-essay-collection">
+
+        <%= render "iop_essays/weeks/week_#{@week_label}" %>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- NAVIGATION -->
+  <section class="iop-ending">
+
+    <p>
+      THE ORIGINAL WORDS MATTER.
+    </p>
+
+    <h2>
+      KEEP<br>
+      READING.
+    </h2>
+
+    <%= link_to "← ALL TWELVE WEEKS",
+        iop_essays_path,
+        class: "iop-back-link" %>
+
+  </section>
+
+</main>

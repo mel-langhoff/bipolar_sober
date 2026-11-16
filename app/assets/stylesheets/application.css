@@ -27889,3 +27889,456 @@ body {
   }
 }
 
+
+/* ==========================================
+   IOP ESSAYS
+   ========================================== */
+
+.iop-page {
+  background: #080808;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.iop-page * {
+  box-sizing: border-box;
+}
+
+.iop-hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  padding: 7rem 6%;
+  background: #080808;
+  border-bottom: 10px solid #ff1493;
+}
+
+.iop-hero-content {
+  max-width: 1100px;
+}
+
+.iop-eyebrow,
+.iop-number,
+.iop-card-label,
+.iop-essay-label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.iop-eyebrow {
+  color: #eaff00;
+  margin-bottom: 2rem;
+}
+
+.iop-hero h1,
+.iop-section h2,
+.iop-library h2,
+.iop-ending h2 {
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.iop-hero h1 {
+  font-size: clamp(3.7rem, 11vw, 10rem);
+  margin: 0 0 2.5rem;
+}
+
+.iop-hero h1 span {
+  display: block;
+}
+
+.iop-hero h1 span:nth-child(2) {
+  color: #ff1493;
+}
+
+.iop-tagline {
+  color: #eaff00;
+  font-size: clamp(1.4rem, 3vw, 2.4rem);
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.iop-intro {
+  max-width: 700px;
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.iop-section,
+.iop-library {
+  padding: 6rem 6%;
+}
+
+.iop-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.iop-number {
+  margin-bottom: 1.8rem;
+}
+
+.iop-section h2,
+.iop-library h2,
+.iop-ending h2 {
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  margin: 0 0 2.5rem;
+}
+
+.iop-copy {
+  max-width: 760px;
+}
+
+.iop-copy p {
+  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+  line-height: 1.8;
+  margin: 0 0 1.5rem;
+}
+
+.iop-black {
+  background: #080808;
+  color: #fff;
+}
+
+.iop-yellow {
+  background: #eaff00;
+  color: #080808;
+}
+
+.iop-callout {
+  max-width: 800px;
+  padding: 2rem;
+  margin-top: 3rem;
+  border: 4px solid currentColor;
+  font-weight: 900;
+  font-size: clamp(1.1rem, 2.5vw, 1.7rem);
+  line-height: 1.45;
+}
+
+.iop-black .iop-callout {
+  color: #eaff00;
+}
+
+.iop-library {
+  background: #8a00ff;
+  color: #fff;
+}
+
+.iop-library-intro {
+  max-width: 700px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.iop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.iop-card {
+  min-height: 310px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+  border: 3px solid #080808;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.iop-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 0 #080808;
+}
+
+.iop-card:focus-visible,
+.iop-back-link:focus-visible {
+  outline: 4px solid #eaff00;
+  outline-offset: 4px;
+}
+
+.iop-card-pink {
+  background: #ff1493;
+  color: #080808;
+}
+
+.iop-card-yellow {
+  background: #eaff00;
+  color: #080808;
+}
+
+.iop-card-purple {
+  background: #8a00ff;
+  color: #fff;
+}
+
+.iop-card-black {
+  background: #080808;
+  color: #fff;
+  border-color: #fff;
+}
+
+.iop-card-number {
+  font-size: 0.9rem;
+  font-weight: 900;
+  margin: 0 0 1rem;
+}
+
+.iop-card h3 {
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin: 1.5rem 0;
+}
+
+.iop-card-description {
+  line-height: 1.6;
+  margin: 0 0 2rem;
+}
+
+.iop-card-action {
+  margin-top: auto;
+  font-weight: 900;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+
+.iop-essay-collection {
+  display: grid;
+  gap: 2rem;
+  max-width: 850px;
+}
+
+.iop-essay-entry {
+  background: #080808;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: clamp(1.5rem, 4vw, 3rem);
+}
+
+.iop-essay-entry h3 {
+  color: #eaff00;
+  font-size: clamp(1.7rem, 3vw, 2.8rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 1.5rem 0;
+}
+
+.iop-essay-entry p {
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.iop-essay-entry .iop-essay-label {
+  color: #ff1493;
+}
+
+.iop-ending {
+  padding: 6rem 6%;
+  text-align: center;
+  background: #ff1493;
+  color: #080808;
+}
+
+.iop-ending h2 {
+  margin: 2rem auto;
+}
+
+.iop-ending > p {
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.iop-back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background: #080808;
+  border: 2px solid #080808;
+  text-decoration: none;
+  font-weight: 900;
+  transition: background 0.2s, color 0.2s;
+}
+
+.iop-back-link:hover {
+  background: #fff;
+  color: #080808;
+}
+
+@media (max-width: 900px) {
+  .iop-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .iop-hero,
+  .iop-section,
+  .iop-library,
+  .iop-ending {
+    padding: 4rem 1.25rem;
+  }
+
+  .iop-hero {
+    min-height: 65vh;
+  }
+
+  .iop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .iop-card {
+    min-height: 260px;
+  }
+
+  .iop-callout {
+    padding: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .iop-card,
+  .iop-back-link {
+    transition: none;
+  }
+}
+
+
+/* ON THE INSIDE — replace old .pi-* / .perspectives-inside-* rules in application.css.
+   Hero image is inserted with Rails image_tag for asset-fingerprinting compatibility. */
+.perspectives-inside-page{--pi-black:#080808;--pi-white:#fff;--pi-pink:#ff1493;--pi-yellow:#eaff00;--pi-purple:#8a00ff;--pi-ink:#080808;background:var(--pi-black);color:var(--pi-white);overflow-x:clip;font-family:inherit}
+.perspectives-inside-page *{box-sizing:border-box}
+.perspectives-inside-page a{transition:color .18s ease,background-color .18s ease,transform .18s ease}
+.perspectives-inside-page .pi-hero{position:relative;isolation:isolate;min-height:100svh;display:flex;align-items:center;padding:clamp(5.5rem,9vw,10rem) clamp(1.4rem,7vw,8rem);overflow:hidden;background:#080808}
+.pi-hero-image{position:absolute;z-index:-3;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.pi-hero::before{content:"";position:absolute;z-index:-2;inset:0;background:linear-gradient(90deg,rgba(8,8,8,.94) 0%,rgba(8,8,8,.85) 43%,rgba(8,8,8,.30) 100%)}
+.pi-hero::after{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(circle at 68% 70%,rgba(138,0,255,.18),transparent 55%)}
+.pi-hero-content{max-width:1000px;position:relative}
+.pi-eyebrow,.pi-kicker,.pi-hero-deck,.pi-read-link,.pi-timeline a,.pi-quote figcaption,.pi-hero-pullquote figcaption,.pi-author-note strong,.pi-back-link,.pi-hero-side-note{font-weight:900;letter-spacing:.13em;text-transform:uppercase}
+.pi-eyebrow{color:var(--pi-yellow);font-size:.72rem;margin:0}
+.pi-eyebrow span{color:var(--pi-white);opacity:.55;padding-inline:.5em}
+.pi-hero h1{margin:1.25rem 0 1.8rem;line-height:.79;letter-spacing:-.08em;font-size:clamp(4.9rem,17.2vw,14rem);font-weight:1000;color:var(--pi-white)}
+.pi-hero h1 em,.pi-outro h2 em{font-style:normal;color:var(--pi-pink)}
+.pi-hero-deck{font-size:clamp(.82rem,1.3vw,1.08rem);color:var(--pi-yellow);line-height:1.5}
+.pi-hero-pullquote{margin:clamp(2rem,5vw,4rem) 0 0;max-width:670px;padding-left:1.5rem;border-left:5px solid var(--pi-pink)}
+.pi-hero-pullquote blockquote{margin:0;font-weight:700;line-height:1.35;font-size:clamp(1.45rem,2.7vw,2.25rem)}
+.pi-hero-pullquote figcaption{margin-top:.9rem;font-size:.69rem;color:var(--pi-yellow);line-height:1.6}
+.pi-read-link{display:inline-flex;align-items:center;gap:1rem;margin-top:2.5rem;padding:.85rem 1.1rem;color:var(--pi-yellow);border:2px solid var(--pi-yellow);text-decoration:none;font-size:.75rem}
+.pi-read-link:hover,.pi-read-link:focus-visible{color:var(--pi-black);background:var(--pi-yellow)}
+.pi-hero-side-note{position:absolute;right:clamp(.5rem,3vw,3rem);bottom:2rem;writing-mode:vertical-rl;color:var(--pi-white);opacity:.7;font-size:.62rem}
+.pi-timeline{display:flex;gap:0;align-items:stretch;justify-content:space-between;background:var(--pi-yellow);color:var(--pi-black);border-bottom:3px solid var(--pi-black)}
+.pi-timeline a{display:block;flex:1;text-align:center;padding:1rem .4rem;border-right:2px solid rgba(0,0,0,.3);color:var(--pi-black);text-decoration:none;font-size:.73rem}
+.pi-timeline a:last-child{border-right:0}
+.pi-timeline a:hover,.pi-timeline a:focus-visible{background:var(--pi-pink);color:var(--pi-black)}
+.pi-opening,.pi-chapter,.pi-outro{padding:clamp(4.5rem,9vw,9.5rem) clamp(1.3rem,7vw,8rem)}
+.pi-opening{background:var(--pi-black)}
+.pi-opening-inner,.pi-outro-inner{max-width:1080px;margin-inline:auto}
+.pi-kicker{font-size:.72rem;line-height:1.6;margin:0 0 1.6rem;opacity:.85}
+.pi-opening .pi-kicker{color:var(--pi-yellow)}
+.pi-opening h2,.pi-chapter h2,.pi-outro h2{margin:0;font-size:clamp(2.7rem,7.1vw,7rem);line-height:.97;letter-spacing:-.068em;font-weight:1000;text-wrap:balance}
+.pi-opening h2{color:var(--pi-pink)}
+.pi-opening-copy{max-width:745px;margin:2.6rem 0 0 auto;font-size:clamp(1.09rem,1.6vw,1.3rem);line-height:1.85}
+.pi-opening-copy p{margin:0 0 1.6rem}
+.pi-chapter{scroll-margin-top:1.5rem}
+.pi-chapter.pi-dark{background:var(--pi-black);color:var(--pi-white);--pi-accent:var(--pi-pink);--pi-quote-bg:#181018}
+.pi-chapter.pi-pink{background:var(--pi-pink);color:var(--pi-black);--pi-accent:var(--pi-black);--pi-quote-bg:rgba(0,0,0,.085)}
+.pi-chapter.pi-yellow{background:var(--pi-yellow);color:var(--pi-black);--pi-accent:var(--pi-black);--pi-quote-bg:rgba(0,0,0,.08)}
+.pi-chapter.pi-purple{background:var(--pi-purple);color:var(--pi-white);--pi-accent:var(--pi-yellow);--pi-quote-bg:rgba(0,0,0,.23)}
+.pi-chapter-heading{max-width:1060px;margin:0 auto clamp(2.2rem,5vw,4.5rem)}
+.pi-chapter .pi-kicker{display:flex;align-items:center;gap:1rem}
+.pi-chapter .pi-kicker span{display:inline-grid;place-items:center;font-size:1.05rem;width:2.5rem;height:2.5rem;border:2px solid currentColor;border-radius:50%}
+.pi-chapter h2{max-width:950px}
+.pi-story{max-width:755px;margin:0 auto;font-size:clamp(1.08rem,1.65vw,1.32rem);line-height:1.82}
+.pi-story>p{margin:0 0 1.9rem}
+.pi-story em{font-style:italic}
+.pi-quote{margin:clamp(2.5rem,5.5vw,4.5rem) 0;padding:clamp(1.4rem,3vw,2.5rem);background:var(--pi-quote-bg);border-left:6px solid var(--pi-accent)}
+.pi-quote blockquote{margin:0;font-size:clamp(1.28rem,2.7vw,2.1rem);line-height:1.42;font-weight:770;letter-spacing:-.015em;overflow-wrap:break-word}
+.pi-quote blockquote p{margin:0 0 .85em;white-space:pre-line}
+.pi-quote blockquote p:last-child{margin-bottom:0}
+.pi-quote blockquote p::before{content:'“'}
+.pi-quote blockquote p:last-child::after{content:'”'}
+.pi-quote figcaption{margin-top:1.3rem;font-size:.68rem;line-height:1.65;opacity:.8}
+.pi-quote figcaption span{margin:0 .45em;opacity:.5}
+.pi-author-note{margin:3rem 0 0;padding:1.4rem 1.6rem;border:2px dashed currentColor;font-size:clamp(.9rem,1.3vw,1rem);line-height:1.65}
+.pi-author-note strong{display:block;font-size:.7rem;margin-bottom:.6rem}
+.pi-author-note p{margin:0}
+.pi-outro{background:var(--pi-black);color:var(--pi-white);border-top:5px solid var(--pi-yellow)}
+.pi-outro .pi-kicker{color:var(--pi-yellow)}
+.pi-outro h2{max-width:1000px}
+.pi-outro-inner>p:not(.pi-kicker){max-width:730px;margin:2.2rem 0;font-size:1.06rem;line-height:1.75;color:#dadada}
+.pi-back-link{display:inline-block;margin-top:1rem;border-bottom:2px solid var(--pi-yellow);padding-bottom:.45rem;color:var(--pi-yellow);text-decoration:none;font-size:.76rem}
+.pi-back-link:hover,.pi-back-link:focus-visible{color:var(--pi-pink);border-color:var(--pi-pink)}
+@media(max-width:650px){
+ .pi-hero{min-height:88svh}
+ .pi-hero-image{object-position:65% center}
+ .pi-hero::before{background:linear-gradient(90deg,rgba(8,8,8,.94),rgba(8,8,8,.72))}
+ .pi-hero h1{font-size:clamp(4.2rem,19vw,7rem)}
+ .pi-hero-side-note{display:none}
+ .pi-opening,.pi-chapter,.pi-outro{padding-top:4.25rem;padding-bottom:4.5rem}
+ .pi-quote{margin:2.4rem 0;padding:1.25rem;border-left-width:4px}
+ .pi-timeline a{font-size:.66rem;padding:.8rem .2rem}
+}
+@media(prefers-reduced-motion:reduce){.perspectives-inside-page a{transition:none}}
+@media print{.pi-hero{min-height:auto!important}.pi-hero-image,.pi-hero::before,.pi-hero::after,.pi-timeline,.pi-read-link{display:none!important}.pi-opening,.pi-chapter,.pi-outro{background:white!important;color:black!important;break-inside:avoid-page}.pi-quote{background:white!important;border-left:3px solid black!important}.pi-quote figcaption{color:black!important}}
+
+
+
+/* IOP ORIGINAL ESSAY CONTENT */
+
+.iop-essay-body {
+  max-width: 780px;
+  margin: 2rem auto 0;
+}
+
+.iop-essay-body p {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.85;
+  margin-bottom: 1.6rem;
+}
+
+.iop-essay-list {
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  list-style-type: disc;
+}
+
+.iop-essay-list li {
+  display: list-item;
+  list-style-type: disc;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.7;
+  margin-bottom: 0.85rem;
+}
+
+.iop-essay-list strong {
+  color: #eaff00;
+}
+
+.iop-essay-body em {
+  font-style: italic;
+}
+
+.iop-essay-image {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+}
+
+
+

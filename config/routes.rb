@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'iop_essays/index'
+  get 'iop_essays/show'
 
   # ==========================================
   # HOME
@@ -202,6 +204,14 @@ Rails.application.routes.draw do
       to: "addiction_perspectives#taoism",
       as: :addiction_perspectives_taoism
 
+# Perspectives / Essays / IOP
+get "perspectives/essays/iop",
+    to: "iop_essays#index",
+    as: :iop_essays
+
+get "perspectives/essays/iop/week/:week",
+    to: "iop_essays#show",
+    as: :iop_essay_week
 
 
   # ==========================================
