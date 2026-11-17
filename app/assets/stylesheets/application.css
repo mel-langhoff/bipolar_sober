@@ -28342,3 +28342,326 @@ body {
 
 
 
+/* ==========================================
+   TAOISM & BIPOLAR
+   ========================================== */
+
+.taoism-bipolar-page {
+  --tao-black: #080808;
+  --tao-pink: #ff1493;
+  --tao-yellow: #eaff00;
+  --tao-purple: #6100c9;
+  --tao-white: #fff;
+
+  background: var(--tao-black);
+  color: var(--tao-white);
+  overflow: hidden;
+}
+
+
+/* HERO */
+
+.taoism-bipolar-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 88vh;
+  padding: clamp(2rem, 7vw, 7rem);
+  isolation: isolate;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 8, 0.98) 0%,
+      rgba(8, 8, 8, 0.88) 35%,
+      rgba(8, 8, 8, 0.36) 70%,
+      rgba(8, 8, 8, 0.12) 100%
+    ),
+    image-url("bipolar_taoism_desktop.webp");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.taoism-bipolar-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(8, 8, 8, 0.72) 0%,
+      transparent 30%,
+      transparent 75%,
+      rgba(8, 8, 8, 0.24) 100%
+    );
+}
+
+.taoism-bipolar-hero-content {
+  width: min(100%, 900px);
+}
+
+.taoism-bipolar-eyebrow,
+.taoism-bipolar-intro {
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.taoism-bipolar-eyebrow {
+  margin: 0 0 2rem;
+  color: var(--tao-yellow);
+  font-size: clamp(0.72rem, 1.1vw, 0.95rem);
+}
+
+.taoism-bipolar-hero h1 {
+  margin: 0;
+  font-size: clamp(3.5rem, 10vw, 9rem);
+  font-weight: 1000;
+  line-height: 0.84;
+  letter-spacing: -0.075em;
+  text-transform: uppercase;
+}
+
+.taoism-bipolar-hero h1 span {
+  display: block;
+}
+
+.taoism-bipolar-hero h1 span:last-child {
+  color: var(--tao-pink);
+}
+
+.taoism-bipolar-intro {
+  margin: 2.25rem 0 0;
+  color: var(--tao-yellow);
+  font-size: clamp(0.9rem, 1.8vw, 1.35rem);
+  line-height: 1.55;
+}
+
+
+/* CONTENT SECTIONS */
+
+.taoism-bipolar-page .buddhism-section {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(2rem, 7vw, 7rem);
+  padding: clamp(3rem, 8vw, 8rem) clamp(1.25rem, 7vw, 7rem);
+}
+
+.taoism-bipolar-page .buddhism-section-heading {
+  align-self: start;
+  position: sticky;
+  top: 2rem;
+}
+
+.taoism-bipolar-page .buddhism-number {
+  margin: 0 0 1.5rem;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.taoism-bipolar-page .buddhism-section-heading h2 {
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(2rem, 4vw, 4.25rem);
+  font-weight: 1000;
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+.taoism-bipolar-page .buddhism-copy {
+  min-width: 0;
+  max-width: 850px;
+  font-size: clamp(1rem, 1.3vw, 1.18rem);
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.taoism-bipolar-page .buddhism-copy p {
+  margin: 0 0 1.5rem;
+}
+
+.taoism-bipolar-page .buddhism-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.taoism-bipolar-page .buddhism-copy blockquote {
+  margin: 0 0 2rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 6px solid currentColor;
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-weight: 900;
+  line-height: 1.35;
+}
+
+.taoism-bipolar-page .buddhism-copy blockquote p {
+  margin: 0;
+}
+
+.taoism-bipolar-page .buddhism-source {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.72em;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.taoism-bipolar-page .buddhism-callout {
+  margin: 2rem 0;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  border: 3px solid currentColor;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-weight: 1000;
+  line-height: 1.3;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.taoism-bipolar-page .buddhism-callout p {
+  margin: 0;
+}
+
+
+/* NEON SECTION COLORS */
+
+.taoism-bipolar-page .buddhism-pink {
+  background: var(--tao-pink);
+  color: var(--tao-black);
+}
+
+.taoism-bipolar-page .buddhism-yellow {
+  background: var(--tao-yellow);
+  color: var(--tao-black);
+}
+
+.taoism-bipolar-page .buddhism-purple {
+  background: var(--tao-purple);
+  color: var(--tao-white);
+}
+
+.taoism-bipolar-page .buddhism-black {
+  background: var(--tao-black);
+  color: var(--tao-white);
+}
+
+
+/* CLOSING */
+
+.taoism-bipolar-page .buddhism-ending {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+  gap: 3rem;
+  align-items: end;
+  padding: clamp(3rem, 8vw, 8rem) clamp(1.25rem, 7vw, 7rem);
+  background: var(--tao-yellow);
+  color: var(--tao-black);
+}
+
+.taoism-bipolar-page .buddhism-ending-small {
+  margin: 0 0 1.5rem;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.taoism-bipolar-page .buddhism-ending h2 {
+  margin: 0;
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  font-weight: 1000;
+  line-height: 0.82;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.taoism-bipolar-page .buddhism-ending h2 span {
+  color: var(--tao-pink);
+}
+
+.taoism-bipolar-page .buddhism-ending-copy {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.taoism-bipolar-page .buddhism-ending-copy p {
+  margin: 0 0 1.25rem;
+}
+
+.taoism-bipolar-page .buddhism-back-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.9rem 1.2rem;
+  border: 3px solid var(--tao-black);
+  color: var(--tao-black);
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.taoism-bipolar-page .buddhism-back-button:hover,
+.taoism-bipolar-page .buddhism-back-button:focus-visible {
+  background: var(--tao-black);
+  color: var(--tao-yellow);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .taoism-bipolar-hero {
+    min-height: 82svh;
+    padding: 2rem 1.25rem;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.35) 0%,
+        rgba(8, 8, 8, 0.58) 35%,
+        rgba(8, 8, 8, 0.94) 100%
+      ),
+      image-url("bipolar_taoism_mobile.webp");
+    background-position: center 38%;
+  }
+
+  .taoism-bipolar-hero h1 {
+    font-size: clamp(3.3rem, 16vw, 6rem);
+  }
+
+  .taoism-bipolar-page .buddhism-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 3rem 1.25rem;
+  }
+
+  .taoism-bipolar-page .buddhism-section-heading {
+    position: static;
+  }
+
+  .taoism-bipolar-page .buddhism-section-heading h2 {
+    max-width: 16ch;
+    font-size: clamp(2.2rem, 10vw, 3.5rem);
+  }
+
+  .taoism-bipolar-page .buddhism-copy {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .taoism-bipolar-page .buddhism-ending {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 1.25rem;
+  }
+
+  .taoism-bipolar-page .buddhism-ending h2 {
+    font-size: clamp(3.5rem, 17vw, 6rem);
+  }
+}
+
+

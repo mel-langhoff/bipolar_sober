@@ -1,7 +1,6 @@
+<% content_for :title, "Essays | Bipolar Sober" %>
 
-<% content_for :title, "IOP Week #{@week_label} | Bipolar Sober" %>
-
-<main class="iop-page iop-week-page">
+<main class="iop-page essays-page">
 
   <!-- HERO -->
   <section class="iop-hero">
@@ -9,12 +8,13 @@
     <div class="iop-hero-content">
 
       <p class="iop-eyebrow">
-        BIPOLAR SOBER / PERSPECTIVES / IOP / WEEK <%= @week_label %>
+        BIPOLAR SOBER / PERSPECTIVES / ESSAYS
       </p>
 
       <h1>
-        <span>WEEK</span>
-        <span><%= @week_label %>.</span>
+        <span>THE WORK</span>
+        <span>YOU CHOSE</span>
+        <span>TO DO.</span>
       </h1>
 
       <p class="iop-tagline">
@@ -23,8 +23,8 @@
       </p>
 
       <p class="iop-intro">
-        WHAT YOU CHOSE TO WRITE<br>
-        DURING WEEK <%= @week_label %>.
+        IOP WRITING. PERSONAL ESSAYS.<br>
+        THINGS YOU WANTED TO FIGURE OUT.
       </p>
 
     </div>
@@ -32,33 +32,181 @@
   </section>
 
 
-  <!-- WEEK CONTENT -->
-  <section class="iop-section iop-black">
+  
+
+  <!-- ESSAY CARDS -->
+  <section class="iop-library">
 
     <div class="iop-inner">
 
-      <p class="iop-number">
-        <%= @week_label %> / THE WRITING
-      </p>
+      <p class="iop-number">01 / THE ESSAYS</p>
 
       <h2>
-        WHAT WAS<br>
-        ON YOUR<br>
-        MIND?
+        OPEN<br>
+        THE FILES.
       </h2>
 
-      <div class="iop-copy">
+      <div class="iop-grid">
 
-        <p>
-          This is where your original writing
-          from week <%= @week %> belongs.
-        </p>
+        <!-- IOP ESSAYS -->
+        <%= link_to iop_essays_path,
+            class: "iop-card iop-card-pink" do %>
 
-        <p>
-          You can keep the original essays
-          separate from anything you think
-          about them now.
-        </p>
+          <p class="iop-card-number">01</p>
+
+          <p class="iop-card-label">
+            TWELVE WEEKS / ORIGINAL WRITING
+          </p>
+
+          <h3>
+            IOP<br>
+            ESSAYS.
+          </h3>
+
+          <p class="iop-card-description">
+            Twelve weeks of writing from intensive outpatient treatment:
+            what you explored, questioned, and chose to put into words.
+          </p>
+
+          <span class="iop-card-action">
+            READ THE IOP ESSAYS →
+          </span>
+
+        <% end %>
+
+
+        <!-- RISING IN THE EAST -->
+        <article class="iop-card iop-card-yellow">
+
+          <p class="iop-card-number">02</p>
+
+          <p class="iop-card-label">
+            PERSONAL ESSAY / IN DEVELOPMENT
+          </p>
+
+          <h3>
+            RISING<br>
+            IN THE<br>
+            EAST.
+          </h3>
+
+          <p class="iop-card-description">
+            Eastern philosophy, bipolar disorder, and addiction:
+            exploring how these traditions speak to the life you’re
+            actually trying to live.
+          </p>
+
+          <span class="iop-card-action">
+            IN DEVELOPMENT
+          </span>
+
+        </article>
+
+
+        <!-- WISDOM IN UNEXPECTED PLACES -->
+        <article class="iop-card iop-card-purple">
+
+          <p class="iop-card-number">03</p>
+
+          <p class="iop-card-label">
+            PERSONAL ESSAY / IN DEVELOPMENT
+          </p>
+
+          <h3>
+            TURN<br>
+            EVERY<br>
+            STONE.
+          </h3>
+
+          <p class="iop-card-description">
+            Finding ideas about sobriety and mental health in books,
+            people, stories, and places you didn’t expect to learn from.
+          </p>
+
+          <span class="iop-card-action">
+            IN DEVELOPMENT
+          </span>
+
+        </article>
+
+
+        <!-- CD PLAYA -->
+        <article class="iop-card iop-card-black">
+
+          <p class="iop-card-number">04</p>
+
+          <p class="iop-card-label">
+            PERSONAL ESSAY / IN DEVELOPMENT
+          </p>
+
+          <h3>
+            CD<br>
+            PLAYA.
+          </h3>
+
+          <p class="iop-card-description">
+  Cognitive distortions know how to run game on you—
+  and rig the whole damn game so you lose.
+</p>
+
+          <span class="iop-card-action">
+            IN DEVELOPMENT
+          </span>
+
+        </article>
+
+
+        <!-- CUFFED -->
+        <article class="iop-card iop-card-pink">
+
+          <p class="iop-card-number">05</p>
+
+          <p class="iop-card-label">
+            PERSONAL ESSAY / IN DEVELOPMENT
+          </p>
+
+          <h3>
+            CUFFED.
+          </h3>
+
+          <p class="iop-card-description">
+            An essay about jail in place of treatment—and what gets
+            missed when mental illness and addiction are handled as
+            criminal problems.
+          </p>
+
+          <span class="iop-card-action">
+            IN DEVELOPMENT
+          </span>
+
+        </article>
+
+
+        <!-- BLITZKRIEG BOP -->
+<article class="iop-card iop-card-yellow">
+
+  <p class="iop-card-number">06</p>
+
+  <p class="iop-card-label">
+    PERSONAL ESSAY / IN DEVELOPMENT
+  </p>
+
+  <h3>
+    BLITZKRIEG<br>
+    BOP.
+  </h3>
+
+  <p class="iop-card-description">
+    A look at impulsivity at full speed—and the common ground
+    it shares across addiction, bipolar disorder, and ADHD.
+  </p>
+
+  <span class="iop-card-action">
+    IN DEVELOPMENT
+  </span>
+
+</article>
+
 
       </div>
 
@@ -67,42 +215,23 @@
   </section>
 
 
-  <!-- ORIGINAL ESSAYS -->
-  <section class="iop-library">
-
-    <div class="iop-inner">
-
-      <p class="iop-number">
-        WEEK <%= @week_label %> / ESSAYS
-      </p>
-
-      <h2>
-        BETWEEN<br>
-        THE LINES.
-      </h2>
-
-
-
-    </div>
-
-  </section>
-
-
-  <!-- NAVIGATION -->
+  <!-- ENDING -->
   <section class="iop-ending">
 
     <p>
-      THE ORIGINAL WORDS MATTER.
+      YOUR WORDS.<br>
+      YOUR PERSPECTIVE.
     </p>
 
     <h2>
       KEEP<br>
-      READING.
+      ON<br>
+      WRITING.
     </h2>
 
-    <%= link_to "← ALL TWELVE WEEKS",
-        iop_essays_path,
-        class: "iop-back-link" %>
+     <%= link_to "← BACK TO PERSPECTIVES",
+        perspectives_path,
+        class: "pb-back-link" %>
 
   </section>
 

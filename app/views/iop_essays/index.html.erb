@@ -42,7 +42,6 @@
 
       <h2>
         IT WASN'T<br>
-        FUCKING<br>
         HOMEWORK.
       </h2>
 
@@ -88,44 +87,190 @@
 
       <h2>
         TWELVE<br>
-        FUCKING<br>
+        WONDERFUL<br>
         WEEKS.
       </h2>
 
       <div class="iop-grid">
 
-        <% (1..12).each do |week| %>
+        <!-- WEEK 01 -->
+<%= link_to iop_essay_week_path(week: 1),
+    class: "iop-card iop-card-pink" do %>
 
-          <% color = %w[pink yellow purple black][(week - 1) % 4] %>
+  <p class="iop-card-number">01</p>
+  <p class="iop-card-label">IOP / PERSONAL WRITING</p>
+  <h3>WEEK<br>01.</h3>
+  <p class="iop-card-description">
+    Write your description for Week 01 here.
+  </p>
+  <span class="iop-card-action">READ WEEK 01 →</span>
 
-          <%= link_to iop_essay_week_path(week: week),
-              class: "iop-card iop-card-#{color}" do %>
+<% end %>
 
-            <p class="iop-card-number">
-              <%= format("%02d", week) %>
-            </p>
 
-            <p class="iop-card-label">
-              IOP / PERSONAL WRITING
-            </p>
+<!-- WEEK 02 -->
+<%= link_to iop_essay_week_path(week: 2),
+    class: "iop-card iop-card-yellow" do %>
 
-            <h3>
-              WEEK<br>
-              <%= format("%02d", week) %>.
-            </h3>
+  <p class="iop-card-number">02</p>
+  <p class="iop-card-label">IOP / PERSONAL WRITING</p>
+  <h3>WEEK<br>02.</h3>
+  <p class="iop-card-description">
+    Write your description for Week 02 here.
+  </p>
+  <span class="iop-card-action">READ WEEK 02 →</span>
 
-            <p class="iop-card-description">
-              Your original writing from
-              Week <%= week %>.
-            </p>
+<% end %>
 
-            <span class="iop-card-action">
-              READ WEEK <%= format("%02d", week) %> →
-            </span>
 
-          <% end %>
+<!-- WEEK 03 -->
+<%= link_to iop_essay_week_path(week: 3),
+    class: "iop-card iop-card-purple" do %>
 
-        <% end %>
+  <p class="iop-card-number">03</p>
+  <p class="iop-card-label">IOP / PERSONAL WRITING</p>
+  <h3>WEEK<br>03.</h3>
+  <p class="iop-card-description">
+    Write your description for Week 03 here.
+  </p>
+  <span class="iop-card-action">READ WEEK 03 →</span>
+
+<% end %>
+
+
+<!-- WEEK 04 -->
+<%= link_to iop_essay_week_path(week: 4),
+    class: "iop-card iop-card-black" do %>
+
+  <p class="iop-card-number">04</p>
+  <p class="iop-card-label">IOP / PERSONAL WRITING</p>
+  <h3>WEEK<br>04.</h3>
+  <p class="iop-card-description">
+    Write your description for Week 04 here.
+  </p>
+  <span class="iop-card-action">READ WEEK 04 →</span>
+
+<% end %>
+
+
+<!-- WEEK 05 -->
+<%= link_to iop_essay_week_path(week: 5),
+    class: "iop-card iop-card-pink" do %>
+
+  <p class="iop-card-number">05</p>
+  <p class="iop-card-label">IOP / PERSONAL WRITING</p>
+  <h3>WEEK<br>05.</h3>
+  <p class="iop-card-description">
+    Write your description for Week 05 here.
+  </p>
+  <span class="iop-card-action">READ WEEK 05 →</span>
+
+<% end %>
+
+
+<!-- WEEK 06 -->
+<%= link_to iop_essay_week_path(week: 6),
+    class: "iop-card iop-card-yellow" do %>
+
+  <p class="iop-card-number">06</p>
+  <p class="iop-card-label">IOP / PERSONAL WRITING</p>
+  <h3>WEEK<br>06.</h3>
+  <p class="iop-card-description">
+    Write your description for Week 06 here.
+  </p>
+  <span class="iop-card-action">READ WEEK 06 →</span>
+
+<% end %>
+
+
+<!-- WEEK 07 -->
+<%= link_to iop_essay_week_path(week: 7),
+    class: "iop-card iop-card-purple" do %>
+
+  <p class="iop-card-number">07</p>
+  <p class="iop-card-label">IOP / PERSONAL WRITING</p>
+  <h3>WEEK<br>07.</h3>
+  <p class="iop-card-description">
+    Write your description for Week 07 here.
+  </p>
+  <span class="iop-card-action">READ WEEK 07 →</span>
+
+<% end %>
+
+
+<!-- WEEK 08 -->
+<%= link_to iop_essay_week_path(week: 8),
+    class: "iop-card iop-card-black" do %>
+
+  <p class="iop-card-number">08</p>
+  <p class="iop-card-label">IOP / PERSONAL WRITING</p>
+  <h3>WEEK<br>08.</h3>
+  <p class="iop-card-description">
+    Write your description for Week 08 here.
+  </p>
+  <span class="iop-card-action">READ WEEK 08 →</span>
+
+<% end %>
+
+
+<!-- WEEK 09 -->
+<%= link_to iop_essay_week_path(week: 9),
+    class: "iop-card iop-card-pink" do %>
+
+  <p class="iop-card-number">09</p>
+  <p class="iop-card-label">IOP / PERSONAL WRITING</p>
+  <h3>WEEK<br>09.</h3>
+  <p class="iop-card-description">
+    Write your description for Week 09 here.
+  </p>
+  <span class="iop-card-action">READ WEEK 09 →</span>
+
+<% end %>
+
+
+<!-- WEEK 10 -->
+<%= link_to iop_essay_week_path(week: 10),
+    class: "iop-card iop-card-yellow" do %>
+
+  <p class="iop-card-number">10</p>
+  <p class="iop-card-label">IOP / PERSONAL WRITING</p>
+  <h3>WEEK<br>10.</h3>
+  <p class="iop-card-description">
+    Write your description for Week 10 here.
+  </p>
+  <span class="iop-card-action">READ WEEK 10 →</span>
+
+<% end %>
+
+
+<!-- WEEK 11 -->
+<%= link_to iop_essay_week_path(week: 11),
+    class: "iop-card iop-card-purple" do %>
+
+  <p class="iop-card-number">11</p>
+  <p class="iop-card-label">IOP / PERSONAL WRITING</p>
+  <h3>WEEK<br>11.</h3>
+  <p class="iop-card-description">
+    Write your description for Week 11 here.
+  </p>
+  <span class="iop-card-action">READ WEEK 11 →</span>
+
+<% end %>
+
+
+<!-- WEEK 12 -->
+<%= link_to iop_essay_week_path(week: 12),
+    class: "iop-card iop-card-black" do %>
+
+  <p class="iop-card-number">12</p>
+  <p class="iop-card-label">IOP / PERSONAL WRITING</p>
+  <h3>WEEK<br>12.</h3>
+  <p class="iop-card-description">
+    Write your description for Week 12 here.
+  </p>
+  <span class="iop-card-action">READ WEEK 12 →</span>
+
+<% end %>
 
       </div>
 
@@ -144,8 +289,8 @@
 
     <h2>
       KEEP<br>
-      THE FUCKING<br>
-      NOTEBOOK.
+      ON<br>
+      WRITING.
     </h2>
 
     <%= link_to "← BACK TO ESSAYS",
