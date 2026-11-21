@@ -15,9 +15,6 @@
         Okay. Remember when...
       </p>
 
-      <a href="#remember" class="drink-button">
-        REMEMBER ↓
-      </a>
     </div>
   </section>
 
@@ -136,9 +133,12 @@
       <p>REMEMBER ALL OF THIS</p>
       <p>BEFORE YOU TAKE THAT DRINK.</p>
 
-      <a href="/" class="ending-button">
-        CHOOSE DIFFERENTLY →
-      </a>
+      <!-- BACK TO TOOLBOX -->
+<nav class="index-home-nav" aria-label="Return to toolbox">
+  <%= link_to "← BACK TO TOOLBOX",
+      toolbox_path,
+      class: "index-home-button" %>
+</nav>
     </div>
   </section>
 
