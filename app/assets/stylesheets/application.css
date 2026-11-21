@@ -28665,3 +28665,22 @@ body {
 }
 
 
+.iop-essay-image {
+  width: 100%;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 0;
+  text-align: center;
+}
+
+.iop-essay-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+
