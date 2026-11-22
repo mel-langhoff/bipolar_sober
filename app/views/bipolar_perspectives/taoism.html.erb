@@ -1,334 +1,34 @@
-
 <% content_for :title, "Taoism & Bipolar | Bipolar Sober" %>
 
 <style>
-  .tao-bipolar-page {
-    background: #080808;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .tao-bipolar-page *,
-  .tao-bipolar-page *::before,
-  .tao-bipolar-page *::after {
-    box-sizing: border-box;
-  }
-
-  /* HERO */
-
-  .tao-bipolar-hero {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    padding: 90px 6%;
-    background-color: #080808;
-    background-image:
-      linear-gradient(
-        90deg,
-        rgba(8, 8, 8, .78),
-        rgba(8, 8, 8, .35) 55%,
-        transparent 85%
-      ),
-      url("<%= asset_path('bipolar_taoism_desktop.webp') %>");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .tao-bipolar-hero-content {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .tao-bipolar-eyebrow {
-    margin: 0 0 28px;
-    color: #ff1493;
-    font-size: 12px;
-    font-weight: 900;
-    letter-spacing: .15em;
-    line-height: 1.6;
-  }
-
-  .tao-bipolar-hero h1 {
-    margin: 0;
-    max-width: 1000px;
-    font-size: clamp(46px, 7vw, 105px);
-    font-weight: 900;
-    font-style: italic;
-    line-height: .94;
-    letter-spacing: -.06em;
-    text-transform: uppercase;
+  .taoism-bipolar-page .buddhism-copy {
+    min-width: 0;
     overflow-wrap: anywhere;
   }
 
-  .tao-bipolar-hero h1 span {
+  .taoism-bipolar-page .buddhism-source {
     display: block;
-  }
-
-  .tao-bipolar-intro {
-    margin: 30px 0 0;
-    color: #eaff00;
-    font-size: clamp(16px, 2vw, 24px);
-    font-weight: 900;
-    line-height: 1.5;
-    text-transform: uppercase;
-  }
-
-  /* QUOTE */
-
-  .tao-quote {
-    padding: 55px 6%;
-    background: #080808;
-    text-align: center;
-  }
-
-  .tao-quote blockquote {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  .tao-quote blockquote p {
-    margin: 0 0 15px;
-    color: #eaff00;
-    font-size: clamp(28px, 4.5vw, 60px);
-    font-weight: 900;
-    font-style: italic;
-    line-height: 1.15;
-    text-transform: uppercase;
-  }
-
-  .tao-quote cite {
-    color: #fff;
-    font-size: 14px;
+    margin-top: 1rem;
+    font-size: 0.75em;
     font-style: normal;
   }
 
-  /* SECTIONS */
-
-  .tao-section {
-    display: grid;
-    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
-    gap: 60px;
-    padding: 80px max(6%, calc((100% - 1200px) / 2));
-    align-items: start;
-  }
-
-  .tao-section-heading,
-  .tao-copy {
-    min-width: 0;
-  }
-
-  .tao-number {
-    margin: 0 0 20px;
-    font-size: 12px;
-    font-weight: 900;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-  }
-
-  .tao-section h2 {
-    margin: 0;
-    font-size: clamp(36px, 4.5vw, 68px);
-    font-weight: 900;
-    font-style: italic;
-    line-height: .98;
-    letter-spacing: -.05em;
-    text-transform: uppercase;
-    overflow-wrap: anywhere;
-  }
-
-  .tao-copy {
-    font-size: 17px;
-    line-height: 1.85;
-    overflow-wrap: anywhere;
-  }
-
-  .tao-copy p {
-    margin: 0 0 22px;
-  }
-
-  .tao-copy p:last-child {
-    margin-bottom: 0;
-  }
-
-  .tao-takeaway {
-    margin-top: 28px !important;
-    padding-top: 22px;
-    border-top: 3px solid currentColor;
-    font-weight: 900;
-    line-height: 1.5;
-  }
-
-  /* COLORS */
-
-  .tao-pink {
-    background: #ff1493;
-    color: #080808;
-  }
-
-  .tao-yellow {
-    background: #eaff00;
-    color: #080808;
-  }
-
-  .tao-black {
-    background: #080808;
-    color: #fff;
-  }
-
-  .tao-purple {
-    background: #8a00ff;
-    color: #fff;
-  }
-
-  .tao-white {
-    background: #fff;
-    color: #080808;
-  }
-
-  /* CLOSING */
-
-  .tao-ending {
-    display: grid;
-    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
-    gap: 60px;
-    padding: 85px 6%;
-    background: #ff1493;
-    color: #080808;
-  }
-
-  .tao-ending > div {
-    min-width: 0;
-  }
-
-  .tao-ending-small {
-    margin: 0 0 20px;
-    font-size: 12px;
-    font-weight: 900;
-    letter-spacing: .15em;
-  }
-
-  .tao-ending h2 {
-    margin: 0;
-    font-size: clamp(48px, 7vw, 100px);
-    font-weight: 900;
-    font-style: italic;
-    line-height: .95;
-    letter-spacing: -.06em;
-    text-transform: uppercase;
-  }
-
-  .tao-ending h2 span {
-    color: #fff;
-  }
-
-  .tao-ending-copy {
-    font-size: 18px;
+  .taoism-bipolar-page .buddhism-callout {
+    margin-block: 2rem;
+    font-weight: 800;
     line-height: 1.8;
-  }
-
-  .tao-ending-copy p {
-    margin: 0 0 24px;
-  }
-
-  .tao-back-button {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 15px 20px;
-    border: 2px solid #080808;
-    color: #080808;
-    font-size: 13px;
-    font-weight: 900;
-    letter-spacing: .08em;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: .2s ease;
-  }
-
-  .tao-back-button:hover {
-    background: #080808;
-    color: #eaff00;
-  }
-
-  .tao-back-button:focus-visible {
-    outline: 3px solid #eaff00;
-    outline-offset: 5px;
-  }
-
-  /* MOBILE */
-
-  @media (max-width: 767px) {
-    .tao-bipolar-hero {
-      min-height: 88svh;
-      align-items: flex-start;
-      padding: 50px 6% 65px;
-      background-image:
-        linear-gradient(
-          180deg,
-          rgba(8, 8, 8, .55),
-          rgba(8, 8, 8, .12) 65%,
-          rgba(8, 8, 8, .20)
-        ),
-        url("<%= asset_path('bipolar_taoism_mobile.webp') %>");
-      background-position: center, center bottom;
-      background-size: cover;
-    }
-
-    .tao-bipolar-eyebrow {
-      font-size: 10px;
-      margin-bottom: 24px;
-    }
-
-    .tao-bipolar-hero h1 {
-      font-size: clamp(40px, 9vw, 68px);
-    }
-
-    .tao-bipolar-intro {
-      font-size: 14px;
-      margin-top: 24px;
-    }
-
-    .tao-quote {
-      padding: 45px 6%;
-    }
-
-    .tao-section {
-      grid-template-columns: 1fr;
-      gap: 28px;
-      padding: 55px 6%;
-    }
-
-    .tao-section h2 {
-      font-size: clamp(36px, 10vw, 58px);
-    }
-
-    .tao-copy {
-      font-size: 16px;
-      line-height: 1.8;
-    }
-
-    .tao-ending {
-      grid-template-columns: 1fr;
-      gap: 28px;
-      padding: 65px 6%;
-    }
-
-    .tao-ending-copy {
-      font-size: 16px;
-    }
+    overflow-wrap: anywhere;
   }
 </style>
 
-
-<main class="tao-bipolar-page">
+<main class="taoism-bipolar-page">
 
   <!-- HERO -->
-  <section class="tao-bipolar-hero">
+  <section class="taoism-bipolar-hero">
 
-    <div class="tao-bipolar-hero-content">
+    <div class="taoism-bipolar-hero-content">
 
-      <p class="tao-bipolar-eyebrow">
+      <p class="taoism-bipolar-eyebrow">
         BIPOLAR SOBER / BIPOLAR / PERSPECTIVES / TAOISM
       </p>
 
@@ -338,62 +38,9 @@
         <span>TAOIST LENS.</span>
       </h1>
 
-      <p class="tao-bipolar-intro">
-        STOP FIGHTING THE CURRENT.<br>
-        LEARN WHEN TO FLOW AND WHEN TO STOP.
-      </p>
-
-    </div>
-  </section>
-
-
-  <!-- QUOTE -->
-  <section class="tao-quote" aria-label="Opening quote">
-    <blockquote>
-      <p>
-        "Plan the hard while it is easy;
-        do the great while it is small."
-      </p>
-      <cite>— Laozi, Tao Te Ching</cite>
-    </blockquote>
-  </section>
-
-
-  <!-- 01 / THE TAO -->
-  <section class="tao-section tao-pink">
-
-    <div class="tao-section-heading">
-      <p class="tao-number">01 / THE TAO</p>
-
-      <h2>
-        STOP<br>
-        FORCING<br>
-        EVERYTHING.
-      </h2>
-    </div>
-
-    <div class="tao-copy">
-
-      <p>
-        Taoism encourages you to live in accordance
-        with the Tao, or the Way, rather than
-        trying to control everything around you.
-        Balance doesn't mean eliminating change.
-        It means learning to respond to change
-        without fighting every part of it.
-      </p>
-
-      <p>
-        With bipolar disorder, you can't always
-        control your mood, energy, or thoughts.
-        You can recognize what's happening,
-        respect your limitations, and make
-        choices that support your stability.
-      </p>
-
-      <p class="tao-takeaway">
-        ACCEPT WHAT'S HAPPENING.<br>
-        RESPOND TO WHAT YOU CAN.
+      <p class="taoism-bipolar-intro">
+        YOU CAN'T FORCE THE CURRENT.<br>
+        YOU CAN CHOOSE HOW YOU MEET IT.
       </p>
 
     </div>
@@ -401,40 +48,74 @@
   </section>
 
 
-  <!-- 02 / YIN AND YANG -->
-  <section class="tao-section tao-yellow">
+  <!-- 01 / INTRODUCTION -->
+  <section class="buddhism-section buddhism-pink"
+           aria-labelledby="taoism-introduction-title">
 
-    <div class="tao-section-heading">
-      <p class="tao-number">02 / YIN AND YANG</p>
-
-      <h2>
-        TWO SIDES.<br>
-        ONE<br>
-        PERSON.
-      </h2>
+    <div class="buddhism-section-heading">
+      <p class="buddhism-number">01 / A TAOIST PERSPECTIVE</p>
+      <h2 id="taoism-introduction-title">WORK WITH WHAT'S HERE</h2>
     </div>
 
-    <div class="tao-copy">
+    <div class="buddhism-copy">
+
+      <blockquote>
+        <p>"The Tao never acts, yet nothing is left undone."</p>
+        <cite class="buddhism-source">—Tao Te Ching, chapter 37</cite>
+      </blockquote>
 
       <p>
-        Yin and yang represent complementary
-        qualities such as darkness and light,
-        stillness and movement. They remind
-        you that opposing experiences can
-        exist within a larger whole.
+        Taoism offers you a way to think about living with change without
+        demanding that you control every part of your experience. The Tao,
+        often translated as "the Way," points toward the movement and
+        patterns of life. Taoist ideas encourage you to notice what is
+        happening, understand the conditions around it, and respond without
+        adding more force than the situation calls for.
       </p>
 
       <p>
-        Depression and mania aren't spiritual
-        forces that need to balance each other.
-        They're medical symptoms. But neither
-        extreme defines who you are.
-        You aren't more authentic when you're
-        manic or less worthy when you're depressed.
+        Bipolar disorder is a medical condition, not proof that you are out
+        of harmony with the universe. Taoism does not replace treatment or
+        explain away the realities of mania, depression, or psychosis. It
+        can offer another perspective on how you meet those experiences
+        and care for yourself through change.
       </p>
 
-      <p class="tao-takeaway">
-        YOU ARE MORE THAN EITHER EXTREME.
+    </div>
+
+  </section>
+
+
+  <!-- 02 / CHANGE AND CONTRAST -->
+  <section class="buddhism-section buddhism-yellow"
+           aria-labelledby="taoism-change-title">
+
+    <div class="buddhism-section-heading">
+      <p class="buddhism-number">02 / CHANGE AND CONTRAST</p>
+      <h2 id="taoism-change-title">OPPOSITES CAN COEXIST</h2>
+    </div>
+
+    <div class="buddhism-copy">
+
+      <p>
+        Yin and yang describe complementary qualities in the changing world:
+        stillness and activity, darkness and light, rest and movement. They
+        influence one another, and neither exists in isolation.
+      </p>
+
+      <p>
+        It can be tempting to map depression onto yin and mania onto yang.
+        That comparison has limits. Bipolar episodes are not balanced,
+        necessary halves of a spiritual cycle. They can be dangerous and
+        deeply disruptive, and you deserve appropriate care for them.
+      </p>
+
+      <p>
+        The more useful idea is that your experience can change without
+        defining your whole identity. You are not more authentically yourself
+        when you are manic, and you are not less yourself when depression
+        makes it hard to function. Each state affects how you feel and
+        interpret the world. Neither tells the whole story of who you are.
       </p>
 
     </div>
@@ -443,45 +124,43 @@
 
 
   <!-- 03 / WU WEI -->
-  <section class="tao-section tao-black">
+  <section class="buddhism-section buddhism-black"
+           aria-labelledby="taoism-wuwei-title">
 
-    <div class="tao-section-heading">
-      <p class="tao-number">03 / WU WEI</p>
-
-      <h2>
-        DO LESS.<br>
-        FORCE<br>
-        LESS.
-      </h2>
+    <div class="buddhism-section-heading">
+      <p class="buddhism-number">03 / WU WEI</p>
+      <h2 id="taoism-wuwei-title">LESS FORCING. MORE DISCERNMENT.</h2>
     </div>
 
-    <div class="tao-copy">
+    <div class="buddhism-copy">
 
       <p>
-        Wu wei means acting without unnecessary
-        force. It isn't about doing nothing.
-        It's about working with your circumstances
-        instead of exhausting yourself
-        trying to fight them.
+        Wu wei is often translated as "nonaction" or "effortless action."
+        It does not mean giving up, ignoring problems, or refusing
+        responsibility. It suggests acting in a way that fits the
+        circumstances instead of exhausting yourself by forcing what
+        cannot be forced.
       </p>
 
       <p>
-        During depression, you may need to
-        simplify your responsibilities, rest,
-        and accept help. During mania, you
-        may need to stop acting on every
-        urgent idea. Not every thought
-        needs to become a purchase,
-        project, message, or decision.
+        During depression, you may keep demanding that you function as if
+        your energy and capacity were unchanged. If the demand leaves you
+        overwhelmed and ashamed, pause and look at what is actually possible
+        today. You might simplify a task, accept help, rest, or ask your
+        psych for support.
       </p>
 
       <p>
-        Sometimes the most useful thing
-        you can do is nothing right now.
+        During mania, the challenge may be slowing down an urge to act.
+        Every idea can feel urgent and every opportunity can seem
+        impossible to pass up. Sometimes the fitting response is to wait,
+        make fewer commitments, and let someone you trust help you assess
+        the decision.
       </p>
 
-      <p class="tao-takeaway">
-        AN URGE IS NOT AN INSTRUCTION.
+      <p>
+        Neither response is passive. Both ask you to notice the conditions
+        you are in and choose an action that fits them.
       </p>
 
     </div>
@@ -489,45 +168,41 @@
   </section>
 
 
-  <!-- 04 / HUMILITY -->
-  <section class="tao-section tao-purple">
+  <!-- 04 / URGENCY AND CERTAINTY -->
+  <section class="buddhism-section buddhism-purple"
+           aria-labelledby="taoism-urgency-title">
 
-    <div class="tao-section-heading">
-      <p class="tao-number">04 / HUMILITY</p>
-
-      <h2>
-        YOU DON'T<br>
-        KNOW<br>
-        EVERYTHING.
-      </h2>
+    <div class="buddhism-section-heading">
+      <p class="buddhism-number">04 / URGENCY AND CERTAINTY</p>
+      <h2 id="taoism-urgency-title">A FEELING ISN'T AN ORDER</h2>
     </div>
 
-    <div class="tao-copy">
+    <div class="buddhism-copy">
 
       <p>
-        Mania can make you feel absolutely
-        certain about your ideas, decisions,
-        and interpretations. But feeling
-        convinced doesn't mean you're right.
+        Taoist humility can help when your mind feels completely certain.
+        During mania, a plan or belief may seem urgent, brilliant, or
+        unquestionably true. The strength of that feeling does not guarantee
+        that your judgment is reliable in that moment.
       </p>
 
       <p>
-        Taoism encourages humility about
-        what you know. You can question
-        your certainty, listen to people
-        you trust, and delay major decisions
-        without giving up your independence.
+        You do not have to treat every thought as false. You can leave room
+        for another explanation. Delay a major purchase or commitment.
+        Check in with someone who knows your patterns. Bring changes in
+        sleep, energy, or thinking to your psych.
       </p>
+
+      <div class="buddhism-callout">
+        <p>
+          NOTICE THE URGENCY.<br>
+          GIVE THE DECISION SOME ROOM.
+        </p>
+      </div>
 
       <p>
-        You don't have to distrust every
-        thought. You just don't have to
-        believe every thought immediately.
-      </p>
-
-      <p class="tao-takeaway">
-        CERTAINTY IS A FEELING.<br>
-        NOT PROOF.
+        Accepting help or adding a safeguard does not mean you have failed
+        at independence. It means you are taking your own patterns seriously.
       </p>
 
     </div>
@@ -536,49 +211,35 @@
 
 
   <!-- 05 / SIMPLICITY -->
-  <section class="tao-section tao-white">
+  <section class="buddhism-section buddhism-pink"
+           aria-labelledby="taoism-simplicity-title">
 
-    <div class="tao-section-heading">
-      <p class="tao-number">05 / SIMPLICITY</p>
-
-      <h2>
-        NOT<br>
-        EVERYTHING<br>
-        NEEDS<br>
-        ANALYZING.
-      </h2>
+    <div class="buddhism-section-heading">
+      <p class="buddhism-number">05 / SIMPLICITY</p>
+      <h2 id="taoism-simplicity-title">COME BACK TO THE ORDINARY</h2>
     </div>
 
-    <div class="tao-copy">
+    <div class="buddhism-copy">
 
       <p>
-        Living with bipolar disorder can turn
-        every mood, thought, and impulse into
-        something to examine. Awareness matters,
-        but constant self-monitoring can
-        become exhausting.
+        Living with bipolar disorder can turn your attention inward all day.
+        You monitor your mood, question your thoughts, assess your energy,
+        and wonder whether every change means something. Awareness can help,
+        but constant analysis can become its own source of strain.
       </p>
 
       <p>
-        Taoism invites you to return to
-        ordinary life. Eat, rest, spend
-        time with your dog, and focus
-        on what's directly in front of you.
-        You don't need to understand
-        every feeling before continuing
-        with your day.
+        Taoist simplicity invites you to return to what is directly in front
+        of you. Eat something. Rest. Take your medication as prescribed.
+        Spend time with Banjo. Do one manageable task instead of planning
+        twelve. You do not have to solve every question about your mind
+        before you can participate in your day.
       </p>
 
       <p>
-        Nourishing your life also means
-        caring for your body through sleep,
-        food, treatment, and routines that
-        work with your physical limitations.
-      </p>
-
-      <p class="tao-takeaway">
-        SOMETIMES LIFE IS JUST LIFE.<br>
-        LET IT BE.
+        Ordinary routines do not need to feel profound to matter. Their
+        steadiness can support you through periods when your internal
+        experience is anything but steady.
       </p>
 
     </div>
@@ -586,54 +247,94 @@
   </section>
 
 
-  <!-- 06 / LIVING WITH BIPOLAR -->
-  <section class="tao-section tao-yellow">
+  <!-- 06 / NOURISHING LIFE -->
+  <section class="buddhism-section buddhism-yellow"
+           aria-labelledby="taoism-nourishing-title">
 
-    <div class="tao-section-heading">
-      <p class="tao-number">06 / LIVING WITH BIPOLAR</p>
-
-      <h2>
-        FIND<br>
-        YOUR<br>
-        OWN WAY.
-      </h2>
+    <div class="buddhism-section-heading">
+      <p class="buddhism-number">06 / CARE AND MAINTENANCE</p>
+      <h2 id="taoism-nourishing-title">NOURISH THE LIFE YOU HAVE</h2>
     </div>
 
-    <div class="tao-copy">
+    <div class="buddhism-copy">
 
       <p>
-        Taoism doesn't ask you to enjoy
-        bipolar disorder or treat it
-        as necessary for spiritual growth.
-        You don't need mania to appreciate
-        creativity or depression to
-        understand suffering.
+        Taoist traditions include practices of caring for and nourishing
+        life. For you, that idea can mean paying attention to the conditions
+        that support your well-being: sleep, food, treatment, manageable
+        routines, and connection with people you trust.
       </p>
 
       <p>
-        Accept your symptoms without
-        surrendering to them. Recognize
-        your limitations without turning
-        them into your identity. Continue
-        taking your medication, getting
-        support, and making decisions
-        that protect your well-being.
+        This is not a promise that a routine will prevent every episode.
+        It is a reminder that your mind and body need care even when you
+        are busy trying to understand what they are doing. If your usual
+        supports are not enough, asking your psych for help is part
+        of responding to the situation.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- 07 / ACCEPTANCE -->
+  <section class="buddhism-section buddhism-black"
+           aria-labelledby="taoism-acceptance-title">
+
+    <div class="buddhism-section-heading">
+      <p class="buddhism-number">07 / ACCEPTANCE</p>
+      <h2 id="taoism-acceptance-title">ACCEPTANCE ISN'T APPROVAL</h2>
+    </div>
+
+    <div class="buddhism-copy">
+
+      <p>
+        You do not have to like bipolar disorder, call it a gift, or find a
+        spiritual reason for it. Acceptance means acknowledging what is
+        happening clearly enough to respond. It can make room for treatment,
+        boundaries, rest, and changes to a plan.
       </p>
 
       <p>
-        You can't force your mind into
-        perfect stability. Sometimes
-        the right response is to act.
-        Sometimes it's to rest.
-        Sometimes it's to recognize
-        that the most urgent feeling
-        in the room doesn't deserve
-        to be in charge.
+        You cannot force perfect stability through willpower. You can still
+        make choices that support your health. Sometimes that means acting.
+        Sometimes it means stopping, waiting, or letting someone help you
+        carry the decision.
       </p>
 
-      <p class="tao-takeaway">
-        YOU DON'T HAVE TO CONTROL EVERYTHING<br>
-        TO TAKE CARE OF YOURSELF.
+    </div>
+
+  </section>
+
+
+  <!-- 08 / A TAOIST VIEW OF THE PATH -->
+  <section class="buddhism-section buddhism-purple"
+           aria-labelledby="taoism-path-title">
+
+    <div class="buddhism-section-heading">
+      <p class="buddhism-number">08 / THE PATH</p>
+      <h2 id="taoism-path-title">RESPOND TO THE MOMENT YOU'RE IN</h2>
+    </div>
+
+    <div class="buddhism-copy">
+
+      <p>
+        You do not have to treat every change in mood as a command or a
+        spiritual message. Notice what is happening, consider what the
+        circumstances call for, and choose the next useful step.
+      </p>
+
+      <p>
+        That step might be rest, a conversation, a delayed decision, an
+        appointment, or getting more support. The point is not to drift
+        through life without responsibility. It is to respond with enough
+        attention to avoid adding unnecessary force to an already difficult
+        situation.
+      </p>
+
+      <p class="buddhism-callout">
+        NOTICE → PAUSE → RESPOND
       </p>
 
     </div>
@@ -642,30 +343,35 @@
 
 
   <!-- CLOSING -->
-  <section class="tao-ending">
+  <section class="buddhism-ending"
+           aria-labelledby="taoism-closing-title">
 
     <div>
-      <p class="tao-ending-small">CLOSING</p>
+      <p class="buddhism-ending-small">CLOSING</p>
 
-      <h2>
-        FOLLOW<br>
-        THE <span>WAY.</span>
+      <h2 id="taoism-closing-title">
+        MEET THE<br>
+        <span>MOMENT.</span>
       </h2>
     </div>
 
-    <div class="tao-ending-copy">
+    <div class="buddhism-ending-copy">
 
       <p>
-        Balance isn't about never changing.
-        It's about recognizing where you are,
-        responding to what's real, and
-        knowing when to act and when to
-        let things be.
+        A Taoist perspective does not ask you to enjoy bipolar disorder
+        or force yourself into balance. It invites you to notice what is
+        changing, care for the life you have, and choose a response that
+        fits the moment.
+      </p>
+
+      <p>
+        You can accept what is here while still seeking treatment and
+        working toward greater stability.
       </p>
 
       <%= link_to "← BACK TO PERSPECTIVES",
           bipolar_perspectives_path,
-          class: "tao-back-button" %>
+          class: "buddhism-back-button" %>
 
     </div>
 

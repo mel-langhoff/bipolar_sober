@@ -1,60 +1,30 @@
 <% content_for :title, "Essays | Bipolar Sober" %>
 
-<main class="toolbox-essays-page">
+<main class="iop-page essays-page">
 
   <!-- HERO -->
-  <section class="toolbox-essays-hero">
-    <div class="toolbox-essays-hero-content">
+  <section class="iop-hero">
 
-      <p class="toolbox-essays-eyebrow">
-        BIPOLAR SOBER / TOOLBOX / ESSAYS
+    <div class="iop-hero-content">
+
+      <p class="iop-eyebrow">
+        BIPOLAR SOBER / PERSPECTIVES / ESSAYS
       </p>
 
       <h1>
-        <span>SHIT I'VE</span>
-        <span>THOUGHT</span>
-        <span>ABOUT.</span>
+        <span>THE WORK</span>
+        <span>YOU CHOSE</span>
+        <span>TO DO.</span>
       </h1>
 
-      <p class="toolbox-essays-intro">
-        RECOVERY. BIPOLAR. ADDICTION.<br>
-        LIFE. AND WHATEVER THE FUCK<br>
-        ELSE ENDED UP ON THE PAGE.
+      <p class="iop-tagline">
+        YOUR WORDS.<br>
+        YOUR PERSPECTIVE.
       </p>
 
-    </div>
-  </section>
-
-
-  <!-- INTRO -->
-  <section class="essays-intro-section">
-
-    <div class="essays-section-number">
-      01 / ESSAYS
-    </div>
-
-    <div class="essays-intro-content">
-
-      <h2>
-        SOMETIMES<br>
-        I NEED MORE<br>
-        THAN A BULLET POINT.
-      </h2>
-
-      <p>
-        Some things fit neatly into a coping skill, a definition,
-        or a list of things to try.
-      </p>
-
-      <p>
-        Some shit doesn't.
-      </p>
-
-      <p>
-        These are the longer thoughts: recovery, mental illness,
-        addiction, identity, consequences, starting over, and trying
-        to understand what the hell happened without pretending
-        there's always a clean answer.
+      <p class="iop-intro">
+        IOP WRITING. PERSONAL ESSAYS.<br>
+        THINGS YOU WANTED TO FIGURE OUT.
       </p>
 
     </div>
@@ -62,236 +32,181 @@
   </section>
 
 
-  <!-- ESSAY GRID -->
-  <section class="essays-library">
+  
 
-    <div class="essays-library-heading">
+  <!-- ESSAY CARDS -->
+  <section class="iop-library">
 
-      <p>02 / FROM THE NOTEBOOK</p>
+    <div class="iop-inner">
 
-      <h2>
-        READ<br>
-        SOMETHING.
-      </h2>
-
-      <p>
-        Thoughts from somewhere between figuring shit out
-        and realizing I probably never completely will.
-      </p>
-
-    </div>
-
-
-    <div class="essays-grid">
-
-      <!-- ESSAY 01 -->
-      <article class="essay-card essay-card-pink">
-
-        <p class="essay-card-number">01</p>
-
-        <p class="essay-card-category">
-          RECOVERY
-        </p>
-
-        <h3>
-          STARTING<br>
-          OVER.
-        </h3>
-
-        <p>
-          What happens when the life you thought you were building
-          doesn't look anything like the life you're standing in now?
-        </p>
-
-        <span>COMING SOON</span>
-
-      </article>
-
-
-      <!-- ESSAY 02 -->
-      <article class="essay-card essay-card-yellow">
-
-        <p class="essay-card-number">02</p>
-
-        <p class="essay-card-category">
-          ADDICTION
-        </p>
-
-        <h3>
-          THE STORY<br>
-          WE TELL<br>
-          OURSELVES.
-        </h3>
-
-        <p>
-          The explanations, excuses, bargains, and absolutely
-          convincing bullshit that can make a terrible idea
-          sound reasonable.
-        </p>
-
-        <span>COMING SOON</span>
-
-      </article>
-
-
-      <!-- ESSAY 03 -->
-      <article class="essay-card essay-card-purple">
-
-        <p class="essay-card-number">03</p>
-
-        <p class="essay-card-category">
-          BIPOLAR
-        </p>
-
-        <h3>
-          WHICH PART<br>
-          WAS ME?
-        </h3>
-
-        <p>
-          Trying to understand identity when moods, episodes,
-          impulses, choices, and consequences all get tangled together.
-        </p>
-
-        <span>COMING SOON</span>
-
-      </article>
-
-
-      <!-- ESSAY 04 -->
-      <article class="essay-card essay-card-black">
-
-        <p class="essay-card-number">04</p>
-
-        <p class="essay-card-category">
-          LIFE
-        </p>
-
-        <h3>
-          WHAT NOW?
-        </h3>
-
-        <p>
-          Because eventually the crisis ends, the dust settles,
-          and you're still standing there with a life that needs living.
-        </p>
-
-        <span>COMING SOON</span>
-
-      </article>
-
-    </div>
-
-  </section>
-
-
-  <!-- WHY WRITE -->
-  <section class="essays-write-section">
-
-    <div class="essays-section-number">
-      03 / WHY WRITE?
-    </div>
-
-    <div class="essays-write-content">
+      <p class="iop-number">01 / THE ESSAYS</p>
 
       <h2>
-        GET IT<br>
-        OUT OF<br>
-        YOUR HEAD.
+        OPEN<br>
+        THE FILES.
       </h2>
 
-      <p>
-        Thoughts can sound airtight when they're bouncing around
-        inside your own brain.
-      </p>
+      <div class="iop-grid">
 
-      <p>
-        Writing makes you slow them down enough to actually look at them.
-        Sometimes you find insight. Sometimes you find a pattern.
-        Sometimes you discover that something you've been telling yourself
-        sounds completely fucking ridiculous once it's on paper.
-      </p>
+        <!-- IOP ESSAYS -->
+        <%= link_to iop_essays_path,
+            class: "iop-card iop-card-pink" do %>
 
-      <div class="essays-callout">
-        <p>
-          YOU DON'T HAVE TO KNOW<br>
-          WHAT YOU THINK BEFORE<br>
-          YOU START WRITING.
-        </p>
-      </div>
+          <p class="iop-card-number">01</p>
 
-    </div>
-
-  </section>
-
-
-  <!-- PROMPTS -->
-  <section class="essays-prompts">
-
-    <div class="essays-section-number">
-      04 / YOUR TURN
-    </div>
-
-    <div class="essays-prompts-content">
-
-      <h2>
-        WRITE YOUR<br>
-        OWN FUCKING<br>
-        ESSAY.
-      </h2>
-
-      <div class="essay-prompt-list">
-
-        <div>
-          <span>01</span>
-          <p>
-            What is something I believe about myself that I have
-            never seriously questioned?
+          <p class="iop-card-label">
+            TWELVE WEEKS / ORIGINAL WRITING
           </p>
-        </div>
 
-        <div>
-          <span>02</span>
-          <p>
-            What did alcohol, substances, or impulsive behavior
-            actually do for me?
-          </p>
-        </div>
+          <h3>
+            IOP<br>
+            ESSAYS.
+          </h3>
 
-        <div>
-          <span>03</span>
-          <p>
-            What am I still angry about?
+          <p class="iop-card-description">
+            Twelve weeks of writing from intensive outpatient treatment:
+            what you explored, questioned, and chose to put into words.
           </p>
-        </div>
 
-        <div>
-          <span>04</span>
-          <p>
-            What am I afraid will happen if my life actually changes?
-          </p>
-        </div>
+          <span class="iop-card-action">
+            READ THE IOP ESSAYS →
+          </span>
 
-        <div>
-          <span>05</span>
-          <p>
-            What have I survived that I rarely give myself credit for?
-          </p>
-        </div>
+        <% end %>
 
-        <div>
-          <span>06</span>
-          <p>
-            Who am I when I'm not defining myself by my worst decisions?
-          </p>
-        </div>
 
-        <div>
-          <span>07</span>
-          <p>
-            What does the life I'm trying to build actually look like?
+        <!-- RISING IN THE EAST -->
+        <article class="iop-card iop-card-yellow">
+
+          <p class="iop-card-number">02</p>
+
+          <p class="iop-card-label">
+            PERSONAL ESSAY / IN DEVELOPMENT
           </p>
-        </div>
+
+          <h3>
+            RISING<br>
+            IN THE<br>
+            EAST.
+          </h3>
+
+          <p class="iop-card-description">
+            Eastern philosophy, bipolar disorder, and addiction:
+            exploring how these traditions speak to the life you’re
+            actually trying to live.
+          </p>
+
+          <span class="iop-card-action">
+            IN DEVELOPMENT
+          </span>
+
+        </article>
+
+
+        <!-- WISDOM IN UNEXPECTED PLACES -->
+        <article class="iop-card iop-card-purple">
+
+          <p class="iop-card-number">03</p>
+
+          <p class="iop-card-label">
+            PERSONAL ESSAY / IN DEVELOPMENT
+          </p>
+
+          <h3>
+            TURN<br>
+            EVERY<br>
+            STONE.
+          </h3>
+
+          <p class="iop-card-description">
+            Finding ideas about sobriety and mental health in books,
+            people, stories, and places you didn’t expect to learn from.
+          </p>
+
+          <span class="iop-card-action">
+            IN DEVELOPMENT
+          </span>
+
+        </article>
+
+
+        <!-- CD PLAYA -->
+        <article class="iop-card iop-card-black">
+
+          <p class="iop-card-number">04</p>
+
+          <p class="iop-card-label">
+            PERSONAL ESSAY / IN DEVELOPMENT
+          </p>
+
+          <h3>
+            CD<br>
+            PLAYA.
+          </h3>
+
+          <p class="iop-card-description">
+  Cognitive distortions know how to run game on you—
+  and rig the whole damn game so you lose.
+</p>
+
+          <span class="iop-card-action">
+            IN DEVELOPMENT
+          </span>
+
+        </article>
+
+
+        <!-- CUFFED -->
+        <article class="iop-card iop-card-pink">
+
+          <p class="iop-card-number">05</p>
+
+          <p class="iop-card-label">
+            PERSONAL ESSAY / IN DEVELOPMENT
+          </p>
+
+          <h3>
+            CUFFED.
+          </h3>
+
+          <p class="iop-card-description">
+            An essay about jail in place of treatment—and what gets
+            missed when mental illness and addiction are handled as
+            criminal problems.
+          </p>
+
+          <span class="iop-card-action">
+            IN DEVELOPMENT
+          </span>
+
+        </article>
+
+
+        <!-- BLITZKRIEG BOP -->
+<article class="iop-card iop-card-yellow">
+
+  <p class="iop-card-number">06</p>
+
+  <p class="iop-card-label">
+    PERSONAL ESSAY / IN DEVELOPMENT
+  </p>
+
+  <h3>
+    BLITZKRIEG<br>
+    BOP.
+  </h3>
+
+  <p class="iop-card-description">
+    A look at impulsivity at full speed—and the common ground
+    it shares across addiction, bipolar disorder, and ADHD.
+  </p>
+
+  <span class="iop-card-action">
+    IN DEVELOPMENT
+  </span>
+
+</article>
+
 
       </div>
 
@@ -301,26 +216,22 @@
 
 
   <!-- ENDING -->
-  <section class="essays-ending">
+  <section class="iop-ending">
 
-    <p class="essays-ending-small">
-      YOU DON'T NEED A CONCLUSION YET.
+    <p>
+      YOUR WORDS.<br>
+      YOUR PERSPECTIVE.
     </p>
 
     <h2>
-      JUST START<br>
-      FUCKING<br>
+      KEEP<br>
+      ON<br>
       WRITING.
     </h2>
 
-    <p>
-      Sometimes the point isn't finding the answer.
-      It's finally asking the question.
-    </p>
-
-    <%= link_to "← BACK TO TOOLBOX",
-        toolbox_path,
-        class: "essays-back-link" %>
+     <%= link_to "← BACK TO PERSPECTIVES",
+        perspectives_path,
+        class: "pb-back-link" %>
 
   </section>
 

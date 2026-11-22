@@ -17,7 +17,7 @@
 
       <p class="spirituality-intro">
         YOU DON'T HAVE TO HAVE<br>
-        ALL THE FUCKING ANSWERS.
+        ALL THE ANSWERS.
       </p>
 
     </div>
@@ -110,11 +110,32 @@
       <% end %>
 
 
-      <!-- 04 / SHINTO -->
-      <%= link_to spirituality_shinto_path,
+      <!-- 04 / PAGANISM -->
+      <%= link_to spirituality_paganism_path,
           class: "spirituality-card spirituality-card-purple" do %>
 
         <p class="spirituality-card-number">04</p>
+
+        <h3>
+          PAGANISM
+        </h3>
+
+        <p class="spirituality-card-description">
+          Diverse paths involving nature, deities, ancestors,
+          seasonal cycles, and ritual. Exploring connection
+          through the living world and personal practice.
+        </p>
+
+        <span>EXPLORE →</span>
+
+      <% end %>
+
+
+      <!-- 05 / SHINTO -->
+      <%= link_to spirituality_shinto_path,
+          class: "spirituality-card spirituality-card-pink" do %>
+
+        <p class="spirituality-card-number">05</p>
 
         <h3>
           SHINTO
@@ -131,20 +152,21 @@
       <% end %>
 
 
-      <!-- 05 / PAGANISM -->
-      <%= link_to spirituality_paganism_path,
-          class: "spirituality-card spirituality-card-pink" do %>
+      <!-- 06 / TAOISM -->
+      <%= link_to spirituality_taoism_path,
+          class: "spirituality-card spirituality-card-yellow" do %>
 
-        <p class="spirituality-card-number">05</p>
+        <p class="spirituality-card-number">06</p>
 
         <h3>
-          PAGANISM
+          TAOISM
         </h3>
 
         <p class="spirituality-card-description">
-          Diverse paths involving nature, deities, ancestors,
-          seasonal cycles, and ritual. Exploring connection
-          through the living world and personal practice.
+          The Tao, change, balance, and moving with life instead
+          of forcing everything into submission. Exploring
+          simplicity, flexibility, and the art of not fighting
+          every current.
         </p>
 
         <span>EXPLORE →</span>
@@ -155,11 +177,12 @@
 
   </section>
 
-<!-- BACK TO HOME -->
-<nav class="index-home-nav" aria-label="Return home">
-  <%= link_to "← BACK TO HOME",
-      root_path,
-      class: "index-home-button" %>
-</nav>
+
+  <!-- BACK TO HOME -->
+  <nav class="index-home-nav" aria-label="Return home">
+    <%= link_to "← BACK TO HOME",
+        root_path,
+        class: "index-home-button" %>
+  </nav>
 
 </main>

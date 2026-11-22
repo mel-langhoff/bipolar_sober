@@ -1,0 +1,66 @@
+
+<% content_for :title, "IOP Week #{@week_label} | Bipolar Sober" %>
+
+<main class="iop-page iop-week-page">
+
+  <!-- HERO -->
+  <section class="iop-hero">
+
+    <div class="iop-hero-content">
+
+      <p class="iop-eyebrow">
+        BIPOLAR SOBER / PERSPECTIVES / IOP /
+        WEEK <%= @week_label %>
+      </p>
+
+      <h1>
+        <span>WEEK</span>
+        <span><%= @week_label %>.</span>
+      </h1>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- ORIGINAL ESSAYS -->
+  <section class="iop-library">
+
+    <div class="iop-inner">
+
+      <p class="iop-number">
+        WEEK <%= @week_label %> / ESSAYS
+      </p>
+
+
+      <div class="iop-essay-collection">
+
+        <%= render "iop_essays/weeks/week_#{@week_label}" %>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- NAVIGATION -->
+  <section class="iop-ending">
+
+    <p>
+      THE ORIGINAL WORDS MATTER.
+    </p>
+
+    <h2>
+      KEEP<br>
+      READING.
+    </h2>
+
+    <%= link_to "← ALL TWELVE WEEKS",
+        iop_essays_path,
+        class: "iop-back-link" %>
+
+  </section>
+
+</main>
